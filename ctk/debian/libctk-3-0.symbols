@@ -356,8 +356,8 @@ libcdk-3.so.0 libctk-3-0 #MINVER#
  cdk_pango_layout_get_clip_region@Base 3.0.0
  cdk_pango_layout_line_get_clip_region@Base 3.0.0
  cdk_parse_args@Base 3.0.0
- cdk_pixbuf_get_from_surface@Base 3.0.0
- cdk_pixbuf_get_from_window@Base 3.0.0
+ gdk_pixbuf_get_from_surface@Base 3.0.0
+ gdk_pixbuf_get_from_window@Base 3.0.0
  cdk_pointer_grab@Base 3.0.0
  cdk_pointer_is_grabbed@Base 3.0.0
  cdk_pointer_ungrab@Base 3.0.0

@@ -4611,7 +4611,7 @@ ctk+2.0 (2.8.17-1) unstable; urgency=low
     - Nautilus crashes when dragging icons to another screen
     - mixed line separators confuse ctk_text_iter_ends_line
     - Textview child is covered by window border
-    - cdk_pixbuf_loader_new_with_type(): What image types are allowed?
+    - gdk_pixbuf_loader_new_with_type(): What image types are allowed?
     - Missing progress bar label
     - Fix a problem which caused grab-notify signal to be missed in some cases
   * debian/control.in:
