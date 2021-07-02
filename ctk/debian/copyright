@@ -454,8 +454,8 @@ Copyright: Copyright (C) 1998-2019 Free Software Foundation, Inc.
            Copyright (C) 2009, 2010 Hinker <hinkerliu@gmail.com>
 License: LGPL-2+
 
-Files: gdk/win32/wintab.h
-       gdk/win32/pktdef.h
+Files: cdk/win32/wintab.h
+       cdk/win32/pktdef.h
 Copyright: Copyright (C) 1991-1998 LCS/Telegraphics
 License: other
  The text and information contained in this file may be freely used,
@@ -531,7 +531,7 @@ Copyright:
 License: X11R5-permissive
 
 Files:
- gdk/broadway/rawinflate.min.js
+ cdk/broadway/rawinflate.min.js
  debian/missing-sources/zlib.js-0.1.6/*
 Copyright: © 2012 imaya
 License: Expat
@@ -573,9 +573,9 @@ Comment:
  found in /usr/share/common-licenses/Apache-2.0
 
 Files:
- testsuite/gdk/check-gdk-cairo.c
+ testsuite/cdk/check-cdk-cairo.c
 Copyright: 2008 Sven Herzberg
-License: check-gdk-cairo-permissive
+License: check-cdk-cairo-permissive
  This work is provided "as is"; redistribution and modification
  in whole or in part, in any medium, physical or electronic is
  permitted without restriction.

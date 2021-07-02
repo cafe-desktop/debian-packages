@@ -154,9 +154,9 @@ override_dh_clean: debian/control
 	rm -f demos/widget-factory/widget_factory_resources.[ch]
 	rm -f docs/reference/ctk/getting_started.xml
 	rm -f examples/application*/resources.[ch]
-	rm -f gdk/gdkenumtypes.[ch]
-	rm -f gdk/gdkmarshalers.[ch]
-	rm -f gdk/gdkresources.[ch]
+	rm -f cdk/cdkenumtypes.[ch]
+	rm -f cdk/cdkmarshalers.[ch]
+	rm -f cdk/cdkresources.[ch]
 	rm -f ctk/ctkmarshalers.[ch]
 	rm -f ctk/ctkprivatetypebuiltins.[ch]
 	rm -f ctk/ctkresources.[ch]

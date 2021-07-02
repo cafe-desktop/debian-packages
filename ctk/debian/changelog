@@ -2,7 +2,7 @@ ctk+3.0 (3.24.24-4) unstable; urgency=medium
 
   * Add various patches from upstream 3.24.25 to 3.24.29, mostly
     crash fixes:
-    - d/p/gdkpixbuf-drawable-Free-the-pixbuf-on-Cairo-error.patch:
+    - d/p/cdkpixbuf-drawable-Free-the-pixbuf-on-Cairo-error.patch:
       Fix a memory leak when a Cairo error occurs
     - d/p/Wayland-ignore-touch-tablet-events-on-destroyed-surfaces.patch:
       Fix crashes if input events are received on a recently-closed window
@@ -82,9 +82,9 @@ ctk+3.0 (3.24.24-1) unstable; urgency=medium
 
 ctk+3.0 (3.24.23-3) unstable; urgency=medium
 
-  * Preferentially build-depend on libgdk-pixbuf-2.0-dev.
+  * Preferentially build-depend on libcdk-pixbuf-2.0-dev.
     We don't need the deprecated Xlib integration that is also pulled in
-    by the older libgdk-pixbuf2.0-dev package (see #974870).
+    by the older libcdk-pixbuf2.0-dev package (see #974870).
   * Standards-Version: 4.5.1 (no changes required)
   * d/copyright: Consolidate similar licenses into one Files stanza
   * d/ctk-update-icon-cache.preinst: Remove.
@@ -150,7 +150,7 @@ ctk+3.0 (3.24.20-1) unstable; urgency=medium
   [ Simon McVittie ]
   * New upstream release
   * Depend on librsvg2-common for tests.
-    The unit tests expect that gdk-pixbuf can load SVG files. This is
+    The unit tests expect that cdk-pixbuf can load SVG files. This is
     provided by librsvg2-common, which used to be pulled in by
     adwaita-icon-theme. (Closes: #959390)
 
@@ -173,7 +173,7 @@ ctk+3.0 (3.24.17-3) unstable; urgency=medium
     (effectively a release-candidate for 3.24.18)
     - Fix even more Wayland window-sizing regressions
       (Closes: #955820, we hope)
-  * d/p/wayland-don-t-call-gdk_wayland_window_configure-without-v.patch:
+  * d/p/wayland-don-t-call-cdk_wayland_window_configure-without-v.patch:
     Drop patch, superseded by other upstream fixes.
 
  -- Simon McVittie <smcv@debian.org>  Tue, 07 Apr 2020 13:54:03 +0100
@@ -185,7 +185,7 @@ ctk+3.0 (3.24.17-2) unstable; urgency=medium
     d/p/Do-not-require-an-initial-configure-for-DnD-windows.patch:
     Apply patches from upstream ctk-3-24 branch to fix some Wayland
     window-sizing regressions (partially resolves: #955820)
-  * d/p/wayland-don-t-call-gdk_wayland_window_configure-without-v.patch:
+  * d/p/wayland-don-t-call-cdk_wayland_window_configure-without-v.patch:
     Apply a patch proposed upstream to fix additional Wayland window-sizing
     regressions (hopefully resolves the rest of #955820)
 
@@ -214,7 +214,7 @@ ctk+3.0 (3.24.16-1) unstable; urgency=medium
     Add patch to make valgrind suppressions match Debian libraries
   * Update forwarding status for some patches that were sent upstream
   * d/p/Don-t-test-default-constructed-GdkPixbuf-properties.patch:
-    Drop patch. Build-depend on gdk-pixbuf 2.40 instead of working around
+    Drop patch. Build-depend on cdk-pixbuf 2.40 instead of working around
     a bug in older versions.
   * d/rules: Mark some reftests as allowed to fail.
     These reftests are sensitive to the build environment (exact versions
@@ -223,7 +223,7 @@ ctk+3.0 (3.24.16-1) unstable; urgency=medium
   * d/p/updateiconcache-Sort-list-of-entries.patch:
     Backport patch from GTK 4 to make the icon cache reproducible
     (Closes: #953105)
-  * d/p/build-Generate-gdk.gresource.xml-in-sorted-order.patch:
+  * d/p/build-Generate-cdk.gresource.xml-in-sorted-order.patch:
     Sort GDK resources to improve reproducibility.
     The combination of this and fixing #953105 should hopefully make the
     package reliably reproducible.
@@ -288,11 +288,11 @@ ctk+3.0 (3.24.12-1) unstable; urgency=medium
 ctk+3.0 (3.24.11-1) unstable; urgency=medium
 
   [ Simon McVittie ]
-  * d/p/018_gdkenumtypes.c_location.patch:
+  * d/p/018_cdkenumtypes.c_location.patch:
     Drop patch that was rejected upstream
-  * d/p/gdk-Generate-gdkenumtypes.-ch-in-the-builddir.patch:
+  * d/p/cdk-Generate-cdkenumtypes.-ch-in-the-builddir.patch:
     Drop patch that partially reverted the one described above
-  * d/p/gdk-Don-t-distribute-generated-files-in-tarballs.patch,
+  * d/p/cdk-Don-t-distribute-generated-files-in-tarballs.patch,
     d/p/ctk-Really-don-t-distribute-built-files.patch,
     d/p/demos-examples-tests-Don-t-distribute-built-files.patch:
     Replace patches above with an upstreamable version
@@ -345,8 +345,8 @@ ctk+3.0 (3.24.10-1) unstable; urgency=medium
       features we want yet (in particular no installed-tests).
   * d/rules: Delete more generated files in clean to force them to be
     regenerated
-    - d/p/gdk-Generate-gdkenumtypes.-ch-in-the-builddir.patch,
-      d/p/gdk-Don-t-distribute-generated-files-in-tarballs.patch:
+    - d/p/cdk-Generate-cdkenumtypes.-ch-in-the-builddir.patch,
+      d/p/cdk-Don-t-distribute-generated-files-in-tarballs.patch:
       Fix regeneration of some generated files
   * d/tests/python3-gi: Don't fail if gir1.2-ctk-4.0 is installed
   * d/p/Revert-Update-some-a11y-test-results.patch:
@@ -381,7 +381,7 @@ ctk+3.0 (3.24.8-1) experimental; urgency=medium
     + Places: Show loop devices as reported by gvfs
     + Print dialog, CUPS: Check unknown option values whether they are
       actually custom settings (LP: #1763520)
-  * Refresh patches. debian/patches/018_gdkenumtypes.c_location.patch needed
+  * Refresh patches. debian/patches/018_cdkenumtypes.c_location.patch needed
     slight rebasing
 
  -- Iain Lane <laney@debian.org>  Thu, 11 Apr 2019 11:08:50 +0100
@@ -487,7 +487,7 @@ ctk+3.0 (3.24.1-2) unstable; urgency=medium
 
   * Team upload
   * Upload to unstable
-  * d/libctk-3-0.symbols: Mark gdk_wayland_window_announce_ssd() as
+  * d/libctk-3-0.symbols: Mark cdk_wayland_window_announce_ssd() as
     Linux-specific, since we do not enable Wayland on non-Linux.
     This might fix FTBFS on kfreebsd-any.
   * d/rules: Generate files from .in counterparts for every package,
@@ -559,7 +559,7 @@ ctk+3.0 (3.24.0-2) unstable; urgency=medium
   * debian/libctk-3-0.symbols: ctk_color_picker_kwin_new() is new in
     3.24.0, not 3.24.3 which doesn't exist yet
   * d/p/Don-t-test-default-constructed-GdkPixbuf-properties.patch:
-    Work around a gdk-pixbuf bug that caused test failures
+    Work around a cdk-pixbuf bug that caused test failures
     (Closes: #908439)
   * d/gbp.conf: Don't number patches
 
@@ -618,7 +618,7 @@ ctk+3.0 (3.23.1-1) experimental; urgency=medium
      - Support a completion popup for Emoji
      - Drop Ctrl-Shift-e shortcut
     + Other new apis:
-     - gdk_window_move_to_rect
+     - cdk_window_move_to_rect
     + Backported event controllers from GTK+ 4:
      - GtkEventControllerScroll
      - GtkEventControllerMotion
@@ -634,7 +634,7 @@ ctk+3.0 (3.23.1-1) experimental; urgency=medium
   * debian/patches/m4macros-Set-a-serial-number.patch: Drop, included in this
     release.
   * debian/control{,.in}: Bump libepoxy (1.4) and pango (1.41.0) per upstream.
-  * debian/patches/gdk-x11-Check-if-we-have-access-to-GL-before-using-G.patch:
+  * debian/patches/cdk-x11-Check-if-we-have-access-to-GL-before-using-G.patch:
     Drop - GTK now calls epoxy_has_glx() directly so this bypassed approach
     isn't necessary.
   * debian/libgail-3-0.symbols: New symbols from both releases.
@@ -678,7 +678,7 @@ ctk+3.0 (3.22.29-3) unstable; urgency=medium
   * Allow stderr in autopkgtests. They produce harmless diagnostics.
   * d/p/0013-wayland-Drop-cairo-surfaces-when-withdrawing.patch:
     Add patch from upstream fixing a Wayland client crash if it unmaps
-    a window while gdk is processing updates
+    a window while cdk is processing updates
   * d/p/0014-AM_PATH_GTK_3_0-Use-AC_PATH_TOOL-to-find-pkg-config.patch,
     d/p/0015-m4macros-Fix-underquoting-in-AC_PATH_TOOL.patch:
     Use AC_PATH_TOOL to find pkg-config in the deprecated AM_PATH_GTK_3_0
@@ -768,7 +768,7 @@ ctk+3.0 (3.22.25-1) unstable; urgency=medium
       d/p/0002-theme-Fix-Adwaita-headerbars.patch,
       d/p/0003-display-x11-Unset-tiled-state-if-_GTK_EDGE_CONSTRAIN.patch:
       Drop patches, applied upstream
-    - d/p/gdk-wayland-protocol-server-decoration.patch:
+    - d/p/cdk-wayland-protocol-server-decoration.patch:
       Add server-decoration.xml from upstream git. It is missing from the
       tarball release.
 
@@ -938,7 +938,7 @@ ctk+3.0 (3.22.8-1) unstable; urgency=medium
 ctk+3.0 (3.22.7-2) unstable; urgency=medium
 
   * Team upload
-  * d/p/gdk-x11-Check-if-we-have-access-to-GL-before-using-G.patch:
+  * d/p/cdk-x11-Check-if-we-have-access-to-GL-before-using-G.patch:
     add proposed patch from upstream Bugzilla to let GDK X11
     initialization complete successfully when libGL.so.1 is not
     available (Closes: #847366)
@@ -1065,7 +1065,7 @@ ctk+3.0 (3.21.5-3) unstable; urgency=medium
 
 ctk+3.0 (3.21.5-2) unstable; urgency=medium
 
-  * Mark the gdk_wayland_* symbols as linux-any.
+  * Mark the cdk_wayland_* symbols as linux-any.
   * Drop workaround for cdbs bug which has been fixed in the mean time.
   * Change Build-Depends on dbus-x11 to dbus. The use of dbus-launch has been
     removed upstream so having only dbus installed is sufficient to run the
@@ -1089,7 +1089,7 @@ ctk+3.0 (3.21.5-1) unstable; urgency=low
   * Drop d/p/Don-t-apply-GDK_HINT_RESIZE_INC-to-GDK_WINDOW_STATE_.patch
     - now included in upstream release.
   * Update debian/libctk-3-0.symbols with several additions and one missing:
-    - gdk_wayland_display_get_xdg_shell unused outside of ctk+.
+    - cdk_wayland_display_get_xdg_shell unused outside of ctk+.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 30 Aug 2016 18:13:45 +0200
 
@@ -1643,7 +1643,7 @@ ctk+3.0 (3.13.8-1) experimental; urgency=medium
   * Update build-dependencies according to configure.ac
     - bump libglib2.0-dev to (>= 2.41.2)
   * Update libctk-3.0-dev dependency on libglib2.0-dev to (>= 2.41.2)
-  * Massage debian/patches/018_gdkenumtypes.c_location.patch to apply again
+  * Massage debian/patches/018_cdkenumtypes.c_location.patch to apply again
   * Drop backported/merged patches now in released version:
     - debian/patches/072_Avoid-pkg-config-atleast-version.patch
   * Have quilt refresh remaining patches.
@@ -1653,12 +1653,12 @@ ctk+3.0 (3.13.8-1) experimental; urgency=medium
   * Update debian/libctk-3-0.symbols with many additions
   * New upstream development release (3.13.8)
   * Update build-dependencies according to configure.ac changes:
-    - Bump libgdk-pixbuf2.0-dev to (>= 2.30.0)
+    - Bump libcdk-pixbuf2.0-dev to (>= 2.30.0)
     - Bump libwayland-dev to (>= 1.5.91)
   * debian/patches/032_mips_treeview_row_separator_height.patch:
     - massage the patch into applying again.
   * Update debian/libctk-3-0.symbols
-    - 4 dropped gdk_wayland_*_libctk_only symbols, should be unused.
+    - 4 dropped cdk_wayland_*_libctk_only symbols, should be unused.
     - 3 new wayland related symbols
 
  -- Sjoerd Simons <sjoerd@debian.org>  Fri, 05 Sep 2014 22:50:11 +0200
@@ -1667,7 +1667,7 @@ ctk+3.0 (3.12.2-3) unstable; urgency=medium
 
   * Team upload
   * debian/missing-sources/zlib.js-0.1.6: add missing source code for
-    gdk/broadway/rawinflate.min.js (Closes: #753968)
+    cdk/broadway/rawinflate.min.js (Closes: #753968)
     - some files in zlib.js upstream had missing source code themselves
       (closure-compiler.jar) or are not needed here, and have been removed
       to save space; see debian/missing-sources/README for details
@@ -1769,14 +1769,14 @@ ctk+3.0 (3.11.5-1) experimental; urgency=medium
     + Standards-Version is 3.9.5, no changes needed.
   * debian/libctk-3-0.symbols:
     + Add new symbols. A couple of wayland-related symbols,
-      gdk_wayland_display_get_wl_shell{,_surface} are gone in favor of
-      gdk_wayland_display_get_xdg_shell. The wayland backend is not fully
+      cdk_wayland_display_get_wl_shell{,_surface} are gone in favor of
+      cdk_wayland_display_get_xdg_shell. The wayland backend is not fully
       stable yet and nothing in the archive should be depending on them,
       so this should be fine.
     + Drop four commented-out symbols that weren't exported after 3.9.10,
       as mentioned below in the 3.9.14 changelog entry. Those for symbols
       were not exported in the headers and were only used internally by
-      gdk.
+      cdk.
   * debian/patches/080_disable-parallel-docs-build.patch:
      + Dropped, ctk-doc 1.20 works fine with parallel builds.
   * debian/rules:
@@ -1832,7 +1832,7 @@ ctk+3.0 (3.9.14-1) experimental; urgency=low
   * New upstream development release (3.9.10)
   * Bump glib (build-)dependency to >= 2.37.3 as per configure.ac
   * Trivial update in 015_default-fallback-icon-theme.patch to apply.
-  * Update debian/patches/018_gdkenumtypes.c_location.patch to apply
+  * Update debian/patches/018_cdkenumtypes.c_location.patch to apply
     after upstream dropped --disable-rebuilds.
   * Disable 030_tests_skip_filechooser.patch
     - testsuite moved and restructured....
@@ -1846,10 +1846,10 @@ ctk+3.0 (3.9.14-1) experimental; urgency=low
   * Ignore testsuite failures for now...
   * Update debian/libctk-3-0.symbols
     - many added symbols, and four missing:
-      gdk_frame_clock_idle_get_type,
-      gdk_offscreen_window_get_type,
-      gdk_window_impl_get_type,
-      gdk_window_impl_x11_get_type.
+      cdk_frame_clock_idle_get_type,
+      cdk_offscreen_window_get_type,
+      cdk_window_impl_get_type,
+      cdk_window_impl_x11_get_type.
   * Explicitly set which GDK backends to build:
     - enable x11,wayland,broadway in regular build
     - disable wayland,broadway and enable x11 in udeb build
@@ -2058,8 +2058,8 @@ ctk+3.0 (3.4.2-5) unstable; urgency=low
     This patch fixes handling of key events for different layouts in
     GtkPlug. In particular, it fixes the keyboard layout switching from
     gnome-screensaver when the screen is locked. Closes: #692235
-  * debian/libctk-3-0.symbols: add gdk_x11_keymap_get_group_for_state and
-    gdk_x11_keymap_key_is_modifier which are introduced by the above patch
+  * debian/libctk-3-0.symbols: add cdk_x11_keymap_get_group_for_state and
+    cdk_x11_keymap_key_is_modifier which are introduced by the above patch
     (actually backported from the 3.5.2 API).
   * debian/rules: call dh_makeshlibs with -V 'libctk-3-0 (>= 3.4.2-5~)',
     since we introduced new public symbols in this Debian revision.
@@ -2156,7 +2156,7 @@ ctk+3.0 (3.4.0-1) experimental; urgency=low
   * debian/control.in:
     - Bump (Build-)Depends on libglib2.0-dev to (>= 2.31.20).
     - Drop explicit Build-Depends on gir1.2-atk-1.0, gir1.2-pango-1.0 and
-      gir1.2-gdkpixbuf-2.0, those are pulled via the corresponding -dev
+      gir1.2-cdkpixbuf-2.0, those are pulled via the corresponding -dev
       package.
     - Update dependencies of libctk-3-dev. Strip the minimum version from
       libx*-dev, since those versions were older then lenny anyway.
@@ -2180,7 +2180,7 @@ ctk+3.0 (3.3.16-1) experimental; urgency=low
   * debian/rules: Bump SHVER to 3.3.16.
   * debian/control.in:
     - Bump (Build-)Depends on libglib2.0-dev to (>= 2.31.18).
-    - Bump (Build-)Depends on libgdk-pixbuf2.0-dev to (>= 2.25.2).
+    - Bump (Build-)Depends on libcdk-pixbuf2.0-dev to (>= 2.25.2).
     - Drop Depends on libxml2-utils from libctk-3-dev as ctk-builder-convert
       has been removed.
     - Drop Recommends on python and debhelper from libctk-3-dev since it no
@@ -2189,7 +2189,7 @@ ctk+3.0 (3.3.16-1) experimental; urgency=low
       changes.
   * Remove leftovers from the ctk3-engines-pixbuf package.
   * Update patches:
-    - Drop 003_gdk.pc_privates.patch, fixed upstream in a similar way.
+    - Drop 003_cdk.pc_privates.patch, fixed upstream in a similar way.
     - Drop 70-Fix-document-generation-in-out-of-tree-builds.patch, applied
       upstream.
     - Drop 041_ia32-libs.patch, no longer required with multiarch.
@@ -2234,9 +2234,9 @@ ctk+3.0 (3.2.2-3) unstable; urgency=low
     (LP: #512427, GNOME #607668)
   * Add 017_no_offscreen_device_grabbing.patch: Do not allow devices in an
     offscreen hierarchy to take grabs. (LP: #804009, GNOME #658563)
-  * Add 018_gdkenumtypes.c_location.patch: Always generate gdk/gdkenumtypes.c
+  * Add 018_cdkenumtypes.c_location.patch: Always generate cdk/cdkenumtypes.c
     in the source tree, and fix path in the introspection sources. With this,
-    gdkenumtypes.c is correctly included with separate build trees, too.  This
+    cdkenumtypes.c is correctly included with separate build trees, too.  This
     fixes missing GTypes in the .gir when using a separate build tree.
     (LP: #769256, GNOME #647729)
   * debian/rules: Bump SHVER to 3.1.90.
@@ -2311,7 +2311,7 @@ ctk+3.0 (3.2.1-1) experimental; urgency=low
   * d/p/002_static-linking-dont-build-perf.patch: Removed, fixed upstream
   * d/p/030_xim-modules.patch: Removed, fixed upstream
   * d/p/045_trayicon-visual.patch: Removed, fixed upstream
-  * d/p/003_gdk.pc_privates.patch: Refreshed
+  * d/p/003_cdk.pc_privates.patch: Refreshed
   * d/p/043_notebook_scroll.patch: Refreshed
   * d/p/044_tracker_fts.patch: Refreshed
   * debian/rules: Enable ctk-doc build with the shared build
@@ -2409,7 +2409,7 @@ ctk+3.0 (3.0.8-1) unstable; urgency=low
   * Make the -dev package depend on the gir package.
   * New upstream release.
   * Drop the mimeinfo.cache from the udeb, it’s been moved to
-    gdk-pixbuf.
+    cdk-pixbuf.
   * Upload to unstable; drop check-dist include.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 18:29:44 +0200
@@ -2480,7 +2480,7 @@ ctk+3.0 (3.0.0-1) experimental; urgency=low
   * New upstream release
   * Rename binary packages to new so naming
   * debian/control:
-    - Bump build-depends on libglib2.0-dev, libgdk-pixbuf2.0-dev, libatk1.0-dev,
+    - Bump build-depends on libglib2.0-dev, libcdk-pixbuf2.0-dev, libatk1.0-dev,
       gobject-introspection
   * debian/libgail-3-0.symbols:
   * debian/libctk-3-0.symbols:
@@ -2516,12 +2516,12 @@ ctk+3.0 (2.99.1-1) experimental; urgency=low
   * debian/libctk3.0-0.symbols:
     - Updated.
   * debian/libctk3.0-dev.install.in
-    - gdkconfig.h no longer distributed
+    - cdkconfig.h no longer distributed
   * debian/rules:
     - Bumped the shver.
   * debian/patches/001_static-linking-dont-query-immodules.patch:
   * debian/patches/005_support_disabling_x11_extensions.patch:
-  * debian/patches/003_gdk.pc_privates.patch:
+  * debian/patches/003_cdk.pc_privates.patch:
   * debian/patches/070_mandatory-relibtoolize.patch:
   * debian/patches/041_ia32-libs.patch:
   * debian/patches/002_static-linking-dont-build-perf.patch:
@@ -2536,7 +2536,7 @@ ctk+3.0 (2.99.1-1) experimental; urgency=low
       - Bump the shver.
     + debian/patches/004_git_add_missing_include.patch,
       debian/patches/005_support_disabling_x11_extensions.patch,
-      debian/patches/007-continue-to-install-gdk-TARGET-3.0.pc.patch:
+      debian/patches/007-continue-to-install-cdk-TARGET-3.0.pc.patch:
       - Removed, included upstream.
     + debian/patches/061_use_pdf_as_default_printing_standard.patch:
       - Removed. The cups backend part has been fixed upstream in a (better)
@@ -2649,7 +2649,7 @@ ctk+3.0 (2.91.4-1) experimental; urgency=low
   * debian/rules:
     + Exclude .in files from the dh_installdocs call, so that
       it picks the real .doc-base files and not the .in ones.
-  * debian/libctk3.0-doc.doc-base.gdk{,.in}:
+  * debian/libctk3.0-doc.doc-base.cdk{,.in}:
     + Don't hardcode the package name, generate it at build time.
   * debian/libgail3.0-doc.doc-base.gail-reference:
     + Fix paths to the manual.
@@ -2697,7 +2697,7 @@ ctk+2.0 (2.21.5-1) experimental; urgency=low
     + debian/control.in,
       debian/rules,
       debian/*:
-      - Remove all mentions of gdk-pixbuf and (build-) depend on it.
+      - Remove all mentions of cdk-pixbuf and (build-) depend on it.
     + debian/libctk2.0-0.postinst.in,
       debian/libctk2.0-0.postrm.in,
       debian/libctk2.0-0.triggers.in,
@@ -2705,11 +2705,11 @@ ctk+2.0 (2.21.5-1) experimental; urgency=low
       - Handle immodules by triggers and deprecate dh_ctkmodules.
     + debian/patches/*:
       - Refreshed.
-      - Remove gdk-pixbuf and immodule patches.
+      - Remove cdk-pixbuf and immodule patches.
     + debian/rules,
       debian/libctk2.0-0.symbols:
       - Update for new API symbols.
-    + debian/update-gdkpixbuf-loaders*,
+    + debian/update-cdkpixbuf-loaders*,
       debian/update-ctk-immodules*:
       - Drop module update scripts which are no-ops since 2.10.1.
 
@@ -2757,7 +2757,7 @@ ctk+2.0 (2.20.1-1) unstable; urgency=low
   * New upstream bugfix release:
     + debian/patches/006_support-for-tracker-0.8-stable-releases.patch:
       - Dropped, merged upstream.
-    + debian/patches/003_gdk.pc_privates.patch:
+    + debian/patches/003_cdk.pc_privates.patch:
       - Updated to apply cleanly again.
     + debian/patches/070_mandatory-relibtoolize.patch:
       - Regenerated for the new version.
@@ -2809,7 +2809,7 @@ ctk+2.0 (2.20.0-1) experimental; urgency=low
         on the stable version.
     + debian/control.in:
       - Update GLib build dependency and tighten some -dev package dependencies.
-    + debian/patches/003_gdk.pc_privates.patch:
+    + debian/patches/003_cdk.pc_privates.patch:
       - Updated to apply cleanly again.
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 23 Mar 2010 15:55:56 +0100
@@ -3024,7 +3024,7 @@ ctk+2.0 (2.18.0-1) unstable; urgency=low
     + debian/rules,
       debian/*.symbols:
       - Updated for the new version.
-    + debian/patches/005_gdk_directfb_window_new.patch:
+    + debian/patches/005_cdk_directfb_window_new.patch:
       - Dropped, merged upstream.
     + debian/patches/070_mandatory-relibtoolize.patch:
       - Updated for the new version.
@@ -3090,15 +3090,15 @@ ctk+2.0 (2.17.8-1) experimental; urgency=low
   * debian/patches/001_static-linking-dont-query-immodules.patch,
     debian/patches/002_static-linking-dont-build-perf.patch:
     - Add headers.
-  * debian/patches/005_gdk_directfb_window_new.patch:
-    - New patch. Readd gdk_directfb_window_new(), which is exported in the
+  * debian/patches/005_cdk_directfb_window_new.patch:
+    - New patch. Readd cdk_directfb_window_new(), which is exported in the
       public API and was removed by mistake.
   * debian/patches/*
     - Refreshed.
   * debian/libctk-directfb-2.0-0.symbols,
     debian/libctk2.0-0.symbols:
     - Updated for the new symbols. There's one symbol removed from the
-      directfb backend, gdk_display_pointer_grab(). It wasn't exported in
+      directfb backend, cdk_display_pointer_grab(). It wasn't exported in
       the headers, nor was supposed to be public, so if something out there
       is using it, they are doing it wrong.
   * debian/rules:
@@ -3297,21 +3297,21 @@ ctk+2.0 (2.15.5-1) experimental; urgency=low
 
   * New upstream development release
   * 070_mandatory-relibtoolize.patch: refreshed.
-  * 031_directfb_dead-keys.patch, 032_gdkwindowimpl_directfb.patch,
+  * 031_directfb_dead-keys.patch, 032_cdkwindowimpl_directfb.patch,
     033_directfb_client-message.patch, 034_directfb_memleak.patch,
     071_jasper_link_fix.patch, 092_fix_printtest_include.patch:
   - dropped; already featured in this release
   * 030_ctkentry_password-char-circle.patch:
   - dropped; upstream provides a different solution to setting the default
     invisible char now, that takes the font being used into consideration
-  * 003_gdk.pc_privates.patch:
+  * 003_cdk.pc_privates.patch:
   - refreshed
 
  -- Gustavo Noronha Silva <kov@debian.org>  Mon, 02 Mar 2009 22:01:03 -0300
 
 ctk+2.0 (2.14.7-3) experimental; urgency=low
 
-  * 032_gdkwindowimpl_directfb.patch: new version of the patch. This
+  * 032_cdkwindowimpl_directfb.patch: new version of the patch. This
     should restore the basic functionality of the backend, but there is
     still work underway.
   * 033_directfb_client-message.patch: stolen from the upstream SVN. Fix
@@ -3325,18 +3325,18 @@ ctk+2.0 (2.14.7-3) experimental; urgency=low
 
 ctk+2.0 (2.14.7-2) experimental; urgency=low
 
-  * 008_implicit_pointer_conversion_gdkgc_directfb.patch: removed, it’s
+  * 008_implicit_pointer_conversion_cdkgc_directfb.patch: removed, it’s
     obsolete and just defines the same macro a second time.
-  * 007_implicit_pointer_conversion_gdkdrawable_directfb.patch: removed,
+  * 007_implicit_pointer_conversion_cdkdrawable_directfb.patch: removed,
     it’s not needed anymore with the latest directfb.
   * 006_proper-directfb-modules.patch: removed from the package, it
     won’t be necessary anymore.
   * 001_static-linking-dont-query-immodules.patch,
     002_static-linking-dont-build-perf.patch,
-    003_gdk.pc_privates.patch,
+    003_cdk.pc_privates.patch,
     004_ctk+-ximian-ctk2-filesel-navbutton-5.patch: refreshed.
   * Remove 071_correct_directfb_declarations.patch, and replace it by
-    032_gdkwindowimpl_directfb.patch, a patch from Sven Neumann to
+    032_cdkwindowimpl_directfb.patch, a patch from Sven Neumann to
     (hopefully) fix DirectFB support for GTK+ 2.14.
 
  -- Josselin Mouette <joss@debian.org>  Tue, 17 Feb 2009 23:17:56 +0100
@@ -3344,7 +3344,7 @@ ctk+2.0 (2.14.7-2) experimental; urgency=low
 ctk+2.0 (2.14.7-1) experimental; urgency=low
 
   [ Loic Minier ]
-  * Don't purge /etc/ctk-2.0/gdk-pixbuf.loaders and /etc/ctk-2.0/ctk.immodules
+  * Don't purge /etc/ctk-2.0/cdk-pixbuf.loaders and /etc/ctk-2.0/ctk.immodules
     during first configuration.
 
   [ Sebastian Dröge ]
@@ -3409,7 +3409,7 @@ ctk+2.0 (2.14.4-1) experimental; urgency=low
   * New upstream release
   * debian/patches/006_proper-directfb-modules.patch:
   - refreshed
-  * debian/patches/008_implicit_pointer_conversion_gdkgc_directfb.patch,
+  * debian/patches/008_implicit_pointer_conversion_cdkgc_directfb.patch,
     debian/patches/009_ctk-export-filechooser.patch,
     debian/patches/020_immodules-files-d.patch,
     debian/patches/021_loader-files-d.patch,
@@ -3430,7 +3430,7 @@ ctk+2.0 (2.14.4-1) experimental; urgency=low
   * debian/patches/092_fix_printtest_include.patch:
   - new patch, to fix build problem in print test
   * debian/patches/071_jasper_link_fix.patch:
-  - make gdk-pixbuf-csource link correctly with libjasper
+  - make cdk-pixbuf-csource link correctly with libjasper
   * debian/rules, debian/control:
   - newer libcairo2-dev contains everything needed to build the directfb
     target, so disable building with the dummy libcairo-directfb2-dev
@@ -3516,13 +3516,13 @@ ctk+2.0 (2.12.10-1) unstable; urgency=low
 ctk+2.0 (2.12.9-4) unstable; urgency=low
 
   [ Loic Minier ]
-  * Flip back gdkpixbuf_module_files_d_str after gdkpixbuf_module_file_str in
-    patch 021_loader-files-d; this fixes config of gdk loaders and hence the
+  * Flip back cdkpixbuf_module_files_d_str after cdkpixbuf_module_file_str in
+    patch 021_loader-files-d; this fixes config of cdk loaders and hence the
     current ia32-libs implementation; the change in 2.12.0-3 was incorrect in
     that it flipped the order for im modules and pixbuf loaders, but only im
     modules had to be flipped; the reason im modules had to be flipped is that
     the first list of modules wins for im modules as there is some duplicate
-    checking, while in the case of gdk pixbufs, the last file wins.  What
+    checking, while in the case of cdk pixbufs, the last file wins.  What
     remains to be done here is:
     - biarch support, similar to pango, by loading /usr/lib32 and /usr/lib64
       stuff before /usr/lib; allows dropping the config file hack in
@@ -3548,7 +3548,7 @@ ctk+2.0 (2.12.9-4) unstable; urgency=low
   * Fix broken second dh_strip invocation which was not only acting on the
     udeb but also on binary packages (-s -pUDEB should have been -pUDEB).
   * Update patch 021_loader-files-d to use PIXBUF_FILES_LIBDIR which is
-    defined in gdk-pixbuf/Makefile.am, similarly to PIXBUF_LIBDIR, and based
+    defined in cdk-pixbuf/Makefile.am, similarly to PIXBUF_LIBDIR, and based
     on the newly defined loaderfilesdir, similar to loaderdir; update
     070_mandatory-relibtoolize.
   * New patch, 022_module-files-append-compat-module-files-d, prefer
@@ -3712,7 +3712,7 @@ ctk+2.0 (2.12.2-1) unstable; urgency=low
 
   * New upstream stable release; no API change; bug fixes and translation
     updated.
-    - Drop patches 034_ctkcupsutils_type_fix, 071_fix_gdk_window_null_crasher
+    - Drop patches 034_ctkcupsutils_type_fix, 071_fix_cdk_window_null_crasher
       fixed upstream.
     - Update relibtoolizing patch, 070_mandatory-relibtoolize.
 
@@ -3724,10 +3724,10 @@ ctk+2.0 (2.12.1-3) unstable; urgency=low
   * Suggest librsvg2-common for SVG pixbuf support.
   * 033_treeview_resizing.patch: fix segmentation fault introduced by
     an API inconsistency.
-  * 003_gdk.pc_privates.patch: generate correct Requires.private for
-    gdk-2.0.pc containing all necessary dependencies for static linking.
+  * 003_cdk.pc_privates.patch: generate correct Requires.private for
+    cdk-2.0.pc containing all necessary dependencies for static linking.
   * 006_proper-directfb-modules.patch: refreshed.
-  * 010_gdkpixbuf_-lm.patch: fix gdk-pixbuf-2.0.pc by adding back -lm,
+  * 010_cdkpixbuf_-lm.patch: fix cdk-pixbuf-2.0.pc by adding back -lm,
     which is required by some macros. Closes: #451512.
   * 070_mandatory-relibtoolize.patch: regenerated.
   * rules: copy the extraneous libraries generated in the static build
@@ -3826,7 +3826,7 @@ ctk+2.0 (2.12.0-3) unstable; urgency=low
   * Enable 091_workaround_no_ctk_init_incorrect_display to allow the non-free
     Flash plugin to work for users of non-Gtk browsers; please do bug Adobe
     about this; closes: #443661, #440165.
-  * New patch, 071_fix_gdk_window_null_crasher, fixes potential crashes in
+  * New patch, 071_fix_cdk_window_null_crasher, fixes potential crashes in
     IceWeasel's print preview dialog; GNOME #482531; LP #144326; found in the
     Ubuntu package.
 
@@ -3855,8 +3855,8 @@ ctk+2.0 (2.12.0-1) experimental; urgency=low
     apply cleanly.
   * Drop patch 080_from_svn_fix_dangling_tooltip, merged upstream.
   * Bump shlibs to 2.12.0 in the new upstream release for the addition of
-    gdk_window_thaw_toplevel_updates_libctk_only() and
-    gdk_window_freeze_toplevel_updates_libctk_only() to the ABI.
+    cdk_window_thaw_toplevel_updates_libctk_only() and
+    cdk_window_freeze_toplevel_updates_libctk_only() to the ABI.
   * Add disabled patch 091_workaround_no_ctk_init_incorrect_display, taken
     from the Ubuntu package; it works around broken applications missing a
     call to ctk_init() but the breakage should better be exposed now so that
@@ -3931,7 +3931,7 @@ ctk+2.0 (2.11.4-1) experimental; urgency=low
     still change incompatibly.
     - Bump shlibs to >= 2.11.3.
     - Refresh patches 006_proper-directfb-modules,
-      008_implicit_pointer_conversion_gdkgc_directfb,
+      008_implicit_pointer_conversion_cdkgc_directfb,
       009_ctk-export-filechooser, 030_ctkentry_password-char-circle,
       033_treeview_resizing, 040_filechooser_single-click, and 041_ia32-libs
       to apply cleanly.
@@ -3973,11 +3973,11 @@ ctk+2.0 (2.11.2-1) experimental; urgency=low
     - Build-dep on libxdamage-dev for damage support.
     - Enable test print backend by passing --enable-test-print-backend to
       configure.
-  * Update 007_implicit_pointer_conversion_gdkdrawable_directfb to include
+  * Update 007_implicit_pointer_conversion_cdkdrawable_directfb to include
     cairo.h instead of defining the directfb feature manually.
   * New patch, 006_proper-directfb-modules, fixes pkg-config modules included
     to build directfb stuff, uncovered by the change in
-    007_implicit_pointer_conversion_gdkdrawable_directfb; refresh
+    007_implicit_pointer_conversion_cdkdrawable_directfb; refresh
     relibtoolizing patch.
   * Add cross-refs to patch headers.
   * Clean up CFLAGS.
@@ -3991,7 +3991,7 @@ ctk+2.0 (2.10.13-1) unstable; urgency=low
   * Upload to unstable; drop check-dist include.
   * New upstream release; no API change.
     - Drop patches 011_directfb-build-fixes-from-head,
-      013_gdkproperty-directfb-strdup, 032_filechooser-sizing,
+      013_cdkproperty-directfb-strdup, 032_filechooser-sizing,
       090_capslock-numlock-im-thai merged upstream.
     - Update relibtoolizing patch, 070_mandatory-relibtoolize.
 
@@ -4120,7 +4120,7 @@ ctk+2.0 (2.10.11-1) experimental; urgency=low
   * New upstream releases.
     - Drop patch 003_default_fallback_icon_theme, upstream added a fallback on
       hicolor.
-    - Drop patch 015_gdkmain-x11_button-mask.patch, merged upstream.
+    - Drop patch 015_cdkmain-x11_button-mask.patch, merged upstream.
     - Refresh patches.
     - Relibtoolize.
   * Remove 031_cursor-blinking-timeout from patch series as it causes a
@@ -4134,7 +4134,7 @@ ctk+2.0 (2.10.9-1) experimental; urgency=low
   * 024_filechooser_single-click.patch:
     + Monitor selection changes instead of monitoring the cursor.
     + Miscellaneous fixes.
-  * 015_gdkmain-x11_button-mask.patch, stolen from upstream SVN: fix the
+  * 015_cdkmain-x11_button-mask.patch, stolen from upstream SVN: fix the
     issue of resizing columns needing two tries in some cases
     (closes: #406906).
 
@@ -4226,8 +4226,8 @@ ctk+2.0 (2.10.6-3) experimental; urgency=low
 
 ctk+2.0 (2.10.6-2) experimental; urgency=medium
 
-  * New patch, 013_gdkproperty-directfb-strdup, to g_strdup() strings returned
-    by gdk_atom_name(); GNOME #357611; thanks Attilio Fiandrotti.
+  * New patch, 013_cdkproperty-directfb-strdup, to g_strdup() strings returned
+    by cdk_atom_name(); GNOME #357611; thanks Attilio Fiandrotti.
 
  -- Loic Minier <lool@dooz.org>  Sun,  8 Oct 2006 16:03:08 +0200
 
@@ -4294,7 +4294,7 @@ ctk+2.0 (2.10.3-2) experimental; urgency=low
   * Make update-ctk-immodules and update-ctk-immodules no-ops, to avoid
     modules to recreate the /etc modules files on upgrades or by mistake;
     remove the generated module files in /etc on upgrades. closes: #388450
-  * Merge 2.8.20-2; drop patch 009_revert-gdkdrawable-directfb, merged
+  * Merge 2.8.20-2; drop patch 009_revert-cdkdrawable-directfb, merged
     upstream.
 
  -- Loic Minier <lool@dooz.org>  Wed, 20 Sep 2006 22:17:30 +0200
@@ -4302,14 +4302,14 @@ ctk+2.0 (2.10.3-2) experimental; urgency=low
 ctk+2.0 (2.10.3-1) experimental; urgency=low
 
   * New upstream releases; with API additions in the filesystem modules API,
-    probably only used by ctk-demo, and in the quartz gdk backend, not used in
+    probably only used by ctk-demo, and in the quartz cdk backend, not used in
     Debian.
     - Bump shlibs to >= 2.10.3.
     - Drop patch 009_configurable-cairo-backend-module, it was not really
       required to select a cairo backend dynamically as the backend is always
-      cairo-directfb for a directfb gdk.
-    - Drop patch 010_gdk-require-cairo-module, merged upstream.
-    - Drop patch 011_gdk-directfb-cvs-changes, this release includes the
+      cairo-directfb for a directfb cdk.
+    - Drop patch 010_cdk-require-cairo-module, merged upstream.
+    - Drop patch 011_cdk-directfb-cvs-changes, this release includes the
       changes that were pulled back then.
     - Relibtoolize: update patch 070_mandatory-relibtoolize.
 
@@ -4318,11 +4318,11 @@ ctk+2.0 (2.10.3-1) experimental; urgency=low
 ctk+2.0 (2.10.1-2) experimental; urgency=low
 
   * Drop obsolete scary warning in 2.10.1-1.
-  * Drop update-ctk-immodules and update-gdkpixbuf-loaders calls from
+  * Drop update-ctk-immodules and update-cdkpixbuf-loaders calls from
     libctk2.0-0's postinst, this isn't needed for backwards compatibility.
-  * Use /usr/lib/libctk2.0-0/gdk-pixbuf-query-loaders and
+  * Use /usr/lib/libctk2.0-0/cdk-pixbuf-query-loaders and
     /usr/lib/libctk2.0-0/ctk-query-immodules-2.0 instead of
-    /usr/bin/gdk-pixbuf-query-loaders and /usr/bin/ctk-query-immodules-2.0 in
+    /usr/bin/cdk-pixbuf-query-loaders and /usr/bin/ctk-query-immodules-2.0 in
     dh_ctkmodules.
 
  -- Loic Minier <lool@dooz.org>  Tue, 19 Sep 2006 16:40:22 +0200
@@ -4333,8 +4333,8 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
   * Add a missing libatk1.0-dev (>= 1.9.0) build-dep for ATK.
   * Replace GTK_BINARY_VERSION in debian/*.in to set the binary version of
     binary modules; it is set via debian/scripts/vars and currently in use in
-    update-gdkpixbuf-loaders.in and update-ctk-immodules.in.
-  * Remove fake support for version argument from update-gdkpixbuf-loaders and
+    update-cdkpixbuf-loaders.in and update-ctk-immodules.in.
+  * Remove fake support for version argument from update-cdkpixbuf-loaders and
     update-ctk-immodules.
   * New upstream development releases with API additions, and non-public API
     changes and removals.
@@ -4365,7 +4365,7 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
     - Refresh patches: 000_ctk+-2.0.6-exportsymbols,
       003_default_fallback_icon_theme,
       004_ctk+-ximian-ctk2-filesel-navbutton-5,
-      007_implicit_pointer_conversion_gdkdrawable_directfb.
+      007_implicit_pointer_conversion_cdkdrawable_directfb.
     - Update 070_mandatory-relibtoolize with libtoolize --force --copy &&
       aclocal-1.7 -I m4macros && autoconf && automake-1.7.
     - New patch, 002_static-linking-dont-build-perf, to avoid building the
@@ -4375,9 +4375,9 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
       --with-cairo-backend flag which will select a cairo-$backend.pc
       pkg-config module instead of the default of cairo.pc; see GNOME #351509.
     - Configure with --with-cairo-backend=directfb for the dfb build.
-    - New patch, 010_gdk-require-cairo-module, to require the Cflags and Libs
+    - New patch, 010_cdk-require-cairo-module, to require the Cflags and Libs
       from the cairo-directfb module (as $cairo_module); see GNOME #351519.
-    - New patch, 011_gdk-directfb-cvs-changes, backport of CVS only build
+    - New patch, 011_cdk-directfb-cvs-changes, backport of CVS only build
       fixes to permit compilation against directfb 0.9.25.1.
   * Fix bashishms in debian/rules. (Closes: #385473)
   * Generate a Provides: ctk2.0-binver-@BINVER@ in libctk2.0-@SONAME@ to track
@@ -4398,15 +4398,15 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
     PKG_CONFIG_PATH while invoking pkg-config (or configure); the
     /usr/lib/pkgconfig/*directfb*.pc files will be removed when Debian sources
     have been converted.
-  * In the same spirit, gdkconfig.h is in /usr/lib/ctk-2.0/include/directfb;
+  * In the same spirit, cdkconfig.h is in /usr/lib/ctk-2.0/include/directfb;
     to use it, prepend -I/usr/lib/ctk-2.0/include/directfb to CFLAGS.
-  * Fix generation of /etc/ctk-2.0/gdk-pixbuf.loaders for the udeb.
+  * Fix generation of /etc/ctk-2.0/cdk-pixbuf.loaders for the udeb.
     (Closes: #382435)
   * Build-depend on libcairo-directfb2-dev >= 1.2.4-2 to get PDF/PS support in
     the directfb flavor of libcairo.
   * Recommend the linked source packages in libctk2.0-doc instead of simply
     suggesting them.
-  * Rewrite update-gdkpixbuf-loaders and update-ctk-immodules.
+  * Rewrite update-cdkpixbuf-loaders and update-ctk-immodules.
   * Drop double libatk1.0-dev build-dep.
   * Empty the dependency_libs in the *.la files of libctk2.0-dev.
   * New immodule files handling with *.immodules files below
@@ -4433,7 +4433,7 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
       /usr/lib/ctk-2.0/<BINARY_VERSION>/loader-files.d/libctk2.0-0.loaders
       for the shared library and libctk-directfb-2.0-0-udeb.loaders for the
       udeb.
-    - Continue generating /etc/ctk-2.0/gdk-pixbuf.loaders until packages are
+    - Continue generating /etc/ctk-2.0/cdk-pixbuf.loaders until packages are
       updated.
     - This particular patch uses two ugly workarounds and needs work before
       being sent upstream.
@@ -4441,20 +4441,20 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
     modules and GdkPixbuf loaders; it will still add a dependency on the
     binary version of Gtk for other modules.
   * Make use of the new dh_ctkmodules during the build (override the path to
-    ctk-query-immodules-2.0 and gdk-pixbuf-query-loaders.
+    ctk-query-immodules-2.0 and cdk-pixbuf-query-loaders.
   * Add ${misc:Depends} to ctk2-engines-pixbuf.
 
  -- Loic Minier <lool@dooz.org>  Tue, 19 Sep 2006 15:13:38 +0200
 
 ctk+2.0 (2.8.20-2) unstable; urgency=low
 
-  * New patch, 009_revert-gdkdrawable-directfb, to revert a fix for Italic
+  * New patch, 009_revert-cdkdrawable-directfb, to revert a fix for Italic
     letters which caused ugly unneeded horizontal/vertical lines; thanks
     Davide Viti. (Closes: #386860)
   * Fix typo, install-dfb depends on build-dfb, not build-shared.
   * Fix typo (DFB_PKGFIR versus DFB_PKGDIR), use the BUILD_DFB_DIR version of
-    gdk-pixbuf-query-loaders, and set LD_LIBRARY_PATH to the udeb's /usr/lib;
-    should fix the empty /etc/ctk-2.0/gdk-pixbuf.loaders. (Closes: #382435)
+    cdk-pixbuf-query-loaders, and set LD_LIBRARY_PATH to the udeb's /usr/lib;
+    should fix the empty /etc/ctk-2.0/cdk-pixbuf.loaders. (Closes: #382435)
   * Ship all engines of the DirectFB build in the udeb, that is
     engines/libpixmap.so.
 
@@ -4476,9 +4476,9 @@ ctk+2.0 (2.8.18-7) unstable; urgency=medium
     - 002_xpmico to 005_xpmico
     - 003_ctk+-2.8.17-directfb to 006_ctk+-2.8.17-directfb
     - 005_implicit_pointer_conversion to
-      007_implicit_pointer_conversion_gdkdrawable_directfb
+      007_implicit_pointer_conversion_cdkdrawable_directfb
     - 006_implicit_pointer_conversion to
-      008_implicit_pointer_conversion_gdkgc_directfb
+      008_implicit_pointer_conversion_cdkgc_directfb
   * Change the 000_ctk+-2.0.6-exportsymbols, and
     001_ctk+-2.2.0-buildfix-immodule patches to only patch the
     non-autogenerated files.
@@ -4528,7 +4528,7 @@ ctk+2.0 (2.8.18-3) experimental; urgency=low
 
   [ Loïc Minier ]
   * Bump libctk2.0-dev dependency and build-dep on libx11-dev to >= 2:1.0.0-6
-    as it ships x11.pc which ends up in the Requires of gdk-x11-2.0.pc.
+    as it ships x11.pc which ends up in the Requires of cdk-x11-2.0.pc.
     (Closes: #326199, #370693)
     [debian/control, debian/control.in]
 
@@ -4582,7 +4582,7 @@ ctk+2.0 (2.8.18-1) unstable; urgency=low
     - Crashes while creating source code w/GtkFontSelection
     - the right edge tab does not appear when switching tab
     - Warning in ctk_paned_compute_position
-    - gdk should set resolution on PangoCairoFontmap, not PangoCairoContext
+    - cdk should set resolution on PangoCairoFontmap, not PangoCairoContext
     - GtkTreeView does not resize correctly
     - ctk_tree_view_get_cell_area() forgets depth-one expander
     - expander animation not working in RTL mode
@@ -4611,7 +4611,7 @@ ctk+2.0 (2.8.17-1) unstable; urgency=low
     - Nautilus crashes when dragging icons to another screen
     - mixed line separators confuse ctk_text_iter_ends_line
     - Textview child is covered by window border
-    - gdk_pixbuf_loader_new_with_type(): What image types are allowed?
+    - cdk_pixbuf_loader_new_with_type(): What image types are allowed?
     - Missing progress bar label
     - Fix a problem which caused grab-notify signal to be missed in some cases
   * debian/control.in:
@@ -4636,7 +4636,7 @@ ctk+2.0 (2.8.15-1) unstable; urgency=low
     * Bugs fixed:
       - Keys P and N in "open file" dialog have special meaning
       - MS-Windows theme (GTK-Wimp) shows all funky characters
-      - Optimize gdk on win32
+      - Optimize cdk on win32
       - Hollow polygons have wrong linecaps
       - panel crash with a11y enabled
     * Updated translations (bg,bn,cs,eu,ro)
@@ -4650,8 +4650,8 @@ ctk+2.0 (2.8.13-1) unstable; urgency=low
     - Can't select some items in GtkIconView
     - ctk_icon_theme_list_icons: example contexts don't work
     - gnopernicus crashes on changing display screen source for magnifier
-    - evince crashes in gdk_region_union_with_rect
-    - Small error in _gdk_gc_update_context
+    - evince crashes in cdk_region_union_with_rect
+    - Small error in _cdk_gc_update_context
     - ctk.Notebook.get_current_page() returns incorrect page number
       when pages hidden
     - GtkAboutDialog not responsive to Escape key
@@ -4795,16 +4795,16 @@ ctk+2.0 (2.8.1-1) experimental; urgency=low
     - Make scrolling work on unrealized icon views.
     - Avoid unnecessary redraws on range widgets.
     - Make sure that all GTK+ applications reload icon themes promptly.
-    - Ensure that gdk_pango_get_context() and ctk_widget_get_pango_context()
+    - Ensure that cdk_pango_get_context() and ctk_widget_get_pango_context()
       use the same font options and dpi value.
     - Multiple memory leak fixes.
   * debian/control.in:
     - updated the libctk2.0-dev Depends according to the changes.
   * debian/rules:
     Add --enable-explicit-deps=yes to make sure stuff like x11 gets listed as a
-    Requires: in gdk(-x11)-2.0.pc, because otherwise linkage against -lX11 and
+    Requires: in cdk(-x11)-2.0.pc, because otherwise linkage against -lX11 and
     friends doesn't get carried through.  Whether or not this is correct is
-    arguable, since libgdk-x11-2.0.so.0* ends up linked against it anyway, but
+    arguable, since libcdk-x11-2.0.so.0* ends up linked against it anyway, but
     stuff like gnome-panel seems to be relying on this transience.
     Change by Daniel Stone.
 
@@ -4972,7 +4972,7 @@ ctk+2.0 (2.6.0-1) experimental; urgency=low
     - updated the shlibs.
     - use dh_strip to make the debug package.
   * update-ctk-immodules.in:
-  * update-gdkpixbuf-loaders.in:
+  * update-cdkpixbuf-loaders.in:
     - module version is 2.4.0.
   * debian/watch:
     - updated.
@@ -5077,7 +5077,7 @@ ctk+2.0 (2.4.3-3) unstable; urgency=low
 ctk+2.0 (2.4.3-2) unstable; urgency=low
 
   * debian/libctk2.0-bin.files:
-    - moved gdk-pixbuf-query-loader and ctk-query-immodules-2.0 manpages
+    - moved cdk-pixbuf-query-loader and ctk-query-immodules-2.0 manpages
       to libctk2.0-bin. (Closes: #257399).
   * debian/libctk2.0-doc.doc-base.ctk-faq,
     debian/libctk2.0-doc.doc-base.ctk-tutorial:
@@ -5336,8 +5336,8 @@ ctk+2.0 (2.2.2-1) unstable; urgency=low
     - removed dh_undocumented.
     - don't claim the newer shlibs.
   * debian/patches/:
-    - 000_ctk+-2.2.1-gdk_event_copy_for_xinput.patch: removed.
-    - 000_ctk+-2.2.1-gdk_visual_get_best_with_depth.patch: removed.
+    - 000_ctk+-2.2.1-cdk_event_copy_for_xinput.patch: removed.
+    - 000_ctk+-2.2.1-cdk_visual_get_best_with_depth.patch: removed.
     - 000_ctk+-2.2.1-ctk_text_line_previous_could_contain_tag.patch: removed.
     - 000_ctk+-2.2.1-ctktreeview-scroll.patch: removed.
     - 000_ctk+-debian-xinerama-pic.patch: updated.
@@ -5405,9 +5405,9 @@ ctk+2.0 (2.2.1-3) unstable; urgency=low
 ctk+2.0 (2.2.1-2) unstable; urgency=low
 
   * debian/patches/:
-    - 000_ctk+-2.2.1-gdk_visual_get_best_with_depth.patch:
+    - 000_ctk+-2.2.1-cdk_visual_get_best_with_depth.patch:
       backport from CVS to fix wrong pointer returned. (closes: Bug#180786)
-    - 000_ctk+-2.2.1-gdk_event_copy_for_xinput.patch:
+    - 000_ctk+-2.2.1-cdk_event_copy_for_xinput.patch:
       applied to fix a crash when using xinput. (closes: Bug#178908)
 
  -- Akira TAGOH <tagoh@debian.org>  Wed, 19 Feb 2003 03:10:55 +0900
@@ -5462,8 +5462,8 @@ ctk+2.0 (2.2.0-1) unstable; urgency=low
     - updated Build-Depends.
     - bumped Standards-Version to 3.5.8.
     - fix description-synopsis-ends-with-full-stop stuff.
-  * debian/update-gdkpixbuf-loaders: add brand-new wrapper script.
-  * debian/update-gdkpixbuf-loaders.1: add manpage.
+  * debian/update-cdkpixbuf-loaders: add brand-new wrapper script.
+  * debian/update-cdkpixbuf-loaders.1: add manpage.
   * debian/rules:
     modified to build the static libraries. (closes: Bug#161938)
   * debian/README.Debian: updated.
@@ -5582,7 +5582,7 @@ ctk+2.0 (2.0.5-2) unstable; urgency=low
 
   * debian/rules: add --with-xinput=xfree. (closes: Bug#151668)
   * debian/control:
-    - add Conflicts: libgdkxft0 to avoid some problem. (closes: Bug#151439).
+    - add Conflicts: libcdkxft0 to avoid some problem. (closes: Bug#151439).
     - changed a summary from 'Dummy' to 'Empty'.
 
  -- Akira TAGOH <tagoh@debian.org>  Thu,  4 Jul 2002 00:18:53 +0900
@@ -5599,7 +5599,7 @@ ctk+2.0 (2.0.4-1) unstable; urgency=low
   * New upstream release.
     - should be fixed in this release. (closes: Bug#149667)
     - now it's not linked to the Pango docs (closes: Bug#149143)
-  * debian/libctk2.0-doc.doc-base.{gdk,gdk-pixbuf,ctk,ctk-faq,ctk-tutorial}:
+  * debian/libctk2.0-doc.doc-base.{cdk,cdk-pixbuf,ctk,ctk-faq,ctk-tutorial}:
     add a new line before Format: (closes: Bug#149548, Bug#150043)
 
  -- Akira TAGOH <tagoh@debian.org>  Sun, 16 Jun 2002 05:16:29 +0900

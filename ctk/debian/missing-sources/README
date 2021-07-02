@@ -4,7 +4,7 @@ Missing sources from ctk+3.0
 zlib.js-0.1.6
 -------------
 
-Source for: gdk/broadway/rawinflate.min.js
+Source for: cdk/broadway/rawinflate.min.js
 Obtained from: <https://github.com/imaya/zlib.js> tag "0.1.6"
 Files removed:
     bin/* except for rawinflate.min.js* (precompiled, not needed here)
@@ -13,7 +13,7 @@ Files removed:
     vendor/google-closure-compiler/ (third-party, source not included)
     vendor/mt.js/ (third-party, only needed for tests)
 
-gdk/broadway/rawinflate.min.js is identical to bin/rawinflate.min.js.
+cdk/broadway/rawinflate.min.js is identical to bin/rawinflate.min.js.
 
 Debian's closure-compiler_20130227+dfsg1-6 is not identical to the one
 originally distributed with zlib.js, but produces output closely resembling
