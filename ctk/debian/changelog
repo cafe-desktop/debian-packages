@@ -361,8 +361,8 @@ ctk+3.0 (3.24.10-1) unstable; urgency=medium
     factor. Upstream's CI currently disables all the a11y tests, so we can't
     expect this to be reliable.
   * Remove another generated file
-  * d/libgail-3-0.symbols: Add Build-Depends-Package
-  * d/libgail-3-doc.doc-base.gail-reference: Use /usr/share/doc paths
+  * d/libcail-3-0.symbols: Add Build-Depends-Package
+  * d/libcail-3-doc.doc-base.cail-reference: Use /usr/share/doc paths
   * Standards-Version: 4.4.0 (no changes required)
 
  -- Simon McVittie <smcv@debian.org>  Wed, 17 Jul 2019 17:54:17 +0100
@@ -637,7 +637,7 @@ ctk+3.0 (3.23.1-1) experimental; urgency=medium
   * debian/patches/cdk-x11-Check-if-we-have-access-to-GL-before-using-G.patch:
     Drop - GTK now calls epoxy_has_glx() directly so this bypassed approach
     isn't necessary.
-  * debian/libgail-3-0.symbols: New symbols from both releases.
+  * debian/libcail-3-0.symbols: New symbols from both releases.
   * debian/patches/0008-defaultvalue-Ignore-more-style-properties-that-Adwai.patch:
     Cherry-pick test fix patch from upstream !253.
 
@@ -733,7 +733,7 @@ ctk+3.0 (3.22.26-2) unstable; urgency=medium
   [ Simon McVittie ]
   * Set Rules-Requires-Root to no
   * Add a Lintian override to silence warnings about the non-standard
-    name of libgail-3-0, which should really have been libgailutil-3-0
+    name of libcail-3-0, which should really have been libcailutil-3-0
     but isn't going to be changed now
 
   [ Jeremy Bicha ]
@@ -2110,8 +2110,8 @@ ctk+3.0 (3.4.2-2) unstable; urgency=low
 ctk+3.0 (3.4.2-1) unstable; urgency=low
 
   * New upstream release.
-  * Simplify shlibs version information for libgail-3-0 and no longer create a
-    dependency on libgail-3-common, this package has been dropped in 3.2.
+  * Simplify shlibs version information for libcail-3-0 and no longer create a
+    dependency on libcail-3-common, this package has been dropped in 3.2.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 10 May 2012 14:44:28 +0200
 
@@ -2246,7 +2246,7 @@ ctk+3.0 (3.2.2-3) unstable; urgency=low
     - debian/control.in: Add Multi-Arch: and necessary Pre-Depends: fields.
       (libraries/-dbg are "same", -doc/-bin are "foreign").
     - debian/rules: Use multiarch LIBDIR.
-    - debian/libgail-3-dev.install, debian/libgail-3-0.install: Rename to
+    - debian/libcail-3-dev.install, debian/libcail-3-0.install: Rename to
       *.in, and use @LIBDIR@ instead of hardcoded usr/lib.
     - debian/gir1.2-ctk-3.0.install.in: Use @LIBDIR@.
     - debian/libctk-3-0.triggers.in, debian/libctk-3-0.postinst.in,
@@ -2307,7 +2307,7 @@ ctk+3.0 (3.2.1-1) experimental; urgency=low
   [ Sjoerd Simons ]
   * New upstream release
   * debian/control.in: Update build-depends
-  * debian/rules: Bump libgail SHVER depends
+  * debian/rules: Bump libcail SHVER depends
   * d/p/002_static-linking-dont-build-perf.patch: Removed, fixed upstream
   * d/p/030_xim-modules.patch: Removed, fixed upstream
   * d/p/045_trayicon-visual.patch: Removed, fixed upstream
@@ -2326,7 +2326,7 @@ ctk+3.0 (3.2.1-1) experimental; urgency=low
 
   [ Sjoerd Simons ]
   * debian/libctk-3-0.symbols: Update symbols
-  * Remove libgail-3-common package. Modules have been integrated directly into
+  * Remove libcail-3-common package. Modules have been integrated directly into
     Gtk
   * debian/patches/70-Fix-document-generation-in-out-of-tree-builds.patch:
     + Added, fix documentation when build out of tree
@@ -2351,7 +2351,7 @@ ctk+3.0 (3.0.12-2) unstable; urgency=low
   * debian/patches/045_trayicon-visual.patch: Fix assertion in trayicon-x11
     when visual is not available. Thanks to Vincent Bernat for the patch.
     Closes: #637067
-  * debian/libgail-3-0.symbols: Remove trailing empty line which confuses
+  * debian/libcail-3-0.symbols: Remove trailing empty line which confuses
     dpkg-gensymbols.
   * Bump debhelper compatibility level to 8.
 
@@ -2482,7 +2482,7 @@ ctk+3.0 (3.0.0-1) experimental; urgency=low
   * debian/control:
     - Bump build-depends on libglib2.0-dev, libgdk-pixbuf2.0-dev, libatk1.0-dev,
       gobject-introspection
-  * debian/libgail-3-0.symbols:
+  * debian/libcail-3-0.symbols:
   * debian/libctk-3-0.symbols:
     - Updated
     - Mark symbols with stable version number
@@ -2548,7 +2548,7 @@ ctk+3.0 (2.99.1-1) experimental; urgency=low
     + debian/patches/*:
       - Refreshed.
     + debian/libctk3.0-0.symbols,
-      debian/libgail3.0-0.symbols:
+      debian/libcail3.0-0.symbols:
       - Updated.
     + debian/libctk3.0-*.{install.in,manpages},
       debian/rules:
@@ -2651,7 +2651,7 @@ ctk+3.0 (2.91.4-1) experimental; urgency=low
       it picks the real .doc-base files and not the .in ones.
   * debian/libctk3.0-doc.doc-base.cdk{,.in}:
     + Don't hardcode the package name, generate it at build time.
-  * debian/libgail3.0-doc.doc-base.gail-reference:
+  * debian/libcail3.0-doc.doc-base.cail-reference:
     + Fix paths to the manual.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Nov 2010 06:30:33 +0100
@@ -2684,9 +2684,9 @@ ctk+3.0 (2.91.3-1) experimental; urgency=low
       is safe to do
   * debian/ruels, libtk3.0-doc.*: Tutorial and FAQ have been removed from the
     ctk source as they were updated, stop trying to install them
-  * debian/libgail3.0-doc.doc-base.gail-reference
-    + Rename the doc-base to gail-reference-3.0 to not conflict with
-      libgail3.0-doc
+  * debian/libcail3.0-doc.doc-base.cail-reference
+    + Rename the doc-base to cail-reference-3.0 to not conflict with
+      libcail3.0-doc
   * debian/copyright updated/rewritten
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sun, 07 Nov 2010 20:45:46 +0000
@@ -3183,7 +3183,7 @@ ctk+2.0 (2.16.1-1) experimental; urgency=low
   [ Sebastian Dröge ]
   * debian/libctk-directfb-2.0-0.symbols,
     debian/libctk2.0-0.symbols,
-    debian/libgail18.symbols,
+    debian/libcail18.symbols,
     debian/rules:
     + Add symbol files for GTK.
 
@@ -3212,8 +3212,8 @@ ctk+2.0 (2.16.1-1) experimental; urgency=low
         is included.
       + Add a debian/libctk2.0-0.install.opt which lists files from the
         optimised flavor to install in libctk2.0-0.
-      + Add a debian/libgail18.install.opt which lists files from the
-        optimised flavor to install in libgail18.
+      + Add a debian/libcail18.install.opt which lists files from the
+        optimised flavor to install in libcail18.
 
   [ Loic Minier ]
   * Only pass -j to the main make call, do not parallelize the debian/rules
@@ -3373,23 +3373,23 @@ ctk+2.0 (2.14.5-1) experimental; urgency=low
 
 ctk+2.0 (2.14.4-3) experimental; urgency=low
 
-  * libgail*.install: fix installation paths. Closes: #505105.
-  * Do not ship .la files for gail modules.
-  * Generate shlibs for libgail.
+  * libcail*.install: fix installation paths. Closes: #505105.
+  * Do not ship .la files for cail modules.
+  * Generate shlibs for libcail.
   * Bump shlibs version to 2.14.0.
-  * Do not install libgailutil in libctk2.0-0.
-  * Do not install ctk libs in libgail-dev.
+  * Do not install libcailutil in libctk2.0-0.
+  * Do not install ctk libs in libcail-dev.
   * Rework docs installation.
   * Add doc links where needed.
   * Install .devhelp files at the correct places. Closes: #504807.
   * Bump dependencies for the development package.
-  * Fix dependencies of gail packages.
-  * Don’t install libgail in the udeb.
+  * Fix dependencies of cail packages.
+  * Don’t install libcail in the udeb.
   * Stop shipping /usr/lib/pkgconfig/libctk-directfb-2.0-0/, nobody uses
     it.
-  * Remove versioned conflicts with libgail packages.
-  * Remove libgail18.shlibs.
-  * Put debugging symbols of libgail modules in libgail-dbg.
+  * Remove versioned conflicts with libcail packages.
+  * Remove libcail18.shlibs.
+  * Put debugging symbols of libcail modules in libcail-dbg.
   * dh_ctkmodules.in: fix a pod2man error.
   * Disable 006_proper-directfb-modules.patch.
   * Update 070_mandatory_relibtoolize.patch accordingly.
@@ -3398,8 +3398,8 @@ ctk+2.0 (2.14.4-3) experimental; urgency=low
 
 ctk+2.0 (2.14.4-2) experimental; urgency=low
 
-  * debian/control, debian/rules, debian/libgail*:
-  - split libgail packages
+  * debian/control, debian/rules, debian/libcail*:
+  - split libcail packages
 
  -- Gustavo Noronha Silva <kov@debian.org>  Wed, 05 Nov 2008 14:54:08 -0200
 
@@ -3425,7 +3425,7 @@ ctk+2.0 (2.14.4-1) experimental; urgency=low
   * debian/control.in:
   - added libjasper-dev to the Build-Depends, as GTK+ now supports
     JPEG2000
-  - make GTK+ packages conflict/replace with gail ones, since they are now
+  - make GTK+ packages conflict/replace with cail ones, since they are now
     included in GTK+
   * debian/patches/092_fix_printtest_include.patch:
   - new patch, to fix build problem in print test

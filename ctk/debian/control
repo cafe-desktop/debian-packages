@@ -250,7 +250,7 @@ Description: icon theme caching utility
  format of the cache files allows them to be mmap()ed shared between multiple
  applications, the overall memory consumption is reduced as well.
 
-Package: libgail-3-0
+Package: libcail-3-0
 Architecture: any
 Multi-Arch: same
 Depends: at-spi2-core,
@@ -265,16 +265,16 @@ Description: GNOME Accessibility Implementation Library -- shared libraries
  .
  This package contains the shared library.
 
-Package: libgail-3-dev
+Package: libcail-3-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
 Depends: libatk1.0-dev,
-         libgail-3-0 (= ${binary:Version}),
+         libcail-3-0 (= ${binary:Version}),
          pkg-config,
          ${misc:Depends},
          libctk-3-dev (= ${binary:Version})
-Suggests: libgail-3-doc
+Suggests: libcail-3-doc
 Description: GNOME Accessibility Implementation Library -- development files
  Gail implements ATK interfaces for GTK widgets which are dynamically
  loadable at runtime by a GTK application. Once loaded, those parts of
@@ -283,7 +283,7 @@ Description: GNOME Accessibility Implementation Library -- development files
  .
  This package contains the development files for Gail.
 
-Package: libgail-3-doc
+Package: libcail-3-doc
 Architecture: all
 Multi-Arch: foreign
 Section: doc
