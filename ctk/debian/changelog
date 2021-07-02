@@ -82,9 +82,9 @@ ctk+3.0 (3.24.24-1) unstable; urgency=medium
 
 ctk+3.0 (3.24.23-3) unstable; urgency=medium
 
-  * Preferentially build-depend on libcdk-pixbuf-2.0-dev.
+  * Preferentially build-depend on libgdk-pixbuf-2.0-dev.
     We don't need the deprecated Xlib integration that is also pulled in
-    by the older libcdk-pixbuf2.0-dev package (see #974870).
+    by the older libgdk-pixbuf2.0-dev package (see #974870).
   * Standards-Version: 4.5.1 (no changes required)
   * d/copyright: Consolidate similar licenses into one Files stanza
   * d/ctk-update-icon-cache.preinst: Remove.
@@ -150,7 +150,7 @@ ctk+3.0 (3.24.20-1) unstable; urgency=medium
   [ Simon McVittie ]
   * New upstream release
   * Depend on librsvg2-common for tests.
-    The unit tests expect that cdk-pixbuf can load SVG files. This is
+    The unit tests expect that gdk-pixbuf can load SVG files. This is
     provided by librsvg2-common, which used to be pulled in by
     adwaita-icon-theme. (Closes: #959390)
 
@@ -214,7 +214,7 @@ ctk+3.0 (3.24.16-1) unstable; urgency=medium
     Add patch to make valgrind suppressions match Debian libraries
   * Update forwarding status for some patches that were sent upstream
   * d/p/Don-t-test-default-constructed-GdkPixbuf-properties.patch:
-    Drop patch. Build-depend on cdk-pixbuf 2.40 instead of working around
+    Drop patch. Build-depend on gdk-pixbuf 2.40 instead of working around
     a bug in older versions.
   * d/rules: Mark some reftests as allowed to fail.
     These reftests are sensitive to the build environment (exact versions
@@ -559,7 +559,7 @@ ctk+3.0 (3.24.0-2) unstable; urgency=medium
   * debian/libctk-3-0.symbols: ctk_color_picker_kwin_new() is new in
     3.24.0, not 3.24.3 which doesn't exist yet
   * d/p/Don-t-test-default-constructed-GdkPixbuf-properties.patch:
-    Work around a cdk-pixbuf bug that caused test failures
+    Work around a gdk-pixbuf bug that caused test failures
     (Closes: #908439)
   * d/gbp.conf: Don't number patches
 
@@ -1653,7 +1653,7 @@ ctk+3.0 (3.13.8-1) experimental; urgency=medium
   * Update debian/libctk-3-0.symbols with many additions
   * New upstream development release (3.13.8)
   * Update build-dependencies according to configure.ac changes:
-    - Bump libcdk-pixbuf2.0-dev to (>= 2.30.0)
+    - Bump libgdk-pixbuf2.0-dev to (>= 2.30.0)
     - Bump libwayland-dev to (>= 1.5.91)
   * debian/patches/032_mips_treeview_row_separator_height.patch:
     - massage the patch into applying again.
@@ -2180,7 +2180,7 @@ ctk+3.0 (3.3.16-1) experimental; urgency=low
   * debian/rules: Bump SHVER to 3.3.16.
   * debian/control.in:
     - Bump (Build-)Depends on libglib2.0-dev to (>= 2.31.18).
-    - Bump (Build-)Depends on libcdk-pixbuf2.0-dev to (>= 2.25.2).
+    - Bump (Build-)Depends on libgdk-pixbuf2.0-dev to (>= 2.25.2).
     - Drop Depends on libxml2-utils from libctk-3-dev as ctk-builder-convert
       has been removed.
     - Drop Recommends on python and debhelper from libctk-3-dev since it no
@@ -2409,7 +2409,7 @@ ctk+3.0 (3.0.8-1) unstable; urgency=low
   * Make the -dev package depend on the gir package.
   * New upstream release.
   * Drop the mimeinfo.cache from the udeb, it’s been moved to
-    cdk-pixbuf.
+    gdk-pixbuf.
   * Upload to unstable; drop check-dist include.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 18:29:44 +0200
@@ -2480,7 +2480,7 @@ ctk+3.0 (3.0.0-1) experimental; urgency=low
   * New upstream release
   * Rename binary packages to new so naming
   * debian/control:
-    - Bump build-depends on libglib2.0-dev, libcdk-pixbuf2.0-dev, libatk1.0-dev,
+    - Bump build-depends on libglib2.0-dev, libgdk-pixbuf2.0-dev, libatk1.0-dev,
       gobject-introspection
   * debian/libgail-3-0.symbols:
   * debian/libctk-3-0.symbols:
@@ -2697,7 +2697,7 @@ ctk+2.0 (2.21.5-1) experimental; urgency=low
     + debian/control.in,
       debian/rules,
       debian/*:
-      - Remove all mentions of cdk-pixbuf and (build-) depend on it.
+      - Remove all mentions of gdk-pixbuf and (build-) depend on it.
     + debian/libctk2.0-0.postinst.in,
       debian/libctk2.0-0.postrm.in,
       debian/libctk2.0-0.triggers.in,
@@ -2705,7 +2705,7 @@ ctk+2.0 (2.21.5-1) experimental; urgency=low
       - Handle immodules by triggers and deprecate dh_ctkmodules.
     + debian/patches/*:
       - Refreshed.
-      - Remove cdk-pixbuf and immodule patches.
+      - Remove gdk-pixbuf and immodule patches.
     + debian/rules,
       debian/libctk2.0-0.symbols:
       - Update for new API symbols.
@@ -3344,7 +3344,7 @@ ctk+2.0 (2.14.7-2) experimental; urgency=low
 ctk+2.0 (2.14.7-1) experimental; urgency=low
 
   [ Loic Minier ]
-  * Don't purge /etc/ctk-2.0/cdk-pixbuf.loaders and /etc/ctk-2.0/ctk.immodules
+  * Don't purge /etc/ctk-2.0/gdk-pixbuf.loaders and /etc/ctk-2.0/ctk.immodules
     during first configuration.
 
   [ Sebastian Dröge ]
@@ -3430,7 +3430,7 @@ ctk+2.0 (2.14.4-1) experimental; urgency=low
   * debian/patches/092_fix_printtest_include.patch:
   - new patch, to fix build problem in print test
   * debian/patches/071_jasper_link_fix.patch:
-  - make cdk-pixbuf-csource link correctly with libjasper
+  - make gdk-pixbuf-csource link correctly with libjasper
   * debian/rules, debian/control:
   - newer libcairo2-dev contains everything needed to build the directfb
     target, so disable building with the dummy libcairo-directfb2-dev
@@ -3548,7 +3548,7 @@ ctk+2.0 (2.12.9-4) unstable; urgency=low
   * Fix broken second dh_strip invocation which was not only acting on the
     udeb but also on binary packages (-s -pUDEB should have been -pUDEB).
   * Update patch 021_loader-files-d to use PIXBUF_FILES_LIBDIR which is
-    defined in cdk-pixbuf/Makefile.am, similarly to PIXBUF_LIBDIR, and based
+    defined in gdk-pixbuf/Makefile.am, similarly to PIXBUF_LIBDIR, and based
     on the newly defined loaderfilesdir, similar to loaderdir; update
     070_mandatory-relibtoolize.
   * New patch, 022_module-files-append-compat-module-files-d, prefer
@@ -3727,7 +3727,7 @@ ctk+2.0 (2.12.1-3) unstable; urgency=low
   * 003_cdk.pc_privates.patch: generate correct Requires.private for
     cdk-2.0.pc containing all necessary dependencies for static linking.
   * 006_proper-directfb-modules.patch: refreshed.
-  * 010_cdkpixbuf_-lm.patch: fix cdk-pixbuf-2.0.pc by adding back -lm,
+  * 010_cdkpixbuf_-lm.patch: fix gdk-pixbuf-2.0.pc by adding back -lm,
     which is required by some macros. Closes: #451512.
   * 070_mandatory-relibtoolize.patch: regenerated.
   * rules: copy the extraneous libraries generated in the static build
@@ -4320,9 +4320,9 @@ ctk+2.0 (2.10.1-2) experimental; urgency=low
   * Drop obsolete scary warning in 2.10.1-1.
   * Drop update-ctk-immodules and update-cdkpixbuf-loaders calls from
     libctk2.0-0's postinst, this isn't needed for backwards compatibility.
-  * Use /usr/lib/libctk2.0-0/cdk-pixbuf-query-loaders and
+  * Use /usr/lib/libctk2.0-0/gdk-pixbuf-query-loaders and
     /usr/lib/libctk2.0-0/ctk-query-immodules-2.0 instead of
-    /usr/bin/cdk-pixbuf-query-loaders and /usr/bin/ctk-query-immodules-2.0 in
+    /usr/bin/gdk-pixbuf-query-loaders and /usr/bin/ctk-query-immodules-2.0 in
     dh_ctkmodules.
 
  -- Loic Minier <lool@dooz.org>  Tue, 19 Sep 2006 16:40:22 +0200
@@ -4400,7 +4400,7 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
     have been converted.
   * In the same spirit, cdkconfig.h is in /usr/lib/ctk-2.0/include/directfb;
     to use it, prepend -I/usr/lib/ctk-2.0/include/directfb to CFLAGS.
-  * Fix generation of /etc/ctk-2.0/cdk-pixbuf.loaders for the udeb.
+  * Fix generation of /etc/ctk-2.0/gdk-pixbuf.loaders for the udeb.
     (Closes: #382435)
   * Build-depend on libcairo-directfb2-dev >= 1.2.4-2 to get PDF/PS support in
     the directfb flavor of libcairo.
@@ -4433,7 +4433,7 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
       /usr/lib/ctk-2.0/<BINARY_VERSION>/loader-files.d/libctk2.0-0.loaders
       for the shared library and libctk-directfb-2.0-0-udeb.loaders for the
       udeb.
-    - Continue generating /etc/ctk-2.0/cdk-pixbuf.loaders until packages are
+    - Continue generating /etc/ctk-2.0/gdk-pixbuf.loaders until packages are
       updated.
     - This particular patch uses two ugly workarounds and needs work before
       being sent upstream.
@@ -4441,7 +4441,7 @@ ctk+2.0 (2.10.1-1) experimental; urgency=low
     modules and GdkPixbuf loaders; it will still add a dependency on the
     binary version of Gtk for other modules.
   * Make use of the new dh_ctkmodules during the build (override the path to
-    ctk-query-immodules-2.0 and cdk-pixbuf-query-loaders.
+    ctk-query-immodules-2.0 and gdk-pixbuf-query-loaders.
   * Add ${misc:Depends} to ctk2-engines-pixbuf.
 
  -- Loic Minier <lool@dooz.org>  Tue, 19 Sep 2006 15:13:38 +0200
@@ -4453,8 +4453,8 @@ ctk+2.0 (2.8.20-2) unstable; urgency=low
     Davide Viti. (Closes: #386860)
   * Fix typo, install-dfb depends on build-dfb, not build-shared.
   * Fix typo (DFB_PKGFIR versus DFB_PKGDIR), use the BUILD_DFB_DIR version of
-    cdk-pixbuf-query-loaders, and set LD_LIBRARY_PATH to the udeb's /usr/lib;
-    should fix the empty /etc/ctk-2.0/cdk-pixbuf.loaders. (Closes: #382435)
+    gdk-pixbuf-query-loaders, and set LD_LIBRARY_PATH to the udeb's /usr/lib;
+    should fix the empty /etc/ctk-2.0/gdk-pixbuf.loaders. (Closes: #382435)
   * Ship all engines of the DirectFB build in the udeb, that is
     engines/libpixmap.so.
 
@@ -5077,7 +5077,7 @@ ctk+2.0 (2.4.3-3) unstable; urgency=low
 ctk+2.0 (2.4.3-2) unstable; urgency=low
 
   * debian/libctk2.0-bin.files:
-    - moved cdk-pixbuf-query-loader and ctk-query-immodules-2.0 manpages
+    - moved gdk-pixbuf-query-loader and ctk-query-immodules-2.0 manpages
       to libctk2.0-bin. (Closes: #257399).
   * debian/libctk2.0-doc.doc-base.ctk-faq,
     debian/libctk2.0-doc.doc-base.ctk-tutorial:
@@ -5599,7 +5599,7 @@ ctk+2.0 (2.0.4-1) unstable; urgency=low
   * New upstream release.
     - should be fixed in this release. (closes: Bug#149667)
     - now it's not linked to the Pango docs (closes: Bug#149143)
-  * debian/libctk2.0-doc.doc-base.{cdk,cdk-pixbuf,ctk,ctk-faq,ctk-tutorial}:
+  * debian/libctk2.0-doc.doc-base.{cdk,gdk-pixbuf,ctk,ctk-faq,ctk-tutorial}:
     add a new line before Format: (closes: Bug#149548, Bug#150043)
 
  -- Akira TAGOH <tagoh@debian.org>  Sun, 16 Jun 2002 05:16:29 +0900
