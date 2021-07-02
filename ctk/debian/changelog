@@ -302,11 +302,11 @@ ctk+3.0 (3.24.11-1) unstable; urgency=medium
     - Don't try to use dh_missing on debian/install/udeb if we didn't do
       the udeb build
   * API documentation:
-    - Install documentation in /usr/share/ctk-doc, with symlinks in /u/s/doc.
-      ctk-doc documentation is technically a functional interface
+    - Install documentation in /usr/share/gtk-doc, with symlinks in /u/s/doc.
+      gtk-doc documentation is technically a functional interface
       (Policy §12.3), because other packages can build-depend on it and
       use it to fix cross-references.
-    - Install symlinks to ctk-doc in both /usr/share/doc/libctk-3-doc
+    - Install symlinks to gtk-doc in both /usr/share/doc/libctk-3-doc
       (traditional location) and /usr/share/doc/libctk-3-dev ("main package"
       for developer documentation, as recommended in Policy §12.3)
   * Refer to GTK rather than GTK+ in packaging files.
@@ -928,8 +928,8 @@ ctk+3.0 (3.22.9-1) unstable; urgency=medium
 ctk+3.0 (3.22.8-1) unstable; urgency=medium
 
   * New upstream release.
-  * Stop patching ctk-doc.make and instead run ctkdocize via the upstream
-    provided autogen.sh on autoreconf. The ctk-doc-tools version in Debian has
+  * Stop patching gtk-doc.make and instead run ctkdocize via the upstream
+    provided autogen.sh on autoreconf. The gtk-doc-tools version in Debian has
     been fixed to properly handle the installation of HTML images for
     out-of-tree builds.
 
@@ -1754,7 +1754,7 @@ ctk+3.0 (3.11.7-1) experimental; urgency=medium
 
   * New upstream release.
   * Bump build-dependencies according to configure.ac:
-    - glib 2.39.5 and ctk-doc 1.20
+    - glib 2.39.5 and gtk-doc 1.20
   * Use quilt to refresh all patches.
   * Update debian/libctk-3-0.symbols
 
@@ -1778,7 +1778,7 @@ ctk+3.0 (3.11.5-1) experimental; urgency=medium
       were not exported in the headers and were only used internally by
       cdk.
   * debian/patches/080_disable-parallel-docs-build.patch:
-     + Dropped, ctk-doc 1.20 works fine with parallel builds.
+     + Dropped, gtk-doc 1.20 works fine with parallel builds.
   * debian/rules:
      + Break colord<->ctk+ loop when bootstrapping. Thanks Daniel Schepler.
        Closes: #738603.
@@ -2297,7 +2297,7 @@ ctk+3.0 (3.2.2-1) experimental; urgency=low
 ctk+3.0 (3.2.1-2) experimental; urgency=low
 
   * debian/control.in:
-    - Move ctk-doc-tools from Build-Depends-Indep to Build-Depends as it is
+    - Move gtk-doc-tools from Build-Depends-Indep to Build-Depends as it is
       required by autoreconf. Also bump it to (>= 1.11).
 
  -- Michael Biebl <biebl@debian.org>  Sat, 22 Oct 2011 00:30:44 +0200
@@ -2314,7 +2314,7 @@ ctk+3.0 (3.2.1-1) experimental; urgency=low
   * d/p/003_cdk.pc_privates.patch: Refreshed
   * d/p/043_notebook_scroll.patch: Refreshed
   * d/p/044_tracker_fts.patch: Refreshed
-  * debian/rules: Enable ctk-doc build with the shared build
+  * debian/rules: Enable gtk-doc build with the shared build
 
   [ Michael Biebl ]
   * debian/watch:
@@ -2818,7 +2818,7 @@ ctk+2.0 (2.19.7-3) experimental; urgency=low
 
   * debian/control.in:
     - Build depend on xsltproc, needed to generate the mime cache.
-      It was brought indirectly by ctk-doc-tools, but that's on
+      It was brought indirectly by gtk-doc-tools, but that's on
       Build-Depends-Indep which isn't enough.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Mar 2010 15:30:32 +0100
@@ -3968,7 +3968,7 @@ ctk+2.0 (2.11.2-1) experimental; urgency=low
       and doesn't seem critical; add a description and cross-refs.
     - Update relibtoolizing patch, 070_mandatory-relibtoolize.
     - Bump up build-deps to libglib2.0-dev >= 2.13.1, libpango1.0-dev >=
-      1.15.3, ctk-doc-tools >= 1.6.
+      1.15.3, gtk-doc-tools >= 1.6.
     - Build-dep on libxcomposite-dev for composite support.
     - Build-dep on libxdamage-dev for damage support.
     - Enable test print backend by passing --enable-test-print-backend to
@@ -5309,7 +5309,7 @@ ctk+2.0 (2.2.2-3) unstable; urgency=low
       applications.
     - 001_ctk+-debian-docfix-dtds.patch: applied to use the local DTD.
   * debian/control:
-    - added Build-Depends-Indep: ctk-doc-tools, docbook-xml to re-generate the
+    - added Build-Depends-Indep: gtk-doc-tools, docbook-xml to re-generate the
       fixed documents.
 
  -- Akira TAGOH <tagoh@debian.org>  Thu,  7 Aug 2003 01:42:46 +0900
@@ -5380,7 +5380,7 @@ ctk+2.0 (2.2.1-4) unstable; urgency=low
     - bumped Standards-Version to 3.5.9.
     - changed a section for libctk2.0-dev to libdevel.
   * debian/rules:
-    - fixed the symlinks on /usr/share/ctk-doc/html. (closes: Bug#183377)
+    - fixed the symlinks on /usr/share/gtk-doc/html. (closes: Bug#183377)
   * debian/compat:
     - use it instead of DH_COMPAT.
 
@@ -5398,7 +5398,7 @@ ctk+2.0 (2.2.1-3) unstable; urgency=low
       Thanks to Marcelo E. Magallon <mmagallo@debian.org>
     - mention ctk-key-theme-name and gnome-settings-daemon.
   * debian/rules:
-    - create the symlinks in /usr/share/ctk-doc
+    - create the symlinks in /usr/share/gtk-doc
 
  -- Akira TAGOH <tagoh@debian.org>  Mon,  3 Mar 2003 01:35:04 +0900
 

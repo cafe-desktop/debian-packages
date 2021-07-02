@@ -1,7 +1,7 @@
-usr/share/ctk-doc/html/cdk3 usr/share/doc/@DEV_PKG@/cdk3
-usr/share/ctk-doc/html/cdk3 usr/share/doc/@DOC_PKG@/cdk3
-usr/share/ctk-doc/html/ctk3 usr/share/doc/@DEV_PKG@/ctk3
-usr/share/ctk-doc/html/ctk3 usr/share/doc/@DOC_PKG@/ctk3
+usr/share/gtk-doc/html/cdk3 usr/share/doc/@DEV_PKG@/cdk3
+usr/share/gtk-doc/html/cdk3 usr/share/doc/@DOC_PKG@/cdk3
+usr/share/gtk-doc/html/ctk3 usr/share/doc/@DEV_PKG@/ctk3
+usr/share/gtk-doc/html/ctk3 usr/share/doc/@DOC_PKG@/ctk3
 usr/share/doc/libatk1.0-doc/atk usr/share/doc/@DEV_PKG@/atk
 usr/share/doc/libatk1.0-doc/atk usr/share/doc/@DOC_PKG@/atk
 usr/share/doc/libglib2.0-doc/glib usr/share/doc/@DEV_PKG@/glib

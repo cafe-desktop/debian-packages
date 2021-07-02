@@ -95,7 +95,7 @@ configure_flags_common = \
 configure_flags_deb = \
 	--enable-broadway-backend \
 	--enable-x11-backend \
-	--enable-ctk-doc \
+	--enable-gtk-doc \
 	--enable-man \
 	--enable-shared \
 	--enable-introspection \
@@ -116,7 +116,7 @@ configure_flags_deb += --disable-wayland-backend
 endif
 
 ifeq ($(filter %-doc,$(built_binaries)),)
-configure_flags_deb += --disable-ctk-doc --disable-man
+configure_flags_deb += --disable-gtk-doc --disable-man
 endif
 
 configure_flags_udeb = \
