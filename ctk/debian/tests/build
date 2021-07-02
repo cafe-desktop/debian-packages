@@ -21,14 +21,14 @@ else
     CROSS_COMPILE=
 fi
 
-cat <<EOF > gtktest.c
+cat <<EOF > ctktest.c
 #include <glib.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 static gboolean
 do_quit (gpointer user_data)
 {
-    gtk_main_quit ();
+    ctk_main_quit ();
     return G_SOURCE_REMOVE;
 }
 
@@ -36,23 +36,23 @@ int main(int argc, char **argv)
 {
     GtkWidget *dialog;
 
-    gtk_init (&argc, &argv);
-    dialog = gtk_dialog_new_with_buttons ("Test dialog", NULL,
+    ctk_init (&argc, &argv);
+    dialog = ctk_dialog_new_with_buttons ("Test dialog", NULL,
                                           GTK_DIALOG_MODAL,
                                           "OK", GTK_RESPONSE_ACCEPT,
                                           NULL);
-    gtk_widget_show_all (dialog);
+    ctk_widget_show_all (dialog);
     g_timeout_add_seconds (1, do_quit, NULL);
-    gtk_main();
+    ctk_main();
     return 0;
 }
 EOF
 
 # Deliberately word-splitting, that's how pkg-config works:
 # shellcheck disable=SC2046
-"${CROSS_COMPILE}gcc" -o gtktest gtktest.c $("${CROSS_COMPILE}pkg-config" --cflags --libs gtk+-3.0)
+"${CROSS_COMPILE}gcc" -o ctktest ctktest.c $("${CROSS_COMPILE}pkg-config" --cflags --libs ctk+-3.0)
 echo "build: OK"
-[ -x gtktest ]
+[ -x ctktest ]
 xvfb-run -a -s "-screen 0 1024x768x24" \
-./gtktest
+./ctktest
 echo "run: OK"

@@ -19,7 +19,7 @@ env \
     REFTEST_MODULE_DIR="${builddir}" \
     G_TEST_SRCDIR="${srcdir}" \
     G_TEST_BUILDDIR="${builddir}" \
-./gtk-reftest \
+./ctk-reftest \
     -o "${builddir}/output" \
     -d "${srcdir}" \
     -k \

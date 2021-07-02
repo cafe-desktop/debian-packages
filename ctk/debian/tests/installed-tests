@@ -11,10 +11,10 @@ export GIO_USE_VOLUME_MONITOR=unix
 
 export XDG_RUNTIME_DIR="$AUTOPKGTEST_TMP"
 
-tests=$(gnome-desktop-testing-runner -l gtk+ |
+tests=$(gnome-desktop-testing-runner -l ctk+ |
     cut -f1 -d' ' |
-    grep -v '^gtk./a11ystate.test$' |
-    grep -v '^gtk./reftests')
+    grep -v '^ctk./a11ystate.test$' |
+    grep -v '^ctk./reftests')
 
 exec dbus-run-session -- \
 xvfb-run -a -s "-screen 0 1024x768x24" \

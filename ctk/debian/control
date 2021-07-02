@@ -1,4 +1,4 @@
-Source: gtk+3.0
+Source: ctk+3.0
 Section: libs
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
@@ -13,7 +13,7 @@ Build-Depends: adwaita-icon-theme <!nocheck>,
                gnome-pkg-tools (>= 0.11),
                gobject-introspection (>= 1.41.3),
                gsettings-desktop-schemas <!nocheck>,
-               gtk-doc-tools (>= 1.20),
+               ctk-doc-tools (>= 1.20),
                libatk-bridge2.0-dev (>= 2.15.1),
                libatk1.0-dev (>= 2.35.1),
                libcairo2-dev (>= 1.14.0),
@@ -58,11 +58,11 @@ Build-Depends-Indep: docbook-xml,
                      xsltproc
 Rules-Requires-Root: no
 Standards-Version: 4.5.1
-Vcs-Browser: https://salsa.debian.org/gnome-team/gtk3
-Vcs-Git: https://salsa.debian.org/gnome-team/gtk3.git
-Homepage: https://www.gtk.org/
+Vcs-Browser: https://salsa.debian.org/gnome-team/ctk3
+Vcs-Git: https://salsa.debian.org/gnome-team/ctk3.git
+Homepage: https://www.ctk.org/
 
-Package: libgtk-3-0
+Package: libctk-3-0
 Architecture: any
 Multi-Arch: same
 Depends: adwaita-icon-theme,
@@ -70,9 +70,9 @@ Depends: adwaita-icon-theme,
          shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends},
-         libgtk-3-common (>= ${source:Version})
-Provides: gtk3-binver-3.0.0
-Recommends: libgtk-3-bin,
+         libctk-3-common (>= ${source:Version})
+Provides: ctk3-binver-3.0.0
+Recommends: libctk-3-bin,
             librsvg2-common
 Suggests: gvfs,
 Description: GTK graphical user interface library
@@ -83,14 +83,14 @@ Description: GTK graphical user interface library
  .
  This package contains the shared libraries.
 
-Package: libgtk-3-0-udeb
+Package: libctk-3-0-udeb
 Build-Profiles: <!noudeb>
 Package-Type: udeb
 Section: debian-installer
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Provides: gtk3-binver-3.0.0
+Provides: ctk3-binver-3.0.0
 Description: GTK graphical user interface library - minimal runtime
  This is a udeb, or a microdeb, for the debian-installer.
  .
@@ -102,12 +102,12 @@ Description: GTK graphical user interface library - minimal runtime
  This package contains the minimal runtime library using X11 needed
  by the Debian installer.
 
-Package: libgtk-3-common
+Package: libctk-3-common
 Section: misc
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Recommends: libgtk-3-0
+Recommends: libctk-3-0
 Description: common files for the GTK graphical user interface library
  GTK is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK is suitable
@@ -116,17 +116,17 @@ Description: common files for the GTK graphical user interface library
  .
  This package contains the common files which the libraries need.
 
-Package: libgtk-3-bin
+Package: libctk-3-bin
 Section: misc
 Architecture: any
 Multi-Arch: foreign
-Depends: gtk-update-icon-cache,
+Depends: ctk-update-icon-cache,
          ${misc:Depends},
          ${shlibs:Depends},
-         libgtk-3-common (>= ${source:Version}),
-         libgtk-3-0 (>= ${source:Version})
-Breaks: gtk-3-examples (<< 3.24.13)
-Replaces: gtk-3-examples (<< 3.24.13)
+         libctk-3-common (>= ${source:Version}),
+         libctk-3-0 (>= ${source:Version})
+Breaks: ctk-3-examples (<< 3.24.13)
+Replaces: ctk-3-examples (<< 3.24.13)
 Description: programs for the GTK graphical user interface library
  GTK is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK is suitable
@@ -136,11 +136,11 @@ Description: programs for the GTK graphical user interface library
  This package contains the utilities which are used by the libraries
  and other packages.
 
-Package: libgtk-3-dev
+Package: libctk-3-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: gir1.2-gtk-3.0 (= ${binary:Version}),
+Depends: gir1.2-ctk-3.0 (= ${binary:Version}),
          libatk-bridge2.0-dev (>= 2.15.1),
          libatk1.0-dev (>= 2.35.1),
          libcairo2-dev (>= 1.14.0),
@@ -166,9 +166,9 @@ Depends: gir1.2-gtk-3.0 (= ${binary:Version}),
          wayland-protocols (>= 1.17) [linux-any],
          ${misc:Depends},
          ${shlibs:Depends},
-         libgtk-3-common,
-         libgtk-3-0 (= ${binary:Version})
-Suggests: libgtk-3-doc
+         libctk-3-common,
+         libctk-3-0 (= ${binary:Version})
+Suggests: libctk-3-doc
 Description: development files for the GTK library
  GTK is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK is suitable
@@ -178,7 +178,7 @@ Description: development files for the GTK library
  This package contains the header and development files which are
  needed for building GTK applications.
 
-Package: libgtk-3-doc
+Package: libctk-3-doc
 Section: doc
 Architecture: all
 Multi-Arch: foreign
@@ -194,14 +194,14 @@ Description: documentation for the GTK graphical user interface library
  suites.
  .
  This package contains the HTML documentation for the GTK library
- in /usr/share/doc/libgtk-3-doc/ .
+ in /usr/share/doc/libctk-3-doc/ .
 
-Package: gtk-3-examples
+Package: ctk-3-examples
 Section: x11
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         libgtk-3-0 (= ${binary:Version})
+         libctk-3-0 (= ${binary:Version})
 Description: example files for GTK 3
  GTK is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK is suitable
@@ -211,14 +211,14 @@ Description: example files for GTK 3
  This package contains the example files and a demonstration program
  for GTK3. It also contains the installed tests.
 
-Package: gir1.2-gtk-3.0
+Package: gir1.2-ctk-3.0
 Section: introspection
 Architecture: any
 Multi-Arch: same
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-         libgtk-3-common
+         libctk-3-common
 Breaks: python-gi (<< 3.18),
         python3-gi (<< 3.18)
 Provides: gir1.2-gdk-3.0 (= ${binary:Version}),
@@ -232,20 +232,20 @@ Description: GTK graphical user interface library -- gir bindings
  This package can be used by other packages using the GIRepository format to
  generate dynamic bindings.
 
-Package: gtk-update-icon-cache
+Package: ctk-update-icon-cache
 Section: misc
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Breaks: libgtk-3-bin (<< 3.20.6-1),
-        libgtk2.0-bin (<< 2.24.30-2)
-Replaces: libgtk-3-bin (<< 3.20.6-1),
-          libgtk2.0-bin (<< 2.24.30-2)
+Breaks: libctk-3-bin (<< 3.20.6-1),
+        libctk2.0-bin (<< 2.24.30-2)
+Replaces: libctk-3-bin (<< 3.20.6-1),
+          libctk2.0-bin (<< 2.24.30-2)
 Description: icon theme caching utility
- gtk-update-icon-cache creates mmap()able cache files for icon themes.
+ ctk-update-icon-cache creates mmap()able cache files for icon themes.
  .
- GTK can use the cache files created by gtk-update-icon-cache to avoid a lot
+ GTK can use the cache files created by ctk-update-icon-cache to avoid a lot
  of system call and disk seek overhead when the application starts. Since the
  format of the cache files allows them to be mmap()ed shared between multiple
  applications, the overall memory consumption is reduced as well.
@@ -256,7 +256,7 @@ Multi-Arch: same
 Depends: at-spi2-core,
          ${misc:Depends},
          ${shlibs:Depends},
-         libgtk-3-0 (= ${binary:Version})
+         libctk-3-0 (= ${binary:Version})
 Description: GNOME Accessibility Implementation Library -- shared libraries
  Gail implements ATK interfaces for GTK widgets which are dynamically
  loadable at runtime by a GTK application. Once loaded, those parts of
@@ -273,7 +273,7 @@ Depends: libatk1.0-dev,
          libgail-3-0 (= ${binary:Version}),
          pkg-config,
          ${misc:Depends},
-         libgtk-3-dev (= ${binary:Version})
+         libctk-3-dev (= ${binary:Version})
 Suggests: libgail-3-doc
 Description: GNOME Accessibility Implementation Library -- development files
  Gail implements ATK interfaces for GTK widgets which are dynamically

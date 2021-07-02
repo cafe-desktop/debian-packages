@@ -23,23 +23,23 @@ LIBDIR := usr/lib/$(DEB_HOST_MULTIARCH)
 GTK_BINARY_VERSION := 3.0.0
 
 # Gtk binary version virtual Provide
-GTK_BINVER_DEP := gtk$(APIVER)-binver-$(GTK_BINARY_VERSION)
+GTK_BINVER_DEP := ctk$(APIVER)-binver-$(GTK_BINARY_VERSION)
 
 # relative base directory for configuration
-CONFDIR := etc/gtk-3.0
+CONFDIR := etc/ctk-3.0
 
 # relative base directory for all types of modules
-MODULES_BASE_PATH := $(LIBDIR)/gtk-3.0/$(GTK_BINARY_VERSION)
-OLD_MODULES_BASE_PATH := usr/lib/gtk-3.0/$(GTK_BINARY_VERSION)
+MODULES_BASE_PATH := $(LIBDIR)/ctk-3.0/$(GTK_BINARY_VERSION)
+OLD_MODULES_BASE_PATH := usr/lib/ctk-3.0/$(GTK_BINARY_VERSION)
 
 # package names
-SHARED_PKG := libgtk-$(APIVER)-$(SONAME)
-COMMON_PKG := libgtk-$(APIVER)-common
-DEV_PKG := libgtk-$(APIVER)-dev
+SHARED_PKG := libctk-$(APIVER)-$(SONAME)
+COMMON_PKG := libctk-$(APIVER)-common
+DEV_PKG := libctk-$(APIVER)-dev
 UDEB_PKG := $(SHARED_PKG)-udeb
-DOC_PKG := libgtk-$(APIVER)-doc
-BIN_PKG := libgtk-$(APIVER)-bin
-EXAMPLES_PKG := gtk-$(APIVER)-examples
+DOC_PKG := libctk-$(APIVER)-doc
+BIN_PKG := libctk-$(APIVER)-bin
+EXAMPLES_PKG := ctk-$(APIVER)-examples
 
 # files larger than 4k in size will be compressed by dh_compress
 # so append a .gz suffix to avoid dangling symlinks
@@ -49,7 +49,7 @@ README := README$(shell find -maxdepth 1 -size +4k -name README -exec echo ".gz"
 # Avoid test failures on buildd environments
 export HOME=$(CURDIR)/debian/build
 export XDG_RUNTIME_DIR=$(HOME)
-# So that gsettings can find the (uninstalled) gtk schemas
+# So that gsettings can find the (uninstalled) ctk schemas
 export XDG_DATA_DIRS=/usr/share:$(CURDIR)/debian/build
 # Put these back to their defaults if we are not running with a clean
 # environment, so that they are based on the temporary $HOME above
@@ -95,7 +95,7 @@ configure_flags_common = \
 configure_flags_deb = \
 	--enable-broadway-backend \
 	--enable-x11-backend \
-	--enable-gtk-doc \
+	--enable-ctk-doc \
 	--enable-man \
 	--enable-shared \
 	--enable-introspection \
@@ -116,7 +116,7 @@ configure_flags_deb += --disable-wayland-backend
 endif
 
 ifeq ($(filter %-doc,$(built_binaries)),)
-configure_flags_deb += --disable-gtk-doc --disable-man
+configure_flags_deb += --disable-ctk-doc --disable-man
 endif
 
 configure_flags_udeb = \
@@ -143,26 +143,26 @@ override_dh_clean: debian/control
 	# The build system does not automatically update the GResource files
 	# when resources change. Force an update in case we ship a patch which
 	# modifies the theme CSS files.
-	rm -f gtk/gtkresources.c gtk/gtkresources.h
-	rm -f gtk/theme/Adwaita/gtk-contained.css
-	rm -f gtk/theme/Adwaita/gtk-contained-dark.css
-	rm -f gtk/theme/HighContrast/gtk-contained.css
-	rm -f gtk/theme/HighContrast/gtk-contained-inverse.css
+	rm -f ctk/ctkresources.c ctk/ctkresources.h
+	rm -f ctk/theme/Adwaita/ctk-contained.css
+	rm -f ctk/theme/Adwaita/ctk-contained-dark.css
+	rm -f ctk/theme/HighContrast/ctk-contained.css
+	rm -f ctk/theme/HighContrast/ctk-contained-inverse.css
 	# We just don't want to have to review these...
-	rm -f demos/gtk-demo/demo_resources.[ch]
+	rm -f demos/ctk-demo/demo_resources.[ch]
 	rm -f demos/icon-browser/resources.[ch]
 	rm -f demos/widget-factory/widget_factory_resources.[ch]
-	rm -f docs/reference/gtk/getting_started.xml
+	rm -f docs/reference/ctk/getting_started.xml
 	rm -f examples/application*/resources.[ch]
 	rm -f gdk/gdkenumtypes.[ch]
 	rm -f gdk/gdkmarshalers.[ch]
 	rm -f gdk/gdkresources.[ch]
-	rm -f gtk/gtkmarshalers.[ch]
-	rm -f gtk/gtkprivatetypebuiltins.[ch]
-	rm -f gtk/gtkresources.[ch]
-	rm -f gtk/gtktypebuiltins.[ch]
+	rm -f ctk/ctkmarshalers.[ch]
+	rm -f ctk/ctkprivatetypebuiltins.[ch]
+	rm -f ctk/ctkresources.[ch]
+	rm -f ctk/ctktypebuiltins.[ch]
 	rm -f testsuite/css/style/resources.[ch]
-	rm -f testsuite/gtk/gtkresources.[ch]
+	rm -f testsuite/ctk/ctkresources.[ch]
 	dh_clean
 
 # Add dependencies to generate files from the debian/*.in ones
@@ -188,8 +188,8 @@ ifneq ($(filter %-udeb,$(built_binaries)),)
 endif
 
 override_dh_auto_build:
-	( cd gtk/theme/Adwaita; ./parse-sass.sh )
-	( cd gtk/theme/HighContrast; ./parse-sass.sh )
+	( cd ctk/theme/Adwaita; ./parse-sass.sh )
+	( cd ctk/theme/HighContrast; ./parse-sass.sh )
 	dh_auto_build --builddirectory=debian/build/deb
 ifneq ($(filter %-udeb,$(built_binaries)),)
 	dh_auto_build --builddirectory=debian/build/udeb
@@ -207,9 +207,9 @@ ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	touch testsuite/reftests/quit-mnemonic.ui.known_fail
 	touch testsuite/reftests/symbolic-icon-translucent-color.ui.known_fail
 	touch testsuite/reftests/window-height-for-width.ui.known_fail
-	# So that gsettings can find the (uninstalled) gtk schemas
+	# So that gsettings can find the (uninstalled) ctk schemas
 	mkdir -p debian/build/glib-2.0/schemas/
-	cp gtk/org.gtk.* debian/build/glib-2.0/schemas/
+	cp ctk/org.ctk.* debian/build/glib-2.0/schemas/
 	glib-compile-schemas debian/build/glib-2.0/schemas/
 	# Remove LD_PRELOAD so we don't run with fakeroot, which makes dbus-related tests fail
 	env -u LD_PRELOAD xvfb-run -a dh_auto_test --builddirectory=debian/build/deb -- -k check -j1
@@ -217,7 +217,7 @@ endif
 
 override_dh_auto_install:
 	dh_auto_install --builddirectory=debian/build/deb --destdir=debian/install/deb
-	rm -v -f debian/install/deb/usr/libexec/installed-tests/gtk+/reftests/libreftest.la
+	rm -v -f debian/install/deb/usr/libexec/installed-tests/ctk+/reftests/libreftest.la
 ifneq ($(filter %-udeb,$(built_binaries)),)
 	dh_auto_install --builddirectory=debian/build/udeb --destdir=debian/install/udeb
 endif

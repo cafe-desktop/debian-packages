@@ -16,4 +16,4 @@ xvfb-run -a -s "-screen 0 1024x768x24" \
 gnome-desktop-testing-runner \
 --report-directory="$AUTOPKGTEST_ARTIFACTS" \
 --tap \
-"gtk+/reftests"
+"ctk+/reftests"
