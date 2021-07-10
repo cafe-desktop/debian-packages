@@ -1,0 +1,265 @@
+mate-icon-theme (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:27:35 +0100
+
+mate-icon-theme (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 22:01:12 +0200
+
+mate-icon-theme (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 12:09:03 +0200
+
+mate-icon-theme (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 04 Jan 2019 13:10:14 +0100
+
+mate-icon-theme (1.20.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.2.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Oct 2018 12:48:17 +0100
+
+mate-icon-theme (1.20.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+    + Update copyright attributions.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 16:14:10 +0200
+
+mate-icon-theme (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.0-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.0-0ubuntu1:
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+  * debian/triggers:
+    + Explicitly use -noawait trigger type.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Feb 2018 22:51:27 +0100
+
+mate-icon-theme (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
+
+mate-icon-theme (1.19.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 22:12:31 +0000
+
+mate-icon-theme (1.18.2-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for MATE 1.18.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 12:11:31 +0200
+
+mate-icon-theme (1.16.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 26 Apr 2017 21:47:53 +0200
+
+mate-icon-theme (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/changelog:
+    + Add missing changelog items for 1.15.0-0ubuntu1.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 10:26:44 +0200
+
+mate-icon-theme (1.15.0-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:46 +0100
+
+mate-icon-theme (1.14.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Drop from D (mate-icon-theme): libgtk2.0-bin, replace by
+      gtk-update-icon-cache instead. (Closes: #825452).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 12 Jun 2016 22:31:48 +0200
+
+mate-icon-theme (1.14.0-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Use encrypted URLs for Vcs-*: field.
+    + Add myself to Uploaders: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.14)
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 20 May 2016 16:04:15 +0200
+
+mate-icon-theme (1.12.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/postinst:
+    + Drop full path reference to gtk-update-icon-cache.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 20 Dec 2015 15:58:59 +0100
+
+mate-icon-theme (1.10.1-1) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Wed, 05 Aug 2015 15:30:06 +0200
+
+mate-icon-theme (1.10.1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 14:01:52 +0200
+
+mate-icon-theme (1.10.0-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Processed with wrap-and-sort.
+  * debian/rules:
+    + Enable parallel build.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Really mention all upstream files.
+  * debian/control:
+    + Versioned D: mate-common (>= 1.10).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Jun 2015 08:36:20 +0200
+
+mate-icon-theme (1.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/changelog:
+    + Adapt to files in new upstream source tarball.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * lintian:
+    + Drop unused overrides.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 15 Mar 2014 21:42:02 +0100
+
+mate-icon-theme (1.6.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards: to 3.9.5. No changes needed.
+  * debian/copyright:
+    + Add license stanza for new file: compile.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 15 Jan 2014 10:51:13 +0100
+
+mate-icon-theme (1.6.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #728463).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 05 Nov 2013 19:20:51 +0100
