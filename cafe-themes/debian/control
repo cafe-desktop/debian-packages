@@ -1,7 +1,7 @@
 Source: cafe-themes
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -28,11 +28,11 @@ Depends: gtk2-engines,
          cafe-icon-theme,
          ${misc:Depends},
 Conflicts: cafe-themes-gnome,
-Description: Official themes for the MATE desktop
- This package contains the official desktop themes of the MATE desktop
+Description: Official themes for the CAFE desktop
+ This package contains the official desktop themes of the CAFE desktop
  environment.
  .
- The themes provided for the MATE desktop partially resemble themes that
- are well known from GNOMEv2 desktops. However, the MATE team also prepared
- some new themes esp. for MATE (Menta, GreenLaguna, TraditionalGreen,
+ The themes provided for the CAFE desktop partially resemble themes that
+ are well known from GNOMEv2 desktops. However, the CAFE team also prepared
+ some new themes esp. for CAFE (Menta, GreenLaguna, TraditionalGreen,
  TraditionalOk, and BlackMate).

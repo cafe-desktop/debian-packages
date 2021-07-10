@@ -122,7 +122,7 @@ cafe-themes (3.22.16-1) unstable; urgency=medium
     + Drop Recommends: dmz-cursor-theme. cafe-themes now includes comprehensive
       cursor themes in black and white.
   * debian/cafe-*.theme:
-    + Add cursor themes for MATE xcursors.
+    + Add cursor themes for CAFE xcursors.
   * debian/cafe-themes.postinst:
     + Add update-alternatives for x-cursor-theme.
   * debian/cafe-themes.prerm:
@@ -147,7 +147,7 @@ cafe-themes (3.22.15-1) unstable; urgency=medium
   * debian/control (already in 3.22.15-0ubuntu1):
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
@@ -186,7 +186,7 @@ cafe-themes (3.22.14-1) unstable; urgency=medium
 cafe-themes (3.22.13-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Mike Gabriel ]
   * debian/rules: Disable autoreconf, handled by autogen.sh.
@@ -196,8 +196,8 @@ cafe-themes (3.22.13-2) unstable; urgency=medium
 cafe-themes (3.22.13-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #864618).
-    - Gtk+-3.20 BlackMATE: fix fontcolor in url bar of google chrome
-    - Gtk+-3.20 BlackMATE: change menuitem accelerator font color
+    - Gtk+-3.20 BlackCAFE: fix fontcolor in url bar of google chrome
+    - Gtk+-3.20 BlackCAFE: change menuitem accelerator font color
   * debian/control:
     + Bump Standards-Version: to 4.0.0. No changes needed.
   * debian/{control,compat}:
@@ -255,7 +255,7 @@ cafe-themes (3.22.3-1) unstable; urgency=medium
       windows. (Closes: #825659).
 
   [ Vangelis Mouhtsis ]
-  * debian/control: Dependencies updated for MATE 1.16.
+  * debian/control: Dependencies updated for CAFE 1.16.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 02 Oct 2016 22:39:11 +0200
 
@@ -286,7 +286,7 @@ cafe-themes (3.20.7-1) unstable; urgency=medium
     + B-D: libgtk2.0-dev -> libgtk-3-dev.
     + Processed with wrap-and-sort.
   * debian/watch:
-    + Update to new version numbering. (MATE upstream now
+    + Update to new version numbering. (CAFE upstream now
       use a version string pointing to the GTK version this
       theme package is supposed to be for).
   * debian/rules:
@@ -397,7 +397,7 @@ cafe-themes (1.9.1-1) unstable; urgency=medium
       (Closes: #763738).
     - Fix invalid-source-position-for-gradient-issues when iceweasel is
       launched with the Menta theme. (Closes: #751735).
-    - Fix white-on-white tooltips in chromium with BlackMATE theme
+    - Fix white-on-white tooltips in chromium with BlackCAFE theme
       (now white-on-black tooltips). (Closes: #750690).
   * debian/watch:
     + Obtain upstream source from cafe-themes-gtk3.14-1.9.x tags.

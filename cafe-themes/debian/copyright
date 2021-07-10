@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Themes
+Upstream-Name: CAFE Themes
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
 Source: https://git.cafe-desktop.org/cafe-themes/
 
@@ -42,16 +42,16 @@ Files: cursor-themes/Makefile.am
        desktop-themes/TraditionalOk/xfwm4/png/Makefile.am
        desktop-themes/TraditionalOk/gtk-2.0/Makefile.am
        desktop-themes/TraditionalOk/metacity-1/Makefile.am
-       desktop-themes/BlackMATE/cinnamon/Makefile.am
-       desktop-themes/BlackMATE/gtk-3.0/assets/Makefile.am
-       desktop-themes/BlackMATE/gtk-3.0/Makefile.am
-       desktop-themes/BlackMATE/Makefile.am
-       desktop-themes/BlackMATE/gtk-2.0/Styles/Makefile.am
-       desktop-themes/BlackMATE/gtk-2.0/assets/Makefile.am
-       desktop-themes/BlackMATE/gtk-2.0/Makefile.am
-       desktop-themes/BlackMATE/metacity-1/Makefile.am
-       desktop-themes/BlackMATE-border/Makefile.am
-       desktop-themes/BlackMATE-border/metacity-1/Makefile.am
+       desktop-themes/BlackCAFE/cinnamon/Makefile.am
+       desktop-themes/BlackCAFE/gtk-3.0/assets/Makefile.am
+       desktop-themes/BlackCAFE/gtk-3.0/Makefile.am
+       desktop-themes/BlackCAFE/Makefile.am
+       desktop-themes/BlackCAFE/gtk-2.0/Styles/Makefile.am
+       desktop-themes/BlackCAFE/gtk-2.0/assets/Makefile.am
+       desktop-themes/BlackCAFE/gtk-2.0/Makefile.am
+       desktop-themes/BlackCAFE/metacity-1/Makefile.am
+       desktop-themes/BlackCAFE-border/Makefile.am
+       desktop-themes/BlackCAFE-border/metacity-1/Makefile.am
        desktop-themes/BlueMenta/cinnamon/Makefile.am
        desktop-themes/BlueMenta/gtk-3.0/borders/Makefile.am
        desktop-themes/BlueMenta/gtk-3.0/assets/Makefile.am
@@ -123,7 +123,7 @@ Copyright: 2002-2014, Jakub Steiner <jimmac@novell.com>
  2002-2014, Sam Hewitt <hewittsamuel@gmail.com>
 License: CC-BY-SA-3.0-US or LGPL-3
 Comment:
- The MATE cursor themes (added in cafe-themes 3.22.16) have been derived
+ The CAFE cursor themes (added in cafe-themes 3.22.16) have been derived
  from the adwaita-icon-theme. Listing the artwork designers as copyright
  holders here, applying the license as found in adwaita-icon-theme.
  .
@@ -137,8 +137,8 @@ Comment:
  When attributing the artwork, using "GNOME Project" is enough.
  Please link to http://www.gnome.org where available.
 
-Files: desktop-themes/BlackMATE/*
-       desktop-themes/BlackMATE-border/*
+Files: desktop-themes/BlackCAFE/*
+       desktop-themes/BlackCAFE-border/*
        desktop-themes/GreenLaguna/*
        desktop-themes/GreenLaguna-border/*
        desktop-themes/Menta/*
