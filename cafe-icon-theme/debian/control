@@ -1,7 +1,7 @@
-Source: mate-icon-theme
+Source: cafe-icon-theme
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -12,15 +12,15 @@ Build-Depends-Indep: gettext,
                      icon-naming-utils (>= 0.8.7),
                      intltool (>= 0.40.0),
                      librsvg2-bin,
-                     mate-common (>= 1.18),
+                     cafe-common (>= 1.18),
                      pkg-config,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-icon-theme
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-icon-theme.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-icon-theme
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-icon-theme.git
 
-Package: mate-icon-theme
+Package: cafe-icon-theme
 Architecture: all
 Depends: hicolor-icon-theme,
          gtk-update-icon-cache,

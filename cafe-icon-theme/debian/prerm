@@ -2,7 +2,7 @@
 set -e
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
-  rm -f /usr/share/icons/mate/icon-theme.cache
+  rm -f /usr/share/icons/cafe/icon-theme.cache
 fi
 
 #DEBHELPER#

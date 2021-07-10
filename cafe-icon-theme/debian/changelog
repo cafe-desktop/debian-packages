@@ -1,4 +1,4 @@
-mate-icon-theme (1.24.0-1) unstable; urgency=medium
+cafe-icon-theme (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -15,14 +15,14 @@ mate-icon-theme (1.24.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:27:35 +0100
 
-mate-icon-theme (1.22.2-1) unstable; urgency=medium
+cafe-icon-theme (1.22.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 22:01:12 +0200
 
-mate-icon-theme (1.22.1-1) unstable; urgency=medium
+cafe-icon-theme (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -37,7 +37,7 @@ mate-icon-theme (1.22.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 12:09:03 +0200
 
-mate-icon-theme (1.20.3-1) unstable; urgency=medium
+cafe-icon-theme (1.20.3-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -45,7 +45,7 @@ mate-icon-theme (1.20.3-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 04 Jan 2019 13:10:14 +0100
 
-mate-icon-theme (1.20.2-1) unstable; urgency=medium
+cafe-icon-theme (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -53,13 +53,13 @@ mate-icon-theme (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Oct 2018 12:48:17 +0100
 
-mate-icon-theme (1.20.1-1) unstable; urgency=medium
+cafe-icon-theme (1.20.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Use secure URI for copyright format.
     + Make Upstream-Name: field's value more human readable.
@@ -72,7 +72,7 @@ mate-icon-theme (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 16:14:10 +0200
 
-mate-icon-theme (1.20.0-1) unstable; urgency=medium
+cafe-icon-theme (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.19.0-0ubuntu1):
@@ -80,8 +80,8 @@ mate-icon-theme (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.0-0ubuntu1:
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
@@ -94,19 +94,19 @@ mate-icon-theme (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Feb 2018 22:51:27 +0100
 
-mate-icon-theme (1.20.0-0ubuntu1) bionic; urgency=medium
+cafe-icon-theme (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
 
-mate-icon-theme (1.19.0-0ubuntu1) bionic; urgency=medium
+cafe-icon-theme (1.19.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 22:12:31 +0000
 
-mate-icon-theme (1.18.2-1) unstable; urgency=medium
+cafe-icon-theme (1.18.2-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release
@@ -131,13 +131,13 @@ mate-icon-theme (1.18.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 12:11:31 +0200
 
-mate-icon-theme (1.16.2-1) unstable; urgency=medium
+cafe-icon-theme (1.16.2-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 26 Apr 2017 21:47:53 +0200
 
-mate-icon-theme (1.16.0-1) unstable; urgency=medium
+cafe-icon-theme (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -152,7 +152,7 @@ mate-icon-theme (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 10:26:44 +0200
 
-mate-icon-theme (1.15.0-0ubuntu1) yakkety; urgency=medium
+cafe-icon-theme (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
@@ -162,15 +162,15 @@ mate-icon-theme (1.15.0-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:46 +0100
 
-mate-icon-theme (1.14.0-2) unstable; urgency=medium
+cafe-icon-theme (1.14.0-2) unstable; urgency=medium
 
   * debian/control:
-    + Drop from D (mate-icon-theme): libgtk2.0-bin, replace by
+    + Drop from D (cafe-icon-theme): libgtk2.0-bin, replace by
       gtk-update-icon-cache instead. (Closes: #825452).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 12 Jun 2016 22:31:48 +0200
 
-mate-icon-theme (1.14.0-1) unstable; urgency=medium
+cafe-icon-theme (1.14.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -180,7 +180,7 @@ mate-icon-theme (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
 
   [ Mike Gabriel ]
   * debian/control:
@@ -188,7 +188,7 @@ mate-icon-theme (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 20 May 2016 16:04:15 +0200
 
-mate-icon-theme (1.12.0-1) unstable; urgency=medium
+cafe-icon-theme (1.12.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -199,19 +199,19 @@ mate-icon-theme (1.12.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 20 Dec 2015 15:58:59 +0100
 
-mate-icon-theme (1.10.1-1) unstable; urgency=medium
+cafe-icon-theme (1.10.1-1) unstable; urgency=medium
 
   * Upload to unstable.
 
  -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Wed, 05 Aug 2015 15:30:06 +0200
 
-mate-icon-theme (1.10.1-1~exp1) experimental; urgency=medium
+cafe-icon-theme (1.10.1-1~exp1) experimental; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 14:01:52 +0200
 
-mate-icon-theme (1.10.0-1~exp1) experimental; urgency=low
+cafe-icon-theme (1.10.0-1~exp1) experimental; urgency=low
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -230,11 +230,11 @@ mate-icon-theme (1.10.0-1~exp1) experimental; urgency=low
   * debian/copyright:
     + Really mention all upstream files.
   * debian/control:
-    + Versioned D: mate-common (>= 1.10).
+    + Versioned D: cafe-common (>= 1.10).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Jun 2015 08:36:20 +0200
 
-mate-icon-theme (1.8.0-1) unstable; urgency=low
+cafe-icon-theme (1.8.0-1) unstable; urgency=low
 
   * New upstream release.
   * debian/watch:
@@ -248,7 +248,7 @@ mate-icon-theme (1.8.0-1) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 15 Mar 2014 21:42:02 +0100
 
-mate-icon-theme (1.6.3-1) unstable; urgency=low
+cafe-icon-theme (1.6.3-1) unstable; urgency=low
 
   * New upstream release.
   * debian/control:
@@ -258,7 +258,7 @@ mate-icon-theme (1.6.3-1) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 15 Jan 2014 10:51:13 +0100
 
-mate-icon-theme (1.6.2-1) unstable; urgency=low
+cafe-icon-theme (1.6.2-1) unstable; urgency=low
 
   * Initial release. (Closes: #728463).
 
