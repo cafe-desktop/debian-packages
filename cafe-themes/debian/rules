@@ -7,19 +7,19 @@ DHFLAGS=--parallel
 
 override_dh_install:
 	# remove extra-license-file
-	rm -rfv debian/mate-themes/usr/share/themes/*/COPYING
-	rm -rfv debian/mate-themes/usr/share/themes/TraditionalOk/doc/gpl-3.0*.txt
-	rm -rfv debian/mate-themes/usr/share/locale/
-	rm  -fv debian/mate-themes/usr/share/themes/*/README
-	rm  -fv debian/mate-themes/usr/share/themes/BlueMenta/emerald/README
-	rm  -fv debian/mate-themes/usr/share/themes/Menta/emerald/README
-	rm  -fv debian/mate-themes/usr/share/themes/Menta/gtk-2.0/widgets/README
-	rm  -fv debian/mate-themes/usr/share/themes/TraditionalOk/xfwm4/README
+	rm -rfv debian/cafe-themes/usr/share/themes/*/COPYING
+	rm -rfv debian/cafe-themes/usr/share/themes/TraditionalOk/doc/gpl-3.0*.txt
+	rm -rfv debian/cafe-themes/usr/share/locale/
+	rm  -fv debian/cafe-themes/usr/share/themes/*/README
+	rm  -fv debian/cafe-themes/usr/share/themes/BlueMenta/emerald/README
+	rm  -fv debian/cafe-themes/usr/share/themes/Menta/emerald/README
+	rm  -fv debian/cafe-themes/usr/share/themes/Menta/gtk-2.0/widgets/README
+	rm  -fv debian/cafe-themes/usr/share/themes/TraditionalOk/xfwm4/README
 	# remove themes with borders - Marco provides invisible borders now https://pad.lv/1769411
-	rm  -rfv debian/mate-themes/usr/share/themes/*-border
+	rm  -rfv debian/cafe-themes/usr/share/themes/*-border
 	# add cursor theme entries
-	cp debian/mate-white.theme debian/mate-themes/usr/share/icons/mate/cursor.theme
-	cp debian/mate-black.theme debian/mate-themes/usr/share/icons/mate-black/cursor.theme
+	cp debian/cafe-white.theme debian/cafe-themes/usr/share/icons/cafe/cursor.theme
+	cp debian/cafe-black.theme debian/cafe-themes/usr/share/icons/cafe-black/cursor.theme
 	dh_install
 
 override_dh_missing:

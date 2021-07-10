@@ -4,6 +4,6 @@ set -e
 #DEBHELPER#
 
 update-alternatives --install /usr/share/icons/default/index.theme \
-        x-cursor-theme /usr/share/icons/mate/cursor.theme 100
+        x-cursor-theme /usr/share/icons/cafe/cursor.theme 100
 update-alternatives --install /usr/share/icons/default/index.theme \
-        x-cursor-theme /usr/share/icons/mate-black/cursor.theme 30
+        x-cursor-theme /usr/share/icons/cafe-black/cursor.theme 30

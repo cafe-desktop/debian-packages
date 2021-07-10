@@ -3,9 +3,9 @@ set -e
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ] ; then
     update-alternatives --remove x-cursor-theme \
-        /usr/share/icons/mate/cursor.theme
+        /usr/share/icons/cafe/cursor.theme
     update-alternatives --remove x-cursor-theme \
-        /usr/share/icons/mate-black/cursor.theme
+        /usr/share/icons/cafe-black/cursor.theme
 
 	rm -f /usr/share/icons/ContrastHigh/icon-theme.cache
 fi

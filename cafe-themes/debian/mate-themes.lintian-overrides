@@ -1,2 +1,2 @@
-# required for update-alternatives, using /usr/share/icons/mate/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
-mate-themes: package-contains-empty-directory usr/share/icons/default/
+# required for update-alternatives, using /usr/share/icons/cafe/cursor.theme to provide /usr/share/icons/default/index.theme (x-cursor-theme) in auto mode
+cafe-themes: package-contains-empty-directory usr/share/icons/default/

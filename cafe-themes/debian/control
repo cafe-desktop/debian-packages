@@ -1,7 +1,7 @@
-Source: mate-themes
+Source: cafe-themes
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -9,25 +9,25 @@ Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Build-Depends: debhelper-compat (=12),
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
 Build-Depends-Indep: icon-naming-utils,
                      intltool,
                      libgtk2.0-dev,
                      libxml-parser-perl,
                      pkg-config,
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-themes
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-themes.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-themes
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-themes.git
 
-Package: mate-themes
+Package: cafe-themes
 Architecture: all
 Depends: gtk2-engines,
          gtk2-engines-murrine,
          gtk2-engines-pixbuf,
          librsvg2-common,
-         mate-icon-theme,
+         cafe-icon-theme,
          ${misc:Depends},
-Conflicts: mate-themes-gnome,
+Conflicts: cafe-themes-gnome,
 Description: Official themes for the MATE desktop
  This package contains the official desktop themes of the MATE desktop
  environment.
