@@ -82,7 +82,7 @@ cafe-icon-theme (1.20.0-1) unstable; urgency=medium
   * debian/control (already in 1.19.0-0ubuntu1:
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
@@ -112,8 +112,8 @@ cafe-icon-theme (1.18.2-1) unstable; urgency=medium
   * New upstream release
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Vangelis Mouhtsis ]
   * debian/compat:
@@ -146,7 +146,7 @@ cafe-icon-theme (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Add missing changelog items for 1.15.0-0ubuntu1.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -156,7 +156,7 @@ cafe-icon-theme (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 

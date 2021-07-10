@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Icon Theme
+Upstream-Name: CAFE Icon Theme
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
 Source: https://git.cafe-desktop.org/cafe-icon-theme/
 
@@ -29,10 +29,10 @@ Copyright: 2002-2008, Free Software Foundation, Inc.
            2006-2008, Rosetta Contributors and Canonical Ltd 2008
            2003, Mətin Əmirov
            2008, Pavel Šefránek <ps@pjoul.cz>.
-           2004-2005, Adam Weinberger and the MATE Foundation
+           2004-2005, Adam Weinberger and the CAFE Foundation
            2002-2009, The GNOME Foundation.
            2009, Rosetta Contributors and Canonical Ltd 2009
-           2007-2009, The MATE Project
+           2007-2009, The CAFE Project
            2003-2005, Sharif FarsiWeb, Inc.
            2004, Ignacion Casal Quinteiro.
            2003, G Karunakar

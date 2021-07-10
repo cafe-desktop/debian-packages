@@ -1,7 +1,7 @@
 Source: cafe-icon-theme
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -26,10 +26,10 @@ Depends: hicolor-icon-theme,
          gtk-update-icon-cache,
          librsvg2-common,
          ${misc:Depends},
-Description: MATE Desktop icon theme
- This package contains the default icon theme used by the MATE desktop.
+Description: CAFE Desktop icon theme
+ This package contains the default icon theme used by the CAFE desktop.
  The icons are used in the panel menu, in Caja and other
- applications shipped with MATE.
+ applications shipped with CAFE.
  .
  This icon theme provides icon artwork for representing the different
- applications, files, directories, and devices found on the MATE desktop.
+ applications, files, directories, and devices found on the CAFE desktop.
