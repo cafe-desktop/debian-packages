@@ -2680,7 +2680,7 @@ ctk+3.0 (2.91.3-1) experimental; urgency=low
   * Version various document index files so they don't conflict with their
     ctk2 flavour
   * debian/libctk3-bin.preinst, debian/libctk3-bin.postrm:
-    + Divert ctk+2.0's update-icon-caches. The format remained the same so this
+    + Divert ctk+2.0's ctk-update-icon-caches. The format remained the same so this
       is safe to do
   * debian/ruels, libtk3.0-doc.*: Tutorial and FAQ have been removed from the
     ctk source as they were updated, stop trying to install them
@@ -3177,7 +3177,7 @@ ctk+2.0 (2.16.1-1) experimental; urgency=low
     to Debian ;)
 
   [ Josselin Mouette ]
-  * Make update-icon-caches always generate the cache, now that dh_icons
+  * Make ctk-update-icon-caches always generate the cache, now that dh_icons
     is widespread.
 
   [ Sebastian Dröge ]
@@ -3590,7 +3590,7 @@ ctk+2.0 (2.12.9-2) unstable; urgency=low
 ctk+2.0 (2.12.9-1) unstable; urgency=low
 
   [ Josselin Mouette ]
-  * update-icon-caches: always exit with a 0 code to avoid breaking
+  * ctk-update-icon-caches: always exit with a 0 code to avoid breaking
     upgrades when a cache is corrupt. Display a big fat warning instead.
     Closes: #466083.
 
@@ -3699,7 +3699,7 @@ ctk+2.0 (2.12.3-2) unstable; urgency=low
 
 ctk+2.0 (2.12.3-1) unstable; urgency=low
 
-  * Let update-icon-caches skip args which are not dirs or don't exist; fixes
+  * Let ctk-update-icon-caches skip args which are not dirs or don't exist; fixes
     postrm behavior of packages with an icon cache.
   * New upstream stable release; no API change; bug fixes and translation
     updates.
@@ -3872,7 +3872,7 @@ ctk+2.0 (2.11.6-1) experimental; urgency=low
 
   [ Josselin Mouette ]
   * Move manual pages of binaries in /usr/sbin to section 8.
-  * update-icon-caches: new script, updates the icon caches in a given
+  * ctk-update-icon-caches: new script, updates the icon caches in a given
     list of directories. It is meant to be used by packages shipping
     icons, in the postinst/postrm.
     For transition purposes, icon caches are currently updated but not
