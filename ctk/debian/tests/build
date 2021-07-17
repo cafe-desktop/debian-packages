@@ -1,5 +1,5 @@
 #!/bin/sh
-# autopkgtest check: Build and run a program against GTK, to verify that the
+# autopkgtest check: Build and run a program against CTK, to verify that the
 # headers and pkg-config file are installed correctly
 # (C) 2012 Canonical Ltd.
 # Author: Martin Pitt <martin.pitt@ubuntu.com>
@@ -38,8 +38,8 @@ int main(int argc, char **argv)
 
     ctk_init (&argc, &argv);
     dialog = ctk_dialog_new_with_buttons ("Test dialog", NULL,
-                                          GTK_DIALOG_MODAL,
-                                          "OK", GTK_RESPONSE_ACCEPT,
+                                          CTK_DIALOG_MODAL,
+                                          "OK", CTK_RESPONSE_ACCEPT,
                                           NULL);
     ctk_widget_show_all (dialog);
     g_timeout_add_seconds (1, do_quit, NULL);

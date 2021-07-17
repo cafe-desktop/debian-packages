@@ -20,17 +20,17 @@ SONAME := 0
 LIBDIR := usr/lib/$(DEB_HOST_MULTIARCH)
 
 # earliest version that this release has backwards binary compatibility for
-GTK_BINARY_VERSION := 3.0.0
+CTK_BINARY_VERSION := 3.0.0
 
 # Gtk binary version virtual Provide
-GTK_BINVER_DEP := ctk$(APIVER)-binver-$(GTK_BINARY_VERSION)
+CTK_BINVER_DEP := ctk$(APIVER)-binver-$(CTK_BINARY_VERSION)
 
 # relative base directory for configuration
 CONFDIR := etc/ctk-3.0
 
 # relative base directory for all types of modules
-MODULES_BASE_PATH := $(LIBDIR)/ctk-3.0/$(GTK_BINARY_VERSION)
-OLD_MODULES_BASE_PATH := usr/lib/ctk-3.0/$(GTK_BINARY_VERSION)
+MODULES_BASE_PATH := $(LIBDIR)/ctk-3.0/$(CTK_BINARY_VERSION)
+OLD_MODULES_BASE_PATH := usr/lib/ctk-3.0/$(CTK_BINARY_VERSION)
 
 # package names
 SHARED_PKG := libctk-$(APIVER)-$(SONAME)
@@ -70,7 +70,7 @@ debian/%: debian/%.in
 		-e "s#@SONAME@#$(SONAME)#g" \
 		-e "s#@APIVER@#$(APIVER)#g" \
 		-e "s#@VERSION@#$(DEB_VERSION_UPSTREAM)#g" \
-		-e "s#@GTK_BINVER_DEP@#$(GTK_BINVER_DEP)#g" \
+		-e "s#@CTK_BINVER_DEP@#$(CTK_BINVER_DEP)#g" \
 		-e "s#@SHARED_PKG@#$(SHARED_PKG)#g" \
 		-e "s#@COMMON_PKG@#$(COMMON_PKG)#g" \
 		-e "s#@DEV_PKG@#$(DEV_PKG)#g" \
@@ -79,7 +79,7 @@ debian/%: debian/%.in
 		-e "s#@BIN_PKG@#$(BIN_PKG)#g" \
 		-e "s#@EXAMPLES_PKG@#$(EXAMPLES_PKG)#g" \
 		-e "s#@GNOME_TEAM@#$(UPLOADERS)#g" \
-		-e "s#@GTK_BINARY_VERSION@#$(GTK_BINARY_VERSION)#g" \
+		-e "s#@CTK_BINARY_VERSION@#$(CTK_BINARY_VERSION)#g" \
 		-e "s#@LIBDIR@#$(LIBDIR)#g" \
 		-e 's#@CONFDIR@#$(CONFDIR)#g' \
 		-e "s#@MODULES_BASE_PATH@#$(MODULES_BASE_PATH)#g" \
