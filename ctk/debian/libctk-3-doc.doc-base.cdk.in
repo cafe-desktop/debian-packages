@@ -1,11 +1,11 @@
 Document: cdk3
-Title: GDK Reference Manual
+Title: CDK Reference Manual
 Author: Damon Chaplin et al.
-Abstract: The GDK library provides an OS-independant wrapper around the
+Abstract: The CDK library provides an OS-independant wrapper around the
  most fundamental graphical user interface functions.  This allows
- CTK to be ported to non-X11 systems, as long as GDK is ported first.
+ CTK to be ported to non-X11 systems, as long as CDK is ported first.
  .
- This document covers programming in GDK.
+ This document covers programming in CDK.
 Section: Programming/C
 
 Format: HTML

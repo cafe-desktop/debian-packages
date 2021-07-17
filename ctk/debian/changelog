@@ -224,7 +224,7 @@ ctk+3.0 (3.24.16-1) unstable; urgency=medium
     Backport patch from CTK 4 to make the icon cache reproducible
     (Closes: #953105)
   * d/p/build-Generate-cdk.gresource.xml-in-sorted-order.patch:
-    Sort GDK resources to improve reproducibility.
+    Sort CDK resources to improve reproducibility.
     The combination of this and fixing #953105 should hopefully make the
     package reliably reproducible.
   * d/README.source: Write down how to inspect reftest failures
@@ -939,7 +939,7 @@ ctk+3.0 (3.22.7-2) unstable; urgency=medium
 
   * Team upload
   * d/p/cdk-x11-Check-if-we-have-access-to-GL-before-using-G.patch:
-    add proposed patch from upstream Bugzilla to let GDK X11
+    add proposed patch from upstream Bugzilla to let CDK X11
     initialization complete successfully when libGL.so.1 is not
     available (Closes: #847366)
   * Override Lintian error source-is-missing for
@@ -1086,7 +1086,7 @@ ctk+3.0 (3.21.5-1) unstable; urgency=low
     - bump libglib2.0-dev to >= 2.49.4
     - bump wayland-protocols to >= 1.6
   * Fix debian/patches/no-accessibility-dump.patch to apply again.
-  * Drop d/p/Don-t-apply-GDK_HINT_RESIZE_INC-to-GDK_WINDOW_STATE_.patch
+  * Drop d/p/Don-t-apply-CDK_HINT_RESIZE_INC-to-CDK_WINDOW_STATE_.patch
     - now included in upstream release.
   * Update debian/libctk-3-0.symbols with several additions and one missing:
     - cdk_wayland_display_get_xdg_shell unused outside of ctk+.
@@ -1160,7 +1160,7 @@ ctk+3.0 (3.20.6-2) unstable; urgency=medium
   * d/rules: reset XDG_CONFIG_HOME, XDG_CACHE_HOME, XDG_DATA_HOME so that
     they are based on the temporary HOME
   * Backport patch from upstream to mark tiled Mutter/Shell windows
-    as GDK_WINDOW_STATE_TILED under Wayland (with mutter >= 3.20.2-2)
+    as CDK_WINDOW_STATE_TILED under Wayland (with mutter >= 3.20.2-2)
   * Add my patch from upstream bug 755947 to disable character-cell-based
     size contraints for TILED windows, so that gnome-terminal can snap to
     half the screen under Wayland
@@ -1850,7 +1850,7 @@ ctk+3.0 (3.9.14-1) experimental; urgency=low
       cdk_offscreen_window_get_type,
       cdk_window_impl_get_type,
       cdk_window_impl_x11_get_type.
-  * Explicitly set which GDK backends to build:
+  * Explicitly set which CDK backends to build:
     - enable x11,wayland,broadway in regular build
     - disable wayland,broadway and enable x11 in udeb build
   * Add build-dependencies needed by wayland backend:
@@ -3809,7 +3809,7 @@ ctk+2.0 (2.12.0-3) unstable; urgency=low
 
   [ Josselin Mouette ]
   * 020_immodules-files-d.patch, 021_loader-files-d.patch: read the
-    GDK_PIXBUF_MODULE_FILE and CTK_IM_MODULE_FILE variables before the
+    CDK_PIXBUF_MODULE_FILE and CTK_IM_MODULE_FILE variables before the
     Debian directories. Thanks Thadeu Lima de Souza Cascardo.
     Closes: #439004.
 
@@ -4568,7 +4568,7 @@ ctk+2.0 (2.8.18-1) unstable; urgency=low
   * New upstream version:
     Bugs fixed:
     - search box positioning has some bugs
-    - Gdk does not translate VK_NUMPADx to GDK_KP_x
+    - Gdk does not translate VK_NUMPADx to CDK_KP_x
     - sanely handle late (re)setting of dnd image
     - Text is shifted off-by-one in Add to panel
     - ctk_widget_create_pango_layout docs typo
