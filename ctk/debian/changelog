@@ -1788,7 +1788,7 @@ ctk+3.0 (3.11.5-1) experimental; urgency=medium
 ctk+3.0 (3.10.7-1) unstable; urgency=low
 
   * debian/libctk-3-bin.install:
-    + Ship broadwayd.
+    + Ship cdkbroadwayd.
   * debian/rules:
     + Enable parallel builds.
   * New upstream release.
