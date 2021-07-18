@@ -1,7 +1,7 @@
 Source: mate-desktop
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -45,17 +45,17 @@ Recommends: mate-user-guide,
 Breaks: mate-desktop-gnome,
 Replaces: mate-desktop-gnome,
 Suggests: mate-desktop-environment,
-Description: Library with common API for various MATE modules
- The MATE component mate-desktop contains the libmate-desktop library, the
+Description: Library with common API for various CAFE modules
+ The CAFE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
  The libmate-desktop library provides an API shared by several applications
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
- The mate-about program helps with finding which version of MATE is installed.
+ The mate-about program helps with finding which version of CAFE is installed.
  .
- NOTE: This package does not install the complete MATE desktop environment
+ NOTE: This package does not install the complete CAFE desktop environment
  for you. The full desktop environment can be installed via the metapackage
  mate-desktop-environment.
 
@@ -64,8 +64,8 @@ Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-desktop (<< 1.1.1-1),
 Replaces: mate-desktop (<< 1.1.1-1),
-Description: Library with common API for various MATE modules (common files)
- The MATE component mate-desktop contains the libmate-desktop library, the
+Description: Library with common API for various CAFE modules (common files)
+ The CAFE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
  The libmate-desktop library provides an API shared by several applications
@@ -85,8 +85,8 @@ Depends: iso-codes,
 Provides: libmatedesktop,
 Breaks: libmatedesktop (<< 1.6.1),
 Replaces: libmatedesktop (<< 1.6.1),
-Description: Library with common API for various MATE modules (library)
- The MATE component mate-desktop contains the libmate-desktop library, the
+Description: Library with common API for various CAFE modules (library)
+ The CAFE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
  The libmate-desktop library provides an API shared by several applications
@@ -111,8 +111,8 @@ Breaks: libmatedesktop-dev,
         gir1.2-mate-desktop (<< 1.18.0-2~),
 Replaces: libmatedesktop-dev,
           gir1.2-mate-desktop (<< 1.18.0-2~),
-Description: Library with common API for various MATE modules (development files)
- The MATE component mate-desktop contains the libmate-desktop library, the
+Description: Library with common API for various CAFE modules (development files)
+ The CAFE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
  The libmate-desktop library provides an API shared by several applications
@@ -128,8 +128,8 @@ Multi-Arch: foreign
 Depends: ${misc:Depends},
 Breaks: libmatedesktop-doc,
 Replaces: libmatedesktop-doc,
-Description: Library with common API for various MATE modules (documentation files)
- The MATE component mate-desktop contains the libmate-desktop library, the
+Description: Library with common API for various CAFE modules (documentation files)
+ The CAFE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
  The libmate-desktop library provides an API shared by several applications
@@ -149,7 +149,7 @@ Depends: libmate-desktop-2-17 (= ${binary:Version}),
 Breaks: gir1.2-mate-desktop (<< 1.18.0-2~),
 Replaces: gir1.2-mate-desktop (<< 1.18.0-2~),
 Description: GObject introspection data for the libmate-desktop library
- The MATE component mate-desktop contains the libmate-desktop library, the
+ The CAFE component mate-desktop contains the libmate-desktop library, the
  mate-about program, as well as some desktop-wide documents.
  .
  The libmate-desktop library provides an API shared by several applications

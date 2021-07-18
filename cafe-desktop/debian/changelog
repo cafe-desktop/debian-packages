@@ -64,7 +64,7 @@ mate-desktop (1.22.1-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + Add B-D: librsvg2-bin.
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/copyright:
     + Update copyright attributions.
   * debian/patches:
@@ -154,7 +154,7 @@ mate-desktop (1.20.1-1) unstable; urgency=medium
   [ Mike Gabriel ]
   * debian/control:
     + Add to S (mate-desktop): mate-desktop-environment. Also add a note to the
-      LONG_DESCRIPTION, that explains how to install the full MATE desktop
+      LONG_DESCRIPTION, that explains how to install the full CAFE desktop
       environment. (Closes: #891986).
     + Typo fix in LONG_DESCRIPTION.
   * debian/copyright:
@@ -210,7 +210,7 @@ mate-desktop (1.18.0-2) unstable; urgency=medium
   * debian/control:
     + Temporarily have pkg-mate-team ML under Uploaders:.
     + Update Maintainer: field to debian-mate ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 24 Jan 2018 21:09:08 +0100
@@ -223,12 +223,12 @@ mate-desktop (1.18.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/libmate-desktop-2-17.symbols: Update symbols for 1.17.
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/control: Drop B-D for python. mpaste dropped upstream.
   * debian/rules: Drop --with python2 and --enable-mpaste. mpaste dropped
     upstream.
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/patches: Add 1000_global_menu_support.diff (LP: #1675956)
   * add patch headers
 
@@ -285,7 +285,7 @@ mate-desktop (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -295,7 +295,7 @@ mate-desktop (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
