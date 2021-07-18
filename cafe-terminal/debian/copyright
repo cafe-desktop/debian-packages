@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Terminal
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-terminal/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-terminal/
 
 Files: src/terminal-app.c
        src/terminal-options.c
@@ -153,7 +153,7 @@ Files: src/skey/md4.c
 Copyright: 2001, Nikos Mavroyanopoulos
 License: LGPL-3+
 
-Files: mate-terminal.pot
+Files: cafe-terminal.pot
        po/*.po
 Copyright: 2009, Christian Persch
            2002-2010, Free Software Foundation, Inc.
@@ -179,7 +179,7 @@ Files: .build.yml
        .github/issue_template.md
        .github/FUNDING.yml
        help/Makefile.am
-       help/mate-terminal.omf.in
+       help/cafe-terminal.omf.in
        po/LINGUAS
        po/Makevars
        po/POTFILES.*
@@ -207,10 +207,10 @@ Files: .build.yml
        autogen.sh
        configure.ac
        makepot
-       mate-terminal.1
-       mate-terminal.appdata.xml.in
-       mate-terminal.desktop.in.in
-       mate-terminal.wrapper
+       cafe-terminal.1
+       cafe-terminal.appdata.xml.in
+       cafe-terminal.desktop.in.in
+       cafe-terminal.wrapper
        update-authors.pl
 Copyright: *No copyright*
 License: GPL-3+
@@ -443,7 +443,7 @@ Copyright: 2002, Sun Microsystems
            2000-2010, Free Software Foundation, Inc.
            2007-2009, Joan Duran <jodufi@gmail.com>
            2005-2007, Maxim Dziumanenko <dziumanenko@gmail.com>
-           2009, mate-terminal's COPYRIGHT HOLDER
+           2009, cafe-terminal's COPYRIGHT HOLDER
 License: GFDL-1.1+
 
 Files: debian/*

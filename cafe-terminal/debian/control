@@ -1,7 +1,7 @@
-Source: mate-terminal
+Source: cafe-terminal
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -20,18 +20,18 @@ Build-Depends: debhelper-compat (= 13),
                libvte-2.91-dev (>= 0.48),
                libx11-dev,
                libxml2-utils,
-               mate-common (>= 1.20),
+               cafe-common (>= 1.20),
                yelp-tools,
-Homepage: http://www.mate-desktop.org
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-terminal
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-terminal.git
+Homepage: http://www.cafe-desktop.org
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-terminal
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-terminal.git
 
-Package: mate-terminal
+Package: cafe-terminal
 Multi-Arch: foreign
 Architecture: any
 Depends: gsettings-desktop-schemas,
-         mate-desktop-common,
-         mate-terminal-common (= ${source:Version}),
+         cafe-desktop-common,
+         cafe-terminal-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Provides: x-terminal-emulator,
@@ -45,11 +45,11 @@ Description: CAFE terminal emulator application
  CAFE Terminal features the ability to use multiple terminals in a single
  window (tabs) and profiles support.
 
-Package: mate-terminal-common
+Package: cafe-terminal-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-terminal (<< 1.1.0-2),
-Replaces: mate-terminal (<< 1.1.0-2),
+Breaks: cafe-terminal (<< 1.1.0-2),
+Replaces: cafe-terminal (<< 1.1.0-2),
 Description: CAFE terminal emulator application (common files)
  CAFE Terminal is a terminal emulation application that you can use to
  perform the following actions:

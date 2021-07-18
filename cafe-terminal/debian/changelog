@@ -1,4 +1,4 @@
-mate-terminal (1.24.1-1) unstable; urgency=medium
+cafe-terminal (1.24.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -11,12 +11,12 @@ mate-terminal (1.24.1-1) unstable; urgency=medium
     + Bump DH compat level to version 13.
   * debian/copyright:
     + Update copyright attributions.
-  * debian/mate-terminal.postinst:
-    + Use higher priority for mate-terminal.wrapper. (Closes: #931045).
+  * debian/cafe-terminal.postinst:
+    + Use higher priority for cafe-terminal.wrapper. (Closes: #931045).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 21:26:02 +0200
 
-mate-terminal (1.24.0-3) unstable; urgency=medium
+cafe-terminal (1.24.0-3) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -25,7 +25,7 @@ mate-terminal (1.24.0-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Apr 2020 09:59:11 +0200
 
-mate-terminal (1.24.0-2) unstable; urgency=medium
+cafe-terminal (1.24.0-2) unstable; urgency=medium
 
   * debian/patches:
     + Add 0001_fix-url-highlighting.patch. Fix URL highlighting broken
@@ -34,7 +34,7 @@ mate-terminal (1.24.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Mar 2020 10:58:22 +0100
 
-mate-terminal (1.24.0-1) unstable; urgency=medium
+cafe-terminal (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -53,21 +53,21 @@ mate-terminal (1.24.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 16:50:51 +0100
 
-mate-terminal (1.22.1-1) unstable; urgency=medium
+cafe-terminal (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
     + Updated for CAFE Desktop 1.22
     + Add B-D: libxml2-utils.
-  * debian/mate-terminal-common.install:
-    + Do not install /usr/share/mate-terminal, mate-terminal now uses
+  * debian/cafe-terminal-common.install:
+    + Do not install /usr/share/cafe-terminal, cafe-terminal now uses
       gresources.
   * debian/copyright:
     + Update copyright attributions.
   * debian/rules:
     + Updated for CAFE Desktop 1.22
-  * debian/mate-terminal-common.install:
+  * debian/cafe-terminal-common.install:
     + Correct order.
   * debian/patches:
     + Drop 1002_xterm-256color.patch. Applied upstream.
@@ -80,12 +80,12 @@ mate-terminal (1.22.1-1) unstable; urgency=medium
     + Drop empty line at EOF.
   * debian/rules:
     + Drop dbgsym-migration dh_strip override.
-  * debian/mate-terminal.postinst:
-    + Drop direct upgrade support from mate-terminal 1.8.1+dfsg1-3.
+  * debian/cafe-terminal.postinst:
+    + Drop direct upgrade support from cafe-terminal 1.8.1+dfsg1-3.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jul 2019 00:09:16 +0200
 
-mate-terminal (1.20.2-2) unstable; urgency=medium
+cafe-terminal (1.20.2-2) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/patches:
@@ -94,7 +94,7 @@ mate-terminal (1.20.2-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 06 Feb 2019 13:22:58 +0100
 
-mate-terminal (1.20.2-1) unstable; urgency=medium
+cafe-terminal (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/patches:
@@ -108,13 +108,13 @@ mate-terminal (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 09 Jan 2019 12:30:47 +0100
 
-mate-terminal (1.20.1-1) unstable; urgency=medium
+cafe-terminal (1.20.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Make Upstream-Name: field's value more human readable.
     + Update Upstream-Contact: field.
@@ -126,14 +126,14 @@ mate-terminal (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 08 Jul 2018 02:24:38 +0200
 
-mate-terminal (1.20.0-4) unstable; urgency=medium
+cafe-terminal (1.20.0-4) unstable; urgency=medium
 
   * debian/patches:
     + Prepend patches from series file to ubuntu.series file.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 14:44:57 +0200
 
-mate-terminal (1.20.0-3) unstable; urgency=medium
+cafe-terminal (1.20.0-3) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -142,7 +142,7 @@ mate-terminal (1.20.0-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 10:50:09 +0200
 
-mate-terminal (1.20.0-2) unstable; urgency=medium
+cafe-terminal (1.20.0-2) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/copyright:
@@ -155,7 +155,7 @@ mate-terminal (1.20.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 22:50:11 +0200
 
-mate-terminal (1.20.0-1) unstable; urgency=medium
+cafe-terminal (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.19.1-0ubuntu1):
@@ -163,33 +163,33 @@ mate-terminal (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.1-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
   * debian/{control,compat}: Bump DH version level to 11.
-  * debian/{rules,mate-terminal-common.install}:
+  * debian/{rules,cafe-terminal-common.install}:
     + Move appstream metainfo to correct location.
   * debian/control:
     + Update versioned B-Ds (GTK3, VTE, GLib).
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 11:24:53 +0100
 
-mate-terminal (1.20.0-0ubuntu1) bionic; urgency=medium
+cafe-terminal (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
 
-mate-terminal (1.19.1-0ubuntu1) bionic; urgency=medium
+cafe-terminal (1.19.1-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 07:06:08 +0000
 
-mate-terminal (1.18.2-1) unstable; urgency=medium
+cafe-terminal (1.18.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -202,13 +202,13 @@ mate-terminal (1.18.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 11:53:22 +0100
 
-mate-terminal (1.18.1-2) unstable; urgency=medium
+cafe-terminal (1.18.1-2) unstable; urgency=medium
 
   * As-is re-upload to re-trigger a full rebuild on all architectures.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Aug 2017 18:40:53 +0200
 
-mate-terminal (1.18.1-1) unstable; urgency=medium
+cafe-terminal (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for CAFE 1.17.
@@ -232,7 +232,7 @@ mate-terminal (1.18.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 18:27:46 +0200
 
-mate-terminal (1.16.3-1) unstable; urgency=medium
+cafe-terminal (1.16.3-1) unstable; urgency=medium
 
   * New upstream release.
     - Fix freezing Xorg on double click with right mouse button. (Closes:
@@ -240,7 +240,7 @@ mate-terminal (1.16.3-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 03 Jun 2017 21:10:29 +0200
 
-mate-terminal (1.16.2-1) unstable; urgency=medium
+cafe-terminal (1.16.2-1) unstable; urgency=medium
 
   * New upstream release.
     - Bring back exit confirmation when there's a process running.
@@ -249,7 +249,7 @@ mate-terminal (1.16.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 26 Apr 2017 21:29:15 +0200
 
-mate-terminal (1.16.1-2) unstable; urgency=medium
+cafe-terminal (1.16.1-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
@@ -257,7 +257,7 @@ mate-terminal (1.16.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 20:04:13 +0100
 
-mate-terminal (1.16.1-1) unstable; urgency=medium
+cafe-terminal (1.16.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream bug fix release.
@@ -268,7 +268,7 @@ mate-terminal (1.16.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 12 Oct 2016 08:40:52 +0200
 
-mate-terminal (1.16.0-1) unstable; urgency=medium
+cafe-terminal (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -295,7 +295,7 @@ mate-terminal (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 04 Oct 2016 09:55:35 +0200
 
-mate-terminal (1.15.1-0ubuntu1) yakkety; urgency=medium
+cafe-terminal (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release. (Closes: #836238, #836239).
   * debian/control:
@@ -305,12 +305,12 @@ mate-terminal (1.15.1-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
 
-mate-terminal (1.14.1-1) unstable; urgency=medium
+cafe-terminal (1.14.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Add to D (mate-terminal): gsettings-desktop-schemas
+    + Add to D (cafe-terminal): gsettings-desktop-schemas
 
   [ Vangelis Mouhtsis ]
   * debian/{control,rules}:
@@ -319,7 +319,7 @@ mate-terminal (1.14.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 13:35:24 +0200
 
-mate-terminal (1.14.0-1) unstable; urgency=medium
+cafe-terminal (1.14.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -332,9 +332,9 @@ mate-terminal (1.14.0-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + B-D: libgtk-3-dev.
-    + Versioned B-D: libmate-desktop-dev (>= 1.14).
+    + Versioned B-D: libcafe-desktop-dev (>= 1.14).
     + B-D: libvte-2.91-dev. (Closes: #790186).
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
     + Drop obsolete Python dependencies.
   * debian/rules:
     + Drop --with python2.
@@ -346,7 +346,7 @@ mate-terminal (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 May 2016 05:12:54 +0200
 
-mate-terminal (1.12.1-1) unstable; urgency=medium
+cafe-terminal (1.12.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -357,7 +357,7 @@ mate-terminal (1.12.1-1) unstable; urgency=medium
     + Remove --enable-mpaste because the service is dead.
     + debian/rules: Remove obsolete configure options.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev (>= 1.12).
+    + Versioned B-D: cafe-common (>= 1.12) and libcafe-desktop-dev (>= 1.12).
     + Remove useless libdbus-glib-1-dev build dependency.
   * debian/watch:
     + Drop +gfdl suffix.
@@ -369,7 +369,7 @@ mate-terminal (1.12.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 11:24:15 +0100
 
-mate-terminal (1.10.1+gfdl1-2) unstable; urgency=medium
+cafe-terminal (1.10.1+gfdl1-2) unstable; urgency=medium
 
   * debian/copyright:
     + Drop Files: * (wildcard). This allows lintian to detect issues with
@@ -378,13 +378,13 @@ mate-terminal (1.10.1+gfdl1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2015 23:27:34 +0200
 
-mate-terminal (1.10.1+gfdl1-1) unstable; urgency=medium
+cafe-terminal (1.10.1+gfdl1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
-    + Drop 2001_omit-gfdl-licensed-help-files.patch, mate-terminal help
+    + Drop 2001_omit-gfdl-licensed-help-files.patch, cafe-terminal help
       is DFSG compliant.
-  * debian/mate-terminal-common.install:
+  * debian/cafe-terminal-common.install:
     + Add usr/share/help.
   * debian/rules:
     + Remove obsolete build option.
@@ -401,28 +401,28 @@ mate-terminal (1.10.1+gfdl1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2015 23:06:02 +0200
 
-mate-terminal (1.10.1+dfsg1-1~exp1) experimental; urgency=medium
+cafe-terminal (1.10.1+dfsg1-1~exp1) experimental; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 15:53:51 +0200
 
-mate-terminal (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
+cafe-terminal (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/patches:
-    + Drop 0001_mate-terminal-wrapper.patch. Applied upstream.
+    + Drop 0001_cafe-terminal-wrapper.patch. Applied upstream.
     + Drop 1002_fix-occasional-segfaults-at-session-startup.patch. Applied
       upstream.
   * debian/control:
     + Processed with wrap-and-sort.
-  * debian/mate-terminal-common.install:
+  * debian/cafe-terminal-common.install:
     + Processed with wrap-and-sort
 
   [ Mike Gabriel ]
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.10).
+    + Versioned B-D: cafe-common (>= 1.10).
     + Add Martin Wimpress to Uploaders: field.
     + Update for latest upstream release.
   * debian/rules:
@@ -433,39 +433,39 @@ mate-terminal (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 14:19:58 +0200
 
-mate-terminal (1.8.1+dfsg1-5) unstable; urgency=medium
+cafe-terminal (1.8.1+dfsg1-5) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
-    + Add 0001_mate-terminal-wrapper.patch. Adds support for double quoted
+    + Add 0001_cafe-terminal-wrapper.patch. Adds support for double quoted
       strings. Adapted from gnome-terminal.wrapper. (Closes: #783000,
       LP: #1445198).
 
   [ Mike Gabriel ]
   * debian/control:
-    +  debian/control: Make mate-terminal "Multi-Arch: foreign". (Closes:
+    +  debian/control: Make cafe-terminal "Multi-Arch: foreign". (Closes:
        #774182).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 19 May 2015 16:41:43 +0200
 
-mate-terminal (1.8.1+dfsg1-4) unstable; urgency=medium
+cafe-terminal (1.8.1+dfsg1-4) unstable; urgency=medium
 
-  * debian/mate-terminal.{postinst,prerm):
-    + Use mate-terminal.wrapper (instead of mater-terminal binary directly) as
+  * debian/cafe-terminal.{postinst,prerm):
+    + Use cafe-terminal.wrapper (instead of cafer-terminal binary directly) as
       alternative for x-terminal-emulator. (Closes: #773431).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 06 Jan 2015 10:19:40 +0100
 
-mate-terminal (1.8.1+dfsg1-3) unstable; urgency=medium
+cafe-terminal (1.8.1+dfsg1-3) unstable; urgency=medium
 
   * debian/patches:
     + Add 1002_fix-occasional-segfaults-at-session-startup.patch.
-      Fix segfaults for mate-terminal in non-standard setups if started
+      Fix segfaults for cafe-terminal in non-standard setups if started
       during session startup. (Closes: #769947).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Nov 2014 20:25:38 +0100
 
-mate-terminal (1.8.1+dfsg1-2) unstable; urgency=medium
+cafe-terminal (1.8.1+dfsg1-2) unstable; urgency=medium
 
   * A changelog fixup upload. The below two changes have already been
     included in 1.8.1+dfsg1-1.
@@ -477,7 +477,7 @@ mate-terminal (1.8.1+dfsg1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 12:41:01 +0200
 
-mate-terminal (1.8.1+dfsg1-1) unstable; urgency=medium
+cafe-terminal (1.8.1+dfsg1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -488,31 +488,31 @@ mate-terminal (1.8.1+dfsg1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 12:33:46 +0200
 
-mate-terminal (1.8.0+dfsg1-3) unstable; urgency=low
+cafe-terminal (1.8.0+dfsg1-3) unstable; urgency=low
 
   [ Vangelis Mouhtsis ]
   * debian/rules:
     + Replace on dh_install --list-missing -> --fail-missing.
 
   [ Mike Gabriel ]
-  * debian/control: Add D (bin:package mate-terminal): mate-desktop-common.
+  * debian/control: Add D (bin:package cafe-terminal): cafe-desktop-common.
     (Closes: #750864).
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 11 Jun 2014 21:38:20 +0200
 
-mate-terminal (1.8.0+dfsg1-2) unstable; urgency=low
+cafe-terminal (1.8.0+dfsg1-2) unstable; urgency=low
 
   * debian/rules:
     + Enable parallel builds.
     + Turn on compiler commands during package build (configure option:
       --disable-silent-rules).
     + Fix copy+paste error in tarball repacking code.
-  * debian/mate-terminal.manpages:
+  * debian/cafe-terminal.manpages:
     + Drop this file as it is redundant to upstream's make install.
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 12:30:51 +0200
 
-mate-terminal (1.8.0+dfsg1-1) unstable; urgency=low
+cafe-terminal (1.8.0+dfsg1-1) unstable; urgency=low
 
   * Initial release. (Closes: #734963).
 
