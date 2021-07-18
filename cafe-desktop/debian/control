@@ -1,7 +1,7 @@
-Source: mate-desktop
+Source: cafe-desktop
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -26,55 +26,55 @@ Build-Depends: autoconf-archive,
                libx11-dev,
                libxml2-dev,
                libxrandr-dev (>= 1.3),
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-desktop
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-desktop.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-desktop
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-desktop.git
 
-Package: mate-desktop
+Package: cafe-desktop
 Architecture: any
 Multi-Arch: foreign
 Depends: hicolor-icon-theme,
-         libmate-desktop-2-17,
-         mate-desktop-common (= ${source:Version}),
+         libcafe-desktop-2-17,
+         cafe-desktop-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Recommends: mate-user-guide,
-Breaks: mate-desktop-gnome,
-Replaces: mate-desktop-gnome,
-Suggests: mate-desktop-environment,
+Recommends: cafe-user-guide,
+Breaks: cafe-desktop-gnome,
+Replaces: cafe-desktop-gnome,
+Suggests: cafe-desktop-environment,
 Description: Library with common API for various CAFE modules
- The CAFE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
  .
- The libmate-desktop library provides an API shared by several applications
+ The libcafe-desktop library provides an API shared by several applications
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
- The mate-about program helps with finding which version of CAFE is installed.
+ The cafe-about program helps with finding which version of CAFE is installed.
  .
  NOTE: This package does not install the complete CAFE desktop environment
  for you. The full desktop environment can be installed via the metapackage
- mate-desktop-environment.
+ cafe-desktop-environment.
 
-Package: mate-desktop-common
+Package: cafe-desktop-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-desktop (<< 1.1.1-1),
-Replaces: mate-desktop (<< 1.1.1-1),
+Breaks: cafe-desktop (<< 1.1.1-1),
+Replaces: cafe-desktop (<< 1.1.1-1),
 Description: Library with common API for various CAFE modules (common files)
- The CAFE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
  .
- The libmate-desktop library provides an API shared by several applications
+ The libcafe-desktop library provides an API shared by several applications
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
  This package contains the architecture-independent files.
 
-Package: libmate-desktop-2-17
+Package: libcafe-desktop-2-17
 Section: libs
 Architecture: any
 Multi-Arch: same
@@ -82,77 +82,77 @@ Pre-Depends: ${misc:Pre-Depends},
 Depends: iso-codes,
          ${misc:Depends},
          ${shlibs:Depends},
-Provides: libmatedesktop,
-Breaks: libmatedesktop (<< 1.6.1),
-Replaces: libmatedesktop (<< 1.6.1),
+Provides: libcafedesktop,
+Breaks: libcafedesktop (<< 1.6.1),
+Replaces: libcafedesktop (<< 1.6.1),
 Description: Library with common API for various CAFE modules (library)
- The CAFE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
  .
- The libmate-desktop library provides an API shared by several applications
+ The libcafe-desktop library provides an API shared by several applications
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
- The package contains the actual mate-desktop library.
+ The package contains the actual cafe-desktop library.
 
-Package: libmate-desktop-dev
+Package: libcafe-desktop-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: libdconf-dev,
          libgdk-pixbuf2.0-dev,
          libgtk-3-dev,
-         libmate-desktop-2-17 (= ${binary:Version}),
+         libcafe-desktop-2-17 (= ${binary:Version}),
          libstartup-notification0-dev,
-         gir1.2-matedesktop-2.0 (= ${binary:Version}),
+         gir1.2-cafedesktop-2.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmatedesktop-dev,
-        gir1.2-mate-desktop (<< 1.18.0-2~),
-Replaces: libmatedesktop-dev,
-          gir1.2-mate-desktop (<< 1.18.0-2~),
+Breaks: libcafedesktop-dev,
+        gir1.2-cafe-desktop (<< 1.18.0-2~),
+Replaces: libcafedesktop-dev,
+          gir1.2-cafe-desktop (<< 1.18.0-2~),
 Description: Library with common API for various CAFE modules (development files)
- The CAFE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
  .
- The libmate-desktop library provides an API shared by several applications
+ The libcafe-desktop library provides an API shared by several applications
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
- This package contains the mate-desktop development files.
+ This package contains the cafe-desktop development files.
 
-Package: libmate-desktop-doc
+Package: libcafe-desktop-doc
 Section: doc
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
-Breaks: libmatedesktop-doc,
-Replaces: libmatedesktop-doc,
+Breaks: libcafedesktop-doc,
+Replaces: libcafedesktop-doc,
 Description: Library with common API for various CAFE modules (documentation files)
- The CAFE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
  .
- The libmate-desktop library provides an API shared by several applications
+ The libcafe-desktop library provides an API shared by several applications
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
  This package contains the documentation files.
 
-Package: gir1.2-matedesktop-2.0
+Package: gir1.2-cafedesktop-2.0
 Section: introspection
 Architecture: any
 Multi-Arch: same
-Depends: libmate-desktop-2-17 (= ${binary:Version}),
+Depends: libcafe-desktop-2-17 (= ${binary:Version}),
          ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: gir1.2-mate-desktop (<< 1.18.0-2~),
-Replaces: gir1.2-mate-desktop (<< 1.18.0-2~),
-Description: GObject introspection data for the libmate-desktop library
- The CAFE component mate-desktop contains the libmate-desktop library, the
- mate-about program, as well as some desktop-wide documents.
+Breaks: gir1.2-cafe-desktop (<< 1.18.0-2~),
+Replaces: gir1.2-cafe-desktop (<< 1.18.0-2~),
+Description: GObject introspection data for the libcafe-desktop library
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
  .
- The libmate-desktop library provides an API shared by several applications
+ The libcafe-desktop library provides an API shared by several applications
  on the desktop, but that cannot live in the platform for various
  reasons.
  .
@@ -161,11 +161,11 @@ Description: GObject introspection data for the libmate-desktop library
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: gir1.2-mate-desktop
+Package: gir1.2-cafe-desktop
 Section: oldlibs
 Architecture: any
 Depends: ${misc:Depends},
-         gir1.2-matedesktop-2.0 (= ${binary:Version}),
-Description: GObject introspection data for libmate-desktop (transitional package)
- This package is a transitional package to gir1.2-matedesktop-2.0. The package
+         gir1.2-cafedesktop-2.0 (= ${binary:Version}),
+Description: GObject introspection data for libcafe-desktop (transitional package)
+ This package is a transitional package to gir1.2-cafedesktop-2.0. The package
  can be safely removed.

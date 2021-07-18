@@ -1,137 +1,137 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Desktop
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-desktop/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-desktop/
 
-Files: libmate-desktop/mate-bg-crossfade.c
-       libmate-desktop/mate-bg-crossfade.h
-       libmate-desktop/mate-rr-config.c
-       libmate-desktop/mate-rr-config.h
-       libmate-desktop/mate-rr.c
-       libmate-desktop/mate-rr.h
+Files: libcafe-desktop/cafe-bg-crossfade.c
+       libcafe-desktop/cafe-bg-crossfade.h
+       libcafe-desktop/cafe-rr-config.c
+       libcafe-desktop/cafe-rr-config.h
+       libcafe-desktop/cafe-rr.c
+       libcafe-desktop/cafe-rr.h
 Copyright: 2002, Red Hat, Inc.
            2007-2008, Red Hat, Inc.
 License: LGPL-2+
 
-Files: libmate-desktop/mate-hsv.c
-       libmate-desktop/mate-hsv.h
+Files: libcafe-desktop/cafe-hsv.c
+       libcafe-desktop/cafe-hsv.h
 Copyright: Simon Budig <Simon.Budig@unix-ag.org>
            Federico Mena-Quintero <federico@gimp.org>
            Jonathan Blandford <jrb@redhat.com>
            2019, Pablo Barciela
 License: LGPL-2+
 
-Files: libmate-desktop/mate-bg.c
-       libmate-desktop/mate-bg.h
+Files: libcafe-desktop/cafe-bg.c
+       libcafe-desktop/cafe-bg.h
 Copyright: 2000 Eazel, Inc.
            2007-2008, Red Hat, Inc.
            2012, Jasmine Hassan <jasmine.aura@gmail.com>
 License: LGPL-2+
 
-Files: libmate-desktop/mate-dconf.c
-       libmate-desktop/mate-dconf.h
+Files: libcafe-desktop/cafe-dconf.c
+       libcafe-desktop/cafe-dconf.h
 Copyright: 2011, Novell, Inc.
            2013, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: libmate-desktop/mate-desktop.h
-       libmate-desktop/test.c
+Files: libcafe-desktop/cafe-desktop.h
+       libcafe-desktop/test.c
 Copyright: 2013, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: libmate-desktop/mate-desktop-item.c
-       libmate-desktop/mate-desktop-item.h
+Files: libcafe-desktop/cafe-desktop-item.c
+       libcafe-desktop/cafe-desktop-item.h
 Copyright: 1999-2000, Red Hat, Inc.
            2001, Sid Vicious
 License: LGPL-2+
 
-Files: libmate-desktop/test-desktop-thumbnail.c
-       libmate-desktop/test-languages.c
+Files: libcafe-desktop/test-desktop-thumbnail.c
+       libcafe-desktop/test-languages.c
 Copyright: 2012-2017, Red Hat, Inc.
            2012, Bastien Nocera <hadess@hadess.net>
 License: LGPL-2+
 
-Files: libmate-desktop/mate-desktop-thumbnail.c
+Files: libcafe-desktop/cafe-desktop-thumbnail.c
 Copyright: 2002, Red Hat, Inc.
            2010, Carlos Garcia Campos <carlosgc@gnome.org>
 License: LGPL-2+
 
-Files: libmate-desktop/mate-desktop-thumbnail.h
+Files: libcafe-desktop/cafe-desktop-thumbnail.h
 Copyright: 2002, Red Hat, Inc.
 License: LGPL-2+
 
-Files: libmate-desktop/mate-desktop-utils.*
+Files: libcafe-desktop/cafe-desktop-utils.*
 Copyright: 1998, Tom Tromey
 License: LGPL-2+
 
-Files: libmate-desktop/mate-gsettings.c
-       libmate-desktop/mate-gsettings.h
+Files: libcafe-desktop/cafe-gsettings.c
+       libcafe-desktop/cafe-gsettings.h
 Copyright: 2013, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: libmate-desktop/mate-colorbutton.c
-       libmate-desktop/mate-colorbutton.h
+Files: libcafe-desktop/cafe-colorbutton.c
+       libcafe-desktop/cafe-colorbutton.h
 Copyright: 2001. CodeFactory AB
            2001, 2002 Anders Carlsson
            2003, 2004 Matthias Clasen <mclasen@redhat.com>
            2014 Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: libmate-desktop/mate-colorsel.c
-       libmate-desktop/mate-colorsel.h
-       libmate-desktop/mate-colorseldialog.c
-       libmate-desktop/mate-colorseldialog.h
+Files: libcafe-desktop/cafe-colorsel.c
+       libcafe-desktop/cafe-colorsel.h
+       libcafe-desktop/cafe-colorseldialog.c
+       libcafe-desktop/cafe-colorseldialog.h
 Copyright: 2000 Red Hat, Inc.
            1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald
 License: GPL-2+
 
-Files: libmate-desktop/mate-rr-output-info.c
+Files: libcafe-desktop/cafe-rr-output-info.c
 Copyright: 2010 Giovanni Campagna
 License: GPL-2+
 
-Files: libmate-desktop/mate-rr-labeler.c
-       libmate-desktop/mate-rr-labeler.h
-       libmate-desktop/private.h
+Files: libcafe-desktop/cafe-rr-labeler.c
+       libcafe-desktop/cafe-rr-labeler.h
+       libcafe-desktop/private.h
 Copyright: 2008, Novell, Inc.
            2009, Novell, Inc.
 License: LGPL-2+
 
-Files: libmate-desktop/display-name.c
-       libmate-desktop/edid-parse.c
+Files: libcafe-desktop/display-name.c
+       libcafe-desktop/edid-parse.c
 Copyright: 2007, Red Hat, Inc.
 License: Expat
 
-Files: libmate-desktop/edid.h
+Files: libcafe-desktop/edid.h
 Copyright: 2007-2008, Red Hat, Inc.
 License: LGPL-2+
 
-Files: mate-about/*.c
-       mate-about/*.h.in
+Files: cafe-about/*.c
+       cafe-about/*.h.in
 Copyright: 2011, Perberos <perberos@gmail.com>
 License: GPL-2+
 
-Files: man/mate-about.1
+Files: man/cafe-about.1
 Copyright: 2010, Vincent Untz <vuntz@gnome.org>
 License: GPL-2+
 Comment:
  Using license as found in COPYING file.
 
-Files: tools/mate-color-select.c
+Files: tools/cafe-color-select.c
 Copyright: 2014, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: man/mate-color-select.1
+Files: man/cafe-color-select.1
 Copyright: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: GPL-2+
 Comment:
  Assuming license as found in COPYING file.
 
-Files: libmate-desktop/test-ditem.c
-       tools/mate-color-select.desktop.in
+Files: libcafe-desktop/test-ditem.c
+       tools/cafe-color-select.desktop.in
 Copyright: *No copyright*
 License: GPL-2+
 
-Files: mate-desktop.pot
+Files: cafe-desktop.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright: 1999-2004, Jesús Bravo Álvarez
@@ -166,46 +166,46 @@ Files: .build.yml
        config.meson.h
        docs/Makefile.am
        docs/reference/Makefile.am
-       docs/reference/mate-desktop/meson.build
-       docs/reference/mate-desktop/Makefile.am
-       docs/reference/mate-desktop/mate-desktop-docs.sgml
-       docs/reference/mate-desktop/mate-desktop-overrides.txt
-       docs/reference/mate-desktop/mate-desktop-sections.txt
-       docs/reference/mate-desktop/mate-desktop.types
+       docs/reference/cafe-desktop/meson.build
+       docs/reference/cafe-desktop/Makefile.am
+       docs/reference/cafe-desktop/cafe-desktop-docs.sgml
+       docs/reference/cafe-desktop/cafe-desktop-overrides.txt
+       docs/reference/cafe-desktop/cafe-desktop-sections.txt
+       docs/reference/cafe-desktop/cafe-desktop.types
        icons/Makefile.am
        icons/meson.build
-       icons/128x128/apps/mate-desktop.png
-       icons/16x16/apps/mate-desktop.png
-       icons/22x22/apps/mate-desktop.png
-       icons/24x24/apps/mate-desktop.png
-       icons/32x32/apps/mate-desktop.png
-       icons/48x48/apps/mate-desktop.png
-       icons/scalable/apps/mate-desktop-symbolic.svg
-       icons/scalable/apps/mate-desktop.svg
-       libmate-desktop/Makefile.am
-       libmate-desktop/meson.build
-       libmate-desktop/mate-desktop.abi
-       libmate-desktop/mate-desktop.map
-       libmate-desktop/mate-desktop-2.0-uninstalled.pc.in
-       libmate-desktop/mate-desktop-2.0.pc.in
-       libmate-desktop/mate-languages.c
-       libmate-desktop/mate-languages.h
-       libmate-desktop/mate-rr-private.h
-       libmate-desktop/pnp.ids
-       libmate-desktop/test.c
+       icons/128x128/apps/cafe-desktop.png
+       icons/16x16/apps/cafe-desktop.png
+       icons/22x22/apps/cafe-desktop.png
+       icons/24x24/apps/cafe-desktop.png
+       icons/32x32/apps/cafe-desktop.png
+       icons/48x48/apps/cafe-desktop.png
+       icons/scalable/apps/cafe-desktop-symbolic.svg
+       icons/scalable/apps/cafe-desktop.svg
+       libcafe-desktop/Makefile.am
+       libcafe-desktop/meson.build
+       libcafe-desktop/cafe-desktop.abi
+       libcafe-desktop/cafe-desktop.map
+       libcafe-desktop/cafe-desktop-2.0-uninstalled.pc.in
+       libcafe-desktop/cafe-desktop-2.0.pc.in
+       libcafe-desktop/cafe-languages.c
+       libcafe-desktop/cafe-languages.h
+       libcafe-desktop/cafe-rr-private.h
+       libcafe-desktop/pnp.ids
+       libcafe-desktop/test.c
        makepot
        man/Makefile.am
        man/meson.build
-       mate-about/Makefile.am
-       mate-about/meson.build
-       mate-about/mate-about.desktop.in
-       mate-about/mate-version.xml.in
+       cafe-about/Makefile.am
+       cafe-about/meson.build
+       cafe-about/cafe-about.desktop.in
+       cafe-about/cafe-version.xml.in
        po/LINGUAS
        po/POTFILES.*
        po/Makevars
        po/meson.build
-       schemas/org.mate.*.xml
-       schemas/org.mate.*.xml.in
+       schemas/org.cafe.*.xml
+       schemas/org.cafe.*.xml.in
        schemas/Makefile.am
        schemas/meson.build
        tools/Makefile.am
