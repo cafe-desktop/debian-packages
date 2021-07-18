@@ -1,0 +1,14 @@
+Description: Debian specific; prefer x-terminal-emulator as terminal to run applications in.
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+
+--- a/libmate-desktop/mate-desktop-utils.c
++++ b/libmate-desktop/mate-desktop-utils.c
+@@ -136,6 +136,8 @@
+ 			term_argv[1] = g_strdup ("-x");
+ 		} else {
+ 			if (check == NULL)
++				check = g_find_program_in_path ("x-terminal-emulator");
++			if (check == NULL)
+ 				check = g_find_program_in_path ("nxterm");
+ 			if (check == NULL)
+ 				check = g_find_program_in_path ("color-xterm");
