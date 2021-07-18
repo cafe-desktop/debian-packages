@@ -26,7 +26,6 @@ Build-Depends: autoconf-archive,
                libx11-dev,
                libxml2-dev,
                libxrandr-dev (>= 1.3),
-               cafe-common (>= 1.18),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.cafe-desktop.org/
