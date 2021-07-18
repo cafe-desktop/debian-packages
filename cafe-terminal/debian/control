@@ -1,7 +1,7 @@
 Source: mate-terminal
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -35,14 +35,14 @@ Depends: gsettings-desktop-schemas,
          ${misc:Depends},
          ${shlibs:Depends},
 Provides: x-terminal-emulator,
-Description: MATE terminal emulator application
- MATE Terminal is a terminal emulation application that you can use to
+Description: CAFE terminal emulator application
+ CAFE Terminal is a terminal emulation application that you can use to
  perform the following actions:
-  - Access a UNIX shell in the MATE environment.
+  - Access a UNIX shell in the CAFE environment.
   - Run any application that is designed to run on VT102, VT220, and xterm
  terminals.
  .
- MATE Terminal features the ability to use multiple terminals in a single
+ CAFE Terminal features the ability to use multiple terminals in a single
  window (tabs) and profiles support.
 
 Package: mate-terminal-common
@@ -50,14 +50,14 @@ Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-terminal (<< 1.1.0-2),
 Replaces: mate-terminal (<< 1.1.0-2),
-Description: MATE terminal emulator application (common files)
- MATE Terminal is a terminal emulation application that you can use to
+Description: CAFE terminal emulator application (common files)
+ CAFE Terminal is a terminal emulation application that you can use to
  perform the following actions:
-  - Access a UNIX shell in the MATE environment.
+  - Access a UNIX shell in the CAFE environment.
   - Run any application that is designed to run on VT102, VT220, and xterm
  terminals.
  .
- MATE Terminal features the ability to use multiple terminals in a single
+ CAFE Terminal features the ability to use multiple terminals in a single
  window (tabs) and profiles support.
  .
  This package contains the architecture independent files.

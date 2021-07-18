@@ -58,7 +58,7 @@ mate-terminal (1.22.1-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
     + Add B-D: libxml2-utils.
   * debian/mate-terminal-common.install:
     + Do not install /usr/share/mate-terminal, mate-terminal now uses
@@ -66,7 +66,7 @@ mate-terminal (1.22.1-1) unstable; urgency=medium
   * debian/copyright:
     + Update copyright attributions.
   * debian/rules:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/mate-terminal-common.install:
     + Correct order.
   * debian/patches:
@@ -165,7 +165,7 @@ mate-terminal (1.20.0-1) unstable; urgency=medium
   * debian/control (already in 1.19.1-0ubuntu1):
     + Temporarily have pkg-mate-team ML under Uploaders:.
     + Update Maintainer: field to debian-mate ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
@@ -211,9 +211,9 @@ mate-terminal (1.18.1-2) unstable; urgency=medium
 mate-terminal (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/control: Drop unused B-D docbook-to-man.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Aron Xu ]
   * New upstream release.
@@ -281,7 +281,7 @@ mate-terminal (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -299,7 +299,7 @@ mate-terminal (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release. (Closes: #836238, #836239).
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
@@ -364,7 +364,7 @@ mate-terminal (1.12.1-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
     debian/copyright:
-    + MATE Terminal's help files are license GFDL-1.1+, not GFDL-1.2+. Add
+    + CAFE Terminal's help files are license GFDL-1.1+, not GFDL-1.2+. Add
       GFDL-1.1+ as possible license for files/patches in debian/*.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 11:24:15 +0100

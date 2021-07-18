@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Terminal
+Upstream-Name: CAFE Terminal
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
 Source: https://git.mate-desktop.org/mate-terminal/
 
@@ -437,7 +437,7 @@ Copyright: 2002, Sun Microsystems
            2000, Miguel de Icaza
            2000, Alexander Kirillov
            2005, Ростислав "zbrox" Райков <zbrox@i-space.org>
-           2015, MATE-Dokumentationsprojekt
+           2015, CAFE-Dokumentationsprojekt
            2009, Paul Cutler
            2008, Christian Persch
            2000-2010, Free Software Foundation, Inc.
