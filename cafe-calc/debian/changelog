@@ -1,0 +1,199 @@
+mate-calc (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:44:59 +0200
+
+mate-calc (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_add-keywords-field-to-desktop-file.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D libxml2-utils.
+    + Update Build-Depends: to support MATE Desktop 1.24.
+  * debian/mate-calc-common.install:
+    + Remove obsolete reference to usr/share/mate-calc/.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 15:58:00 +0100
+
+mate-calc (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:46:28 +0200
+
+mate-calc (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/mate-calc-common.install:
+    + Correct order.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jul 2019 16:50:19 +0200
+
+mate-calc (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+  * debian/rules:
+    + Drop override_dh_install. The appdata.xml is now installed to the
+      correct location.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 06 Jan 2019 01:38:46 +0100
+
+mate-calc (1.20.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 15:36:58 +0200
+
+mate-calc (1.20.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_init_gtk_before_math_equation_new.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 11:48:02 +0200
+
+mate-calc (1.20.0-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/copyright: Use secure URI for copyright format.
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_init_gtk_before_math_equation_new.patch. Initialise GTK before
+      math_equation_new to prevent a slew of warnings when running from the
+      terminal.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Mar 2018 14:53:38 +0100
+
+mate-calc (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.0-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.0-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/{rules,mate-calc-common.install}:
+    + Move appstream metainfo to correct location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 15:48:26 +0100
+
+mate-calc (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
+
+mate-calc (1.19.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 06:46:13 +0000
+
+mate-calc (1.18.1-2) unstable; urgency=medium
+
+  * debian/watch:
+    + Ignore upstream development releases.
+    + Use secure URL to obtain upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Nov 2017 18:10:03 +0100
+
+mate-calc (1.18.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control: Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Nov 2017 09:50:23 +0100
+
+mate-calc (1.18.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 1001_add-keywords-field-to-desktop-file.patch. Provide Keywords=
+      field in .desktop file.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 20:15:36 +0200
+
+mate-calc (1.17.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * Initial release to Debian. (Closes: #734902).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 16 Jan 2017 09:24:41 +0100
