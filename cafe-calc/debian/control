@@ -1,7 +1,7 @@
 Source: mate-calc
 Section: math
 Priority: optional
-Maintainer: Debian+Ubuntu Debian MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu Debian CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Martin Wimpress <code@flexion.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
@@ -25,7 +25,7 @@ Architecture: any
 Depends: mate-calc-common (>= ${source:Version}), mate-calc-common (<< ${source:Version}.1~),
          ${misc:Depends},
          ${shlibs:Depends},
-Description: MATE desktop calculator
+Description: CAFE desktop calculator
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
  to give a high degree of accuracy.
@@ -35,7 +35,7 @@ Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-calc (<< 1.17.0),
 Replaces: mate-calc (<< 1.17.0),
-Description: MATE desktop calculator (common files)
+Description: CAFE desktop calculator (common files)
  mate-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
  to give a high degree of accuracy.

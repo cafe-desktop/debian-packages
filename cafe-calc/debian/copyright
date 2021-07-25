@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Calc
+Upstream-Name: CAFE Calc
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
 Source: https://git.mate-desktop.org/mate-calc/
 
@@ -126,7 +126,7 @@ Files: help/C/*
        help/zh_HK/zh_HK.po
        help/zh_TW/zh_TW.po
        help/zu/zu.po
-Copyright: MATE Documentation Project
+Copyright: CAFE Documentation Project
            Christian.Kirbach@googlemail.com
            claude@2xlibre.net
            daniel.mustieles@gmail.com
