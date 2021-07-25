@@ -1,7 +1,7 @@
-Source: mate-calc
+Source: cafe-calc
 Section: math
 Priority: optional
-Maintainer: Debian+Ubuntu Debian CAFE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu Debian CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Martin Wimpress <code@flexion.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
@@ -12,31 +12,31 @@ Build-Depends: debhelper-compat (= 13),
                libgtk-3-dev,
                libxml2-dev,
                libxml2-utils,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
                yelp-tools,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-calc
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-calc.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-calc
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-calc.git
 
-Package: mate-calc
+Package: cafe-calc
 Architecture: any
-Depends: mate-calc-common (>= ${source:Version}), mate-calc-common (<< ${source:Version}.1~),
+Depends: cafe-calc-common (>= ${source:Version}), cafe-calc-common (<< ${source:Version}.1~),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: CAFE desktop calculator
- mate-calc is a powerful graphical calculator with financial, logical and
+ cafe-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
  to give a high degree of accuracy.
 
-Package: mate-calc-common
+Package: cafe-calc-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-calc (<< 1.17.0),
-Replaces: mate-calc (<< 1.17.0),
+Breaks: cafe-calc (<< 1.17.0),
+Replaces: cafe-calc (<< 1.17.0),
 Description: CAFE desktop calculator (common files)
- mate-calc is a powerful graphical calculator with financial, logical and
+ cafe-calc is a powerful graphical calculator with financial, logical and
  scientific modes. It uses a multiple precision package to do its arithmetic
  to give a high degree of accuracy.
  .

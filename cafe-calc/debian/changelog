@@ -1,4 +1,4 @@
-mate-calc (1.24.1-1) unstable; urgency=medium
+cafe-calc (1.24.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -11,7 +11,7 @@ mate-calc (1.24.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:44:59 +0200
 
-mate-calc (1.24.0-1) unstable; urgency=medium
+cafe-calc (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -30,23 +30,23 @@ mate-calc (1.24.0-1) unstable; urgency=medium
   * debian/control:
     + Add B-D libxml2-utils.
     + Update Build-Depends: to support CAFE Desktop 1.24.
-  * debian/mate-calc-common.install:
-    + Remove obsolete reference to usr/share/mate-calc/.
+  * debian/cafe-calc-common.install:
+    + Remove obsolete reference to usr/share/cafe-calc/.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 15:58:00 +0100
 
-mate-calc (1.22.2-1) unstable; urgency=medium
+cafe-calc (1.22.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:46:28 +0200
 
-mate-calc (1.22.1-1) unstable; urgency=medium
+cafe-calc (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
-  * debian/mate-calc-common.install:
+  * debian/cafe-calc-common.install:
     + Correct order.
 
   [ Mike Gabriel ]
@@ -61,7 +61,7 @@ mate-calc (1.22.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jul 2019 16:50:19 +0200
 
-mate-calc (1.20.3-1) unstable; urgency=medium
+cafe-calc (1.20.3-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -74,13 +74,13 @@ mate-calc (1.20.3-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 06 Jan 2019 01:38:46 +0100
 
-mate-calc (1.20.2-1) unstable; urgency=medium
+cafe-calc (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Make Upstream-Name: field's value more human readable.
     + Update Upstream-Contact: field.
@@ -91,7 +91,7 @@ mate-calc (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 15:36:58 +0200
 
-mate-calc (1.20.1-1) unstable; urgency=medium
+cafe-calc (1.20.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -104,7 +104,7 @@ mate-calc (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 11:48:02 +0200
 
-mate-calc (1.20.0-2) unstable; urgency=medium
+cafe-calc (1.20.0-2) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/copyright: Use secure URI for copyright format.
@@ -117,7 +117,7 @@ mate-calc (1.20.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Mar 2018 14:53:38 +0100
 
-mate-calc (1.20.0-1) unstable; urgency=medium
+cafe-calc (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.19.0-0ubuntu1):
@@ -125,31 +125,31 @@ mate-calc (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.0-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
   * debian/{control,compat}: Bump DH version level to 11.
-  * debian/{rules,mate-calc-common.install}:
+  * debian/{rules,cafe-calc-common.install}:
     + Move appstream metainfo to correct location.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 15:48:26 +0100
 
-mate-calc (1.20.0-0ubuntu1) bionic; urgency=medium
+cafe-calc (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
 
-mate-calc (1.19.0-0ubuntu1) bionic; urgency=medium
+cafe-calc (1.19.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 06:46:13 +0000
 
-mate-calc (1.18.1-2) unstable; urgency=medium
+cafe-calc (1.18.1-2) unstable; urgency=medium
 
   * debian/watch:
     + Ignore upstream development releases.
@@ -157,7 +157,7 @@ mate-calc (1.18.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Nov 2017 18:10:03 +0100
 
-mate-calc (1.18.1-1) unstable; urgency=medium
+cafe-calc (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -167,7 +167,7 @@ mate-calc (1.18.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Nov 2017 09:50:23 +0100
 
-mate-calc (1.18.0-1) unstable; urgency=medium
+cafe-calc (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -191,7 +191,7 @@ mate-calc (1.18.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 20:15:36 +0200
 
-mate-calc (1.17.0-1) unstable; urgency=medium
+cafe-calc (1.17.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * Initial release to Debian. (Closes: #734902).
