@@ -1,0 +1,4 @@
+usr/lib/*/libvala-*.so
+usr/lib/*/pkgconfig/libvala*.pc
+usr/include/vala-*/*
+usr/share/vala/vapi/libvala-*.*

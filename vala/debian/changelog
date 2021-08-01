@@ -1,0 +1,1736 @@
+vala (0.48.17-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 12 Apr 2021 15:23:07 +0200
+
+vala (0.48.16-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 08 Apr 2021 12:30:25 +0200
+
+vala (0.48.15-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 18 Mar 2021 20:24:40 +0100
+
+vala (0.48.14-1) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * Reduce Build-Depends: (Closes: #981210)
+    + Demote docbook-xml and xsltproc to Build-Depends-Indep.
+    + Annotate test dependencies libdbus-1-dev, dbus, libgirepository1.0-dev
+      with <!nocheck>.
+
+  [ Rico Tzschichholz ]
+  * Remove optional help2man build-dep and keep using the upstream manpages
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Sun, 28 Feb 2021 19:25:05 +0100
+
+vala (0.48.13-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 11 Jan 2021 16:10:31 +0100
+
+vala (0.48.12-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 19 Nov 2020 16:12:38 +0100
+
+vala (0.48.11-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 29 Sep 2020 11:06:16 +0200
+
+vala (0.48.10-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 07 Sep 2020 08:41:00 +0200
+
+vala (0.48.9-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 10 Aug 2020 15:31:39 +0200
+
+vala (0.48.8-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 30 Jul 2020 12:08:07 +0200
+
+vala (0.48.7-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 30 Jun 2020 16:08:07 +0200
+
+vala (0.48.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 18 May 2020 15:20:37 +0200
+
+vala (0.48.5-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 23 Apr 2020 09:31:20 +0200
+
+vala (0.48.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 21 Apr 2020 16:09:27 +0200
+
+vala (0.48.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 06 Apr 2020 16:02:24 +0200
+
+vala (0.48.2-1) unstable; urgency=medium
+
+  [ Rico Tzschichholz ]
+  * New upstream release
+  * Add README.md to docs (Closes: #942869)
+  * Make valadoc recommend gtk-doc-tools (Closes: #916312)
+
+  [ Helmut Grohne ]
+  * Simplify parallelity using more dh_auto_* (Closes: #929915)
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 23 Mar 2020 20:45:06 +0100
+
+vala (0.48.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Wed, 11 Mar 2020 13:30:07 +0100
+
+vala (0.48.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 03 Mar 2020 16:07:10 +0100
+
+vala (0.47.92-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 24 Feb 2020 16:11:29 +0100
+
+vala (0.47.91-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 17 Feb 2020 12:36:19 +0100
+
+vala (0.47.4-1) experimental; urgency=medium
+
+  * New upstream development release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 04 Feb 2020 09:36:59 +0100
+
+vala (0.47.3-1) experimental; urgency=medium
+
+  * New upstream development release
+  * Rename packages for 0.46 → 0.48
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Wed, 22 Jan 2020 18:34:19 +0100
+
+vala (0.46.5-1.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix indep-only FTBFS (Closes: #947483).
+
+ -- Helmut Grohne <helmut@subdivi.de>  Fri, 03 Jan 2020 17:03:41 +0100
+
+vala (0.46.5-1.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Upload to unstable.
+
+ -- Helmut Grohne <helmut@subdivi.de>  Tue, 24 Dec 2019 00:01:14 +0100
+
+vala (0.46.5-1.1) experimental; urgency=medium
+
+  * Non-maintainer upload.
+  * Move valac to a M-A:foreign package and add cross wrappers. (Closes:
+    #889925)
+
+ -- Helmut Grohne <helmut@subdivi.de>  Tue, 10 Dec 2019 16:34:29 +0100
+
+vala (0.46.5-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 18 Nov 2019 10:27:11 +0100
+
+vala (0.46.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Wed, 09 Oct 2019 13:28:36 +0200
+
+vala (0.46.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 30 Sep 2019 10:12:55 +0200
+
+vala (0.46.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 16 Sep 2019 09:17:15 +0200
+
+vala (0.46.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 14 Sep 2019 22:22:25 -0400
+
+vala (0.46.0-1) experimental; urgency=medium
+
+  * New upstream release
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Fri, 06 Sep 2019 13:34:19 +0200
+
+vala (0.45.91-1) experimental; urgency=medium
+
+  * New upstream development release
+  * Rename packages for 0.44 → 0.46
+  * Bump minimum libglib2.0-dev to 2.48
+  * Make libvaladoc-data API-specific to follow new installation directories
+  * Update symbols
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 20 Aug 2019 17:06:43 +0100
+
+vala (0.44.7-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 05 Aug 2019 11:55:19 +0200
+
+vala (0.44.6-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Wed, 17 Jul 2019 13:35:49 +0100
+
+vala (0.44.3-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 09 Apr 2019 09:59:16 +0100
+
+vala (0.44.1-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Sun, 17 Mar 2019 17:05:37 +0100
+
+vala (0.44.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 09 Mar 2019 05:30:37 -0500
+
+vala (0.43.92-1) experimental; urgency=medium
+
+  * New upstream development release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 04 Mar 2019 20:20:04 +0100
+
+vala (0.43.91-1) experimental; urgency=medium
+
+  * New upstream development release
+
+ -- Jeremy Bicha <jbicha@debian.org>  Thu, 21 Feb 2019 10:23:49 -0500
+
+vala (0.43.90-1) experimental; urgency=medium
+
+  * New upstream development release
+  * Rename packages and update symbols for 0.42 → 0.44
+  * Drop patch: obsolete
+  * Add Lintian override for libvaladoc's use of rpath
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 11 Feb 2019 14:20:03 -0500
+
+vala (0.42.5-1) unstable; urgency=medium
+
+  * New upstream release
+  * Update symbols files
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 22 Jan 2019 12:07:20 -0500
+
+vala (0.42.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add new symbols to symbols files
+  * Restore -Wl,-O1 to our LDFLAGS
+  * Use dh_auto_configure instead of calling configure directly
+  * Revert "Default to -O2": no longer needed with 0.42.3
+
+ -- Jeremy Bicha <jbicha@debian.org>  Thu, 20 Dec 2018 15:19:31 -0500
+
+vala (0.42.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 15 Nov 2018 18:41:00 +0100
+
+vala (0.42.2-2) unstable; urgency=medium
+
+  * Revert "Don't ignore build tests on hurd"
+  * Default to -O2
+    - This was the default before 0.42.2-1 and dropping this caused
+      Ubuntu's ppc64el to fail to build since it defaults to -O3
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 08 Oct 2018 19:27:14 -0400
+
+vala (0.42.2-1) unstable; urgency=medium
+
+  [ Rico Tzschichholz ]
+  * New upstream release
+
+  [ Jeremy Bicha ]
+  * Bump debhelper compat to 11 and simplify debian/rules
+  * Stop installing ChangeLog (we already install NEWS)
+  * Don't install AUTHORS since it duplicates debian/copyright
+  * Don't ignore build tests on hurd
+  * Bump Standards-Version to 4.2.1
+  * Build-Depend on docbook-xml
+  * Enable all hardening flags
+  * Add Rico Tzschichholz to Uploaders
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 07 Oct 2018 11:34:26 -0400
+
+vala (0.42.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Fri, 21 Sep 2018 20:15:40 +0200
+
+vala (0.42.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Sun, 02 Sep 2018 13:11:16 +0200
+
+vala (0.41.92-1) experimental; urgency=medium
+
+  * New upstream development release
+  * Rename packages and update symbols for 0.40 -> 0.42
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 21 Aug 2018 16:53:37 +0200
+
+vala (0.40.9-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Mon, 20 Aug 2018 13:40:12 +0200
+
+vala (0.40.8-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 19 Jul 2018 13:27:55 +0100
+
+vala (0.40.7-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Rico Tzschichholz ]
+  * New upstream release
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 03 Jul 2018 23:45:52 +0100
+
+vala (0.40.4-1) unstable; urgency=medium
+
+  * New upstream release (LP: #1764389)
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 16 Apr 2018 08:16:42 -0400
+
+vala (0.40.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop fix-regression-of-StatusIcon.position_menu.patch: Applied
+  * Bump Standards-Version to 4.1.4
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 08 Apr 2018 16:06:24 -0400
+
+vala (0.40.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Cherry-pick fix-regression-of-StatusIcon.position_menu.patch:
+    - Fix synapse's build failure with vala 0.40 (Closes: #891629)
+      (LP: #1756803)
+
+ -- Jeremy Bicha <jbicha@debian.org>  Thu, 29 Mar 2018 06:01:53 -0400
+
+vala (0.40.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 11 Mar 2018 13:43:21 -0400
+
+vala (0.39.92-1) unstable; urgency=medium
+
+  * New upstream release candidate
+  * debian/libvaladoc-0.40-0.symbols: Add new symbols
+  * Release to unstable
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 27 Feb 2018 15:58:32 -0500
+
+vala (0.39.91-1) experimental; urgency=medium
+
+  [ Jeremy Bicha]
+  * New upstream development release (Closes: #890225)
+  * Add new symbols
+
+  [ Rico Tzschichholz]
+  * Have libvaladoc-0.40-dev depend on libvala-0.40-dev
+  * Have libvaladoc-0.40-dev Provide libvaladoc-dev
+
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 14 Feb 2018 14:39:08 -0500
+
+vala (0.39.7-1) experimental; urgency=medium
+
+  * New upstream version 0.39.7
+  * Rename packages and update dependencies for 0.38 -> 0.40
+  * Add Lintian override for valadoc's private rpath use
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 06 Feb 2018 12:12:57 -0500
+
+vala (0.38.7-1) unstable; urgency=medium
+
+  * New upstream version 0.38.7
+  * Release to unstable
+  * Change maintainer to Debian GNOME Team
+  * Add new symbol
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 06 Feb 2018 08:21:14 -0500
+
+vala (0.38.5-1) experimental; urgency=medium
+
+  [ Rico Tzschichholz ]
+  * New upstream version 0.38.5
+  * Have valadoc strictly depend on valac
+
+  [ Jeremy Bicha ]
+  * Add new symbols
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 21 Jan 2018 14:39:34 -0500
+
+vala (0.38.4-1) experimental; urgency=medium
+
+  [ Jeremy Bicha ]
+  * New upstream version 0.38.4
+    - valadoc is now built as part of vala
+  * Rename packages and update dependencies for 0.36 -> 0.38
+  * Update debian/libvala-0.38-0.symbols
+  * Drop 0002-tests-Use-dbus-run-session-instead-of-dbus-launch.patch:
+    applied in new release
+  * Update debian/copyright
+  * Update debian/watch
+  * Bump Standards-Version to 4.1.0
+  * Add myself to Uploaders
+
+  [ Rico Tzschichholz ]
+  * debian/control.in:
+    - Bump minimum libglib2.0-dev to 2.40
+  * Other packaging improvements
+
+  [ Helmut Grohne ]
+  * Mark valac-0.38-vapi Multi-Arch: foreign (Closes: #842631)
+
+  [ Andreas Henriksson ]
+  * Remove myself from uploaders
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 11 Dec 2017 14:29:12 -0500
+
+vala (0.36.8-1) unstable; urgency=medium
+
+  * New upstream version 0.36.8
+  * Refresh 0002-tests-Use-dbus-run-session-instead-of-dbus-launch.patch
+  * debian/libvala-0.36-0.symbols: Add new symbol
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 11 Dec 2017 11:56:08 -0500
+
+vala (0.36.6-1) unstable; urgency=medium
+
+  * New upstream version 0.36.6
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 08 Oct 2017 11:45:42 -0400
+
+vala (0.36.5-1) unstable; urgency=medium
+
+  * New upstream version 0.36.5
+  * Update debian/gbp.conf with new branch names
+  * debian/libvala-0.36-0.symbols: Add new symbols
+
+ -- Jeremy Bicha <jbicha@debian.org>  Thu, 07 Sep 2017 11:42:49 -0400
+
+vala (0.36.4-1) unstable; urgency=medium
+
+  * Release to unstable
+  * New upstream version 0.36.4
+  * Update debian/libvala-0.36-0.symbols.
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 27 Jun 2017 06:17:25 -0400
+
+vala (0.36.3-1) experimental; urgency=medium
+
+  [ Jeremy Bicha ]
+  * New upstream version 0.36.3
+  * Rename packages and update dependencies for 0.34 -> 0.36
+  * Update debian/libvala-0.36-0.symbols
+  * debian/copyright:
+    - Mark doc/manual/* as CC-BY-SA-4.0
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 02 May 2017 21:16:01 +0200
+
+vala (0.34.7-1) unstable; urgency=medium
+
+  * New upstream version 0.34.7
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 21 Mar 2017 01:30:58 +0100
+
+vala (0.34.6-1) unstable; urgency=medium
+
+  * New upstream version 0.34.6
+  * Add help2man build-dep to rebuild manpages from source
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 08 Mar 2017 20:18:18 +0100
+
+vala (0.34.5-1) unstable; urgency=medium
+
+  * New upstream version 0.34.5
+
+ -- Iain Lane <laney@debian.org>  Thu, 02 Mar 2017 17:35:54 +0000
+
+vala (0.34.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 08 Dec 2016 22:32:29 +0100
+
+vala (0.34.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 23 Nov 2016 07:19:54 +0100
+
+vala (0.34.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 25 Oct 2016 17:45:59 +0200
+
+vala (0.34.1-2) unstable; urgency=medium
+
+  * Cherrypick 0003-fix-dbus-interface.patch (Closes: #840746)
+
+ -- Sebastian Reichel <sre@debian.org>  Sun, 16 Oct 2016 16:56:55 +0200
+
+vala (0.34.1-1) unstable; urgency=medium
+
+  [ Sebastian Reichel ]
+  * fix lintian warning copyright-refers-to-symlink-license
+  * use secure VCS url
+
+  [ Michael Biebl ]
+  * New upstream release.
+  * Remove old valac alternatives only on upgrades.
+  * Drop 0003-fix-abstract-generic-methods.patch, merged upstream.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 13 Oct 2016 01:08:33 +0200
+
+vala (0.34.0-3) unstable; urgency=medium
+
+  * cherry-pick upstream patch fixing support for abstract
+    methods with generics (Closes: #838829)
+
+ -- Sebastian Reichel <sre@debian.org>  Tue, 27 Sep 2016 17:33:18 +0200
+
+vala (0.34.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 21 Sep 2016 01:01:03 +0200
+
+vala (0.34.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Stop targetting a specific GLib version when bootstrapping vala. Instead
+    use the upstream default (which is currently 2.32).
+  * Drop 0001-Install-vapigen-.pc-in-multiarch-compatible-location.patch,
+    merged upstream.
+  * Update debian/libvala-0.34-0.symbols.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 20 Sep 2016 02:18:45 +0200
+
+vala (0.33.1-1) experimental; urgency=medium
+
+  [ Michael Biebl ]
+  * New upstream development release.
+  * Bump (Build-)Depends on libglib2.0-dev to (>= 2.32) as per configure.ac.
+  * Update Vcs-* URLs to use the canonical Alioth names, use https:// for
+    Vcs-Browser.
+  * Rename packages for the API version bump from 0.32 → 0.34.
+  * Switch to automatic dbgsym packages.
+  * Use dbus-run-session instead of dbus-launch to run the test-suite.
+    Replace Build-Depends on dbus-x11 with dbus (>= 1.8) accordingly.
+    (Closes: #836067)
+
+  [ Sebastian Reichel ]
+  * Recommend gcc for valac (Closes: #806823)
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 15 Sep 2016 03:39:09 +0200
+
+vala (0.32.1-1) unstable; urgency=medium
+
+  [ Andreas Henriksson ]
+  * Fix 'around' typo in package description spotted by lintian.
+  * Bump Standards-Version to 3.9.8
+
+  [ Michael Biebl ]
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 02 Jul 2016 10:50:35 +0200
+
+vala (0.32.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Oh well, add myself to Uploaders.
+  * Rename packages and update dependencies for 0.30 -> 0.32
+  * Update debian/libvala-0.32-0.symbols
+
+ -- Andreas Henriksson <andreas@fatal.se>  Thu, 24 Mar 2016 16:40:49 +0100
+
+vala (0.30.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 01 Feb 2016 14:57:40 +0100
+
+vala (0.30.0-2) unstable; urgency=medium
+
+  * Don't fail in preinst if the valac alternatives have already been removed.
+    Also do it only once, not on every upgrade. (Closes: #801190)
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 07 Oct 2015 15:24:28 +0200
+
+vala (0.30.0-1) unstable; urgency=medium
+
+  [ Andreas Henriksson ]
+  * Team upload
+  * Update debian/gbp.conf with new branch names
+  * Scan for all stable versions in debian/watch
+  * Prepare for unversioned valac installation
+  * Imported Upstream version 0.30.0
+  * Update packaging for new upstream release
+  * Update libvala-0.30-0.symbols
+  * valac: ship unversioned files
+
+  [ Rico Tzschichholz ]
+  * Also conflict with valac-0.30
+  * Provide unversioned valac-vapi
+  * Install unversioned vala-gen-introspect binary
+
+  [ Andreas Henriksson ]
+  * Add d/p/0001-Install-vapigen-.pc-in-multiarch-compatible-location.patch
+    - Makes vapigen*.pc end up being installed in /usr/lib/*/pkgconfig
+      instead of /usr/share/pkgconfig
+
+  [ Michael Biebl ]
+  * Simplify valac.install etc.
+    - Skip installing /usr/share/vala/Makefile.vapigen
+    - Ship *.m4 in upstream location /usr/share/aclocal instead of
+      previously used location /usr/share/vala
+    - Avoid mangling of install file
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 23 Sep 2015 12:45:55 +0200
+
+vala-0.28 (0.28.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 20 Aug 2015 23:49:19 +0200
+
+vala-0.28 (0.28.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 14 Jun 2015 00:51:34 +0200
+
+vala-0.28 (0.28.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Update debian/gbp.conf and debian/watch for the 0.28 series.
+  * Rename packages for the API version bump from 0.26 → 0.28.
+  * Update debian/libvala-0.28-0.symbols, add new symbols.
+  * Make 0.28 the default vala compiler.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 05 Jun 2015 06:27:18 +0200
+
+vala-0.26 (0.26.2-2) unstable; urgency=medium
+
+  * Add myself to Uploaders.
+  * Update outdated gbp section names in debian/gbp.conf.
+  * Drop Build-Depends on lsb-release, no longer required.
+  * Drop obsolete Replaces from pre-wheezy.
+  * Stop updating config.{guess,sub} manually, dh_autoreconf already does that
+    for us.
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 04 Jun 2015 09:44:03 +0200
+
+vala-0.26 (0.26.2-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Iain Lane <laney@debian.org>  Wed, 14 Jan 2015 17:36:52 +0000
+
+vala-0.26 (0.26.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update Homepage URL.
+  * Bump Standards-Version to 3.9.6. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 15 Oct 2014 21:55:08 +0200
+
+vala-0.26 (0.26.0-1) unstable; urgency=medium
+
+  * debian/watch: bump for 0.2[56] branch
+  * Import upstream version 0.26.0
+  * Update debian/libvala-0.26-0.symbols
+
+ -- Andreas Henriksson <andreas@fatal.se>  Tue, 23 Sep 2014 22:09:53 +0200
+
+vala-0.26 (0.25.3-1) experimental; urgency=medium
+
+  * New upstream release
+  * debian/patches/*: Drop all patches, fixed upstream
+  * debian/libvala-0.26-0.symbols:
+    + Update symbols
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sun, 07 Sep 2014 15:54:21 +0200
+
+vala-0.24 (0.24.0-6) unstable; urgency=medium
+
+  * debian/patches/0001-Add-lvalue_access-false-to-Mutex-and-Cond.patch:
+    Cherry-pick patch from upstream to fix deadlocks potential deadlocks when
+    using GMutex and GCond.
+
+ -- Iain Lane <laney@debian.org>  Thu, 14 Aug 2014 09:57:49 +0100
+
+vala-0.24 (0.24.0-5) unstable; urgency=medium
+
+  * valac-0.24.postinst: Update the alternative for pcfile in /usr/lib/ too.
+
+ -- Iain Lane <laney@debian.org>  Thu, 19 Jun 2014 12:02:22 +0100
+
+vala-0.24 (0.24.0-4) unstable; urgency=medium
+
+  * Cherry-pick patches from upstream:
+    - 0001-non-nullable-Accessing-array-methods-is-safe-when-th.patch: Don't
+      generate invalid code.
+      + Need to add update-c-sources.patch for this and touch vala.vala.stamp,
+        to prevent valac running during the build causing bootstrapping
+        issues.
+    - 0001-glib-2.0-add-non-null-support-for-string.joinv.patch: Replace with
+      upstream version.
+  * Install pkg-config file into multiarch pkgconfig directory as it
+    references a MA libdir. Thanks Lintian.
+
+ -- Iain Lane <laney@debian.org>  Thu, 19 Jun 2014 11:32:29 +0100
+
+vala-0.24 (0.24.0-3) unstable; urgency=medium
+
+  * 0001-glib-2.0-add-non-null-support-for-string.joinv.patch: Take patch from
+    upstream bug #728656 to fix glib-2.0.vapi in
+    --enable-experimental-non-null mode.
+
+ -- Iain Lane <laney@debian.org>  Wed, 18 Jun 2014 16:30:04 +0100
+
+vala-0.24 (0.24.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add --as-needed to dh_autoreconf
+  * Drop debian/patches/99_ltmain_as-needed.patch
+    - now handled by dh_autoreconf
+  * Add debian/patches/0001-atk-Update-and-fix-metadata.patch
+    - Backport upstream commit ad4efc4c7b8d -- "atk: Update and fix metadata"
+    (Closes: #746049)
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sat, 17 May 2014 00:32:07 +0200
+
+vala-0.24 (0.24.0-1) unstable; urgency=medium
+
+  [ Iain Lane ]
+  * Run dh_autoreconf.
+  * Don't touch build system files manually (confuses autoreconf).
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+  * Upload to unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 02 Apr 2014 20:40:43 +0200
+
+vala-0.24 (0.23.3-1) experimental; urgency=medium
+
+  * debian/gbp.conf,
+    debian/watch:
+    + Update for the 0.24 series.
+  * New upstream release.
+  * debian/*:
+    + 0.22 -> 0.24.
+  * debian/valac-0.24.postinst:
+    + Bump the alternatives priority to 120 to make 0.24 the default when
+      installed.
+  * debian/libvala-0.24-0.symbols:
+    + Update for the new symbols and the removed ones.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 09 Mar 2014 18:52:54 +0100
+
+vala-0.22 (0.22.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+    - Thanks to Andreas Cadhalpun for all the help with rebuild testing
+      and helping people migrate their packages from older vala versions
+      to more current vala versions.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sun, 16 Feb 2014 01:45:59 +0100
+
+vala-0.22 (0.22.1-1) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Luca Bruno ]
+  * Imported Upstream version 0.22.1
+  * Update debian/libvala-0.22-0.symbols with added symbols
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sun, 09 Feb 2014 23:23:42 +0100
+
+vala-0.22 (0.22.0-2) experimental; urgency=low
+
+  [ Rico Tzschichholz ]
+  * Fix vala postinst and links creation to use correct filename
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 23 Oct 2013 10:40:44 +0200
+
+vala-0.22 (0.22.0-1) experimental; urgency=low
+
+  * Update debian/watch to track 0.22 releases
+  * Modify debian/gbp.conf for 0.22
+  * Imported Upstream version 0.22.0
+  * Update debian/* for package rename to -0.22
+  * Update debian/libvala-0.22-0.symbols with added symbols
+  * Make 0.22 the default vala compiler
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 16 Oct 2013 12:49:42 +0200
+
+vala-0.20 (0.20.1-2) unstable; urgency=low
+
+  * Drop Build-Depends on valac again. This is no longer necessary and creates
+    a nasty Build-Depends loop.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 12 May 2013 23:12:20 +0200
+
+vala-0.20 (0.20.1-1) unstable; urgency=low
+
+  [ Andreas Henriksson ]
+  * Update debian/watch to track 0.20 releases
+  * Imported Upstream version 0.20.1
+  * Modify gbp configuration for 0.20
+  * Update debian/* for package rename to -0.20
+  * Drop unneeded build-dependency on quilt
+  * Drop patches from upstream now included in release
+
+  [ Michael Biebl ]
+  * Make valac-0.20 the default vala compiler.
+  * Upload to unstable.
+  * Drop Build-Depends on libdbus-glib-1-dev, no longer needed.
+  * Bump Standards-Version to 3.9.4. No further changes.
+  * Drop obsolete Conflicts and Replaces. The vala-utils Provides has no rdeps,
+    so remove that, too.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 11 May 2013 01:37:52 +0200
+
+vala-0.18 (0.18.1-3) experimental; urgency=low
+
+  * debian/patches/valagirparser-Ignore-the-new-instance-parameter-tag.patch
+    + Added. Ignore the instance-parameter tag which new g-i emits but vala
+      doesn't need.
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Thu, 28 Feb 2013 23:15:13 +0100
+
+vala-0.18 (0.18.1-2) experimental; urgency=low
+
+  * debian/patches/girparser-be-a-bit-more-forgiving-about-unexpected-e.patch
+    + Added. Be a bit more forgiving about unexpected elements in a GIR (From
+      upstream git)
+  * debian/control: Add build-depends on valac as we're patching a .vala file
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Thu, 28 Feb 2013 21:10:27 +0100
+
+vala-0.18 (0.18.1-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 27 Nov 2012 14:22:18 +0100
+
+vala-0.18 (0.17.7-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 21 Sep 2012 20:08:59 +0200
+
+vala-0.18 (0.17.5-1) experimental; urgency=low
+
+  * Update to vala 0.18, based on the ubuntu 0.17.5-0ubuntu1 package
+    by Robert Ancell, Didier Roche, Sebastien Bacher and Iain Lane.
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Sun, 26 Aug 2012 14:30:10 +0200
+
+vala-0.16 (0.16.1-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 26 Jun 2012 00:51:33 +0200
+
+vala-0.16 (0.16.0-2) unstable; urgency=low
+
+  * Team upload.
+  * Make valac 0.16 the default.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 24 May 2012 18:36:15 +0200
+
+vala-0.16 (0.16.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Sebastian Reichel <sre@debian.org>  Tue, 27 Mar 2012 23:35:11 +0200
+
+vala-0.16 (0.15.2-1) experimental; urgency=low
+
+  * New upstream release (Closes: #661375, #658388, #658390, #658761)
+  * Update Debian Standards Version to 3.9.3
+
+ -- Sebastian Reichel <sre@debian.org>  Wed, 07 Mar 2012 10:39:47 +0100
+
+vala-0.16 (0.15.1-2) experimental; urgency=low
+
+  * Fix name of vala.1.gz slave alternative (Closes: #659466)
+
+ -- Sebastian Reichel <sre@debian.org>  Tue, 14 Feb 2012 23:08:18 +0100
+
+vala-0.16 (0.15.1-1) experimental; urgency=low
+
+  * New upstream release
+  * get cflags & ldflags from dpkg-buildflags
+  * switch to multi-arch paths for libvala package
+  * add symbols file for libvala package
+  * put vapi files into arch independent valac-0.16-vapi package
+
+ -- Sebastian Reichel <sre@debian.org>  Thu, 09 Feb 2012 18:29:32 +0100
+
+vala-0.14 (0.14.2-1) unstable; urgency=low
+
+  * Team upload.
+  * Add me to uploaders.
+  * New upstream release (Closes: #651707)
+   - New bindings: libwnck-3.0, libnl-3.0, packagekit-glib2, xtst
+   - Bug fixes and binding updates
+   - /usr/share/aclocal/vala.m4 is no longer installed by libvala-0.14-dev
+     to avoid file conflicts with parallel installations
+  * Switch copyright format to DEP5
+  * Update watch file to search for xz tarballs
+
+ -- Sebastian Reichel <sre@debian.org>  Thu, 09 Feb 2012 01:01:25 +0100
+
+vala-0.14 (0.14.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Switch compression to xz
+  * debian/control: Don't build a valac binary package, keep 0.12 the default
+    for now
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Wed, 28 Sep 2011 20:11:06 +0100
+
+vala-0.14 (0.13.4-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 16 Sep 2011 23:54:28 +0100
+
+vala-0.14 (0.13.3-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Sjoerd Simons <sjoerd@debian.org>  Fri, 26 Aug 2011 18:28:31 +0100
+
+vala-0.12 (0.12.1-2) unstable; urgency=low
+
+  * debian/control,
+    debian/valac-0.12.postinst:
+    + Make valac 0.12 the default valac version now.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 24 Aug 2011 09:46:23 +0200
+
+vala-0.12 (0.12.1-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release.
+    - Fix detecting gunichar type as unichar. (Closes: #628281)
+    - Add function bindings to deal with KeySym and KeyCode. (Closes: #619505)
+    - Fix Display.display_string bindings. (Closes: #619503)
+  * Refresh debian/patches/99_ltmain_as-needed.patch.
+  * Bump (Build-)Depends on libglib2.0-dev to (>= 2.26) according to
+    configure.ac.
+  * Bump Standards-Version to 3.9.2. No further changes.
+  * Switch to bzip2 tarballs.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 23 Jun 2011 21:26:03 +0200
+
+vala-0.12 (0.12.0-4) unstable; urgency=low
+
+  * debian/rules:
+    + Now really ignore testsuite failures on Hurd/kFreeBSD.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 20 Apr 2011 09:01:42 +0200
+
+vala-0.12 (0.12.0-3) unstable; urgency=low
+
+  * debian/rules:
+    + Next try of fixing build failures on Hurd/kFreeBSD (Closes: #618642).
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 19 Apr 2011 08:42:42 +0200
+
+vala-0.12 (0.12.0-2) unstable; urgency=low
+
+  * debian/rules:
+    + Do not make testsuite failures fatal on Hurd and kFreeBSD. The
+      DBus tests are failing there because of something that looks
+      like a bug in GDBus.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sun, 10 Apr 2011 11:35:07 +0200
+
+vala-0.12 (0.12.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Upload to unstable, keep vala 0.10 as the default valac for now.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 04 Apr 2011 07:39:49 +0200
+
+vala-0.12 (0.11.7-1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/rules:
+    + Don't run the testsuite if DEB_BUILD_OPTIONS contains nocheck.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 16 Mar 2011 20:51:18 +0000
+
+vala-0.12 (0.11.6-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 21 Feb 2011 10:34:56 +0000
+
+vala-0.12 (0.11.5-2) experimental; urgency=low
+
+  * debian/control:
+    + Make the Conflicts/Replaces against vala-utils versioned.
+    + Don't build the valac binary package for now so packages
+      build depending on valac get the 0.10 version.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 25 Jan 2011 23:32:43 +0000
+
+vala-0.12 (0.11.5-1) experimental; urgency=low
+
+  * New upstream release. Closes: #606139.
+    + Make parallel installable with vala (0.10).
+  * debian/control.in:
+    + Add myself to Uploaders.
+  * debian/copyright:
+    + Updated.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 23 Jan 2011 19:47:37 +0000
+
+vala (0.10.3-0.1) experimental; urgency=low
+
+  * Non-maintainer upload with Sebastian's consent.
+  * New upstream stable release.
+  * Bump Standards-Version to 3.9.1. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 22 Jan 2011 13:43:52 +0100
+
+vala (0.10.1-1) experimental; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 28 Oct 2010 11:42:30 +0200
+
+vala (0.10.0-1) experimental; urgency=low
+
+  * New upstream stable release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 18 Sep 2010 07:37:17 +0200
+
+vala (0.9.8-1) experimental; urgency=low
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sun, 05 Sep 2010 10:32:13 +0200
+
+vala (0.9.7-2) experimental; urgency=low
+
+  * debian/rules:
+    + Don't act on the library package when stripping the valac package,
+      otherwise the debug symbols of the library package are stripped
+      now already and can't be put into the library debug package.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 24 Aug 2010 17:21:02 +0200
+
+vala (0.9.7-1) experimental; urgency=low
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 19 Aug 2010 09:29:09 +0200
+
+vala (0.9.6-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/patches/01_vala-gen-introspect-script-suffix.patch:
+      - Dropped, merged upstream.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 18 Aug 2010 16:00:44 +0200
+
+vala (0.9.5-2) experimental; urgency=low
+
+  * debian/patches/01_vala-gen-introspect-script-suffix.patch:
+    + Patch from upstream GIT to add version suffix to the
+      vala-gen-introspect binary inside the main script.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 10 Aug 2010 09:52:10 +0200
+
+vala (0.9.5-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/libvala-0.10-0.install,
+      debian/libvala-0.10-dev.install,
+      debian/vala-0.10-doc.install,
+      debian/valac-0.10.install,
+      debian/valac-0.10.postinst,
+      debian/valac-0.10.prerm,
+      debian/control,
+      debian/libvala-dev.install,
+      debian/libvala0.install,
+      debian/rules,
+      debian/vala-doc.install,
+      debian/vala-utils.install,
+      debian/valac.install:
+      - Update everything for the versioned libraries and binaries.
+        /usr/bin/valac is now an alternative pointing to valac-0.10,
+        valac is a metapackage to select the currently supported valac
+        version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 09 Aug 2010 13:35:06 +0200
+
+vala (0.9.4-1) experimental; urgency=low
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 28 Jul 2010 07:58:01 +0200
+
+vala (0.9.3-3) experimental; urgency=low
+
+  * debian/control:
+    + Let valac and all other packages explicitely depend on GLib
+      >= 2.25.11-3 as the experimental dependency resolvers gets
+      confused otherwise.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 22 Jul 2010 11:26:29 +0200
+
+vala (0.9.3-2) experimental; urgency=low
+
+  * debian/control:
+    + Build-depend on GLib >= 2.25.11-3 to fix testsuite failures.
+    + Lower -dev package GLib dependency to >= 2.16.0.
+  * debian/rules:
+    + Build Vala files with GLib 2.24 features.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 16 Jul 2010 10:45:28 +0200
+
+vala (0.9.3-1) experimental; urgency=low
+
+  * New upstream development release.
+    + debian/valac.install:
+      - Ship /usr/bin/vala link, which acts as a "shell" for Vala files.
+    + debian/patches/01_dbus-object-path.patch:
+      - Dropped, merged upstream.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 14 Jul 2010 21:33:31 +0200
+
+vala (0.9.2-2) experimental; urgency=low
+
+  * debian/patches/01_dbus-object-path.patch:
+    + Patch from upstream GIT to re-add the ObjectPath class
+      for backward compatibility (Closes: #586964).
+  * debian/rules:
+    + Disable automake 1.11 silent rules.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 24 Jun 2010 08:27:17 +0200
+
+vala (0.9.2-1) experimental; urgency=low
+
+  * New upstream development release.
+  * debian/rules:
+    + Don't use fakeroot for the testsuite and make failures
+      fatal (Closes: #572549, #569690). Thanks to Martin
+      Pitt for the patch.
+  * debian/control:
+    + Build depend on GLib >= 2.25.9 for the GDBus tests.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 21 Jun 2010 14:33:12 +0200
+
+vala (0.9.1-1) experimental; urgency=low
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 12 Jun 2010 17:15:40 +0200
+
+vala (0.8.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 21 Apr 2010 16:20:57 +0200
+
+vala (0.8.0-1) unstable; urgency=low
+
+  * debian/compat,
+    debian/control:
+    + Update to debhelper compat level 7.
+  * debian/rules,
+    debian/control:
+    + Target GLib 2.22.
+  * New upstream release:
+    + debian/patches/99_ltmain_as-needed.patch:
+      - Updated to apply cleanly again.
+    + debian/rules:
+      - Update config.{sub,guess} locations.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 01 Apr 2010 09:11:06 +0200
+
+vala (0.7.10-1) unstable; urgency=low
+
+  * debian/rules:
+    + Remove patch target to fix FTBFS if older dpkg-dev is installed
+      on the buildd (Closes: #564789).
+  * New upstream release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 05 Feb 2010 10:02:10 +0100
+
+vala (0.7.9-1) unstable; urgency=low
+
+  * New upstream release (Closes: #562745).
+  * debian/source/format:
+    + Update to 3.0 (quilt) source format.
+  * debian/control,
+    debian/compat:
+    + Update to debhelper compat level 6.
+  * debian/patches/99_ltmain_as-needed.patch:
+    + Refresh patch to apply cleanly again.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 04 Jan 2010 09:31:59 +0100
+
+vala (0.7.8-2) unstable; urgency=low
+
+  * debian/control:
+    + Remove Mathias Hasselmann from Uploaders, he did the initial packaging
+      for Ubuntu but was not involved with the Debian package at all.
+  * debian/control,
+    debian/rules:
+    + Make unit test failures fatal on Ubuntu.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 24 Nov 2009 13:12:21 +0100
+
+vala (0.7.8-1) unstable; urgency=low
+
+  [ Marc-André Lureau ]
+  * New upstream version.
+
+  [ Sebastian Dröge ]
+  * debian/patches/01_gnu-hurd.patch,
+    debian/patches/02_dbus-gvalue-marshalling.patch:
+    + Dropped, merged upstream.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 05 Nov 2009 08:02:32 +0100
+
+vala (0.7.7-3) unstable; urgency=low
+
+  * debian/control,
+    debian/rules:
+    + Update to a non-cdbs build system and first bootstrap Vala from
+      the included C sources and then use the bootstrapped Vala for
+      rebuilding the included C sources.
+  * debian/patches/02_dbus-gvalue-marshalling.patch:
+    + Fix marshalling of GValue in DBus server/client code. Patch
+      taken from upstream GIT.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 10 Oct 2009 13:36:52 +0200
+
+vala (0.7.7-2) unstable; urgency=low
+
+  * debian/patches/01_gnu-hurd.patch:
+    + Update gobject-introspection/grealpath.h from gobject-introspection
+      GIT. This fixes build failures on GNU/Hurd because there PATH_MAX
+      is not defined.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 30 Sep 2009 16:13:23 +0200
+
+vala (0.7.7-1) unstable; urgency=low
+
+  * debian/control:
+    + Fix sections of the debug packages.
+  * New upstream version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 28 Sep 2009 10:02:15 +0200
+
+vala (0.7.6-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 18 Sep 2009 08:43:00 +0200
+
+vala (0.7.5-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Sun, 02 Aug 2009 23:57:39 +0300
+
+vala (0.7.4-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Fri, 03 Jul 2009 01:08:04 +0300
+
+vala (0.7.3-1) unstable; urgency=low
+
+  * debian/control:
+    + Added dbus-x11 dependency to pass all tests (Closes: #528561).
+  * New Upstream Version
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 26 May 2009 21:48:16 +0300
+
+vala (0.7.2-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Thu, 07 May 2009 22:41:27 +0300
+
+vala (0.7.1-1) unstable; urgency=low
+
+  * New upstream version.
+  * debian/control:
+    + vala-utils no longer provides vala-gen-project (Closes: #524837).
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 21 Apr 2009 15:24:27 +0300
+
+vala (0.7.0-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Mon, 06 Apr 2009 02:41:17 +0300
+
+vala (0.6.0-2) unstable; urgency=low
+
+  * debian/control:
+    + Build depend on dbus and dbus-glib for the unit tests to fix compilation
+      on IA64 (Closes: #516797).
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 02 Apr 2009 06:18:39 +0200
+
+vala (0.6.0-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 31 Mar 2009 19:28:39 +0300
+
+vala (0.5.7-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Fri, 20 Feb 2009 23:46:29 +0200
+
+vala (0.5.6-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 16 Feb 2009 15:26:55 +0100
+
+vala (0.5.6-1) experimental; urgency=low
+
+  * New upstream version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 19 Jan 2009 09:34:36 +0100
+
+vala (0.5.5-1) experimental; urgency=low
+
+  * New upstream version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sun, 11 Jan 2009 10:48:30 +0100
+
+vala (0.5.4-1) experimental; urgency=low
+
+  * New Upstream Version
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Thu, 08 Jan 2009 07:38:51 +0100
+
+vala (0.5.3-1) experimental; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New upstream version.
+  * debian/vala-utils.install:
+    + Remove vala-gen-project (moved to vala-toys-gedit).
+  * debian/control:
+    + vala-utils: drop suggestion and dependency on gnome-common, automake
+
+  [ Sebastian Dröge ]
+  * debian/control:
+    + Drop Gtk+ build dependency.
+  * debian/rules:
+    + Drop removed configure switch.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 30 Dec 2008 11:53:19 +0100
+
+vala (0.5.2-1) experimental; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New upstream version.
+
+  [ Sebastian Dröge ]
+  * debian/control:
+    + Use extra priority for the debug packages.
+  * debian/rules,
+    debian/patches/99_ltmain_as-needed.patch:
+    + Link with -Wl,-z,defs -Wl,-O1 -Wl,--as-needed to get rid
+      of some dependencies.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 02 Dec 2008 09:31:04 +0100
+
+vala (0.5.1-1) experimental; urgency=low
+
+  * New upstream version.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 04 Nov 2008 11:41:10 +0200
+
+vala (0.4.0-1) experimental; urgency=low
+
+  * New upstream version.
+  * Produce valac-dbg and libvala0-dbg (Closes: #493955)
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 21 Oct 2008 02:52:03 +0300
+
+vala (0.3.5-1) experimental; urgency=low
+
+  * New Upstream Version.
+  * Targetting experimental.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Sat, 16 Aug 2008 19:31:44 +0300
+
+vala (0.3.4-1) unstable; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * Add Suggests field to vala-utils (Closes: #485773)
+   + gnome-common is required to build vala-gen-project projects.
+   + libgtk2.0-dev is required to build vala-gen-project GTK+ projects.
+  * Standards-Version: 3.8.0.
+  * New Upstream Version.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Thu, 26 Jun 2008 23:04:25 +0300
+
+vala (0.3.3-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 04 Jun 2008 08:12:48 +0200
+
+vala (0.3.2-1) unstable; urgency=low
+
+  * New upstream version.
+  * debian/control:
+    + Let valac depend on libglib2.0-dev to actually work (Closes: #480271).
+  * debian/rules:
+    + Run unit test suite but don't fail the build if the tests fail.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 13 May 2008 10:05:35 +0200
+
+vala (0.3.1-1) unstable; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New Upstream Version
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 22 Apr 2008 01:23:04 +0300
+
+vala (0.2.0-1) unstable; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New Upstream Version
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 08 Apr 2008 00:48:29 +0300
+
+vala (0.1.7-1) unstable; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New Upstream Version
+
+  [ Kumar Appaiah ]
+  * debian/control:
+    + Remove Kumar Appaiah from Uploaders.
+
+  [ Sebastian Dröge ]
+  * debian/control,
+    debian/vala-utils.install:
+    + Don't depend on libltdl3-dev anymore, we ship the licenses now ourself.
+  * debian/shlibs.local,
+    debian/rules:
+    + Remove shlibs.local hack and add the correct path to the dh_shlibdeps
+      search path.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 03 Mar 2008 06:18:44 +0100
+
+vala (0.1.6-1) unstable; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New Upstream Version.
+  * Remove the paths patch in vala-gen-project.
+   + Change the 'automake1.10' dependency to 'automake'.
+  * Update section of vala-doc to 'doc'.
+  * Update Debian-Policy conformance to 3.7.3.
+
+  [ Kumar Appaiah ]
+  * debian/control:
+    + vala-doc should be `Architecture: all'. (Closes:#458843)
+
+  [ Sebastian Dröge ]
+  * debian/control:
+    + Remove libenchant-dev from build dependencies.
+    + Let vala-utils depend on libltdl3-dev for the LGPL license file.
+  * debian/rules:
+    + Remove timestamp hack as we don't have any patches anymore.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sun, 20 Jan 2008 06:13:17 +0100
+
+vala (0.1.5-2) unstable; urgency=low
+
+  * debian/rules:
+    + Include simple-patch-system.mk to actually use the patch that
+      adjusts the INSTALL and license file paths (Closes: #454283).
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 04 Dec 2007 21:15:21 +0100
+
+vala (0.1.5-1) unstable; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New Upstream Version; closes: #452870.
+  * debian/libvala-dev.install
+    + Rename gidlgen to vala-gen-instrospect
+    + Remove deleted .pl files
+
+  [ Kumar Appaiah ]
+  * debian/control:
+    + Add Homepage field.
+    + Modify XS-Vcs-Git and XS-Vcs-Broswer to Vcs-Git and Vcs-Browser
+      respectively, as dpkg now supports them.
+
+  [ Sebastian Dröge ]
+  * debian/libvala-dev.install,
+    debian/rules:
+    + Also ship vala-gen-project.
+  * debian/control:
+    + Build depend on libgtk2.0-dev (>= 2.10.0) and libglib2.0-dev (>= 2.12.0).
+  * debian/patches/01_vala-gen-project-paths.patch,
+    debian/rules:
+    + Adjust the paths in vala-gen-project for the license files, etc.
+      Needs again an automake-touch hack for timestamp issues.
+  * debian/control,
+    debian/libvala-dev.install,
+    debian/valac.install,
+    debian/vala-utils.install:
+    + Move vala-gen-introspect/vapigen to valac and vala-gen-project/vapicheck
+      to vala-utils.
+  * debian/patches/01_vala-gen-project-paths.patch,
+    debian/control:
+    + Fix paths for COPYING and INSTALL files and depend on automake1.10 for
+      this.
+
+  [ Kumar Appaiah ]
+  * debian/watch: Fix watch file to point to new download location.
+    (Closes: #452870)
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 26 Nov 2007 08:16:57 +0100
+
+vala (0.1.4-1) unstable; urgency=low
+
+  [ Marc-Andre Lureau ]
+  * New Upstream Version
+  * debian/patches:
+    + Remove patch no longer needed in 0.1.4
+  * debian/rules
+    + Add xsltproc build dependency for the Vala manual.
+    + Add libenchant-dev build dependency for enchant test case.
+  * debian/control, debian/vala-doc.install:
+    + Add a "vala-doc" documentation package.
+
+  [ Sebastian Dröge ]
+  * debian/control:
+    + Let vala-doc suggest valac/devhelp and don't depend on libvala0.
+  * debian/libvala-dev.install:
+    + Add the new vapicheck utility.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 15 Oct 2007 14:37:51 +0200
+
+vala (0.1.3-2) unstable; urgency=low
+
+  * debian/control:
+    + Update Maintainer to pkg-vala and add myself to Uploaders.
+    + Update SCM fields to the GIT repository.
+  * debian/patches/20_from_svn-finally.patch,
+    debian/rules:
+    + Patch from upstream SVN to actually call finally statements.
+      Needs an hack against autotools timestamp issues.
+  * debian/copyright:
+    + Update URL to http://ftp.gnome.org/pub/gnome/sources/vala.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 01 Oct 2007 11:38:49 +0200
+
+vala (0.1.3-1) unstable; urgency=low
+
+  [ Kumar Appaiah ]
+   * Depend on libvala0 binary version alone to suppress Lintian's
+     package-has-a-duplicate-relation warning. Worked around by using
+     shlibs.local
+
+  [ Marc-Andre Lureau ]
+  * New upstream release.
+  * Remove Kumar's manpages, included in upstream.
+  * Move manpages in respective package, valac and libvala-dev.
+
+  [ Loic Minier ]
+  * Pass -V to dh_makeshlibs for now.
+
+ -- Loic Minier <lool@dooz.org>  Sun, 16 Sep 2007 14:54:31 +0200
+
+vala (0.1.2-2) unstable; urgency=low
+
+  [ Kumar Appaiah ]
+  * Add vapigen and gidlgen to libvala-dev (Closes: #439774)
+  * Add man pages for vapigen and gidlgen.
+
+  [ Marc-Andre Lureau ]
+  * Update libvala-dev description to mention vapigen and gidlgen.
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Tue, 28 Aug 2007 12:58:28 +0300
+
+vala (0.1.2-1) unstable; urgency=low
+
+  [ Loic Minier ]
+  * Drop files which were erroneously part of the diff and imported in SVN.
+  * Wrap build-deps and deps.
+  * Cleanups.
+  * Add watch file.
+  * Add CDBS utils.
+  * Build-dep on flex.
+  * New upstream releases.
+  * Fix install files.
+  * Add myself to Uploaders.
+  * Use binary:Version instead of Source-Version.
+  * Add a get-orig-source target; build-dep on gnome-pkg-tools.
+
+  [ Kumar Appaiah ]
+  * New upstream release
+  * watch file version now 3
+  * Longer description, Hompepage fix
+  * Added XS-Vcs-*
+  * Added myself to uploaders
+
+  [ Marc-Andre Lureau ]
+  * Initial Debian release (Closes: #398198)
+  * Add Mathias Hasselmann to Uploaders.
+  * Change Maintainer to myself.
+  * Remove debian/valac.manpages and debian/valac.1
+    valac manpage is now in upstream.
+  * Update copyrights and licenses
+
+  [ Kumar Appaiah ]
+  * Fix copyright file with licenses.
+
+ -- Kumar Appaiah <akumar@ee.iitm.ac.in>  Tue, 07 Aug 2007 13:02:45 +0530
+
+vala (0.0.8-3) unstable; urgency=low
+
+  * Update copyright file to match Debian standards.
+  * Make sure config.guess and .sub are updated automatically.
+
+ -- Mathias Hasselmann <mathias.hasselmann@gmx.de>  Thu, 01 Apr 2007 11:32:00 +0200
+
+vala (0.0.8-2) unstable; urgency=low
+
+  * Remove libtool .la file from libvala0-dev
+  * Add libglib2.0-dev (>= 2.10.0) dependency for libvala0-dev
+  * Rename libvala0-dev to libvala-dev
+  * Lower libglib2.0-dev build-dep to (>= 2.10.0)
+  * Add strict dependency to libvala0-dev on libvala0
+  * Update "Section" for libvala0 and libvala-dev
+
+ -- Marc-Andre Lureau <marcandre.lureau@gmail.com>  Sun, 01 Apr 2007 01:02:00 +0200
+
+vala (0.0.8-1) unstable; urgency=low
+
+  * Updating to release 0.0.8 which contains quite some bugfixes.
+  * Remove invalid dependency on libvala for libvala0-dev
+
+ -- Mathias Hasselmann <mathias.hasselmann@gmx.de>  Thu, 23 Mar 2007 08:14:00 +0100
+
+vala (0.0.7-2) unstable; urgency=low
+
+  * Separated into valac, libvalac0 and libvala-dev package, as demonstrated
+    by Marc-Andre Lureau. Added his man-page.
+
+ -- Mathias Hasselmann <mathias.hasselmann@gmx.de>  Thu, 19 Mar 2007 13:17:00 +0100
+
+vala (0.0.7-1) unstable; urgency=low
+
+  * Updating to release 0.0.7 which improves interface support and introduces
+    a new object construction syntax.
+
+ -- Mathias Hasselmann <mathias.hasselmann@gmx.de>  Thu, 08 Mar 2007 17:14:00 +0100
+
+vala (0.0.6-1) unstable; urgency=low
+
+  * Initial Ubuntu package
+
+ -- Mathias Hasselmann <mathias.hasselmann@gmx.de>  Thu, 01 Mar 2007 13:10:12 +0100

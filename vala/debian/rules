@@ -1,0 +1,69 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
+export DEB_CFLAGS_MAINT_APPEND = -Wall
+include /usr/share/dpkg/architecture.mk
+
+%:
+	dh $@ --with gnome
+
+override_dh_clean:
+	rm -rf bootstrap
+	dh_clean
+
+override_dh_autoreconf:
+	# handle timestamp skew
+	touch vala/vala.vala.stamp
+	dh_autoreconf --as-needed
+
+configure-bootstrap:
+	dh_auto_configure --builddirectory=bootstrap/build
+
+bootstrap: configure-bootstrap
+	dh_auto_build --builddirectory=bootstrap/build
+	dh_auto_install --builddirectory=bootstrap/build -- DESTDIR=$(CURDIR)/bootstrap/install
+
+override_dh_auto_configure: bootstrap
+	find -name '*.vala.stamp' -delete
+	LD_LIBRARY_PATH="$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH):$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH)/vala-0.48:$$LD_LIBRARY_PATH" \
+		dh_auto_configure -- \
+			VALAC="$(CURDIR)/bootstrap/install/usr/bin/valac" \
+			--enable-unversioned
+
+override_dh_auto_build:
+	LD_LIBRARY_PATH="$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH):$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH)/vala-0.48:$$LD_LIBRARY_PATH" \
+		dh_auto_build
+
+# Make testsuite failures non-fatal for these architectures. The DBus
+# tests are failing there and an yet unknown reason.
+NO_TESTSUITE_ARCHS := kfreebsd-i386 kfreebsd-amd64 hurd-i386
+
+override_dh_auto_test:
+ifeq ($(filter $(DEB_BUILD_ARCH),$(NO_TESTSUITE_ARCHS)),$(DEB_BUILD_ARCH))
+	# do not run the tests under fakeroot, that breaks D-Bus
+	-LD_PRELOAD= dh_auto_test
+else
+	LD_PRELOAD= dh_auto_test
+endif
+
+override_dh_auto_install:
+	dh_auto_install
+	find debian -name '*.la' -print -delete
+
+override_dh_install-arch:
+	dh_install
+	printf '#!/bin/sh\nexec valac-0.48 "--cc=$${CC:-${DEB_HOST_GNU_TYPE}-gcc}" "--pkg-config=$${PKG_CONFIG:-${DEB_HOST_GNU_TYPE}-pkg-config}" "$$@"\n' > debian/valac/usr/bin/${DEB_HOST_GNU_TYPE}-valac-0.48
+	chmod 755 debian/valac/usr/bin/${DEB_HOST_GNU_TYPE}-valac-0.48
+	ln -s valac-0.48.1.gz debian/valac/usr/share/man/man1/${DEB_HOST_GNU_TYPE}-valac-0.48.1.gz
+	ln -s ${DEB_HOST_GNU_TYPE}-valac-0.48 debian/valac/usr/bin/${DEB_HOST_GNU_TYPE}-valac
+	ln -s ${DEB_HOST_GNU_TYPE}-valac-0.48.1.gz debian/valac/usr/share/man/man1/${DEB_HOST_GNU_TYPE}-valac.1.gz
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_installdocs:
+	dh_installdocs -A NEWS README README.md THANKS
+
+override_dh_makeshlibs:
+	dh_makeshlibs -- -c4

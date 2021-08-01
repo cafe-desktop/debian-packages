@@ -1,0 +1,5 @@
+usr/include/valadoc-*
+usr/lib/*/libvaladoc-*.so
+usr/lib/*/pkgconfig/valadoc-*.pc
+usr/share/vala/vapi/valadoc-*.deps
+usr/share/vala/vapi/valadoc-*.vapi

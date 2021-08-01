@@ -1,0 +1,3 @@
+usr/bin/valadoc*
+usr/share/man/man1/valadoc*
+usr/lib/*/valadoc-*/doclets/*/*.so
