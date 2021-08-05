@@ -68,7 +68,7 @@ Depends: ${shlibs:Depends},
          libbala-0.48-0 (= ${binary:Version}),
          libbalacodegen-0.48-0 (= ${binary:Version}),
          libglib2.0-dev (>= 2.48),
-         balac-0.48-vapi,
+         balac-0.48-bapi,
          balac-bin (= ${binary:Version}),
          ${misc:Depends}
 Recommends: gcc
@@ -84,14 +84,14 @@ Description: C# like language for the GObject system
  Bala source code into C source and header files.  It uses the GObject
  type system to create classes and interfaces declared in the Bala
  source code. This package also contains the bala-gen-introspect and
- vapigen binaries that will automatically generate Bala bindings.
+ bapigen binaries that will automatically generate Bala bindings.
 
-Package: balac-0.48-vapi
+Package: balac-0.48-bapi
 Architecture: all
 Depends: ${misc:Depends}
-Provides: balac-vapi
+Provides: balac-bapi
 Multi-Arch: foreign
-Description: C# like language for the GObject system - vapi files
+Description: C# like language for the GObject system - bapi files
  Bala is a new programming language that aims to bring modern programming
  language features to GNOME developers without imposing any additional
  runtime requirements and without using a different ABI compared to
@@ -101,9 +101,9 @@ Description: C# like language for the GObject system - vapi files
  Bala source code into C source and header files.  It uses the GObject
  type system to create classes and interfaces declared in the Bala
  source code. This package also contains the bala-gen-introspect and
- vapigen binaries that will automatically generate Bala bindings.
+ bapigen binaries that will automatically generate Bala bindings.
  .
- This package contains the bundled vapi files, which make some
+ This package contains the bundled bapi files, which make some
  common libraries available for bala development.
 
 Package: bala-0.48-doc
@@ -166,7 +166,7 @@ Multi-Arch: foreign
 Description: API documentation generator for bala
  Baladoc is a documentation generator for generating API documentation
  in HTML format from Bala source code. It can be used for *.bala and
- *.vapi files.
+ *.bapi files.
 
 Package: libbaladoc-0.48-0
 Section: libs
@@ -180,7 +180,7 @@ Depends: ${shlibs:Depends},
 Description: API documentation generator for bala (library)
  Baladoc is a documentation generator for generating API documentation
  in HTML format from Bala source code. It can be used for *.bala and
- *.vapi files.
+ *.bapi files.
  .
  This package contains the library used by baladoc.
 
@@ -192,7 +192,7 @@ Depends: ${misc:Depends}
 Description: API documentation generator for bala (data)
  Baladoc is a documentation generator for generating API documentation
  in HTML format from Bala source code. It can be used for *.bala and
- *.vapi files.
+ *.bapi files.
  .
  This package contains the icons used by baladoc.
 
@@ -208,6 +208,6 @@ Provides: libbaladoc-dev
 Description: API documentation generator for bala (devel files)
  Baladoc is a documentation generator for generating API documentation
  in HTML format from Bala source code. It can be used for *.bala and
- *.vapi files.
+ *.bapi files.
  .
  This package contains the devel files for the baladoc library.

@@ -1,8 +1,8 @@
 usr/bin/bala-gen-introspect*
-usr/bin/vapi*
+usr/bin/bapi*
 usr/share/aclocal/
-usr/share/bala/Makefile.vapigen
+usr/share/bala/Makefile.bapigen
 usr/share/man/man1/bala-gen-introspect*
-usr/share/man/man1/vapigen*
-usr/lib/*/pkgconfig/vapigen*.pc
+usr/share/man/man1/bapigen*
+usr/lib/*/pkgconfig/bapigen*.pc
 usr/lib/*/bala-*/gen-introspect-*

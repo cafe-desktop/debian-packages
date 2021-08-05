@@ -286,12 +286,12 @@ libbala-0.48.so.0 libbala-0.48-0 #MINVER#
  bala_code_context_get_source_files@Base 0.32.0
  bala_code_context_get_symbols_filename@Base 0.32.0
  bala_code_context_get_type@Base 0.32.0
- bala_code_context_get_use_fast_vapi@Base 0.32.0
+ bala_code_context_get_use_fast_bapi@Base 0.32.0
  bala_code_context_get_use_header@Base 0.32.0
  bala_code_context_get_used_attr@Base 0.32.0
- bala_code_context_get_vapi_comments@Base 0.32.0
- bala_code_context_get_vapi_directories@Base 0.39.7
- bala_code_context_get_vapi_path@Base 0.32.0
+ bala_code_context_get_bapi_comments@Base 0.32.0
+ bala_code_context_get_bapi_directories@Base 0.39.7
+ bala_code_context_get_bapi_path@Base 0.32.0
  bala_code_context_get_verbose_mode@Base 0.32.0
  bala_code_context_get_version_header@Base 0.32.0
  bala_code_context_has_package@Base 0.32.0
@@ -342,11 +342,11 @@ libbala-0.48.so.0 libbala-0.48-0 #MINVER#
  bala_code_context_set_since_check@Base 0.32.0
  bala_code_context_set_symbols_filename@Base 0.32.0
  bala_code_context_set_target_glib_version@Base 0.43.90
- bala_code_context_set_use_fast_vapi@Base 0.32.0
+ bala_code_context_set_use_fast_bapi@Base 0.32.0
  bala_code_context_set_use_header@Base 0.32.0
  bala_code_context_set_used_attr@Base 0.32.0
- bala_code_context_set_vapi_comments@Base 0.32.0
- bala_code_context_set_vapi_directories@Base 0.39.7
+ bala_code_context_set_bapi_comments@Base 0.32.0
+ bala_code_context_set_bapi_directories@Base 0.39.7
  bala_code_context_set_verbose_mode@Base 0.32.0
  bala_code_context_set_version_header@Base 0.32.0
  bala_code_context_unref@Base 0.32.0

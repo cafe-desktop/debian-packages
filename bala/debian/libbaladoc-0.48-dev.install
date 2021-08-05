@@ -1,5 +1,5 @@
 usr/include/baladoc-*
 usr/lib/*/libbaladoc-*.so
 usr/lib/*/pkgconfig/baladoc-*.pc
-usr/share/bala/vapi/baladoc-*.deps
-usr/share/bala/vapi/baladoc-*.vapi
+usr/share/bala/bapi/baladoc-*.deps
+usr/share/bala/bapi/baladoc-*.bapi

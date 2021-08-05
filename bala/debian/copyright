@@ -41,7 +41,7 @@ Files: gobject-introspection/*
 Copyright: 2005 Matthias Clasen
 License: LGPL-2+
 
-Files: gobject-introspection/gidl.vapi
+Files: gobject-introspection/gidl.bapi
        gobject-introspection/scanner.h
 Copyright: 2006-2007 Jürg Billeter
 License: LGPL-2.1+
@@ -104,136 +104,136 @@ Copyright: 2009-2010 Jürg Billeter
            2009 Jiří Zárevúcky
 License: LGPL-2.1+
 
-Files: vapi/alsa.vapi
-       vapi/libnl-1.vapi
-       vapi/libnl-2.0.vapi
-       vapi/linux.vapi
+Files: bapi/alsa.bapi
+       bapi/libnl-1.bapi
+       bapi/libnl-2.0.bapi
+       bapi/linux.bapi
 Copyright: 2009-2015 Michael 'Mickey' Lauer
 License: LGPL-2.1+
 
-Files: vapi/avahi*
+Files: bapi/avahi*
 Copyright: 2009 Sebastian Noack
 License: LGPL-2.1+
 
-Files: vapi/bzlib.vapi
+Files: bapi/bzlib.bapi
 Copyright: 2008 Maciej Piechotka
 License: LGPL-2.1+
 
-Files: vapi/curses.vapi
+Files: bapi/curses.bapi
 Copyright: 2007 Ed Schouten
 License: BSD-2-clause
 
-Files: vapi/fuse.vapi
+Files: bapi/fuse.bapi
 Copyright: 2009, Codethink Ltd.
 License: LGPL-2.1+
 
-Files: vapi/gsl.vapi
-       vapi/v4l2.vapi
+Files: bapi/gsl.bapi
+       bapi/v4l2.bapi
 Copyright: 2008 Matias De la Puente
 License: LGPL-2.1+
 
-Files: vapi/glib-2.0.vapi
-       vapi/gobject-2.0.vapi
+Files: bapi/glib-2.0.bapi
+       bapi/gobject-2.0.bapi
 Copyright: 2006-2008, Raffaele Sandrini
            2006-2010, Jürg Billeter
            2007 Mathias Hasselmann
 License: LGPL-2.1+
 
-Files: vapi/gnet-2.0.vapi
+Files: bapi/gnet-2.0.bapi
 Copyright: 2009 Michael B. Trausch
 License: LGPL-2.1+
 
-Files: vapi/gnutls.vapi
+Files: bapi/gnutls.bapi
 Copyright: 2009 Jiří Zárevúcky
 License: LGPL-2.1+
 
-Files: vapi/gtkmozembed.vapi
+Files: bapi/gtkmozembed.bapi
 Copyright: 2007, Alberto Ruiz
 License: LGPL-2.1+
 
-Files: vapi/libarchive.vapi
+Files: bapi/libarchive.bapi
 Copyright: 2009 Julian Andres Klode
 License: LGPL-2.1+
 
-Files: vapi/libdaemon.vapi
-       vapi/libpq.vapi
-       vapi/mysql.vapi
-       vapi/readline.vapi
+Files: bapi/libdaemon.bapi
+       bapi/libpq.bapi
+       bapi/mysql.bapi
+       bapi/readline.bapi
 Copyright: 2008-2010 Jukka-Pekka Iivonen
 License: LGPL-2.1+
 
-Files: vapi/libesmtp.vapi
+Files: bapi/libesmtp.bapi
 Copyright: 2010 Adrien Bustany
 License: LGPL-2.1+
 
-Files: vapi/libgvc.vapi
+Files: bapi/libgvc.bapi
 Copyright: 2009 Martin Olsson
 License: LGPL-2.1+
 
-Files: vapi/libnl-3.0.vapi
+Files: bapi/libnl-3.0.bapi
 Copyright: 2009-2015 Michael 'Mickey' Lauer
            2011 Klaus Kurzmann
 License: LGPL-2.1+
 
-Files: vapi/libosso.vapi
+Files: bapi/libosso.bapi
 Copyright: 2007 Instituto Nokia de Tecnologia
 License: LGPL-2.1+
 
-Files: vapi/libxml-2.0.vapi
+Files: bapi/libxml-2.0.bapi
 Copyright: 2006-2008 Jürg Billeter, Raffaele Sandrini, Michael Lawrence
 License: LGPL-2.1+
 
-Files: vapi/lua.vapi
+Files: bapi/lua.bapi
 Copyright: 2008-2009 pancake, Frederik
 License: LGPL-2.1+
 
-Files: vapi/posix.vapi
+Files: bapi/posix.bapi
 Copyright: 2008-2009 Jürg Billeter
            2010 Marco Trevisan (Treviño)
            2013 Nikolay Orliuk
 License: LGPL-2.1+
 
-Files: vapi/raptor.vapi
-       vapi/rasqal.vapi
+Files: bapi/raptor.bapi
+       bapi/rasqal.bapi
 Copyright: 2008 Nokia
 License: LGPL-2.1+
 
-Files: vapi/taglib_c.vapi
+Files: bapi/taglib_c.bapi
 Copyright: 2009 Andreas Brauchli
 License: LGPL-2.1+
 
-Files: vapi/tiff.vapi
+Files: bapi/tiff.bapi
 Copyright: 2008 Christian Meyer
 License: LGPL-2.1+
 
-Files: vapi/tokyocabinet.vapi
-       vapigen/vapigen.m4
+Files: bapi/tokyocabinet.bapi
+       bapigen/bapigen.m4
 Copyright: 2008-2010, 2012 Evan Nemerson
 License: LGPL-2.1+
 
-Files: vapi/x11.vapi
+Files: bapi/x11.bapi
 Copyright: 2009 Jürg Billeter
   2011 Alexander Kurtz
 License: LGPL-2.1+
 
-Files: vapi/xcb.vapi
+Files: bapi/xcb.bapi
 Copyright: 2009 Jürg Billeter
            2013 Sergio Costas
 License: LGPL-2.1+
 
-Files: vapi/xcb-icccm.vapi
+Files: bapi/xcb-icccm.bapi
 Copyright: 2013 Sergio Costas
 License: LGPL-2.1+
 
-Files: vapi/xtst.vapi
+Files: bapi/xtst.bapi
 Copyright: 2012 Alexander Kurtz
 License: LGPL-2.1+
 
-Files: vapi/zlib.vapi
+Files: bapi/zlib.bapi
 Copyright: 2006-2009 Raffaele Sandrini, Jürg Billeter, Evan Nemerson
 License: LGPL-2.1+
 
-Files: vapigen/balavapicheck.*
+Files: bapigen/balabapicheck.*
 Copyright: 2007 Mathias Hasselmann
 License: LGPL-2.1+
 
