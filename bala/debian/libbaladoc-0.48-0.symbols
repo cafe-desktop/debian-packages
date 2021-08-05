@@ -1005,12 +1005,12 @@ libvaladoc-0.48.so.0 libvaladoc-0.48-0 #MINVER#
  valadoc_token_type_TRIPLE_CLOSED_BRACE@Base 0.2+git20110728
  valadoc_token_type_TRIPLE_OPEN_BRACE@Base 0.2+git20110728
  valadoc_token_type_UNDERSCORE_2@Base 0.2+git20110728
- valadoc_token_type_VALADOC_ANY_WORD@Base 0.2+git20110728
- valadoc_token_type_VALADOC_COMMENT_END@Base 0.2+git20110728
- valadoc_token_type_VALADOC_COMMENT_START@Base 0.2+git20110728
- valadoc_token_type_VALADOC_EOL@Base 0.2+git20110728
- valadoc_token_type_VALADOC_SPACE@Base 0.2+git20110728
- valadoc_token_type_VALADOC_TAB@Base 0.2+git20110728
+ valadoc_token_type_BALADOC_ANY_WORD@Base 0.2+git20110728
+ valadoc_token_type_BALADOC_COMMENT_END@Base 0.2+git20110728
+ valadoc_token_type_BALADOC_COMMENT_START@Base 0.2+git20110728
+ valadoc_token_type_BALADOC_EOL@Base 0.2+git20110728
+ valadoc_token_type_BALADOC_SPACE@Base 0.2+git20110728
+ valadoc_token_type_BALADOC_TAB@Base 0.2+git20110728
  valadoc_token_type_action@Base 0.2+git20110728
  valadoc_token_type_any@Base 0.2+git20110728
  valadoc_token_type_any_number@Base 0.2+git20110728

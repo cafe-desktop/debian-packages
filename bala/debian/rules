@@ -28,7 +28,7 @@ override_dh_auto_configure: bootstrap
 	find -name '*.vala.stamp' -delete
 	LD_LIBRARY_PATH="$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH):$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH)/vala-0.48:$$LD_LIBRARY_PATH" \
 		dh_auto_configure -- \
-			VALAC="$(CURDIR)/bootstrap/install/usr/bin/valac" \
+			BALAC="$(CURDIR)/bootstrap/install/usr/bin/valac" \
 			--enable-unversioned
 
 override_dh_auto_build:
