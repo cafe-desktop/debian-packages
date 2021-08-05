@@ -1,4 +1,4 @@
-Source: vala
+Source: bala
 Section: devel
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
@@ -15,77 +15,77 @@ Build-Depends: debhelper (>= 11),
 Build-Depends-Indep: docbook-xml,
                      xsltproc
 Standards-Version: 4.2.1
-Vcs-Git: https://salsa.debian.org/gnome-team/vala.git
-Vcs-Browser: https://salsa.debian.org/gnome-team/vala
+Vcs-Git: https://salsa.debian.org/gnome-team/bala.git
+Vcs-Browser: https://salsa.debian.org/gnome-team/bala
 Homepage: https://wiki.gnome.org/Projects/Vala/
 
-Package: libvalacodegen-0.48-0
+Package: libbalacodegen-0.48-0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-Conflicts: valac-0.12, valac-0.14, valac-0.16, valac-0.18, valac-0.20,
-           valac-0.22, valac-0.24, valac-0.26, valac-0.28, valac-0.30
-Breaks: valac (<< 0.46.5-1.1~)
-Replaces: valac (<< 0.46.5-1.1~)
+Conflicts: balac-0.12, balac-0.14, balac-0.16, balac-0.18, balac-0.20,
+           balac-0.22, balac-0.24, balac-0.26, balac-0.28, balac-0.30
+Breaks: balac (<< 0.46.5-1.1~)
+Replaces: balac (<< 0.46.5-1.1~)
 Description: internal package for C# like language for the GObject system
  Vala is a new programming language that aims to bring modern programming
  language features to GNOME developers without imposing any additional
  runtime requirements and without using a different ABI compared to
  applications and libraries written in C.
  .
- This package contains the libvalacodegen shared library. It should not normally
+ This package contains the libbalacodegen shared library. It should not normally
  be used directly.
 
-Package: valac-bin
+Package: balac-bin
 Architecture: any
 Multi-Arch: foreign
 Depends: ${shlibs:Depends},
-         libvala-0.48-0 (= ${binary:Version}),
-         libvalacodegen-0.48-0 (= ${binary:Version}),
+         libbala-0.48-0 (= ${binary:Version}),
+         libbalacodegen-0.48-0 (= ${binary:Version}),
          ${misc:Depends},
-Conflicts: valac-0.12, valac-0.14, valac-0.16, valac-0.18, valac-0.20,
-           valac-0.22, valac-0.24, valac-0.26, valac-0.28, valac-0.30
-Breaks: valac (<< 0.46.5-1.1~)
-Replaces: valac (<< 0.46.5-1.1~)
+Conflicts: balac-0.12, balac-0.14, balac-0.16, balac-0.18, balac-0.20,
+           balac-0.22, balac-0.24, balac-0.26, balac-0.28, balac-0.30
+Breaks: balac (<< 0.46.5-1.1~)
+Replaces: balac (<< 0.46.5-1.1~)
 Description: internal package for C# like language for the GObject system
  Vala is a new programming language that aims to bring modern programming
  language features to GNOME developers without imposing any additional
  runtime requirements and without using a different ABI compared to
  applications and libraries written in C.
  .
- This particular package is an implementation detail of the vala packaging.
+ This particular package is an implementation detail of the bala packaging.
  It should not be installed directly and there should be no dependencies
- on it. Refer to the valac package instead.
+ on it. Refer to the balac package instead.
 
-Package: valac
+Package: balac
 Architecture: any
 Depends: ${shlibs:Depends},
-         libvala-0.48-0 (= ${binary:Version}),
-         libvalacodegen-0.48-0 (= ${binary:Version}),
+         libbala-0.48-0 (= ${binary:Version}),
+         libbalacodegen-0.48-0 (= ${binary:Version}),
          libglib2.0-dev (>= 2.48),
-         valac-0.48-vapi,
-         valac-bin (= ${binary:Version}),
+         balac-0.48-vapi,
+         balac-bin (= ${binary:Version}),
          ${misc:Depends}
 Recommends: gcc
-Conflicts: valac-0.12, valac-0.14, valac-0.16, valac-0.18, valac-0.20,
-           valac-0.22, valac-0.24, valac-0.26, valac-0.28, valac-0.30
+Conflicts: balac-0.12, balac-0.14, balac-0.16, balac-0.18, balac-0.20,
+           balac-0.22, balac-0.24, balac-0.26, balac-0.28, balac-0.30
 Description: C# like language for the GObject system
  Vala is a new programming language that aims to bring modern programming
  language features to GNOME developers without imposing any additional
  runtime requirements and without using a different ABI compared to
  applications and libraries written in C.
  .
- valac, the Vala compiler, is a self-hosting compiler that translates
+ balac, the Vala compiler, is a self-hosting compiler that translates
  Vala source code into C source and header files.  It uses the GObject
  type system to create classes and interfaces declared in the Vala
- source code. This package also contains the vala-gen-introspect and
+ source code. This package also contains the bala-gen-introspect and
  vapigen binaries that will automatically generate Vala bindings.
 
-Package: valac-0.48-vapi
+Package: balac-0.48-vapi
 Architecture: all
 Depends: ${misc:Depends}
-Provides: valac-vapi
+Provides: balac-vapi
 Multi-Arch: foreign
 Description: C# like language for the GObject system - vapi files
  Vala is a new programming language that aims to bring modern programming
@@ -93,21 +93,21 @@ Description: C# like language for the GObject system - vapi files
  runtime requirements and without using a different ABI compared to
  applications and libraries written in C.
  .
- valac, the Vala compiler, is a self-hosting compiler that translates
+ balac, the Vala compiler, is a self-hosting compiler that translates
  Vala source code into C source and header files.  It uses the GObject
  type system to create classes and interfaces declared in the Vala
- source code. This package also contains the vala-gen-introspect and
+ source code. This package also contains the bala-gen-introspect and
  vapigen binaries that will automatically generate Vala bindings.
  .
  This package contains the bundled vapi files, which make some
- common libraries available for vala development.
+ common libraries available for bala development.
 
-Package: vala-0.48-doc
+Package: bala-0.48-doc
 Architecture: all
 Depends: ${misc:Depends}
-Suggests: valac,
+Suggests: balac,
           devhelp
-Provides: vala-doc
+Provides: bala-doc
 Section: doc
 Multi-Arch: foreign
 Description: C# like language for the GObject system - documentation
@@ -118,7 +118,7 @@ Description: C# like language for the GObject system - documentation
  .
  This package contains the Vala Reference Manual.
 
-Package: libvala-0.48-0
+Package: libbala-0.48-0
 Architecture: any
 Depends: ${shlibs:Depends},
          ${misc:Depends}
@@ -130,15 +130,15 @@ Description: C# like language for the GObject system - library
  runtime requirements and without using a different ABI compared to
  applications and libraries written in C.
  .
- This library contains the parser used by valac. It can be used for
+ This library contains the parser used by balac. It can be used for
  building tools around Vala.
 
-Package: libvala-0.48-dev
+Package: libbala-0.48-dev
 Architecture: any
 Depends: ${misc:Depends},
-         libvala-0.48-0 (= ${binary:Version}),
+         libbala-0.48-0 (= ${binary:Version}),
          libglib2.0-dev (>= 2.48)
-Provides: libvala-dev
+Provides: libbala-dev
 Section: libdevel
 Multi-Arch: same
 Description: C# like language for the GObject system - development headers
@@ -147,63 +147,63 @@ Description: C# like language for the GObject system - development headers
  any additional runtime requirements and without using a different ABI
  compared to applications and libraries written in C.
  .
- This package has the development library and headers for valac. These
+ This package has the development library and headers for balac. These
  headers can be used for building tools around Vala.
 
-Package: valadoc
+Package: baladoc
 Architecture: any
 Depends: ${shlibs:Depends},
-         libvaladoc-0.48-0 (= ${binary:Version}),
-         libvalacodegen-0.48-0 (= ${binary:Version}),
-         valac (= ${binary:Version}),
+         libbaladoc-0.48-0 (= ${binary:Version}),
+         libbalacodegen-0.48-0 (= ${binary:Version}),
+         balac (= ${binary:Version}),
          ${misc:Depends}
 Recommends: gtk-doc-tools
 Multi-Arch: foreign
-Description: API documentation generator for vala
+Description: API documentation generator for bala
  Valadoc is a documentation generator for generating API documentation
- in HTML format from Vala source code. It can be used for *.vala and
+ in HTML format from Vala source code. It can be used for *.bala and
  *.vapi files.
 
-Package: libvaladoc-0.48-0
+Package: libbaladoc-0.48-0
 Section: libs
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
-         libvala-0.48-0 (= ${binary:Version}),
-         libvalacodegen-0.48-0 (= ${binary:Version}),
+         libbala-0.48-0 (= ${binary:Version}),
+         libbalacodegen-0.48-0 (= ${binary:Version}),
          ${misc:Depends},
-         libvaladoc-0.48-data
-Description: API documentation generator for vala (library)
+         libbaladoc-0.48-data
+Description: API documentation generator for bala (library)
  Valadoc is a documentation generator for generating API documentation
- in HTML format from Vala source code. It can be used for *.vala and
+ in HTML format from Vala source code. It can be used for *.bala and
  *.vapi files.
  .
- This package contains the library used by valadoc.
+ This package contains the library used by baladoc.
 
-Package: libvaladoc-0.48-data
+Package: libbaladoc-0.48-data
 Section: misc
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Description: API documentation generator for vala (data)
+Description: API documentation generator for bala (data)
  Valadoc is a documentation generator for generating API documentation
- in HTML format from Vala source code. It can be used for *.vala and
+ in HTML format from Vala source code. It can be used for *.bala and
  *.vapi files.
  .
- This package contains the icons used by valadoc.
+ This package contains the icons used by baladoc.
 
-Package: libvaladoc-0.48-dev
+Package: libbaladoc-0.48-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
-         libvala-0.48-dev (= ${binary:Version}),
-         libvaladoc-0.48-0 (= ${binary:Version}),
+         libbala-0.48-dev (= ${binary:Version}),
+         libbaladoc-0.48-0 (= ${binary:Version}),
          libgraphviz-dev (>= 2.16)
-Provides: libvaladoc-dev
-Description: API documentation generator for vala (devel files)
+Provides: libbaladoc-dev
+Description: API documentation generator for bala (devel files)
  Valadoc is a documentation generator for generating API documentation
- in HTML format from Vala source code. It can be used for *.vala and
+ in HTML format from Vala source code. It can be used for *.bala and
  *.vapi files.
  .
- This package contains the devel files for the valadoc library.
+ This package contains the devel files for the baladoc library.

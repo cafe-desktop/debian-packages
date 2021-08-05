@@ -1,5 +1,5 @@
-usr/include/valadoc-*
-usr/lib/*/libvaladoc-*.so
-usr/lib/*/pkgconfig/valadoc-*.pc
-usr/share/vala/vapi/valadoc-*.deps
-usr/share/vala/vapi/valadoc-*.vapi
+usr/include/baladoc-*
+usr/lib/*/libbaladoc-*.so
+usr/lib/*/pkgconfig/baladoc-*.pc
+usr/share/bala/vapi/baladoc-*.deps
+usr/share/bala/vapi/baladoc-*.vapi

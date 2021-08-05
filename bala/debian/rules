@@ -14,7 +14,7 @@ override_dh_clean:
 
 override_dh_autoreconf:
 	# handle timestamp skew
-	touch vala/vala.vala.stamp
+	touch bala/bala.bala.stamp
 	dh_autoreconf --as-needed
 
 configure-bootstrap:
@@ -25,14 +25,14 @@ bootstrap: configure-bootstrap
 	dh_auto_install --builddirectory=bootstrap/build -- DESTDIR=$(CURDIR)/bootstrap/install
 
 override_dh_auto_configure: bootstrap
-	find -name '*.vala.stamp' -delete
-	LD_LIBRARY_PATH="$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH):$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH)/vala-0.48:$$LD_LIBRARY_PATH" \
+	find -name '*.bala.stamp' -delete
+	LD_LIBRARY_PATH="$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH):$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH)/bala-0.48:$$LD_LIBRARY_PATH" \
 		dh_auto_configure -- \
-			BALAC="$(CURDIR)/bootstrap/install/usr/bin/valac" \
+			BALAC="$(CURDIR)/bootstrap/install/usr/bin/balac" \
 			--enable-unversioned
 
 override_dh_auto_build:
-	LD_LIBRARY_PATH="$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH):$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH)/vala-0.48:$$LD_LIBRARY_PATH" \
+	LD_LIBRARY_PATH="$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH):$(CURDIR)/bootstrap/install/usr/lib/$(DEB_HOST_MULTIARCH)/bala-0.48:$$LD_LIBRARY_PATH" \
 		dh_auto_build
 
 # Make testsuite failures non-fatal for these architectures. The DBus
@@ -53,11 +53,11 @@ override_dh_auto_install:
 
 override_dh_install-arch:
 	dh_install
-	printf '#!/bin/sh\nexec valac-0.48 "--cc=$${CC:-${DEB_HOST_GNU_TYPE}-gcc}" "--pkg-config=$${PKG_CONFIG:-${DEB_HOST_GNU_TYPE}-pkg-config}" "$$@"\n' > debian/valac/usr/bin/${DEB_HOST_GNU_TYPE}-valac-0.48
-	chmod 755 debian/valac/usr/bin/${DEB_HOST_GNU_TYPE}-valac-0.48
-	ln -s valac-0.48.1.gz debian/valac/usr/share/man/man1/${DEB_HOST_GNU_TYPE}-valac-0.48.1.gz
-	ln -s ${DEB_HOST_GNU_TYPE}-valac-0.48 debian/valac/usr/bin/${DEB_HOST_GNU_TYPE}-valac
-	ln -s ${DEB_HOST_GNU_TYPE}-valac-0.48.1.gz debian/valac/usr/share/man/man1/${DEB_HOST_GNU_TYPE}-valac.1.gz
+	printf '#!/bin/sh\nexec balac-0.48 "--cc=$${CC:-${DEB_HOST_GNU_TYPE}-gcc}" "--pkg-config=$${PKG_CONFIG:-${DEB_HOST_GNU_TYPE}-pkg-config}" "$$@"\n' > debian/balac/usr/bin/${DEB_HOST_GNU_TYPE}-balac-0.48
+	chmod 755 debian/balac/usr/bin/${DEB_HOST_GNU_TYPE}-balac-0.48
+	ln -s balac-0.48.1.gz debian/balac/usr/share/man/man1/${DEB_HOST_GNU_TYPE}-balac-0.48.1.gz
+	ln -s ${DEB_HOST_GNU_TYPE}-balac-0.48 debian/balac/usr/bin/${DEB_HOST_GNU_TYPE}-balac
+	ln -s ${DEB_HOST_GNU_TYPE}-balac-0.48.1.gz debian/balac/usr/share/man/man1/${DEB_HOST_GNU_TYPE}-balac.1.gz
 
 override_dh_missing:
 	dh_missing --fail-missing

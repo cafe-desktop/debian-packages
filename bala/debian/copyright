@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: vala
-Source: https://download.gnome.org/sources/vala/
+Upstream-Name: bala
+Source: https://download.gnome.org/sources/bala/
 
 Files: *
 Copyright: 2016-2017 Rico Tzschichholz
@@ -66,40 +66,40 @@ Copyright: 1997 Sandro Sigala
            2007-2008 Jürg Billeter
 License: BSD-2-clause
 
-Files: libvaladoc/*
-       valadoc/*
+Files: libbaladoc/*
+       baladoc/*
 Copyright: 2008-2015 Florian Brosch
            2008-2010 Jürg Billeter
            2008-2014 Didier Villevalois
            2010-2015 Luca Bruno
 License: LGPL-2.1+
 
-Files: vala/valacodewriter.*
+Files: bala/balacodewriter.*
 Copyright: 2006-2008 Raffaele Sandrini
            2006-2014 Jürg Billeter
            2014 Richard Wiedenhöft
 License: LGPL-2.1+
 
-Files: vala/valagenie*
+Files: bala/balagenie*
 Copyright: 2008-2012, Jamie McCracken, Jürg Billeter
 License: LGPL-2.1+
 
-Files: vala/valaobjecttypesymbol.*
+Files: bala/balaobjecttypesymbol.*
 Copyright: 2008 Philip Van Hoof
            2008-2009 Jürg Billeter
 License: LGPL-2.1+
 
-Files: vala/valaregexliteral.*
+Files: bala/balaregexliteral.*
 Copyright: 2010 Jukka-Pekka Iivonen
            2010 Jürg Billeter
 License: LGPL-2.1+
 
-Files: vala/valasliceexpression.*
+Files: bala/balasliceexpression.*
 Copyright: 2009 Robin Sonefors
            2009-2013 Jürg Billeter
 License: LGPL-2.1+
 
-Files: vala/valaunlockstatement.*
+Files: bala/balaunlockstatement.*
 Copyright: 2009-2010 Jürg Billeter
            2009 Jiří Zárevúcky
 License: LGPL-2.1+
@@ -233,7 +233,7 @@ Files: vapi/zlib.vapi
 Copyright: 2006-2009 Raffaele Sandrini, Jürg Billeter, Evan Nemerson
 License: LGPL-2.1+
 
-Files: vapigen/valavapicheck.*
+Files: vapigen/balavapicheck.*
 Copyright: 2007 Mathias Hasselmann
 License: LGPL-2.1+
 
