@@ -110,7 +110,7 @@ bte2.91 (0.60.1-1) unstable; urgency=medium
 
   * Team upload
   * New upstream stable release
-    - bte.csh: Fix behavior if VTE_VERSION is undefined
+    - bte.csh: Fix behavior if BTE_VERSION is undefined
     - Fix g-i bindings for BtePty
     - Fix a regression for terminals that have no pty, for example in
       qemu (LP: #1868116)
@@ -284,7 +284,7 @@ bte2.91 (0.52.2-1) unstable; urgency=medium
   [ Iain Lane ]
   * New upstream release 0.52.2 (LP: #1774167):
     + [5966e8b] ring: Proper boundary checking for hyperlink position.
-      This fixes a rare crash around hyperlinks in a non grid aligned VTE
+      This fixes a rare crash around hyperlinks in a non grid aligned BTE
       widget when the mouse enters the extra padding at the bottom.
     + [7322c27] all: Fix spelling
 

@@ -29,7 +29,7 @@ Build-Depends-Indep: libatk1.0-doc <!nodoc>,
 Standards-Version: 4.5.1
 Vcs-Browser: https://salsa.debian.org/gnome-team/bte2.91
 Vcs-Git: https://salsa.debian.org/gnome-team/bte2.91.git
-Homepage: https://wiki.gnome.org/Apps/Terminal/VTE
+Homepage: https://wiki.gnome.org/Apps/Terminal/BTE
 
 Package: libbte-2.91-0
 Architecture: any
@@ -38,13 +38,13 @@ Depends: libbte-2.91-common (= ${binary:Version}),
          ${shlibs:Depends}
 Multi-Arch: same
 Description: Terminal emulator widget for CTK+ 3.0 - runtime files
- The VTE library provides a terminal emulator widget BteTerminal for
+ The BTE library provides a terminal emulator widget BteTerminal for
  applications using the CTK+ toolkit. It also provides the BtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
  This package contains the runtime library, needed by programs using the
- VTE widget with CTK+ 3.0.
+ BTE widget with CTK+ 3.0.
 
 Package: libbte-2.91-0-udeb
 Package-Type: udeb
@@ -54,7 +54,7 @@ Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
 Description: Terminal emulator widget for CTK+ 3.0 - minimal runtime
- The VTE library provides a terminal emulator widget BteTerminal for
+ The BTE library provides a terminal emulator widget BteTerminal for
  applications using the CTK+ toolkit. It also provides the BtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
@@ -68,12 +68,12 @@ Section: introspection
 Depends: ${gir:Depends},
          ${misc:Depends}
 Multi-Arch: same
-Description: GObject introspection data for the VTE library
- This package contains introspection data for VTE, a terminal emulator
+Description: GObject introspection data for the BTE library
+ This package contains introspection data for BTE, a terminal emulator
  widget for CTK+.
  .
  It can be used by interpreters understanding the GIRepository format to
- write programs using the VTE widget for CTK+ 3.0.
+ write programs using the BTE widget for CTK+ 3.0.
 
 Package: libbte-2.91-dev
 Architecture: any
@@ -92,26 +92,26 @@ Recommends: libbte-2.91-doc
 Conflicts: libbte-2.90-dev
 Multi-Arch: same
 Description: Terminal emulator widget for CTK+ 3.0 - development files
- The VTE library provides a terminal emulator widget BteTerminal for
+ The BTE library provides a terminal emulator widget BteTerminal for
  applications using the CTK+ toolkit. It also provides the BtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
- This package contains development files for the VTE library and its
+ This package contains development files for the BTE library and its
  Python bindings. It is needed to develop and build programs using the
- VTE widget with CTK+ 3.0.
+ BTE widget with CTK+ 3.0.
 
 Package: libbte-2.91-common
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: foreign
 Description: Terminal emulator widget for CTK+ 3.0 - common files
- The VTE library provides a terminal emulator widget BteTerminal for
+ The BTE library provides a terminal emulator widget BteTerminal for
  applications using the CTK+ toolkit. It also provides the BtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
- This package contains internationalization files for the VTE library
+ This package contains internationalization files for the BTE library
  and common files for the CTK+ 3.x version.
 
 Package: libbte-2.91-doc
@@ -121,10 +121,10 @@ Section: doc
 Depends: ${misc:Depends}
 Build-Profiles: <!nodoc>
 Description: Terminal emulator widget for CTK+ 3.0 - documentation
- The VTE library provides a terminal emulator widget BteTerminal for
+ The BTE library provides a terminal emulator widget BteTerminal for
  applications using the CTK+ toolkit. It also provides the BtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
- This package contains documentation files for the VTE library for CTK+
+ This package contains documentation files for the BTE library for CTK+
  3.x.

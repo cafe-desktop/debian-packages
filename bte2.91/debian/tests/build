@@ -1,5 +1,5 @@
 #!/bin/sh
-# autopkgtest check: Build and run a program against VTE, to verify that the
+# autopkgtest check: Build and run a program against BTE, to verify that the
 # headers and pkg-config file are installed correctly
 # Based on d/tests/build from glib2.0
 # (C) 2012 Canonical Ltd.
@@ -47,7 +47,7 @@ cat <<EOF > example.c
 
 int main(void)
 {
-    g_assert_cmpuint (VTE_TYPE_REGEX, !=, G_TYPE_INVALID);
+    g_assert_cmpuint (BTE_TYPE_REGEX, !=, G_TYPE_INVALID);
     return 0;
 }
 EOF
