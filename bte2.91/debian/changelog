@@ -743,7 +743,7 @@ vte3 (1:0.32.0-1) experimental; urgency=low
     Works around GNOME #672541.
   * debian/libvte-2.90-{common,9-udeb}.install: Drop termcap file, it's built
     in using GResource now.
-  * debian/rules: Explicitly configure with --enable-ctk-doc, it's disabled
+  * debian/rules: Explicitly configure with --enable-gtk-doc, it's disabled
     now by default.
   * debian/libvte-2.90-9.symbols: Add new symbol from this release.
 
@@ -1829,7 +1829,7 @@ vte (1:0.11.11-1) experimental; urgency=low
     - Removes all former patches, as they're no more needed
     - Add a patch for correcting init_vte typos.
     - This version add more documentation in python-vte module (Closes: #225296)
-    - New build dependency on ctk-doc-tools
+    - New build dependency on gtk-doc-tools
   * Added a patch for using AC_PATH_XTRA with Debian's enhancements.
   * Added a patch for supporting some save/restore cursor position console
     sequences (Closes: 248896)
