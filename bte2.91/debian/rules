@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 binaries := $(shell dh_listpackages)
-LIB_PKG := $(shell sed -rn 's/^Package:[[:space:]]*(libvte-[0-9\.-]+)[[:space:]]*$$/\1/p' debian/control)
+LIB_PKG := $(shell sed -rn 's/^Package:[[:space:]]*(libbte-[0-9\.-]+)[[:space:]]*$$/\1/p' debian/control)
 UDEB_PKG := $(LIB_PKG)-udeb
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
@@ -41,15 +41,15 @@ endif
 override_dh_auto_install:
 	dh_auto_install --builddirectory=build-deb \
 		--destdir=debian/tmp/deb
-	rm debian/tmp/deb/usr/bin/vte-2.91
+	rm debian/tmp/deb/usr/bin/bte-2.91
 ifneq ($(filter %-udeb,$(binaries)),)
 	dh_auto_install --builddirectory=build-udeb \
 		--destdir=debian/tmp/udeb
-	rm debian/tmp/udeb/usr/bin/vte-2.91
-	rm debian/tmp/udeb/usr/libexec/vte-urlencode-cwd
+	rm debian/tmp/udeb/usr/bin/bte-2.91
+	rm debian/tmp/udeb/usr/libexec/bte-urlencode-cwd
 endif
-	mv debian/tmp/deb/etc/profile.d/vte.sh \
-		debian/tmp/deb/etc/profile.d/vte-2.91.sh
+	mv debian/tmp/deb/etc/profile.d/bte.sh \
+		debian/tmp/deb/etc/profile.d/bte-2.91.sh
 
 override_dh_auto_clean:
 	dh_auto_clean --builddirectory=build-deb
@@ -58,8 +58,8 @@ ifneq ($(filter %-udeb,$(binaries)),)
 endif
 
 override_dh_clean:
-	rm -f debian/libvte-2.91-common.install.kfreebsd
-	rm -f debian/libvte-2.91-common.install.hurd
+	rm -f debian/libbte-2.91-common.install.kfreebsd
+	rm -f debian/libbte-2.91-common.install.hurd
 	dh_clean
 
 override_dh_auto_test:
@@ -70,8 +70,8 @@ override_dh_makeshlibs:
 	dh_makeshlibs --remaining-packages
 
 override_dh_install:
-	grep -E -v 'lib/systemd' debian/libvte-2.91-common.install > debian/libvte-2.91-common.install.kfreebsd
-	grep -E -v 'lib/systemd' debian/libvte-2.91-common.install > debian/libvte-2.91-common.install.hurd
+	grep -E -v 'lib/systemd' debian/libbte-2.91-common.install > debian/libbte-2.91-common.install.kfreebsd
+	grep -E -v 'lib/systemd' debian/libbte-2.91-common.install > debian/libbte-2.91-common.install.hurd
 ifneq ($(filter %-udeb,$(binaries)),)
 	dh_install -p$(UDEB_PKG) --sourcedir=debian/tmp/udeb
 endif

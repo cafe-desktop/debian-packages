@@ -43,7 +43,7 @@ else
 fi
 
 cat <<EOF > example.c
-#include <vte/vte.h>
+#include <bte/bte.h>
 
 int main(void)
 {
@@ -63,7 +63,7 @@ case "$mode" in
 esac
 
 # shellcheck disable=SC2046
-"${CROSS_COMPILE}gcc" $cflags -o "$mode" example.c $("${CROSS_COMPILE}pkg-config" $pcflags --cflags --libs vte-2.91)
+"${CROSS_COMPILE}gcc" $cflags -o "$mode" example.c $("${CROSS_COMPILE}pkg-config" $pcflags --cflags --libs bte-2.91)
 echo "build ($mode): OK"
 [ -x "$mode" ]
 "./$mode"

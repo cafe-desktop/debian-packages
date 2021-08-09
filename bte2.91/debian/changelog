@@ -1,4 +1,4 @@
-vte2.91 (0.62.3-1) unstable; urgency=medium
+bte2.91 (0.62.3-1) unstable; urgency=medium
 
   * Team upload
   * New upstream release
@@ -9,24 +9,24 @@ vte2.91 (0.62.3-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Wed, 17 Feb 2021 21:05:29 +0000
 
-vte2.91 (0.62.2-1) unstable; urgency=medium
+bte2.91 (0.62.2-1) unstable; urgency=medium
 
   * Team upload
 
   [ Iain Lane ]
-  * d/p/Allow-background-color-and-color-on-VteTerminal-widgets-t.patch:
-    - Allow VteTerminal style customization via the theme.
+  * d/p/Allow-background-color-and-color-on-BteTerminal-widgets-t.patch:
+    - Allow BteTerminal style customization via the theme.
 
   [ Simon McVittie ]
   * New upstream release
   * Refresh patch series
-  * d/patches: Apply post-release commits from vte-0-62 branch
+  * d/patches: Apply post-release commits from bte-0-62 branch
   * d/copyright: Update
   * Standards-Version: 4.5.1 (no changes required)
 
  -- Simon McVittie <smcv@debian.org>  Wed, 27 Jan 2021 22:02:50 +0000
 
-vte2.91 (0.62.1-1) unstable; urgency=medium
+bte2.91 (0.62.1-1) unstable; urgency=medium
 
   * Team upload
   * New upstream release
@@ -34,10 +34,10 @@ vte2.91 (0.62.1-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Mon, 02 Nov 2020 10:26:13 +0000
 
-vte2.91 (0.62.0-3) unstable; urgency=medium
+bte2.91 (0.62.0-3) unstable; urgency=medium
 
   * Team upload
-  * d/p/vte.sh-Avoid-warnings-if-shell-is-configured-with-set-u.patch:
+  * d/p/bte.sh-Avoid-warnings-if-shell-is-configured-with-set-u.patch:
   * Add patch to fix warnings in shells that use 'set -u'.
     Thanks to Marko Mäkelä (Closes: #941247)
   * d/p/lib-Abort-when-alloc-returns-nullptr.patch:
@@ -47,23 +47,23 @@ vte2.91 (0.62.0-3) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Wed, 30 Sep 2020 16:04:28 +0100
 
-vte2.91 (0.62.0-2) unstable; urgency=medium
+bte2.91 (0.62.0-2) unstable; urgency=medium
 
   * Team upload
   * d/p/widget-Define-text_view_bg-in-fallback-CSS-if-the-theme-d.patch:
     Add patch to work around themes that don't define @text_view_bg.
     Note that upstream considers this to be a workaround, and it is likely
-    to be reverted in vte 0.63.x post-bullseye - please update third-party
+    to be reverted in bte 0.63.x post-bullseye - please update third-party
     themes accordingly. (Closes: #970664)
   * d/upstream/metadata: Add
 
  -- Simon McVittie <smcv@debian.org>  Sun, 27 Sep 2020 20:46:51 +0100
 
-vte2.91 (0.62.0-1) unstable; urgency=medium
+bte2.91 (0.62.0-1) unstable; urgency=medium
 
   * Team upload
   * d/watch: Watch for git tags, not for upstream tarball releases.
-    The upstream maintainer of vte does not always upload tarballs to
+    The upstream maintainer of bte does not always upload tarballs to
     download.gnome.org.
   * New upstream stable release
     - Translation updates
@@ -74,7 +74,7 @@ vte2.91 (0.62.0-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Mon, 14 Sep 2020 10:11:37 +0100
 
-vte2.91 (0.61.91-1) experimental; urgency=medium
+bte2.91 (0.61.91-1) experimental; urgency=medium
 
   * Team upload
   * d/watch: Watch for development versions
@@ -86,57 +86,57 @@ vte2.91 (0.61.91-1) experimental; urgency=medium
   * Don't install NEWS, no longer provided
   * Disable icu support for the udeb
   * Build udeb with -static-libgcc -static-libstdc++
-    There's no libstdc++ udeb, and vte exports a C ABI but is C++ internally,
+    There's no libstdc++ udeb, and bte exports a C ABI but is C++ internally,
     so this might be a way to make the udeb installable.
   * Add proposed patch to revert an ABI break
   * Update symbols file
 
  -- Simon McVittie <smcv@debian.org>  Thu, 03 Sep 2020 12:23:17 +0100
 
-vte2.91 (0.60.3-1) unstable; urgency=medium
+bte2.91 (0.60.3-1) unstable; urgency=medium
 
   * New upstream stable release
 
  -- Ken VanDine <ken.vandine@canonical.com>  Thu, 11 Jun 2020 23:31:10 +0200
 
-vte2.91 (0.60.2-1) unstable; urgency=medium
+bte2.91 (0.60.2-1) unstable; urgency=medium
 
   * Team upload
   * New upstream stable release
 
  -- Simon McVittie <smcv@debian.org>  Thu, 30 Apr 2020 17:56:59 +0100
 
-vte2.91 (0.60.1-1) unstable; urgency=medium
+bte2.91 (0.60.1-1) unstable; urgency=medium
 
   * Team upload
   * New upstream stable release
-    - vte.csh: Fix behavior if VTE_VERSION is undefined
-    - Fix g-i bindings for VtePty
+    - bte.csh: Fix behavior if VTE_VERSION is undefined
+    - Fix g-i bindings for BtePty
     - Fix a regression for terminals that have no pty, for example in
       qemu (LP: #1868116)
 
  -- Simon McVittie <smcv@debian.org>  Sat, 28 Mar 2020 09:55:25 +0000
 
-vte2.91 (0.60.0-2) unstable; urgency=medium
+bte2.91 (0.60.0-2) unstable; urgency=medium
 
   * debian/rules: Fix FTBFS when only building arch:all packages
   * debian/control.in: Mark the -doc package with Build-Profiles: <!nodoc>
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 10 Mar 2020 13:20:12 +0100
 
-vte2.91 (0.60.0-1) unstable; urgency=medium
+bte2.91 (0.60.0-1) unstable; urgency=medium
 
   * New upstream release
     - debian/control.in: Adjust the build-dependencies
-    - debian/libvte-2.91-0.symbols: Add newly exported symbols
+    - debian/libbte-2.91-0.symbols: Add newly exported symbols
   * debian/rules: Disable systemd support in the udeb
   * debian/control.in: Bump Standards-Version to 4.5.0 (no further changes)
-  * Switch libvte-2.91-common to arch:any and install new vte-urlencode-cwd
+  * Switch libbte-2.91-common to arch:any and install new bte-urlencode-cwd
     helper executable and systemd config file
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 10 Mar 2020 12:21:26 +0100
 
-vte2.91 (0.58.3-1) unstable; urgency=medium
+bte2.91 (0.58.3-1) unstable; urgency=medium
 
   * Team upload
   * New upstream release
@@ -147,13 +147,13 @@ vte2.91 (0.58.3-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Mon, 30 Dec 2019 18:35:43 +0000
 
-vte2.91 (0.58.2-1) unstable; urgency=medium
+bte2.91 (0.58.2-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 12 Oct 2019 06:40:57 -0400
 
-vte2.91 (0.58.1-1) unstable; urgency=medium
+bte2.91 (0.58.1-1) unstable; urgency=medium
 
   * New upstream release
     - Update Persian translation
@@ -163,13 +163,13 @@ vte2.91 (0.58.1-1) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 09 Oct 2019 20:37:01 -0400
 
-vte2.91 (0.58.0-1) unstable; urgency=medium
+bte2.91 (0.58.0-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Iain Lane <laney@debian.org>  Thu, 12 Sep 2019 11:40:08 +0100
 
-vte2.91 (0.57.90-2) experimental; urgency=medium
+bte2.91 (0.57.90-2) experimental; urgency=medium
 
   * Team upload
   * Don't do the udeb build if we are not building any udebs
@@ -179,7 +179,7 @@ vte2.91 (0.57.90-2) experimental; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Mon, 26 Aug 2019 10:35:17 +0100
 
-vte2.91 (0.57.90-1) experimental; urgency=medium
+bte2.91 (0.57.90-1) experimental; urgency=medium
 
   * debian/watch: Find unstable versions
   * New upstream release
@@ -187,50 +187,50 @@ vte2.91 (0.57.90-1) experimental; urgency=medium
     files have been dropped, and the static library is no longer created.
   * pthread-vs-nostdlib.patch: Drop, not needed with meson
   * rules: Don't install the demo program
-  * libvte-2.91-0.symbols: Update with new symbols
+  * libbte-2.91-0.symbols: Update with new symbols
 
  -- Iain Lane <laney@debian.org>  Wed, 21 Aug 2019 15:45:12 +0100
 
-vte2.91 (0.56.3-1) experimental; urgency=medium
+bte2.91 (0.56.3-1) experimental; urgency=medium
 
   * New upstream bugfix release
 
  -- Iain Lane <laney@debian.org>  Fri, 10 May 2019 17:55:41 +0100
 
-vte2.91 (0.56.2-1) experimental; urgency=medium
+bte2.91 (0.56.2-1) experimental; urgency=medium
 
   * New upstream bugfix release
 
  -- Iain Lane <laney@debian.org>  Wed, 01 May 2019 12:31:17 +0100
 
-vte2.91 (0.56.1-1) experimental; urgency=medium
+bte2.91 (0.56.1-1) experimental; urgency=medium
 
   * New upstream release
     + widget: Cancel autoscroll on ending selecting
 
  -- Iain Lane <laney@debian.org>  Tue, 09 Apr 2019 13:10:42 +0100
 
-vte2.91 (0.56.0-1) experimental; urgency=medium
+bte2.91 (0.56.0-1) experimental; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 13 Mar 2019 18:53:20 -0400
 
-vte2.91 (0.55.90-1) experimental; urgency=medium
+bte2.91 (0.55.90-1) experimental; urgency=medium
 
   * New upstream development release
-  * debian/libvte-2.91-0.symbols: Add new symbol
+  * debian/libbte-2.91-0.symbols: Add new symbol
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 06 Feb 2019 09:12:59 -0500
 
-vte2.91 (0.54.2-2) unstable; urgency=medium
+bte2.91 (0.54.2-2) unstable; urgency=medium
 
   * Restore -Wl,-O1 to our LDFLAGS
   * Bump Standards-Version to 4.3.0
 
  -- Jeremy Bicha <jbicha@debian.org>  Thu, 27 Dec 2018 19:41:38 -0500
 
-vte2.91 (0.54.2-1) unstable; urgency=medium
+bte2.91 (0.54.2-1) unstable; urgency=medium
 
   * Team upload
   * New upstream release
@@ -241,7 +241,7 @@ vte2.91 (0.54.2-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Fri, 02 Nov 2018 14:02:46 +0000
 
-vte2.91 (0.54.1-1) unstable; urgency=medium
+bte2.91 (0.54.1-1) unstable; urgency=medium
 
   * Team upload
   * d/copyright: Update
@@ -250,7 +250,7 @@ vte2.91 (0.54.1-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Fri, 05 Oct 2018 10:20:37 +0100
 
-vte2.91 (0.54.0-1) unstable; urgency=medium
+bte2.91 (0.54.0-1) unstable; urgency=medium
 
   [ Marco Trevisan (Treviño) ]
   * New upstream release
@@ -262,7 +262,7 @@ vte2.91 (0.54.0-1) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 08 Sep 2018 10:36:42 -0400
 
-vte2.91 (0.53.0-1) experimental; urgency=medium
+bte2.91 (0.53.0-1) experimental; urgency=medium
 
   * Team upload
   * New upstream development release
@@ -273,13 +273,13 @@ vte2.91 (0.53.0-1) experimental; urgency=medium
   * Stop installing README, which no longer exists
   * Standards-Version: 4.2.0
   * Refresh patch series
-  * d/libvte-2.91-0.symbols: Ignore C++ symbols.
-    These are template instantiations, and are not part of vte's
+  * d/libbte-2.91-0.symbols: Ignore C++ symbols.
+    These are template instantiations, and are not part of bte's
     public ABI.
 
  -- Simon McVittie <smcv@debian.org>  Wed, 22 Aug 2018 11:17:41 +0100
 
-vte2.91 (0.52.2-1) unstable; urgency=medium
+bte2.91 (0.52.2-1) unstable; urgency=medium
 
   [ Iain Lane ]
   * New upstream release 0.52.2 (LP: #1774167):
@@ -290,7 +290,7 @@ vte2.91 (0.52.2-1) unstable; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Wed, 30 May 2018 11:57:52 +0100
 
-vte2.91 (0.52.1-1) unstable; urgency=medium
+bte2.91 (0.52.1-1) unstable; urgency=medium
 
   * New upstream release
   * Drop obsolete debian/xterm. Thanks Egmont Koblinger! (Closes: #889898)
@@ -298,35 +298,35 @@ vte2.91 (0.52.1-1) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Mon, 09 Apr 2018 18:05:22 -0400
 
-vte2.91 (0.52.0-1) unstable; urgency=medium
+bte2.91 (0.52.0-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Mon, 12 Mar 2018 17:59:23 -0400
 
-vte2.91 (0.51.92-1) unstable; urgency=medium
+bte2.91 (0.51.92-1) unstable; urgency=medium
 
   * New upstream release candidate
   * Release to unstable
 
  -- Jeremy Bicha <jbicha@debian.org>  Tue, 06 Mar 2018 09:43:13 -0500
 
-vte2.91 (0.51.90-1) experimental; urgency=medium
+bte2.91 (0.51.90-1) experimental; urgency=medium
 
   * New upstream development release
   * Drop obsolete Build-Depends on gperf
-  * debian/libvte-2.91-0.symbols: Add new symbols
+  * debian/libbte-2.91-0.symbols: Add new symbols
 
  -- Jeremy Bicha <jbicha@debian.org>  Thu, 15 Feb 2018 12:32:07 -0500
 
-vte2.91 (0.50.2-4) unstable; urgency=medium
+bte2.91 (0.50.2-4) unstable; urgency=medium
 
   * Update Vcs fields for migration to https://salsa.debian.org/
   * Bump debhelper compat to 11
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 20 Jan 2018 17:59:32 -0500
 
-vte2.91 (0.50.2-3) unstable; urgency=medium
+bte2.91 (0.50.2-3) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * Update Vcs fields for conversion to git
@@ -334,110 +334,110 @@ vte2.91 (0.50.2-3) unstable; urgency=medium
   * Bump Standards-Version to 4.1.2
 
   [ Simon McVittie ]
-  * Remove redundant Priority field for libvte-2.91-0-udeb, which now
+  * Remove redundant Priority field for libbte-2.91-0-udeb, which now
     has the source package's default Priority
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 15 Dec 2017 23:10:04 -0500
 
-vte2.91 (0.50.2-2) unstable; urgency=medium
+bte2.91 (0.50.2-2) unstable; urgency=medium
 
-  * Rename /etc/profile.d/vte.sh → vte-2.91.sh in override_dh_auto_install.
+  * Rename /etc/profile.d/bte.sh → bte-2.91.sh in override_dh_auto_install.
     This avoids a build failure for binary-arch only builds.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 01 Nov 2017 21:50:58 +0100
 
-vte2.91 (0.50.2-1) unstable; urgency=medium
+bte2.91 (0.50.2-1) unstable; urgency=medium
 
   * New upstream release
   * Convert from cdbs to dh
   * Bump debhelper compat level to 10 for automatic dh-autoreconf
   * Use dh_missing to list uninstalled files
-  * Change priority of libvte-2.91-0-udeb from extra to optional.
+  * Change priority of libbte-2.91-0-udeb from extra to optional.
     The priority extra has been deprecated.
   * Refresh patches
 
  -- Michael Biebl <biebl@debian.org>  Wed, 01 Nov 2017 19:34:21 +0100
 
-vte2.91 (0.50.1-1) unstable; urgency=medium
+bte2.91 (0.50.1-1) unstable; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.1.1
 
  -- Jeremy Bicha <jbicha@debian.org>  Tue, 03 Oct 2017 10:56:14 -0400
 
-vte2.91 (0.50.0-1) unstable; urgency=medium
+bte2.91 (0.50.0-1) unstable; urgency=medium
 
   * Team upload
   * New upstream stable release
 
  -- Simon McVittie <smcv@debian.org>  Tue, 12 Sep 2017 14:40:51 +0100
 
-vte2.91 (0.49.92-1) unstable; urgency=medium
+bte2.91 (0.49.92-1) unstable; urgency=medium
 
   * New upstream release
-  * debian/libvte-2.91-0.symbols: Add new symbols
+  * debian/libbte-2.91-0.symbols: Add new symbols
   * debian/copyright: Minor update
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 08 Sep 2017 17:37:28 -0400
 
-vte2.91 (0.48.3-1) unstable; urgency=medium
+bte2.91 (0.48.3-1) unstable; urgency=medium
 
   * New upstream release
   * debian/control.in:
     - Build-depend on gperf
     - Bump minimum valac to 0.31.1
-  * debian/libvte-2.91-0.symbols: Add new symbols
+  * debian/libbte-2.91-0.symbols: Add new symbols
   * Drop fix-out-of-tree-build.patch: Fixed in new release
   * Bump Standards-Version to 4.1.0
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 30 Aug 2017 20:04:21 -0400
 
-vte2.91 (0.46.2-1) unstable; urgency=medium
+bte2.91 (0.46.2-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 02 Jul 2017 01:18:29 +0200
 
-vte2.91 (0.46.1-1) unstable; urgency=medium
+bte2.91 (0.46.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 08 Nov 2016 01:16:36 +0100
 
-vte2.91 (0.46.0-1) unstable; urgency=medium
+bte2.91 (0.46.0-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 19 Sep 2016 10:48:53 +0200
 
-vte2.91 (0.45.92-1) unstable; urgency=medium
+bte2.91 (0.45.92-1) unstable; urgency=medium
 
   * New upstream development release.
   * Refresh patches.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 14 Sep 2016 17:24:53 +0200
 
-vte2.91 (0.45.90-2) unstable; urgency=medium
+bte2.91 (0.45.90-2) unstable; urgency=medium
 
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 01 Sep 2016 15:22:33 +0200
 
-vte2.91 (0.45.90-1) experimental; urgency=medium
+bte2.91 (0.45.90-1) experimental; urgency=medium
 
   * New upstream beta release.
-  * Update debian/libvte-2.91-0.symbols with many new additions.
+  * Update debian/libbte-2.91-0.symbols with many new additions.
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 18 Aug 2016 16:57:17 +0200
 
-vte2.91 (0.44.2-1) unstable; urgency=medium
+bte2.91 (0.44.2-1) unstable; urgency=medium
 
   * New upstream release.
   * Refresh debian/patches/01_scroll_notebook.patch.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 10 May 2016 18:14:57 +0200
 
-vte2.91 (0.44.1-1) unstable; urgency=medium
+bte2.91 (0.44.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Refresh patches.
@@ -446,16 +446,16 @@ vte2.91 (0.44.1-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Sat, 16 Apr 2016 21:53:56 +0200
 
-vte2.91 (0.44.0-2) experimental; urgency=medium
+bte2.91 (0.44.0-2) experimental; urgency=medium
 
   * Team upload
-  * Force compilation against Ctk 3.20 to fix VteTerminal CSS selector
+  * Force compilation against Ctk 3.20 to fix BteTerminal CSS selector
     resulting in incorrect padding and, indirectly, off-by-one resizing
     (GNOME #763538)
 
  -- Simon McVittie <smcv@debian.org>  Fri, 01 Apr 2016 09:20:24 +0100
 
-vte2.91 (0.44.0-1) unstable; urgency=medium
+bte2.91 (0.44.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update (build-)dependencies according to configure.ac changes:
@@ -465,29 +465,29 @@ vte2.91 (0.44.0-1) unstable; urgency=medium
   * Fix return statement in debian/patches/01_scroll_notebook.patch
     - the function is (now?) void, so don't try to return FALSE.
   * Add debian/patches/pthread-vs-nostdlib.patch
-  * Update debian/libvte-2.91-0.symbols with two additions.
+  * Update debian/libbte-2.91-0.symbols with two additions.
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 24 Mar 2016 17:25:27 +0100
 
-vte2.91 (0.42.5-1) unstable; urgency=medium
+bte2.91 (0.42.5-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 15 Mar 2016 17:36:22 +0100
 
-vte2.91 (0.42.4-1) unstable; urgency=medium
+bte2.91 (0.42.4-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 11 Feb 2016 20:25:23 +0100
 
-vte2.91 (0.42.3-1) unstable; urgency=medium
+bte2.91 (0.42.3-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Wed, 03 Feb 2016 10:56:48 +0100
 
-vte2.91 (0.42.1-2) unstable; urgency=medium
+bte2.91 (0.42.1-2) unstable; urgency=medium
 
   * Bump debhelper version to 9
   * Add multi-arch support (LP: #1508636)
@@ -497,29 +497,29 @@ vte2.91 (0.42.1-2) unstable; urgency=medium
 
  -- Laurent Bigonville <bigon@debian.org>  Fri, 13 Nov 2015 15:26:04 +0100
 
-vte2.91 (0.42.1-1) unstable; urgency=medium
+bte2.91 (0.42.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 14 Oct 2015 17:18:58 +0200
 
-vte2.91 (0.42.0-1) unstable; urgency=medium
+bte2.91 (0.42.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update (build-)dependencies according to configure.ac changes:
     - bump libgnutls28-dev to >= 3.2.7
   * Update debian/patches/*.patch to apply cleanly.
-  * Stop shipping gnome-pty-helper in libvte-2.91-0
+  * Stop shipping gnome-pty-helper in libbte-2.91-0
     - no longer shipped by upstream (see bgo#747046).
       (this means no utmp/wtmp updating anymore.)
-  * Update debian/libvte-2.91-0.symbols with one removal
-    - The magic vte_get_resource symbol has no users according
+  * Update debian/libbte-2.91-0.symbols with one removal
+    - The magic bte_get_resource symbol has no users according
       to codesearch.debian.net and noone will likely notice it's
       missing.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 22 Sep 2015 15:54:47 +0200
 
-vte2.91 (0.40.2-2) unstable; urgency=medium
+bte2.91 (0.40.2-2) unstable; urgency=medium
 
   * Drop 0001-Add-the-style-context-provider-with-FALLBACK-priorit.patch as it
     causes a regression and makes gnome-terminal use a smaller size then
@@ -527,29 +527,29 @@ vte2.91 (0.40.2-2) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Wed, 15 Jul 2015 21:12:49 +0200
 
-vte2.91 (0.40.2-1) unstable; urgency=medium
+bte2.91 (0.40.2-1) unstable; urgency=medium
 
   * New upstream release.
   * Refresh patches.
-  * Update debian/libvte-2.90-9.symbols, add new symbols.
-  * Update Build-Depends and Depends of libvte-2.91-dev as per configure.ac.
+  * Update debian/libbte-2.90-9.symbols, add new symbols.
+  * Update Build-Depends and Depends of libbte-2.91-dev as per configure.ac.
   * Disable GnuTLS support for udeb build.
 
  -- Michael Biebl <biebl@debian.org>  Fri, 22 May 2015 22:23:23 +0200
 
-vte2.91 (0.38.3-1) experimental; urgency=medium
+bte2.91 (0.38.3-1) experimental; urgency=medium
 
   * New upstream bugfix release 0.38.3
     + 10_check_cursor_display.patch, 11_cjk_ambiguous_width.patch,
       12_zombies.patch, 13_zombies.patch: Drop, applied upstream.
   * d/p/0001-Add-the-style-context-provider-with-FALLBACK-priorit.patch: Add
-    patch taken from upstream bug to add the VteTerminal css rule with a lower
+    patch taken from upstream bug to add the BteTerminal css rule with a lower
     priority than the theme, allowing themes to set their own values for
-    properties on the VteTerminal widget.
+    properties on the BteTerminal widget.
 
  -- Iain Lane <laney@debian.org>  Tue, 16 Dec 2014 13:19:29 +0000
 
-vte2.91 (0.38.1-2) unstable; urgency=medium
+bte2.91 (0.38.1-2) unstable; urgency=medium
 
   * Bug fixes from upstream git:
     + 10_check_cursor_display.patch: check the cursor’s display before
@@ -560,7 +560,7 @@ vte2.91 (0.38.1-2) unstable; urgency=medium
 
  -- Josselin Mouette <joss@debian.org>  Fri, 05 Dec 2014 14:49:32 +0100
 
-vte2.91 (0.38.1-1) unstable; urgency=medium
+bte2.91 (0.38.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Refresh patches.
@@ -570,27 +570,27 @@ vte2.91 (0.38.1-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Tue, 14 Oct 2014 20:38:29 +0200
 
-vte2.91 (0.38.0-1) unstable; urgency=medium
+bte2.91 (0.38.0-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Sjoerd Simons <sjoerd@debian.org>  Wed, 24 Sep 2014 21:57:18 +0200
 
-vte2.91 (0.37.90-1) experimental; urgency=medium
+bte2.91 (0.37.90-1) experimental; urgency=medium
 
   * New upstream release
-  * Rename source package from vte3 to vte2.91 (Matching the api version)
+  * Rename source package from bte3 to bte2.91 (Matching the api version)
   * debian/patches/01_scroll_notebook.patch
     + Refreshed
   * debian/patches/25_optional-ncurses.patch
     + Removed. ncurses is no longer used
   * debian/patches/fix-out-of-tree-build.patch
     + Added. Fix out of tree build
-  * Make libvte-2.91-dev conflict with libvte-2.90-dev
+  * Make libbte-2.91-dev conflict with libbte-2.90-dev
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sat, 06 Sep 2014 13:06:27 +0200
 
-vte3 (1:0.36.3-1) unstable; urgency=medium
+bte3 (1:0.36.3-1) unstable; urgency=medium
 
   * New upstream release.
   * Drop debian/patches/02_emulation-fix-keypad-home-end.patch
@@ -598,7 +598,7 @@ vte3 (1:0.36.3-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 23 Jun 2014 20:18:25 +0200
 
-vte3 (1:0.36.2-1) unstable; urgency=medium
+bte3 (1:0.36.2-1) unstable; urgency=medium
 
   * Drop obsolete 04_workaround_resources_compiler_path.patch
     - problem fixed in glib/gio for years already.
@@ -609,7 +609,7 @@ vte3 (1:0.36.2-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 15 May 2014 21:39:16 +0200
 
-vte3 (1:0.36.1-1) unstable; urgency=medium
+bte3 (1:0.36.1-1) unstable; urgency=medium
 
   * Drop obsolete 60_termcap-home-end.patch (Closes: #747347)
     - Thanks Egmont Koblinger!
@@ -617,20 +617,20 @@ vte3 (1:0.36.1-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Wed, 07 May 2014 22:06:44 +0200
 
-vte3 (1:0.36.0-2) unstable; urgency=medium
+bte3 (1:0.36.0-2) unstable; urgency=medium
 
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 23 Apr 2014 16:36:22 +0200
 
-vte3 (1:0.36.0-1) experimental; urgency=medium
+bte3 (1:0.36.0-1) experimental; urgency=medium
 
   * New upstream release.
-  * Update debian/libvte-2.90-9.symbols with added symbols.
+  * Update debian/libbte-2.90-9.symbols with added symbols.
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 24 Mar 2014 20:32:44 +0100
 
-vte3 (1:0.35.2-1) experimental; urgency=medium
+bte3 (1:0.35.2-1) experimental; urgency=medium
 
   * New upstream release.
   * Make debian/patches/01_scroll_notebook.patch apply again.
@@ -639,19 +639,19 @@ vte3 (1:0.35.2-1) experimental; urgency=medium
     - debian/patches/04_workaround_resources_compiler_path.patch
     - debian/patches/25_optional-ncurses.patch
     - debian/patches/60_termcap-home-end.patch
-  * Add two new symbols to debian/libvte-2.90-9.symbols
+  * Add two new symbols to debian/libbte-2.90-9.symbols
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 24 Feb 2014 20:28:46 +0100
 
-vte3 (1:0.34.9-1) unstable; urgency=low
+bte3 (1:0.34.9-1) unstable; urgency=low
 
   * New upstream release.
   * Refresh patches.
-  * debian/libvte-2.90-9.symbols: Add new symbol.
+  * debian/libbte-2.90-9.symbols: Add new symbol.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 23 Oct 2013 14:58:28 +0200
 
-vte3 (1:0.34.8-1) unstable; urgency=low
+bte3 (1:0.34.8-1) unstable; urgency=low
 
   [ Fabian Greffrath ]
   * debian/README.Debian: Document how to make new tabs opened within
@@ -666,42 +666,42 @@ vte3 (1:0.34.8-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Wed, 18 Sep 2013 01:12:08 +0200
 
-vte3 (1:0.34.6-1) unstable; urgency=low
+bte3 (1:0.34.6-1) unstable; urgency=low
 
   * New upstream release.
   * Refresh patches.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 11 Jun 2013 01:10:56 +0200
 
-vte3 (1:0.34.5-2) unstable; urgency=low
+bte3 (1:0.34.5-2) unstable; urgency=low
 
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 05 Jun 2013 10:54:01 +0200
 
-vte3 (1:0.34.5-1) experimental; urgency=low
+bte3 (1:0.34.5-1) experimental; urgency=low
 
   * New upstream release
-    - Improvements to vte.sh script; now compatible with both bash and zsh
+    - Improvements to bte.sh script; now compatible with both bash and zsh
 
  -- Iain Lane <laney@debian.org>  Fri, 24 May 2013 10:30:33 +0100
 
-vte3 (1:0.34.3-1) experimental; urgency=low
+bte3 (1:0.34.3-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 12 Apr 2013 23:19:42 +0200
 
-vte3 (1:0.34.2-1) experimental; urgency=low
+bte3 (1:0.34.2-1) experimental; urgency=low
 
   [ Andreas Henriksson ]
   * New upstream release.
-  * debian/libvte-2.90-9.symbols: added two new symbols.
-  * Install new file /etc/profile.d/vte.sh in libvte-2.90-common package.
+  * debian/libbte-2.90-9.symbols: added two new symbols.
+  * Install new file /etc/profile.d/bte.sh in libbte-2.90-common package.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 30 Mar 2013 17:09:16 +0100
 
-vte3 (1:0.32.2-1) unstable; urgency=low
+bte3 (1:0.32.2-1) unstable; urgency=low
 
   * New upstream release.
     - Fixes broken Alt/Meta/Mod1 handling. Closes: #648975
@@ -710,13 +710,13 @@ vte3 (1:0.32.2-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Fri, 01 Jun 2012 23:35:47 +0200
 
-vte3 (1:0.32.1-1) unstable; urgency=low
+bte3 (1:0.32.1-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 25 Apr 2012 03:59:15 +0200
 
-vte3 (1:0.32.0-2) unstable; urgency=low
+bte3 (1:0.32.0-2) unstable; urgency=low
 
   * Install a copy of the old termcap file so currently running terminal
     instances which have the old version of the library loaded, aren't broken
@@ -728,7 +728,7 @@ vte3 (1:0.32.0-2) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Mon, 02 Apr 2012 09:05:03 +0200
 
-vte3 (1:0.32.0-1) experimental; urgency=low
+bte3 (1:0.32.0-1) experimental; urgency=low
 
   * New upstream release.
   * debian/control.in: Bump glib build dependency as per configure.ac.
@@ -741,32 +741,32 @@ vte3 (1:0.32.0-1) experimental; urgency=low
     glib-compile-resources call. It is not necessary here, and breaks
     out-of-tree builds with absolute configure paths, such as cdbs does.
     Works around GNOME #672541.
-  * debian/libvte-2.90-{common,9-udeb}.install: Drop termcap file, it's built
+  * debian/libbte-2.90-{common,9-udeb}.install: Drop termcap file, it's built
     in using GResource now.
   * debian/rules: Explicitly configure with --enable-gtk-doc, it's disabled
     now by default.
-  * debian/libvte-2.90-9.symbols: Add new symbol from this release.
+  * debian/libbte-2.90-9.symbols: Add new symbol from this release.
 
  -- Martin Pitt <mpitt@debian.org>  Wed, 21 Mar 2012 13:27:36 +0100
 
-vte3 (1:0.30.1-4) unstable; urgency=low
+bte3 (1:0.30.1-4) unstable; urgency=low
 
   * debian/patches/03_glade-catalog-library-name.patch: Use the correct
-    vte library name in the glade catalog file.
-  * Move the glade catalog file from libvte-2.90-common into libvte-2.90-dev
+    bte library name in the glade catalog file.
+  * Move the glade catalog file from libbte-2.90-common into libbte-2.90-dev
     alongside the .so it references.
   * Add the necessary Breaks/Replaces.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 13 Mar 2012 15:10:49 +0100
 
-vte3 (1:0.30.1-3) unstable; urgency=low
+bte3 (1:0.30.1-3) unstable; urgency=low
 
   * debian/control.in:
     - Remove obsolete Replaces.
-    - Change section of gir1.2-vte-2.90 to introspection.
+    - Change section of gir1.2-bte-2.90 to introspection.
     - Remove X-Python-Version, since we no longer build a python module.
   * debian/rules:
-    - Correctly pass libexecdir to configure so libvte has the correct path to
+    - Correctly pass libexecdir to configure so libbte has the correct path to
       gnome-pty-helper.
   * Update install and lintian override file for the updated gnome-pty-helper
     location. We use the full library package name as subdirectory now, so we
@@ -774,15 +774,15 @@ vte3 (1:0.30.1-3) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Mon, 12 Dec 2011 16:17:20 +0100
 
-vte3 (1:0.30.1-2) unstable; urgency=low
+bte3 (1:0.30.1-2) unstable; urgency=low
 
-  * libvte-2.90-9.symbols: add correct Build-Depends-Package.
+  * libbte-2.90-9.symbols: add correct Build-Depends-Package.
   * 02_meta.patch: workaround for Meta key being broken since the CTK+
     3.2.2 upgrade. Closes: #648975.
 
  -- Josselin Mouette <joss@debian.org>  Sat, 19 Nov 2011 14:02:12 +0100
 
-vte3 (1:0.30.1-1) experimental; urgency=low
+bte3 (1:0.30.1-1) experimental; urgency=low
 
   * New upstream release.
   * Drop all CTK+ 2.x support since it has disappeared upstream.
@@ -794,7 +794,7 @@ vte3 (1:0.30.1-1) experimental; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Sat, 12 Nov 2011 16:24:43 +0100
 
-vte (1:0.28.2-1) unstable; urgency=low
+bte (1:0.28.2-1) unstable; urgency=low
 
   * New upstream release.
   * debian/watch:
@@ -808,17 +808,17 @@ vte (1:0.28.2-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Wed, 19 Oct 2011 03:41:29 +0200
 
-vte (1:0.28.1-2) unstable; urgency=low
+bte (1:0.28.1-2) unstable; urgency=low
 
-  * libvte-doc.links: dropped. Closes: #631881.
-  * libvte-common.postinst: do the symlink dance for
-    /usr/share/vte/termcap. Closes: #611826, #631824, #631801.
+  * libbte-doc.links: dropped. Closes: #631881.
+  * libbte-common.postinst: do the symlink dance for
+    /usr/share/bte/termcap. Closes: #611826, #631824, #631801.
 
  -- Josselin Mouette <joss@debian.org>  Tue, 28 Jun 2011 18:52:26 +0200
 
-vte (1:0.28.1-1) unstable; urgency=low
+bte (1:0.28.1-1) unstable; urgency=low
 
-  * Tighten dependencies on libvte-common.
+  * Tighten dependencies on libbte-common.
   * New upstream release.
     + CVE-2011-2198: fix memory exhaustion by using special character
       sequences. Closes: #629688.
@@ -826,19 +826,19 @@ vte (1:0.28.1-1) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Wed, 15 Jun 2011 21:47:56 +0200
 
-vte (1:0.28.0-2) experimental; urgency=low
+bte (1:0.28.0-2) experimental; urgency=low
 
   * Fix long description, thanks Teemu Ikonen. Closes: #623219.
-  * Drop useless libvte-dev dependency on python-vte. Closes: #549015.
-  * libvte-common Breaks libvte9 < 1:0.28. Closes: #616394, #611826.
-  * python-vte Breaks python-apt << 0.8.0~exp2. Closes: #621483.
+  * Drop useless libbte-dev dependency on python-bte. Closes: #549015.
+  * libbte-common Breaks libbte9 < 1:0.28. Closes: #616394, #611826.
+  * python-bte Breaks python-apt << 0.8.0~exp2. Closes: #621483.
   * Fix udeb sourcedir, thanks Colin Watson. Closes: #627555.
   * 01_scroll_notebook.patch: new patch. Allow to switch tabs with
     Alt+wheel with the latest ctk+3.0.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 05 Jun 2011 02:06:40 +0200
 
-vte (1:0.28.0-1) experimental; urgency=low
+bte (1:0.28.0-1) experimental; urgency=low
 
   * Team upload.
   * New upstream release.
@@ -851,16 +851,16 @@ vte (1:0.28.0-1) experimental; urgency=low
 
  -- Raphaël Hertzog <hertzog@debian.org>  Thu, 14 Apr 2011 20:27:53 +0000
 
-vte (1:0.27.90-2) experimental; urgency=low
+bte (1:0.27.90-2) experimental; urgency=low
 
-  * Drop unneeded dependency on libvte-common from gir1.2-vte-2.90.
+  * Drop unneeded dependency on libbte-common from gir1.2-bte-2.90.
 
  -- Jordi Mallach <jordi@debian.org>  Wed, 06 Apr 2011 11:31:01 +0200
 
-vte (1:0.27.90-1) experimental; urgency=low
+bte (1:0.27.90-1) experimental; urgency=low
 
   * Make the -dev package depend on the gir package.
-  * Force the upgrade of libvte-common for the new termcap definitions.
+  * Force the upgrade of libbte-common for the new termcap definitions.
   * New upstream pre-release.
   * Use dh-autoreconf; drop 90_autoreconf.patch.
   * Pass PYTHON= as configure argument instead of environment, so that
@@ -872,7 +872,7 @@ vte (1:0.27.90-1) experimental; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Thu, 31 Mar 2011 10:34:47 +0530
 
-vte (1:0.27.5-1) experimental; urgency=low
+bte (1:0.27.5-1) experimental; urgency=low
 
   * debian/control.in:
     + Drop obsolete dpkg-dev build dependency.
@@ -886,7 +886,7 @@ vte (1:0.27.5-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 19 Feb 2011 14:23:13 +0000
 
-vte (1:0.27.4-1) experimental; urgency=low
+bte (1:0.27.4-1) experimental; urgency=low
 
   * Switch to CDBS' flavors system.
   * Bump debhelper compatibility to 8.
@@ -896,7 +896,7 @@ vte (1:0.27.4-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 12 Jan 2011 22:45:34 +0000
 
-vte (1:0.24.3-2) unstable; urgency=low
+bte (1:0.24.3-2) unstable; urgency=low
 
   [ Emilio Pozuelo Monfort ]
   * debian/patches/12_python_reaper.patch:
@@ -907,7 +907,7 @@ vte (1:0.24.3-2) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Sat, 06 Nov 2010 12:48:02 +0100
 
-vte (1:0.24.3-1) unstable; urgency=low
+bte (1:0.24.3-1) unstable; urgency=low
 
   * New upstream bugfix release:
     + debian/patches/90_autoreconf.patch:
@@ -915,7 +915,7 @@ vte (1:0.24.3-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Thu, 15 Jul 2010 20:30:04 +0200
 
-vte (1:0.24.1-1) unstable; urgency=low
+bte (1:0.24.1-1) unstable; urgency=low
 
   * New upstream bugfix release:
     + debian/patches/01_transparent_crash.patch:
@@ -929,9 +929,9 @@ vte (1:0.24.1-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 03 May 2010 20:11:29 +0200
 
-vte (1:0.24.0-3) unstable; urgency=low
+bte (1:0.24.0-3) unstable; urgency=low
 
-  * debian/python-vte.install:
+  * debian/python-bte.install:
     - Also install bindings for python2.6 (don't hardcode site-packages).
   * debian/control.in,
     debian/rules,
@@ -944,7 +944,7 @@ vte (1:0.24.0-3) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 21 Apr 2010 14:18:44 +0200
 
-vte (1:0.24.0-2) unstable; urgency=low
+bte (1:0.24.0-2) unstable; urgency=low
 
   * 01_transparent_crash.patch: patch by Tetralet to fix a crash when
     the background file is missing, or when the transparent background
@@ -952,7 +952,7 @@ vte (1:0.24.0-2) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Fri, 09 Apr 2010 18:23:02 +0200
 
-vte (1:0.24.0-1) unstable; urgency=low
+bte (1:0.24.0-1) unstable; urgency=low
 
   * New upstream stable release:
     + debian/rules:
@@ -963,7 +963,7 @@ vte (1:0.24.0-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Wed, 31 Mar 2010 11:11:22 +0200
 
-vte (1:0.23.5-4) experimental; urgency=low
+bte (1:0.23.5-4) experimental; urgency=low
 
   [ Cyril Brulebois ]
   * Switch udeb from DirectFB to Xlib to prepare the move to an X11-based
@@ -983,14 +983,14 @@ vte (1:0.23.5-4) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Mar 2010 22:20:16 +0100
 
-vte (1:0.23.5-3) experimental; urgency=low
+bte (1:0.23.5-3) experimental; urgency=low
 
   * debian/rules:
     + Update shlibs version to >= 0.23.5.
 
  -- Sebastian Dröge <slomo@debian.org>  Thu, 14 Jan 2010 09:02:23 +0100
 
-vte (1:0.23.5-2) experimental; urgency=low
+bte (1:0.23.5-2) experimental; urgency=low
 
   * New upstream development release:
     + debian/patches/90_autoreconf.patch:
@@ -1002,7 +1002,7 @@ vte (1:0.23.5-2) experimental; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Thu, 14 Jan 2010 08:17:53 +0100
 
-vte (1:0.22.5-1) unstable; urgency=low
+bte (1:0.22.5-1) unstable; urgency=low
 
   * New upstream release.
     - debian/patches/90_autoreconf.patch:
@@ -1010,7 +1010,7 @@ vte (1:0.22.5-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Wed, 18 Nov 2009 07:40:57 +0100
 
-vte (1:0.22.4-1) unstable; urgency=low
+bte (1:0.22.4-1) unstable; urgency=low
 
   * New upstream release.
     - debian/patches/90_autoreconf.patch:
@@ -1018,7 +1018,7 @@ vte (1:0.22.4-1) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 08 Nov 2009 21:44:54 +0100
 
-vte (1:0.22.3-1) unstable; urgency=low
+bte (1:0.22.3-1) unstable; urgency=low
 
   * New upstream bugfix release:
     + debian/patches/70_python_env.patch:
@@ -1028,17 +1028,17 @@ vte (1:0.22.3-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 27 Oct 2009 09:35:46 +0100
 
-vte (1:0.22.2-2) unstable; urgency=low
+bte (1:0.22.2-2) unstable; urgency=low
 
   * debian/patches/70_python_env.patch:
     - Fix Python environment passing, GNOME #587894.
 
  -- Luca Falavigna <dktrkranz@debian.org>  Sat, 10 Oct 2009 13:43:27 +0200
 
-vte (1:0.22.2-1) unstable; urgency=low
+bte (1:0.22.2-1) unstable; urgency=low
 
   * New upstream bugfix release.
-    - debian/patches/01_vte_sequence_handler_cd_crash.patch:
+    - debian/patches/01_bte_sequence_handler_cd_crash.patch:
       + Removed, applied upstream.
     - debian/patches/90_autoreconf.patch:
       + Refreshed.
@@ -1046,14 +1046,14 @@ vte (1:0.22.2-1) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 29 Sep 2009 14:06:41 +0200
 
-vte (1:0.22.1-2) unstable; urgency=low
+bte (1:0.22.1-2) unstable; urgency=low
 
-  * debian/patches/01_vte_sequence_handler_cd_crash.patch:
+  * debian/patches/01_bte_sequence_handler_cd_crash.patch:
     - Patch from Matijs van Zuijlen to fix a crash. Closes: #548388.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 27 Sep 2009 00:45:48 +0200
 
-vte (1:0.22.1-1) unstable; urgency=low
+bte (1:0.22.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
     - Fix crash on terminal reset. Closes: #548319.
@@ -1065,14 +1065,14 @@ vte (1:0.22.1-1) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 26 Sep 2009 00:01:19 +0200
 
-vte (1:0.22.0-2) unstable; urgency=low
+bte (1:0.22.0-2) unstable; urgency=low
 
   * 01_background_ncurses.patch: stolen upstream. Fix background color
     in ncurses applications. Closes: #548241.
 
  -- Josselin Mouette <joss@debian.org>  Thu, 24 Sep 2009 22:49:17 +0200
 
-vte (1:0.22.0-1) unstable; urgency=low
+bte (1:0.22.0-1) unstable; urgency=low
 
   [ Emilio Pozuelo Monfort ]
   * debian/patches/01_bashisms.patch: forwarded, add header.
@@ -1082,7 +1082,7 @@ vte (1:0.22.0-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 22 Sep 2009 13:34:21 +0200
 
-vte (1:0.20.5-1) unstable; urgency=low
+bte (1:0.20.5-1) unstable; urgency=low
 
   * New upstream bugfix release, undoing the unintended
     soname bump (Closes: #532552):
@@ -1094,7 +1094,7 @@ vte (1:0.20.5-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Wed, 10 Jun 2009 07:07:43 +0200
 
-vte (1:0.20.4-1) unstable; urgency=low
+bte (1:0.20.4-1) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Add libglib2.0-doc, libctk2.0-doc and libatk1.0-doc to b-d-i to
@@ -1113,7 +1113,7 @@ vte (1:0.20.4-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 02 Jun 2009 07:01:29 +0200
 
-vte (1:0.20.1-1) unstable; urgency=low
+bte (1:0.20.1-1) unstable; urgency=low
 
   [ Luca Bruno ]
   * New upstream release.
@@ -1137,7 +1137,7 @@ vte (1:0.20.1-1) unstable; urgency=low
       + Specify libpango1.0-dev version needed is 1.22.0.
     - Build-Depends:
       + Added libgladeui-1-dev.
-    - libvte-dev Depends:
+    - libbte-dev Depends:
       + Removed libatk1.0-dev, libsm-dev, libice-dev, zlib1g-dev and
         libx11-dev.
     - Update Standards-Version to 3.8.1, no additional changes needed.
@@ -1146,29 +1146,29 @@ vte (1:0.20.1-1) unstable; urgency=low
     - Add -DX_DISPLAY_MISSING to udeb CFLAGS.
     - Add --enable-glade-catalogue to DEB_CONFIGURE_EXTRA_FLAGS to install
       gladeui files.
-  * debian/libvte-common.install:
+  * debian/libbte-common.install:
     - Install gladeui files under /usr/share/glade3.
 
   [ Josselin Mouette ]
   * New upstream release.
-  * Install the Python development files in libvte-dev and make this
-    package provide python-vte-dev, just in case.
+  * Install the Python development files in libbte-dev and make this
+    package provide python-bte-dev, just in case.
   * Fix dh_pysupport invocation.
   * Bump shlibs to version 1:0.19.4.
-  * Remove libvte-dev dependency on ncurses.
-  * Remove incorrect Provides: in python-vte.
+  * Remove libbte-dev dependency on ncurses.
+  * Remove incorrect Provides: in python-bte.
   * Switch to quilt to manage patches.
   * 90_autoreconf.patch: updated for the new version.
 
  -- Josselin Mouette <joss@debian.org>  Thu, 23 Apr 2009 00:41:20 +0200
 
-vte (1:0.17.4-2) unstable; urgency=low
+bte (1:0.17.4-2) unstable; urgency=low
 
   * Upload to unstable.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 04 Mar 2009 13:55:08 +0100
 
-vte (1:0.17.4-1) experimental; urgency=low
+bte (1:0.17.4-1) experimental; urgency=low
 
   * New upstream release:
     + debian/control.in:
@@ -1185,17 +1185,17 @@ vte (1:0.17.4-1) experimental; urgency=low
     + debian/patches/92_full_bold_fonts.patch:
       - Patch from the Ubuntu package to first check if a bold variant
         of a font exists before using "pseudo-bolding".
-    + debian/python-vte.examples:
+    + debian/python-bte.examples:
       - Add some more examples, taken from the Ubuntu package.
   * debian/watch:
     + Updated for new versions.
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 24 Nov 2008 10:15:11 +0100
 
-vte (1:0.16.14-4) unstable; urgency=low
+bte (1:0.16.14-4) unstable; urgency=low
 
   [ Josselin Mouette ]
-  * libvte-doc.links: add a link in /usr/share/doc to the documentation.
+  * libbte-doc.links: add a link in /usr/share/doc to the documentation.
     Closes: #495356.
 
   [ Loic Minier ]
@@ -1207,17 +1207,17 @@ vte (1:0.16.14-4) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Fri, 24 Oct 2008 18:53:48 +0200
 
-vte (1:0.16.14-3) unstable; urgency=low
+bte (1:0.16.14-3) unstable; urgency=low
 
   * Fix 1:0.16.14-2 changelog entry.
   * Upload to unstable.
 
  -- Loic Minier <lool@dooz.org>  Mon, 04 Aug 2008 12:21:58 +0200
 
-vte (1:0.16.14-2) experimental; urgency=low
+bte (1:0.16.14-2) experimental; urgency=low
 
   [ Loic Minier ]
-  * Properly anchor libvteN regexp.
+  * Properly anchor libbteN regexp.
   * Misc cleanups of the below changelog and patches.
 
   [ Jérémy Bobbio ]
@@ -1232,8 +1232,8 @@ vte (1:0.16.14-2) experimental; urgency=low
     using the builtin termcap support instead.
   * New patch, 90_autoreconf, run autoreconf for 20_make_ft2_optional,
     29_add_am_prog_cc_c_o_for_buffer_c, and 25_optional_ncurses.
-  * Re-enable libvte9-udeb build.
-     - Drop libvte-common dep in the udeb.
+  * Re-enable libbte9-udeb build.
+     - Drop libbte-common dep in the udeb.
      - Configure the udeb without pangox and ft2 and with a static ncurses.
   * New patch, 60_termcap-home-end, defines home/end in the builtin termcap
     support file.
@@ -1244,28 +1244,28 @@ vte (1:0.16.14-2) experimental; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Thu, 26 Jun 2008 20:44:36 +0200
 
-vte (1:0.16.14-1) unstable; urgency=low
+bte (1:0.16.14-1) unstable; urgency=low
 
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Thu, 05 Jun 2008 12:21:06 +0200
 
-vte (1:0.16.13-1) unstable; urgency=low
+bte (1:0.16.13-1) unstable; urgency=low
 
   [ Emilio Pozuelo Monfort ]
   * debian/control.in:
-    - Fix libvte-doc short description, which was refering to
+    - Fix libbte-doc short description, which was refering to
       development files instead of documentation.
 
   [ Loic Minier ]
-  * Drop head -n1 from libvteN computation.
+  * Drop head -n1 from libbteN computation.
 
   [ Sebastian Dröge ]
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 10 Mar 2008 21:51:56 +0100
 
-vte (1:0.16.12-1) unstable; urgency=low
+bte (1:0.16.12-1) unstable; urgency=low
 
   * New upstream bugfix release.
   * debian/control.in:
@@ -1273,23 +1273,23 @@ vte (1:0.16.12-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Wed, 09 Jan 2008 19:42:18 +0100
 
-vte (1:0.16.11-1) unstable; urgency=low
+bte (1:0.16.11-1) unstable; urgency=low
 
   [ Loic Minier ]
-  * Tighten libvte package name extraction.
+  * Tighten libbte package name extraction.
 
   [ Sebastian Dröge ]
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 17 Dec 2007 21:52:05 +0100
 
-vte (1:0.16.10-1) unstable; urgency=low
+bte (1:0.16.10-1) unstable; urgency=low
 
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 04 Dec 2007 12:13:11 +0100
 
-vte (1:0.16.9-1) unstable; urgency=low
+bte (1:0.16.9-1) unstable; urgency=low
 
   * New upstream release, with API additions:
     + debian/rules:
@@ -1297,7 +1297,7 @@ vte (1:0.16.9-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 18 Sep 2007 10:28:08 +0200
 
-vte (1:0.16.8-1) unstable; urgency=low
+bte (1:0.16.8-1) unstable; urgency=low
 
   [ Alan Baghumian ]
   * New upstream release:
@@ -1310,7 +1310,7 @@ vte (1:0.16.8-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Mon, 30 Jul 2007 20:25:31 +0200
 
-vte (1:0.16.6-3) unstable; urgency=low
+bte (1:0.16.6-3) unstable; urgency=low
 
   * Cleanup changelog.
   * Drop patch 61_ctrl-and-shift-arrows as it breaks up/down history;
@@ -1318,7 +1318,7 @@ vte (1:0.16.6-3) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Wed, 25 Jul 2007 09:43:04 +0200
 
-vte (1:0.16.6-2) unstable; urgency=low
+bte (1:0.16.6-2) unstable; urgency=low
 
   * Drop patch 41_from_upstream_fix_nvi_scrolling; fixed differently upstream
     since 0.16.2; see GNOME #417652.
@@ -1329,7 +1329,7 @@ vte (1:0.16.6-2) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Tue, 24 Jul 2007 09:06:47 +0200
 
-vte (1:0.16.6-1) unstable; urgency=low
+bte (1:0.16.6-1) unstable; urgency=low
 
   * Pass proper configure flags to the udeb.
   * Generate proper shlibs for the udeb.
@@ -1342,20 +1342,20 @@ vte (1:0.16.6-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Tue, 19 Jun 2007 11:08:11 +0200
 
-vte (1:0.16.5-2) experimental; urgency=low
+bte (1:0.16.5-2) experimental; urgency=low
 
-  * Add a new libvte9-udeb package.
+  * Add a new libbte9-udeb package.
 
  -- Loic Minier <lool@dooz.org>  Mon, 18 Jun 2007 23:10:47 +0200
 
-vte (1:0.16.5-1) unstable; urgency=low
+bte (1:0.16.5-1) unstable; urgency=low
 
   * New upstream release
   * Dropped 20_fix_strange_lines.patch, merged upstream
 
  -- Alan Baghumian <alan@technotux.org>  Wed, 06 Jun 2007 11:05:11 +0330
 
-vte (1:0.16.4-1) unstable; urgency=low
+bte (1:0.16.4-1) unstable; urgency=low
 
   * New upstream release
     + fix ctrl-key combinations yielding just key.
@@ -1366,13 +1366,13 @@ vte (1:0.16.4-1) unstable; urgency=low
 
  -- Alan Baghumian <alan@technotux.org>  Sun, 03 Jun 2007 17:25:27 +0330
 
-vte (1:0.16.3-1) unstable; urgency=low
+bte (1:0.16.3-1) unstable; urgency=low
 
   * New upstream release; no API change.
 
  -- Loic Minier <lool@dooz.org>  Fri, 27 Apr 2007 23:29:59 +0200
 
-vte (1:0.16.2-1) unstable; urgency=low
+bte (1:0.16.2-1) unstable; urgency=low
 
   * Upload to unstable; drop check-dist include.
   * Wrap build-deps and deps.
@@ -1380,7 +1380,7 @@ vte (1:0.16.2-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Tue, 24 Apr 2007 14:55:49 +0200
 
-vte (1:0.16.1-1) experimental; urgency=low
+bte (1:0.16.1-1) experimental; urgency=low
 
   * New upstream release; no API change.
     - Fixes output of incorrect colours; closes: #416125.
@@ -1390,14 +1390,14 @@ vte (1:0.16.1-1) experimental; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Tue, 10 Apr 2007 17:31:28 +0200
 
-vte (1:0.16.0-2) experimental; urgency=low
+bte (1:0.16.0-2) experimental; urgency=low
 
   * New patch, 50_expose-and-delayed-redraws-race, fixes a race between expose
     and delayed redraws; GNOME #419116; closes: #415730.
 
  -- Loic Minier <lool@dooz.org>  Wed, 21 Mar 2007 17:44:46 +0100
 
-vte (1:0.16.0-1) experimental; urgency=low
+bte (1:0.16.0-1) experimental; urgency=low
 
   * New upstream major stable release; API additions.
     - Build-depend on libpango1.0-dev and libxft-dev.
@@ -1411,14 +1411,14 @@ vte (1:0.16.0-1) experimental; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Sun, 18 Mar 2007 11:08:13 +0100
 
-vte (1:0.14.2-1) experimental; urgency=low
+bte (1:0.14.2-1) experimental; urgency=low
 
   * Add a get-orig-source target to retrieve the upstream tarball.
   * Include the new check-dist Makefile to prevent accidental uploads to
     unstable; bump build-dep on gnome-pkg-tools to >= 0.10.
-  * Drop version in the dependency on libvte-common to permit installing two
-    libvte shared library packages at the same time; the files in
-    libvte-common are translations and a termcap file which didn't change
+  * Drop version in the dependency on libbte-common to permit installing two
+    libbte shared library packages at the same time; the files in
+    libbte-common are translations and a termcap file which didn't change
     since 2002 which is supposedly eternally backward compatible, hence this
     should only result in some untranslated text.
   * Merge 1:0.12.2-5 / SVN revs 7195:8677.
@@ -1427,13 +1427,13 @@ vte (1:0.14.2-1) experimental; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Thu,  1 Mar 2007 11:30:40 +0100
 
-vte (1:0.14.1-1) experimental; urgency=low
+bte (1:0.14.1-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Josselin Mouette <joss@debian.org>  Tue, 21 Nov 2006 20:37:02 +0100
 
-vte (1:0.14.0-1) experimental; urgency=low
+bte (1:0.14.0-1) experimental; urgency=low
 
   * New upstream release; no API change.
   * Preemptively fix the 12_python_reaper patch to work with newer codegen,
@@ -1442,24 +1442,24 @@ vte (1:0.14.0-1) experimental; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Tue,  5 Sep 2006 16:43:37 +0200
 
-vte (1:0.13.7-1) experimental; urgency=low
+bte (1:0.13.7-1) experimental; urgency=low
 
   * New upstream development release; no API change.
 
  -- Loic Minier <lool@dooz.org>  Fri, 25 Aug 2006 20:20:03 +0200
 
-vte (1:0.13.6-1) experimental; urgency=low
+bte (1:0.13.6-1) experimental; urgency=low
 
   * New upstream development release; no API change.
   * Merge 1:0.12.2-3.
 
  -- Loic Minier <lool@dooz.org>  Wed, 23 Aug 2006 15:56:50 +0200
 
-vte (1:0.13.5-1) experimental; urgency=low
+bte (1:0.13.5-1) experimental; urgency=low
 
   * New upstream development releases, with API changes.
     - Target at experimental.
-    - Rename livte4 to libvte9 for the new SONAME.
+    - Rename libte4 to libbte9 for the new SONAME.
     - Bump shlibs to >= 1:0.13.3.
     - Drop 08_set_backspace_to_utf8 patch, merged upstream.
     - Drop 09_multiscreen_safe, fixed upstream.
@@ -1468,25 +1468,25 @@ vte (1:0.13.5-1) experimental; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Wed,  9 Aug 2006 22:45:15 +0200
 
-vte (1:0.12.2-5) unstable; urgency=medium
+bte (1:0.12.2-5) unstable; urgency=medium
 
   * Add a get-orig-source target to retrieve the upstream tarball.
   * New patch, 20_ctk-style-attach-crash, fixes crash in ctk_style_attach when
-    changing icon theme; backported from GNOME #399282 / vte 0.14.2; see also
+    changing icon theme; backported from GNOME #399282 / bte 0.14.2; see also
     GNOME #353498.
   * Stop shipping *.a and *.la files for Python modules.
 
  -- Loic Minier <lool@dooz.org>  Mon, 26 Feb 2007 14:15:57 +0100
 
-vte (1:0.12.2-4) unstable; urgency=medium
+bte (1:0.12.2-4) unstable; urgency=medium
 
   * Remove references to the forgotten hardcoded python2.3 and python2.4
-    version from the python-vte.install file, thanks Daniel Holbach.
+    version from the python-bte.install file, thanks Daniel Holbach.
   * Urgency medium since this will cause FTBFS in the future.
 
  -- Loic Minier <lool@dooz.org>  Tue,  5 Sep 2006 16:36:09 +0200
 
-vte (1:0.12.2-3) unstable; urgency=medium
+bte (1:0.12.2-3) unstable; urgency=medium
 
   * Drop useless DEB_PYTHON_SYSTEM=pysupport.
   * Rework package build completely to follow pyversions --requested.
@@ -1495,10 +1495,10 @@ vte (1:0.12.2-3) unstable; urgency=medium
 
  -- Loic Minier <lool@dooz.org>  Wed, 23 Aug 2006 15:44:03 +0200
 
-vte (1:0.12.2-2) unstable; urgency=low
+bte (1:0.12.2-2) unstable; urgency=low
 
   [ Loic Minier ]
-  * Remove versions in Conflicts/Replaces with python2.X-vte.
+  * Remove versions in Conflicts/Replaces with python2.X-bte.
 
   [ Josselin Mouette ]
   * 12_python_reaper.patch: patch from Michael Vogt to add a python
@@ -1509,7 +1509,7 @@ vte (1:0.12.2-2) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Wed,  9 Aug 2006 22:15:22 +0200
 
-vte (1:0.12.2-1) unstable; urgency=low
+bte (1:0.12.2-1) unstable; urgency=low
 
   [ Loic Minier ]
   * New upstream release.
@@ -1520,22 +1520,22 @@ vte (1:0.12.2-1) unstable; urgency=low
   [ Gustavo Franco ]
   * Python New Policy Transition. (Closes: #373405)
     - debian/control:
-      - python-vte now provides Python 2.3 and 2.4 vte Python bindings.
+      - python-bte now provides Python 2.3 and 2.4 bte Python bindings.
       - Add python-support as Build-Depends.
-      - Fix python-vte package description.
+      - Fix python-bte package description.
     - debian/rules:
       - Add DEB_PYTHON_SYSTEM variable and set to pysupport.
-      - Make the needed changes to provide Python 2.3 and 2.4 vte Python
-        bindings in the same binary package (python-vte).
+      - Make the needed changes to provide Python 2.3 and 2.4 bte Python
+        bindings in the same binary package (python-bte).
       - Remove dh_python call since it's no more needed.
-      - Add dh_pysupport call in binary-install/python-vte target.
-    - Remove debian/python{2.3,2.4}-vte.install
-    - Add debian/python-vte.install
+      - Add dh_pysupport call in binary-install/python-bte target.
+    - Remove debian/python{2.3,2.4}-bte.install
+    - Add debian/python-bte.install
   * Set debhelper compatibility to 5.
 
  -- Gustavo Franco <stratus@debian.org>  Tue, 11 Jul 2006 01:06:36 -0300
 
-vte (1:0.12.1-1) unstable; urgency=low
+bte (1:0.12.1-1) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Set fatalerror as the primary maintainer.
@@ -1544,8 +1544,8 @@ vte (1:0.12.1-1) unstable; urgency=low
     + Use ${source:Version} and ${binary:Version}.
 
   [ Loic Minier ]
-  * Stop shipping /usr/lib/*.la files in libvte-dev.
-    [debian/libvte-dev.install]
+  * Stop shipping /usr/lib/*.la files in libbte-dev.
+    [debian/libbte-dev.install]
   * New upstream release, with API additions.
     - Bump up libctk2.0-dev build-dep to >=  2.6.0.
       [debian/control, debian/control.in]
@@ -1566,13 +1566,13 @@ vte (1:0.12.1-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Fri, 12 May 2006 16:11:16 +0200
 
-vte (1:0.12.0-2) unstable; urgency=low
+bte (1:0.12.0-2) unstable; urgency=low
 
   * Drop references to libXcursor.la
 
  -- Guilherme de S. Pastore <gpastore@debian.org>  Fri, 21 Apr 2006 12:49:11 -0300
 
-vte (1:0.12.0-1) unstable; urgency=low
+bte (1:0.12.0-1) unstable; urgency=low
 
   * New upstream release.
   * debian/patches/20_restricted_region_readjustment.patch:
@@ -1586,40 +1586,40 @@ vte (1:0.12.0-1) unstable; urgency=low
 
  -- Guilherme de S. Pastore <guilherme.pastore@terra.com.br>  Sun,  2 Apr 2006 12:15:57 -0300
 
-vte (1:0.11.20-3) unstable; urgency=low
+bte (1:0.11.20-3) unstable; urgency=low
 
   * Fix Python build-deps, thanks Jan Lübbe.
     [debian/control, debian/control.in]
 
  -- Loic Minier <lool@dooz.org>  Mon, 27 Feb 2006 09:55:30 +0100
 
-vte (1:0.11.20-2) unstable; urgency=low
+bte (1:0.11.20-2) unstable; urgency=low
 
-  * Merge nice patch from Jan Lübbe to build vte's python bindings for python
+  * Merge nice patch from Jan Lübbe to build bte's python bindings for python
     2.3 and 2.4. (Closes: #353434)
-    [debian/control, debian/control.in, debian/python-vte.install,
-    debian/python2.3-vte.install, debian/python2.4-vte.install, debian/rules]
+    [debian/control, debian/control.in, debian/python-bte.install,
+    debian/python2.3-bte.install, debian/python2.4-bte.install, debian/rules]
   * Tune up the descriptions slightly.
     [debian/control, debian/control.in]
-  * Let python2.3-vte replace previous versions of python-vte.
+  * Let python2.3-bte replace previous versions of python-bte.
     [debian/control, debian/control.in]
 
  -- Loic Minier <lool@dooz.org>  Sun, 26 Feb 2006 21:34:54 +0100
 
-vte (1:0.11.20-1) unstable; urgency=low
+bte (1:0.11.20-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Loic Minier <lool@dooz.org>  Sun, 26 Feb 2006 11:28:15 +0100
 
-vte (1:0.11.19-1) unstable; urgency=low
+bte (1:0.11.19-1) unstable; urgency=low
 
   * New upstream release.
     - Shift+Insert pasting works as in the past. (Closes: #354275)
 
  -- Loic Minier <lool@dooz.org>  Sat, 25 Feb 2006 17:45:13 +0100
 
-vte (1:0.11.18-1) unstable; urgency=low
+bte (1:0.11.18-1) unstable; urgency=low
 
   * New upstream release.
     - Drop double free() fix (merged upstream).
@@ -1627,7 +1627,7 @@ vte (1:0.11.18-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Sun, 12 Feb 2006 20:55:57 +0100
 
-vte (1:0.11.17-1) unstable; urgency=low
+bte (1:0.11.17-1) unstable; urgency=low
 
   * New upstream release.
     - This release backs out all changes made to the .pc file in
@@ -1639,19 +1639,19 @@ vte (1:0.11.17-1) unstable; urgency=low
     - Drop patch adding console sequesnces to save/restore cursor position
       (merged upstream).
       [debian/patches/05_cursor_position.patch]
-    - Drop relibtoolizing patch as the person bootstrapping vte for GNOME was
+    - Drop relibtoolizing patch as the person bootstrapping bte for GNOME was
       visibly running Debian. :)
       [debian/patches/70_relibtoolize.patch]
 
  -- Loic Minier <lool@dooz.org>  Sun, 29 Jan 2006 18:35:39 +0100
 
-vte (1:0.11.16-1) unstable; urgency=low
+bte (1:0.11.16-1) unstable; urgency=low
 
   * New upstream release.
     - Drop patch to use .private pkg-config pseudo-headers (included
       upstream).
       [debian/patches/30_pkg-config-private-fields.patch]
-    - No need to "rm python/vte.c", this is not distributed upstream anymore.
+    - No need to "rm python/bte.c", this is not distributed upstream anymore.
       [debian/rules]
     - Drop patch to fix gdk warnings (included upstream).
       [debian/patches/20_gdk-warning.patch]
@@ -1660,7 +1660,7 @@ vte (1:0.11.16-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Mon, 23 Jan 2006 22:15:53 +0100
 
-vte (1:0.11.15-4) unstable; urgency=low
+bte (1:0.11.15-4) unstable; urgency=low
 
   * Build-depend on libfreetype6-dev (>= 2.0.2) to match the checks in
     configure.in. (Closes: #340412)
@@ -1673,29 +1673,29 @@ vte (1:0.11.15-4) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Wed, 23 Nov 2005 15:23:11 +0100
 
-vte (1:0.11.15-3) unstable; urgency=high
+bte (1:0.11.15-3) unstable; urgency=high
 
-  * Force regeneration of the python bindings by removing python/vte.c.
+  * Force regeneration of the python bindings by removing python/bte.c.
     (Closes: #334001, #334668, #338090)
     [debian/rules]
 
  -- Loic Minier <lool@dooz.org>  Tue,  8 Nov 2005 22:38:50 +0100
 
-vte (1:0.11.15-2) unstable; urgency=high
+bte (1:0.11.15-2) unstable; urgency=high
 
   * Urgency high for RC bug fix.
   * Add libsm-dev, libice-dev, zlib1g-dev, libncurses5-dev | libncurses-dev,
-    libx11-dev, and libfontconfig1-dev deps to vte-dev, according to its .pc
+    libx11-dev, and libfontconfig1-dev deps to bte-dev, according to its .pc
     file. (Closes: #259671) [debian/control, debian/control.in]
 
  -- Loic Minier <lool@dooz.org>  Sun, 16 Oct 2005 22:21:33 +0200
 
-vte (1:0.11.15-1) unstable; urgency=low
+bte (1:0.11.15-1) unstable; urgency=low
 
   [ Sebastien Bacher ]
   * debian/control.in:
     - use ${python:Depends}.
-  * debian/python-vte.install:
+  * debian/python-bte.install:
     - don't use a specific python version.
   * debian/rules:
     - use dh_python.
@@ -1703,8 +1703,8 @@ vte (1:0.11.15-1) unstable; urgency=low
   [ Loic Minier ]
   * New upstream releases.
     - Fix confusion between py_palette and item in
-      _wrap_vte_terminal_set_colors(), doesn't segfault anymore in
-      vte.Terminal.set_colors(). (Closes: #319987)
+      _wrap_bte_terminal_set_colors(), doesn't segfault anymore in
+      bte.Terminal.set_colors(). (Closes: #319987)
   * Add CDBS' utils.
   * Drop obsolete patches. [debian/patches/02_path_xtra.patch,
     debian/patches/03_path_xtra-2.patch,
@@ -1716,16 +1716,16 @@ vte (1:0.11.15-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Sun, 11 Sep 2005 16:03:32 +0200
 
-vte (1:0.11.13-4) unstable; urgency=high
+bte (1:0.11.13-4) unstable; urgency=high
 
   * Urgency high for testing targetted RC bugfix.
-  * Add dependencies to libvte-dev on libxft-dev, libfreetype6-dev,
-    libatk1.0-dev, libpango1.0-dev, libglib2.0-dev to conform with libvte.la's
+  * Add dependencies to libbte-dev on libxft-dev, libfreetype6-dev,
+    libatk1.0-dev, libpango1.0-dev, libglib2.0-dev to conform with libbte.la's
     dependency_libs. [debian/control, debian/control.in] (Closes: #259671)
 
  -- Loic Minier <lool@dooz.org>  Sun, 31 Jul 2005 16:01:15 +0200
 
-vte (1:0.11.13-3) unstable; urgency=low
+bte (1:0.11.13-3) unstable; urgency=low
 
   * Fix Gdk warnings with a patch from upstream. (Closes: #316940, #318549)
     [debian/patches/20_gdk-warning.patch]
@@ -1733,29 +1733,29 @@ vte (1:0.11.13-3) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Thu, 21 Jul 2005 20:01:23 +0200
 
-vte (1:0.11.13-2) unstable; urgency=low
+bte (1:0.11.13-2) unstable; urgency=low
 
   * Rebuild on an unstable box to avoid dependencies in experimental.
 
  -- Josselin Mouette <joss@debian.org>  Sat, 30 Apr 2005 19:07:20 +0200
 
-vte (1:0.11.13-1) unstable; urgency=low
+bte (1:0.11.13-1) unstable; urgency=low
 
   * New upstream version
   * Added a new package that contains the documentation (Closes: #300742)
   * debian/patches:
-    - 01_vtemodule.patch: applied
+    - 01_btemodule.patch: applied
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Tue, 19 Apr 2005 23:05:02 +0200
 
-vte (1:0.11.12-1) unstable; urgency=low
+bte (1:0.11.12-1) unstable; urgency=low
 
   * New upstream version. Lots of patches in Gnome's bugzilla have been
     applied.
   * debian/patches :
     - Merged patches :
         05_performance_boost.patch
-        10_redraw_vte_screen.patch
+        10_redraw_bte_screen.patch
         12_fix_display_corrption_in_utf8.patch
     - Splitted 02_path_xtra.patch into to patches :
         02_path_xtra.patch contains the configure.in patch
@@ -1764,7 +1764,7 @@ vte (1:0.11.12-1) unstable; urgency=low
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Thu,  3 Mar 2005 23:54:07 +0100
 
-vte (1:0.11.11-6) unstable; urgency=low
+bte (1:0.11.11-6) unstable; urgency=low
 
   * Added patches from Emil Soleyman-Zomalan <emil@nishra.com>.
   * debian/patches:
@@ -1777,11 +1777,11 @@ vte (1:0.11.11-6) unstable; urgency=low
     - Set backspace behavior to utf8 (depends on utf8 locale)
         08_set_backspace_to_utf8.patch
         http://bugs.gnome.org/show_bug.cgi?id=158200
-    - Make vte multi-screen safe
+    - Make bte multi-screen safe
         09_multiscreen_safe.patch
         http://bugs.gnome.org/show_bug.cgi?id=160782
-    - Redraw vte screen with correct background color
-        10_redraw_vte_screen.patch
+    - Redraw bte screen with correct background color
+        10_redraw_bte_screen.patch
         http://bugs.gnome.org/show_bug.cgi?id=125364
     - Hide manifestation of PageUp behavior with less (Closes: #285143)
         11_hide_pageup_behavior.patch
@@ -1792,7 +1792,7 @@ vte (1:0.11.11-6) unstable; urgency=low
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Wed, 22 Dec 2004 01:32:58 +0100
 
-vte (1:0.11.11-5) unstable; urgency=low
+bte (1:0.11.11-5) unstable; urgency=low
 
   * debian/patches:
     - Relibtoolized 02_path_xtra.patch (Closes: #259671)
@@ -1801,14 +1801,14 @@ vte (1:0.11.11-5) unstable; urgency=low
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Thu, 12 Aug 2004 14:00:51 +0200
 
-vte (1:0.11.11-4) unstable; urgency=low
+bte (1:0.11.11-4) unstable; urgency=low
 
   * GNOME team upload.
   * debian/rules: add epoch to shlib declaration (closes: #253120).
 
  -- Jordi Mallach <jordi@debian.org>  Sun, 20 Jun 2004 17:24:12 +0200
 
-vte (1:0.11.11-3) unstable; urgency=low
+bte (1:0.11.11-3) unstable; urgency=low
 
   * Gnome Team Upload.
   * debian/rules:
@@ -1816,19 +1816,19 @@ vte (1:0.11.11-3) unstable; urgency=low
 
  -- Sebastien Bacher <seb128@debian.org>  Tue,  8 Jun 2004 00:55:25 +0200
 
-vte (1:0.11.11-2) unstable; urgency=low
+bte (1:0.11.11-2) unstable; urgency=low
 
   * GNOME Team Upload.
   * Upload in unstable.
 
  -- Sebastien Bacher <seb128@debian.org>  Thu, 27 May 2004 00:15:35 +0200
 
-vte (1:0.11.11-1) experimental; urgency=low
+bte (1:0.11.11-1) experimental; urgency=low
 
   * New upstream version
     - Removes all former patches, as they're no more needed
-    - Add a patch for correcting init_vte typos.
-    - This version add more documentation in python-vte module (Closes: #225296)
+    - Add a patch for correcting init_bte typos.
+    - This version add more documentation in python-bte module (Closes: #225296)
     - New build dependency on gtk-doc-tools
   * Added a patch for using AC_PATH_XTRA with Debian's enhancements.
   * Added a patch for supporting some save/restore cursor position console
@@ -1836,48 +1836,48 @@ vte (1:0.11.11-1) experimental; urgency=low
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Sun,  2 May 2004 22:37:25 +0200
 
-vte (1:0.11.10-8) unstable; urgency=low
+bte (1:0.11.10-8) unstable; urgency=low
 
   * debian/patches:
-    - Added a patch to support the vte_terminal_fork_pty call coming from
+    - Added a patch to support the bte_terminal_fork_pty call coming from
     upstream cvs (Closes: #241485)
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Sun, 18 Apr 2004 14:18:56 +0200
 
-vte (1:0.11.10-7) unstable; urgency=low
+bte (1:0.11.10-7) unstable; urgency=low
 
   * The gnome-pty-helper didn't have the right permissions, so it couldn't
   update the utmp files. (Closes: #240279)
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Tue, 30 Mar 2004 01:15:47 +0200
 
-vte (1:0.11.10-6) unstable; urgency=low
+bte (1:0.11.10-6) unstable; urgency=low
 
   * Fixed build-dependencies (Closes: #238470)
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Wed, 17 Mar 2004 19:25:26 +0100
 
-vte (1:0.11.10-5) unstable; urgency=low
+bte (1:0.11.10-5) unstable; urgency=low
 
   * New maintainer (Closes: #234970)
   * Switched from debhelper to cdbs for the packaging
 
  -- Arnaud Patard <arnaud.patard@rtp-net.org>  Sun, 29 Feb 2004 19:41:29 +0100
 
-vte (1:0.11.10-4) unstable; urgency=low
+bte (1:0.11.10-4) unstable; urgency=low
 
   * This package suck more and more, slow, broken and upstream don't care,
     thus orpahned.
 
  -- Christian Marillat <marillat@debian.org>  Thu, 26 Feb 2004 21:48:39 +0100
 
-vte (1:0.11.10-3) unstable; urgency=low
+bte (1:0.11.10-3) unstable; urgency=low
 
   * New patch 02_link.dpatch to fix broken linkage (Closes: #220108)
 
  -- Christian Marillat <marillat@debian.org>  Sun, 30 Nov 2003 17:21:07 +0100
 
-vte (1:0.11.10-2) unstable; urgency=low
+bte (1:0.11.10-2) unstable; urgency=low
 
   * Add patch for less artifacts (Closes: #218399)
   * NMU aren't walcome when I've tagged this bug pending two days ago. Don't
@@ -1885,32 +1885,32 @@ vte (1:0.11.10-2) unstable; urgency=low
 
  -- Christian Marillat <marillat@debian.org>  Mon,  3 Nov 2003 19:13:10 +0100
 
-vte (1:0.11.10-1) unstable; urgency=low
+bte (1:0.11.10-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Sun, 19 Oct 2003 11:32:07 +0200
 
-vte (1:0.10.29-6) unstable; urgency=low
+bte (1:0.10.29-6) unstable; urgency=low
 
   * Re-apply cursor blinking patch (Closes: #186764, #211818)
 
  -- Christian Marillat <marillat@debian.org>  Tue, 30 Sep 2003 22:50:18 +0200
 
-vte (1:0.10.29-5) unstable; urgency=low
+bte (1:0.10.29-5) unstable; urgency=low
 
   * Add libxrender-dev in Builde-Depends and Depends for the -dev package (Closes: #208533)
 
  -- Christian Marillat <marillat@debian.org>  Wed,  3 Sep 2003 18:19:51 +0200
 
-vte (1:0.10.29-4) unstable; urgency=low
+bte (1:0.10.29-4) unstable; urgency=low
 
-  * Fix python dependencies in python-vte (Closes: #206285)
+  * Fix python dependencies in python-bte (Closes: #206285)
   * New patch to fix a bug with the blinking (Closes: #186764)
 
  -- Christian Marillat <marillat@debian.org>  Wed, 20 Aug 2003 16:29:34 +0200
 
-vte (1:0.10.29-3) unstable; urgency=low
+bte (1:0.10.29-3) unstable; urgency=low
 
   * debian/control Add python-ctk2-dev in build-depends
   * python package need to depends on a versioned python-ctk2 (>= 1.99.17-2)
@@ -1918,102 +1918,102 @@ vte (1:0.10.29-3) unstable; urgency=low
 
  -- Christian Marillat <marillat@debian.org>  Tue, 19 Aug 2003 20:43:43 +0200
 
-vte (1:0.10.29-2) unstable; urgency=low
+bte (1:0.10.29-2) unstable; urgency=low
 
   * debian/rules remove an old  CC=gcc-3.2 (Closes: #196911)
 
  -- Christian Marillat <marillat@debian.org>  Tue, 10 Jun 2003 20:33:06 +0200
 
-vte (1:0.10.29-1) unstable; urgency=low
+bte (1:0.10.29-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Mon,  9 Jun 2003 22:26:53 +0200
 
-vte (1:0.10.28-1) unstable; urgency=low
+bte (1:0.10.28-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Tue, 13 May 2003 09:07:26 +0200
 
-vte (1:0.10.27-1) unstable; urgency=low
+bte (1:0.10.27-1) unstable; urgency=low
 
   * New upstream release.
   * Fix fonts size (Closes: #186705)
 
  -- Christian Marillat <marillat@debian.org>  Mon,  5 May 2003 13:13:52 +0200
 
-vte (0.11.0-2) unstable; urgency=low
+bte (0.11.0-2) unstable; urgency=low
 
   * Update section
   * Fix crash on exit (Closes: #186593)
 
  -- Christian Marillat <marillat@debian.org>  Fri,  4 Apr 2003 12:49:57 +0200
 
-vte (0.11.0-1) unstable; urgency=low
+bte (0.11.0-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Wed, 26 Mar 2003 21:26:39 +0100
 
-vte (0.10.26-1) unstable; urgency=low
+bte (0.10.26-1) unstable; urgency=low
 
   * New upstream release.
   * Fix text wrapping (Closes: #183337)
 
  -- Christian Marillat <marillat@debian.org>  Tue,  4 Mar 2003 21:09:31 +0100
 
-vte (0.10.25-1) unstable; urgency=low
+bte (0.10.25-1) unstable; urgency=low
 
   * new upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Tue, 25 Feb 2003 01:39:37 +0100
 
-vte (0.10.23-1) unstable; urgency=low
+bte (0.10.23-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Fri, 21 Feb 2003 20:56:58 +0100
 
-vte (0.10.22-1) unstable; urgency=low
+bte (0.10.22-1) unstable; urgency=low
 
   * New upstream release.
   * Fix tab focus (Closes: #180370)
 
  -- Christian Marillat <marillat@debian.org>  Thu, 20 Feb 2003 10:17:29 +0100
 
-vte (0.10.20-1) unstable; urgency=low
+bte (0.10.20-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Sat, 15 Feb 2003 02:00:29 +0100
 
-vte (0.10.19-1) unstable; urgency=low
+bte (0.10.19-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Thu, 13 Feb 2003 10:42:34 +0100
 
-vte (0.10.17-1) unstable; urgency=low
+bte (0.10.17-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Mon,  3 Feb 2003 15:56:24 +0100
 
-vte (0.10.16-1) unstable; urgency=low
+bte (0.10.16-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Fri, 31 Jan 2003 18:06:35 +0100
 
-vte (0.10.15-1) unstable; urgency=low
+bte (0.10.15-1) unstable; urgency=low
 
   * New upstream release.
   * Fix vim and scroll mouse (Closes: #176952)
 
  -- Christian Marillat <marillat@debian.org>  Tue, 28 Jan 2003 10:47:06 +0100
 
-vte (0.10.14-1) unstable; urgency=low
+bte (0.10.14-1) unstable; urgency=low
 
   * New upstream release.
   * Workaround to fix undocumented xttitle escape sequence (Closes: #178066)
@@ -2022,31 +2022,31 @@ vte (0.10.14-1) unstable; urgency=low
 
  -- Christian Marillat <marillat@debian.org>  Fri, 24 Jan 2003 12:24:18 +0100
 
-vte (0.10.12-1) unstable; urgency=low
+bte (0.10.12-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Mon, 20 Jan 2003 22:54:23 +0100
 
-vte (0.10.11-1) unstable; urgency=low
+bte (0.10.11-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Sat, 18 Jan 2003 15:57:33 +0100
 
-vte (0.10.10-2) unstable; urgency=low
+bte (0.10.10-2) unstable; urgency=low
 
   * -dev package should depends on libncurses5-dev (Closes: #176684)
 
  -- Christian Marillat <marillat@debian.org>  Tue, 14 Jan 2003 16:52:06 +0100
 
-vte (0.10.10-1) unstable; urgency=low
+bte (0.10.10-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Tue, 14 Jan 2003 12:13:00 +0100
 
-vte (0.10.8-1) unstable; urgency=low
+bte (0.10.8-1) unstable; urgency=low
 
   * New upstream release.
   * Build against libxft2-dev
@@ -2055,80 +2055,80 @@ vte (0.10.8-1) unstable; urgency=low
 
  -- Christian Marillat <marillat@debian.org>  Wed,  8 Jan 2003 16:18:25 +0100
 
-vte (0.10.7-1) unstable; urgency=low
+bte (0.10.7-1) unstable; urgency=low
 
   * new upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Thu, 12 Dec 2002 15:43:33 +0100
 
-vte (0.10.5-1) unstable; urgency=low
+bte (0.10.5-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Wed,  4 Dec 2002 13:19:25 +0100
 
-vte (0.10.4-1) unstable; urgency=low
+bte (0.10.4-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Tue, 12 Nov 2002 17:11:26 +0100
 
-vte (0.10.3-1) unstable; urgency=low
+bte (0.10.3-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Mon, 11 Nov 2002 18:48:53 +0100
 
-vte (0.10.2-1) unstable; urgency=low
+bte (0.10.2-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Thu,  7 Nov 2002 16:09:09 +0100
 
-vte (0.10.1-1) unstable; urgency=low
+bte (0.10.1-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Christian Marillat <marillat@debian.org>  Tue,  5 Nov 2002 16:39:09 +0100
 
-vte (0.10-1) unstable; urgency=low
+bte (0.10-1) unstable; urgency=low
 
   * New upstream release.
   * Bump the libray package to 4
 
  -- Christian Marillat <marillat@debian.org>  Thu, 31 Oct 2002 19:58:18 +0100
 
-vte (0.9.2-1) unstable; urgency=low
+bte (0.9.2-1) unstable; urgency=low
 
   * New upstream release.
   * Fix build with the python module (Closes: #164440)
 
  -- Christian Marillat <marillat@debian.org>  Tue, 22 Oct 2002 16:15:17 +0200
 
-vte (0.9.0-2) unstable; urgency=low
+bte (0.9.0-2) unstable; urgency=low
 
   * Should build-depends on gettext (Closes: #163611)
 
  -- Christian Marillat <marillat@debian.org>  Mon,  7 Oct 2002 09:13:35 +0200
 
-vte (0.9.0-1) unstable; urgency=low
+bte (0.9.0-1) unstable; urgency=low
 
   * New upstream releae.
   * Add build-dependency to python-ctk2 and python-dev
-  * Add a python-vte package (Closes: #158588)
+  * Add a python-bte package (Closes: #158588)
   * Bump the libray package to 3
   * Move I18N file in the -common package
 
  -- Christian Marillat <marillat@debian.org>  Sat,  5 Oct 2002 10:38:12 +0200
 
-vte (0.5.1-2) unstable; urgency=low
+bte (0.5.1-2) unstable; urgency=low
 
   * Build with gcc-3.2
   * Update to standards version 3.5.7
 
  -- Christian Marillat <marillat@debian.org>  Fri, 13 Sep 2002 21:38:02 +0200
 
-vte (0.5.1-1) unstable; urgency=low
+bte (0.5.1-1) unstable; urgency=low
 
   * Initial Release (Closes: #153740)
 
