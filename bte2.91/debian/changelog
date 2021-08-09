@@ -81,8 +81,8 @@ vte2.91 (0.61.91-1) experimental; urgency=medium
   * New upstream release
   * Drop patch 01_scroll_notebook.patch.
     This never went upstream, and is intended to work with a corresponding
-    patch in GTK 3 that was rejected upstream and disabled in Debian's
-    GTK packaging in 2012.
+    patch in CTK 3 that was rejected upstream and disabled in Debian's
+    CTK packaging in 2012.
   * Don't install NEWS, no longer provided
   * Disable icu support for the udeb
   * Build udeb with -static-libgcc -static-libstdc++
@@ -777,7 +777,7 @@ vte3 (1:0.30.1-3) unstable; urgency=low
 vte3 (1:0.30.1-2) unstable; urgency=low
 
   * libvte-2.90-9.symbols: add correct Build-Depends-Package.
-  * 02_meta.patch: workaround for Meta key being broken since the GTK+
+  * 02_meta.patch: workaround for Meta key being broken since the CTK+
     3.2.2 upgrade. Closes: #648975.
 
  -- Josselin Mouette <joss@debian.org>  Sat, 19 Nov 2011 14:02:12 +0100
@@ -785,7 +785,7 @@ vte3 (1:0.30.1-2) unstable; urgency=low
 vte3 (1:0.30.1-1) experimental; urgency=low
 
   * New upstream release.
-  * Drop all GTK+ 2.x support since it has disappeared upstream.
+  * Drop all CTK+ 2.x support since it has disappeared upstream.
   * Rename source package accordingly.
   * Bump ctk+ build-dependency.
   * Call dpkg-gensymbols -c4.
@@ -842,7 +842,7 @@ vte (1:0.28.0-1) experimental; urgency=low
 
   * Team upload.
   * New upstream release.
-  * Add build-depends to libgladeui-dev, the GTK3 version now requires it.
+  * Add build-depends to libgladeui-dev, the CTK3 version now requires it.
   * Move autoreconf.mk before debhelper.mk to avoid debhelper.log
     leftovers.
   * Drop unneeded Sections fields duplicating the default value.
@@ -975,7 +975,7 @@ vte (1:0.23.5-4) experimental; urgency=low
   [ Emilio Pozuelo Monfort ]
   * debian/rules:
     - Remove hack that was needed to build the udeb against the DirectFB
-      GTK+ library, since the default one was the X11. We build against
+      CTK+ library, since the default one was the X11. We build against
       the X11 one now.
   * debian/patches/12_python_reaper.patch:
     - Mention that this is WONTFIX upstream and that we should eventually

@@ -33,14 +33,14 @@ Depends: libvte-2.91-common (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Multi-Arch: same
-Description: Terminal emulator widget for GTK+ 3.0 - runtime files
+Description: Terminal emulator widget for CTK+ 3.0 - runtime files
  The VTE library provides a terminal emulator widget VteTerminal for
- applications using the GTK+ toolkit. It also provides the VtePTY object
+ applications using the CTK+ toolkit. It also provides the VtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
  This package contains the runtime library, needed by programs using the
- VTE widget with GTK+ 3.0.
+ VTE widget with CTK+ 3.0.
 
 Package: libvte-2.91-0-udeb
 Package-Type: udeb
@@ -49,13 +49,13 @@ Section: debian-installer
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Description: Terminal emulator widget for GTK+ 3.0 - minimal runtime
+Description: Terminal emulator widget for CTK+ 3.0 - minimal runtime
  The VTE library provides a terminal emulator widget VteTerminal for
- applications using the GTK+ toolkit. It also provides the VtePTY object
+ applications using the CTK+ toolkit. It also provides the VtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
- This package contains the minimal runtime library for GTK+ 3.0 needed
+ This package contains the minimal runtime library for CTK+ 3.0 needed
  by the Debian installer.
 
 Package: gir1.2-vte-2.91
@@ -66,10 +66,10 @@ Depends: ${gir:Depends},
 Multi-Arch: same
 Description: GObject introspection data for the VTE library
  This package contains introspection data for VTE, a terminal emulator
- widget for GTK+.
+ widget for CTK+.
  .
  It can be used by interpreters understanding the GIRepository format to
- write programs using the VTE widget for GTK+ 3.0.
+ write programs using the VTE widget for CTK+ 3.0.
 
 Package: libvte-2.91-dev
 Architecture: any
@@ -87,28 +87,28 @@ Depends: gir1.2-vte-2.91 (= ${binary:Version}),
 Recommends: libvte-2.91-doc
 Conflicts: libvte-2.90-dev
 Multi-Arch: same
-Description: Terminal emulator widget for GTK+ 3.0 - development files
+Description: Terminal emulator widget for CTK+ 3.0 - development files
  The VTE library provides a terminal emulator widget VteTerminal for
- applications using the GTK+ toolkit. It also provides the VtePTY object
+ applications using the CTK+ toolkit. It also provides the VtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
  This package contains development files for the VTE library and its
  Python bindings. It is needed to develop and build programs using the
- VTE widget with GTK+ 3.0.
+ VTE widget with CTK+ 3.0.
 
 Package: libvte-2.91-common
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: foreign
-Description: Terminal emulator widget for GTK+ 3.0 - common files
+Description: Terminal emulator widget for CTK+ 3.0 - common files
  The VTE library provides a terminal emulator widget VteTerminal for
- applications using the GTK+ toolkit. It also provides the VtePTY object
+ applications using the CTK+ toolkit. It also provides the VtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
  This package contains internationalization files for the VTE library
- and common files for the GTK+ 3.x version.
+ and common files for the CTK+ 3.x version.
 
 Package: libvte-2.91-doc
 Architecture: all
@@ -116,11 +116,11 @@ Multi-Arch: foreign
 Section: doc
 Depends: ${misc:Depends}
 Build-Profiles: <!nodoc>
-Description: Terminal emulator widget for GTK+ 3.0 - documentation
+Description: Terminal emulator widget for CTK+ 3.0 - documentation
  The VTE library provides a terminal emulator widget VteTerminal for
- applications using the GTK+ toolkit. It also provides the VtePTY object
+ applications using the CTK+ toolkit. It also provides the VtePTY object
  containing functions for starting a new process on a new
  pseudo-terminal and for manipulating pseudo-terminals.
  .
- This package contains documentation files for the VTE library for GTK+
+ This package contains documentation files for the VTE library for CTK+
  3.x.
