@@ -449,7 +449,7 @@ vte2.91 (0.44.1-1) unstable; urgency=medium
 vte2.91 (0.44.0-2) experimental; urgency=medium
 
   * Team upload
-  * Force compilation against Gtk 3.20 to fix VteTerminal CSS selector
+  * Force compilation against Ctk 3.20 to fix VteTerminal CSS selector
     resulting in incorrect padding and, indirectly, off-by-one resizing
     (GNOME #763538)
 
@@ -1333,7 +1333,7 @@ vte (1:0.16.6-1) unstable; urgency=low
 
   * Pass proper configure flags to the udeb.
   * Generate proper shlibs for the udeb.
-  * Build against the diretcfb Gtk flavor.
+  * Build against the diretcfb Ctk flavor.
   * Disable udeb for now since it's unlikely to get useful soon.
   * New upstream stable release; no API change.
     - Fixes 24 colors support; GNOME #332606, #372743; closes: #320114.
