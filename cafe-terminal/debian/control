@@ -20,6 +20,7 @@ Build-Depends: debhelper-compat (= 13),
                libvte-2.91-dev (>= 0.48),
                libx11-dev,
                libxml2-utils,
+               cafe-common,
                yelp-tools,
 Homepage: http://www.cafe-desktop.org
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-terminal
