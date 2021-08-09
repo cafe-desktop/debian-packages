@@ -1,0 +1,70 @@
+#!/bin/sh
+# autopkgtest check: Build and run a program against VTE, to verify that the
+# headers and pkg-config file are installed correctly
+# Based on d/tests/build from glib2.0
+# (C) 2012 Canonical Ltd.
+# (C) 2018 Simon McVittie
+# Authors: Martin Pitt, Simon McVittie
+
+set -eux
+
+mode=dynamic
+
+getopt_temp="$(getopt -o '' --long 'static' -n debian/tests/build -- "$@")"
+eval set -- "$getopt_temp"
+
+while true; do
+    case "$1" in
+        (--static)
+            mode=static
+            shift
+            continue
+            ;;
+
+        (--)
+            shift
+            break
+            ;;
+
+        (*)
+            echo "getopt: Internal error" >&2
+            exit 2
+    esac
+done
+
+WORKDIR=$(mktemp -d)
+trap 'rm -rf "$WORKDIR"' 0 INT QUIT ABRT PIPE TERM
+cd "$WORKDIR"
+
+if [ -n "${DEB_HOST_GNU_TYPE:-}" ]; then
+    CROSS_COMPILE="${DEB_HOST_GNU_TYPE}-"
+else
+    CROSS_COMPILE=
+fi
+
+cat <<EOF > example.c
+#include <vte/vte.h>
+
+int main(void)
+{
+    g_assert_cmpuint (VTE_TYPE_REGEX, !=, G_TYPE_INVALID);
+    return 0;
+}
+EOF
+
+cflags=
+pcflags=
+
+case "$mode" in
+(static)
+    cflags=-static
+    pcflags=--static
+    ;;
+esac
+
+# shellcheck disable=SC2046
+"${CROSS_COMPILE}gcc" $cflags -o "$mode" example.c $("${CROSS_COMPILE}pkg-config" $pcflags --cflags --libs vte-2.91)
+echo "build ($mode): OK"
+[ -x "$mode" ]
+"./$mode"
+echo "run ($mode): OK"

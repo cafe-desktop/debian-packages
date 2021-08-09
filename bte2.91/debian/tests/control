@@ -1,0 +1,3 @@
+Tests: build
+Depends: build-essential, libvte-2.91-dev
+Restrictions: allow-stderr superficial

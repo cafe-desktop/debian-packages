@@ -1,0 +1,81 @@
+#!/usr/bin/make -f
+
+binaries := $(shell dh_listpackages)
+LIB_PKG := $(shell sed -rn 's/^Package:[[:space:]]*(libvte-[0-9\.-]+)[[:space:]]*$$/\1/p' debian/control)
+UDEB_PKG := $(LIB_PKG)-udeb
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs
+include /usr/share/dpkg/default.mk
+
+%:
+	dh $@
+
+CONFFLAGS_deb = \
+	-Ddocs=true \
+	-Dgir=true \
+	-Dgnutls=true
+
+CONFFLAGS_udeb = \
+	-Ddocs=false \
+	-Dgir=false \
+	-Dgnutls=false \
+	-Dicu=false \
+	-Dvapi=false \
+	-D_systemd=false
+
+override_dh_auto_configure:
+	dh_auto_configure --builddirectory=build-deb -- $(CONFFLAGS_deb)
+ifneq ($(filter %-udeb,$(binaries)),)
+	CFLAGS='$(CFLAGS) -static-libgcc' \
+	CXXFLAGS='$(CXXFLAGS) -static-libgcc -static-libstdc++' \
+	dh_auto_configure --builddirectory=build-udeb -- $(CONFFLAGS_udeb)
+endif
+
+override_dh_auto_build:
+	dh_auto_build --builddirectory=build-deb
+ifneq ($(filter %-udeb,$(binaries)),)
+	dh_auto_build --builddirectory=build-udeb
+endif
+
+override_dh_auto_install:
+	dh_auto_install --builddirectory=build-deb \
+		--destdir=debian/tmp/deb
+	rm debian/tmp/deb/usr/bin/vte-2.91
+ifneq ($(filter %-udeb,$(binaries)),)
+	dh_auto_install --builddirectory=build-udeb \
+		--destdir=debian/tmp/udeb
+	rm debian/tmp/udeb/usr/bin/vte-2.91
+	rm debian/tmp/udeb/usr/libexec/vte-urlencode-cwd
+endif
+	mv debian/tmp/deb/etc/profile.d/vte.sh \
+		debian/tmp/deb/etc/profile.d/vte-2.91.sh
+
+override_dh_auto_clean:
+	dh_auto_clean --builddirectory=build-deb
+ifneq ($(filter %-udeb,$(binaries)),)
+	dh_auto_clean --builddirectory=build-udeb
+endif
+
+override_dh_clean:
+	rm -f debian/libvte-2.91-common.install.kfreebsd
+	rm -f debian/libvte-2.91-common.install.hurd
+	dh_clean
+
+override_dh_auto_test:
+	dh_auto_test --builddirectory=build-deb
+
+override_dh_makeshlibs:
+	dh_makeshlibs -p$(LIB_PKG) --add-udeb=$(UDEB_PKG) -V -- -c4
+	dh_makeshlibs --remaining-packages
+
+override_dh_install:
+	grep -E -v 'lib/systemd' debian/libvte-2.91-common.install > debian/libvte-2.91-common.install.kfreebsd
+	grep -E -v 'lib/systemd' debian/libvte-2.91-common.install > debian/libvte-2.91-common.install.hurd
+ifneq ($(filter %-udeb,$(binaries)),)
+	dh_install -p$(UDEB_PKG) --sourcedir=debian/tmp/udeb
+endif
+	dh_install --remaining-packages --sourcedir=debian/tmp/deb
+
+override_dh_missing:
+	dh_missing --fail-missing

@@ -1,0 +1,5 @@
+usr/include/vte-2.91
+usr/lib/*/libvte-2.91.so
+usr/lib/*/pkgconfig/vte-2.91.pc
+usr/share/gir-1.0
+usr/share/vala/vapi
