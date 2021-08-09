@@ -42,7 +42,7 @@ vte2.91 (0.62.0-3) unstable; urgency=medium
     Thanks to Marko Mäkelä (Closes: #941247)
   * d/p/lib-Abort-when-alloc-returns-nullptr.patch:
     Add patch from upstream to make out-of-memory handling more consistent
-  * d/p/gtk-Allow-passing-null-callback-to-spawn_async.patch:
+  * d/p/ctk-Allow-passing-null-callback-to-spawn_async.patch:
     Add patch from upstream to fix a regression in mssh (Closes: #971422)
 
  -- Simon McVittie <smcv@debian.org>  Wed, 30 Sep 2020 16:04:28 +0100
@@ -460,7 +460,7 @@ vte2.91 (0.44.0-1) unstable; urgency=medium
   * New upstream release.
   * Update (build-)dependencies according to configure.ac changes:
     - add libpcre2-dev (>= 10.21)
-    - bump libgtk-3-dev (>= 3.16)
+    - bump libctk-3-dev (>= 3.16)
   * Refresh both patches to apply without fuzz.
   * Fix return statement in debian/patches/01_scroll_notebook.patch
     - the function is (now?) void, so don't try to return FALSE.
@@ -724,7 +724,7 @@ vte3 (1:0.32.0-2) unstable; urgency=low
   * debian/watch: Track stable releases.
   * Bump Standards-Version to 3.9.3.
   * Update debian/copyright using the machine-readable copyright format 1.0.
-  * Drop Build-Depends on gir1.2-gtk-3.0, pulled by libgtk-3-dev.
+  * Drop Build-Depends on gir1.2-ctk-3.0, pulled by libctk-3-dev.
 
  -- Michael Biebl <biebl@debian.org>  Mon, 02 Apr 2012 09:05:03 +0200
 
@@ -743,7 +743,7 @@ vte3 (1:0.32.0-1) experimental; urgency=low
     Works around GNOME #672541.
   * debian/libvte-2.90-{common,9-udeb}.install: Drop termcap file, it's built
     in using GResource now.
-  * debian/rules: Explicitly configure with --enable-gtk-doc, it's disabled
+  * debian/rules: Explicitly configure with --enable-ctk-doc, it's disabled
     now by default.
   * debian/libvte-2.90-9.symbols: Add new symbol from this release.
 
@@ -787,10 +787,10 @@ vte3 (1:0.30.1-1) experimental; urgency=low
   * New upstream release.
   * Drop all GTK+ 2.x support since it has disappeared upstream.
   * Rename source package accordingly.
-  * Bump gtk+ build-dependency.
+  * Bump ctk+ build-dependency.
   * Call dpkg-gensymbols -c4.
   * Add appropriate Breaks/Replaces for moved files.
-  * Create a udeb for the gtk3 version.
+  * Create a udeb for the ctk3 version.
 
  -- Josselin Mouette <joss@debian.org>  Sat, 12 Nov 2011 16:24:43 +0100
 
@@ -834,7 +834,7 @@ vte (1:0.28.0-2) experimental; urgency=low
   * python-vte Breaks python-apt << 0.8.0~exp2. Closes: #621483.
   * Fix udeb sourcedir, thanks Colin Watson. Closes: #627555.
   * 01_scroll_notebook.patch: new patch. Allow to switch tabs with
-    Alt+wheel with the latest gtk+3.0.
+    Alt+wheel with the latest ctk+3.0.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 05 Jun 2011 02:06:40 +0200
 
@@ -876,11 +876,11 @@ vte (1:0.27.5-1) experimental; urgency=low
 
   * debian/control.in:
     + Drop obsolete dpkg-dev build dependency.
-    + Bump the libgtk2.0-dev dependency on the -dev package.
+    + Bump the libctk2.0-dev dependency on the -dev package.
   * New upstream release.
     + debian/control.in:
       - Update build dependencies.
-      - Update for the new gtk+ 3 package names.
+      - Update for the new ctk+ 3 package names.
     + debian/patches/90_autoreconf.patch:
       - Updated.
 
@@ -968,8 +968,8 @@ vte (1:0.23.5-4) experimental; urgency=low
   [ Cyril Brulebois ]
   * Switch udeb from DirectFB to Xlib to prepare the move to an X11-based
     graphical installer
-     - Drop the B-D on libgtk-directfb-2.0-dev.
-     - Bump the B-D on libgtk2.0-dev to make sure the udeb gets its
+     - Drop the B-D on libctk-directfb-2.0-dev.
+     - Bump the B-D on libctk2.0-dev to make sure the udeb gets its
        dependency on the (recently-added) udeb rather than on the library.
 
   [ Emilio Pozuelo Monfort ]
@@ -1097,7 +1097,7 @@ vte (1:0.20.5-1) unstable; urgency=low
 vte (1:0.20.4-1) unstable; urgency=low
 
   [ Josselin Mouette ]
-  * Add libglib2.0-doc, libgtk2.0-doc and libatk1.0-doc to b-d-i to
+  * Add libglib2.0-doc, libctk2.0-doc and libatk1.0-doc to b-d-i to
     ensure proper xrefs.
   * 01_bashisms.patch: fix bashims in provided scripts. Closes: #530123.
 
@@ -1133,7 +1133,7 @@ vte (1:0.20.1-1) unstable; urgency=low
         as they are no more referenced in the upstream code since using
         pangocairo.
       + Bump libglib2.0-dev to 2.18.0.
-      + Bump libgtk2.0-dev to 2.14.0.
+      + Bump libctk2.0-dev to 2.14.0.
       + Specify libpango1.0-dev version needed is 1.22.0.
     - Build-Depends:
       + Added libgladeui-1-dev.
@@ -1423,7 +1423,7 @@ vte (1:0.14.2-1) experimental; urgency=low
     should only result in some untranslated text.
   * Merge 1:0.12.2-5 / SVN revs 7195:8677.
   * New upstream release; no API change.
-    - Drop patch 20_gtk-style-attach-crash, merged upstream.
+    - Drop patch 20_ctk-style-attach-crash, merged upstream.
 
  -- Loic Minier <lool@dooz.org>  Thu,  1 Mar 2007 11:30:40 +0100
 
@@ -1471,7 +1471,7 @@ vte (1:0.13.5-1) experimental; urgency=low
 vte (1:0.12.2-5) unstable; urgency=medium
 
   * Add a get-orig-source target to retrieve the upstream tarball.
-  * New patch, 20_gtk-style-attach-crash, fixes crash in gtk_style_attach when
+  * New patch, 20_ctk-style-attach-crash, fixes crash in ctk_style_attach when
     changing icon theme; backported from GNOME #399282 / vte 0.14.2; see also
     GNOME #353498.
   * Stop shipping *.a and *.la files for Python modules.
@@ -1547,7 +1547,7 @@ vte (1:0.12.1-1) unstable; urgency=low
   * Stop shipping /usr/lib/*.la files in libvte-dev.
     [debian/libvte-dev.install]
   * New upstream release, with API additions.
-    - Bump up libgtk2.0-dev build-dep to >=  2.6.0.
+    - Bump up libctk2.0-dev build-dep to >=  2.6.0.
       [debian/control, debian/control.in]
     - Add a libglib2.0-dev build-dep (>  2.6.0).
       [debian/control, debian/control.in]
@@ -1829,7 +1829,7 @@ vte (1:0.11.11-1) experimental; urgency=low
     - Removes all former patches, as they're no more needed
     - Add a patch for correcting init_vte typos.
     - This version add more documentation in python-vte module (Closes: #225296)
-    - New build dependency on gtk-doc-tools
+    - New build dependency on ctk-doc-tools
   * Added a patch for using AC_PATH_XTRA with Debian's enhancements.
   * Added a patch for supporting some save/restore cursor position console
     sequences (Closes: 248896)
@@ -1912,8 +1912,8 @@ vte (1:0.10.29-4) unstable; urgency=low
 
 vte (1:0.10.29-3) unstable; urgency=low
 
-  * debian/control Add python-gtk2-dev in build-depends
-  * python package need to depends on a versioned python-gtk2 (>= 1.99.17-2)
+  * debian/control Add python-ctk2-dev in build-depends
+  * python package need to depends on a versioned python-ctk2 (>= 1.99.17-2)
   * Revert bug introduced in 0.10.28 about scrolling page (Closes: #190651, #203049)
 
  -- Christian Marillat <marillat@debian.org>  Tue, 19 Aug 2003 20:43:43 +0200
@@ -2114,7 +2114,7 @@ vte (0.9.0-2) unstable; urgency=low
 vte (0.9.0-1) unstable; urgency=low
 
   * New upstream releae.
-  * Add build-dependency to python-gtk2 and python-dev
+  * Add build-dependency to python-ctk2 and python-dev
   * Add a python-vte package (Closes: #158588)
   * Bump the libray package to 3
   * Move I18N file in the -common package
