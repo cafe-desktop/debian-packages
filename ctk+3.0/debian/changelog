@@ -1,4 +1,10 @@
-ctk+3.0 (3.25.0-1) UNRELEASED; urgency=medium
+ctk+3.0 (3.25.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- ZenWalker <scow@riseup.net>  Sun, 12 Dec 2021 18:48:59 +0100
+
+ctk+3.0 (3.25.0-1) unstable; urgency=medium
 
   * New upstream release
 
