@@ -1601,6 +1601,7 @@ libctk-3.so.0 libctk-3-0 #MINVER#
  ctk_device_grab_remove@Base 3.0.0
  ctk_dialog_add_action_widget@Base 3.0.0
  ctk_dialog_add_button@Base 3.0.0
+ ctk_dialog_add_button_with_icon_name@Base 3.25.2
  ctk_dialog_add_buttons@Base 3.0.0
  ctk_dialog_flags_get_type@Base 3.0.0
  ctk_dialog_get_action_area@Base 3.0.0
