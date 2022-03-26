@@ -1,7 +1,7 @@
 Source: mate-common
 Section: devel
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -33,7 +33,7 @@ Depends: autoconf,
          libtool,
          pkg-config,
          ${misc:Depends},
-Description: common scripts and macros to develop with MATE
- mate-common is an extension to autoconf, automake and libtool for the MATE
- environment and MATE using applications. Included are mate-autogen.sh and
- several macros to help in MATE source trees.
+Description: common scripts and macros to develop with CAFE
+ mate-common is an extension to autoconf, automake and libtool for the CAFE
+ environment and CAFE using applications. Included are mate-autogen.sh and
+ several macros to help in CAFE source trees.

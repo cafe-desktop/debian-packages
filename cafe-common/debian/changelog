@@ -23,7 +23,7 @@ mate-common (1.24.0-1) unstable; urgency=medium
     + Append .git suffix to URLs in Repository: field.
   * debian/control:
     + Add D (mate-common): autoconf-archive. A build-requirement
-      of many other MATE packages. Pulling it in together with
+      of many other CAFE packages. Pulling it in together with
       mate-common instead of adding a B-D on autoconf-archive everywhere.
 
   [ Martin Wimpress ]
@@ -78,7 +78,7 @@ mate-common (1.20.0-1) unstable; urgency=medium
   * debian/control:
     + Temporarily have pkg-mate-team ML under Uploaders:.
     + Update Maintainer: field to debian-mate ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
@@ -259,7 +259,7 @@ mate-common (1.7.1.is.1.6.1-1) unstable; urgency=low
     + Add John Paul Adrian Glaubitz to Uploaders: field.
     + Reformat various sections in control file.
   * /debian/watch:
-    + Only consider even minor release number (stable releases) of MATE.
+    + Only consider even minor release number (stable releases) of CAFE.
   * /debian/rules (get-orig-source):
     + Special handling of 1.6.x upstream releases.
 
@@ -273,7 +273,7 @@ mate-common (1.7.0-1) unstable; urgency=low
 
 mate-common (1.6.1-2) unstable; urgency=low
 
-  * Package becomes team maintained: MATE Packaging Team.
+  * Package becomes team maintained: CAFE Packaging Team.
   * Lintian issue silenced:
     + mate-common: data.tar.xz-member-without-dpkg-pre-depends.
 
