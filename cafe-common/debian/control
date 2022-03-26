@@ -1,7 +1,7 @@
-Source: mate-common
+Source: cafe-common
 Section: devel
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -16,11 +16,11 @@ Build-Depends: autoconf,
                pkg-config,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-common
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-common.git
+Homepage: http://www.cafe-desktop.org
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-common
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-common.git
 
-Package: mate-common
+Package: cafe-common
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~),
 Multi-Arch: foreign
@@ -34,6 +34,6 @@ Depends: autoconf,
          pkg-config,
          ${misc:Depends},
 Description: common scripts and macros to develop with CAFE
- mate-common is an extension to autoconf, automake and libtool for the CAFE
- environment and CAFE using applications. Included are mate-autogen.sh and
+ cafe-common is an extension to autoconf, automake and libtool for the CAFE
+ environment and CAFE using applications. Included are cafe-autogen.sh and
  several macros to help in CAFE source trees.
