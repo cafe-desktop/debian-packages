@@ -1,0 +1,286 @@
+mate-common (1.24.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 15 Aug 2020 11:27:11 +0200
+
+mate-common (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Apr 2020 09:43:31 +0200
+
+mate-common (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/control:
+    + Add D (mate-common): autoconf-archive. A build-requirement
+      of many other MATE packages. Pulling it in together with
+      mate-common instead of adding a B-D on autoconf-archive everywhere.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Feb 2020 08:06:49 +0100
+
+mate-common (1.22.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 29 Sep 2019 00:04:04 +0200
+
+mate-common (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat]:
+    + Use new debhelper-compat notation. Bump to DH compat level version 12.
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 10 Jul 2019 12:59:51 +0200
+
+mate-common (1.20.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+    + Make Upstream-Name: field's value more human readable.
+    + Update Source: field. Use secure URLs.
+    + Add Upstream-Contact: field.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 15:38:58 +0200
+
+mate-common (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Drop B-D autotools-dev. Since compatibility level 10, debhelper enables
+      the autoreconf sequence by default.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}:
+    + Bump DH version level to 11.
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 09 Feb 2018 11:55:20 +0100
+
+mate-common (1.19.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 21:41:05 +0000
+
+mate-common (1.18.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Mark mate-common as Multi-Arch: foreign. (Closes: #853956).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Aug 2017 18:34:07 -0400
+
+mate-common (1.18.0-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release
+
+  [ Vangelis Mouhtsis ]
+  * New upstream release.
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10).
+  * debian/rules:
+    + Drop override_dh_install block for override_dh_missing.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 08 Jul 2017 00:08:49 +0200
+
+mate-common (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/changelog:
+    + Add missing changelog items for 1.15.1-0ubuntu1.
+  * debian/watch:
+    + Update version matching to _not_ support development
+      releases again.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 29 Sep 2016 12:00:27 +0200
+
+mate-common (1.15.1-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/patches:
+    + Drop 0000_check_only_for_autoreconf.patch, applied upstream.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:46 +0100
+
+mate-common (1.14.0-2) unstable; urgency=high
+
+  [ Martin Wimpress ]
+  * debian/patches: Add 0000_check_only_for_autoreconf.patch.
+    (Closes: #833001, #833076, #833842, #833881, #834079, #834287)
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Fri, 19 Aug 2016 12:05:58 +0200
+
+mate-common (1.14.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Add myself to Uploaders: field.
+    + Use encrypted URLs for Vcs-*: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 May 2016 15:17:24 +0200
+
+mate-common (1.12.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 20 Nov 2015 11:44:07 +0100
+
+mate-common (1.10.0-2) unstable; urgency=low
+
+  * Add --parallel in debian/rules
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 22 Jul 2015 03:44:16 +0100
+
+mate-common (1.10.0-1) unstable; urgency=medium
+
+  * Re-upload to unstable.
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Processed with wrap-and-sort.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Martin Wimpress to Uploaders: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 16:33:32 +0200
+
+mate-common (1.10.0-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+
+  [ Mike Gabriel ]
+  * debian/watch:
+    + debian/watch: Use URL regexp that makes uscan work with 1.10 versioning
+      scheme.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 10 Jun 2015 23:35:37 +0200
+
+mate-common (1.8.0-2) unstable; urgency=low
+
+  * debian/changelog:
+    + Fix typo in previous release.
+  * debian/copyright:
+    + Point to git.mate-desktop.org in Source: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 17 Mar 2014 11:53:34 +0100
+
+mate-common (1.8.0-1) unstable; urgency=low
+
+  [ Stefano Karapetsas ]
+  * New upstream release.
+  * debian/control:
+    + Bump Standards: to 3.9.5. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/rules:
+    + Build package using autogen.sh.
+    + During dh_install list files that do not get installed into the
+      bin:package.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 05 Mar 2014 23:05:46 +0100
+
+mate-common (1.7.1.is.1.6.2-1) unstable; urgency=low
+
+  * New upstream release.
+    + Provide automake1.14 support.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 14 Oct 2013 00:25:00 +0200
+
+mate-common (1.7.1.is.1.6.1-1) unstable; urgency=low
+
+  * Revert to stable 1.6.x upstream version (Closes: #719714).
+  * /debian/control:
+    + Add John Paul Adrian Glaubitz to Uploaders: field.
+    + Reformat various sections in control file.
+  * /debian/watch:
+    + Only consider even minor release number (stable releases) of MATE.
+  * /debian/rules (get-orig-source):
+    + Special handling of 1.6.x upstream releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 13 Oct 2013 21:02:21 +0200
+
+mate-common (1.7.0-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Aug 2013 22:38:31 +0200
+
+mate-common (1.6.1-2) unstable; urgency=low
+
+  * Package becomes team maintained: MATE Packaging Team.
+  * Lintian issue silenced:
+    + mate-common: data.tar.xz-member-without-dpkg-pre-depends.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Aug 2013 00:45:50 +0200
+
+mate-common (1.6.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #658783)
+
+ -- Stefano Karapetsas <stefano@karapetsas.com>  Sun, 12 May 2013 19:31:10 +0200
