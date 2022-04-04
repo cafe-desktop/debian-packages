@@ -1,7 +1,7 @@
 Source: grapa
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -53,8 +53,8 @@ Suggests: arj,
           unar | unrar | p7zip-rar,
           zoo,
 Breaks: grapa-common (<< 1.8.0),
-Description: archive manager for MATE
- Grapa is an archive manager for the MATE environment. It allows you to:
+Description: archive manager for CAFE
+ Grapa is an archive manager for the CAFE environment. It allows you to:
  .
   * Create and modify archives.
   * View the content of an archive.
@@ -83,8 +83,8 @@ Depends: ${misc:Depends},
 Breaks: grapa (<= 1.0.3-1),
         parchives (<< 1.1.5-1~),
 Replaces: parchives (<< 1.1.5-1~),
-Description: archive manager for MATE (common files)
- Grapa is an archive manager for the MATE environment. It allows you to:
+Description: archive manager for CAFE (common files)
+ Grapa is an archive manager for the CAFE environment. It allows you to:
  .
   * Create and modify archives.
   * View the content of an archive.
