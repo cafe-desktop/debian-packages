@@ -1,7 +1,7 @@
 Source: grapa
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -15,13 +15,13 @@ Build-Depends: debhelper-compat (= 13),
                libctk-3-dev,
                libjson-glib-dev,
                libmagic-dev,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
                yelp-tools,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/grapa
-Vcs-Git: https://salsa.debian.org/debian-mate-team/grapa.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/grapa
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/grapa.git
 
 Package: grapa
 Architecture: any
