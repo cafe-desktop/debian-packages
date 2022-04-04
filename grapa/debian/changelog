@@ -184,7 +184,7 @@ grapa (1.18.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for MATE 1.17.
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/control: Dependencies updated for MATE 1.18.
 
   [ Vangelis Mouhtsis ]
@@ -204,7 +204,7 @@ grapa (1.18.2-1) unstable; urgency=medium
 grapa (1.16.0-2) unstable; urgency=medium
 
   * debian/rules:
-    + Drop --with-gtk=3.0 build flag. Grapa is GTK-3-only nowadays.
+    + Drop --with-ctk=3.0 build flag. Grapa is GTK-3-only nowadays.
       (Closes: #840564).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 11:17:49 +0100
@@ -246,11 +246,11 @@ grapa (1.14.1-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + Versioned B-D: libcaja-extension-dev (>= 1.14)
-    + B-D: libgtk-3-dev
+    + B-D: libctk-3-dev
     + Versioned B-D: mate-common (>= 1.14)
   * debian/rules:
     + MateConf dropped upstream.
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
   * debian/patches:
     + Drop 0001_p7zip_checking.patch. Applied upstream.
   * debian/copyright:

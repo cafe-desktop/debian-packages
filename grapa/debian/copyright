@@ -53,7 +53,7 @@ Files: src/dlg-add-files.h
        src/fr-init.h
        src/fr-proc-error.c
        src/fr-proc-error.h
-       src/gtk-utils.c
+       src/ctk-utils.c
        src/java-utils.c
        src/java-utils.h
        src/open-file.c
@@ -107,7 +107,7 @@ Files: caja/caja-grapa.c
        src/gio-utils.h
        src/glib-utils.c
        src/glib-utils.h
-       src/gtk-utils.h
+       src/ctk-utils.h
        src/main.c
        src/preferences.c
        src/preferences.h
