@@ -1,4 +1,4 @@
-engrampa (1.24.1-1) unstable; urgency=medium
+grapa (1.24.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -8,15 +8,15 @@ engrampa (1.24.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2020 10:55:17 +0200
 
-engrampa (1.24.0-2) unstable; urgency=medium
+grapa (1.24.0-2) unstable; urgency=medium
 
   * debian/control:
-    + Add B:/R: relation (engrampa-common) to parchives (<< 1.1.5-1~). (Closes:
+    + Add B:/R: relation (grapa-common) to parchives (<< 1.1.5-1~). (Closes:
       #952717).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 28 Feb 2020 07:42:24 +0100
 
-engrampa (1.24.0-1) unstable; urgency=medium
+grapa (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -34,7 +34,7 @@ engrampa (1.24.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 12:33:46 +0100
 
-engrampa (1.22.3-1) unstable; urgency=medium
+grapa (1.22.3-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * New upstream release.
@@ -46,7 +46,7 @@ engrampa (1.22.3-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 09 Jan 2020 09:11:05 +0100
 
-engrampa (1.22.2-1) unstable; urgency=medium
+grapa (1.22.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/patches:
@@ -54,7 +54,7 @@ engrampa (1.22.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 06 Sep 2019 08:38:03 +0200
 
-engrampa (1.22.1-2) unstable; urgency=medium
+grapa (1.22.1-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -63,7 +63,7 @@ engrampa (1.22.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 02 Sep 2019 16:17:19 +0200
 
-engrampa (1.22.1-1) unstable; urgency=medium
+grapa (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -71,7 +71,7 @@ engrampa (1.22.1-1) unstable; urgency=medium
     + Update copyright attributions.
   * debian/rules:
     + Updated for MATE Desktop 1.22
-  * debian/engrampa-common.install:
+  * debian/grapa-common.install:
     + Correct order.
   * debian/control:
     + Updated for MATE Desktop 1.22
@@ -86,7 +86,7 @@ engrampa (1.22.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 27 Jul 2019 22:57:05 +0200
 
-engrampa (1.20.2-1) unstable; urgency=medium
+grapa (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -95,7 +95,7 @@ engrampa (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 19 Dec 2018 15:30:20 +0100
 
-engrampa (1.20.1-1) unstable; urgency=medium
+grapa (1.20.1-1) unstable; urgency=medium
 
   * New upstream release.
     - Add .a (Ar) support. (Closes: #869212).
@@ -104,7 +104,7 @@ engrampa (1.20.1-1) unstable; urgency=medium
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
     + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
-    + Remove from S (engrampa): zoo (removed from Debian). (Closes: #885504).
+    + Remove from S (grapa): zoo (removed from Debian). (Closes: #885504).
   * debian/copyright:
     + Use secure URI for copyright format.
     + Make Upstream-Name: field's value more human readable.
@@ -117,14 +117,14 @@ engrampa (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 12:53:14 +0200
 
-engrampa (1.20.0-1) unstable; urgency=medium
+grapa (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.19.2-1):
     + Update copyright attributions.
     upload to bionic (ubuntu/1.20.0-1)
   * debian/control (already in 1.20.0-1):
-    + Drop D (engrampa) caja-common. Drop R (engrampa)
+    + Drop D (grapa) caja-common. Drop R (grapa)
       mate-icon-theme. (Closes: #884587, LP: #1738395).
 
   [ Vangelis Mouhtsis ]
@@ -138,25 +138,25 @@ engrampa (1.20.0-1) unstable; urgency=medium
   * debian/watch:
     + Use secure URL to obtain upstream sources.
   * debian/{control,compat}: Bump DH version level to 11.
-  * debian/{rules,engrampa-common.install}:
+  * debian/{rules,grapa-common.install}:
     + Move appstream metadata file to new location (until upstream has fixed
       their location).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Feb 2018 18:15:39 +0100
 
-engrampa (1.20.0-1) bionic; urgency=medium
+grapa (1.20.0-1) bionic; urgency=medium
 
   * New upstream release. (Closes: #884587) (LP: #1738395)
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:56 +0000
 
-engrampa (1.19.2-1) bionic; urgency=medium
+grapa (1.19.2-1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 00:47:53 +0000
 
-engrampa (1.18.3-1) unstable; urgency=medium
+grapa (1.18.3-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -169,7 +169,7 @@ engrampa (1.18.3-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 10:19:42 +0100
 
-engrampa (1.18.2-2) unstable; urgency=medium
+grapa (1.18.2-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches: Add 0000_fix-maximum-compression-zip.patch. Create
@@ -177,7 +177,7 @@ engrampa (1.18.2-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 25 Sep 2017 11:04:26 +0200
 
-engrampa (1.18.2-1) unstable; urgency=medium
+grapa (1.18.2-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -201,7 +201,7 @@ engrampa (1.18.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 13:44:18 +0200
 
-engrampa (1.16.0-2) unstable; urgency=medium
+grapa (1.16.0-2) unstable; urgency=medium
 
   * debian/rules:
     + Drop --with-gtk=3.0 build flag. Engrampa is GTK-3-only nowadays.
@@ -209,7 +209,7 @@ engrampa (1.16.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 11:17:49 +0100
 
-engrampa (1.16.0-1) unstable; urgency=medium
+grapa (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -230,7 +230,7 @@ engrampa (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 20:16:01 +0200
 
-engrampa (1.15.1-1) yakkety; urgency=medium
+grapa (1.15.1-1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
@@ -240,7 +240,7 @@ engrampa (1.15.1-1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
 
-engrampa (1.14.1-1) unstable; urgency=medium
+grapa (1.14.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -260,7 +260,7 @@ engrampa (1.14.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 May 2016 16:20:55 +0200
 
-engrampa (1.12.0-2) unstable; urgency=medium
+grapa (1.12.0-2) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -278,21 +278,21 @@ engrampa (1.12.0-2) unstable; urgency=medium
   * debian/control:
     + Bump Standards: to 3.9.7. No changes needed.
   * debian/rules:
-    + Enforce /usr/lib/engrampa as libexecdir. Move executable
-      "engrampa-server" out of the shared library path.
+    + Enforce /usr/lib/grapa as libexecdir. Move executable
+      "grapa-server" out of the shared library path.
   * lintian:
     + Drop all overrides, not required anymore after having moved
-      "engrampa-server" out of the shared library path.
+      "grapa-server" out of the shared library path.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 14 Apr 2016 13:35:11 +0200
 
-engrampa (1.12.0-1) unstable; urgency=medium
+grapa (1.12.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
     + Versioned B-D: mate-common (>= 1.12) and libcaja-extension-dev (>= 1.12).
-  * debian/engrampa.lintian-overrides:
+  * debian/grapa.lintian-overrides:
     + Whitespace cleanup.
   * debian/patches:
     + Drop 1001_typo-in-man-page.patch. Applied upstream.
@@ -300,14 +300,14 @@ engrampa (1.12.0-1) unstable; urgency=medium
   [ Mike Gabriel ]
   * debian/control:
     + Suggesting unrar-free, favored over unar. (Closes: #809553).
-  * debian/engrampa.lintian-overrides:
-    + Add override: postinst-has-useless-call-to-ldconfig (engrampa).
+  * debian/grapa.lintian-overrides:
+    + Add override: postinst-has-useless-call-to-ldconfig (grapa).
   * debian/copyright:
     + Fix one comment where the Comment: field identifier was missing.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 01 Jan 2016 15:49:30 +0100
 
-engrampa (1.10.2-1) unstable; urgency=medium
+grapa (1.10.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release:
@@ -323,18 +323,18 @@ engrampa (1.10.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 06 Oct 2015 17:02:58 +0200
 
-engrampa (1.10.1-1) unstable; urgency=medium
+grapa (1.10.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
-    + Drop 2001_omit-gfdl-licensed-help-files.patch, engrampa help is
+    + Drop 2001_omit-gfdl-licensed-help-files.patch, grapa help is
       DFSG compliant.
   * debian/control:
     + Add B-D: libmagic-dev.
     + Process with wrap-and-sort.
-  * debian/engrampa-common.install:
+  * debian/grapa-common.install:
     + Add usr/share/{appdata,dbus-1,help,man}.
-  * debian/engrampa.install:
+  * debian/grapa.install:
     + Remove usr/share/man/.
   * debian/rules:
     + Add --enable-magic.
@@ -347,7 +347,7 @@ engrampa (1.10.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2015 17:02:36 +0200
 
-engrampa (1.8.1+dfsg1-1) unstable; urgency=medium
+grapa (1.8.1+dfsg1-1) unstable; urgency=medium
 
   [Vangelis Mouthsis ]
   * debian/control:
@@ -368,11 +368,11 @@ engrampa (1.8.1+dfsg1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Oct 2014 12:50:23 +0200
 
-engrampa (1.8.0+dfsg1-6) unstable; urgency=low
+grapa (1.8.0+dfsg1-6) unstable; urgency=low
 
   * debian/control:
-    + Downgrade (bin:package engrampa) to Suggests: rpm2cpio. Upgrade
-      (bin:package engrampa) to Recommends: zip, unzip, xz-utils. (Closes:
+    + Downgrade (bin:package grapa) to Suggests: rpm2cpio. Upgrade
+      (bin:package grapa) to Recommends: zip, unzip, xz-utils. (Closes:
       #750794).
   * debian/patches:
     + Add 0001_superfluous-dir-with-unar.patch. Stop creating superfluous
@@ -381,34 +381,34 @@ engrampa (1.8.0+dfsg1-6) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 07 Jun 2014 16:20:55 +0200
 
-engrampa (1.8.0+dfsg1-5) unstable; urgency=low
+grapa (1.8.0+dfsg1-5) unstable; urgency=low
 
   * debian/control:
     + Add B-D: libjson-glib-dev. Allows opening .rar archives with unar on
       Debian jessie (and beyond). (Closes: #748104, #749817).
-    + Add to Suggests (bin:engrampa): unar.
+    + Add to Suggests (bin:grapa): unar.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 13:13:06 +0200
 
-engrampa (1.8.0+dfsg1-4) unstable; urgency=low
+grapa (1.8.0+dfsg1-4) unstable; urgency=low
 
   [ Vangelis Mouhtsis ]
   * debian/control:
-    + Add D (bin:package engrampa): caja-common. This issue is being addressed
-      upstream, with the goal that engrampa can run without caja components
+    + Add D (bin:package grapa): caja-common. This issue is being addressed
+      upstream, with the goal that grapa can run without caja components
       installed. A removal of the dependency in a future package upload
       is very likely. (Closes: #748194).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 19 May 2014 09:00:39 +0200
 
-engrampa (1.8.0+dfsg1-3) unstable; urgency=low
+grapa (1.8.0+dfsg1-3) unstable; urgency=low
 
   [ Mike Gabriel ]
   * debian/control:
-    + Add Breaks: field to bin:package engrampa. The package breaks
-      engrampa-common (<< 1.8.0).
+    + Add Breaks: field to bin:package grapa. The package breaks
+      grapa-common (<< 1.8.0).
   * debian/rules:
-    + Before running dh_install, drop the not-packaged engrampa.convert file.
+    + Before running dh_install, drop the not-packaged grapa.convert file.
 
   [ Vangelis Mouhtsis ]
   * debian/rules:
@@ -416,16 +416,16 @@ engrampa (1.8.0+dfsg1-3) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 May 2014 23:53:08 +0200
 
-engrampa (1.8.0+dfsg1-2) unstable; urgency=low
+grapa (1.8.0+dfsg1-2) unstable; urgency=low
 
   * debian/control:
-    + Fix copy+paste error in LONG_DESCRIPTION of bin:package engrampa-dbg.
-  * debian/engrampa-common.install:
+    + Fix copy+paste error in LONG_DESCRIPTION of bin:package grapa-dbg.
+  * debian/grapa-common.install:
     + Drop mate-conf .convert files from package.
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 13:55:36 +0200
 
-engrampa (1.8.0+dfsg1-1) unstable; urgency=low
+grapa (1.8.0+dfsg1-1) unstable; urgency=low
 
   * Initial release. (Closes: #734720).
 

@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Engrampa
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/engrampa/
+Source: https://git.mate-desktop.org/grapa/
 
 Files: src/dlg-add-files.h
        src/dlg-add-folder.h
@@ -66,9 +66,9 @@ Files: src/dlg-add-files.h
 Copyright: 2001-2012, The Free Software Foundation, Inc.
 License: GPL-2+
 
-Files: caja/caja-engrampa.c
-       caja/caja-engrampa.h
-       caja/engrampa-module.c
+Files: caja/caja-grapa.c
+       caja/caja-grapa.h
+       caja/grapa-module.c
        src/actions.c
        src/actions.h
        src/dlg-add-files.c
@@ -127,7 +127,7 @@ Files: .build.yml
        .travis.yml
        .github/issue_template.md
        .github/FUNDING.yml
-       caja/libcaja-engrampa.caja-extension.desktop.in.in
+       caja/libcaja-grapa.caja-extension.desktop.in.in
        caja/Makefile.am
        copy-n-paste/Makefile.am
        data/icons/22x22/apps/*.png
@@ -144,9 +144,9 @@ Files: .build.yml
        po/LINGUAS
        po/Makevars
        po/POTFILES.*
-       src/engrampa.gresource.xml
+       src/grapa.gresource.xml
        src/ui/Makefile.am
-       src/ui/engrampa.about
+       src/ui/grapa.about
        src/ui/*.ui
        src/sh/Makefile.am
        src/sh/isoinfo.sh
@@ -169,7 +169,7 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: data/engrampa.1
+Files: data/grapa.1
 Copyright: 2007, Sven Arvidsson <sa@whiz.se>
 License: GPL-2+
 
@@ -205,13 +205,13 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: engrampa.pot
+Files: grapa.pot
        po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
 Copyright: 2001-2010, Free Software Foundation, Inc.
            2003-2005, Sharif FarsiWeb Inc.
-           2003-2008, engrampa'S COPYRIGHT HOLDER.
+           2003-2008, grapa'S COPYRIGHT HOLDER.
            2003, Chris Jackson
            2003, Mətin Əmirov
            2003, Rupak Sinha
