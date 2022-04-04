@@ -54,14 +54,14 @@ Suggests: arj,
           zoo,
 Breaks: grapa-common (<< 1.8.0),
 Description: archive manager for MATE
- Engrampa is an archive manager for the MATE environment. It allows you to:
+ Grapa is an archive manager for the MATE environment. It allows you to:
  .
   * Create and modify archives.
   * View the content of an archive.
   * View a file contained in an archive.
   * Extract files from the archive.
  .
- Engrampa supports the following formats:
+ Grapa supports the following formats:
   * Tar (.tar) archives, including those compressed with
     gzip (.tar.gz, .tgz), bzip (.tar.bz, .tbz), bzip2 (.tar.bz2, .tbz2),
     compress (.tar.Z, .taz), lzip (.tar.lz, .tlz), lzop (.tar.lzo, .tzo),
@@ -74,7 +74,7 @@ Description: archive manager for MATE
   * Single files compressed with gzip (.gz), bzip (.bz), bzip2 (.bz2),
     compress (.Z), lzip (.lz), lzop (.lzo), lzma (.lzma) and xz (.xz)
  .
- Engrampa doesn't perform archive operations by itself, but relies on
+ Grapa doesn't perform archive operations by itself, but relies on
  standard tools for this.
 
 Package: grapa-common
@@ -84,7 +84,7 @@ Breaks: grapa (<= 1.0.3-1),
         parchives (<< 1.1.5-1~),
 Replaces: parchives (<< 1.1.5-1~),
 Description: archive manager for MATE (common files)
- Engrampa is an archive manager for the MATE environment. It allows you to:
+ Grapa is an archive manager for the MATE environment. It allows you to:
  .
   * Create and modify archives.
   * View the content of an archive.

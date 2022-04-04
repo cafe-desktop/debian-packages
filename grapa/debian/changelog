@@ -204,7 +204,7 @@ grapa (1.18.2-1) unstable; urgency=medium
 grapa (1.16.0-2) unstable; urgency=medium
 
   * debian/rules:
-    + Drop --with-gtk=3.0 build flag. Engrampa is GTK-3-only nowadays.
+    + Drop --with-gtk=3.0 build flag. Grapa is GTK-3-only nowadays.
       (Closes: #840564).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 11:17:49 +0100
