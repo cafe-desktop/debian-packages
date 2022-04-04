@@ -1,0 +1,316 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Engrampa
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/engrampa/
+
+Files: src/dlg-add-files.h
+       src/dlg-add-folder.h
+       src/dlg-ask-password.c
+       src/dlg-ask-password.h
+       src/dlg-batch-add.h
+       src/dlg-delete.h
+       src/dlg-extract.h
+       src/dlg-new.h
+       src/dlg-open-with.h
+       src/dlg-package-installer.c
+       src/dlg-package-installer.h
+       src/dlg-password.c
+       src/dlg-password.h
+       src/dlg-prop.h
+       src/dlg-update.h
+       src/file-data.c
+       src/file-data.h
+       src/fr-command-ace.h
+       src/fr-command-alz.c
+       src/fr-command-alz.h
+       src/fr-command-cfile.c
+       src/fr-command-cfile.h
+       src/fr-command-cpio.c
+       src/fr-command-cpio.h
+       src/fr-command-dpkg.c
+       src/fr-command-dpkg.h
+       src/fr-command-iso.c
+       src/fr-command-iso.h
+       src/fr-command-jar.c
+       src/fr-command-jar.h
+       src/fr-command-lha.c
+       src/fr-command-lha.h
+       src/fr-command-rar.c
+       src/fr-command-rar.h
+       src/fr-command-rpm.c
+       src/fr-command-rpm.h
+       src/fr-command-tar.h
+       src/fr-command-unarchiver.c
+       src/fr-command-unarchiver.h
+       src/fr-command-unstuff.c
+       src/fr-command-unstuff.h
+       src/fr-command-zip.c
+       src/fr-command-zip.h
+       src/fr-command-zoo.h
+       src/fr-command.c
+       src/fr-command.h
+       src/fr-init.c
+       src/fr-init.h
+       src/fr-proc-error.c
+       src/fr-proc-error.h
+       src/gtk-utils.c
+       src/java-utils.c
+       src/java-utils.h
+       src/open-file.c
+       src/open-file.h
+       src/rar-utils.c
+       src/rar-utils.h
+       src/server.c
+       src/test-server.c
+       src/typedefs.h
+Copyright: 2001-2012, The Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: caja/caja-engrampa.c
+       caja/caja-engrampa.h
+       caja/engrampa-module.c
+       src/actions.c
+       src/actions.h
+       src/dlg-add-files.c
+       src/dlg-add-folder.c
+       src/dlg-batch-add.c
+       src/dlg-delete.c
+       src/dlg-extract.c
+       src/dlg-new.c
+       src/dlg-open-with.c
+       src/dlg-prop.c
+       src/dlg-update.c
+       src/file-utils.c
+       src/file-utils.h
+       src/fr-archive.c
+       src/fr-archive.h
+       src/fr-command-7z.c
+       src/fr-command-7z.h
+       src/fr-command-ace.c
+       src/fr-command-ar.c
+       src/fr-command-ar.h
+       src/fr-command-arj.c
+       src/fr-command-arj.h
+       src/fr-command-tar.c
+       src/fr-command-zoo.c
+       src/fr-error.c
+       src/fr-error.h
+       src/fr-list-model.c
+       src/fr-list-model.h
+       src/fr-process.c
+       src/fr-process.h
+       src/fr-stock.c
+       src/fr-stock.h
+       src/fr-window.c
+       src/fr-window.h
+       src/gio-utils.c
+       src/gio-utils.h
+       src/glib-utils.c
+       src/glib-utils.h
+       src/gtk-utils.h
+       src/main.c
+       src/preferences.c
+       src/preferences.h
+       src/ui.h
+Copyright: 2001-2008, Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: copy-n-paste/eggdesktopfile.h
+       copy-n-paste/eggsmclient-private.h
+       copy-n-paste/eggsmclient.c
+       copy-n-paste/eggsmclient.h
+Copyright: 2007, Novell, Inc.
+License: LGPL-2+
+
+Files: .build.yml
+       .tx/config
+       .travis.yml
+       .github/issue_template.md
+       .github/FUNDING.yml
+       caja/libcaja-engrampa.caja-extension.desktop.in.in
+       caja/Makefile.am
+       copy-n-paste/Makefile.am
+       data/icons/22x22/apps/*.png
+       data/icons/16x16/actions/*.png
+       data/icons/16x16/apps/*.png
+       data/icons/scalable/apps/*.svg
+       data/icons/Makefile.am
+       data/icons/32x32/apps/*.png
+       data/icons/24x24/actions/*.png
+       data/icons/24x24/apps/*.png
+       data/Makefile.am
+       data/*.in
+       data/packages.match
+       po/LINGUAS
+       po/Makevars
+       po/POTFILES.*
+       src/engrampa.gresource.xml
+       src/ui/Makefile.am
+       src/ui/engrampa.about
+       src/ui/*.ui
+       src/sh/Makefile.am
+       src/sh/isoinfo.sh
+       src/Makefile.am
+       src/fr-command-lrzip.c
+       src/fr-command-lrzip.h
+       src/fr-marshal.list
+       AUTHORS
+       HACKING
+       Makefile.am
+       NEWS
+       README
+       README-DISTRIBUTIONS
+       autogen.sh
+       configure.ac
+       makepot
+       update-authors.pl
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: data/engrampa.1
+Copyright: 2007, Sven Arvidsson <sa@whiz.se>
+License: GPL-2+
+
+Files: src/eggfileformatchooser.c
+       src/eggfileformatchooser.h
+Copyright: 2007, Mathias Hasselmann
+License: LGPL-2+
+
+Files: copy-n-paste/eggsmclient-xsmp.c
+Copyright: 1998, Carsten Schaar
+           1998, The Open Group
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: src/eggtreemultidnd.c
+Copyright: 2001, Red Hat, Inc.
+           2005, Free Software Foundation, Inc.
+License: LGPL-2+
+
+Files: copy-n-paste/eggdesktopfile.c
+Copyright: 1999-2000, Red Hat Inc.
+           2001, George Lebl
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: src/eggtreemultidnd.h
+Copyright: 2001, Red Hat, Inc.
+License: LGPL-2+
+
+Files: src/egg-macros.h
+Copyright: 2001, Ben Tea Spoons, Inc.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: engrampa.pot
+       po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
+Copyright: 2001-2010, Free Software Foundation, Inc.
+           2003-2005, Sharif FarsiWeb Inc.
+           2003-2008, engrampa'S COPYRIGHT HOLDER.
+           2003, Chris Jackson
+           2003, Mətin Əmirov
+           2003, Rupak Sinha
+           2004-2005, Adam Weinberger
+           2004-2005 Miloslav Trmac <mitr@volny.cz>
+           2004, Kakilik Project <kakilik.sourceforge.net>
+           2004-2005, GNOME Foundation
+           2005-2008, Canonical Ltd.
+           2006-2008, Rosetta Contributors
+           2007, Ihar Hrachyshka
+           2010, Fran Diéguez.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: help/*
+Copyright: Carles Ferrando Garcia <carles.ferrando@gmail.com>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Jorge González <jorgegonz@svn.gnome.org>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Marios Zindilis <m.zindilis@dmajor.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Milo Casagrande <milo@ubuntu.com>
+           Nguyễn Đình Trung <nguyendinhtrung141@gmail.com>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Valto Wirkola <valto.wirkola@yahoo.com>
+           Vincent van Adrighem <adrighem@gnome.org>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Yasumichi Akahoshi <yasumichi@vinelinux.org>
+           YunQiang Su <wzssyqa@gmail.com>
+           Yuri Myasoedov <omerta13@yandex.ru>
+           Alessio Frusciante <algol@firenze.linux.it>
+           Alexander Shopov <ash@contact.bg>
+           Casagrande <milo_casagrande@yahoo.it>.
+           Christian Kirbach <Christian.Kirbach@googlemail.com>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           Gil Forcada <gforcada@gnome.org>
+           Ilkka Tuohela <hile@iki.fi>
+           Jan Arne Petersen <jpetersen@jpetersen.org>
+           Joachim Noreiko <jnoreiko@yahoo.com>
+           Kjartan Maraas <kmaraas@gnome.org>
+           Kostas Papadimas <pkst@gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Paolo Bacchilega <paobac@svn.gnome.org>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Raykov <zbrox@i-space.org>
+           Simos Xenitellis <simos@gnome.org>
+License: GFDL-1.1+
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".
