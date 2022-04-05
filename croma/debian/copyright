@@ -236,13 +236,13 @@ Files: src/core/eventqueue.c
 Copyright: 2001, Havoc Pennington
 License: GPL-2+
 Comment:
- Based on GDK code, copyrighted by Owen Taylor and Red Hat, Inc.
+ Based on CDK code, copyrighted by Owen Taylor and Red Hat, Inc.
 
 Files: src/core/errors.c
-Copyright: 2001, Havoc Pennington, error trapping inspired by GDK
+Copyright: 2001, Havoc Pennington, error trapping inspired by CDK
 License: GPL-2+
 Comment:
- Error trapping inspired by GDK code copyrighted by the Ctk team.
+ Error trapping inspired by CDK code copyrighted by the Ctk team.
 
 Files: src/core/group.c
 Copyright: 2002, Red Hat, Inc.
