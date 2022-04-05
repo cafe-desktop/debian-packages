@@ -242,7 +242,7 @@ Files: src/core/errors.c
 Copyright: 2001, Havoc Pennington, error trapping inspired by GDK
 License: GPL-2+
 Comment:
- Error trapping inspired by GDK code copyrighted by the Gtk team.
+ Error trapping inspired by GDK code copyrighted by the Ctk team.
 
 Files: src/core/group.c
 Copyright: 2002, Red Hat, Inc.

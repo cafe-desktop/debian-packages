@@ -20,7 +20,7 @@ diff --git a/src/ui/draw-workspace.c b/src/ui/draw-workspace.c
 index 8229abd00..fc8f82e55 100644
 --- a/src/ui/draw-workspace.c
 +++ b/src/ui/draw-workspace.c
-@@ -131,6 +131,7 @@ draw_window (GtkWidget                   *widget,
+@@ -131,6 +131,7 @@ draw_window (CtkWidget                   *widget,
        /* If the icon is too big, fall back to mini icon. */
        if (icon_w > (winrect->width - 2) || icon_h > (winrect->height - 2))
          {
@@ -28,7 +28,7 @@ index 8229abd00..fc8f82e55 100644
            icon = gdk_cairo_surface_create_from_pixbuf (win->mini_icon, scale, NULL);
            if (icon)
              {
-@@ -139,7 +140,10 @@ draw_window (GtkWidget                   *widget,
+@@ -139,7 +140,10 @@ draw_window (CtkWidget                   *widget,
  
                /* Give up. */
                if (icon_w > (winrect->width - 2) || icon_h > (winrect->height - 2))
@@ -40,7 +40,7 @@ index 8229abd00..fc8f82e55 100644
              }
          }
      }
-@@ -155,6 +159,8 @@ draw_window (GtkWidget                   *widget,
+@@ -155,6 +159,8 @@ draw_window (CtkWidget                   *widget,
        cairo_clip (cr);
        cairo_paint (cr);
        cairo_restore (cr);
