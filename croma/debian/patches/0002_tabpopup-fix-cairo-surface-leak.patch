@@ -1,0 +1,51 @@
+From 8f204678be6d888ad1d2904e28af1aa9f2ad8e11 Mon Sep 17 00:00:00 2001
+From: Faidon Liambotis <paravoid@debian.org>
+Date: Sat, 3 Jul 2021 01:10:22 +0300
+Subject: [PATCH] tabpopup: fix cairo surface leak
+
+Commit 6b05da5e49996a2101edfd703dd3f5d91011d726 introduced a Cairo
+surface leak, by calling gdk_cairo_surface_create_from_pixbuf() but then
+never freeing those surfaces with cairo_surface_destroy().
+
+This manifested in leaking resources when switching between virtual
+desktops, as observed using xrestop ("Pxms" column), which made the
+desktop slow and ultimately unusable after a few weeks of uptime.
+
+Fixes #685
+---
+ src/ui/draw-workspace.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+diff --git a/src/ui/draw-workspace.c b/src/ui/draw-workspace.c
+index 8229abd00..fc8f82e55 100644
+--- a/src/ui/draw-workspace.c
++++ b/src/ui/draw-workspace.c
+@@ -131,6 +131,7 @@ draw_window (GtkWidget                   *widget,
+       /* If the icon is too big, fall back to mini icon. */
+       if (icon_w > (winrect->width - 2) || icon_h > (winrect->height - 2))
+         {
++          cairo_surface_destroy (icon);
+           icon = gdk_cairo_surface_create_from_pixbuf (win->mini_icon, scale, NULL);
+           if (icon)
+             {
+@@ -139,7 +140,10 @@ draw_window (GtkWidget                   *widget,
+ 
+               /* Give up. */
+               if (icon_w > (winrect->width - 2) || icon_h > (winrect->height - 2))
+-                icon = NULL;
++                {
++                  cairo_surface_destroy (icon);
++                  icon = NULL;
++                }
+             }
+         }
+     }
+@@ -155,6 +159,8 @@ draw_window (GtkWidget                   *widget,
+       cairo_clip (cr);
+       cairo_paint (cr);
+       cairo_restore (cr);
++
++      cairo_surface_destroy (icon);
+     }
+ 
+   gtk_style_context_get_color (style, state, &color);

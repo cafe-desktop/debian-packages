@@ -1,0 +1,75 @@
+From d234198fbf32daa300ae73f12f9727b4dd8b6a57 Mon Sep 17 00:00:00 2001
+From: Martin Wimpress <code@flexion.org>
+Date: Sat, 30 Jan 2021 11:21:39 +0000
+Subject: [PATCH] window: Do not render shadows on left/right tiled windows
+
+This pull request prevents shadows being rendered for left and right side titled windows. This behaviour is consistent with maximised windows, which also do not render shadows.
+
+The rationale for this change is so that when two windows are titled along side each other, it prevents central shadows bleeding into the touching points of the windows.
+
+metacity-theme-x.xml has provision to style left/right titled windows. This patch makes it possible to to create window themes that present clean side-by-side tiled windows.
+---
+ src/compositor/compositor-xrender.c | 13 +++++++++++++
+ src/core/window.c                   | 12 ++++++++++++
+ src/include/window.h                |  2 ++
+ 3 files changed, 27 insertions(+)
+
+diff --git a/src/compositor/compositor-xrender.c b/src/compositor/compositor-xrender.c
+index 37440a79..0b706dfc 100644
+--- a/src/compositor/compositor-xrender.c
++++ b/src/compositor/compositor-xrender.c
+@@ -1022,6 +1022,19 @@ window_has_shadow (MetaCompWindow *cw)
+           return FALSE;
+         }
+ 
++      /* Do not add shadows for left/right tiled windows */
++      if (meta_window_is_tiled_left (cw->window))
++        {
++          meta_verbose ("Window has no shadow because it is tiled left\n");
++          return FALSE;
++        }
++
++      if (meta_window_is_tiled_right (cw->window))
++        {
++          meta_verbose ("Window has no shadow because it is tiled right\n");
++          return FALSE;
++        }
++
+       if (meta_window_get_frame (cw->window)) {
+         meta_verbose ("Window has shadow because it has a frame\n");
+         return TRUE;
+diff --git a/src/core/window.c b/src/core/window.c
+index 5f75e901..e6ac62d0 100644
+--- a/src/core/window.c
++++ b/src/core/window.c
+@@ -8851,6 +8851,18 @@ meta_window_is_maximized (MetaWindow *window)
+   return META_WINDOW_MAXIMIZED (window);
+ }
+ 
++gboolean
++meta_window_is_tiled_left (MetaWindow *window)
++{
++  return META_WINDOW_TILED_LEFT (window);
++}
++
++gboolean
++meta_window_is_tiled_right (MetaWindow *window)
++{
++  return META_WINDOW_TILED_RIGHT (window);
++}
++
+ /**
+  * meta_window_is_client_decorated:
+  *
+diff --git a/src/include/window.h b/src/include/window.h
+index 0aa208e4..c668f240 100644
+--- a/src/include/window.h
++++ b/src/include/window.h
+@@ -39,5 +39,7 @@ Window meta_window_get_xwindow (MetaWindow *window);
+ MetaWindow *meta_window_get_transient_for (MetaWindow *window);
+ gboolean meta_window_is_maximized (MetaWindow *window);
+ cairo_region_t *meta_window_get_frame_bounds (MetaWindow *window);
++gboolean meta_window_is_tiled_left (MetaWindow *window);
++gboolean meta_window_is_tiled_right (MetaWindow *window);
+ 
+ #endif
