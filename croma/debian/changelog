@@ -486,7 +486,7 @@ croma (1.8.2+dfsg1-2) unstable; urgency=medium
     + Add 0002_update-keybindings-files-with-new-name.patch. Fix window manager
       name in keybindings files.
     + Add 0003_no-shadows-to-ARGB-windows.patch. Don't add shadows to ARGB
-      windows. Required with latest mate-themes for GTK-3.14.
+      windows. Required with latest mate-themes for CTK-3.14.
   * debian/rules:
     + Use upstream's NEWS file as upstream ChangeLog.
 
@@ -537,8 +537,8 @@ croma (1.8.0+dfsg1-4) unstable; urgency=low
 croma (1.8.0+dfsg1-3) unstable; urgency=low
 
   * debian/patches:
-    + Add 0002_ctk3-frame-extents-with-croma.patch. Tell GTK3 that croma
-      supports _GTK_FRAME_EXTENTS hints.
+    + Add 0002_ctk3-frame-extents-with-croma.patch. Tell CTK3 that croma
+      supports _CTK_FRAME_EXTENTS hints.
   * debian/rules:
     + Enable parallel builds.
     + Turn on compiler commands during package build (configure option:

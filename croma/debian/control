@@ -49,8 +49,8 @@ Depends: libcroma-private2 (= ${binary:Version}),
          ${shlibs:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
 Provides: x-window-manager,
-Description: lightweight GTK+ window manager for MATE
- Croma is a small window manager, using GTK+ to do everything. It is
+Description: lightweight CTK+ window manager for MATE
+ Croma is a small window manager, using CTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the croma window manager itself.
@@ -59,8 +59,8 @@ Package: croma-common
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
-Description: lightweight GTK+ window manager for MATE (common files)
- Croma is a small window manager, using GTK+ to do everything. It is
+Description: lightweight CTK+ window manager for MATE (common files)
+ Croma is a small window manager, using CTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the architecture independent files.
@@ -79,7 +79,7 @@ Replaces: libcroma,
           libcroma-private0,
           libcroma-private1,
 Description: library for Croma window manager
- Croma is a small window manager, using GTK+ to do everything. It is
+ Croma is a small window manager, using CTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the library.
@@ -93,7 +93,7 @@ Depends: libcroma-private2 (= ${binary:Version}),
          ${shlibs:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
 Description: library for Croma window manager (development files)
- Croma is a small window manager, using GTK+ to do everything. It is
+ Croma is a small window manager, using CTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the development files.
