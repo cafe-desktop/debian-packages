@@ -330,7 +330,7 @@ croma (1.14.2-1) unstable; urgency=medium
     + B-D: libcanberra-ctk3-dev
     + Versioned D (croma): cafe-desktop-common (>= 1.14).
   * debian/rules:
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
     + Add --with-ctk=3.0
   * debian/copyright:
     + Update copyright attributions.
@@ -352,7 +352,7 @@ croma (1.12.1-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/croma-common.install:
-    + Avoid empty directory /usr/share/MateConf.
+    + Avoid empty directory /usr/share/CafeConf.
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Dec 2015 11:45:15 +0100
 
