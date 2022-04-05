@@ -33,7 +33,7 @@ libcroma-private.so.2 libcroma-private2 #MINVER#
  meta_color_spec_free@Base 1.22.2
  meta_color_spec_new@Base 1.22.2
  meta_color_spec_new_from_string@Base 1.22.2
- meta_color_spec_new_gtk@Base 1.22.2
+ meta_color_spec_new_ctk@Base 1.22.2
  meta_color_spec_render@Base 1.22.2
  meta_compositor_add_window@Base 1.22.2
  meta_compositor_begin_move@Base 1.22.2
@@ -258,14 +258,14 @@ libcroma-private.so.2 libcroma-private2 #MINVER#
  meta_group_reload_properties@Base 1.22.2
  meta_group_reload_property@Base 1.22.2
  meta_group_update_layers@Base 1.22.2
- meta_gtk_arrow_from_string@Base 1.22.2
- meta_gtk_arrow_to_string@Base 1.22.2
- meta_gtk_shadow_from_string@Base 1.22.2
- meta_gtk_shadow_to_string@Base 1.22.2
- meta_gtk_state_from_string@Base 1.22.2
- meta_gtk_style_get_dark_color@Base 1.22.2
- meta_gtk_style_get_light_color@Base 1.22.2
- meta_gtk_widget_get_font_desc@Base 1.22.2
+ meta_ctk_arrow_from_string@Base 1.22.2
+ meta_ctk_arrow_to_string@Base 1.22.2
+ meta_ctk_shadow_from_string@Base 1.22.2
+ meta_ctk_shadow_to_string@Base 1.22.2
+ meta_ctk_state_from_string@Base 1.22.2
+ meta_ctk_style_get_dark_color@Base 1.22.2
+ meta_ctk_style_get_light_color@Base 1.22.2
+ meta_ctk_widget_get_font_desc@Base 1.22.2
  meta_icon_cache_free@Base 1.22.2
  meta_icon_cache_get_icon_invalidated@Base 1.22.2
  meta_icon_cache_init@Base 1.22.2

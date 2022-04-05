@@ -48,4 +48,4 @@ index 8229abd00..fc8f82e55 100644
 +      cairo_surface_destroy (icon);
      }
  
-   gtk_style_context_get_color (style, state, &color);
+   ctk_style_context_get_color (style, state, &color);
