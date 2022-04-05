@@ -4,7 +4,7 @@ Date: Sat, 3 Jul 2021 01:10:22 +0300
 Subject: [PATCH] tabpopup: fix cairo surface leak
 
 Commit 6b05da5e49996a2101edfd703dd3f5d91011d726 introduced a Cairo
-surface leak, by calling gdk_cairo_surface_create_from_pixbuf() but then
+surface leak, by calling cdk_cairo_surface_create_from_pixbuf() but then
 never freeing those surfaces with cairo_surface_destroy().
 
 This manifested in leaking resources when switching between virtual
@@ -25,7 +25,7 @@ index 8229abd00..fc8f82e55 100644
        if (icon_w > (winrect->width - 2) || icon_h > (winrect->height - 2))
          {
 +          cairo_surface_destroy (icon);
-           icon = gdk_cairo_surface_create_from_pixbuf (win->mini_icon, scale, NULL);
+           icon = cdk_cairo_surface_create_from_pixbuf (win->mini_icon, scale, NULL);
            if (icon)
              {
 @@ -139,7 +140,10 @@ draw_window (CtkWidget                   *widget,
