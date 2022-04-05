@@ -86,7 +86,7 @@ croma (1.22.2-1~exp1) experimental; urgency=medium
   [ Martin Wimpress ]
   * New upstream release. (LP: #1769411)
   * debian/libcroma-private1.symbols:
-    + Update for Marco 1.22.2
+    + Update for Croma 1.22.2
 
   [ Mike Gabriel ]
   * libcroma-private2: SONAME transition.
@@ -361,7 +361,7 @@ croma (1.10.2-1) unstable; urgency=low
   [ Martin Wimpress ]
   * New upstream release.
   * debian/patches/2001_omit-gfdl-licensed-theme-documentation.patch:
-    + Remove because Marco documentation is DFSG compliant.
+    + Remove because Croma documentation is DFSG compliant.
   * debian/croma-common.install:
     + Add usr/share/help.
   * debian/rules:
@@ -582,7 +582,7 @@ croma (1.8.0+dfsg1-1) unstable; urgency=low
     + Add patch 2001_omit-gfdl-licensed-theme-documentation.patch. Don't build
       GFDL-1.1 licensed files that got removed from the repacked tarball.
   * debian/croma-common.install:
-    + Marco's arch-indep files now reside in /usr/share/croma (not
+    + Croma's arch-indep files now reside in /usr/share/croma (not
       /usr/share/mate-window-manager).
     + Install gsettings conversion map into bin:package croma-common.
   * lintian:

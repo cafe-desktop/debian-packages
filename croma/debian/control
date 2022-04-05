@@ -50,7 +50,7 @@ Depends: libcroma-private2 (= ${binary:Version}),
 Breaks: mate-window-manager (<= 1.0.0-2),
 Provides: x-window-manager,
 Description: lightweight GTK+ window manager for MATE
- Marco is a small window manager, using GTK+ to do everything. It is
+ Croma is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the croma window manager itself.
@@ -60,7 +60,7 @@ Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
 Description: lightweight GTK+ window manager for MATE (common files)
- Marco is a small window manager, using GTK+ to do everything. It is
+ Croma is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the architecture independent files.
@@ -78,8 +78,8 @@ Breaks: libcroma,
 Replaces: libcroma,
           libcroma-private0,
           libcroma-private1,
-Description: library for Marco window manager
- Marco is a small window manager, using GTK+ to do everything. It is
+Description: library for Croma window manager
+ Croma is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the library.
@@ -92,8 +92,8 @@ Depends: libcroma-private2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
-Description: library for Marco window manager (development files)
- Marco is a small window manager, using GTK+ to do everything. It is
+Description: library for Croma window manager (development files)
+ Croma is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the development files.
