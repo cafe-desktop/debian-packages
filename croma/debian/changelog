@@ -118,7 +118,7 @@ croma (1.20.2-1) unstable; urgency=medium
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
     + Drop from P (libcroma-private0): libcroma. (Closes: #897359).
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Make Upstream-Name: field's value more human readable.
     + Update Upstream-Contact: field.
@@ -175,8 +175,8 @@ croma (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (since 1.19.2-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
@@ -325,10 +325,10 @@ croma (1.14.2-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
     + B-D: libctk-3-dev
     + B-D: libcanberra-ctk3-dev
-    + Versioned D (croma): mate-desktop-common (>= 1.14).
+    + Versioned D (croma): cafe-desktop-common (>= 1.14).
   * debian/rules:
     + MateConf dropped upstream.
     + Add --with-ctk=3.0
@@ -347,8 +347,8 @@ croma (1.12.1-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release. (LP:#1495313).
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12).
-    + Add mate-desktop-common to croma Depends. (LP:#1473285).
+    + Versioned B-D: cafe-common (>= 1.12).
+    + Add cafe-desktop-common to croma Depends. (LP:#1473285).
 
   [ Mike Gabriel ]
   * debian/croma-common.install:
@@ -394,7 +394,7 @@ croma (1.10.1+dfsg1-1~exp1) experimental; urgency=low
 
   [ Mike Gabriel ]
   * debian/control:
-    + Versioned D: mate-common (>= 1.10).
+    + Versioned D: cafe-common (>= 1.10).
   * debian/patches:
     + Drop 0008_glib243-keybindings-notifications-fix.patch. Applied upsream.
   * debian/rules:
@@ -434,7 +434,7 @@ croma (1.8.3+dfsg1-1) experimental; urgency=medium
     - Including GLib >= 2.43 compatibility patch. (Closes: #778694,
       LP:#1426327).
   * debian/patches:
-    + Drop 0001_use-zenity-instead-of-mate-dialogs.patch.
+    + Drop 0001_use-zenity-instead-of-cafe-dialogs.patch.
     + Drop 0002_update-keybindings-files-with-new-name.patch.
     + Drop 0003_no-shadows-to-ARGB-windows.patch.
     + Drop 0005_fix-resizing-csd-windows.patch.
@@ -486,7 +486,7 @@ croma (1.8.2+dfsg1-2) unstable; urgency=medium
     + Add 0002_update-keybindings-files-with-new-name.patch. Fix window manager
       name in keybindings files.
     + Add 0003_no-shadows-to-ARGB-windows.patch. Don't add shadows to ARGB
-      windows. Required with latest mate-themes for CTK-3.14.
+      windows. Required with latest cafe-themes for CTK-3.14.
   * debian/rules:
     + Use upstream's NEWS file as upstream ChangeLog.
 
@@ -520,7 +520,7 @@ croma (1.8.0+dfsg1-5) unstable; urgency=medium
   * debian/croma.prerm:
     + Fix severe copy+paste flaw. We need to remove an alternative for
       x-window-manager (not x-session-manager) and we remove croma (not
-      mate-session). (Closes: #749593).
+      cafe-session). (Closes: #749593).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 11:46:58 +0200
 
@@ -549,15 +549,15 @@ croma (1.8.0+dfsg1-3) unstable; urgency=low
 croma (1.8.0+dfsg1-2) unstable; urgency=low
 
   * debian/copyright:
-    + Point to git.mate-desktop.org in Source: field.
+    + Point to git.cafe-desktop.org in Source: field.
   * debian/control:
-    + Drop B-D: mate-dialogs.
+    + Drop B-D: cafe-dialogs.
     + Add B-D: zenity.
     + Also add zenity as dependency to bin:package croma.
   * debian/patches:
-    + Add patch 0001_use-zenity-instead-of-mate-dialogs.patch. Use zenity
-      instead of mate-dialogs. (Closes: #742011).
-    + Fix upstream flaw in 0001_use-zenity-instead-of-mate-dialogs.patch.
+    + Add patch 0001_use-zenity-instead-of-cafe-dialogs.patch. Use zenity
+      instead of cafe-dialogs. (Closes: #742011).
+    + Fix upstream flaw in 0001_use-zenity-instead-of-cafe-dialogs.patch.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 19 Mar 2014 11:38:05 +0100
 
@@ -575,7 +575,7 @@ croma (1.8.0+dfsg1-1) unstable; urgency=low
     + Build package using autogen.sh.
   * debian/control:
     + Add B-D: yelp-tools.
-    + Drop B-D: mate-doc-utils, mate-doc-utils-gnome.
+    + Drop B-D: cafe-doc-utils, cafe-doc-utils-gnome.
   * debian/patches:
     + Drop patch 1001_hypen-used-as-minus-sign-on-man-page.patch. Fixed
       upstream.
@@ -583,7 +583,7 @@ croma (1.8.0+dfsg1-1) unstable; urgency=low
       GFDL-1.1 licensed files that got removed from the repacked tarball.
   * debian/croma-common.install:
     + Croma's arch-indep files now reside in /usr/share/croma (not
-      /usr/share/mate-window-manager).
+      /usr/share/cafe-window-manager).
     + Install gsettings conversion map into bin:package croma-common.
   * lintian:
     + Drop unused overrides.

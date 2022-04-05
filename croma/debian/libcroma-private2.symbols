@@ -312,8 +312,8 @@ libcroma-private.so.2 libcroma-private2 #MINVER#
  meta_prefs_get_icon_size@Base 1.24.0
  meta_prefs_get_key_bindings@Base 1.22.2
  meta_prefs_get_keybinding_action@Base 1.22.2
- meta_prefs_get_mate_accessibility@Base 1.22.2
- meta_prefs_get_mate_animations@Base 1.22.2
+ meta_prefs_get_cafe_accessibility@Base 1.22.2
+ meta_prefs_get_cafe_animations@Base 1.22.2
  meta_prefs_get_mouse_button_menu@Base 1.22.2
  meta_prefs_get_mouse_button_mods@Base 1.22.2
  meta_prefs_get_mouse_button_resize@Base 1.22.2

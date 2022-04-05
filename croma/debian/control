@@ -1,7 +1,7 @@
 Source: croma
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -29,25 +29,25 @@ Build-Depends: autoconf-archive,
                libxrandr-dev,
                libxrender-dev,
                libxt-dev,
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
                x11proto-present-dev,
                yelp-tools,
                zenity,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/croma
-Vcs-Git: https://salsa.debian.org/debian-mate-team/croma.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/croma
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/croma.git
 
 Package: croma
 Architecture: any
 Depends: libcroma-private2 (= ${binary:Version}),
          croma-common (= ${source:Version}),
-         mate-desktop-common (>= 1.24),
+         cafe-desktop-common (>= 1.24),
          zenity,
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: mate-window-manager (<= 1.0.0-2),
+Breaks: cafe-window-manager (<= 1.0.0-2),
 Provides: x-window-manager,
 Description: lightweight CTK+ window manager for MATE
  Croma is a small window manager, using CTK+ to do everything. It is
@@ -58,7 +58,7 @@ Description: lightweight CTK+ window manager for MATE
 Package: croma-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-window-manager (<= 1.0.0-2),
+Breaks: cafe-window-manager (<= 1.0.0-2),
 Description: lightweight CTK+ window manager for MATE (common files)
  Croma is a small window manager, using CTK+ to do everything. It is
  developed mainly for the MATE Desktop.
@@ -74,7 +74,7 @@ Depends: ${misc:Depends},
 Breaks: libcroma,
         libcroma-private0,
         libcroma-private1,
-        mate-window-manager (<= 1.0.0-2),
+        cafe-window-manager (<= 1.0.0-2),
 Replaces: libcroma,
           libcroma-private0,
           libcroma-private1,
@@ -91,7 +91,7 @@ Multi-Arch: same
 Depends: libcroma-private2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: mate-window-manager (<= 1.0.0-2),
+Breaks: cafe-window-manager (<= 1.0.0-2),
 Description: library for Croma window manager (development files)
  Croma is a small window manager, using CTK+ to do everything. It is
  developed mainly for the MATE Desktop.
