@@ -236,7 +236,7 @@ libcroma-private.so.2 libcroma-private2 #MINVER#
  meta_frames_unmanage_window@Base 1.22.2
  meta_frames_update_frame_style@Base 1.22.2
  meta_g_utf8_strndup@Base 1.22.2
- meta_cdk_pixbuf_get_from_pixmap@Base 1.22.2
+ meta_gdk_pixbuf_get_from_pixmap@Base 1.24.1-3
  meta_get_display@Base 1.22.2
  meta_get_replace_current_wm@Base 1.22.2
  meta_grab_op_is_moving@Base 1.22.2
@@ -614,6 +614,7 @@ libcroma-private.so.2 libcroma-private2 #MINVER#
  meta_window_get_work_area_all_xineramas@Base 1.22.2
  meta_window_get_work_area_current_xinerama@Base 1.22.2
  meta_window_get_work_area_for_xinerama@Base 1.22.2
+ meta_window_get_workspace@Base 1.24.1-3
  meta_window_get_workspaces@Base 1.22.2
  meta_window_get_xor_rect@Base 1.22.2
  meta_window_get_xwindow@Base 1.22.2
