@@ -1,4 +1,4 @@
-Source: marco
+Source: croma
 Section: x11
 Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
@@ -36,13 +36,13 @@ Build-Depends: autoconf-archive,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/marco
-Vcs-Git: https://salsa.debian.org/debian-mate-team/marco.git
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/croma
+Vcs-Git: https://salsa.debian.org/debian-mate-team/croma.git
 
-Package: marco
+Package: croma
 Architecture: any
-Depends: libmarco-private2 (= ${binary:Version}),
-         marco-common (= ${source:Version}),
+Depends: libcroma-private2 (= ${binary:Version}),
+         croma-common (= ${source:Version}),
          mate-desktop-common (>= 1.24),
          zenity,
          ${misc:Depends},
@@ -53,9 +53,9 @@ Description: lightweight GTK+ window manager for MATE
  Marco is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
- This package contains the marco window manager itself.
+ This package contains the croma window manager itself.
 
-Package: marco-common
+Package: croma-common
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),
@@ -65,30 +65,30 @@ Description: lightweight GTK+ window manager for MATE (common files)
  .
  This package contains the architecture independent files.
 
-Package: libmarco-private2
+Package: libcroma-private2
 Section: libs
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmarco,
-        libmarco-private0,
-        libmarco-private1,
+Breaks: libcroma,
+        libcroma-private0,
+        libcroma-private1,
         mate-window-manager (<= 1.0.0-2),
-Replaces: libmarco,
-          libmarco-private0,
-          libmarco-private1,
+Replaces: libcroma,
+          libcroma-private0,
+          libcroma-private1,
 Description: library for Marco window manager
  Marco is a small window manager, using GTK+ to do everything. It is
  developed mainly for the MATE Desktop.
  .
  This package contains the library.
 
-Package: libmarco-dev
+Package: libcroma-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libmarco-private2 (= ${binary:Version}),
+Depends: libcroma-private2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: mate-window-manager (<= 1.0.0-2),

@@ -1,3 +1,3 @@
 version=3
-https://git.mate-desktop.org/marco/ \
-    snapshot/marco-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
+https://git.mate-desktop.org/croma/ \
+    snapshot/croma-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz

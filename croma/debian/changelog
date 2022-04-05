@@ -1,4 +1,4 @@
-marco (1.24.1-3) unstable; urgency=medium
+croma (1.24.1-3) unstable; urgency=medium
 
   * debian/patches:
     + Add 0002_tabpopup-fix-cairo-surface-leak.patch. Fix cairo surface leak in
@@ -6,7 +6,7 @@ marco (1.24.1-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 10 Jul 2021 23:47:08 +0200
 
-marco (1.24.1-2) unstable; urgency=medium
+croma (1.24.1-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -15,7 +15,7 @@ marco (1.24.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 02 Feb 2021 10:45:35 +0100
 
-marco (1.24.1-1) unstable; urgency=medium
+croma (1.24.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -25,7 +25,7 @@ marco (1.24.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Aug 2020 08:37:48 +0200
 
-marco (1.24.0-1) unstable; urgency=medium
+croma (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -41,12 +41,12 @@ marco (1.24.0-1) unstable; urgency=medium
   * debian/control:
     + Add B-D autoconf-archive.
     + Update Depends: to support MATE Desktop 1.24.
-  * debian/libmarco-private2.symbols:
+  * debian/libcroma-private2.symbols:
     + Update symbols.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 12:18:23 +0100
 
-marco (1.22.4-1) unstable; urgency=medium
+croma (1.22.4-1) unstable; urgency=medium
 
   * New upstream release.
     - Fix appearing windows in foreground when switching workspaces. (Closes:
@@ -59,7 +59,7 @@ marco (1.22.4-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 14 Dec 2019 09:58:31 +0100
 
-marco (1.22.3-2) unstable; urgency=medium
+croma (1.22.3-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -68,28 +68,28 @@ marco (1.22.3-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Oct 2019 14:52:10 +0200
 
-marco (1.22.3-1) unstable; urgency=medium
+croma (1.22.3-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 22:46:31 +0200
 
-marco (1.22.2-1) unstable; urgency=medium
+croma (1.22.2-1) unstable; urgency=medium
 
   * Re-upload to unstable as is.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 16:34:15 +0200
 
-marco (1.22.2-1~exp1) experimental; urgency=medium
+croma (1.22.2-1~exp1) experimental; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release. (LP: #1769411)
-  * debian/libmarco-private1.symbols:
+  * debian/libcroma-private1.symbols:
     + Update for Marco 1.22.2
 
   [ Mike Gabriel ]
-  * libmarco-private2: SONAME transition.
+  * libcroma-private2: SONAME transition.
   * debian/{compat,control}:
     + Use debhelper-compat notation. Bump to DH compat level version 12.
   * debian/control:
@@ -101,23 +101,23 @@ marco (1.22.2-1~exp1) experimental; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 12:35:25 +0200
 
-marco (1.20.3-1) unstable; urgency=medium
+croma (1.20.3-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Bump Standards-Version: to 4.3.0. No changes needed.
-  * debian/libmarco-private1.symbols:
+  * debian/libcroma-private1.symbols:
     + Add Build-Depends-Package meta-data field.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 05 Jan 2019 22:04:14 +0100
 
-marco (1.20.2-1) unstable; urgency=medium
+croma (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop from P (libmarco-private0): libmarco. (Closes: #897359).
+    + Drop from P (libcroma-private0): libcroma. (Closes: #897359).
     + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Make Upstream-Name: field's value more human readable.
@@ -131,7 +131,7 @@ marco (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 14:14:12 +0200
 
-marco (1.20.1-2) unstable; urgency=medium
+croma (1.20.1-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -142,7 +142,7 @@ marco (1.20.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Apr 2018 22:55:07 +0200
 
-marco (1.20.1-1) unstable; urgency=medium
+croma (1.20.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -155,7 +155,7 @@ marco (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 04 Apr 2018 23:49:09 +0200
 
-marco (1.20.0-2) unstable; urgency=medium
+croma (1.20.0-2) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/copyright:
@@ -167,7 +167,7 @@ marco (1.20.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 22 Mar 2018 21:52:14 +0100
 
-marco (1.20.0-1) unstable; urgency=medium
+croma (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (since 1.19.2-0ubuntu1):
@@ -181,25 +181,25 @@ marco (1.20.0-1) unstable; urgency=medium
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
-  * debian/libmarco-private1.symbols:
+  * debian/libcroma-private1.symbols:
     + Update symbols.
   * debian/{control,compat}: Bump DH version level to 11.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Feb 2018 20:47:38 +0100
 
-marco (1.20.0-0ubuntu1) bionic; urgency=medium
+croma (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
 
-marco (1.19.2-0ubuntu1) bionic; urgency=medium
+croma (1.19.2-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 22:43:49 +0000
 
-marco (1.18.2-1) unstable; urgency=medium
+croma (1.18.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -217,7 +217,7 @@ marco (1.18.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 11:49:21 +0100
 
-marco (1.18.1-3) unstable; urgency=medium
+croma (1.18.1-3) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches: Add 0002_tiled_windows_resized_horizontally.patch.
@@ -225,7 +225,7 @@ marco (1.18.1-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 05 Sep 2017 19:23:14 +0200
 
-marco (1.18.1-2) unstable; urgency=medium
+croma (1.18.1-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -233,7 +233,7 @@ marco (1.18.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Aug 2017 21:19:40 +0200
 
-marco (1.18.1-1) unstable; urgency=medium
+croma (1.18.1-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -263,7 +263,7 @@ marco (1.18.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 15:47:54 +0200
 
-marco (1.16.1-1) unstable; urgency=medium
+croma (1.16.1-1) unstable; urgency=medium
 
   * New upstream release.
     - Fix strange window switching foreground/background behavior.
@@ -271,7 +271,7 @@ marco (1.16.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 03 Jun 2017 18:20:27 +0200
 
-marco (1.16.0-1) unstable; urgency=medium
+croma (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release. (Closes: #838725).
@@ -286,7 +286,7 @@ marco (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 16:07:35 +0200
 
-marco (1.15.0-0ubuntu1) yakkety; urgency=medium
+croma (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
@@ -296,7 +296,7 @@ marco (1.15.0-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
 
-marco (1.14.2-3) unstable; urgency=medium
+croma (1.14.2-3) unstable; urgency=medium
 
   * debian/copyright:
     + Explicitly mention GFDL-1.2+ licensed file
@@ -305,14 +305,14 @@ marco (1.14.2-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 30 May 2016 00:10:35 +0200
 
-marco (1.14.2-2) unstable; urgency=medium
+croma (1.14.2-2) unstable; urgency=medium
 
   * dbgsym: Don't build dbg:packages anymore.
     See https://wiki.debian.org/AutomaticDebugPackages.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 29 May 2016 01:34:45 +0200
 
-marco (1.14.2-1) unstable; urgency=medium
+croma (1.14.2-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -328,7 +328,7 @@ marco (1.14.2-1) unstable; urgency=medium
     + Versioned B-D: mate-common (>= 1.14)
     + B-D: libgtk-3-dev
     + B-D: libcanberra-gtk3-dev
-    + Versioned D (marco): mate-desktop-common (>= 1.14).
+    + Versioned D (croma): mate-desktop-common (>= 1.14).
   * debian/rules:
     + MateConf dropped upstream.
     + Add --with-gtk=3.0
@@ -338,31 +338,31 @@ marco (1.14.2-1) unstable; urgency=medium
   [ Mike Gabriel ]
   * debian/control:
     + Bump Standards to 3.9.8. No changes needed.
-  * SONAME change (libmarco-private0 -> libmarco-private1).
+  * SONAME change (libcroma-private0 -> libcroma-private1).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 20 May 2016 16:42:39 +0200
 
-marco (1.12.1-1) unstable; urgency=medium
+croma (1.12.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release. (LP:#1495313).
   * debian/control:
     + Versioned B-D: mate-common (>= 1.12).
-    + Add mate-desktop-common to marco Depends. (LP:#1473285).
+    + Add mate-desktop-common to croma Depends. (LP:#1473285).
 
   [ Mike Gabriel ]
-  * debian/marco-common.install:
+  * debian/croma-common.install:
     + Avoid empty directory /usr/share/MateConf.
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Dec 2015 11:45:15 +0100
 
-marco (1.10.2-1) unstable; urgency=low
+croma (1.10.2-1) unstable; urgency=low
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/patches/2001_omit-gfdl-licensed-theme-documentation.patch:
     + Remove because Marco documentation is DFSG compliant.
-  * debian/marco-common.install:
+  * debian/croma-common.install:
     + Add usr/share/help.
   * debian/rules:
     + Remove +dfsg1 suffix.
@@ -376,7 +376,7 @@ marco (1.10.2-1) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2015 17:21:00 +0200
 
-marco (1.10.1+dfsg1-1~exp1) experimental; urgency=low
+croma (1.10.1+dfsg1-1~exp1) experimental; urgency=low
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -404,31 +404,31 @@ marco (1.10.1+dfsg1-1~exp1) experimental; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 16 Jun 2015 04:28:53 +0200
 
-marco (1.8.3+dfsg1-4) unstable; urgency=medium
+croma (1.8.3+dfsg1-4) unstable; urgency=medium
 
   * Re-upload to unstable.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 20 May 2015 16:33:16 +0200
 
-marco (1.8.3+dfsg1-3) experimental; urgency=medium
+croma (1.8.3+dfsg1-3) experimental; urgency=medium
 
   * debian/patches:
     + Add 0009_fix-notifications-of-workspace-name-changes.patch. Make
-      notifications of workspace name changes reach marco on-the-fly.
+      notifications of workspace name changes reach croma on-the-fly.
       (Closes: #782194).
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 09 Apr 2015 12:37:45 +0200
 
-marco (1.8.3+dfsg1-2) experimental; urgency=medium
+croma (1.8.3+dfsg1-2) experimental; urgency=medium
 
   * debian/patches:
     + Add 0008_glib243-keybindings-notifications-fix.patch. Make notifications
-      of keybindings changes reach marco with GLib >= 2.43. (Closes: #782189,
+      of keybindings changes reach croma with GLib >= 2.43. (Closes: #782189,
       LP:#1426327).
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 09 Apr 2015 11:12:11 +0200
 
-marco (1.8.3+dfsg1-1) experimental; urgency=medium
+croma (1.8.3+dfsg1-1) experimental; urgency=medium
 
   * New upstream release.
     - Including GLib >= 2.43 compatibility patch. (Closes: #778694,
@@ -442,7 +442,7 @@ marco (1.8.3+dfsg1-1) experimental; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 13:48:40 +0100
 
-marco (1.8.2+dfsg1-6) unstable; urgency=medium
+croma (1.8.2+dfsg1-6) unstable; urgency=medium
 
   * debian/patches:
     + Add 0007_correct-name-for-missing-icon-in-preview-widget.patch. Also use
@@ -451,7 +451,7 @@ marco (1.8.2+dfsg1-6) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 12:02:55 +0100
 
-marco (1.8.2+dfsg1-5) unstable; urgency=medium
+croma (1.8.2+dfsg1-5) unstable; urgency=medium
 
   * debian/patches:
     + Add 0006_correct-name-for-missing-icon.patch. Use correct name for
@@ -459,7 +459,7 @@ marco (1.8.2+dfsg1-5) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 05:54:08 +0100
 
-marco (1.8.2+dfsg1-4) unstable; urgency=medium
+croma (1.8.2+dfsg1-4) unstable; urgency=medium
 
   * debian/patches:
     + Add 0005_fix-resizing-csd-windows.patch. Fix resizing CSD windows.
@@ -467,7 +467,7 @@ marco (1.8.2+dfsg1-4) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Oct 2014 01:46:52 +0200
 
-marco (1.8.2+dfsg1-3) unstable; urgency=medium
+croma (1.8.2+dfsg1-3) unstable; urgency=medium
 
   * debian/patches:
     + Add 0004_dont-switch-workspace-when-switching-to-sticky-window.patch.
@@ -476,7 +476,7 @@ marco (1.8.2+dfsg1-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 12:28:38 +0200
 
-marco (1.8.2+dfsg1-2) unstable; urgency=medium
+croma (1.8.2+dfsg1-2) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control: Bump Standards: to 3.9.6. No changes needed.
@@ -492,24 +492,24 @@ marco (1.8.2+dfsg1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Oct 2014 01:17:44 +0200
 
-marco (1.8.2+dfsg1-1) unstable; urgency=medium
+croma (1.8.2+dfsg1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/patches:
-    + Drop 0002_gtk3-frame-extents-with-marco.patch. It was picked from
+    + Drop 0002_gtk3-frame-extents-with-croma.patch. It was picked from
       upstream and is included in latest release.
   * debian/copyriht:
     + Update to match files in latest upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 06 Oct 2014 23:48:21 +0200
 
-marco (1.8.1+dfsg1-1) unstable; urgency=medium
+croma (1.8.1+dfsg1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 19:00:07 +0200
 
-marco (1.8.0+dfsg1-5) unstable; urgency=medium
+croma (1.8.0+dfsg1-5) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/rules:
@@ -517,27 +517,27 @@ marco (1.8.0+dfsg1-5) unstable; urgency=medium
     + Remove non-packaged *.la files after build.
 
   [ Mike Gabriel ]
-  * debian/marco.prerm:
+  * debian/croma.prerm:
     + Fix severe copy+paste flaw. We need to remove an alternative for
-      x-window-manager (not x-session-manager) and we remove marco (not
+      x-window-manager (not x-session-manager) and we remove croma (not
       mate-session). (Closes: #749593).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 11:46:58 +0200
 
-marco (1.8.0+dfsg1-4) unstable; urgency=low
+croma (1.8.0+dfsg1-4) unstable; urgency=low
 
   * debian/rules:
     + Fix copy+paste error in tarball repacking code.
   * postinst/prerm:
-    + Register marco as x-window-manager with Debian's alternatives system.
+    + Register croma as x-window-manager with Debian's alternatives system.
       (Closes: #746781).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 14:37:06 +0200
 
-marco (1.8.0+dfsg1-3) unstable; urgency=low
+croma (1.8.0+dfsg1-3) unstable; urgency=low
 
   * debian/patches:
-    + Add 0002_gtk3-frame-extents-with-marco.patch. Tell GTK3 that marco
+    + Add 0002_gtk3-frame-extents-with-croma.patch. Tell GTK3 that croma
       supports _GTK_FRAME_EXTENTS hints.
   * debian/rules:
     + Enable parallel builds.
@@ -546,14 +546,14 @@ marco (1.8.0+dfsg1-3) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Apr 2014 17:22:25 +0200
 
-marco (1.8.0+dfsg1-2) unstable; urgency=low
+croma (1.8.0+dfsg1-2) unstable; urgency=low
 
   * debian/copyright:
     + Point to git.mate-desktop.org in Source: field.
   * debian/control:
     + Drop B-D: mate-dialogs.
     + Add B-D: zenity.
-    + Also add zenity as dependency to bin:package marco.
+    + Also add zenity as dependency to bin:package croma.
   * debian/patches:
     + Add patch 0001_use-zenity-instead-of-mate-dialogs.patch. Use zenity
       instead of mate-dialogs. (Closes: #742011).
@@ -561,7 +561,7 @@ marco (1.8.0+dfsg1-2) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 19 Mar 2014 11:38:05 +0100
 
-marco (1.8.0+dfsg1-1) unstable; urgency=low
+croma (1.8.0+dfsg1-1) unstable; urgency=low
 
   * New upstream release.
   * Repack upstream tarball and omit non-DFSG (GFDL-1.1) files
@@ -581,17 +581,17 @@ marco (1.8.0+dfsg1-1) unstable; urgency=low
       upstream.
     + Add patch 2001_omit-gfdl-licensed-theme-documentation.patch. Don't build
       GFDL-1.1 licensed files that got removed from the repacked tarball.
-  * debian/marco-common.install:
-    + Marco's arch-indep files now reside in /usr/share/marco (not
+  * debian/croma-common.install:
+    + Marco's arch-indep files now reside in /usr/share/croma (not
       /usr/share/mate-window-manager).
-    + Install gsettings conversion map into bin:package marco-common.
+    + Install gsettings conversion map into bin:package croma-common.
   * lintian:
     + Drop unused overrides.
-    + Add override for shlib-calls-exit in bin:package libmarco-private0.
+    + Add override for shlib-calls-exit in bin:package libcroma-private0.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Mar 2014 20:38:14 +0100
 
-marco (1.6.2-1) unstable; urgency=low
+croma (1.6.2-1) unstable; urgency=low
 
   * Initial release. (Closes: #728493).
 

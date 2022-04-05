@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Marco
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/marco/
+Source: https://git.mate-desktop.org/croma/
 
 Files: src/core/eventqueue.h
        src/core/frame-private.h
@@ -15,8 +15,8 @@ Files: src/core/eventqueue.h
        src/include/resizepopup.h
        src/include/ui.h
        src/include/xprops.h
-       src/tools/marco-message.c
-       src/tools/marco-window-demo.c
+       src/tools/croma-message.c
+       src/tools/croma-window-demo.c
        src/ui/fixedtip.c
        src/ui/fixedtip.h
        src/ui/frames.h
@@ -258,14 +258,14 @@ Files: src/include/all-keybindings.h
 Copyright: 2008, Thomas Thurman
 License: GPL-2+
 
-Files: doc/marco-theme.dtd
+Files: doc/croma-theme.dtd
 Copyright: 2002, Ross Burton <ross@burtonini.com>
 License: GPL-2+
 Comment:
  File uses GPL, version 2. Using license from COPYING file here instead,
  i.e. GPL-2+.
 
-Files: src/core/marco-Xatomtype.h
+Files: src/core/croma-Xatomtype.h
 Copyright: 1987, 1998 The Open Group
            1987, Digital Equipment Corporation, Maynard, Massachusetts
 License: MIT-OpenGroup
@@ -347,7 +347,7 @@ Files: src/include/tile-preview.h
 Copyright: 2010, Florian Müllner
 License: GPL-2+
 
-Files: marco.pot
+Files: croma.pot
        po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
@@ -381,8 +381,8 @@ Files: .build.yml
        doc/creating_themes/Makefile.am
        doc/creating_themes/meson.build
        doc/*.txt
-       its/marco-keybindings.its
-       its/marco-keybindings.loc
+       its/croma-keybindings.its
+       its/croma-keybindings.loc
        makepot
        meson.build
        meson_options.txt

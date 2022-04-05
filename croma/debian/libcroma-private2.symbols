@@ -1,5 +1,5 @@
-libmarco-private.so.2 libmarco-private2 #MINVER#
-* Build-Depends-Package: libmarco-dev
+libcroma-private.so.2 libcroma-private2 #MINVER#
+* Build-Depends-Package: libcroma-dev
  __window_is_terminal@Base 1.22.2
  ag_Xmalloc0@Base 1.22.2
  ag_Xmalloc@Base 1.22.2
