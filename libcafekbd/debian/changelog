@@ -38,7 +38,7 @@ libcafekbd (1.22.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
 
   [ Mike Gabriel ]
   * debian/{compat,control}:
@@ -103,7 +103,7 @@ libcafekbd (1.18.2-2) unstable; urgency=medium
   [ Vangelis Mouhtsis ]
   * debian/control:
     + Bump Standards-Version: to 4.1.3. No changes needed.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Temporarily have pkg-cafe-team ML under Uploaders:.
 
@@ -122,8 +122,8 @@ libcafekbd (1.18.2-1) unstable; urgency=medium
   * New upstream release
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/rules: Remove obsolete --with-gtk=3.0
 
   [ Vangelis Mouhtsis ]
@@ -158,7 +158,7 @@ libcafekbd (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -170,7 +170,7 @@ libcafekbd (1.15.0-0ubuntu1) yakkety; urgency=medium
   * debian/watch:
     + Update version matching to support development releases.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:46 +0100
 
@@ -331,7 +331,7 @@ libcafekbd (1.7.1.is.1.6.1-1) unstable; urgency=low
   * debian/control:
     + Add John Paul Adrian Glaubitz to Uploaders: field.
   * debian/watch:
-    + Only consider even minor release number (stable releases) of MATE.
+    + Only consider even minor release number (stable releases) of CAFE.
   * debian/rules (get-orig-source):
     + Special handling of 1.6.x upstream releases.
   * debian/copyright:
@@ -354,7 +354,7 @@ libcafekbd (1.7.0-1) unstable; urgency=low
 
 libcafekbd (1.6.1-2) unstable; urgency=low
 
-  * Package becomes team maintained: MATE Packaging Team.
+  * Package becomes team maintained: CAFE Packaging Team.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Aug 2013 22:13:44 +0200
 

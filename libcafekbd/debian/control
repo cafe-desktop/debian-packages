@@ -1,7 +1,7 @@
 Source: libcafekbd
 Section: libs
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -36,8 +36,8 @@ Provides: libcafekbd,
 Replaces: libcafekbd,
 Breaks: libcafekbd,
 Conflicts: libcafekbd,
-Description: MATE library to manage keyboard configuration
- libcafekbd offers an API to manage the keyboard in MATE applications.
+Description: CAFE library to manage keyboard configuration
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
  .
  libcafekbdui offers an API to display a graphical user interface for
  libcafekbd operations.
@@ -49,8 +49,8 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
 Replaces: libcafekbd4 (<< 1.6.1-1),
-Description: MATE library to manage keyboard configuration (common files)
- libcafekbd offers an API to manage the keyboard in MATE applications.
+Description: CAFE library to manage keyboard configuration (common files)
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
  .
  libcafekbdui offers an API to display a graphical user interface for
  libcafekbd operations.
@@ -70,8 +70,8 @@ Depends: gir1.2-cafekbd-1.0 (= ${binary:Version}),
          ${misc:Depends},
 Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
 Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
-Description: MATE library to manage keyboard configuration (development files)
- libcafekbd offers an API to manage the keyboard in MATE applications.
+Description: CAFE library to manage keyboard configuration (development files)
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
  .
  libcafekbdui offers an API to display a graphical user interface for
  libcafekbd operations.
@@ -88,7 +88,7 @@ Depends: ${gir:Depends},
 Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
 Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
 Description: GObject introspection data for libcafekbd and libcafekbdui
- libcafekbd offers an API to manage the keyboard in MATE applications.
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
  .
  libcafekbdui offers an API to display a graphical user interface for
  libcafekbd operations.

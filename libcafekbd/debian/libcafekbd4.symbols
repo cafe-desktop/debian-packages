@@ -2,11 +2,11 @@ libcafekbd.so.4 libcafekbd4 #MINVER#
 * Build-Depends-Package: libcafekbd-dev
  cafekbd_desktop_config_activate@Base 1.6.1
  cafekbd_desktop_config_init@Base 1.6.1
- MATEKBD_DESKTOP_CONFIG_KEY_DEFAULT_GROUP@Base 1.6.1
- MATEKBD_DESKTOP_CONFIG_KEY_GROUP_PER_WINDOW@Base 1.6.1
- MATEKBD_DESKTOP_CONFIG_KEY_HANDLE_INDICATORS@Base 1.6.1
- MATEKBD_DESKTOP_CONFIG_KEY_LAYOUT_NAMES_AS_GROUP_NAMES@Base 1.6.1
- MATEKBD_DESKTOP_CONFIG_KEY_LOAD_EXTRA_ITEMS@Base 1.6.1
+ CAFEKBD_DESKTOP_CONFIG_KEY_DEFAULT_GROUP@Base 1.6.1
+ CAFEKBD_DESKTOP_CONFIG_KEY_GROUP_PER_WINDOW@Base 1.6.1
+ CAFEKBD_DESKTOP_CONFIG_KEY_HANDLE_INDICATORS@Base 1.6.1
+ CAFEKBD_DESKTOP_CONFIG_KEY_LAYOUT_NAMES_AS_GROUP_NAMES@Base 1.6.1
+ CAFEKBD_DESKTOP_CONFIG_KEY_LOAD_EXTRA_ITEMS@Base 1.6.1
  cafekbd_desktop_config_load_from_gsettings@Base 1.6.1
  cafekbd_desktop_config_load_group_descriptions@Base 1.6.1
  cafekbd_desktop_config_lock_next_group@Base 1.6.1
@@ -18,16 +18,16 @@ libcafekbd.so.4 libcafekbd4 #MINVER#
  cafekbd_desktop_config_term@Base 1.6.1
  cafekbd_install_glib_log_appender@Base 1.6.1
  cafekbd_keyboard_config_activate@Base 1.6.1
- MATEKBD_KEYBOARD_CONFIG_ACTIVE@Base 1.6.1
+ CAFEKBD_KEYBOARD_CONFIG_ACTIVE@Base 1.6.1
  cafekbd_keyboard_config_add_default_switch_option_if_necessary@Base 1.6.1
  cafekbd_keyboard_config_equals@Base 1.6.1
  cafekbd_keyboard_config_format_full_layout@Base 1.6.1
  cafekbd_keyboard_config_get_descriptions@Base 1.6.1
  cafekbd_keyboard_config_get_lv_descriptions@Base 1.6.1
  cafekbd_keyboard_config_init@Base 1.6.1
- MATEKBD_KEYBOARD_CONFIG_KEY_LAYOUTS@Base 1.6.1
- MATEKBD_KEYBOARD_CONFIG_KEY_MODEL@Base 1.6.1
- MATEKBD_KEYBOARD_CONFIG_KEY_OPTIONS@Base 1.6.1
+ CAFEKBD_KEYBOARD_CONFIG_KEY_LAYOUTS@Base 1.6.1
+ CAFEKBD_KEYBOARD_CONFIG_KEY_MODEL@Base 1.6.1
+ CAFEKBD_KEYBOARD_CONFIG_KEY_OPTIONS@Base 1.6.1
  cafekbd_keyboard_config_load_from_gsettings@Base 1.6.1
  cafekbd_keyboard_config_load_from_x_current@Base 1.6.1
  cafekbd_keyboard_config_load_from_x_initial@Base 1.6.1
@@ -41,10 +41,10 @@ libcafekbd.so.4 libcafekbd4 #MINVER#
  cafekbd_keyboard_config_stop_listen@Base 1.6.1
  cafekbd_keyboard_config_term@Base 1.6.1
  cafekbd_keyboard_config_to_string@Base 1.6.1
- MATEKBD_PREVIEW_CONFIG_KEY_HEIGHT@Base 1.6.1
- MATEKBD_PREVIEW_CONFIG_KEY_WIDTH@Base 1.6.1
- MATEKBD_PREVIEW_CONFIG_KEY_X@Base 1.6.1
- MATEKBD_PREVIEW_CONFIG_KEY_Y@Base 1.6.1
+ CAFEKBD_PREVIEW_CONFIG_KEY_HEIGHT@Base 1.6.1
+ CAFEKBD_PREVIEW_CONFIG_KEY_WIDTH@Base 1.6.1
+ CAFEKBD_PREVIEW_CONFIG_KEY_X@Base 1.6.1
+ CAFEKBD_PREVIEW_CONFIG_KEY_Y@Base 1.6.1
  cafekbd_preview_load_position@Base 1.6.1
  cafekbd_preview_save_position@Base 1.6.1
  cafekbd_strv_append@Base 1.6.1
@@ -55,12 +55,12 @@ libcafekbdui.so.4 libcafekbd4 #MINVER#
  cafekbd_indicator_config_free_image_filenames@Base 1.6.1
  cafekbd_indicator_config_get_images_file@Base 1.6.1
  cafekbd_indicator_config_init@Base 1.6.1
- MATEKBD_INDICATOR_CONFIG_KEY_BACKGROUND_COLOR@Base 1.6.1
- MATEKBD_INDICATOR_CONFIG_KEY_FONT_FAMILY@Base 1.6.1
-#MISSING: 1.8.0# MATEKBD_INDICATOR_CONFIG_KEY_FONT_SIZE@Base 1.6.1
- MATEKBD_INDICATOR_CONFIG_KEY_FOREGROUND_COLOR@Base 1.6.1
- MATEKBD_INDICATOR_CONFIG_KEY_SECONDARIES@Base 1.6.1
- MATEKBD_INDICATOR_CONFIG_KEY_SHOW_FLAGS@Base 1.6.1
+ CAFEKBD_INDICATOR_CONFIG_KEY_BACKGROUND_COLOR@Base 1.6.1
+ CAFEKBD_INDICATOR_CONFIG_KEY_FONT_FAMILY@Base 1.6.1
+#MISSING: 1.8.0# CAFEKBD_INDICATOR_CONFIG_KEY_FONT_SIZE@Base 1.6.1
+ CAFEKBD_INDICATOR_CONFIG_KEY_FOREGROUND_COLOR@Base 1.6.1
+ CAFEKBD_INDICATOR_CONFIG_KEY_SECONDARIES@Base 1.6.1
+ CAFEKBD_INDICATOR_CONFIG_KEY_SHOW_FLAGS@Base 1.6.1
  cafekbd_indicator_config_load_from_gsettings@Base 1.6.1
  cafekbd_indicator_config_load_image_filenames@Base 1.6.1
  cafekbd_indicator_config_refresh_style@Base 1.6.1
