@@ -1,0 +1,109 @@
+Source: libmatekbd
+Section: libs
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+           Martin Wimpress <code@flexion.org>,
+Build-Depends: autoconf-archive,
+               debhelper-compat (= 13),
+               dpkg-dev (>= 1.16.1.1),
+               gobject-introspection,
+               intltool,
+               libgirepository1.0-dev,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libxklavier-dev,
+               libxml2-utils,
+               mate-common (>= 1.18),
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/libmatekbd
+Vcs-Git: https://salsa.debian.org/debian-mate-team/libmatekbd.git
+
+Package: libmatekbd4
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+Depends: iso-codes,
+         libmatekbd-common (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Provides: libmatekbd,
+Replaces: libmatekbd,
+Breaks: libmatekbd,
+Conflicts: libmatekbd,
+Description: MATE library to manage keyboard configuration
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains the shared libraries.
+
+Package: libmatekbd-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+Replaces: libmatekbd4 (<< 1.6.1-1),
+Description: MATE library to manage keyboard configuration (common files)
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains the architecture-independent files.
+
+Package: libmatekbd-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: gir1.2-matekbd-1.0 (= ${binary:Version}),
+         libglib2.0-dev,
+         libgtk-3-dev,
+         libmatekbd4 (= ${binary:Version}),
+         libx11-dev,
+         libxklavier-dev,
+         ${misc:Depends},
+Breaks: gir1.2-matekbd (<< 1.18.2-2~)
+Replaces: gir1.2-matekbd (<< 1.18.2-2~)
+Description: MATE library to manage keyboard configuration (development files)
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains the development files.
+
+Package: gir1.2-matekbd-1.0
+Multi-Arch: same
+Section: introspection
+Architecture: any
+Depends: ${gir:Depends},
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: gir1.2-matekbd (<< 1.18.2-2~)
+Replaces: gir1.2-matekbd (<< 1.18.2-2~)
+Description: GObject introspection data for libmatekbd and libmatekbdui
+ libmatekbd offers an API to manage the keyboard in MATE applications.
+ .
+ libmatekbdui offers an API to display a graphical user interface for
+ libmatekbd operations.
+ .
+ This package contains introspection data for the libmatekbd and the
+ libmatekbdui libraries.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: gir1.2-matekbd
+Section: oldlibs
+Architecture: any
+Depends: ${misc:Depends},
+         gir1.2-matekbd-1.0 (= ${binary:Version}),
+Description: GObject introspection data for libmatekbd (transitional package)
+ This package is a transitional package to gir1.2-matekbd-1.0. The package
+ can be safely removed.
