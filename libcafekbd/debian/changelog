@@ -124,7 +124,7 @@ libcafekbd (1.18.2-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for CAFE 1.17.
   * debian/control: Dependencies updated for CAFE 1.18.
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
 
   [ Vangelis Mouhtsis ]
   * New upstream release.
@@ -195,10 +195,10 @@ libcafekbd (1.14.0-1) unstable; urgency=medium
   * debian/control:
     + Bump Standards: to 3.9.7. No changes needed.
     + Versioned B-D: cafe-common (>= 1.14)
-    + B-D: libgtk-3-dev
-    + Add to D (libcafekbd-dev): libgtk-3-dev.
+    + B-D: libctk-3-dev
+    + Add to D (libcafekbd-dev): libctk-3-dev.
   * debian/rules:
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
     + CafeConf dropped upstream.
 
   [ Vangelis Mouhtsis ]
@@ -248,7 +248,7 @@ libcafekbd (1.10.0-1~exp1) experimental; urgency=low
   [ Martin Wimpress ]
   * New upstream release.
   * debian/rules:
-    + Add --with-gtk=2.0
+    + Add --with-ctk=2.0
   * debian/control:
     + Processed with wrap-and-sort.
 
