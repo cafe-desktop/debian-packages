@@ -1,2 +1,2 @@
-# ignore lintian about gir1.2-matekbd complaints, the package is a transitional package
-source: typelib-missing-gir-depends gir1.2-matekbd
+# ignore lintian about gir1.2-cafekbd complaints, the package is a transitional package
+source: typelib-missing-gir-depends gir1.2-cafekbd

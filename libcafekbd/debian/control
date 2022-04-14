@@ -1,7 +1,7 @@
-Source: libmatekbd
+Source: libcafekbd
 Section: libs
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -17,93 +17,93 @@ Build-Depends: autoconf-archive,
                libgtk-3-dev,
                libxklavier-dev,
                libxml2-utils,
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/libmatekbd
-Vcs-Git: https://salsa.debian.org/debian-mate-team/libmatekbd.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/libcafekbd
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/libcafekbd.git
 
-Package: libmatekbd4
+Package: libcafekbd4
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
 Depends: iso-codes,
-         libmatekbd-common (= ${source:Version}),
+         libcafekbd-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Provides: libmatekbd,
-Replaces: libmatekbd,
-Breaks: libmatekbd,
-Conflicts: libmatekbd,
+Provides: libcafekbd,
+Replaces: libcafekbd,
+Breaks: libcafekbd,
+Conflicts: libcafekbd,
 Description: MATE library to manage keyboard configuration
- libmatekbd offers an API to manage the keyboard in MATE applications.
+ libcafekbd offers an API to manage the keyboard in MATE applications.
  .
- libmatekbdui offers an API to display a graphical user interface for
- libmatekbd operations.
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
  .
  This package contains the shared libraries.
 
-Package: libmatekbd-common
+Package: libcafekbd-common
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
-Replaces: libmatekbd4 (<< 1.6.1-1),
+Replaces: libcafekbd4 (<< 1.6.1-1),
 Description: MATE library to manage keyboard configuration (common files)
- libmatekbd offers an API to manage the keyboard in MATE applications.
+ libcafekbd offers an API to manage the keyboard in MATE applications.
  .
- libmatekbdui offers an API to display a graphical user interface for
- libmatekbd operations.
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
  .
  This package contains the architecture-independent files.
 
-Package: libmatekbd-dev
+Package: libcafekbd-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: gir1.2-matekbd-1.0 (= ${binary:Version}),
+Depends: gir1.2-cafekbd-1.0 (= ${binary:Version}),
          libglib2.0-dev,
          libgtk-3-dev,
-         libmatekbd4 (= ${binary:Version}),
+         libcafekbd4 (= ${binary:Version}),
          libx11-dev,
          libxklavier-dev,
          ${misc:Depends},
-Breaks: gir1.2-matekbd (<< 1.18.2-2~)
-Replaces: gir1.2-matekbd (<< 1.18.2-2~)
+Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
+Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
 Description: MATE library to manage keyboard configuration (development files)
- libmatekbd offers an API to manage the keyboard in MATE applications.
+ libcafekbd offers an API to manage the keyboard in MATE applications.
  .
- libmatekbdui offers an API to display a graphical user interface for
- libmatekbd operations.
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
  .
  This package contains the development files.
 
-Package: gir1.2-matekbd-1.0
+Package: gir1.2-cafekbd-1.0
 Multi-Arch: same
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: gir1.2-matekbd (<< 1.18.2-2~)
-Replaces: gir1.2-matekbd (<< 1.18.2-2~)
-Description: GObject introspection data for libmatekbd and libmatekbdui
- libmatekbd offers an API to manage the keyboard in MATE applications.
+Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
+Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
+Description: GObject introspection data for libcafekbd and libcafekbdui
+ libcafekbd offers an API to manage the keyboard in MATE applications.
  .
- libmatekbdui offers an API to display a graphical user interface for
- libmatekbd operations.
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
  .
- This package contains introspection data for the libmatekbd and the
- libmatekbdui libraries.
+ This package contains introspection data for the libcafekbd and the
+ libcafekbdui libraries.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: gir1.2-matekbd
+Package: gir1.2-cafekbd
 Section: oldlibs
 Architecture: any
 Depends: ${misc:Depends},
-         gir1.2-matekbd-1.0 (= ${binary:Version}),
-Description: GObject introspection data for libmatekbd (transitional package)
- This package is a transitional package to gir1.2-matekbd-1.0. The package
+         gir1.2-cafekbd-1.0 (= ${binary:Version}),
+Description: GObject introspection data for libcafekbd (transitional package)
+ This package is a transitional package to gir1.2-cafekbd-1.0. The package
  can be safely removed.

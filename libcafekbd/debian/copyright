@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: libmatekbd
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/libmatekbd
+Upstream-Name: libcafekbd
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/libcafekbd
 
 Files: *
 Copyright: 2006, Sergey V. Udaltsov <svu@gnome.org>

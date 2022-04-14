@@ -25,7 +25,7 @@ override_dh_auto_configure:
 		--enable-introspection
 
 override_dh_makeshlibs:
-	dh_makeshlibs -V 'libmatekbd4 (>= 1.8.0)'
+	dh_makeshlibs -V 'libcafekbd4 (>= 1.8.0)'
 
 override_dh_auto_clean:
 	dh_auto_clean
