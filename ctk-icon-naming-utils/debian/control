@@ -1,4 +1,4 @@
-Source: icon-naming-utils
+Source: ctk-icon-naming-utils
 Section: x11
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
@@ -6,10 +6,10 @@ Build-Depends: debhelper-compat (= 13)
 Build-Depends-Indep: libxml-simple-perl, perl (>= 5)
 Standards-Version: 4.5.0
 Homepage: http://tango.freedesktop.org/Tango_Icon_Library
-Vcs-Git: https://salsa.debian.org/debian/icon-naming-utils.git
-Vcs-Browser: https://salsa.debian.org/debian/icon-naming-utils
+Vcs-Git: https://salsa.debian.org/debian/ctk-icon-naming-utils.git
+Vcs-Browser: https://salsa.debian.org/debian/ctk-icon-naming-utils
 
-Package: icon-naming-utils
+Package: ctk-icon-naming-utils
 Architecture: all
 Depends: ${perl:Depends}, ${misc:Depends}, libxml-simple-perl
 Multi-Arch: foreign
