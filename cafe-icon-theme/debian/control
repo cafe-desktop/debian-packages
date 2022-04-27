@@ -22,7 +22,7 @@ Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-icon-theme.git
 Package: cafe-icon-theme
 Architecture: all
 Depends: hicolor-icon-theme,
-         gtk-update-icon-cache,
+         ctk-update-icon-cache,
          librsvg2-common,
          ${misc:Depends},
 Description: CAFE Desktop icon theme
