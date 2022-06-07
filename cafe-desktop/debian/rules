@@ -26,7 +26,7 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--disable-static \
 		--disable-schemas-compile \
-		--enable-ctk-doc
+		--enable-gtk-doc
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
