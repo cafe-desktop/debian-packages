@@ -19,8 +19,8 @@ libcafe-desktop-2.so.17 libcafe-desktop-2-17 #MINVER#
  cafe_bg_set_surface_as_root_with_crossfade@Base 1.14.0
  cafe_color_button_get_rgba@Base 1.14.0
  cafe_color_button_set_rgba@Base 1.14.0
- cafe_desktop_gtk_style_get_dark_color@Base 1.14.0
- cafe_desktop_gtk_style_get_light_color@Base 1.14.0
+ cafe_desktop_ctk_style_get_dark_color@Base 1.14.0
+ cafe_desktop_ctk_style_get_light_color@Base 1.14.0
  cafe_rr_labeler_get_rgba_for_output@Base 1.14.0
 #MISSING: 1.19.2# cafe_about_dialog_get_artists@Base 1.10.0
 #MISSING: 1.19.2# cafe_about_dialog_get_authors@Base 1.10.0
