@@ -186,13 +186,6 @@ libcafe-desktop-2.so.17 libcafe-desktop-2-17 #MINVER#
  cafe_gsettings_remove_all_from_strv@Base 1.10.0
  cafe_gsettings_schema_exists@Base 1.8.0
  cafe_gsettings_strv_to_gslist@Base 1.10.0
- cafe_hsv_get_color@Base 1.24.0
- cafe_hsv_get_metrics@Base 1.24.0
- cafe_hsv_get_type@Base 1.24.0
- cafe_hsv_is_adjusting@Base 1.24.0
- cafe_hsv_new@Base 1.24.0
- cafe_hsv_set_color@Base 1.24.0
- cafe_hsv_set_metrics@Base 1.24.0
  cafe_language_has_translations@Base 1.22.1
  cafe_normalize_locale@Base 1.22.1
  cafe_parse_locale@Base 1.22.1

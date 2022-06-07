@@ -13,14 +13,6 @@ Copyright: 2002, Red Hat, Inc.
            2007-2008, Red Hat, Inc.
 License: LGPL-2+
 
-Files: libcafe-desktop/cafe-hsv.c
-       libcafe-desktop/cafe-hsv.h
-Copyright: Simon Budig <Simon.Budig@unix-ag.org>
-           Federico Mena-Quintero <federico@gimp.org>
-           Jonathan Blandford <jrb@redhat.com>
-           2019, Pablo Barciela
-License: LGPL-2+
-
 Files: libcafe-desktop/cafe-bg.c
        libcafe-desktop/cafe-bg.h
 Copyright: 2000 Eazel, Inc.
