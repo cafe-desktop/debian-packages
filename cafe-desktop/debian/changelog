@@ -1,7 +1,7 @@
 cafe-desktop (1.24.1-2) unstable; urgency=medium
 
   * debian/control:
-    + Switch B-D from libcdk-pixbuf2.0-dev to libcdk-pixbuf-2.0-dev.
+    + Switch B-D from libgdk-pixbuf2.0-dev to libgdk-pixbuf-2.0-dev.
       (Closes: #976031).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Nov 2020 17:16:56 +0100
@@ -602,7 +602,7 @@ cafe-desktop (1.8.0+dfsg1-4) unstable; urgency=low
       cafe-desktop-2.0-pc. (Closes: #744086).
   * debian/control:
     + Drop D (libcafe-desktop-dev): libstartup-notification0-dev.
-    + Add D (libcafe-desktop-dev): libcdk-pixbuf2.0-dev, libctk2.0-dev.
+    + Add D (libcafe-desktop-dev): libgdk-pixbuf2.0-dev, libctk2.0-dev.
   * debian/rules:
     + Turn on compiler commands during package build (configure option:
       --disable-silent-rules).
