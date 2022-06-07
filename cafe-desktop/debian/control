@@ -15,7 +15,7 @@ Build-Depends: autoconf-archive,
                intltool,
                iso-codes,
                libdconf-dev (>= 0.13.4),
-               libgdk-pixbuf-2.0-dev (>= 2.36.5),
+               libcdk-pixbuf-2.0-dev (>= 2.36.5),
                libgirepository1.0-dev,
                libglib2.0-dev (>= 2.50.0),
                libglib2.0-doc,
@@ -99,7 +99,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: libdconf-dev,
-         libgdk-pixbuf2.0-dev,
+         libcdk-pixbuf2.0-dev,
          libctk-3-dev,
          libcafe-desktop-2-17 (= ${binary:Version}),
          libstartup-notification0-dev,

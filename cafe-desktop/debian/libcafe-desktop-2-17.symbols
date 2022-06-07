@@ -175,7 +175,7 @@ libcafe-desktop-2.so.17 libcafe-desktop-2-17 #MINVER#
 #MISSING: 1.24.0-1# cafe_desktop_thumbnail_md5@Base 1.6.1
  cafe_desktop_thumbnail_path_for_uri@Base 1.6.1
 #MISSING: 1.24.0-1# cafe_desktop_thumbnail_scale_down_pixbuf@Base 1.6.1
- cafe_gdk_spawn_command_line_on_screen@Base 1.10.0
+ cafe_cdk_spawn_command_line_on_screen@Base 1.10.0
  cafe_get_all_locales@Base 1.22.1
  cafe_get_country_from_code@Base 1.22.1
  cafe_get_country_from_locale@Base 1.22.1
