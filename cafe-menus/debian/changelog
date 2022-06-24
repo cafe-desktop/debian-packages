@@ -40,12 +40,12 @@ cafe-menus (1.22.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
     + Updated copyright attributions.
   * debian/rules:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/libcafe-menu2.symbols:
-    + Update for MATE Desktop 1.22
+    + Update for CAFE Desktop 1.22
   * lintian:
     + Drop python-foo-but-no-python3-foo.
 
@@ -158,8 +158,8 @@ cafe-menus (1.18.0-2) unstable; urgency=medium
 cafe-menus (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Aron Xu ]
   * New upstream release.
@@ -196,7 +196,7 @@ cafe-menus (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -207,7 +207,7 @@ cafe-menus (1.15.0-0ubuntu1) yakkety; urgency=medium
   [ Martin Wimpress ]
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
