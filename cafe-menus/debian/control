@@ -1,7 +1,7 @@
-Source: mate-menus
+Source: cafe-menus
 Section: libs
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -13,18 +13,18 @@ Build-Depends: autoconf-archive,
                intltool,
                libgirepository1.0-dev,
                libglib2.0-dev,
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-menus
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-menus.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-menus
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-menus.git
 
-Package: mate-menus
+Package: cafe-menus
 Architecture: all
-Depends: gir1.2-matemenu-2.0 (>= ${source:Version}),
+Depends: gir1.2-cafemenu-2.0 (>= ${source:Version}),
          ${misc:Depends},
-Breaks: mate-control-center (<< 1.13.0),
+Breaks: cafe-control-center (<< 1.13.0),
 Description: implementation of the freedesktop menu specification for MATE
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -34,20 +34,20 @@ Description: implementation of the freedesktop menu specification for MATE
  Also contained here are the MATE menu layout configuration files, .directory
  files and assorted menu related utility programs.
 
-Package: libmate-menu2
+Package: libcafe-menu2
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmatemenu,
-        mate-menus (<= 1.0.2-1),
-        libmate-slab0 (<< 1.22.0),
-        mate-panel (<< 1.22.0),
-        mate-screensaver (<< 1.22.0),
-        python-mate-menu (<< 1.22.0),
-Replaces: libmatemenu,
-          mate-menus (<= 1.0.2-1),
-          python-mate-menu (<< 1.22.0),
+Breaks: libcafemenu,
+        cafe-menus (<= 1.0.2-1),
+        libcafe-slab0 (<< 1.22.0),
+        cafe-panel (<< 1.22.0),
+        cafe-screensaver (<< 1.22.0),
+        python-cafe-menu (<< 1.22.0),
+Replaces: libcafemenu,
+          cafe-menus (<= 1.0.2-1),
+          python-cafe-menu (<< 1.22.0),
 Description: implementation of the freedesktop menu specification for MATE (library)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -56,19 +56,19 @@ Description: implementation of the freedesktop menu specification for MATE (libr
  .
  This package contains the actual library files.
 
-Package: libmate-menu-dev
+Package: libcafe-menu-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
 Depends: libglib2.0-dev,
-         libmate-menu2 (= ${binary:Version}),
-         gir1.2-matemenu-2.0 (= ${binary:Version}),
+         libcafe-menu2 (= ${binary:Version}),
+         gir1.2-cafemenu-2.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmatemenu-dev,
-        gir1.2-mate-menu (<< 1.18.1-2~),
-Replaces: libmatemenu-dev,
-          gir1.2-mate-menu (<< 1.18.1-2~),
+Breaks: libcafemenu-dev,
+        gir1.2-cafe-menu (<< 1.18.1-2~),
+Replaces: libcafemenu-dev,
+          gir1.2-cafe-menu (<< 1.18.1-2~),
 Description: implementation of the freedesktop menu specs for MATE (development files)
  The package contains an implementation of the draft
  "Desktop Menu Specification" from freedesktop.org:
@@ -77,15 +77,15 @@ Description: implementation of the freedesktop menu specs for MATE (development 
  .
  This package contains the development files.
 
-Package: gir1.2-matemenu-2.0
+Package: gir1.2-cafemenu-2.0
 Section: introspection
 Architecture: any
 Multi-Arch: same
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: gir1.2-mate-menu (<< 1.18.1-2~),
-Replaces: gir1.2-mate-menu (<< 1.18.1-2~),
+Breaks: gir1.2-cafe-menu (<< 1.18.1-2~),
+Replaces: gir1.2-cafe-menu (<< 1.18.1-2~),
 Description: GObject introspection data for the MATE menu specification
  This package contains introspection data for MATE menu specification,
  an implementation of the draft "Desktop Menu Specification" from
@@ -94,11 +94,11 @@ Description: GObject introspection data for the MATE menu specification
  It can be used by packages using the GIRepository format to generate dynamic
  bindings.
 
-Package: gir1.2-mate-menu
+Package: gir1.2-cafe-menu
 Section: oldlibs
 Architecture: any
 Depends: ${misc:Depends},
-         gir1.2-matemenu-2.0 (= ${binary:Version}),
-Description: GObject introspection data for libmatemenu (transitional package)
- This package is a transitional package to gir1.2-matemenu-2.0. The package
+         gir1.2-cafemenu-2.0 (= ${binary:Version}),
+Description: GObject introspection data for libcafemenu (transitional package)
+ This package is a transitional package to gir1.2-cafemenu-2.0. The package
  can be safely removed.

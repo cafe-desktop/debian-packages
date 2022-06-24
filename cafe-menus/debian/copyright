@@ -1,14 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Menus
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-menus/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-menus/
 
 Files: libmenu/desktop-entries.c
        libmenu/desktop-entries.h
        libmenu/entry-directories.c
        libmenu/entry-directories.h
-       libmenu/matemenu-tree.c
-       libmenu/matemenu-tree.h
+       libmenu/cafemenu-tree.c
+       libmenu/cafemenu-tree.h
        libmenu/menu-layout.c
        libmenu/menu-layout.h
        libmenu/menu-util.c
@@ -17,7 +17,7 @@ Files: libmenu/desktop-entries.c
 Copyright: 2002-2005 Red Hat, Inc
 License: LGPL-2+
 
-Files: util/mate-menus-ls.py
+Files: util/cafe-menus-ls.py
 Copyright: 2008, Novell, Inc
 License: GPL-2+
 
@@ -33,7 +33,7 @@ Copyright: 2005, Red Hat, Inc
            2011, Perberos
 License: LGPL-2+
 
-Files: mate-menus.pot
+Files: cafe-menus.pot
        po/*
 Copyright:
  2004-2010, THE PACKAGE'S COPYRIGHT HOLDER
@@ -74,7 +74,7 @@ Copyright:
  2005, Martin Willemoes Hansen <mwh@sysrq.dk>
  2006, Ole Laursen <olau@hardworking.dk>
  2007, Peter Bach <bach.peter@gmail.com>
- 2004-2005, Hendrik Brandt <heb@mate-de.org>
+ 2004-2005, Hendrik Brandt <heb@cafe-de.org>
  2006-2007, Hendrik Richter <hendrikr@gnome.org>
  2009, Mario Blättermann <mariobl@gnome.org>
  2010, Christian Kirbach <Christian.Kirbach@googlemail.com>
@@ -136,7 +136,7 @@ Copyright:
  2009, Sveinn í Felli <sveinki@nett.is>
  2005-2009, Francesco Marletta <francesco.marletta @ tiscali.it>
  2009, Luca Ferretti <elle.uca@libero.it>
- 2004, Satoru SATOH <ss@mate.gr.jp>
+ 2004, Satoru SATOH <ss@cafe.gr.jp>
  2005-2007, Takeshi AIHANA <takeshi.aihana@gmail.com>
  2009-2010, Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>
  2008, Moldabekov Margulan <moldabekov@gmail.com>
@@ -197,7 +197,7 @@ Copyright:
  2007-2008, Leonardo Ferreira Fontenelle <leonardof@gnome.org>
  2008, Fabrício Godoy <skarllot@gmail.com>
  2009, Krix Apolinário <krixapolinario@gmail.com>
- 2005, Dan Damian <dand@mate.ro>
+ 2005, Dan Damian <dand@cafe.ro>
  2007, Alexandru Szasz <alexxed@gmail.com>
  2008, Adi Roiban <adi@roiban.ro>
  2004, Dmitry G. Mastrukov <dmitry@taurussoft.org>
@@ -215,7 +215,7 @@ Copyright:
  2007, Peter Tuharsky <tuharsky@misbb.sk>
  2010, Pavol Klačanský <pavol@klacansky.com>
  2006, Matic Žgur <mr.zgur@gmail.com>
- 2005-2010, Matej Urbančič <mateju@svn.gnome.org>
+ 2005-2010, Matej Urbančič <cafeju@svn.gnome.org>
  2005-2007, Elian Myftiu <elian@alblinux.net>
  2008, Laurent Dhima <laurenti@alblinux.net>
  2005, Данило Шеган <danilo@gnome.org>
@@ -243,7 +243,7 @@ Copyright:
  2005-2007, Woodman Tuen <wmtuen@gmail.com>
 License: GPL-2+ or LGPL-2+ or LGPL-2.1+
 Comment:
- Same license(s) as the mate-menus package.
+ Same license(s) as the cafe-menus package.
 
 Files: autogen.sh
        .build.yml
@@ -261,8 +261,8 @@ Files: autogen.sh
        desktop-directories/*
        layout/*
        libmenu/Makefile.am
-       libmenu/libmate-menu.pc.in
-       libmenu/libmate-menu-uninstalled.pc.in
+       libmenu/libcafe-menu.pc.in
+       libmenu/libcafe-menu-uninstalled.pc.in
        util/Makefile.am
 Copyright: *No copyright*
 License: GPL-2+ or LGPL-2+
