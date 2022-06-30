@@ -1,7 +1,7 @@
-Source: libmatemixer
+Source: libcafemixer
 Section: libs
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -13,19 +13,19 @@ Build-Depends: autoconf-archive,
                libasound2-dev,
                libglib2.0-dev,
                libpulse-dev,
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/libmatemixer
-Vcs-Git: https://salsa.debian.org/debian-mate-team/libmatemixer.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/libcafemixer
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/libcafemixer.git
 
-Package: libmatemixer0
+Package: libcafemixer0
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
 Depends: iso-codes,
-         libmatemixer-common (= ${source:Version}),
+         libcafemixer-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Mixer library for MATE Desktop
@@ -35,7 +35,7 @@ Description: Mixer library for MATE Desktop
  .
  This package contains the shared libraries.
 
-Package: libmatemixer-common
+Package: libcafemixer-common
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
@@ -46,7 +46,7 @@ Description: Mixer library for MATE Desktop (common files)
  .
  This package contains the architecture-independent files.
 
-Package: libmatemixer-doc
+Package: libcafemixer-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
@@ -57,12 +57,12 @@ Description: Mixer library for MATE Desktop (documentation files)
  .
  This package contains the documentation files.
 
-Package: libmatemixer-dev
+Package: libcafemixer-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: libglib2.0-dev,
-         libmatemixer0 (= ${binary:Version}),
+         libcafemixer0 (= ${binary:Version}),
          ${misc:Depends},
 Description: Mixer library for MATE Desktop (development files)
  Mixer library for MATE Desktop. It provides an abstract API allowing

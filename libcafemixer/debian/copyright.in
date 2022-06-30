@@ -88,49 +88,49 @@ Files: backends/alsa/alsa-backend.c
  backends/pulse/pulse-stream.h
  backends/pulse/pulse-types.h
  examples/monitor.c
- libmatemixer/matemixer-app-info-private.h
- libmatemixer/matemixer-app-info.c
- libmatemixer/matemixer-app-info.h
- libmatemixer/matemixer-backend-module.c
- libmatemixer/matemixer-backend-module.h
- libmatemixer/matemixer-backend.c
- libmatemixer/matemixer-backend.h
- libmatemixer/matemixer-context.c
- libmatemixer/matemixer-context.h
- libmatemixer/matemixer-device-switch.c
- libmatemixer/matemixer-device-switch.h
- libmatemixer/matemixer-device.c
- libmatemixer/matemixer-device.h
- libmatemixer/matemixer-enum-types.c
- libmatemixer/matemixer-enum-types.h
- libmatemixer/matemixer-enums.h
- libmatemixer/matemixer-stored-control.c
- libmatemixer/matemixer-stored-control.h
- libmatemixer/matemixer-stream-control-private.h
- libmatemixer/matemixer-stream-control.c
- libmatemixer/matemixer-stream-control.h
- libmatemixer/matemixer-stream-private.h
- libmatemixer/matemixer-stream-switch.c
- libmatemixer/matemixer-stream-switch.h
- libmatemixer/matemixer-stream-toggle.c
- libmatemixer/matemixer-stream-toggle.h
- libmatemixer/matemixer-stream.c
- libmatemixer/matemixer-stream.h
- libmatemixer/matemixer-switch-option-private.h
- libmatemixer/matemixer-switch-option.c
- libmatemixer/matemixer-switch-option.h
- libmatemixer/matemixer-switch-private.h
- libmatemixer/matemixer-switch.c
- libmatemixer/matemixer-switch.h
- libmatemixer/matemixer-types.h
- libmatemixer/matemixer-version.h
- libmatemixer/matemixer.c
- libmatemixer/matemixer.h
+ libcafemixer/cafemixer-app-info-private.h
+ libcafemixer/cafemixer-app-info.c
+ libcafemixer/cafemixer-app-info.h
+ libcafemixer/cafemixer-backend-module.c
+ libcafemixer/cafemixer-backend-module.h
+ libcafemixer/cafemixer-backend.c
+ libcafemixer/cafemixer-backend.h
+ libcafemixer/cafemixer-context.c
+ libcafemixer/cafemixer-context.h
+ libcafemixer/cafemixer-device-switch.c
+ libcafemixer/cafemixer-device-switch.h
+ libcafemixer/cafemixer-device.c
+ libcafemixer/cafemixer-device.h
+ libcafemixer/cafemixer-enum-types.c
+ libcafemixer/cafemixer-enum-types.h
+ libcafemixer/cafemixer-enums.h
+ libcafemixer/cafemixer-stored-control.c
+ libcafemixer/cafemixer-stored-control.h
+ libcafemixer/cafemixer-stream-control-private.h
+ libcafemixer/cafemixer-stream-control.c
+ libcafemixer/cafemixer-stream-control.h
+ libcafemixer/cafemixer-stream-private.h
+ libcafemixer/cafemixer-stream-switch.c
+ libcafemixer/cafemixer-stream-switch.h
+ libcafemixer/cafemixer-stream-toggle.c
+ libcafemixer/cafemixer-stream-toggle.h
+ libcafemixer/cafemixer-stream.c
+ libcafemixer/cafemixer-stream.h
+ libcafemixer/cafemixer-switch-option-private.h
+ libcafemixer/cafemixer-switch-option.c
+ libcafemixer/cafemixer-switch-option.h
+ libcafemixer/cafemixer-switch-private.h
+ libcafemixer/cafemixer-switch.c
+ libcafemixer/cafemixer-switch.h
+ libcafemixer/cafemixer-types.h
+ libcafemixer/cafemixer-version.h
+ libcafemixer/cafemixer.c
+ libcafemixer/cafemixer.h
 Copyright: 2014, Michal Ratajsky <michal.ratajsky@gmail.com>
 License: LGPL
  FIXME
 
-Files: libmatemixer/matemixer-private.h
+Files: libcafemixer/cafemixer-private.h
 Copyright: 2014, Michal Ratajsky <michal.ratajsky@gmail.com>
   == MATE_MIXER_CHANNEL_BACK_LEFT || \
   == MATE_MIXER_CHANNEL_BACK_RIGHT || \

@@ -1,4 +1,4 @@
-libmatemixer (1.24.1-1) unstable; urgency=medium
+libcafemixer (1.24.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release
@@ -11,7 +11,7 @@ libmatemixer (1.24.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:54:38 +0200
 
-libmatemixer (1.24.0-1) unstable; urgency=medium
+libcafemixer (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -29,7 +29,7 @@ libmatemixer (1.24.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 10:54:32 +0100
 
-libmatemixer (1.22.0-2) unstable; urgency=medium
+libcafemixer (1.22.0-2) unstable; urgency=medium
 
   [ Helmut Grohne ]
   * debian/rules:
@@ -37,7 +37,7 @@ libmatemixer (1.22.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 24 Nov 2019 14:14:01 +0100
 
-libmatemixer (1.22.0-1) unstable; urgency=medium
+libcafemixer (1.22.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -50,24 +50,24 @@ libmatemixer (1.22.0-1) unstable; urgency=medium
     + Use debhelper-compat notation. Bump to DH compat level version 12.
   * debian/control:
     + Bump Standards-Version: to 4.4.0. No changes needed.
-  * debian/libmatemixer0.symbols:
+  * debian/libcafemixer0.symbols:
     + Add Build-Depends-Package: meta field.
   * debian/copyright:
     + Update copyright attributions.
   * debian/rules:
     + Drop dbgsym-migration dh_strip override.
-  * debian/libmatemixer-dev.examples:
+  * debian/libcafemixer-dev.examples:
     + Add monitor.c into doc/examples folder.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 10 Jul 2019 13:37:35 +0200
 
-libmatemixer (1.20.1-1) unstable; urgency=medium
+libcafemixer (1.20.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Use secure URI for copyright format.
     + Update Upstream-Contact: field.
@@ -79,7 +79,7 @@ libmatemixer (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 14:03:16 +0200
 
-libmatemixer (1.20.0-1) unstable; urgency=medium
+libcafemixer (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already for 1.19.0ubuntu1):
@@ -87,8 +87,8 @@ libmatemixer (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already for 1.19.0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
@@ -99,19 +99,19 @@ libmatemixer (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Feb 2018 20:17:37 +0100
 
-libmatemixer (1.20.0-0ubuntu1) bionic; urgency=medium
+libcafemixer (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
 
-libmatemixer (1.19.0-0ubuntu1) bionic; urgency=medium
+libcafemixer (1.19.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 21:59:57 +0000
 
-libmatemixer (1.18.0-1) unstable; urgency=medium
+libcafemixer (1.18.0-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -137,7 +137,7 @@ libmatemixer (1.18.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 08 Jul 2017 23:51:51 +0200
 
-libmatemixer (1.16.0-2) unstable; urgency=medium
+libcafemixer (1.16.0-2) unstable; urgency=medium
 
   * debian/changelog:
     + Fix missing changelog item in 1.16.0-1 stanza.
@@ -146,7 +146,7 @@ libmatemixer (1.16.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Mon, 09 Jan 2017 16:30:12 +0100
 
-libmatemixer (1.16.0-1) unstable; urgency=medium
+libcafemixer (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -159,14 +159,14 @@ libmatemixer (1.16.0-1) unstable; urgency=medium
     + Bump Standards: to 3.9.8. No changes needed.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
-  * debian/libmatemixer0.symbols:
+  * debian/libcafemixer0.symbols:
     + Update one new symbol in list of symbols.
   * lintian: Drop unused-shlib-entry-in-control-file override. Not required
     anymore.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 29 Sep 2016 15:34:59 +0200
 
-libmatemixer (1.15.0-0ubuntu1) yakkety; urgency=medium
+libcafemixer (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream development release.
@@ -182,7 +182,7 @@ libmatemixer (1.15.0-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:46 +0100
 
-libmatemixer (1.14.0-1) unstable; urgency=medium
+libcafemixer (1.14.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -195,18 +195,18 @@ libmatemixer (1.14.0-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + Bump Standards: to 3.9.7. No changes needed.
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 May 2016 15:48:38 +0200
 
-libmatemixer (1.12.1-1) unstable; urgency=medium
+libcafemixer (1.12.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 20 Dec 2015 15:45:38 +0100
 
-libmatemixer (1.10.0-1) unstable; urgency=medium
+libcafemixer (1.10.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/rules: Use upstream's NEWS file as upstream ChangeLog.
@@ -219,7 +219,7 @@ libmatemixer (1.10.0-1) unstable; urgency=medium
 
  -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Wed, 05 Aug 2015 10:40:42 +0200
 
-libmatemixer (1.10.0-1~exp1) experimental; urgency=low
+libcafemixer (1.10.0-1~exp1) experimental; urgency=low
 
   * Initial release. (Closes: #788719).
 
