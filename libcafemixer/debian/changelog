@@ -42,7 +42,7 @@ libcafemixer (1.22.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
     + White space removal.
 
   [ Mike Gabriel ]
@@ -89,7 +89,7 @@ libcafemixer (1.20.0-1) unstable; urgency=medium
   * debian/control (already for 1.19.0ubuntu1):
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
@@ -117,8 +117,8 @@ libcafemixer (1.18.0-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Vangelis Mouhtsis ]
   * New upstream release.
@@ -155,7 +155,7 @@ libcafemixer (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Add various missing changelog items to 1.15.0-0ubuntu1.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
     + Bump Standards: to 3.9.8. No changes needed.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
@@ -171,7 +171,7 @@ libcafemixer (1.15.0-0ubuntu1) yakkety; urgency=medium
   [ Martin Wimpress ]
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 

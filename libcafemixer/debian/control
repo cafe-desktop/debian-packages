@@ -1,7 +1,7 @@
 Source: libcafemixer
 Section: libs
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -28,8 +28,8 @@ Depends: iso-codes,
          libcafemixer-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Description: Mixer library for MATE Desktop
- Mixer library for MATE Desktop. It provides an abstract API allowing
+Description: Mixer library for CAFE Desktop
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
  access to mixer functionality available in the PulseAudio, ALSA and OSS
  sound systems.
  .
@@ -39,8 +39,8 @@ Package: libcafemixer-common
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
-Description: Mixer library for MATE Desktop (common files)
- Mixer library for MATE Desktop. It provides an abstract API allowing
+Description: Mixer library for CAFE Desktop (common files)
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
  access to mixer functionality available in the PulseAudio, ALSA and OSS
  sound systems.
  .
@@ -50,8 +50,8 @@ Package: libcafemixer-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
-Description: Mixer library for MATE Desktop (documentation files)
- Mixer library for MATE Desktop. It provides an abstract API allowing
+Description: Mixer library for CAFE Desktop (documentation files)
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
  access to mixer functionality available in the PulseAudio, ALSA and OSS
  sound systems.
  .
@@ -64,8 +64,8 @@ Multi-Arch: same
 Depends: libglib2.0-dev,
          libcafemixer0 (= ${binary:Version}),
          ${misc:Depends},
-Description: Mixer library for MATE Desktop (development files)
- Mixer library for MATE Desktop. It provides an abstract API allowing
+Description: Mixer library for CAFE Desktop (development files)
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
  access to mixer functionality available in the PulseAudio, ALSA and OSS
  sound systems.
  .
