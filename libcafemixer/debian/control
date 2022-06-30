@@ -1,0 +1,72 @@
+Source: libmatemixer
+Section: libs
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Mike Gabriel <sunweaver@debian.org>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+           Martin Wimpress <code@flexion.org>,
+Build-Depends: autoconf-archive,
+               debhelper-compat (= 13),
+               dpkg-dev (>= 1.16.1.1),
+               libasound2-dev,
+               libglib2.0-dev,
+               libpulse-dev,
+               mate-common (>= 1.18),
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/libmatemixer
+Vcs-Git: https://salsa.debian.org/debian-mate-team/libmatemixer.git
+
+Package: libmatemixer0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+Depends: iso-codes,
+         libmatemixer-common (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Mixer library for MATE Desktop
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the shared libraries.
+
+Package: libmatemixer-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+Description: Mixer library for MATE Desktop (common files)
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the architecture-independent files.
+
+Package: libmatemixer-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+Description: Mixer library for MATE Desktop (documentation files)
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the documentation files.
+
+Package: libmatemixer-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libglib2.0-dev,
+         libmatemixer0 (= ${binary:Version}),
+         ${misc:Depends},
+Description: Mixer library for MATE Desktop (development files)
+ Mixer library for MATE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the development files.
