@@ -1,0 +1,678 @@
+caja (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/libcaja-extension1.symbols:
+    + Update symbols.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_keep_timestamps.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+     + Update Build-Depends: to support MATE Desktop 1.24.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:48:13 +0100
+
+caja (1.22.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.4.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Jan 2020 06:17:10 +0100
+
+caja (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:23:47 +0200
+
+caja (1.22.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add Add 0001_keep_timestamps.patch. Copy file and keep timestamps
+      of original file including remotes.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 02 Sep 2019 16:14:09 +0200
+
+caja (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/rules:
+    + Updated for MATE Desktop 1.22
+  * debian/control:
+    + Correct order for Depends:
+  * debian/patcches:
+    + Drop all patches. All applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/libcaja-extension1.symbols:
+    + Update symbols.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 16:36:42 +0200
+
+caja (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Use secure URL in Homepage: field.
+    + Bump Standards-Version: to 4.2.1. No changes needed.
+  * debian/libcaja-extension1.symbols:
+    + Add Build-Depends-Package: meta data field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Dec 2018 22:55:10 +0100
+
+caja (1.20.2-5) unstable; urgency=medium
+
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 12:52:26 +0200
+
+caja (1.20.2-4) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0003_eliminate_a11y_event_flood.patch. Eliminate accessible children-
+      changed event flood during update all.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Apr 2018 23:05:41 +0200
+
+caja (1.20.2-3) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0002_emit_a11y-name-change_only_when_icons_renamed.patch.
+      Emit accessible-name-change signal for icons only when icons are renamed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Apr 2018 09:37:00 +0200
+
+caja (1.20.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Refresh / rebase 0001_fix_random_segfaults.patch.
+    + Add 1002_use-gio-open-instead-of-gvfs-open.patch. Replace deprecated
+      "gvfs-open" by "gio open".
+  * debian/control:
+    + Add to D (caja): libglib2.0-bin (for gio cmdline tool).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 12:57:37 +0200
+
+caja (1.20.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Add 0001_fix_random_segfaults.patch. Fix random segfaults on opening
+      mounts from Desktop.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 12:40:07 +0200
+
+caja (1.20.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/source/lintian-overrides:
+    + Move to new/correct location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 04 Apr 2018 23:29:59 +0200
+
+caja (1.20.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Mike Gabriel ]
+  * Update 1001_use-correct-macros-to-cross-build.patch:
+    Add check for PKG_CONFIG being set.
+  * debian/copyright: Use secure URI for copyright format.
+
+  [ Jeremy Bicha ]
+  * Move AppStream metadata from caja-common to caja
+
+ -- Jeremy Bicha <jbicha@debian.org>  Fri, 09 Mar 2018 09:14:17 -0500
+
+caja (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.3-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control (already in 1.19.3-0ubuntu1):
+    + Capitalize MATE in Maintainer: field.
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/patches:
+    Add 1001_use-correct-macros-to-cross-build.patch. Fix cross-building.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Feb 2018 21:10:25 +0100
+
+caja (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
+
+caja (1.19.3-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 22:31:20 +0000
+
+caja (1.18.5-2) unstable; urgency=medium
+
+  * Rename GIR package to match Debian Policy.
+
+  * debian/rules:
+    + Use NEWS file as upstream changelog.
+  * debian/{rules,caja-common.install}:
+    + Move ${DATADIR}/appdata to ${DATADIR}/metainfo.
+  * debian/control:
+    + Bump Standards-Version: to 4.1.2. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 13 Dec 2017 15:19:55 +0100
+
+caja (1.18.5-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0000_revert_add_column_autosizing.patch and
+           0001_fix-high-cpu-while-loading-background-image.patch.
+      Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+  * debian/watch:
+    + Use secure URI.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 10:59:41 +0100
+
+caja (1.18.4-2) unstable; urgency=medium
+
+  [ Pablo Barciela ]
+  * debian/patches:
+    + Add 0001_fix-high-cpu-while-loading-background-image.patch. (Closes:
+      #875717).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 18 Sep 2017 12:36:33 +0200
+
+caja (1.18.4-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1688687). (Closes: #863752).
+  * debian/patches:
+    + Add 0000_revert_add_column_autosizing.patch. Revert broken 'Adds columns
+      autosizing' commit.
+  * debian/control:
+    + Add B:/R: for gir1.2-caja (<< 1.18.4-1~) to libcaja-extension-dev.
+    + Add typelib dependency (gir1.2-caja) to libcaja-extension-dev.
+    + Make gir1.2-caja Multi-arch: same.
+  * debian/*.install:
+    + Move /usr/share/gir-1.0 from gir1.2-caja to libcaja-extensions-dev
+      bin:pkg.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Aug 2017 14:37:09 +0200
+
+caja (1.18.3-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/caja.install: Remove obsolete usr/lib/caja/
+  * debian/copyright: Update copyright attributions.
+  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Drop dependency on libunique3 (Closes: #827234)
+  * debian/patches: Add 0001_return_custom_icons.patch.
+  * debian/patches: Drop 0001_return_custom_icons.patch. Applied upstream.
+  * debian/patches: Drop 0000_do-not-show-property-browser-in-menu.patch.
+    Obsolete.
+
+  [ Vangelis Mouhtsis ]
+  * New upstream release.
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 15:56:35 +0200
+
+caja (1.16.6-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #862155).
+  * Issues solved between 1.16.2 and 1.16.5:
+    - Caja's background and emblems dialog works again. (Closes: #828158).
+    - Add ability to get feedback from Orca when additional icons are
+      selected/deselected. (Closes: #757851).
+    - In icon and compact view, fix scrolling and renaming in large folders
+      (Closes: #836352, #826261).
+  * Issues solved between 1.16.5 and 1.16.6:
+    - Show correct right-click menu after making file/folder selection
+    - Make custom icons (like folder-color extension) work in list view
+    - Open With dialog: force icon size to avoid huge icons with GTK+3
+    - Load different CSS for desktop with GTK+ 3.14 (fixes black text
+      under desktop icons with some themes like Adwaita)
+  * debian/control:
+    + Versioned B-D bump of libmate-desktop-dev (to >= 1.16.2)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 28 Apr 2017 22:41:10 +0200
+
+caja (1.16.2-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/rules:
+    + Enable dh_girespository helper.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 20:15:12 +0100
+
+caja (1.16.2-1) unstable; urgency=medium
+
+  * New upstream release.
+    - List view: show/hide columns instead of appending/removing them (fixes
+      crash when moving between trash and other folder with GTK+3). (Closes:
+      #834943).
+    - Rename labels: follow theme if available, sane default. (Closes: #851311).
+    - Fix keyboard-down wraparound on compact view. (Closes: #817061).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 17:19:20 +0100
+
+caja (1.16.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix regression that sometimes caused visual glitches when selecting
+      icons.
+    - GTK+3: Some CSS adjustments. (Closes: #839799).
+    - GTK+3: Fix accessibility on desktop (for Orca). (Closes: #840568).
+    - GTK+3: Fix several runtime warnings. (Closes: #840422).
+    - Translations update.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 20 Oct 2016 13:17:32 +0200
+
+caja (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Various GTK-3.21 incompatibilities fixed. (Closes: #836349, #837889,
+      #838155, #834943, #838108, #836669).
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+  [ Mike Gabriel ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.4-0ubuntu1 upload.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 16:29:42 +0200
+
+caja (1.15.4-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release. (Closes: #836349).
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+  * debian/changelog:
+    + White space clean-up in previous stanza.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:46 +0100
+
+caja (1.14.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 10:23:57 +0200
+
+caja (1.14.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: libmate-desktop-dev (>= 1.14)
+    + Versioned B-D: mate-common (>= 1.14)
+    + B-D: libgtk-3-dev
+    + B-D: libunique-3.0-dev
+    + Add to D (libcaja-extension-dev): libgtk-3-dev.
+    + Fix conflict between caja and libcaja-extension1 1.8.x.
+    + Processed with wrap-and-sort.
+    + B-D: libgail-3-dev
+    + Bump Standards: to 3.9.8. No changes needed.
+  * debian/rules:
+    + Add --with-gtk=3.0
+    + MateConf dropped upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Fix relation between caja, libcaja-extension1 and old bin:pkg
+      libcaja-extension.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 23 May 2016 12:47:48 +0200
+
+caja (1.12.7-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream bugfix release:
+    - Fix remaining random changes of font color in icon view. (LP:#1562612).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 31 Mar 2016 13:49:22 +0200
+
+caja (1.12.6-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (LP:#1517566, LP:#1521206).
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 15 Mar 2016 08:51:45 +0100
+
+caja (1.12.4-2) unstable; urgency=medium
+
+  * debian/changelog:
+    + Fix referenced version in stanza for 1.12.3-2.
+  * debian/control:
+    + Fix typo in field name "Breaks:" (for libcaja-extension-doc). (Closes:
+      #814957).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 17 Feb 2016 11:25:43 +0100
+
+caja (1.12.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Use encrypted URLs for Vcs-*: field.
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+  * debian/rules:
+    + Enable all hardening flags.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Feb 2016 23:55:37 +0100
+
+caja (1.12.3-2) unstable; urgency=medium
+
+  * debian/control:
+    + Split off bin:package libcaja-extension-doc from libcaja-extension-dev.
+      (Closes: #813684).
+  * debian/control:
+    + Add Breaks: field for recently introduced bin:package
+      libcaja-extension-doc. It breaks libcaja-extension-dev (<< 1.12.3-2~).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Feb 2016 13:45:17 +0100
+
+caja (1.12.3-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Filename font color now gets picked up from theme correctly for
+      all themes. (Closes: #770760).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 03 Feb 2016 19:21:06 +0100
+
+caja (1.12.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_fix-typo-in-binary.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Jan 2016 00:02:25 +0100
+
+caja (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev
+      (>= 1.12.0).
+    + Correct minor typo in package SYNOPSIS of bin:package
+      libcaja-extension1-dbg.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 1001_fix-typo-in-binary.patch. Fix systematic typo in binary
+      (reported by lintian).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Dec 2015 12:50:02 +0100
+
+caja (1.10.4-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Sep 2015 11:27:11 +0200
+
+caja (1.10.3-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Clean up build dependencies. Process with wrap-and-sort.
+    + Update gstreamer dependencies to 1.0 match upstream changes.
+    + Update caja with Breaks: libcaja-extension (<< 1.10.0).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 03 Sep 2015 07:47:13 +0200
+
+caja (1.10.3-1) unstable; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/caja-common.install:
+    + Add common files.
+  * debian/caja.install:
+    + Remove common files.
+  * debian/libcaja-extension-dev.install:
+    + Add usr/share/gtk-doc.
+  * debian/rules:
+    + Add --enable-gtk-doc.
+    + Remove dfsg suffix.
+  * debian/watch:
+    + Remove dfsg suffix.
+
+  [ John Paul Adrian Glaubitz ]
+  * Fix spelling in debian/control (allows to -> allows one to).
+  * Upload to unstable.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Mon, 10 Aug 2015 13:39:55 +0200
+
+caja (1.10.1-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Update dependencies for new release.
+    + Update descriptions so they are consistent with upstream.
+    + Remove superfluous gir1.2-* build-dependencies.
+  * debian/copyright:
+    + Update copyright file after new upstream release.
+  * debian/patches:
+    + Drop 0001_fix-desktop-icon-size.patch. Applied upstream.
+    + Drop 0002_dont-start-desktop-outside-of-MATE-sessions.patch.
+      Applied upstream.
+    + Drop 0003_fix-crash-in-places-sidebar.patch. Applied upstream.
+  * debian/rules:
+    + Remove --enable-unique because libunique is required now.
+    + Add --with-gtk=2.0.
+  * debian/caja-common.install
+    + Add /usr/share/appdata.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned D: mate-common (>= 1.10).
+    + Update Section (gir1.2-caja): introspection.
+  * debian/patches:
+    + Drop 0004_avoid-automounts-while-screen-is-locked.patch. Applied
+      upstream.
+  * debian/copyright:
+    + Mention data/*.xml.in.
+    + Drop block for src/glibcompat.h, not in upstream sources anymore.
+  * debian/rules:
+    + Create orig tarball in ../ rather than in $(CURDIR).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Jun 2015 09:10:14 +0200
+
+caja (1.8.2-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0004_avoid-automounts-while-screen-is-locked.patch. Don't
+      mount newly added USB flash drives / optical disks / etc. while
+      a session is locked by the screensaver. Delay the automounting
+      action until the session has been unlocked again. (Closes: #781608).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 11 May 2015 06:19:52 +0200
+
+caja (1.8.2-3) unstable; urgency=medium
+
+  * debian/control:
+    + Add to R (caja): gvfs-backends. (Closes: #776689).
+  * debian/patches:
+    + Add 0003_fix-crash-in-places-sidebar.patch. Fix crash caja crashing after
+      USB drive eject if any bookmarks are present. (Closes: #780731).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 23 Mar 2015 18:18:43 +0100
+
+caja (1.8.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_fix-desktop-icon-size.patch. Make adjusting the default
+      folder and desktop icon size predictable. (Closes: #775525).
+    + Add 0002_dont-start-desktop-outside-of-MATE-sessions.patch. Stop
+      launching a MATE desktop window when one opens Caja outside a MATE
+      desktop session. (Closes: #771587).
+  * debian/control:
+    + Add to B (bin:package caja). From this release on, caja relies on
+      mate-session-manager 1.8.1-7 or higher when running in a MATE session.
+      However, caja does not depend on mate-session-manager.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 21 Jan 2015 14:58:18 +0100
+
+caja (1.8.2-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * New upstream release. (Closes: #757479).
+  * debian/copyright:
+    + Really mention all upstream files.
+  + debian/control:
+    + Drop direct Pre-Ds on bin:package multiarch-support.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:Bump Standards: to 3.9.6. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Sep 2014 11:31:01 +0200
+
+caja (1.8.1-2) unstable; urgency=low
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+  * debian/control:
+    + Add [linux-any] in build-depends as needed to make package
+      build on non-Linux Debian variants. (Closes: #749490).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 13:22:08 +0200
+
+caja (1.8.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright:
+    + Fix typo (opinion -> option).
+  * debian/patches:
+    + Drop 0001_x-caja-desktop.patch, 1001_man-page-fixes.patch. Both applied
+      upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Apr 2014 07:24:34 +0200
+
+caja (1.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/copyright:
+    + Adapt to file changes in new upstream source tree.
+    + Point to git.mate-desktop.org in Source: field.
+  * debian/control:
+    + Add to B-D: libdconf-dev.
+    + Versioned B-D for libmate-desktop-dev (>= 1.7.1).
+  * debian/rules:
+    + Build package using autogen.sh.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+    + Enable parallel builds
+  * debian/patches:
+    + Add patch 1003_fix-missing-main-category-in-desktop-files.patch. Silence
+      a lintian warning that complains about a missing main category in some
+      desktop files.
+    + Drop 1001_add-keywords-to-desktop-files.patch. Applied upstream.
+    + Drop 1002_fix-caja-autorun-software-man-page.patch. Applied upstream.
+    + Drop 1003_fix-missing-main-category-in-desktop-files.patch. Applied
+      upstream.
+    + Pull in 0001_x-caja-desktop.patch from upstream. Fix multiply opened caja
+      instances during session startup.
+    + Add 1001_man-page-fixes.patch. Fix minor man page issues reported by
+      lintian.
+  * debian/caja.install:
+    + Omit /usr/share/gtk-doc/ from package. Not built anymore in 1.8.0.
+  * lintian:
+    + Drop not-needed-anymore overrides.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 05 Apr 2014 23:39:33 +0200
+
+caja (1.6.4-1) unstable; urgency=low
+
+  * Initial release. (Closes: #727061).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Feb 2014 09:16:26 +0100
