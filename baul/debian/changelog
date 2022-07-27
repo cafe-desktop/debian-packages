@@ -286,7 +286,7 @@ baul (1.16.6-1) unstable; urgency=medium
 
   * New upstream release. (Closes: #862155).
   * Issues solved between 1.16.2 and 1.16.5:
-    - Caja's background and emblems dialog works again. (Closes: #828158).
+    - Baul's background and emblems dialog works again. (Closes: #828158).
     - Add ability to get feedback from Orca when additional icons are
       selected/deselected. (Closes: #757851).
     - In icon and compact view, fix scrolling and renaming in large folders
@@ -591,7 +591,7 @@ baul (1.8.2-2) unstable; urgency=medium
     + Add 0001_fix-desktop-icon-size.patch. Make adjusting the default
       folder and desktop icon size predictable. (Closes: #775525).
     + Add 0002_dont-start-desktop-outside-of-MATE-sessions.patch. Stop
-      launching a MATE desktop window when one opens Caja outside a MATE
+      launching a MATE desktop window when one opens Baul outside a MATE
       desktop session. (Closes: #771587).
   * debian/control:
     + Add to B (bin:package baul). From this release on, baul relies on

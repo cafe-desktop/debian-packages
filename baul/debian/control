@@ -57,7 +57,7 @@ Breaks: baul-common (<< 1.20.0-2~),
         mate-session-manager (<< 1.8.1-7),
 Replaces: baul-common (<< 1.20.0-2~)
 Description: file manager for the MATE desktop
- Caja is the official file manager for the MATE desktop. It allows one
+ Baul is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
@@ -69,7 +69,7 @@ Depends: ${misc:Depends},
 Replaces: baul (<< 1.9.0),
 Breaks: baul (<< 1.9.0),
 Description: file manager for the MATE desktop (common files)
- Caja is the official file manager for the MATE desktop. It allows one
+ Baul is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
@@ -86,13 +86,13 @@ Depends: ${misc:Depends},
 Replaces: libbaul-extension (<< 1.7.0),
 Breaks: libbaul-extension (<< 1.7.0),
 Provides: libbaul-extension,
-Description: libraries for Caja components
- Caja is the official file manager for the MATE desktop. It allows one
+Description: libraries for Baul components
+ Baul is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
  .
- This package contains a few runtime libraries needed by Caja's
+ This package contains a few runtime libraries needed by Baul's
  extensions.
 
 Package: libbaul-extension-dev
@@ -106,28 +106,28 @@ Depends: gir1.2-baul-2.0 (= ${binary:Version}),
          ${shlibs:Depends},
 Breaks: gir1.2-baul (<< 1.18.4-1~),
 Replaces: gir1.2-baul (<< 1.18.4-1~),
-Description: libraries for Caja components (development files)
- Caja is the official file manager for the MATE desktop. It allows one
+Description: libraries for Baul components (development files)
+ Baul is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
  .
  This package contains the development files for the libraries needed
- by Caja's extensions.
+ by Baul's extensions.
 
 Package: libbaul-extension-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: libbaul-extension-dev (<< 1.12.3-2~),
-Description: libraries for Caja components (API documentation files)
- Caja is the official file manager for the MATE desktop. It allows one
+Description: libraries for Baul components (API documentation files)
+ Baul is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
  .
  This package contains the API documentation for the libraries needed
- by Caja's extensions.
+ by Baul's extensions.
 
 Package: gir1.2-baul-2.0
 Section: introspection
@@ -138,13 +138,13 @@ Depends: ${gir:Depends},
          ${shlibs:Depends},
 Breaks: gir1.2-baul (<< 1.18.5-2~),
 Replaces: gir1.2-baul (<< 1.18.5-2~),
-Description: GObject introspection data for Caja
- Caja is the official file manager for the MATE desktop. It allows one
+Description: GObject introspection data for Baul
+ Baul is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
  with them. It is also responsible for handling the icons on the MATE
  desktop. It works on local and remote filesystems.
  .
- This package contains introspection data for Caja.
+ This package contains introspection data for Baul.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
@@ -158,6 +158,6 @@ Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          gir1.2-baul-2.0 (= ${binary:Version}),
-Description: GObject introspection data for Caja (transitional package)
+Description: GObject introspection data for Baul (transitional package)
  This package is a transitional package to gir1.2-baul-2.0. The package
  can be safely removed.

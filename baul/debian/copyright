@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Caja
+Upstream-Name: Baul
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
 Source: https://git.mate-desktop.org/baul/
 
@@ -658,13 +658,13 @@ Files: baul.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright: 1999-2001, Eazel, Inc.
-           1999-2008, AÅ­tary Cajaa
+           1999-2008, AÅ­tary Baula
            1999-2009, The Nautilus authors
            2002-2005, Red Hat, Inc.
            2002-2004, Novell, Inc.
            2009, Free Software Foundation, Inc.
            2010, Rosetta Contributors and Canonical Ltd.
-           2011-2013, The Caja authors
+           2011-2013, The Baul authors
 License: GPL-2+ or LGPL-2+
 Comment:
  Assuming either license from COPYING or COPYING.LIB file.
