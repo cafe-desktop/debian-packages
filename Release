@@ -1,0 +1,86 @@
+Package: grapa
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 987
+Depends: bzip2 (>= 1.0.1), grapa-common (= 1.25.0-1), gzip (>= 1.3.2), p7zip-full, tar (>= 1.13.25), libc6 (>= 2.33), libcairo2 (>= 1.2.4), libcaja-extension1 (>= 1.18), libctk-3-0 (>= 3.25.2), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libjson-glib-1.0-0 (>= 1.5.2), libmagic1 (>= 5.12), libpango-1.0-0 (>= 1.14.0)
+Recommends: gvfs, unzip, xz-utils, zip
+Suggests: arj, binutils, cpio, lha, lzip, lzma, lzop, ncompress, rar, rpm2cpio, rzip, sharutils, unace, unalz, unar | unrar | p7zip-rar, zoo
+Breaks: grapa-common (<< 1.8.0)
+Filename: ./grapa_1.25.0-1_amd64.deb
+Size: 216744
+MD5sum: d2b39a348073f48f39b1bf181bd70d16
+SHA1: 5fde2b0f0d37e0f2dfd8f2acced37382aa6058ee
+SHA256: 9ffa1dfadceb0f8494c80c6a7f2c00dadcdc460aed2a602b52c6661e60ae09c4
+Section: x11
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: archive manager for CAFE
+ Grapa is an archive manager for the CAFE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ Grapa supports the following formats:
+  * Tar (.tar) archives, including those compressed with
+    gzip (.tar.gz, .tgz), bzip (.tar.bz, .tbz), bzip2 (.tar.bz2, .tbz2),
+    compress (.tar.Z, .taz), lzip (.tar.lz, .tlz), lzop (.tar.lzo, .tzo),
+    lzma (.tar.lzma) and xz (.tar.xz)
+  * Zip archives (.zip)
+  * Jar archives (.jar, .ear, .war)
+  * 7z archives (.7z)
+  * iso9660 CD images (.iso)
+  * Lha archives (.lzh)
+  * Single files compressed with gzip (.gz), bzip (.bz), bzip2 (.bz2),
+    compress (.Z), lzip (.lz), lzop (.lzo), lzma (.lzma) and xz (.xz)
+ .
+ Grapa doesn't perform archive operations by itself, but relies on
+ standard tools for this.
+
+Package: grapa-common
+Source: grapa
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 13364
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: grapa (<= 1.0.3-1), parchives (<< 1.1.5-1~)
+Replaces: parchives (<< 1.1.5-1~)
+Filename: ./grapa-common_1.25.0-1_all.deb
+Size: 874252
+MD5sum: 4e95f0874600d4cca10cc991cbac563b
+SHA1: d7da30647d7a3df8c3da4ddddb524bccd9f8703e
+SHA256: da7390f2f12ec4db15984ab56cd9a191a12c4e54e86ac24d701c00b91ea4d5d4
+Section: x11
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: archive manager for CAFE (common files)
+ Grapa is an archive manager for the CAFE environment. It allows you to:
+ .
+  * Create and modify archives.
+  * View the content of an archive.
+  * View a file contained in an archive.
+  * Extract files from the archive.
+ .
+ This package contains the architecture independent files.
+
+Package: grapa-dbgsym
+Source: grapa
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 1151
+Depends: grapa (= 1.25.0-1)
+Filename: ./grapa-dbgsym_1.25.0-1_amd64.deb
+Size: 941532
+MD5sum: 92e0a80b4ef00aecdefc62e591d72406
+SHA1: 09d33595dd5c7f3766b8d75bb42fc69c1983eb71
+SHA256: 86d860bd847e255a6ccfa47a323a01ec4a0b80227ac24fe0a4100250a0280668
+Section: debug
+Priority: optional
+Description: debug symbols for grapa
+Build-Ids: 0b78d31b090b093656ac4963c31ad6a911d8b899 4a34cc7e886b17c06ceaa6c56c2f5d0d12589d37 5c7c091d8cdcbc40269a3ca9b2e173009fa10623
+
