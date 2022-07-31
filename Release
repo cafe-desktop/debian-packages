@@ -1,3 +1,64 @@
+Package: cafe-calc
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu Debian CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 511
+Depends: cafe-calc-common (>= 1.25.0-1), cafe-calc-common (<< 1.25.0-1.1~), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.29), libctk-3-0 (>= 3.21.5), libglib2.0-0 (>= 2.39.91), libpango-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4)
+Filename: ./cafe-calc_1.25.0-1_amd64.deb
+Size: 136188
+MD5sum: fc602670b78f6b3a1a0381e508af4fde
+SHA1: 8ebbff6e75601d98887183fbea5a35e9572db016
+SHA256: 22570d81d60cdbb5c330d17a2048e254680601865dcae7dd4acd0811e3692e65
+Section: math
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: CAFE desktop calculator
+ cafe-calc is a powerful graphical calculator with financial, logical and
+ scientific modes. It uses a multiple precision package to do its arithmetic
+ to give a high degree of accuracy.
+
+Package: cafe-calc-common
+Source: cafe-calc
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu Debian CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 8017
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: cafe-calc (<< 1.17.0)
+Replaces: cafe-calc (<< 1.17.0)
+Filename: ./cafe-calc-common_1.25.0-1_all.deb
+Size: 536964
+MD5sum: 18abcfe312f9d0227981fbdd73c177cd
+SHA1: 9fec87d04967597b2699d1421b4b7d3494c753f6
+SHA256: 47147715be958d5eabd658ad8af6389786cbb0539958c4e8a09325ed38827435
+Section: math
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: CAFE desktop calculator (common files)
+ cafe-calc is a powerful graphical calculator with financial, logical and
+ scientific modes. It uses a multiple precision package to do its arithmetic
+ to give a high degree of accuracy.
+ .
+ This package contains the architecture independent files.
+
+Package: cafe-calc-dbgsym
+Source: cafe-calc
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu Debian CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 477
+Depends: cafe-calc (= 1.25.0-1)
+Filename: ./cafe-calc-dbgsym_1.25.0-1_amd64.deb
+Size: 410212
+MD5sum: 3031e131e910c79699eaa7c18fa9241f
+SHA1: 809b5d69a7d56174069c0df86e3a1dcd73386e0c
+SHA256: a7b21f592d1da694b53b5a6b1825a52e695a244680e6c7dd0330c20c9457c4b0
+Section: debug
+Priority: optional
+Description: debug symbols for cafe-calc
+Build-Ids: 64bf3c27f3bd8b10bd8d1893fbf2492ac645bf6e 6be4ed23e2ac3bfc7af8a8be617ddfd4fe879e0b
+
 Package: cafe-common
 Version: 1.25.0-1
 Architecture: all
@@ -18,6 +79,566 @@ Description: common scripts and macros to develop with CAFE
  cafe-common is an extension to autoconf, automake and libtool for the CAFE
  environment and CAFE using applications. Included are cafe-autogen.sh and
  several macros to help in CAFE source trees.
+
+Package: cafe-desktop
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 105
+Depends: hicolor-icon-theme, libcafe-desktop-2-17 (>= 1.10.0), cafe-desktop-common (= 1.25.0-1), libc6 (>= 2.4), libctk-3-0 (>= 3.0.0), libglib2.0-0 (>= 2.50.0)
+Recommends: cafe-user-guide
+Suggests: cafe-desktop-environment
+Breaks: cafe-desktop-gnome
+Replaces: cafe-desktop-gnome
+Filename: ./cafe-desktop_1.25.0-1_amd64.deb
+Size: 24744
+MD5sum: ccf747a890bc981f80543b87a3332bff
+SHA1: 59f88023d943682bcec2ae40129fedcf2a71976f
+SHA256: 153b6bdd6beeb53fb56d2c3e7dfb65a5e2d133ec2c5556f5eac62981dba925d9
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.cafe-desktop.org/
+Description: Library with common API for various CAFE modules
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
+ .
+ The libcafe-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ The cafe-about program helps with finding which version of CAFE is installed.
+ .
+ NOTE: This package does not install the complete CAFE desktop environment
+ for you. The full desktop environment can be installed via the metapackage
+ cafe-desktop-environment.
+
+Package: cafe-desktop-common
+Source: cafe-desktop
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 3115
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: cafe-desktop (<< 1.1.1-1)
+Replaces: cafe-desktop (<< 1.1.1-1)
+Filename: ./cafe-desktop-common_1.25.0-1_all.deb
+Size: 491344
+MD5sum: 11253e470d6b6cb675d6b7636bf4db94
+SHA1: 7a4c1369bb69566da836ef2283d7fa369ee2823e
+SHA256: 04b4af1740083212633304e271e9b0a291a362e1cda026a4544fa3e987a70036
+Section: x11
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: Library with common API for various CAFE modules (common files)
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
+ .
+ The libcafe-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the architecture-independent files.
+
+Package: cafe-desktop-dbgsym
+Source: cafe-desktop
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 42
+Depends: cafe-desktop (= 1.25.0-1)
+Filename: ./cafe-desktop-dbgsym_1.25.0-1_amd64.deb
+Size: 17092
+MD5sum: a3aaadc1855ef764385bd86308fc8755
+SHA1: 2a58b0d7282cc8b920586de36f8aae47a8e17633
+SHA256: ce12d48f1f7019e518aba2bffb305ec6fa2db69431f6a9fd3831e0209baad18e
+Section: debug
+Priority: optional
+Description: debug symbols for cafe-desktop
+Build-Ids: 1c3decec1f84835829ab59ed2d1bd3894886e00a 4b18de9860691ceb2de858f58f198ebad085633e
+
+Package: cafe-icon-theme
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 31157
+Depends: hicolor-icon-theme, ctk-update-icon-cache, librsvg2-common
+Filename: ./cafe-icon-theme_1.25.0-1_all.deb
+Size: 12523700
+MD5sum: cf4dce8694fcb0a3d1b218e73f03b312
+SHA1: ebc5269de855d541904e45d8998f1d88a628e361
+SHA256: 2af3fc13af3e57f324c3a940ad52a90b2189db79478a1825bd2f0c91ecdab0dd
+Section: x11
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: CAFE Desktop icon theme
+ This package contains the default icon theme used by the CAFE desktop.
+ The icons are used in the panel menu, in Caja and other
+ applications shipped with CAFE.
+ .
+ This icon theme provides icon artwork for representing the different
+ applications, files, directories, and devices found on the CAFE desktop.
+
+Package: cafe-menus
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 749
+Depends: gir1.2-cafemenu-2.0 (>= 1.25.0-1)
+Breaks: cafe-control-center (<< 1.13.0)
+Filename: ./cafe-menus_1.25.0-1_all.deb
+Size: 78440
+MD5sum: 8f4a97e7416f6d76ddf7b20fa651779e
+SHA1: 7b9af5a2803e8b2b0d61bb1a6e8b7840c8628e8f
+SHA256: 273b92ee14b8b630a0208328035fa71622144fdaafa1479c51319363f1103097
+Section: libs
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: implementation of the freedesktop menu specification for CAFE
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ Also contained here are the CAFE menu layout configuration files, .directory
+ files and assorted menu related utility programs.
+
+Package: cafe-terminal
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 412
+Depends: gsettings-desktop-schemas, cafe-desktop-common, cafe-terminal-common (= 1.25.0-1), libatk1.0-0 (>= 1.12.4), libbte-2.91-0 (>= 0.51.90), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libctk-3-0 (>= 3.22), libdconf1 (>= 0.14.0), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.53.1), libice6 (>= 1:1.0.0), libpango-1.0-0 (>= 1.14.0), libsm6, libx11-6
+Provides: x-terminal-emulator
+Filename: ./cafe-terminal_1.25.0-1_amd64.deb
+Size: 137988
+MD5sum: 3a5fe0e09291f0cd8fe50fd7f974a3fd
+SHA1: 6bc1a419b091e066e947217ea4f42cb40f3a4d8a
+SHA256: 27e2b885ef15cdecb82458d8a84dfc6dcaffc768632b699c859464faaab4c8f8
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.cafe-desktop.org
+Description: CAFE terminal emulator application
+ CAFE Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the CAFE environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ CAFE Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+
+Package: cafe-terminal-common
+Source: cafe-terminal
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 13954
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: cafe-terminal (<< 1.1.0-2)
+Replaces: cafe-terminal (<< 1.1.0-2)
+Filename: ./cafe-terminal-common_1.25.0-1_all.deb
+Size: 1115380
+MD5sum: 8a711799c6bfd9a02389cc8397339e5d
+SHA1: c3de03c0704c0bbbead5f0a90ec63915e945f610
+SHA256: 03eb5e682b07851b74a6786a02f196599d89990935b68347c862a09af0641f1f
+Section: x11
+Priority: optional
+Homepage: http://www.cafe-desktop.org
+Description: CAFE terminal emulator application (common files)
+ CAFE Terminal is a terminal emulation application that you can use to
+ perform the following actions:
+  - Access a UNIX shell in the CAFE environment.
+  - Run any application that is designed to run on VT102, VT220, and xterm
+ terminals.
+ .
+ CAFE Terminal features the ability to use multiple terminals in a single
+ window (tabs) and profiles support.
+ .
+ This package contains the architecture independent files.
+
+Package: cafe-terminal-dbgsym
+Source: cafe-terminal
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 436
+Depends: cafe-terminal (= 1.25.0-1)
+Filename: ./cafe-terminal-dbgsym_1.25.0-1_amd64.deb
+Size: 368204
+MD5sum: c20d11ef5df7314f6e30ba92ef2937a8
+SHA1: 56aa50a86db9e53f57052e0c255cd704a2f859be
+SHA256: ef5e49d0690d9fe355c275202c0192ea684982c5552fbffe6297beb4fbf8d8c1
+Section: debug
+Priority: optional
+Description: debug symbols for cafe-terminal
+Build-Ids: 55525d3bd063e503178f1ee6b983c0af72270693
+
+Package: croma
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 146
+Depends: libcroma-private2 (= 1.25.0-1), croma-common (= 1.25.0-1), cafe-desktop-common (>= 1.24), zenity, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libctk-3-0 (>= 3.9.10), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libpango-1.0-0 (>= 1.14.0), libx11-6
+Breaks: cafe-window-manager (<= 1.0.0-2)
+Provides: x-window-manager
+Filename: ./croma_1.25.0-1_amd64.deb
+Size: 31632
+MD5sum: a58748e6177637b38799ffdc8a0d295d
+SHA1: e6346d07493f212f897e8ace8bfa0cd9fa66eee6
+SHA256: 1e2a567de1fe85a55e23cc02eb436e0933c1c871c671575f149c6a0289756e6e
+Section: x11
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: lightweight CTK+ window manager for CAFE
+ Croma is a small window manager, using CTK+ to do everything. It is
+ developed mainly for the CAFE Desktop.
+ .
+ This package contains the croma window manager itself.
+
+Package: croma-common
+Source: croma
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 6113
+Depends: dconf-gsettings-backend | gsettings-backend
+Breaks: cafe-window-manager (<= 1.0.0-2)
+Filename: ./croma-common_1.25.0-1_all.deb
+Size: 745668
+MD5sum: f190d50e5bc8d9c3d4018368f14547d1
+SHA1: 5a1fa388ea6cfca967041123c4a00d6ba002f1de
+SHA256: dda6661d6f0e95bffbc3ede309d9b459125c5624e30252e1bc26839d0129dd6e
+Section: x11
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: lightweight CTK+ window manager for CAFE (common files)
+ Croma is a small window manager, using CTK+ to do everything. It is
+ developed mainly for the CAFE Desktop.
+ .
+ This package contains the architecture independent files.
+
+Package: croma-dbgsym
+Source: croma
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 124
+Depends: croma (= 1.25.0-1)
+Filename: ./croma-dbgsym_1.25.0-1_amd64.deb
+Size: 78200
+MD5sum: 516b4db351d8f4bf647acfbd40d492da
+SHA1: d217748797ce61759dba7379717d176ffa0f3558
+SHA256: 89b4bad167ee1f50243d8965f4f1847021a4d712a28074603f3d915803bc4ec8
+Section: debug
+Priority: optional
+Description: debug symbols for croma
+Build-Ids: 0d44e7ea214c75aed27d1aa86e084574f5268237 115a9ccf35382cc983fff18cd52dc7e7642da10d 3382929af7a98a53eb3ab91ff82cdf023c42a623 e8d0b37162737e15e6207c4542f24d8d8988f030
+
+Package: ctk-3-examples
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 14970
+Depends: dconf-gsettings-backend | gsettings-backend, libatk1.0-0 (>= 2.35.1), libc6 (>= 2.4), libcairo2 (>= 1.14.0), libctk-3-0 (= 3.25.2-1), libepoxy0 (>= 1.0), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0 (>= 2.67.3), libharfbuzz0b (>= 0.9.9), libpango-1.0-0 (>= 1.44.3), libpangocairo-1.0-0 (>= 1.41.0), libx11-6
+Filename: ./ctk-3-examples_3.25.2-1_amd64.deb
+Size: 1711332
+MD5sum: d6099dc4df61913153183b1de75583b2
+SHA1: ce5dd327a6f73fb0396c559d1c26814f51f933fa
+SHA256: ffce63fb03f3a801fc13301b5bb8503b5b52b364192d0443f27ea0035c71b05a
+Section: x11
+Priority: optional
+Homepage: https://www.ctk.org/
+Description: example files for CTK 3
+ CTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, CTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the example files and a demonstration program
+ for CTK3. It also contains the installed tests.
+
+Package: ctk-3-examples-dbgsym
+Source: ctk+3.0
+Version: 3.25.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1970
+Depends: ctk-3-examples (= 3.25.2-1)
+Filename: ./ctk-3-examples-dbgsym_3.25.2-1_amd64.deb
+Size: 1280456
+MD5sum: f725d2ff6cfe3ef9abafa0a2f6997a06
+SHA1: 9bdb3aa4a8df8fd7d58981081e657ef5fe213cbe
+SHA256: aac883528828143b48f70c40d177e796dc2aba09137a46182682edc822367d08
+Section: debug
+Priority: optional
+Description: debug symbols for ctk-3-examples
+Build-Ids: 00b1cf916197dbacd2e6a2f03081226e0ec1efd4 0571ad0e6bf5e0e0061109a2cee75a5944cf4758 08b52202cf36dcf55c4431666a93b4c60138fa30 0b65308a4155bf04418d381bf5579a9a7d108906 0ce7b5fd18a0eb4c73b0f6a06b01037d93997f3f 0e7ff893244e1b16829fcc72553217ef34a68c4b 1812306bfd1c0cfef9c4927ebdde9625a4feb75c 1aa14d248226324531d69a9bd4142eeec1437c85 1e81b55af23c1203221c3ed049e7858026072f6e 246e3a70655e02f69a95e7ea4dd050389b480e17 2e42c2769cced3f86b415c4efdf8e39997e6141a 33c6a7aa97fc3afd86eb6b74de77452477b5984e 36986a05e1f96cdd3356f8b2d3a32b38942d3a5a 3abed97826ddcd2b710c0719d533699ab170a175 3c3910ed8d3fef184e89576d9faea46e511751ed 4289a9725e3002340cb675021cca14676003f3aa 45585928b63fd1b96bc4ca1075bc9ca4190cf05f 47b84981f585e47f8d4f7f3fa70fce5494c03a00 49e4be49e750d08ecf8e157c78c62608da59f2b9 4ceea27473d6382ed4bf4710c12eed9b1abf09c3 506e225333d5090bcee72a29d4445e219c6961d0 50dfb7a7691a1f2d2d827ffc2b3fb5597a02b655 55148407977659f48549a35134ba6e6ad5b84164 576ebed252a48e51e238755d96424c24fd20c008 5de4ded42296d9dcbe340b76a5102e103be5aa8a 5f753cfc3075815e6a1420b7cf6a0db41ebf9c4a 63c4c30ce95a78308c4d8986bd7f002b41985d02 65afb1f904ede231197f504d78cc6ad6000966ea 6bc0930413335062123214db44f54e786f66ee0b 6e39422f6bfbc52f6bde2a2288badcb8cb445823 73549ff2ca39b47fea0e430516a75da700c89c1c 7545ecf122e2b799f25d7d927d9c82adb9182d9c 767d7844fb0c0892f5c6b85b62c59fb3ee706571 78a5b348db0dc9d64532647336daec4d07324b8a 80b00106b3feaaa774839ece3f8e1cd532f501eb 8163bbebee74f0369e3c4e1e6196a4db031b087b 828ccea712fe2a6553503ddea92eab0587476539 8875d41567f522841fa09bca9032b3b61d517595 89f646dc38cdd0382a723f0ef68e64db2f79c577 9220bb602c933aba161f6f260b641f66b2485382 927b081b29aa866bfa5229b8770b0a37ddf8f10b 92a3e72d40e4187515d8057a3ea9d0f4f21b4c56 92f0396629ffb32c01788cc2e25c72d683471b49 93f0da91c9f3e58979f088092c27921cff766d6b 98725ff2256a8af7dc4a3fd2a95f8c0a704c03d9 992d8a6263027845ce07a0ee5f608f0fe5efdb3d 9981eb4925d3085df5622a42e15b0bc1f92800b3 9be0b9d608db48b13e178c19f4ff91b778d22aac a210cc734ae2ec15ce495da5fb656f89326bb2f8 a82bc499a44cb548dd246a1b8266fba55339e859 aa0522ccfbb9844aeaabefe499e3a7ad3639a151 aa8e4fdec5121bd6676d9545ca42cfb8013a0ffe abbd4fc5c2de5207daddcc223d2c0f7aec8bd6d6 b37e2729913cf19d48f370a319f262ea1e0ad4a5 b99f7f9f26f560a38f534cffdd04fa84954b814e bd5999f8bf70570df5fd172456ec51b2bd430de6 be2529b01d99ee4daf02b75e8e4fd1d964eaf6e5 bf1239f202cf34a725c7ed551ab6334570c15ca5 c07d6822de78bda91a9e674313157d361a3ef0b2 cd5840dfdcc8a2a6d6ae29324f9231a8269cb0f1 cdb56b84245b869dc6506d6188f903759be45ec1 d62400963fc622a01a96772f3ab768d005a23494 d6898cf7c3f9da326310361c61126ddce423dd93 de9fff11be7d7a8b709cbf764c89759c1311860d e05e1cafb5dd1cd979daea9a24b2f33ae98b9300 e1bec299fa0b45e8a1c9debbf99cab86b56dde32 e7494a9bfbdb5fe0b511e63b8ac8d87ab5a1f12c eb6af60252044291c7ac3e627ab6730eb002b453 ebdd2f608f713d7321bbe37573b0e1a22258baba f5b5537126cbdcd43cf7d28ecc6c0558bea98cc9 f7c378319ab68396555fbe554852bd1955e8e379 ffe1fb355508dcfae30c78967f41b5a389c9d8cc
+
+Package: ctk-icon-naming-utils
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 59
+Depends: perl:any, libxml-simple-perl
+Filename: ./ctk-icon-naming-utils_1.25.0-1_all.deb
+Size: 9676
+MD5sum: a75c2f283d7d0d6e1de461b5c540dd33
+SHA1: 4eb0e7fce5d28aa500b8c8653bca23a3ce56cc6f
+SHA256: 9438e63f9fa8d06a54efebee37460b1709e467f481ecf77e2bb5dcb4c2e3837c
+Section: x11
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://tango.freedesktop.org/Tango_Icon_Library
+Description: script for maintaining backwards compatibility of Tango Project
+ Tango is a project to create a new cross-desktop and cross-platform icon
+ theme, using a standard style guide, and the new Icon Naming Specification.
+ This package contains the perl script for maintaining backwards
+ compatibility.
+
+Package: ctk-update-icon-cache
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 94
+Depends: libc6 (>= 2.33), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0 (>= 2.57.2)
+Breaks: libctk-3-bin (<< 3.20.6-1), libctk2.0-bin (<< 2.24.30-2)
+Replaces: libctk-3-bin (<< 3.20.6-1), libctk2.0-bin (<< 2.24.30-2)
+Filename: ./ctk-update-icon-cache_3.25.2-1_amd64.deb
+Size: 26400
+MD5sum: 92dfa7a0fe80dd28b6ae482d9444c8b9
+SHA1: 1c6cbb3d7434b4187aaea4083873c68477890b84
+SHA256: 0ee8bd15549597b3846318ff295c484602923ae09852a9ade9fbf220aa685be6
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.ctk.org/
+Description: icon theme caching utility
+ ctk-update-icon-cache creates mmap()able cache files for icon themes.
+ .
+ CTK can use the cache files created by ctk-update-icon-cache to avoid a lot
+ of system call and disk seek overhead when the application starts. Since the
+ format of the cache files allows them to be mmap()ed shared between multiple
+ applications, the overall memory consumption is reduced as well.
+
+Package: ctk-update-icon-cache-dbgsym
+Source: ctk+3.0
+Version: 3.25.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 53
+Depends: ctk-update-icon-cache (= 3.25.2-1)
+Filename: ./ctk-update-icon-cache-dbgsym_3.25.2-1_amd64.deb
+Size: 36748
+MD5sum: 23b273a83864415487ff2564550eb73a
+SHA1: f14c0cf7e4b7acb5c524fa08dbc0973a5dcd6830
+SHA256: e225e2ec375b994e8f099ea460c4d7b8fc370014649bc8428273d181f745a269
+Section: debug
+Priority: optional
+Description: debug symbols for ctk-update-icon-cache
+Build-Ids: e6522d6af742b3076c020a596d5fd480515060a1
+
+Package: gir1.2-bte-2.91
+Source: bte2.91
+Version: 0.64.0-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 42
+Depends: gir1.2-ctk-3.0 (>= 3.24.22), gir1.2-pango-1.0 (>= 1.22.0), libbte-2.91-0 (>= 0.61.91)
+Filename: ./gir1.2-bte-2.91_0.64.0-1_amd64.deb
+Size: 9904
+MD5sum: 1b95e7312ea3bee922a55657f02e9c6c
+SHA1: c6564978a8080cf38c438cd7f6121d49835690dd
+SHA256: 76f32c782d8d03ebbd0dc571cacb8d54846ecc78a27f3e6011788861180ad995
+Section: introspection
+Priority: optional
+Multi-Arch: same
+Homepage: https://wiki.gnome.org/Apps/Terminal/BTE
+Description: GObject introspection data for the BTE library
+ This package contains introspection data for BTE, a terminal emulator
+ widget for CTK+.
+ .
+ It can be used by interpreters understanding the GIRepository format to
+ write programs using the BTE widget for CTK+ 3.0.
+
+Package: gir1.2-cafe-desktop
+Source: cafe-desktop
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 18
+Depends: gir1.2-cafedesktop-2.0 (= 1.25.0-1)
+Filename: ./gir1.2-cafe-desktop_1.25.0-1_amd64.deb
+Size: 4540
+MD5sum: ce4f522598e56f4313ccead7b4b7a699
+SHA1: 820756b2084a616310739847349dac47cdf175f9
+SHA256: be729ef1d782ac17ad81aaaa281b8327eb0b48015789f3abfc13edcf91f2faab
+Section: oldlibs
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: GObject introspection data for libcafe-desktop (transitional package)
+ This package is a transitional package to gir1.2-cafedesktop-2.0. The package
+ can be safely removed.
+
+Package: gir1.2-cafe-menu
+Source: cafe-menus
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 25
+Depends: gir1.2-cafemenu-2.0 (= 1.25.0-1)
+Filename: ./gir1.2-cafe-menu_1.25.0-1_amd64.deb
+Size: 6940
+MD5sum: 79d9e0fc65c5c42496d9fe1a3f2417dc
+SHA1: 681fb6f00f3191b8734460d22c31e191ecb1001a
+SHA256: 18395648bee6d65ed730356c6f95aacac258ae303e817b738778101927f497fa
+Section: oldlibs
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: GObject introspection data for libcafemenu (transitional package)
+ This package is a transitional package to gir1.2-cafemenu-2.0. The package
+ can be safely removed.
+
+Package: gir1.2-cafedesktop-2.0
+Source: cafe-desktop
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 56
+Depends: libcafe-desktop-2-17 (= 1.25.0-1), gir1.2-ctk-3.0 (>= 3.22.0), gir1.2-glib-2.0
+Breaks: gir1.2-cafe-desktop (<< 1.18.0-2~)
+Replaces: gir1.2-cafe-desktop (<< 1.18.0-2~)
+Filename: ./gir1.2-cafedesktop-2.0_1.25.0-1_amd64.deb
+Size: 13840
+MD5sum: 5519ab61f2ab810028b761e159b210e9
+SHA1: 3153fb2d045f2d7c95c98c8c2640968ccc41ad82
+SHA256: e6d848a1bb0d04e6706728d1672b526d8456bf8c25f06a17d2aa7a91ff69d2e0
+Section: introspection
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: GObject introspection data for the libcafe-desktop library
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
+ .
+ The libcafe-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains introspection data for the library.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: gir1.2-cafekbd
+Source: libcafekbd
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 9
+Depends: gir1.2-cafekbd-1.0 (= 1.25.0-1)
+Filename: ./gir1.2-cafekbd_1.25.0-1_amd64.deb
+Size: 1868
+MD5sum: cd82cdd57024f376736f3ce281b147af
+SHA1: e905457536edbea0dd97cc83b72d2e3e2f356fb7
+SHA256: 5d1db56cd52791b09a8012bd84596e43873d3968141fbc80c34ba6dce6c76575
+Section: oldlibs
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: GObject introspection data for libcafekbd (transitional package)
+ This package is a transitional package to gir1.2-cafekbd-1.0. The package
+ can be safely removed.
+
+Package: gir1.2-cafekbd-1.0
+Source: libcafekbd
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 25
+Depends: gir1.2-ctk-3.0, gir1.2-freedesktop, gir1.2-glib-2.0, gir1.2-xkl-1.0, libcafekbd4 (>= 1.6.1)
+Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
+Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
+Filename: ./gir1.2-cafekbd-1.0_1.25.0-1_amd64.deb
+Size: 5884
+MD5sum: d2634847487a73019a5676a7842542fe
+SHA1: 423ed7546c05beecf629ca1049c6e7cbdd264ad4
+SHA256: 0a53a1c63fad6dffa51a0d2efe0a37403a60d92578e38b5f181f0b2d8e18aad9
+Section: introspection
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: GObject introspection data for libcafekbd and libcafekbdui
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
+ .
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
+ .
+ This package contains introspection data for the libcafekbd and the
+ libcafekbdui libraries.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: gir1.2-cafemenu-2.0
+Source: cafe-menus
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 34
+Depends: gir1.2-glib-2.0, libcafe-menu2 (>= 1.22.0)
+Breaks: gir1.2-cafe-menu (<< 1.18.1-2~)
+Replaces: gir1.2-cafe-menu (<< 1.18.1-2~)
+Filename: ./gir1.2-cafemenu-2.0_1.25.0-1_amd64.deb
+Size: 8860
+MD5sum: e9da2e120eb5cfa772cd740421fafedd
+SHA1: 708e3beedf96bbf0defcb5e89d6ec81e3cf8e297
+SHA256: 96735dfb493bbbf70cae2634cb0fff3ab67a7fff825b85a49c79dde59db9bd86
+Section: introspection
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: GObject introspection data for the CAFE menu specification
+ This package contains introspection data for CAFE menu specification,
+ an implementation of the draft "Desktop Menu Specification" from
+ freedesktop.org.
+ .
+ It can be used by packages using the GIRepository format to generate dynamic
+ bindings.
+
+Package: gir1.2-ctk-3.0
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 950
+Depends: gir1.2-atk-1.0 (>= 2.35.1), gir1.2-freedesktop (>= 1.39.0), gir1.2-gdkpixbuf-2.0 (>= 2.40.0) | libgdk-pixbuf2.0-dev (>= 2.40.0), gir1.2-glib-2.0 (>= 1.39.0), gir1.2-pango-1.0 (>= 1.41.0), libctk-3-0 (>= 3.25.2), libctk-3-common
+Breaks: python-gi (<< 3.18), python3-gi (<< 3.18)
+Provides: gir1.2-cdk-3.0 (= 3.25.2-1), gir1.2-cdkx11-3.0 (= 3.25.2-1)
+Filename: ./gir1.2-ctk-3.0_3.25.2-1_amd64.deb
+Size: 200972
+MD5sum: 28d8fa278eba60d076b9627ffcccbfff
+SHA1: 54135fceaca8a82db39207e1fbd0b47a8af06566
+SHA256: cd7307d592b1c4f112315fb5ab23f4f73d72920a500422e4ebfc785592ff1454
+Section: introspection
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.ctk.org/
+Description: CTK graphical user interface library -- gir bindings
+ CTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, CTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.
 
 Package: grapa
 Version: 1.25.0-1
@@ -104,4 +725,849 @@ Section: debug
 Priority: optional
 Description: debug symbols for grapa
 Build-Ids: 0b78d31b090b093656ac4963c31ad6a911d8b899 4a34cc7e886b17c06ceaa6c56c2f5d0d12589d37 5c7c091d8cdcbc40269a3ca9b2e173009fa10623
+
+Package: libbte-2.91-0
+Source: bte2.91
+Version: 0.64.0-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 554
+Depends: libbte-2.91-common (= 0.64.0-1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.32), libcairo2 (>= 1.10.0), libctk-3-0 (>= 3.24.22), libfribidi0 (>= 1.0.0), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgnutls30 (>= 3.7.2), libicu67 (>= 67.1-1~), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpcre2-8-0 (>= 10.22), libstdc++6 (>= 5.2), libsystemd0 (>= 220), zlib1g (>= 1:1.2.0)
+Filename: ./libbte-2.91-0_0.64.0-1_amd64.deb
+Size: 190928
+MD5sum: 9754100e6c8179f71d6c75b2e9ce0fb7
+SHA1: 66b025c0708e42c15cc26475ec09ac59d55e6873
+SHA256: 138387fcc7ed0308869b73751ff7d2a5017f5d588063c2627406f2f9d1072b67
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://wiki.gnome.org/Apps/Terminal/BTE
+Description: Terminal emulator widget for CTK+ 3.0 - runtime files
+ The BTE library provides a terminal emulator widget BteTerminal for
+ applications using the CTK+ toolkit. It also provides the BtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains the runtime library, needed by programs using the
+ BTE widget with CTK+ 3.0.
+
+Package: libbte-2.91-0-dbgsym
+Source: bte2.91
+Version: 0.64.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 1802
+Depends: libbte-2.91-0 (= 0.64.0-1)
+Filename: ./libbte-2.91-0-dbgsym_0.64.0-1_amd64.deb
+Size: 1695956
+MD5sum: 5463a6cfef95e9b195b57d980065ae8b
+SHA1: 696e617cc32a46e7ec284a5e616abb641d5dabf2
+SHA256: 83479612ff37ffa20680a6328fecf24482a237a4db416f0eb698c187337980bd
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libbte-2.91-0
+Build-Ids: f0e22bd9d76fd2a5f6cf1eba9c976307e66e0451
+
+Package: libbte-2.91-common
+Source: bte2.91
+Version: 0.64.0-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 459
+Depends: libc6 (>= 2.3.4)
+Filename: ./libbte-2.91-common_0.64.0-1_amd64.deb
+Size: 46440
+MD5sum: 9013631e79fe2d268fbecc09ff41a464
+SHA1: da9b71e17efc5917c0c04b1d1a936c7671dad090
+SHA256: 13d4343bc50a108643590458a277b3a82d695d79e39f9783a4f3cbd6305cb423
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://wiki.gnome.org/Apps/Terminal/BTE
+Description: Terminal emulator widget for CTK+ 3.0 - common files
+ The BTE library provides a terminal emulator widget BteTerminal for
+ applications using the CTK+ toolkit. It also provides the BtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains internationalization files for the BTE library
+ and common files for the CTK+ 3.x version.
+
+Package: libbte-2.91-common-dbgsym
+Source: bte2.91
+Version: 0.64.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 20
+Depends: libbte-2.91-common (= 0.64.0-1)
+Filename: ./libbte-2.91-common-dbgsym_0.64.0-1_amd64.deb
+Size: 6608
+MD5sum: 1a3941fe9a07ad5ebc82543c8b9e2e95
+SHA1: ef7c4b27568b8a2d7c6d749ee55ee8777c72150b
+SHA256: 9a02de5345adeba5ed52f872724b64c96f679620e86b01476258f2630c9ef50b
+Section: debug
+Priority: optional
+Description: debug symbols for libbte-2.91-common
+Build-Ids: c6545ff0088385f2dca4561938fe76cf4b298a41
+
+Package: libbte-2.91-dev
+Source: bte2.91
+Version: 0.64.0-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 389
+Depends: gir1.2-bte-2.91 (= 0.64.0-1), libglib2.0-dev (>= 2.40.0), libgnutls28-dev (>= 3.2.7), libctk-3-dev (>= 3.12.0), libpango1.0-dev (>= 1.22.0), libpcre2-dev (>= 10.21), libbte-2.91-0 (= 0.64.0-1), libbte-2.91-common, zlib1g-dev
+Recommends: libbte-2.91-doc
+Conflicts: libbte-2.90-dev
+Filename: ./libbte-2.91-dev_0.64.0-1_amd64.deb
+Size: 34664
+MD5sum: 1b48163b23e5f09247abf79dad7b40b5
+SHA1: 448837882dacdce60dbbf42e76e657bd9fa811a9
+SHA256: afcd3da4aab474eb4734f186fb38c91124a57fad5ada4ef62dc4821da6bbcc07
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://wiki.gnome.org/Apps/Terminal/BTE
+Description: Terminal emulator widget for CTK+ 3.0 - development files
+ The BTE library provides a terminal emulator widget BteTerminal for
+ applications using the CTK+ toolkit. It also provides the BtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains development files for the BTE library and its
+ Python bindings. It is needed to develop and build programs using the
+ BTE widget with CTK+ 3.0.
+
+Package: libbte-2.91-doc
+Source: bte2.91
+Version: 0.64.0-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 655
+Filename: ./libbte-2.91-doc_0.64.0-1_all.deb
+Size: 44384
+MD5sum: dff80998cc842aca52c75d9c44881dc3
+SHA1: a24bfb911747a10802b108f2c54d45ac095cefba
+SHA256: 245f3d7acdd97d9779fd241a99c7664755f391c01d4ef888b849f82b3625fca3
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://wiki.gnome.org/Apps/Terminal/BTE
+Description: Terminal emulator widget for CTK+ 3.0 - documentation
+ The BTE library provides a terminal emulator widget BteTerminal for
+ applications using the CTK+ toolkit. It also provides the BtePTY object
+ containing functions for starting a new process on a new
+ pseudo-terminal and for manipulating pseudo-terminals.
+ .
+ This package contains documentation files for the BTE library for CTK+
+ 3.x.
+
+Package: libcafe-desktop-2-17
+Source: cafe-desktop
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 316
+Depends: iso-codes, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.33), libcairo2 (>= 1.10.0), libctk-3-0 (>= 3.22.0), libdconf1 (>= 0.14.0), libgdk-pixbuf-2.0-0 (>= 2.36.5), libglib2.0-0 (>= 2.50.0), libpango-1.0-0 (>= 1.14.0), libstartup-notification0 (>= 0.4), libx11-6, libxrandr2 (>= 2:1.2.99.3)
+Breaks: libcafedesktop (<< 1.6.1)
+Replaces: libcafedesktop (<< 1.6.1)
+Provides: libcafedesktop
+Filename: ./libcafe-desktop-2-17_1.25.0-1_amd64.deb
+Size: 101888
+MD5sum: ec9aaee72a8a58869a32caeb6090a312
+SHA1: b26288b43042e576602ac4b1d02b3662e96a032e
+SHA256: 53cf6c7f85587bea614c2e8a61e02c5b2edc0ee928c1ca4c065cc0abec2bb919
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: Library with common API for various CAFE modules (library)
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
+ .
+ The libcafe-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ The package contains the actual cafe-desktop library.
+
+Package: libcafe-desktop-2-17-dbgsym
+Source: cafe-desktop
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 394
+Depends: libcafe-desktop-2-17 (= 1.25.0-1)
+Filename: ./libcafe-desktop-2-17-dbgsym_1.25.0-1_amd64.deb
+Size: 342884
+MD5sum: 1077f0f0469b89b0c934d5e6f2aaa15b
+SHA1: d45f1fb9809e38adb07991c20f32df423c8f998b
+SHA256: 264ffe5e3a65bb5023c36471d1316cb711a78b82e38d1c4fe753abab08c5005b
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcafe-desktop-2-17
+Build-Ids: 5f61ffc7411e389dfc48b1fec5bc5d081e575d20
+
+Package: libcafe-desktop-dev
+Source: cafe-desktop
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 365
+Depends: libdconf-dev, libgdk-pixbuf2.0-dev, libctk-3-dev, libcafe-desktop-2-17 (= 1.25.0-1), libstartup-notification0-dev, gir1.2-cafedesktop-2.0 (= 1.25.0-1)
+Breaks: gir1.2-cafe-desktop (<< 1.18.0-2~), libcafedesktop-dev
+Replaces: gir1.2-cafe-desktop (<< 1.18.0-2~), libcafedesktop-dev
+Filename: ./libcafe-desktop-dev_1.25.0-1_amd64.deb
+Size: 33468
+MD5sum: 8497546a5df73207cdb375686e34cbe7
+SHA1: f1511d1b4bfa8fd16c7d8900d3b6f799fa92dcd0
+SHA256: 729941a5050de93766bb032838aa5fdee9964b29d1ea396d21acd274706708c4
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: Library with common API for various CAFE modules (development files)
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
+ .
+ The libcafe-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the cafe-desktop development files.
+
+Package: libcafe-desktop-doc
+Source: cafe-desktop
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 348
+Breaks: libcafedesktop-doc
+Replaces: libcafedesktop-doc
+Filename: ./libcafe-desktop-doc_1.25.0-1_all.deb
+Size: 30248
+MD5sum: 039b004019940ee2706b46a8a65993f3
+SHA1: 9fbb048b8de70ac03366f8b22863e47593da47b9
+SHA256: 24df0310a57d3f89031f1afe64f3b697ceb80b14421ee57d5959d3a5ea3b2064
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.cafe-desktop.org/
+Description: Library with common API for various CAFE modules (documentation files)
+ The CAFE component cafe-desktop contains the libcafe-desktop library, the
+ cafe-about program, as well as some desktop-wide documents.
+ .
+ The libcafe-desktop library provides an API shared by several applications
+ on the desktop, but that cannot live in the platform for various
+ reasons.
+ .
+ This package contains the documentation files.
+
+Package: libcafe-menu-dev
+Source: cafe-menus
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 86
+Depends: libglib2.0-dev, libcafe-menu2 (= 1.25.0-1), gir1.2-cafemenu-2.0 (= 1.25.0-1)
+Breaks: gir1.2-cafe-menu (<< 1.18.1-2~), libcafemenu-dev
+Replaces: gir1.2-cafe-menu (<< 1.18.1-2~), libcafemenu-dev
+Filename: ./libcafe-menu-dev_1.25.0-1_amd64.deb
+Size: 12460
+MD5sum: d6809ad09e44a68e79426d2780486346
+SHA1: c4c2c7ed3b32745e4514ddab90fe963d770dfa2e
+SHA256: e8d0674c7652c5624e2b02e52952d6331643bb4c3a2f401afd10645cb625f091
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: implementation of the freedesktop menu specs for CAFE (development files)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the development files.
+
+Package: libcafe-menu2
+Source: cafe-menus
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 135
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3)
+Breaks: cafe-menus (<= 1.0.2-1), cafe-panel (<< 1.22.0), cafe-screensaver (<< 1.22.0), libcafe-slab0 (<< 1.22.0), libcafemenu, python-cafe-menu (<< 1.22.0)
+Replaces: cafe-menus (<= 1.0.2-1), libcafemenu, python-cafe-menu (<< 1.22.0)
+Filename: ./libcafe-menu2_1.25.0-1_amd64.deb
+Size: 41576
+MD5sum: 8194965e81f5e3a43a03f9dfef71a849
+SHA1: 6e3fb70f66d0812036f971b299fdc9d8350adbaa
+SHA256: 44500fe0d2e7e114c6878d46b3d18891dce5d64b10f1e2a79f046ea8b481a0bf
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: implementation of the freedesktop menu specification for CAFE (library)
+ The package contains an implementation of the draft
+ "Desktop Menu Specification" from freedesktop.org:
+ .
+ http://www.freedesktop.org/Standards/menu-spec
+ .
+ This package contains the actual library files.
+
+Package: libcafe-menu2-dbgsym
+Source: cafe-menus
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 155
+Depends: libcafe-menu2 (= 1.25.0-1)
+Filename: ./libcafe-menu2-dbgsym_1.25.0-1_amd64.deb
+Size: 127716
+MD5sum: 63f1f6f3765dff6f2399a49299879b16
+SHA1: 63d73b73e79278145d9fe4074e7df9833047320c
+SHA256: e9fc2854ccbcccb95a85d4bcae1b45b5a59e6b5d1c4772a815bdcbfbd22afebe
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcafe-menu2
+Build-Ids: 894c87e7f8473420104ca47b9c5745a413c9d017
+
+Package: libcafekbd-common
+Source: libcafekbd
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 863
+Depends: dconf-gsettings-backend | gsettings-backend
+Replaces: libcafekbd4 (<< 1.6.1-1)
+Filename: ./libcafekbd-common_1.25.0-1_all.deb
+Size: 85944
+MD5sum: 50b228225e0c47d21e77e58b27935636
+SHA1: 6870e0fe436b97eee47258dd1f75a3ec45f65867
+SHA256: 1cac8b004e5ee549f236126d09d9fde8954baba71073d20b9016fe33418f6b5b
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.cafe-desktop.org/
+Description: CAFE library to manage keyboard configuration (common files)
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
+ .
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
+ .
+ This package contains the architecture-independent files.
+
+Package: libcafekbd-dev
+Source: libcafekbd
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 117
+Depends: gir1.2-cafekbd-1.0 (= 1.25.0-1), libglib2.0-dev, libctk-3-dev, libcafekbd4 (= 1.25.0-1), libx11-dev, libxklavier-dev
+Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
+Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
+Filename: ./libcafekbd-dev_1.25.0-1_amd64.deb
+Size: 11196
+MD5sum: 48366ff4a545a398f649d3d9e1de19e0
+SHA1: 2bd28704b930c7cb9cb8eb643a9a31ec3cb24358
+SHA256: 7883ffc7df9527b72f7be265c94cfb544a75ed467fe1b27ba6c891e21bee12ce
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: CAFE library to manage keyboard configuration (development files)
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
+ .
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
+ .
+ This package contains the development files.
+
+Package: libcafekbd4
+Source: libcafekbd
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 146
+Depends: iso-codes, libcafekbd-common (= 1.25.0-1), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libctk-3-0 (>= 3.19.12), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.22.0), libx11-6, libxklavier16 (>= 5.0)
+Conflicts: libcafekbd
+Breaks: libcafekbd
+Replaces: libcafekbd
+Provides: libcafekbd
+Filename: ./libcafekbd4_1.25.0-1_amd64.deb
+Size: 40040
+MD5sum: d82a1fb5b99e03a1514c5a5d7bd91f97
+SHA1: 8c34d2358b9c932f6f081b27c1f621f02d262c30
+SHA256: 3544890bd72235a4c77f65a5407fcdf69949186bb269cb5632aabe4a29850f96
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: CAFE library to manage keyboard configuration
+ libcafekbd offers an API to manage the keyboard in CAFE applications.
+ .
+ libcafekbdui offers an API to display a graphical user interface for
+ libcafekbd operations.
+ .
+ This package contains the shared libraries.
+
+Package: libcafekbd4-dbgsym
+Source: libcafekbd
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 170
+Depends: libcafekbd4 (= 1.25.0-1)
+Filename: ./libcafekbd4-dbgsym_1.25.0-1_amd64.deb
+Size: 130048
+MD5sum: 797feca81318eba760cde42d788cfcbe
+SHA1: 039369c2b1d40f69a8b29812f70feac02b92636b
+SHA256: cd8feb9deb4a6e96ee7699bf239ee79dc55a80848e8ba4aaeff5e75cabcdbeb4
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcafekbd4
+Build-Ids: 2343013b4a8a807997e8ed1f012b19266484a801 813de349b44b5585e9e1ae0807a6d7f2a3b2adda
+
+Package: libcafemixer-common
+Source: libcafemixer
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 637
+Filename: ./libcafemixer-common_1.25.0-1_all.deb
+Size: 57224
+MD5sum: 778ae589cd6f54bd3e4403c350799703
+SHA1: 5bdd00246e29aba0338735167e781ec0270b45f0
+SHA256: 38cf3c93060e8b1cd35056965682c9fc3a3d09f195b84945914d10240ab6aefd
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.cafe-desktop.org/
+Description: Mixer library for CAFE Desktop (common files)
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the architecture-independent files.
+
+Package: libcafemixer-dev
+Source: libcafemixer
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 113
+Depends: libglib2.0-dev, libcafemixer0 (= 1.25.0-1)
+Filename: ./libcafemixer-dev_1.25.0-1_amd64.deb
+Size: 13624
+MD5sum: bb6c80ad3abc33bdd45f76b59b21423f
+SHA1: bebf137e4cb366d91937965199e44fdee7625d24
+SHA256: ac7aacd094442d7e519db89751ede0c846c10bf2e7bf4e4dcb0da02f83f784cd
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: Mixer library for CAFE Desktop (development files)
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the development files.
+
+Package: libcafemixer-doc
+Source: libcafemixer
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 497
+Filename: ./libcafemixer-doc_1.25.0-1_all.deb
+Size: 32464
+MD5sum: 4ea7426850c3294f43b5037fd78f71c5
+SHA1: 4627acf262961aeb90a72ecdf9f9c6572cae6149
+SHA256: 4cc73ba6f0506d18cd05806a0876e7fbdd20fe5447dd3e2649537bfdf5c5091c
+Section: doc
+Priority: optional
+Homepage: http://www.cafe-desktop.org/
+Description: Mixer library for CAFE Desktop (documentation files)
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the documentation files.
+
+Package: libcafemixer0
+Source: libcafemixer
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 392
+Depends: iso-codes, libcafemixer-common (= 1.25.0-1), libasound2 (>= 1.0.17), libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3), libpulse-mainloop-glib0 (>= 0.99.1), libpulse0 (>= 0.99.1)
+Filename: ./libcafemixer0_1.25.0-1_amd64.deb
+Size: 86896
+MD5sum: 91cdcd37a121ea8b4da4e42533ba436f
+SHA1: df9c21589fa2e0ff7b37f8bbb50fcd76da61771b
+SHA256: 9c6705243d72f4dcb2a4bd65bfe4610709b8d17c7f88591a28093f073c75feae
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: Mixer library for CAFE Desktop
+ Mixer library for CAFE Desktop. It provides an abstract API allowing
+ access to mixer functionality available in the PulseAudio, ALSA and OSS
+ sound systems.
+ .
+ This package contains the shared libraries.
+
+Package: libcafemixer0-dbgsym
+Source: libcafemixer
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 375
+Depends: libcafemixer0 (= 1.25.0-1)
+Filename: ./libcafemixer0-dbgsym_1.25.0-1_amd64.deb
+Size: 283344
+MD5sum: 0ff1642218a9fb45884823a9f9fbffbe
+SHA1: 433750564bdd006a984f99421e197f416aea9b8c
+SHA256: ffa07748f5aa23d41c05f80f1a2b56c4fed0a283e77ab1f15c18775d73900c84
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcafemixer0
+Build-Ids: 09b812d94baa34a27b88b0ae2856d2d1c743f261 271825f5c2cc85b75e16ff78a5f344d07e25f22c 5f6863665683d0ec6fa783308684cce0c5d9e66e c88b6d92109f5d92db74295a7c58b26daeb03b4a
+
+Package: libcail-3-0
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 93
+Depends: at-spi2-core, libatk1.0-0 (>= 2.35.1), libc6 (>= 2.4), libctk-3-0 (= 3.25.2-1), libglib2.0-0 (>= 2.57.2), libpango-1.0-0 (>= 1.41.0)
+Filename: ./libcail-3-0_3.25.2-1_amd64.deb
+Size: 23320
+MD5sum: 24d1cbe0a485e2571180d7e0b6f26401
+SHA1: 807e7af5980334f2489bf5e12bc46950e59d6729
+SHA256: de29017748974ae10966c699f6d364b966206fbac212dea0b0fab9abfc75e3c1
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.ctk.org/
+Description: GNOME Accessibility Implementation Library -- shared libraries
+ Cail implements ATK interfaces for CTK widgets which are dynamically
+ loadable at runtime by a CTK application. Once loaded, those parts of
+ an application that use standard CTK widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the shared library.
+
+Package: libcail-3-0-dbgsym
+Source: ctk+3.0
+Version: 3.25.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 47
+Depends: libcail-3-0 (= 3.25.2-1)
+Filename: ./libcail-3-0-dbgsym_3.25.2-1_amd64.deb
+Size: 31052
+MD5sum: 83a890479c745aa46d7ac74352c6fb43
+SHA1: a3f4e8f505c5c6fff84c8173ecea086aeed2394d
+SHA256: 5c63f678e92ba551553456ea40fc004951cdf8b982337fc168733ce27da4a42d
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcail-3-0
+Build-Ids: 5eca7045d1a0dcf0486151ee3a43428690a3b895
+
+Package: libcail-3-dev
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 64
+Depends: libatk1.0-dev, libcail-3-0 (= 3.25.2-1), pkg-config, libctk-3-dev (= 3.25.2-1)
+Suggests: libcail-3-doc
+Filename: ./libcail-3-dev_3.25.2-1_amd64.deb
+Size: 14640
+MD5sum: f05d756663d4c8b127b12496e7b9d636
+SHA1: 33c1f87f48b393cc3d4826b7e4bbfd5083a56d8c
+SHA256: 936d266a3ef1a682d184b15bf3b34287462ce4f8b8283d1105afe74b1e64c60a
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.ctk.org/
+Description: GNOME Accessibility Implementation Library -- development files
+ Cail implements ATK interfaces for CTK widgets which are dynamically
+ loadable at runtime by a CTK application. Once loaded, those parts of
+ an application that use standard CTK widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the development files for Cail.
+
+Package: libcail-3-doc
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 130
+Suggests: devhelp
+Filename: ./libcail-3-doc_3.25.2-1_all.deb
+Size: 23312
+MD5sum: bc39dbc6789393df2ed70efaf97031b2
+SHA1: d94dbe1bf5a92413056e2f25bb9ff46673b60733
+SHA256: e122b1ae5728a105f689f1d1230ab87f2ac43b862f068541097307a01cbeb9e2
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.ctk.org/
+Description: documentation files of the Cail library
+ Cail implements ATK interfaces for CTK widgets which are dynamically
+ loadable at runtime by a CTK application. Once loaded, those parts of
+ an application that use standard CTK widgets will have a basic level
+ of accessibility, without the need to modify the application at all.
+ .
+ This package contains the documentation files for Cail.
+
+Package: libcroma-dev
+Source: croma
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 108
+Depends: libcroma-private2 (= 1.25.0-1)
+Breaks: cafe-window-manager (<= 1.0.0-2)
+Filename: ./libcroma-dev_1.25.0-1_amd64.deb
+Size: 20236
+MD5sum: 3f4f630328c96f9b5793770d411b30e2
+SHA1: e3e21c88b80e5abc92ef278b3f847c5b9b4af03d
+SHA256: f3f4aed6a94e1dc519cbecd0902851baf08c49da287411266b82622900f62fb1
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: library for Croma window manager (development files)
+ Croma is a small window manager, using CTK+ to do everything. It is
+ developed mainly for the CAFE Desktop.
+ .
+ This package contains the development files.
+
+Package: libcroma-private2
+Source: croma
+Version: 1.25.0-1
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 759
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.29), libcairo2 (>= 1.10.0), libcanberra-gtk3-0 (>= 0.25), libcanberra0 (>= 0.2), libctk-3-0 (>= 3.21.4), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.67.3), libgtop-2.0-11 (>= 2.22.3), libice6 (>= 1:1.0.0), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libsm6, libstartup-notification0 (>= 0.7), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.4.5), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxinerama1 (>= 2:1.1.4), libxpresent1, libxrandr2, libxrender1
+Breaks: cafe-window-manager (<= 1.0.0-2), libcroma, libcroma-private0, libcroma-private1
+Replaces: libcroma, libcroma-private0, libcroma-private1
+Filename: ./libcroma-private2_1.25.0-1_amd64.deb
+Size: 262224
+MD5sum: 748ce87697f135371b3f1ca3614e558f
+SHA1: fbeab1915343844c9750c4da59d1f07e46cd433d
+SHA256: 678ce33837d26ff17d33901d887ef7f2413f066a92b1754476be733055f53010
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.cafe-desktop.org/
+Description: library for Croma window manager
+ Croma is a small window manager, using CTK+ to do everything. It is
+ developed mainly for the CAFE Desktop.
+ .
+ This package contains the library.
+
+Package: libcroma-private2-dbgsym
+Source: croma
+Version: 1.25.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 872
+Depends: libcroma-private2 (= 1.25.0-1)
+Filename: ./libcroma-private2-dbgsym_1.25.0-1_amd64.deb
+Size: 788856
+MD5sum: 857d7599e40c011dbbbf074f3a254c7e
+SHA1: b3294bab895bf3fd0aa2eed447b8df6198e5edec
+SHA256: ad9851dfc7593b74c0cd0e437acd4c9671593578cf5073395647e78f9c9599ec
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcroma-private2
+Build-Ids: af24cec6817096282776631a818a14ff19a9e498
+
+Package: libctk-3-0
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 10185
+Depends: adwaita-icon-theme, hicolor-icon-theme, shared-mime-info, libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.35.1), libc6 (>= 2.33), libcairo-gobject2 (>= 1.14.0), libcairo2 (>= 1.14.0), libcolord2 (>= 0.1.10), libcups2 (>= 1.7.0), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0 (>= 2.70.0), libharfbuzz0b (>= 2.2.0), libjson-glib-1.0-0 (>= 1.5.2), libpango-1.0-0 (>= 1.45.5), libpangocairo-1.0-0 (>= 1.41.0), libpangoft2-1.0-0 (>= 1.41.0), librest-0.7-0 (>= 0.7), libwayland-client0 (>= 1.20.0), libwayland-cursor0 (>= 1.14.91), libwayland-egl1 (>= 1.15.0), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.4.5), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1 (>= 2:1.1.4), libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), libctk-3-common (>= 3.25.2-1)
+Recommends: libctk-3-bin, librsvg2-common
+Suggests: gvfs
+Provides: ctk3-binver-3.0.0
+Filename: ./libctk-3-0_3.25.2-1_amd64.deb
+Size: 2811288
+MD5sum: 45cd623a59a580ada00ac90fd2a083e7
+SHA1: e019825cd051150b0ad70338b99e50d7294b1d15
+SHA256: b4300a3144e5d1cd91b854e356df2056d5e8b07d99b552bc1e8a91fa9e29ddbc
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.ctk.org/
+Description: CTK graphical user interface library
+ CTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, CTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+
+Package: libctk-3-0-dbgsym
+Source: ctk+3.0
+Version: 3.25.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 10049
+Depends: libctk-3-0 (= 3.25.2-1)
+Filename: ./libctk-3-0-dbgsym_3.25.2-1_amd64.deb
+Size: 8904380
+MD5sum: fb19f2ebcb7d933285dfc61e85c56f54
+SHA1: fd935de8997a80786fead932b33a6a6794f001db
+SHA256: 76bc552881346f6d6b3aaa9d8d2cae9eed0ddc22b622af1f5e726c92eb88ff8b
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libctk-3-0
+Build-Ids: 03f2443dc1673c8160eaeb949662eef01d7c9d52 0517b59d5e1f2b5672eb8070f9ec80defcede74b 075a63c38341559c1de1c06ef00387b19a88a068 1f884e196f634a4b69cb71adf7c3ce7ca46f9afe 30912bd5d5dba1544b210625d91e7d8e633db769 3914f2e10319d1e7a4065577b70c361d5fe022e9 39cb3cd434416ea6bfbe979f36dd77dc39b3b640 46291b1d16317e9a96d0ffd5350c500b39874579 671512463f250531163c38f1ddd9e56e3b936871 6f4bd3dae8cc791d8663e3252d6a71b13699c373 7009eab7243233a9595171559aa6ae1038bba89c 764ac69d56459d11d6f7d5b22b6d882e9ac38829 9ac85eb19be6f01b0e2e7affd0619ee166f5deda 9b231c321bb9c6b7b60fc5fddabda9a97fb352db a4c36377ab3206d0627f3291d8041444da997ad9 a99c9751a5ac56aabe7fcc1fe80fd46e7cf51441 c74e5afd11a5bd90574acc0df87aff8e4bd51aae ccbf2b9a8f156451190043b18818f00d7b11aa12 cf5589c38a5831812ae51b911ea34eec00d201c6 d76e65a2eda4e1488b1b4ddb025371c98b625b1b f3906afbcbc052049c379a56191728b54c3ca52e f49e7cfa169725484f331c9d61413c8656391a9d
+
+Package: libctk-3-bin
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 271
+Depends: ctk-update-icon-cache, libc6 (>= 2.4), libcairo2 (>= 1.14.0), libctk-3-0 (>= 3.25.2-1), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0 (>= 2.67.3), libctk-3-common (>= 3.25.2-1)
+Breaks: ctk-3-examples (<< 3.24.13)
+Replaces: ctk-3-examples (<< 3.24.13)
+Filename: ./libctk-3-bin_3.25.2-1_amd64.deb
+Size: 63272
+MD5sum: aa3519b55893676aee209b8ea9d8c23c
+SHA1: 27edabaa8007b00c65e66ea5965965e518859669
+SHA256: dcebc3c5b7d1b48e9544a962e498828c27a9204bc58676f64bf4976c9855cd98
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.ctk.org/
+Description: programs for the CTK graphical user interface library
+ CTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, CTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the utilities which are used by the libraries
+ and other packages.
+
+Package: libctk-3-bin-dbgsym
+Source: ctk+3.0
+Version: 3.25.2-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 160
+Depends: libctk-3-bin (= 3.25.2-1)
+Filename: ./libctk-3-bin-dbgsym_3.25.2-1_amd64.deb
+Size: 105020
+MD5sum: c60e1583f5b292dd955d7cc5a8ebb413
+SHA1: 7f01d64d8a1a4c675e8c1280c6f1ec8a997f3796
+SHA256: 02f1d6df3607f4d218702f30bea77cb5c4c02332f8570ef7b948436a65d254b4
+Section: debug
+Priority: optional
+Description: debug symbols for libctk-3-bin
+Build-Ids: 203b3c42fb6ad023b246aa799eb5cc05a87a9ad5 65a2c3fba4c84f6090337d19904813bfba2cd341 dd05a30666bd2067600b53227c95213e94f96449 fce6193c620fcdd03c90f12b61cf4c84639bb98e ff6d2c4c24b1eef37c9e7adc1aedcd5165f0b3e3
+
+Package: libctk-3-common
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 24226
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: libctk-3-0
+Filename: ./libctk-3-common_3.25.2-1_all.deb
+Size: 3272648
+MD5sum: 689b2624501ee466407395fbbbf3bdae
+SHA1: f8e262ce4360e2612311a0bc3313cebef30410fe
+SHA256: 664a6460fe9e6f559cbf42e620d40a7753098b414ce29cbdbe6c56b85a185d13
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.ctk.org/
+Description: common files for the CTK graphical user interface library
+ CTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, CTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+
+Package: libctk-3-dev
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: amd64
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 13734
+Depends: gir1.2-ctk-3.0 (= 3.25.2-1), libatk-bridge2.0-dev (>= 2.15.1), libatk1.0-dev (>= 2.35.1), libcairo2-dev (>= 1.14.0), libegl1-mesa-dev, libepoxy-dev (>= 1.0), libfontconfig1-dev, libfribidi-dev (>= 0.19.7), libgdk-pixbuf-2.0-dev (>= 2.40.0) | libgdk-pixbuf2.0-dev (>= 2.40.0), libglib2.0-dev (>= 2.57.2), libpango1.0-dev (>= 1.41), libwayland-dev (>= 1.9.91), libx11-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxfixes-dev, libxi-dev, libxinerama-dev, libxkbcommon-dev, libxrandr-dev, pkg-config, wayland-protocols (>= 1.17), dconf-gsettings-backend | gsettings-backend, libctk-3-common, libctk-3-0 (= 3.25.2-1)
+Suggests: libctk-3-doc
+Filename: ./libctk-3-dev_3.25.2-1_amd64.deb
+Size: 1089036
+MD5sum: f328a8f233e4836677396bb12c74b6cf
+SHA1: 57ba2e69b84d64ce3fa353c0e38cfcfb6cf5179e
+SHA256: cc70109a6d9e5ac394f78371a1c9a11e5ad897af02d38c5b21e2c17ceca82ec6
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.ctk.org/
+Description: development files for the CTK library
+ CTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, CTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the header and development files which are
+ needed for building CTK applications.
+
+Package: libctk-3-doc
+Source: ctk+3.0
+Version: 3.25.2-1
+Architecture: all
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 24115
+Recommends: libatk1.0-doc, libglib2.0-doc, libpango1.0-doc
+Suggests: devhelp
+Filename: ./libctk-3-doc_3.25.2-1_all.deb
+Size: 3340296
+MD5sum: 3445e51bf0f77fd3a363e52e6401330f
+SHA1: 9f77fd0a22b0b292ce5953b2f6ffaab451766012
+SHA256: afa1d237b80d2a2a769a6178da1460aaa06200b344072d57391a0d5faa3b2fb1
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.ctk.org/
+Description: documentation for the CTK graphical user interface library
+ CTK is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, CTK is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the HTML documentation for the CTK library
+ in /usr/share/doc/libctk-3-doc/ .
 
