@@ -1,3 +1,24 @@
+Package: cafe-common
+Version: 1.25.0-1
+Architecture: all
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
+Installed-Size: 63
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: autoconf, autoconf-archive, automake, gettext, gtk-doc-tools, intltool, libtool, pkg-config
+Filename: ./cafe-common_1.25.0-1_all.deb
+Size: 15600
+MD5sum: 275abf0ba2bdd6f573e7a8760eabf0bb
+SHA1: c0eb95971f447c630d5f2ad1a01e135d9254573c
+SHA256: a40b41f2dcf3e521cf721fdbc42da8a2d5123ffc654e5525400ae07314cbb75d
+Section: devel
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.cafe-desktop.org
+Description: common scripts and macros to develop with CAFE
+ cafe-common is an extension to autoconf, automake and libtool for the CAFE
+ environment and CAFE using applications. Included are cafe-autogen.sh and
+ several macros to help in CAFE source trees.
+
 Package: grapa
 Version: 1.25.0-1
 Architecture: amd64
