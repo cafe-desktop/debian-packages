@@ -1,3 +1,0 @@
-Tests: build
-Depends: build-essential, libbte-2.91-dev
-Restrictions: allow-stderr superficial

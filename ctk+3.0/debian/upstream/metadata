@@ -1,9 +1,0 @@
-Archive: GNOME
-Bug-Database: https://gitlab.gnome.org/GNOME/ctk/issues
-Bug-Submit: https://gitlab.gnome.org/GNOME/ctk/issues/new
-Changelog: https://gitlab.gnome.org/GNOME/ctk/commits/master
-FAQ: https://developer.gnome.org/ctk3/stable/ctk-question-index.html
-Repository-Browse: https://gitlab.gnome.org/GNOME/ctk
-Repository: https://gitlab.gnome.org/GNOME/ctk.git
-
-# vim:set ft=yaml:

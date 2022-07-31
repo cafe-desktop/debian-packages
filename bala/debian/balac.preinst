@@ -1,8 +1,0 @@
-#!/bin/sh
-set -e
-
-if dpkg --compare-versions "$2" lt-nl "0.30.0-1"; then
-    update-alternatives --remove-all balac || true
-fi
-
-#DEBHELPER#

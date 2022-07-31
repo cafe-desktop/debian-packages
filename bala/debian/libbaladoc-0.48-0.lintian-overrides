@@ -1,2 +1,0 @@
-# private library only used by baladoc
-binary-or-shlib-defines-rpath usr/lib/*/libbaladoc-* /usr/lib/*/bala-*

@@ -1,3 +1,0 @@
-version=4
-opts=filenamemangle=s/.*\///g \
-  https://gitlab.gnome.org/GNOME/bte/tags?sort=updated_desc .*/archive/(\d+\.\d*[02468]\.\S+)/bte-\1\.tar\.gz

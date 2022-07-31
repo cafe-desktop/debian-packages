@@ -1,9 +1,0 @@
-Document: cail-reference-3
-Title: Cail Reference Manual
-Author: Padraig O'Briain <padraig.obriain@sun.com>
-Abstract: This manual describes APIs for libcail-util
-Section: Accessibility
-
-Format: HTML
-Index: /usr/share/doc/libcail-3-doc/html/index.html
-Files: /usr/share/doc/libcail-3-doc/html/*.html

@@ -1,8 +1,0 @@
-usr/include/ctk*
-usr/lib/*/libc?k*.so
-usr/lib/*/pkgconfig/c?k*
-usr/share/aclocal
-usr/share/gir-1.0
-usr/share/glib-2.0/schemas/org.ctk.Settings.Debug.gschema.xml
-usr/share/ctk-3.0/ctkbuilder.rng
-usr/share/ctk-3.0/valgrind

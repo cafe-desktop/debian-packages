@@ -1,4 +1,0 @@
-etc/profile.d/
-usr/lib/systemd/
-usr/libexec/
-usr/share/locale
