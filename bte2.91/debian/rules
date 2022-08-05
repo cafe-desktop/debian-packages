@@ -21,7 +21,6 @@ CONFFLAGS_udeb = \
 	-Dgir=false \
 	-Dgnutls=false \
 	-Dicu=false \
-	-Dvapi=false \
 	-D_systemd=false
 
 override_dh_auto_configure:
