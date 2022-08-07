@@ -1,4 +1,2 @@
-rm Packages.gz
-rm Release
-dpkg-scanpackages . /dev/null > Release
-dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
+rm Packages
+dpkg-scanpackages . /dev/null >  Pakages
