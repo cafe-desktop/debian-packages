@@ -1,7 +1,7 @@
 Source: ctk-icon-naming-utils
 Section: x11
 Priority: optional
-Maintainer: Debian QA Group <packages@qa.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13)
 Build-Depends-Indep: libxml-simple-perl, perl (>= 5)
 Standards-Version: 4.5.0

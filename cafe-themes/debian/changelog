@@ -147,7 +147,7 @@ cafe-themes (3.22.15-1) unstable; urgency=medium
   * debian/control (already in 3.22.15-0ubuntu1):
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
+    + Rename pretty name of our team -> Pablo Barciela.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]

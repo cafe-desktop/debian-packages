@@ -1,7 +1,7 @@
 Source: cafe-calc
 Section: math
 Priority: optional
-Maintainer: Debian+Ubuntu Debian CAFE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Martin Wimpress <code@flexion.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,

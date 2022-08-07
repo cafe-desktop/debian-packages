@@ -1,7 +1,7 @@
 Source: ctk+3.0
 Section: libs
 Priority: optional
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: Simon McVittie <smcv@debian.org>, 
 Build-Depends: adwaita-icon-theme <!nocheck>,
                at-spi2-core <!nocheck>,

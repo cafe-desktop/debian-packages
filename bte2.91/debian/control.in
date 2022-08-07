@@ -1,7 +1,7 @@
 Source: bte2.91
 Section: libs
 Priority: optional
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: @GNOME_TEAM@
 Build-Depends: debhelper-compat (= 12),
                dh-sequence-gnome,
