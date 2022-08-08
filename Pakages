@@ -448,16 +448,16 @@ Build-Ids: e6522d6af742b3076c020a596d5fd480515060a1
 
 Package: gir1.2-bte-2.91
 Source: bte2.91
-Version: 0.64.0-1
+Version: 0.65.0-1
 Architecture: amd64
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Installed-Size: 42
 Depends: gir1.2-ctk-3.0 (>= 3.24.22), gir1.2-pango-1.0 (>= 1.22.0), libbte-2.91-0 (>= 0.61.91)
-Filename: ./gir1.2-bte-2.91_0.64.0-1_amd64.deb
-Size: 9904
-MD5sum: 1b95e7312ea3bee922a55657f02e9c6c
-SHA1: c6564978a8080cf38c438cd7f6121d49835690dd
-SHA256: 76f32c782d8d03ebbd0dc571cacb8d54846ecc78a27f3e6011788861180ad995
+Filename: ./gir1.2-bte-2.91_0.65.0-1_amd64.deb
+Size: 9916
+MD5sum: 6681837779bffe6f20bb5b0232794368
+SHA1: c793ab37e870c89f36f466737a5f45dc3227f14b
+SHA256: 4960688efd1e0cd5662a3517be00f9fe55ff330ff4c96f80eb4eecb39a3abce6
 Section: introspection
 Priority: optional
 Multi-Arch: same
@@ -728,16 +728,16 @@ Build-Ids: 0b78d31b090b093656ac4963c31ad6a911d8b899 4a34cc7e886b17c06ceaa6c56c2f
 
 Package: libbte-2.91-0
 Source: bte2.91
-Version: 0.64.0-1
+Version: 0.65.0-1
 Architecture: amd64
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 554
-Depends: libbte-2.91-common (= 0.64.0-1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.32), libcairo2 (>= 1.10.0), libctk-3-0 (>= 3.24.22), libfribidi0 (>= 1.0.0), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgnutls30 (>= 3.7.2), libicu67 (>= 67.1-1~), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpcre2-8-0 (>= 10.22), libstdc++6 (>= 5.2), libsystemd0 (>= 220), zlib1g (>= 1:1.2.0)
-Filename: ./libbte-2.91-0_0.64.0-1_amd64.deb
-Size: 190928
-MD5sum: 9754100e6c8179f71d6c75b2e9ce0fb7
-SHA1: 66b025c0708e42c15cc26475ec09ac59d55e6873
-SHA256: 138387fcc7ed0308869b73751ff7d2a5017f5d588063c2627406f2f9d1072b67
+Maintainer: Pablo Barciela <scow@riseup.net>
+Installed-Size: 549
+Depends: libbte-2.91-common (= 0.65.0-1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.32), libcairo2 (>= 1.10.0), libctk-3-0 (>= 3.24.22), libfribidi0 (>= 1.0.0), libgcc-s1 (>= 3.0), libglib2.0-0 (>= 2.52.0), libgnutls30 (>= 3.7.2), libicu71 (>= 71.1-1~), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.22.0), libpcre2-8-0 (>= 10.22), libstdc++6 (>= 11), libsystemd0 (>= 220), zlib1g (>= 1:1.2.0)
+Filename: ./libbte-2.91-0_0.65.0-1_amd64.deb
+Size: 190780
+MD5sum: aad5759a914a3e4e2fac48d416ca1eb3
+SHA1: ebdc47ba8b41244e22636f303b16194c4993c280
+SHA256: 42383c61db6051847eb3a2e723c68d928206e1511aa7f96fbfb92bb77a52b8c6
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -753,35 +753,35 @@ Description: Terminal emulator widget for CTK+ 3.0 - runtime files
 
 Package: libbte-2.91-0-dbgsym
 Source: bte2.91
-Version: 0.64.0-1
+Version: 0.65.0-1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 1802
-Depends: libbte-2.91-0 (= 0.64.0-1)
-Filename: ./libbte-2.91-0-dbgsym_0.64.0-1_amd64.deb
-Size: 1695956
-MD5sum: 5463a6cfef95e9b195b57d980065ae8b
-SHA1: 696e617cc32a46e7ec284a5e616abb641d5dabf2
-SHA256: 83479612ff37ffa20680a6328fecf24482a237a4db416f0eb698c187337980bd
+Maintainer: Pablo Barciela <scow@riseup.net>
+Installed-Size: 1830
+Depends: libbte-2.91-0 (= 0.65.0-1)
+Filename: ./libbte-2.91-0-dbgsym_0.65.0-1_amd64.deb
+Size: 1729136
+MD5sum: 689be6dbae12baf106bec1690cf479d4
+SHA1: b6bd3d23b211b4023eb223b9a902dd39a565098b
+SHA256: f4674c48d0410e7661ded2b2cce904db59bbfede9cc20bd6227b06f098244271
 Section: debug
 Priority: optional
 Multi-Arch: same
 Description: debug symbols for libbte-2.91-0
-Build-Ids: f0e22bd9d76fd2a5f6cf1eba9c976307e66e0451
+Build-Ids: 89d7eb361642426917709c4e2516d8bf4078997f
 
 Package: libbte-2.91-common
 Source: bte2.91
-Version: 0.64.0-1
+Version: 0.65.0-1
 Architecture: amd64
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Installed-Size: 459
+Maintainer: Pablo Barciela <scow@riseup.net>
+Installed-Size: 460
 Depends: libc6 (>= 2.3.4)
-Filename: ./libbte-2.91-common_0.64.0-1_amd64.deb
-Size: 46440
-MD5sum: 9013631e79fe2d268fbecc09ff41a464
-SHA1: da9b71e17efc5917c0c04b1d1a936c7671dad090
-SHA256: 13d4343bc50a108643590458a277b3a82d695d79e39f9783a4f3cbd6305cb423
+Filename: ./libbte-2.91-common_0.65.0-1_amd64.deb
+Size: 46472
+MD5sum: bce57e21f51ecbf95b2f72f23203e8cb
+SHA1: 60e92a8a08aaf49440d0d36ffa74f27b456e1503
+SHA256: 88168adc0150110e4189b40f88c741b58cefcaed2f51a60f29c90c7ee3cd1f8a
 Section: libs
 Priority: optional
 Multi-Arch: foreign
@@ -797,36 +797,36 @@ Description: Terminal emulator widget for CTK+ 3.0 - common files
 
 Package: libbte-2.91-common-dbgsym
 Source: bte2.91
-Version: 0.64.0-1
+Version: 0.65.0-1
 Auto-Built-Package: debug-symbols
 Architecture: amd64
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Installed-Size: 20
-Depends: libbte-2.91-common (= 0.64.0-1)
-Filename: ./libbte-2.91-common-dbgsym_0.64.0-1_amd64.deb
-Size: 6608
-MD5sum: 1a3941fe9a07ad5ebc82543c8b9e2e95
-SHA1: ef7c4b27568b8a2d7c6d749ee55ee8777c72150b
-SHA256: 9a02de5345adeba5ed52f872724b64c96f679620e86b01476258f2630c9ef50b
+Depends: libbte-2.91-common (= 0.65.0-1)
+Filename: ./libbte-2.91-common-dbgsym_0.65.0-1_amd64.deb
+Size: 6620
+MD5sum: 383a11e751c47d4737789223d99b5966
+SHA1: e050cac6021df457591c482af5a2396b86d0150b
+SHA256: 65c9050184ecc659d3de6acdbc3cf86177f16f3188e04abf8871506c94620603
 Section: debug
 Priority: optional
 Description: debug symbols for libbte-2.91-common
-Build-Ids: c6545ff0088385f2dca4561938fe76cf4b298a41
+Build-Ids: 6f03a3daef12d7c630df16188f6a9658dc376eca
 
 Package: libbte-2.91-dev
 Source: bte2.91
-Version: 0.64.0-1
+Version: 0.65.0-1
 Architecture: amd64
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Installed-Size: 389
-Depends: gir1.2-bte-2.91 (= 0.64.0-1), libglib2.0-dev (>= 2.40.0), libgnutls28-dev (>= 3.2.7), libctk-3-dev (>= 3.12.0), libpango1.0-dev (>= 1.22.0), libpcre2-dev (>= 10.21), libbte-2.91-0 (= 0.64.0-1), libbte-2.91-common, zlib1g-dev
+Depends: gir1.2-bte-2.91 (= 0.65.0-1), libglib2.0-dev (>= 2.40.0), libgnutls28-dev (>= 3.2.7), libctk-3-dev (>= 3.12.0), libpango1.0-dev (>= 1.22.0), libpcre2-dev (>= 10.21), libbte-2.91-0 (= 0.65.0-1), libbte-2.91-common, zlib1g-dev
 Recommends: libbte-2.91-doc
 Conflicts: libbte-2.90-dev
-Filename: ./libbte-2.91-dev_0.64.0-1_amd64.deb
-Size: 34664
-MD5sum: 1b48163b23e5f09247abf79dad7b40b5
-SHA1: 448837882dacdce60dbbf42e76e657bd9fa811a9
-SHA256: afcd3da4aab474eb4734f186fb38c91124a57fad5ada4ef62dc4821da6bbcc07
+Filename: ./libbte-2.91-dev_0.65.0-1_amd64.deb
+Size: 34672
+MD5sum: 58cf646a74627e1d6f10cb117f5ddccb
+SHA1: 8e8194fc8a9a8367cbd42b4644431dcc9896722a
+SHA256: 99bf719686f6c4a9acb09f392e6d08455ae0a6fc9b2f7364aec1ebf084f1ddb9
 Section: libdevel
 Priority: optional
 Multi-Arch: same
@@ -843,15 +843,15 @@ Description: Terminal emulator widget for CTK+ 3.0 - development files
 
 Package: libbte-2.91-doc
 Source: bte2.91
-Version: 0.64.0-1
+Version: 0.65.0-1
 Architecture: all
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Installed-Size: 655
-Filename: ./libbte-2.91-doc_0.64.0-1_all.deb
-Size: 44384
-MD5sum: dff80998cc842aca52c75d9c44881dc3
-SHA1: a24bfb911747a10802b108f2c54d45ac095cefba
-SHA256: 245f3d7acdd97d9779fd241a99c7664755f391c01d4ef888b849f82b3625fca3
+Filename: ./libbte-2.91-doc_0.65.0-1_all.deb
+Size: 44400
+MD5sum: 7ce2bcb2bbb15be68c19a3bec41afb18
+SHA1: f32f838cb18fd3704413161302e9d23f0832d3bc
+SHA256: fd6fd92dfd3b846a48dae704160185dce30f8469418f23810202835e778263f6
 Section: doc
 Priority: optional
 Multi-Arch: foreign
