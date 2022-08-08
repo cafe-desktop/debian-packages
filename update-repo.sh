@@ -1,2 +1,2 @@
 rm Packages
-dpkg-scanpackages . /dev/null >  Pakages
+dpkg-scanpackages . /dev/null > Packages
