@@ -2,7 +2,7 @@ Source: ctk+3.0
 Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Simon McVittie <smcv@debian.org>, 
+Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: adwaita-icon-theme <!nocheck>,
                at-spi2-core <!nocheck>,
                dbus <!nocheck>,

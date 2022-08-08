@@ -2,12 +2,7 @@ Source: cafe-terminal
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Mike Gabriel <sunweaver@debian.org>,
-           Wences Arana <aranax@debian.org.gt>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
-           Martin Wimpress <code@flexion.org>,
+Uploaders: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 13),

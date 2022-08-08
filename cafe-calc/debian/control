@@ -2,9 +2,7 @@ Source: cafe-calc
 Section: math
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Mike Gabriel <sunweaver@debian.org>,
-           Martin Wimpress <code@flexion.org>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
                libatk1.0-dev,
