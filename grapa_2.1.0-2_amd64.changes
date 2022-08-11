@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Fri, 24 Apr 2026 10:48:13 +0200
+Source: grapa
+Binary: grapa grapa-common grapa-dbgsym
+Architecture: all amd64
+Version: 2.1.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ grapa      - archive manager for CAFE
+ grapa-common - archive manager for CAFE (common files)
+Changes:
+ grapa (2.1.0-2) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+Checksums-Sha1:
+ 0ff97c1f925bee4281d1e1cc12f7f4da981717be 882932 grapa-common_2.1.0-2_all.deb
+ 89d5145d2656996adcbdb8f4c4e4679678b11269 996596 grapa-dbgsym_2.1.0-2_amd64.deb
+ cb14d25cab94076f23c39dfd0985343f0153b69a 15667 grapa_2.1.0-2_amd64.buildinfo
+ fadc4146e77cadec71ca3ebffc6c5d06a7750a6e 206440 grapa_2.1.0-2_amd64.deb
+Checksums-Sha256:
+ fd39a1f8bc5317e9c99b153d95175fed628988242ca36ddceba98132dbe460b7 882932 grapa-common_2.1.0-2_all.deb
+ 14e7bae5d281352603184869b72ef13310c8498161751fdf7d2ecf653cc377be 996596 grapa-dbgsym_2.1.0-2_amd64.deb
+ 8f3c4fec7588493c57405813209544c9a43d33c4b4b91202ea2a75e02c088e80 15667 grapa_2.1.0-2_amd64.buildinfo
+ 0fe49b7fa8f71f08bea00eae5cc3fddd5327fd1403e15ecb6d18232af3afa93e 206440 grapa_2.1.0-2_amd64.deb
+Files:
+ 65252e890a592250e6fb8d98ada0b87d 882932 x11 optional grapa-common_2.1.0-2_all.deb
+ 3f0536523a10ceefd274df496c46bd1a 996596 debug optional grapa-dbgsym_2.1.0-2_amd64.deb
+ ecc340e36e724020957edaec4c7784e4 15667 x11 optional grapa_2.1.0-2_amd64.buildinfo
+ 0d6f5a52bb5318d7264d14cc336ff0d0 206440 x11 optional grapa_2.1.0-2_amd64.deb

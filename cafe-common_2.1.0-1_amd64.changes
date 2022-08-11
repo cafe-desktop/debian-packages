@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Mon, 22 Dec 2025 00:44:19 +0100
+Source: cafe-common
+Binary: cafe-common
+Architecture: all
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-common - common scripts and macros to develop with CAFE
+Changes:
+ cafe-common (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - 'pkgconf' instead transitional 'pkg-config'
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ 9bde445425d0e5ff007d99c9ecf4eea0947679a8 15780 cafe-common_2.1.0-1_all.deb
+ 2be07df08296c29543cb344ddee406b835178f10 5854 cafe-common_2.1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 222bf803a1c945443504b4887af1800979a142c171e218402044b399025f0c36 15780 cafe-common_2.1.0-1_all.deb
+ 69fc739a4c7bc8087ae24e42949f7ff0c7338adffa6e9adb03472feae2d8d02d 5854 cafe-common_2.1.0-1_amd64.buildinfo
+Files:
+ 0b1ab85be6409c169615a81fbc012ddb 15780 devel optional cafe-common_2.1.0-1_all.deb
+ ec3de1cefcbf116e9ddb689ca09c13f0 5854 devel optional cafe-common_2.1.0-1_amd64.buildinfo

@@ -1,0 +1,75 @@
+Format: 1.8
+Date: Wed, 22 Apr 2026 08:55:57 +0200
+Source: lector
+Binary: gir1.2-lectordocument-1.5.0 gir1.2-lectorview-1.5.0 lector lector-common lector-dbgsym liblectordocument-dev liblectordocument3 liblectordocument3-dbgsym liblectorview-dev liblectorview3 liblectorview3-dbgsym
+Architecture: amd64 all
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-lectordocument-1.5.0 - GObject introspection data for liblectordocument
+ gir1.2-lectorview-1.5.0 - GObject introspection data for liblectorview
+ lector     - CAFE document viewer
+ lector-common - CAFE document viewer (common files)
+ liblectordocument-dev - CAFE document rendering library (development files)
+ liblectordocument3 - CAFE document rendering library
+ liblectorview-dev - CAFE document viewing library (development files)
+ liblectorview3 - CAFE document viewing library
+Changes:
+ lector (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Drop transitional useless package 'gir1.2-lector'
+     - Update gir handling
+     - Bump to debhelper-compat 13
+   * rules:
+     - remove obsolete get-orig-source
+     - Simplify debian/rules
+   * watch: upgrade to version 5
+   * drop lector.lintian-overrides
+   * lector.install: Adjust to new libexecdir
+   * New upstream release
+Checksums-Sha1:
+ faf823ed9aa7414a76b69b82d7de66799df316f9 20276 gir1.2-lectordocument-1.5.0_2.0.0-1_amd64.deb
+ 8eccd3797fb5d37db51feb060fafe3e08aa71462 13568 gir1.2-lectorview-1.5.0_2.0.0-1_amd64.deb
+ fffda3724e2c19d1ca1dd3b590e283cfb5802827 901736 lector-common_2.0.0-1_all.deb
+ dc8a61dcbd4a6235fd8d29af50e04bd4d80df2a6 589236 lector-dbgsym_2.0.0-1_amd64.deb
+ af022dbc29e939aa5e1675172f0ee746c51fd577 21524 lector_2.0.0-1_amd64.buildinfo
+ f96bac62d3faffc82469a04ed41a358f533fddbe 171704 lector_2.0.0-1_amd64.deb
+ 788961502152f34d435925686f19433e94f95680 46672 liblectordocument-dev_2.0.0-1_amd64.deb
+ 59026690fdfff7ada67d7b124ca10cf4c881f5c0 496740 liblectordocument3-dbgsym_2.0.0-1_amd64.deb
+ 02bcbaa57100db3bf17cbc15e83ae5b37c75d706 160056 liblectordocument3_2.0.0-1_amd64.deb
+ 63c344384cfdd2966a261a8b859aad5b43756c47 22624 liblectorview-dev_2.0.0-1_amd64.deb
+ 2be6c8240c64e9164df8ef6dde4ddda77651c212 362804 liblectorview3-dbgsym_2.0.0-1_amd64.deb
+ 123306957feaabb447e6adfd5abec7c9e70c0b2c 108820 liblectorview3_2.0.0-1_amd64.deb
+Checksums-Sha256:
+ 80ab2b2d1603b626dfdb2e33ac275aacf83c98c4161c6d5cbaf1b4208b444b74 20276 gir1.2-lectordocument-1.5.0_2.0.0-1_amd64.deb
+ b9d3ece479e64543f614dee452a6cb37fa00076f81f80e6e26553d04244c62c2 13568 gir1.2-lectorview-1.5.0_2.0.0-1_amd64.deb
+ d4a5740bf5046e7d348c30608174883f881b5f7b888ddf4f1b2f542f2c38c8f0 901736 lector-common_2.0.0-1_all.deb
+ 0741a4d0a7a53f800f6b365a2c2dfdbeb17fce627696c797b802d4fccd72212e 589236 lector-dbgsym_2.0.0-1_amd64.deb
+ bfb753798d37e01d187ca0ba1fedbebae734557198deb9e73c3a67fd2afcd3b2 21524 lector_2.0.0-1_amd64.buildinfo
+ d6d307e860220dd0f11dac906b6c90f6bc244a2af7eb57b2ed61af13521b7760 171704 lector_2.0.0-1_amd64.deb
+ ea043c5af6b5cd71013398df96b8457a50c9df59fbb672d0f002dc5dc26bf545 46672 liblectordocument-dev_2.0.0-1_amd64.deb
+ f442fe762b20204c366f3442ba4db7875335d072d49b92d99f8dbdf9bb415ee0 496740 liblectordocument3-dbgsym_2.0.0-1_amd64.deb
+ d0a0b7268b0ec4abf34ae267ae5857388bdf9d8f1788fed02891e63699569a5c 160056 liblectordocument3_2.0.0-1_amd64.deb
+ f8cb43e2eea40af16c6fde6a12e8eb5018397041e0db1b45cc3149c76d1f36cc 22624 liblectorview-dev_2.0.0-1_amd64.deb
+ 717d50d5a64177c98d46378ea76e09218a68426eb7b661fe90adf03cb5f30584 362804 liblectorview3-dbgsym_2.0.0-1_amd64.deb
+ 304966d784074941ec908efba869dd5fb1f6843293cd4863fde4be0009c41680 108820 liblectorview3_2.0.0-1_amd64.deb
+Files:
+ 9bece2ee7e527d0f3f39bf1af510e90d 20276 introspection optional gir1.2-lectordocument-1.5.0_2.0.0-1_amd64.deb
+ 6c89fe532c0b2a72f2c4ce4c6610e449 13568 introspection optional gir1.2-lectorview-1.5.0_2.0.0-1_amd64.deb
+ 5072c2d7344da6b0781f2b71431cc257 901736 x11 optional lector-common_2.0.0-1_all.deb
+ 723b10564557ad42de9ff18833e65f94 589236 debug optional lector-dbgsym_2.0.0-1_amd64.deb
+ e8dfb4068e13446c575f2b05bf7f8e0b 21524 x11 optional lector_2.0.0-1_amd64.buildinfo
+ dca8748603ac153f4b581dba7683c056 171704 x11 optional lector_2.0.0-1_amd64.deb
+ 30b5180472f291dd8f7a62f0f58250cb 46672 libdevel optional liblectordocument-dev_2.0.0-1_amd64.deb
+ 8eabfb77e2104575c9a80cff9056102e 496740 debug optional liblectordocument3-dbgsym_2.0.0-1_amd64.deb
+ b41891d9c7adc545894f084ab85f51c2 160056 libs optional liblectordocument3_2.0.0-1_amd64.deb
+ 9699c75325e13de852dda1756f159b69 22624 libdevel optional liblectorview-dev_2.0.0-1_amd64.deb
+ 5f858fee9b451a69f8cfd48ab706abdd 362804 debug optional liblectorview3-dbgsym_2.0.0-1_amd64.deb
+ 7f7469342397b16c1f95371f0eea7e09 108820 libs optional liblectorview3_2.0.0-1_amd64.deb

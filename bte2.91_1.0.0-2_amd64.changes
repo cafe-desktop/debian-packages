@@ -1,0 +1,51 @@
+Format: 1.8
+Date: Mon, 27 Apr 2026 19:14:20 +0200
+Source: bte2.91
+Binary: gir1.2-bte-2.91 libbte-2.91-0 libbte-2.91-0-dbgsym libbte-2.91-0-udeb libbte-2.91-common libbte-2.91-common-dbgsym libbte-2.91-dev libbte-2.91-doc
+Architecture: amd64 all
+Version: 1.0.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-bte-2.91 - GObject introspection data for the BTE library
+ libbte-2.91-0 - Terminal emulator widget for CTK+ 3.0 - runtime files
+ libbte-2.91-0-udeb - Terminal emulator widget for CTK+ 3.0 - minimal runtime (udeb)
+ libbte-2.91-common - Terminal emulator widget for CTK+ 3.0 - common files
+ libbte-2.91-dev - Terminal emulator widget for CTK+ 3.0 - development files
+ libbte-2.91-doc - Terminal emulator widget for CTK+ 3.0 - documentation
+Changes:
+ bte2.91 (1.0.0-2) unstable; urgency=medium
+ .
+   * rules: enable systemd in CONFFLAGS_deb
+Checksums-Sha1:
+ c25e6d444e8ce5a3a13fb8d846e214fca40072d3 16903 bte2.91_1.0.0-2_amd64.buildinfo
+ 2746af13fae551e05b1d87e93b2e6adc98be28d6 10408 gir1.2-bte-2.91_1.0.0-2_amd64.deb
+ 7bbf7a7a4ee345bb61fa8f11132c7956b715571e 1792680 libbte-2.91-0-dbgsym_1.0.0-2_amd64.deb
+ 8ee104467e30a87c1269ca5a2e82ed2ebe32a2f3 259328 libbte-2.91-0-udeb_1.0.0-2_amd64.udeb
+ 761ce027c35638636c7ce25b431c98d2cadd4f22 200088 libbte-2.91-0_1.0.0-2_amd64.deb
+ 581554f884d54a39c68d481a42d319d759f57668 6720 libbte-2.91-common-dbgsym_1.0.0-2_amd64.deb
+ 526e9da7ae665f9b2de8491e8a7c188e519479df 46804 libbte-2.91-common_1.0.0-2_amd64.deb
+ 2b89b46fa818c25f07706ee7ec92b5a187acc199 35220 libbte-2.91-dev_1.0.0-2_amd64.deb
+ 090f6b0bfb17ebc7562981d0692ff6300cae8522 44016 libbte-2.91-doc_1.0.0-2_all.deb
+Checksums-Sha256:
+ adde6b24010b9eaecf862ca9495d175fcaa8ca83c8cc6064e2cd68232c5a0a86 16903 bte2.91_1.0.0-2_amd64.buildinfo
+ 7243fe126c3803238e577f54b48e35d3d75614ba7c59d4c2adfc542da8ed0c34 10408 gir1.2-bte-2.91_1.0.0-2_amd64.deb
+ 8669f32a65ad8ace0f2a15e2f6060119b775c644821f6a94631bbf6972c59431 1792680 libbte-2.91-0-dbgsym_1.0.0-2_amd64.deb
+ 1f5ccd93b230e06877c80837a9255bb24249d5737d1e637321d68419ebcb71f8 259328 libbte-2.91-0-udeb_1.0.0-2_amd64.udeb
+ a5fec7120c3fb8217021b3f9f2747e43259cff2f2c38821841e0d8e14beb8cef 200088 libbte-2.91-0_1.0.0-2_amd64.deb
+ cc91d0e5195a1c04ea95d10cbaba2f6b4515fc2eeafebbed29ea33d9daf8c77e 6720 libbte-2.91-common-dbgsym_1.0.0-2_amd64.deb
+ 358f29e5cf43d04101803438ff946b302ec488d63f6d09d3c8192d1d8f337257 46804 libbte-2.91-common_1.0.0-2_amd64.deb
+ 57ff1509b24484eadba13130791552726fd4d71a2a1240a8d19e1e5c1c9d428f 35220 libbte-2.91-dev_1.0.0-2_amd64.deb
+ 786dc46ba0cf9a7c8ff29bc522d0518aaf58a24a916623f98e86788f9a705b18 44016 libbte-2.91-doc_1.0.0-2_all.deb
+Files:
+ 8f358525e7a13a73ebab47fa626c10ff 16903 libs optional bte2.91_1.0.0-2_amd64.buildinfo
+ c3a5b9856a0cafacdad2190cf4c9f0c7 10408 introspection optional gir1.2-bte-2.91_1.0.0-2_amd64.deb
+ eaa26d94f5e52fe919ce0a8a37780443 1792680 debug optional libbte-2.91-0-dbgsym_1.0.0-2_amd64.deb
+ 02088c6aca0207ac8d7e4ad82d5f21c6 259328 debian-installer optional libbte-2.91-0-udeb_1.0.0-2_amd64.udeb
+ f83da9f3a7a931f73d39e876f5e3c9b1 200088 libs optional libbte-2.91-0_1.0.0-2_amd64.deb
+ ad29af571902f79821ef634e6c9b5fac 6720 debug optional libbte-2.91-common-dbgsym_1.0.0-2_amd64.deb
+ 140bcc07ff503bbe6260961cd018e20f 46804 libs optional libbte-2.91-common_1.0.0-2_amd64.deb
+ a88ebb932f85a7ef4d2b0ea87e609c70 35220 libdevel optional libbte-2.91-dev_1.0.0-2_amd64.deb
+ 2e9eb09a4cddf31886197816a8d1b8e7 44016 doc optional libbte-2.91-doc_1.0.0-2_all.deb
