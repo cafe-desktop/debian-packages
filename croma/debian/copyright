@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Croma
-Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
 Source: https://github.com/cafe-desktop/croma
 
 Files: src/core/eventqueue.h

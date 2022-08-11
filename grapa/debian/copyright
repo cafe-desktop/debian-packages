@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Grapa
-Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
 Source: https://github.com/cafe-desktop/grapa
 
 Files: src/dlg-add-files.h
