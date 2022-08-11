@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: bala
-Source: https://download.gnome.org/sources/bala/
+Source: https://github.com/cafe-desktop/bala
 
 Files: *
 Copyright: 2016-2017 Rico Tzschichholz

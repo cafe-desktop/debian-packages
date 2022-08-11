@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Icon Theme
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/cafe-icon-theme/
+Source: https://github.com/cafe-desktop/cafe-icon-theme
 
 Files: src/*.svg
        menta/*

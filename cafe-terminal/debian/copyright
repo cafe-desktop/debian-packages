@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Terminal
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/cafe-terminal/
+Source: https://github.com/cafe-desktop/cafe-terminal
 
 Files: src/terminal-app.c
        src/terminal-options.c

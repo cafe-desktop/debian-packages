@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: bte
-Source: https://download.gnome.org/sources/bte/
+Source: https://github.com/cafe-desktop/bte
 
 Files: *
 Copyright: 1991-1999 Free Software Foundation, Inc.

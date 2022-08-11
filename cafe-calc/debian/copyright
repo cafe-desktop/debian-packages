@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Calc
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/cafe-calc/
+Source: https://github.com/cafe-desktop/cafe-calc
 
 Files: src/*
 Copyright: 1987-2008 Sun Microsystems, Inc.

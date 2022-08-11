@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Baul
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/baul/
+Source: https://github.com/cafe-desktop/baul
 
 Files: eel/check-program.c
        eel/eel-art-extensions.c

@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Menus
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/cafe-menus/
+Source: https://github.com/cafe-desktop/cafe-menus
 
 Files: libmenu/desktop-entries.c
        libmenu/desktop-entries.h
