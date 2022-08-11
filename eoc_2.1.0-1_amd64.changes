@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Mon, 22 Dec 2025 15:50:21 +0100
+Source: eoc
+Binary: eoc eoc-common eoc-dbgsym eoc-dev gir1.2-eoc-2.0
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ eoc        - Eye of CAFE graphics viewer program
+ eoc-common - Eye of CAFE graphics viewer program (common files)
+ eoc-dev    - Eye of CAFE graphics viewer program (development files)
+ gir1.2-eoc-2.0 - GObject introspection data for the eoc library
+Changes:
+ eoc (2.1.0-1) unstable; urgency=medium
+ .
+   * rename gir1.2-eoc-1.0 -> gir1.2-eoc-2.0
+   * control:
+     - gir1.2-eoc-2.0 replaces gir1.2-eoc-1.0
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Drop transitional pkg 'gir1.2-eom' and drop lintian override for it.
+     - Update gir handling
+     - add gir Provides to gir1.2-eoc-2.0
+   * watch: upgrade to version 5
+   * Simplify debian/rules
+   * drop eoc.lintian-overrides
+   * New upstream release
+Checksums-Sha1:
+ e971e2141a65dcff67133e35019cb3a1c7197d04 1580212 eoc-common_2.1.0-1_all.deb
+ 3de3a349ccd90b859ce9fb0d2a718b4b8faee8c4 30548 eoc-dbgsym_2.1.0-1_amd64.deb
+ f50566650f25bbf0665b320cfc7482f201645522 33536 eoc-dev_2.1.0-1_amd64.deb
+ 073565cdd91b6a1d391d1748eca1673fcda6cb58 17371 eoc_2.1.0-1_amd64.buildinfo
+ 1ba9f60b1f8a051c5b42043666f1f08764008fd9 185664 eoc_2.1.0-1_amd64.deb
+ 5ba13a64bd8106f633ae8a2c4d5d79dd7f31ee58 14924 gir1.2-eoc-2.0_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ c1a77d7e006929841aaaa48bbc61e952578a2da3fe9cb5106eea181358ef1497 1580212 eoc-common_2.1.0-1_all.deb
+ 018b7a9825eb83ba61d0f6db8e9314d1bb2d1f251d9cbbaa9acc5c12a35cc932 30548 eoc-dbgsym_2.1.0-1_amd64.deb
+ 524cd540c4391be7be84bf3bb94c02733725bf117e686d9d61d6dd44bacb3802 33536 eoc-dev_2.1.0-1_amd64.deb
+ d34ab7e599f2d5324c70f21460c14126303be64566de82d7cc940985fb8346d9 17371 eoc_2.1.0-1_amd64.buildinfo
+ ebbb2d939df6b0432192c7dd9fdacc1773973993dee95904459d0c487a0c6e2d 185664 eoc_2.1.0-1_amd64.deb
+ 61a26c66a4574185b03adec7038b46555e457c2658b2f918d61b4d202180bef7 14924 gir1.2-eoc-2.0_2.1.0-1_amd64.deb
+Files:
+ 706819ac474f0a4917c8c72f24f55bae 1580212 graphics optional eoc-common_2.1.0-1_all.deb
+ 09a5a944b03e882bc79cc8becc35ed79 30548 debug optional eoc-dbgsym_2.1.0-1_amd64.deb
+ 22414fc6e41804b97602e78c551456d6 33536 libdevel optional eoc-dev_2.1.0-1_amd64.deb
+ 624b354afcf0912a6b605b51fa22ee45 17371 graphics optional eoc_2.1.0-1_amd64.buildinfo
+ e116f0e70ecda88a7ae99b1a456100e8 185664 graphics optional eoc_2.1.0-1_amd64.deb
+ 9c47376392a6ff04dd09e94bb2b0cb0b 14924 introspection optional gir1.2-eoc-2.0_2.1.0-1_amd64.deb
