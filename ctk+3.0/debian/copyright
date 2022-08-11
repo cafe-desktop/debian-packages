@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ctk+
-Source: https://download.gnome.org/sources/ctk+/
+Source: https://github.com/cafe-desktop/ctk
 
 Files: *
 Copyright: Copyright (C) 1986, 1987, 1998  The Open Group
