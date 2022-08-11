@@ -1,0 +1,62 @@
+Format: 1.8
+Date: Thu, 01 Jan 2026 20:08:36 +0100
+Source: cafe-panel
+Binary: cafe-panel cafe-panel-common cafe-panel-dbgsym gir1.2-cafepanelapplet-4.0 libcafe-panel-applet-4-1 libcafe-panel-applet-4-1-dbgsym libcafe-panel-applet-dev libcafe-panel-applet-doc
+Architecture: all amd64
+Version: 2.0.1-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-panel - launcher and docking facility for CAFE
+ cafe-panel-common - launcher and docking facility for CAFE (common files)
+ gir1.2-cafepanelapplet-4.0 - GObject introspection data for CAFE panel
+ libcafe-panel-applet-4-1 - library for CAFE Panel applets
+ libcafe-panel-applet-dev - library for CAFE Panel applets (development files)
+ libcafe-panel-applet-doc - library for CAFE Panel applets (documentation files)
+Changes:
+ cafe-panel (2.0.1-2) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - update gir handling
+     - remove unused shlibs:Depends
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it works by default in DH 13
+   * watch: upgrade to version 5
+   * remove transitional gir1.2-cafe-panel
+   * Update dh-sequence-gir Build-Depends
+Checksums-Sha1:
+ c374ad8e54dd522b9e20ab3f96d0cc5ce43e47b6 1427168 cafe-panel-common_2.0.1-2_all.deb
+ d85d4990161e8a7083a39ab37d1ff0804540c876 1301452 cafe-panel-dbgsym_2.0.1-2_amd64.deb
+ 7813afad0ef8f31a3192b6c89a1995d6463d12de 19547 cafe-panel_2.0.1-2_amd64.buildinfo
+ 37a3d59ad19fabd5101c62052e4f845e5549ec0e 553912 cafe-panel_2.0.1-2_amd64.deb
+ f570e5388f4804b853e5f4a57952dc73b691ec32 8960 gir1.2-cafepanelapplet-4.0_2.0.1-2_amd64.deb
+ 095f00d5155a1fbcc23c47c3bdc8296290419269 78720 libcafe-panel-applet-4-1-dbgsym_2.0.1-2_amd64.deb
+ 1c5845a81e3aca49f077f118c38018d2fc151e5c 26796 libcafe-panel-applet-4-1_2.0.1-2_amd64.deb
+ 23fcf2d2df8380863e9956bbef0c7ebb89ac7bab 13264 libcafe-panel-applet-dev_2.0.1-2_amd64.deb
+ 902e5eee1d70a2b889ef6de6e789bf3a95c9d93d 20836 libcafe-panel-applet-doc_2.0.1-2_all.deb
+Checksums-Sha256:
+ d13e7eb79ae44baf24329a9c2ea7e37d54e43acad1014c8695c9011814341fb6 1427168 cafe-panel-common_2.0.1-2_all.deb
+ 313d65259fec63511de2583fddb2fd88983c7d4c82a5e91ab2ff29c483924c53 1301452 cafe-panel-dbgsym_2.0.1-2_amd64.deb
+ 9cfa5893e4fc10256c91432d99bdb46dedd40e5a6afa4673cb26bd22181e7c4d 19547 cafe-panel_2.0.1-2_amd64.buildinfo
+ 9e6f5a1aa37023b73566c45328a9c9fc73f360ded6af1f0625678229c8b2c01b 553912 cafe-panel_2.0.1-2_amd64.deb
+ a4adc329cfe1259f1ce9da3092117608ce76023a2d21f122e16453a39d5fae7a 8960 gir1.2-cafepanelapplet-4.0_2.0.1-2_amd64.deb
+ 1320bad9e2a8b0364dcb79e8a7678bd09275a89eb45882fec81c188ed89b4910 78720 libcafe-panel-applet-4-1-dbgsym_2.0.1-2_amd64.deb
+ 835ed157fb1efc1e09fb83d4e6890f3792e04a8e6d60a34558d2723c0f163842 26796 libcafe-panel-applet-4-1_2.0.1-2_amd64.deb
+ 576d2b5ccb67444ad83ae528863e580e2c9fd5bef5c7ab17f15b63612dd9a6eb 13264 libcafe-panel-applet-dev_2.0.1-2_amd64.deb
+ 3dc7b642975dfcea733e5cfb91b5a5b14eb9b9b06b08ef6ba6d62a8fdce60ee3 20836 libcafe-panel-applet-doc_2.0.1-2_all.deb
+Files:
+ c2d9d5fe28a832c220089622a3080d84 1427168 x11 optional cafe-panel-common_2.0.1-2_all.deb
+ 8e58ebcd95659370217f1de541c97616 1301452 debug optional cafe-panel-dbgsym_2.0.1-2_amd64.deb
+ 109e84a6ee79053d0c2dc33be910b688 19547 x11 optional cafe-panel_2.0.1-2_amd64.buildinfo
+ 2bd96501a87310edb0b83dd237f182fd 553912 x11 optional cafe-panel_2.0.1-2_amd64.deb
+ 02b45667a614dfbede5027844e5abe06 8960 introspection optional gir1.2-cafepanelapplet-4.0_2.0.1-2_amd64.deb
+ cd7d90f2db7fa8139e9d2de631202524 78720 debug optional libcafe-panel-applet-4-1-dbgsym_2.0.1-2_amd64.deb
+ 2e85734fd79fb588ae3353308327cc57 26796 libs optional libcafe-panel-applet-4-1_2.0.1-2_amd64.deb
+ 2d6e1b504e6a096f2be343f579ed42fd 13264 libdevel optional libcafe-panel-applet-dev_2.0.1-2_amd64.deb
+ c89639c763dbd81676c6c80b5e08d843 20836 doc optional libcafe-panel-applet-doc_2.0.1-2_all.deb

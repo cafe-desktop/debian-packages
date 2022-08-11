@@ -1,0 +1,51 @@
+Format: 1.8
+Date: Wed, 31 Dec 2025 19:24:52 +0100
+Source: cafe-menus
+Binary: cafe-menus gir1.2-cafemenu-2.0 libcafe-menu-dev libcafe-menu2 libcafe-menu2-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-menus - implementation of the freedesktop menu specification for CAFE
+ gir1.2-cafemenu-2.0 - GObject introspection data for the CAFE menu specification
+ libcafe-menu-dev - implementation of the freedesktop menu specs for CAFE (developmen
+ libcafe-menu2 - implementation of the freedesktop menu specification for CAFE (li
+Changes:
+ cafe-menus (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Update gir handling
+     - add B-D gir1.2-giounix-2.0-dev
+   * rules:
+     - remove obsolete get-orig-source
+     - Simplify debian/rules
+   * watch: upgrade to version 5
+   * remove transitional gir1.2-cafe-menu
+   * New upstream release
+Checksums-Sha1:
+ 185b284594f91859be6cb4110ded916021969d88 78716 cafe-menus_2.1.0-1_all.deb
+ 15cd5ff4fa0c4f99a6588532f8acb38f6383c28d 9308 cafe-menus_2.1.0-1_amd64.buildinfo
+ 7c19d0c8f157acf2b787b3bda2ab5307dd19a5d5 9136 gir1.2-cafemenu-2.0_2.1.0-1_amd64.deb
+ b18bcfbee8e5e77bee04741cc4d8a039100e8636 12816 libcafe-menu-dev_2.1.0-1_amd64.deb
+ c1f5907276a8885b7d177e73c8006f7172272455 8060 libcafe-menu2-dbgsym_2.1.0-1_amd64.deb
+ eb2b4e41c0dc29c0185f266bdc7f3f582282412f 40492 libcafe-menu2_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ 5e180d75b7e7be36a6af09bdaf667e3aba584958206721acad764e1b93372da9 78716 cafe-menus_2.1.0-1_all.deb
+ d42cdf2e4b6841aa56eabbdf5bee4ce3410b527bf41dd179b72ffb5a1d35cb5d 9308 cafe-menus_2.1.0-1_amd64.buildinfo
+ 3fe6418266bb0e28e8fc7ac0d30fe46ad8d030c478eee0e2e94d828b652e4cf3 9136 gir1.2-cafemenu-2.0_2.1.0-1_amd64.deb
+ 80241b7d319d6955f465209b1bd553e5a23301d25e91a8cedfd3c00c200db6a5 12816 libcafe-menu-dev_2.1.0-1_amd64.deb
+ 48510987cf24f49d0ec7a69380050b5d618a5339870684f47505f3c35bb98390 8060 libcafe-menu2-dbgsym_2.1.0-1_amd64.deb
+ 318356192ec64675c063aae9ac6397fb12a10c16cb0f8e311f89355909c89180 40492 libcafe-menu2_2.1.0-1_amd64.deb
+Files:
+ 8edec205cc55c1179dbb45b8976bf232 78716 libs optional cafe-menus_2.1.0-1_all.deb
+ b295863a6ffa46ce8e1973fb6197c900 9308 libs optional cafe-menus_2.1.0-1_amd64.buildinfo
+ 394ec6d1a5268d1c7ef61977066d13a7 9136 introspection optional gir1.2-cafemenu-2.0_2.1.0-1_amd64.deb
+ 6ed869dc1d1310d399e99868356ff5f8 12816 libdevel optional libcafe-menu-dev_2.1.0-1_amd64.deb
+ 8f9ae5097f33804d5bd069c54ba68687 8060 debug optional libcafe-menu2-dbgsym_2.1.0-1_amd64.deb
+ 05b200198525270fc3227d6215a27fe8 40492 libs optional libcafe-menu2_2.1.0-1_amd64.deb

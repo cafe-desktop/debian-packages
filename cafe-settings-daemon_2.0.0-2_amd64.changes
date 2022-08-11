@@ -1,0 +1,46 @@
+Format: 1.8
+Date: Sun, 28 Dec 2025 13:13:19 +0100
+Source: cafe-settings-daemon
+Binary: cafe-settings-daemon cafe-settings-daemon-common cafe-settings-daemon-dbgsym cafe-settings-daemon-dev
+Architecture: all amd64
+Version: 2.0.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-settings-daemon - daemon handling the CAFE session settings
+ cafe-settings-daemon-common - daemon handling the CAFE session settings (common files)
+ cafe-settings-daemon-dev - daemon handling the CAFE session settings (development files)
+Changes:
+ cafe-settings-daemon (2.0.0-2) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - 'libfontconfig-dev' instead 'libfontconfig1-dev'
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it is the default in DH 13
+   * watch: upgrade to version 5
+   * upgrade to debhelper-compat 13
+   * Fix lintian aliased-location errors
+Checksums-Sha1:
+ 2d71ca0eb2391dfaed60a39afce3eb7cefdfbfa7 393836 cafe-settings-daemon-common_2.0.0-2_all.deb
+ 56f858e505f1ea156e9d08d42c8bc85a8a0c56f8 595448 cafe-settings-daemon-dbgsym_2.0.0-2_amd64.deb
+ 4c3534b48013f0ba33bc77217d2d86d8ccc21f3e 7392 cafe-settings-daemon-dev_2.0.0-2_amd64.deb
+ 0e6dc811a87ae810a6875259efd326d80ce7daec 17577 cafe-settings-daemon_2.0.0-2_amd64.buildinfo
+ ff89aad3692a2c2c0858e264012b61253325a909 187272 cafe-settings-daemon_2.0.0-2_amd64.deb
+Checksums-Sha256:
+ 648daf87646b83e435f90916a386b944011aaf29ff62f57f92195e33ac53957b 393836 cafe-settings-daemon-common_2.0.0-2_all.deb
+ 8f88f669fe810b0720c47521482166f8308fa7e840e4bde17ad92ff97ff3b2ba 595448 cafe-settings-daemon-dbgsym_2.0.0-2_amd64.deb
+ 590ce847e2773d4e4b1a1b5ec733d4f81686f64696d4dc90455809714a946764 7392 cafe-settings-daemon-dev_2.0.0-2_amd64.deb
+ c589edff5f5b16709149550f6598688853c358fcc3d87ce00fcd9b4999ec40a3 17577 cafe-settings-daemon_2.0.0-2_amd64.buildinfo
+ d4cf4b7dac9be31c1ef3fd8ef29ab9ab6a765fbfa0ce280e7639bcda373ccd7d 187272 cafe-settings-daemon_2.0.0-2_amd64.deb
+Files:
+ fffb1af48c7b1b724669cddaada0edaf 393836 x11 optional cafe-settings-daemon-common_2.0.0-2_all.deb
+ ce34314c3054409cd3fd2acdf6c05993 595448 debug optional cafe-settings-daemon-dbgsym_2.0.0-2_amd64.deb
+ 65e0bcdaf2daeb7b6fb6cd8183dbeb1f 7392 devel optional cafe-settings-daemon-dev_2.0.0-2_amd64.deb
+ 9777ff7978c4452e4f2009dfe9cbd4ea 17577 x11 optional cafe-settings-daemon_2.0.0-2_amd64.buildinfo
+ c7f70f3e47e2ed9f04916870ff50a938 187272 x11 optional cafe-settings-daemon_2.0.0-2_amd64.deb

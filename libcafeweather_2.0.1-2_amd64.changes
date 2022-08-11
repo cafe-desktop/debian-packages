@@ -1,0 +1,43 @@
+Format: 1.8
+Date: Sun, 28 Dec 2025 14:12:38 +0100
+Source: libcafeweather
+Binary: libcafeweather-common libcafeweather-dev libcafeweather2 libcafeweather2-dbgsym
+Architecture: all amd64
+Version: 2.0.1-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ libcafeweather-common - CafeWeather shared library (common files)
+ libcafeweather-dev - CafeWeather shared library (development files)
+ libcafeweather2 - CafeWeather shared library
+Changes:
+ libcafeweather (2.0.1-2) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it works by default in DH 13
+   * watch: upgrade to version 5
+Checksums-Sha1:
+ ab56028bbcf0acf77c467c5c3fe9f11e3b9723fc 2865196 libcafeweather-common_2.0.1-2_all.deb
+ 81505e21ceb6abd1aacdb1ef8fcc4624562cd05c 8320 libcafeweather-dev_2.0.1-2_amd64.deb
+ 705fb314310e2c7b7e3fc83ad3b97542f26cabd5 121928 libcafeweather2-dbgsym_2.0.1-2_amd64.deb
+ bc8c96ae682994dacbad9be1838419205b132539 41608 libcafeweather2_2.0.1-2_amd64.deb
+ 89d544dc5fc3193eb3cc1458d472f9f6d878b9b0 16501 libcafeweather_2.0.1-2_amd64.buildinfo
+Checksums-Sha256:
+ 2b90d302fd1d2dd8e8b63f5f31b0bed5982e4c49d181e87d63b644c1025f3e7d 2865196 libcafeweather-common_2.0.1-2_all.deb
+ d8d0a5de85bb0096d1f36a9e3a8b209ec8aaea33b48fb1d118f4f5db4e8b0f50 8320 libcafeweather-dev_2.0.1-2_amd64.deb
+ 5fdcbc0598c5f5703e5e31cc9fb38500bdf1ad0ffd52d0792f04b5ab2c97dca7 121928 libcafeweather2-dbgsym_2.0.1-2_amd64.deb
+ d9d7a1091fc8df631b01be6516b0fa84186a75355c2928f8f32008c63a9624ce 41608 libcafeweather2_2.0.1-2_amd64.deb
+ 9dc084b6bb6ac2859e9ea8269763c85827d18d6f9011bba7c52232ca5e39dc49 16501 libcafeweather_2.0.1-2_amd64.buildinfo
+Files:
+ 821dc926759acf454dcd1a76f6487efe 2865196 libs optional libcafeweather-common_2.0.1-2_all.deb
+ cfd4ba0a4498db852f265ea5ad99dc98 8320 libdevel optional libcafeweather-dev_2.0.1-2_amd64.deb
+ 9785e2a55c4308380022b3a764881f05 121928 debug optional libcafeweather2-dbgsym_2.0.1-2_amd64.deb
+ 8706ebf4277d041b0fc9fa20fd4e0eda 41608 libs optional libcafeweather2_2.0.1-2_amd64.deb
+ 94fe03fd98d2a07948a13cf738ebdf26 16501 libs optional libcafeweather_2.0.1-2_amd64.buildinfo
