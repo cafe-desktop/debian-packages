@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Sat, 27 Dec 2025 16:19:17 +0100
+Source: libcafekbd
+Binary: gir1.2-cafekbd-2.0 libcafekbd-common libcafekbd-dev libcafekbd4 libcafekbd4-dbgsym
+Architecture: amd64 all
+Version: 2.0.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-cafekbd-2.0 - GObject introspection data for libcafekbd and libcafekbdui
+ libcafekbd-common - CAFE library to manage keyboard configuration (common files)
+ libcafekbd-dev - CAFE library to manage keyboard configuration (development files)
+ libcafekbd4 - CAFE library to manage keyboard configuration
+Changes:
+ libcafekbd (2.0.0-2) unstable; urgency=medium
+ .
+   * rename package gir1.2-cafekbd-1.0 -> gir1.2-cafekbd-2.0
+   * control:
+     - gir1.2-cafekbd-2.0 replaces gir1.2-cafekbd-1.0
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Update gir handling
+     - add gir Provides to gir1.2-cafekbd-2.0
+     - Remove obsolete Breaks, Conflicts, Replaces
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+   * Drop transitional pkg 'gir1.2-matekbd' and drop lintian override for it
+   * Simplify debian/rules
+Checksums-Sha1:
+ fc1ae69d4826c243e17451e8ff748f03272d1e9d 6212 gir1.2-cafekbd-2.0_2.0.0-2_amd64.deb
+ 399c2ca933360e6e0eb5361079493fa2d53cc3b3 86240 libcafekbd-common_2.0.0-2_all.deb
+ b15a7f9a97035822ad5e457bb80b9e66f11a2c46 11572 libcafekbd-dev_2.0.0-2_amd64.deb
+ 704ca8578fd1147b0b06400ed35acdc291119fc5 9176 libcafekbd4-dbgsym_2.0.0-2_amd64.deb
+ 2a09e9f1eb02cf36871d85b550c8b1f151ed4b26 39040 libcafekbd4_2.0.0-2_amd64.deb
+ 05e0d0c7a676296acbfb72b4e62457c7d2dcc2b1 16543 libcafekbd_2.0.0-2_amd64.buildinfo
+Checksums-Sha256:
+ 97122ff1e41702ecc8d94cbe2156672b5306e8af448a3e200d81eb2866b4c9b6 6212 gir1.2-cafekbd-2.0_2.0.0-2_amd64.deb
+ 48696c9c1dbcb1be64f4ab2359c13d50c51554747edb9b356de39770ed57ffc3 86240 libcafekbd-common_2.0.0-2_all.deb
+ 9ffeed36219f875e0b591b9dac1f2e5ce554d75d0e3192c10581d960e19ad323 11572 libcafekbd-dev_2.0.0-2_amd64.deb
+ 277eb547c6f1c5a8a29511418bcd14be59d5597b31c209d957bfd6ae9beeb4c4 9176 libcafekbd4-dbgsym_2.0.0-2_amd64.deb
+ 30de308b3d72d280e921649141699dd2e355d4c055539f0256548bd8b83d2f2f 39040 libcafekbd4_2.0.0-2_amd64.deb
+ 2e9711b8b9811e9721cb643ec561116873d2423985f9d3243f006e7a79419601 16543 libcafekbd_2.0.0-2_amd64.buildinfo
+Files:
+ 7d93aed4381296f558e701eb8511df8d 6212 introspection optional gir1.2-cafekbd-2.0_2.0.0-2_amd64.deb
+ 7b2e7bbfc9f0f56cad3e2282efbe83cc 86240 libs optional libcafekbd-common_2.0.0-2_all.deb
+ 127d9f5082b592ffd24a8f80d9037214 11572 libdevel optional libcafekbd-dev_2.0.0-2_amd64.deb
+ 1fbef70a11fdf4a58894cf735f2c011b 9176 debug optional libcafekbd4-dbgsym_2.0.0-2_amd64.deb
+ c8016202c093695205e8bb6821a65b68 39040 libs optional libcafekbd4_2.0.0-2_amd64.deb
+ 10d8b55be1b423860f58740d21538097 16543 libs optional libcafekbd_2.0.0-2_amd64.buildinfo
