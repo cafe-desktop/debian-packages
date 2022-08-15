@@ -66,9 +66,9 @@ Files: src/dlg-add-files.h
 Copyright: 2001-2012, The Free Software Foundation, Inc.
 License: GPL-2+
 
-Files: caja/caja-grapa.c
-       caja/caja-grapa.h
-       caja/grapa-module.c
+Files: baul/baul-grapa.c
+       baul/baul-grapa.h
+       baul/grapa-module.c
        src/actions.c
        src/actions.h
        src/dlg-add-files.c
@@ -127,8 +127,8 @@ Files: .build.yml
        .travis.yml
        .github/issue_template.md
        .github/FUNDING.yml
-       caja/libcaja-grapa.caja-extension.desktop.in.in
-       caja/Makefile.am
+       baul/libbaul-grapa.baul-extension.desktop.in.in
+       baul/Makefile.am
        copy-n-paste/Makefile.am
        data/icons/22x22/apps/*.png
        data/icons/16x16/actions/*.png

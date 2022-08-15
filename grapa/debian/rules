@@ -13,7 +13,7 @@ override_dh_missing:
 	dh_missing --fail-missing
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/libcaja-grapa.la
+	rm -rfv debian/tmp/usr/lib/*/baul/extensions-2.0/libbaul-grapa.la
 	dh_install
 
 override_dh_installchangelogs:
