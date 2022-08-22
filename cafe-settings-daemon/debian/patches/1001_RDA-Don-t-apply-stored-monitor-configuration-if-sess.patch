@@ -1,0 +1,88 @@
+From c575333eb75e944801cfe3caf09f4dd7820a28dc Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Wed, 18 Dec 2019 09:11:12 +0100
+Subject: [PATCH] RDA: Don't apply stored monitor configuration if session is
+ remote.
+
+---
+ configure.ac                        | 11 +++++++++++
+ plugins/xrandr/Makefile.am          |  2 ++
+ plugins/xrandr/msd-xrandr-manager.c | 10 ++++++++++
+ 3 files changed, 23 insertions(+)
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -59,6 +59,7 @@ MATE_DESKTOP_REQUIRED_VERSION=1.23.2
+ LIBMATEKBD_REQUIRED_VERSION=1.17.0
+ LIBNOTIFY_REQUIRED_VERSION=0.7.0
+ LIBMATEMIXER_REQUIRED_VERSION=1.10.0
++RDA_REQUIRED_VERSION=0.0.3
+ 
+ PKG_CHECK_MODULES(SETTINGS_DAEMON,
+ 	glib-2.0 >= $GLIB_REQUIRED_VERSION
+@@ -363,6 +364,15 @@ fi
+ 
+ AM_CONDITIONAL(BUILD_RFKILL, [test x"$enable_rfkill" = x"yes"])
+ 
++# ---------------------------------------------------------------------------
++# - Check if Remote Desktop Awareness support is available
++# ---------------------------------------------------------------------------
++
++PKG_CHECK_MODULES(RDA, rda >= $RDA_REQUIRED_VERSION, have_rda=yes, have_rda=no)
++if test "x$have_rda" = "xyes"; then
++  AC_DEFINE(HAVE_RDA, 1, [Have the Remote Desktop Awareness library])
++fi
++
+ # ---------------------------------------------------------------------------
+ # Enable Profiling
+ # ---------------------------------------------------------------------------
+@@ -498,4 +508,5 @@ ${NSS_DATABASE:+\
+     System nssdb:             ${NSS_DATABASE}
+ }\
+     Profiling support:        ${enable_profiling}
++    RD awareness:             ${have_rda}
+ "
+--- a/plugins/xrandr/Makefile.am
++++ b/plugins/xrandr/Makefile.am
+@@ -67,6 +67,7 @@ libxrandr_la_CPPFLAGS =						\
+ libxrandr_la_CFLAGS =			\
+ 	$(SETTINGS_PLUGIN_CFLAGS)	\
+ 	$(LIBNOTIFY_CFLAGS)		\
++	$(RDA_CFLAGS)			\
+ 	$(MATE_DESKTOP_CFLAGS)		\
+ 	$(AM_CFLAGS)			\
+ 	$(WARN_CFLAGS)
+@@ -77,6 +78,7 @@ libxrandr_la_LDFLAGS = 			\
+ libxrandr_la_LIBADD  =			\
+ 	$(SETTINGS_PLUGIN_LIBS)		\
+ 	$(LIBNOTIFY_LIBS)		\
++	$(RDA_LIBS)			\
+ 	$(MATE_DESKTOP_LIBS)
+ 
+ plugin_in_files =			\
+--- a/plugins/xrandr/msd-xrandr-manager.c
++++ b/plugins/xrandr/msd-xrandr-manager.c
+@@ -50,6 +50,10 @@
+ #include <libnotify/notify.h>
+ #endif
+ 
++#ifdef HAVE_RDA
++#include <rda/rda.h>
++#endif
++
+ #include "mate-settings-profile.h"
+ #include "msd-xrandr-manager.h"
+ 
+@@ -2405,6 +2409,12 @@ apply_intended_configuration (MsdXrandrManager *manager, const char *intended_fi
+         GError *my_error;
+         gboolean result;
+ 
++#ifdef HAVE_RDA
++	if (rda_session_is_remote()) {
++		return;
++	}
++#endif
++
+         my_error = NULL;
+         result = apply_configuration_from_filename (manager, intended_filename, TRUE, timestamp, &my_error);
+         if (!result) {

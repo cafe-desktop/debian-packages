@@ -1,0 +1,676 @@
+mate-settings-daemon (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+     + Refactor 1001_RDA-Don-t-apply-stored-monitor-configuration-if-sess.patch.
+  * debian/copyright:
+     + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 14:51:26 +0200
+
+mate-settings-daemon (1.24.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add B:/R: relation to mate-desktop-common (<< 1.24.0-1~). (Closes:
+      #952713).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 28 Feb 2020 07:36:05 +0100
+
+mate-settings-daemon (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_new_video_key.patch. Rejected upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Update Build-Depends: to support MATE Desktop 1.24.
+    + Add B-D policykit-1.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 12:28:50 +0100
+
+mate-settings-daemon (1.22.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Bump Standards-Version: to 4.4.1. No changes needed.
+    + Add Rules-Requires-Root: field and set it to no.
+    + Add B-D librda-dev (>= 0.0.3).
+  * debian/patches:
+    + Add 1001_RDA-Don-t-apply-stored-monitor-configuration-if-sess.patch.
+      Don't re-apply stored monitor configuration if session is remote.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Dec 2019 09:17:14 +0100
+
+mate-settings-daemon (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:21:53 +0200
+
+mate-settings-daemon (1.22.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add B-D: dh-exec.
+  * debian/rules:
+    + Add --disable-rfkill configure option on non-Linux host archs.
+  * debian/mate-settings-daemon-common.install:
+    + Use dh-exec; omit installation of udev rules as they don't get created
+      when --disable-rfkill configure option is used on non-Linux host archs.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 04 Aug 2019 12:46:49 +0200
+
+mate-settings-daemon (1.22.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_support-org-mate-a11y-kbd-stickykeys-latch-to-lock.patch.
+      Applied upstream.
+  * debian/control:
+    + Updated for MATE Desktop 1.22
+  * debian/mate-settings-daemon-common.install:
+    + Add udev rules.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 17:18:34 +0200
+
+mate-settings-daemon (1.20.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Add 0001_support-org-mate-a11y-kbd-stickykeys-latch-to-lock.patch. Support
+      org.mate.a11y-kbd.stickykeys-latch-to-lock feature. (Closes: #909676).
+  * debian/control:
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+    + Explicitly let bin:pkg mate-settings-daemon depend on mate-desktop-common
+      (>= 1.20.4-2~). It contains the org.mate.accessibility-
+      keyboard.stickykeys-latch-to-lock gschema settings item.
+    + White-space clean-up at EOF.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 16 Jan 2019 11:27:58 +0100
+
+mate-settings-daemon (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop all patches. Shipped upstream now.
+  * debian/control:
+    + debian/control: Bump versioned B-D for libmate-desktop-dev to
+      (>= 1.20.2).
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 06 Jul 2018 14:18:14 +0200
+
+mate-settings-daemon (1.20.1-3) unstable; urgency=medium
+
+  * debian/control:
+    + Bump versioned B-D on libmate-desktop-dev to 1.20.1-2~ due to added
+      symbol mate_bg_create_surface_scale(). Fixes FTBFS of previous
+      upload.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 13:51:50 +0200
+
+mate-settings-daemon (1.20.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_hidpi_background_support.patch. Support background fallback on
+      HiDPI.
+    + 0001_hidpi_background_support.patch add Author and Description
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 12:15:28 +0200
+
+mate-settings-daemon (1.20.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_scale_osd_on_hidpi_displays.patch. Applied upstream.
+    + Drop 0002_prevent_media-keys_swallowing_modifier_keys.patch. Applied
+      upstream.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 11:57:28 +0200
+
+mate-settings-daemon (1.20.0-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Drop extra Priority: field for bin:pkg mate-settings-dev.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+  * debian/patches:
+    + Add patch header to
+      0002_prevent_media-keys_swallowing_modifier_keys.patch.
+  * debian/watch:
+    + Use secure URI to obtain upstream sources
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0002_prevent_media-keys_swallowing_modifier_keys.patch. Prevent
+      media-keys bindings from swallowing modifier keys.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Mar 2018 11:53:24 +0100
+
+mate-settings-daemon (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches (already in 1.19.2-0ubuntu1):
+    + Drop 1000_global_menu_support.diff. Applied upstream.
+    + Add 000{0,1}_hidpi.patch. HiDPI support.
+  * debian/patches: (already in 1.20.0-0ubuntu1):
+    + Drop 000*_hidpi.patch files. Applied upstream.
+  * debian/patches: (this release):
+    + Add 0001_scale_osd_on_hidpi_displays.patch. Scale OSD size correctly
+      on HiDPI displays.
+  * debian/copyright (already in 1.20.0-0ubuntu1):
+    + Update copyright attributions.
+  * debian/control (already in 1.19.2-0ubuntu1):
+    + Dependencies updated for MATE 1.19.
+    + Drop B-D autotools-dev. Since compatibility level 10, debhelper enables
+      the autoreconf sequence by default.
+  * debian/control (already in 1.20.0-0ubuntu1):
+    + Update Build-Depends: to support MATE Desktop 1.20.
+  * debian/changelog: White-space cleanup.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.2-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 12 Feb 2018 11:31:35 +0100
+
+mate-settings-daemon (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
+
+mate-settings-daemon (1.19.2-0ubuntu3) bionic; urgency=medium
+
+  * debian/patches:
+    + Add 0001_hidpi.patch. HiDPI configuration in XSettings.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 06 Feb 2018 14:47:59 +0000
+
+mate-settings-daemon (1.19.2-0ubuntu2) bionic; urgency=medium
+
+  * debian/patches:
+    + Update 0000_hidpi.patch. Fix where DPI is getting scaled and remove ceil
+      for scaled DPI.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 25 Jan 2018 23:27:52 +0000
+
+mate-settings-daemon (1.19.2-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 11:52:50 +0000
+
+mate-settings-daemon (1.18.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1002_fix-randr-applet-dying-on-restart.patch. Applied upstream.
+    + Drop 1001_request_keyboard_event_from_global_keybindings.diff. Applied
+      upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Nov 2017 09:37:37 +0100
+
+mate-settings-daemon (1.18.1-4) unstable; urgency=medium
+
+  * debian/control:
+    + Properly provide Ds (mate-settings-daemon-dev) as defined in .pc
+      file: libdbus-glib-1-dev, libglib2.0-dev and libdbus-1-dev. Fixes
+      FTBFS of arctica-greeter (in prep for Debian).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 21 Oct 2017 16:49:13 +0200
+
+mate-settings-daemon (1.18.1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1002_fix-randr-applet-dying-on-restart.patch. Complete the fix started
+      in 1001_request_keyboard_event_from_global_keybindings.diff.
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 17 Oct 2017 17:52:11 +0200
+
+mate-settings-daemon (1.18.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 1001_request_keyboard_event_from_global_keybindings.diff. This
+      allows mate-settings-daemon to honor global keybindings whenever a
+      different application has keybindings that seem conflicting, but are
+      usually not.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Aug 2017 14:04:11 -0400
+
+mate-settings-daemon (1.18.1-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/patches: Add 1000_global_menu_support.diff (LP: #1675956)
+  * add patch headers
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 16:24:05 +0200
+
+mate-settings-daemon (1.16.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 28 Apr 2017 10:25:46 +0200
+
+mate-settings-daemon (1.16.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Don't alternatively allow policykit-1-gnome as polkit authagent provider,
+      enforce using MATE's polkit authentication agent.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Jan 2017 18:25:50 +0100
+
+mate-settings-daemon (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release. (Closes: #837635).
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support developent releases.
+
+  [ Mike Gabriel ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 17:17:39 +0200
+
+mate-settings-daemon (1.15.1-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
+
+mate-settings-daemon (1.14.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + dbgsym: Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 11:10:47 +0200
+
+mate-settings-daemon (1.14.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: libmate-desktop-dev (>= 1.14)
+    + Versioned B-D: libmatekbd-dev (>= 1.14)
+    + Versioned B-D: libmatemixer-dev (>= 1.14)
+    + Versioned B-D: mate-common (>= 1.14)
+    + B-D: libcanberra-gtk3-dev
+    + B-D: libgtk-3-dev
+    + Versioned D (mate-settings-daemon): mate-desktop-common (>= 1.14).
+  * debian/rules:
+    + MateConf dropped upstream.
+    + Add --with-gtk=3.0
+  * debian/patches:
+    + Drop 0000_xcursor_theme_and_size_to_xsettings.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 May 2016 10:24:26 +0200
+
+mate-settings-daemon (1.12.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0000_xcursor_theme_and_size_to_xsettings.patch.
+      Add cursor theme and size to xsettings. (LP:#1544814).
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add patch header to 0000_xcursor_theme_and_size_to_xsettings.patch.
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Enable all hardening flags.
+  * debian/control:
+    + Use encrypted URLs for Vcs-*: field.
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 18 Mar 2016 12:30:07 +0100
+
+mate-settings-daemon (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.12), libmate-desktop-dev (>= 1.12),
+      libmatekbd-dev (>= 1.12) and libmatemixer-dev (>= 1.12).
+    + Drop obsolete B-D: libmatepolkit-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Dec 2015 14:19:18 +0100
+
+mate-settings-daemon (1.10.2-2) unstable; urgency=medium
+
+  * Re-Upload to unstable after some manual package decruft in
+    the Debian archive (mate-media bug #800950 for similar issue).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 19 Oct 2015 14:13:33 +0200
+
+mate-settings-daemon (1.10.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Sep 2015 04:50:47 +0200
+
+mate-settings-daemon (1.10.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/rules:
+    + Remove obsolete build options.
+
+  [ John Paul Adrian Glaubitz ]
+  * Fix minor typo in debian/control (missing hyphen).
+  * Upload to unstable.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Sun, 16 Aug 2015 16:35:32 +0200
+
+mate-settings-daemon (1.10.1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_typo-fix-in-smartcard-manager.patch. Applied upstream.
+  * debian/copyright:
+    + Mention two new man pages.
+  * debian/*.{1,manpages}:
+    + Drop our man pages for msd-locate-pointer and msd-datetime-mechanism.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 15:31:16 +0200
+
+mate-settings-daemon (1.10.0-1~exp1) experimental; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Update to support libmatemedia transition.
+    + Remove unused-build-dependency-on-cdbs.
+  * debian/copyright:
+    + Update for new upstream release.
+  * debian/mate-settings-daemon-common.install:
+    + Update to support libmatemedia transition.
+  * debian/mate-settings-daemon-dev.install:
+    + Add development files.
+  * debian/mate-settings-daemon-gstreamer.*:
+    + Remove obsolete install files.
+  * debian/mate-settings-daemon-pulse.*:
+    + Remove obsolete install files.
+  * debian/mate-settings-daemon.install:
+    + Add to support libmatemedia transition.
+  * debian/patches:
+    + Drop 0001_prefer-gcalculator-for-media-keys.patch. Applied
+      upstream.
+    + Drop 0002_fix-a11y-keyboard-dialog-segfaults.patch. Applied
+      upsteam.
+    + Drop 0003_fix-unsafe-access-to-list-elements-in-background-plugin.patch.
+      Applied upstream.
+    + Drop 0010_move_a11y_keybindings_to_media_keys.patch. Applied
+      upstream.
+    + Drop 0011_add_a11y_settings_plugin.patch. Applied upstream.
+    + Drop 0012_use_gnome_a11y_schema_to_enable_applications.patch.
+      Applied upstream.
+    + Drop 0013_monitor_gnome_schema_keys.patch. Applied upstream.
+    + Drop 1001_fix-numlock-cpu-usage.patch. Applied upstream.
+  * debian/rules:
+    + Switch from CDBS to pure debhelper.
+    + Update to support libmatemixer transition.
+  * Processed with wrap-and-sort.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned D: mate-common (>= 1.10).
+  * debian/copyright:
+    + Files in plugins/media-keys/cut-n-paste/ have been removed from this
+      upstream release.
+  * debian/msd-locate-pointer.1:
+    + Typo fix.
+  * debian/rules:
+    + Don't run dh_makeshlibs to avoid discovering our private libraries
+      and triggering Debian bug #204975.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 16 Jun 2015 05:55:20 +0200
+
+mate-settings-daemon (1.8.3-3) unstable; urgency=medium
+
+  * Re-upload to unstable. (Closes: #785506).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 19 May 2015 16:57:06 +0200
+
+mate-settings-daemon (1.8.3-2) experimental; urgency=medium
+
+  * Incorporate latest changes uploaded to unstable (1.8.2-4) and
+    re-upload to experimental.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 13 Mar 2015 14:45:07 +0100
+
+mate-settings-daemon (1.8.3-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Including GLib >= 2.43 compatibility patch. (Closes: #778691,
+      LP:#1426327).
+  * Fix accessibility key bindings for Orca and Onboard. (Closes: #775212).
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Work in license information for a11y-settings plugin.
+  * debian/mate-settings-daemon-gstreamer.install:
+    + Provide new keybindings/50-accessibility.xml to MATE Control Center.
+      (This file will also be provided in mate-settings-daemon-pulse via
+      Makefile magic and debian/rules).
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0010_move_a11y_keybindings_to_media_keys.patch,
+          0011_add_a11y_settings_plugin.patch,
+          0012_use_gnome_a11y_schema_to_enable_applications.patch,
+          0013_monitor_gnome_schema_keys.patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 12 Mar 2015 04:57:38 +0100
+
+mate-settings-daemon (1.8.2-4) unstable; urgency=medium
+
+  * debian/changelog:
+    + Fix typo in previous changelog stanza.
+  * debian/patches:
+    + 0003_fix-unsafe-access-to-list-elements-in-background-plugin.patch.
+      Prevent mate-settings-daemon and thus MATE desktop from crashing (e.g.)
+      during screen size changes or screen configuration changes. (Closes:
+      #780399, LP:#1430204).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 13 Mar 2015 14:28:05 +0100
+
+mate-settings-daemon (1.8.2-3) unstable; urgency=medium
+
+  * debian/changelog:
+    + Fix typo in previous changelog stanza.
+  * debian/patches:
+    + Add debian/patches/1001_fix-numlock-cpu-usage.patch. Prevent m-s-d from
+      causing high CPU load if the user repetitively toggles the NUMLOCK key
+      while being connected via a remote session (NX, X2Go, VNC, xrdp, etc.)
+      or sometimes also in a local X.org session. (Closes: #780226, #778278,
+      LP:#1364111).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Mar 2015 20:36:14 +0100
+
+mate-settings-daemon (1.8.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add README file explaining our patch naming scheme.
+    + Add 0002_fix-a11y-keyboard-dialog-segfaults.patch. Fix segfaults when
+      clicking on the checkboxes in the a11y-keyboard configuration dialog.
+      (Closes: #779916).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Mar 2015 17:59:38 +0100
+
+mate-settings-daemon (1.8.2-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/patches:
+    + Add 0001_prefer-gcalculator-for-media-keys.patch. Prefer gcalculator as
+      pocket calculator when the calculator media key is pressed.
+  * debian/rules:
+    + Use upstream's NEWS file as upstream ChangeLog.
+  * debian/control:
+    + Add Vangelis Mouhtsis to Uploaders: field.
+  * debian/copyright:
+    + Really mention all files in upstream source tree. Remove information for
+      files not shipped in upstream sources anymore.
+  * missing man pages:
+    + Add man pages for msd-datetime-mechanism and msd-locate-pointer.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Oct 2014 13:49:21 +0200
+
+mate-settings-daemon (1.8.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Prefer pulse backend of MATE settings daemon to the gstreamer backend
+      on default installations. (Closes: #753588).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Aug 2014 17:44:50 +0200
+
+mate-settings-daemon (1.8.1-1) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: libmate-desktop-dev (>= 1.8.1).
+  * debian/rules:
+    + Remove files after build that we do not install into any bin:package.
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 19 May 2014 08:33:41 +0200
+
+mate-settings-daemon (1.8.0-3) unstable; urgency=low
+
+  * debian/rules:
+    + Enable parallel builds.
+  * debian/copyright:
+    + Fix typo (opinion -> option).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 16:38:33 +0200
+
+mate-settings-daemon (1.8.0-2) unstable; urgency=high
+
+  * debian/changelog:
+    + Setting urgency to "high" as #742461 breaks existing MATE desktop
+      installations on Debian jessie.
+  * debian/control:
+    + Versioned dependency for bin:packages mate-settings-daemon-gstreamer and
+      mate-settings-daemon-pulse on mate-desktop-common (>= 1.8). (Closes:
+      #742461).
+  * debian/rules:
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+  * debian/copyright:
+    + Point to git.mate-desktop.org in Source: field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Mar 2014 15:13:30 +0200
+
+mate-settings-daemon (1.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/copyright:
+    + Adapt to files in new upstream tarball.
+  * debian/rules:
+    + Build package using autogen.sh.
+  * man pages:
+    + Drop debian/man/mate-settings-daemon.1. Provided in upstream sources now.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Mar 2014 22:15:19 +0100
+
+mate-settings-daemon (1.6.1-1) unstable; urgency=low
+
+  * Inital release. (Closes: #728489).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 31 Jan 2014 00:01:02 +0100
