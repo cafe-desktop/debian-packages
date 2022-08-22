@@ -285,8 +285,8 @@ Files: .build.yml
        data/cafe-settings-daemon.1
        Makefile.am
        makepot
-       its/marco-keybindings.its
-       its/marco-keybindings.loc
+       its/croma-keybindings.its
+       its/croma-keybindings.loc
        cafe-settings-daemon/Makefile.am
        cafe-settings-daemon/cafe-settings-manager.xml
        cafe-settings-daemon/cafe-settings-bus.c
