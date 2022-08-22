@@ -1,7 +1,7 @@
-Source: mate-settings-daemon
+Source: cafe-settings-daemon
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -16,9 +16,9 @@ Build-Depends: debhelper (>= 10.3~),
                libfontconfig1-dev,
                libglib2.0-dev,
                libctk-3-dev,
-               libmate-desktop-dev (>= 1.24),
-               libmatekbd-dev (>= 1.24),
-               libmatemixer-dev (>= 1.24),
+               libcafe-desktop-dev (>= 1.24),
+               libcafekbd-dev (>= 1.24),
+               libcafemixer-dev (>= 1.24),
                libnotify-dev,
                libnss3-dev,
                libpolkit-agent-1-dev,
@@ -33,26 +33,26 @@ Build-Depends: debhelper (>= 10.3~),
                libxrandr-dev,
                libxt-dev,
                policykit-1,
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
                x11proto-kb-dev,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-settings-daemon
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-settings-daemon.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-settings-daemon
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-settings-daemon.git
 
-Package: mate-settings-daemon
+Package: cafe-settings-daemon
 Architecture: any
-Depends: mate-desktop-common (>= 1.24),
-         mate-polkit,
-         mate-settings-daemon-common (= ${source:Version}),
+Depends: cafe-desktop-common (>= 1.24),
+         cafe-polkit,
+         cafe-settings-daemon-common (= ${source:Version}),
          x11-xserver-utils,
          ${misc:Depends},
          ${shlibs:Depends},
-Replaces: mate-settings-daemon-gstreamer (<< 1.9.0),
-          mate-settings-daemon-pulse (<< 1.9.0),
-Breaks: mate-settings-daemon-gstreamer (<< 1.9.0),
-        mate-settings-daemon-pulse (<< 1.9.0),
+Replaces: cafe-settings-daemon-gstreamer (<< 1.9.0),
+          cafe-settings-daemon-pulse (<< 1.9.0),
+Breaks: cafe-settings-daemon-gstreamer (<< 1.9.0),
+        cafe-settings-daemon-pulse (<< 1.9.0),
 Description: daemon handling the MATE session settings
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
@@ -69,15 +69,15 @@ Description: daemon handling the MATE session settings
  It also sets various application settings through X resources and
  freedesktop.org XSETTINGS.
 
-Package: mate-settings-daemon-common
+Package: cafe-settings-daemon-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: mate-settings-daemon-gstreamer (<< 1.9.0),
-          mate-settings-daemon-pulse (<< 1.9.0),
-          mate-desktop-common (<< 1.24.0-1~),
-Breaks: mate-settings-daemon-gstreamer (<< 1.9.0),
-        mate-settings-daemon-pulse (<< 1.9.0),
-        mate-desktop-common (<< 1.24.0-1~),
+Replaces: cafe-settings-daemon-gstreamer (<< 1.9.0),
+          cafe-settings-daemon-pulse (<< 1.9.0),
+          cafe-desktop-common (<< 1.24.0-1~),
+Breaks: cafe-settings-daemon-gstreamer (<< 1.9.0),
+        cafe-settings-daemon-pulse (<< 1.9.0),
+        cafe-desktop-common (<< 1.24.0-1~),
 Description: daemon handling the MATE session settings (common files)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
@@ -96,18 +96,18 @@ Description: daemon handling the MATE session settings (common files)
  .
  This package contains the architecture independent files.
 
-Package: mate-settings-daemon-dev
+Package: cafe-settings-daemon-dev
 Section: devel
 Architecture: any
-Depends: mate-settings-daemon (= ${binary:Version}),
+Depends: cafe-settings-daemon (= ${binary:Version}),
          libdbus-glib-1-dev,
          libglib2.0-dev,
          libdbus-1-dev,
          ${misc:Depends},
-Replaces: mate-settings-daemon-gstreamer (<< 1.9.0),
-          mate-settings-daemon-pulse (<< 1.9.0),
-Breaks: mate-settings-daemon-gstreamer (<< 1.9.0),
-        mate-settings-daemon-pulse (<< 1.9.0),
+Replaces: cafe-settings-daemon-gstreamer (<< 1.9.0),
+          cafe-settings-daemon-pulse (<< 1.9.0),
+Breaks: cafe-settings-daemon-gstreamer (<< 1.9.0),
+        cafe-settings-daemon-pulse (<< 1.9.0),
 Description: daemon handling the MATE session settings (development files)
  This package contains the daemon which is responsible for setting the
  various parameters of a MATE session and the applications that run
@@ -125,4 +125,4 @@ Description: daemon handling the MATE session settings (development files)
  freedesktop.org XSETTINGS.
  .
  This package contains the development files for building
- mate-settings-daemon plugins.
+ cafe-settings-daemon plugins.

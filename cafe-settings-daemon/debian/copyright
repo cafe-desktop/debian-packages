@@ -1,14 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Settings Daemon
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-settings-daemon/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-settings-daemon/
 
-Files: mate-settings-daemon/main.c
-       mate-settings-daemon/mate-settings-manager.c
-       mate-settings-daemon/mate-settings-manager.h
-       mate-settings-daemon/mate-settings-plugin-info.c
-       mate-settings-daemon/mate-settings-profile.c
-       mate-settings-daemon/mate-settings-profile.h
+Files: cafe-settings-daemon/main.c
+       cafe-settings-daemon/cafe-settings-manager.c
+       cafe-settings-daemon/cafe-settings-manager.h
+       cafe-settings-daemon/cafe-settings-plugin-info.c
+       cafe-settings-daemon/cafe-settings-profile.c
+       cafe-settings-daemon/cafe-settings-profile.h
        plugins/a11y-keyboard/msd-a11y-keyboard-manager.h
        plugins/a11y-keyboard/msd-a11y-keyboard-plugin.c
        plugins/a11y-keyboard/msd-a11y-keyboard-plugin.h
@@ -63,7 +63,7 @@ Copyright: 2005, 2007 William Jon McCann <mccann@jhu.edu>
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: mate-settings-daemon/mate-settings-plugin-info.h
+Files: cafe-settings-daemon/cafe-settings-plugin-info.h
        plugins/smartcard/msd-smartcard-manager.c
        plugins/smartcard/msd-smartcard-manager.h
        plugins/smartcard/msd-smartcard-plugin.c
@@ -128,13 +128,13 @@ Files: plugins/housekeeping/msd-ldsm-dialog.c
 Copyright: Chris Coulson 2009, <chrisccoulson@googlemail.com>
 License: GPL-3+
 
-Files: mate-settings-daemon/mate-settings-module.c
-       mate-settings-daemon/mate-settings-module.h
+Files: cafe-settings-daemon/cafe-settings-module.c
+       cafe-settings-daemon/cafe-settings-module.h
 Copyright: 2005, Paolo Maggi
 License: GPL-2+
 
-Files: mate-settings-daemon/mate-settings-plugin.c
-       mate-settings-daemon/mate-settings-plugin.h
+Files: cafe-settings-daemon/cafe-settings-plugin.c
+       cafe-settings-daemon/cafe-settings-plugin.h
 Copyright: 2002-2005, Paolo Maggi
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
@@ -282,15 +282,15 @@ Files: .build.yml
        data/*.in
        data/msd-datetime-mechanism.1
        data/msd-locate-pointer.1
-       data/mate-settings-daemon.1
+       data/cafe-settings-daemon.1
        Makefile.am
        makepot
        its/marco-keybindings.its
        its/marco-keybindings.loc
-       mate-settings-daemon/Makefile.am
-       mate-settings-daemon/mate-settings-manager.xml
-       mate-settings-daemon/mate-settings-bus.c
-       mate-settings-daemon/mate-settings-bus.h
+       cafe-settings-daemon/Makefile.am
+       cafe-settings-daemon/cafe-settings-manager.xml
+       cafe-settings-daemon/cafe-settings-bus.c
+       cafe-settings-daemon/cafe-settings-bus.h
        plugins/a11y-keyboard/Makefile.am
        plugins/*/*.desktop.in
        plugins/a11y-keyboard/*.ui
@@ -315,7 +315,7 @@ Files: .build.yml
        plugins/media-keys/*.xml
        plugins/mouse/Makefile.am
        plugins/mpris/Makefile.am
-       plugins/rfkill/61-mate-settings-daemon-rfkill.rules
+       plugins/rfkill/61-cafe-settings-daemon-rfkill.rules
        plugins/rfkill/Makefile.am
        plugins/rfkill/msd-rfkill-manager.c
        plugins/rfkill/msd-rfkill-manager.h
@@ -352,7 +352,7 @@ License: GPL-2+ or LGPL-2.1+
 Comment:
  License(s) assumed from COPYING and COPYING.LIB files.
 
-Files: mate-settings-daemon.pot
+Files: cafe-settings-daemon.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright:
