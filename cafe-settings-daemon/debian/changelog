@@ -371,7 +371,7 @@ cafe-settings-daemon (1.14.0-1) unstable; urgency=medium
     + Versioned B-D: libcafekbd-dev (>= 1.14)
     + Versioned B-D: libcafemixer-dev (>= 1.14)
     + Versioned B-D: cafe-common (>= 1.14)
-    + B-D: libcanberra-ctk3-dev
+    + B-D: libcanberra-gtk3-dev
     + B-D: libctk-3-dev
     + Versioned D (cafe-settings-daemon): cafe-desktop-common (>= 1.14).
   * debian/rules:
