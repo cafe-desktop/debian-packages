@@ -73,7 +73,7 @@ Subject: [PATCH] RDA: Don't apply stored monitor configuration if session is
  #include "cafe-settings-profile.h"
  #include "csd-xrandr-manager.h"
  
-@@ -2405,6 +2409,12 @@ apply_intended_configuration (MsdXrandrManager *manager, const char *intended_fi
+@@ -2405,6 +2409,12 @@ apply_intended_configuration (CsdXrandrManager *manager, const char *intended_fi
          GError *my_error;
          gboolean result;
  
