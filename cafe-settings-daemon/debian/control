@@ -60,7 +60,7 @@ Description: daemon handling the MATE session settings
  .
   * Keyboard: layout, accessibility options, shortcuts, media keys
   * Clipboard management
-  * Theming: background, icons, GTK+ applications
+  * Theming: background, icons, CTK+ applications
   * Cleanup of unused files
   * Mouse: cursors, speed, accessibility options
   * Startup of other daemons: screensaver, sound daemon
@@ -85,7 +85,7 @@ Description: daemon handling the MATE session settings (common files)
  .
   * Keyboard: layout, accessibility options, shortcuts, media keys
   * Clipboard management
-  * Theming: background, icons, GTK+ applications
+  * Theming: background, icons, CTK+ applications
   * Cleanup of unused files
   * Mouse: cursors, speed, accessibility options
   * Startup of other daemons: screensaver, sound daemon
@@ -115,7 +115,7 @@ Description: daemon handling the MATE session settings (development files)
  .
   * Keyboard: layout, accessibility options, shortcuts, media keys
   * Clipboard management
-  * Theming: background, icons, GTK+ applications
+  * Theming: background, icons, CTK+ applications
   * Cleanup of unused files
   * Mouse: cursors, speed, accessibility options
   * Startup of other daemons: screensaver, sound daemon
