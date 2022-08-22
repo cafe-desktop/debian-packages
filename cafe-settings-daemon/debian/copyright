@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Settings Daemon
-Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/cafe-settings-daemon/
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
+Source: https://github.com/cafe-desktop/cafe-settings-daemon
 
 Files: cafe-settings-daemon/main.c
        cafe-settings-daemon/cafe-settings-manager.c
