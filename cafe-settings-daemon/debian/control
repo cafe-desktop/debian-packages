@@ -1,7 +1,7 @@
 Source: cafe-settings-daemon
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -53,9 +53,9 @@ Replaces: cafe-settings-daemon-gstreamer (<< 1.9.0),
           cafe-settings-daemon-pulse (<< 1.9.0),
 Breaks: cafe-settings-daemon-gstreamer (<< 1.9.0),
         cafe-settings-daemon-pulse (<< 1.9.0),
-Description: daemon handling the MATE session settings
+Description: daemon handling the CAFE session settings
  This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
+ various parameters of a CAFE session and the applications that run
  under it. It handles the following kinds of settings:
  .
   * Keyboard: layout, accessibility options, shortcuts, media keys
@@ -78,9 +78,9 @@ Replaces: cafe-settings-daemon-gstreamer (<< 1.9.0),
 Breaks: cafe-settings-daemon-gstreamer (<< 1.9.0),
         cafe-settings-daemon-pulse (<< 1.9.0),
         cafe-desktop-common (<< 1.24.0-1~),
-Description: daemon handling the MATE session settings (common files)
+Description: daemon handling the CAFE session settings (common files)
  This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
+ various parameters of a CAFE session and the applications that run
  under it. It handles the following kinds of settings:
  .
   * Keyboard: layout, accessibility options, shortcuts, media keys
@@ -108,9 +108,9 @@ Replaces: cafe-settings-daemon-gstreamer (<< 1.9.0),
           cafe-settings-daemon-pulse (<< 1.9.0),
 Breaks: cafe-settings-daemon-gstreamer (<< 1.9.0),
         cafe-settings-daemon-pulse (<< 1.9.0),
-Description: daemon handling the MATE session settings (development files)
+Description: daemon handling the CAFE session settings (development files)
  This package contains the daemon which is responsible for setting the
- various parameters of a MATE session and the applications that run
+ various parameters of a CAFE session and the applications that run
  under it. It handles the following kinds of settings:
  .
   * Keyboard: layout, accessibility options, shortcuts, media keys
