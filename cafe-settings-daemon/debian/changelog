@@ -455,7 +455,7 @@ cafe-settings-daemon (1.10.1-1~exp1) experimental; urgency=medium
   * debian/copyright:
     + Mention two new man pages.
   * debian/*.{1,manpages}:
-    + Drop our man pages for msd-locate-pointer and msd-datetime-mechanism.
+    + Drop our man pages for csd-locate-pointer and csd-datetime-mechanism.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 15:31:16 +0200
 
@@ -503,7 +503,7 @@ cafe-settings-daemon (1.10.0-1~exp1) experimental; urgency=medium
   * debian/copyright:
     + Files in plugins/media-keys/cut-n-paste/ have been removed from this
       upstream release.
-  * debian/msd-locate-pointer.1:
+  * debian/csd-locate-pointer.1:
     + Typo fix.
   * debian/rules:
     + Don't run dh_makeshlibs to avoid discovering our private libraries
@@ -602,7 +602,7 @@ cafe-settings-daemon (1.8.2-1) unstable; urgency=medium
     + Really mention all files in upstream source tree. Remove information for
       files not shipped in upstream sources anymore.
   * missing man pages:
-    + Add man pages for msd-datetime-mechanism and msd-locate-pointer.
+    + Add man pages for csd-datetime-mechanism and csd-locate-pointer.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Oct 2014 13:49:21 +0200
 

@@ -7,7 +7,7 @@ Subject: [PATCH] RDA: Don't apply stored monitor configuration if session is
 ---
  configure.ac                        | 11 +++++++++++
  plugins/xrandr/Makefile.am          |  2 ++
- plugins/xrandr/msd-xrandr-manager.c | 10 ++++++++++
+ plugins/xrandr/csd-xrandr-manager.c | 10 ++++++++++
  3 files changed, 23 insertions(+)
 
 --- a/configure.ac
@@ -60,8 +60,8 @@ Subject: [PATCH] RDA: Don't apply stored monitor configuration if session is
  	$(CAFE_DESKTOP_LIBS)
  
  plugin_in_files =			\
---- a/plugins/xrandr/msd-xrandr-manager.c
-+++ b/plugins/xrandr/msd-xrandr-manager.c
+--- a/plugins/xrandr/csd-xrandr-manager.c
++++ b/plugins/xrandr/csd-xrandr-manager.c
 @@ -50,6 +50,10 @@
  #include <libnotify/notify.h>
  #endif
@@ -71,7 +71,7 @@ Subject: [PATCH] RDA: Don't apply stored monitor configuration if session is
 +#endif
 +
  #include "cafe-settings-profile.h"
- #include "msd-xrandr-manager.h"
+ #include "csd-xrandr-manager.h"
  
 @@ -2405,6 +2409,12 @@ apply_intended_configuration (MsdXrandrManager *manager, const char *intended_fi
          GError *my_error;

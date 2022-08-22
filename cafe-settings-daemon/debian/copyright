@@ -9,65 +9,65 @@ Files: cafe-settings-daemon/main.c
        cafe-settings-daemon/cafe-settings-plugin-info.c
        cafe-settings-daemon/cafe-settings-profile.c
        cafe-settings-daemon/cafe-settings-profile.h
-       plugins/a11y-keyboard/msd-a11y-keyboard-manager.h
-       plugins/a11y-keyboard/msd-a11y-keyboard-plugin.c
-       plugins/a11y-keyboard/msd-a11y-keyboard-plugin.h
+       plugins/a11y-keyboard/csd-a11y-keyboard-manager.h
+       plugins/a11y-keyboard/csd-a11y-keyboard-plugin.c
+       plugins/a11y-keyboard/csd-a11y-keyboard-plugin.h
        plugins/a11y-keyboard/test-a11y-preferences-dialog.c
-       plugins/a11y-settings/msd-a11y-settings-manager.c
-       plugins/a11y-settings/msd-a11y-settings-manager.h
-       plugins/a11y-settings/msd-a11y-settings-plugin.c
-       plugins/a11y-settings/msd-a11y-settings-plugin.h
-       plugins/background/msd-background-manager.h
-       plugins/background/msd-background-plugin.c
-       plugins/background/msd-background-plugin.h
+       plugins/a11y-settings/csd-a11y-settings-manager.c
+       plugins/a11y-settings/csd-a11y-settings-manager.h
+       plugins/a11y-settings/csd-a11y-settings-plugin.c
+       plugins/a11y-settings/csd-a11y-settings-plugin.h
+       plugins/background/csd-background-manager.h
+       plugins/background/csd-background-plugin.c
+       plugins/background/csd-background-plugin.h
        plugins/background/test-background.c
-       plugins/clipboard/msd-clipboard-manager.h
-       plugins/clipboard/msd-clipboard-plugin.c
-       plugins/clipboard/msd-clipboard-plugin.h
-       plugins/dummy/msd-dummy-manager.c
-       plugins/dummy/msd-dummy-manager.h
-       plugins/dummy/msd-dummy-plugin.c
-       plugins/dummy/msd-dummy-plugin.h
-       plugins/keybindings/msd-keybindings-manager.c
-       plugins/keybindings/msd-keybindings-manager.h
-       plugins/keybindings/msd-keybindings-plugin.c
-       plugins/keybindings/msd-keybindings-plugin.h
-       plugins/keyboard/msd-keyboard-manager.h
-       plugins/keyboard/msd-keyboard-plugin.c
-       plugins/keyboard/msd-keyboard-plugin.h
-       plugins/media-keys/msd-media-keys-manager.h
-       plugins/media-keys/msd-media-keys-plugin.c
-       plugins/media-keys/msd-media-keys-plugin.h
+       plugins/clipboard/csd-clipboard-manager.h
+       plugins/clipboard/csd-clipboard-plugin.c
+       plugins/clipboard/csd-clipboard-plugin.h
+       plugins/dummy/csd-dummy-manager.c
+       plugins/dummy/csd-dummy-manager.h
+       plugins/dummy/csd-dummy-plugin.c
+       plugins/dummy/csd-dummy-plugin.h
+       plugins/keybindings/csd-keybindings-manager.c
+       plugins/keybindings/csd-keybindings-manager.h
+       plugins/keybindings/csd-keybindings-plugin.c
+       plugins/keybindings/csd-keybindings-plugin.h
+       plugins/keyboard/csd-keyboard-manager.h
+       plugins/keyboard/csd-keyboard-plugin.c
+       plugins/keyboard/csd-keyboard-plugin.h
+       plugins/media-keys/csd-media-keys-manager.h
+       plugins/media-keys/csd-media-keys-plugin.c
+       plugins/media-keys/csd-media-keys-plugin.h
        plugins/media-keys/test-media-keys.c
        plugins/media-keys/test-media-window.c
-       plugins/mouse/msd-mouse-manager.c
-       plugins/mouse/msd-mouse-manager.h
-       plugins/mouse/msd-mouse-plugin.c
-       plugins/mouse/msd-mouse-plugin.h
-       plugins/mpris/msd-mpris-plugin.c
-       plugins/mpris/msd-mpris-plugin.h
-       plugins/typing-break/msd-typing-break-manager.c
-       plugins/typing-break/msd-typing-break-manager.h
-       plugins/typing-break/msd-typing-break-plugin.c
-       plugins/typing-break/msd-typing-break-plugin.h
-       plugins/xrandr/msd-xrandr-manager.h
-       plugins/xrandr/msd-xrandr-plugin.c
-       plugins/xrandr/msd-xrandr-plugin.h
-       plugins/xrdb/msd-xrdb-manager.h
-       plugins/xrdb/msd-xrdb-plugin.c
-       plugins/xrdb/msd-xrdb-plugin.h
-       plugins/xsettings/msd-xsettings-manager.h
-       plugins/xsettings/msd-xsettings-plugin.c
-       plugins/xsettings/msd-xsettings-plugin.h
+       plugins/mouse/csd-mouse-manager.c
+       plugins/mouse/csd-mouse-manager.h
+       plugins/mouse/csd-mouse-plugin.c
+       plugins/mouse/csd-mouse-plugin.h
+       plugins/mpris/csd-mpris-plugin.c
+       plugins/mpris/csd-mpris-plugin.h
+       plugins/typing-break/csd-typing-break-manager.c
+       plugins/typing-break/csd-typing-break-manager.h
+       plugins/typing-break/csd-typing-break-plugin.c
+       plugins/typing-break/csd-typing-break-plugin.h
+       plugins/xrandr/csd-xrandr-manager.h
+       plugins/xrandr/csd-xrandr-plugin.c
+       plugins/xrandr/csd-xrandr-plugin.h
+       plugins/xrdb/csd-xrdb-manager.h
+       plugins/xrdb/csd-xrdb-plugin.c
+       plugins/xrdb/csd-xrdb-plugin.h
+       plugins/xsettings/csd-xsettings-manager.h
+       plugins/xsettings/csd-xsettings-plugin.c
+       plugins/xsettings/csd-xsettings-plugin.h
 Copyright: 2005, 2007 William Jon McCann <mccann@jhu.edu>
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
 Files: cafe-settings-daemon/cafe-settings-plugin-info.h
-       plugins/smartcard/msd-smartcard-manager.c
-       plugins/smartcard/msd-smartcard-manager.h
-       plugins/smartcard/msd-smartcard-plugin.c
-       plugins/smartcard/msd-smartcard-plugin.h
+       plugins/smartcard/csd-smartcard-manager.c
+       plugins/smartcard/csd-smartcard-manager.h
+       plugins/smartcard/csd-smartcard-plugin.c
+       plugins/smartcard/csd-smartcard-plugin.h
        plugins/xsettings/fontconfig-monitor.c
        plugins/xsettings/fontconfig-monitor.h
 Copyright: 2006-2010 Red Hat, Inc
@@ -90,41 +90,41 @@ Copyright: 2001, 2004 Red Hat, Inc
 License: MIT~OldStyleWithDisclaimer+RedHat
 
 Files: plugins/datetime/system-timezone.h
-       plugins/housekeeping/msd-disk-space.c
-       plugins/housekeeping/msd-disk-space.h
+       plugins/housekeeping/csd-disk-space.c
+       plugins/housekeeping/csd-disk-space.h
        plugins/keyboard/delayed-dialog.c
        plugins/keyboard/delayed-dialog.h
 Copyright: 2006, 2008 Novell, Inc
 License: GPL-2+
 
-Files: plugins/sound/msd-sound-manager.c
-       plugins/sound/msd-sound-manager.h
-       plugins/sound/msd-sound-plugin.c
-       plugins/sound/msd-sound-plugin.h
+Files: plugins/sound/csd-sound-manager.c
+       plugins/sound/csd-sound-manager.h
+       plugins/sound/csd-sound-plugin.c
+       plugins/sound/csd-sound-plugin.h
 Copyright: 2008, Lennart Poettering <lennart@poettering.net>
 License: GPL-2+
 
-Files: plugins/mouse/msd-locate-pointer.c
-       plugins/mouse/msd-timeline.c
-       plugins/mouse/msd-timeline.h
+Files: plugins/mouse/csd-locate-pointer.c
+       plugins/mouse/csd-timeline.c
+       plugins/mouse/csd-timeline.h
 Copyright: 2008, Carlos Garnacho <carlos@imendio.com>
 License: GPL-2+
 
-Files: plugins/datetime/msd-datetime-mechanism-main.c
-       plugins/datetime/msd-datetime-mechanism.c
-       plugins/datetime/msd-datetime-mechanism.h
+Files: plugins/datetime/csd-datetime-mechanism-main.c
+       plugins/datetime/csd-datetime-mechanism.c
+       plugins/datetime/csd-datetime-mechanism.h
 Copyright: 2007, David Zeuthen <david@fubar.dk>
 License: GPL-2+
 
-Files: plugins/housekeeping/msd-housekeeping-manager.h
-       plugins/housekeeping/msd-housekeeping-plugin.c
-       plugins/housekeeping/msd-housekeeping-plugin.h
+Files: plugins/housekeeping/csd-housekeeping-manager.h
+       plugins/housekeeping/csd-housekeeping-plugin.c
+       plugins/housekeeping/csd-housekeeping-plugin.h
 Copyright: 2008, Michael J. Chudobiak <mjc@avtechpulse.com>
 License: GPL-2+
 
-Files: plugins/housekeeping/msd-ldsm-dialog.c
-       plugins/housekeeping/msd-ldsm-dialog.h
-       plugins/housekeeping/msd-ldsm-trash-empty.h
+Files: plugins/housekeeping/csd-ldsm-dialog.c
+       plugins/housekeeping/csd-ldsm-dialog.h
+       plugins/housekeeping/csd-ldsm-trash-empty.h
 Copyright: Chris Coulson 2009, <chrisccoulson@googlemail.com>
 License: GPL-3+
 
@@ -144,40 +144,40 @@ Files: plugins/keybindings/dconf-util.c
 Copyright: 2012, Stefano Karapetsas
 License: GPL-2+
 
-Files: plugins/mpris/msd-mpris-manager.c
-       plugins/mpris/msd-mpris-manager.h
+Files: plugins/mpris/csd-mpris-manager.c
+       plugins/mpris/csd-mpris-manager.h
 Copyright: 2013, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: plugins/keyboard/msd-keyboard-xkb.c
-       plugins/keyboard/msd-keyboard-xkb.h
+Files: plugins/keyboard/csd-keyboard-xkb.c
+       plugins/keyboard/csd-keyboard-xkb.h
 Copyright: 2001, Udaltsoft
 License: GPL-2+
 
-Files: plugins/a11y-keyboard/msd-a11y-preferences-dialog.c
-       plugins/a11y-keyboard/msd-a11y-preferences-dialog.h
+Files: plugins/a11y-keyboard/csd-a11y-preferences-dialog.c
+       plugins/a11y-keyboard/csd-a11y-preferences-dialog.h
 Copyright: 2008, William Jon McCann <jmccann@redhat.com>
 License: GPL-2+
 
-Files: plugins/a11y-keyboard/msd-a11y-keyboard-manager.c
-       plugins/keyboard/msd-keyboard-manager.c
+Files: plugins/a11y-keyboard/csd-a11y-keyboard-manager.c
+       plugins/keyboard/csd-keyboard-manager.c
 Copyright: 2001, Ximian, Inc
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: plugins/common/msd-osd-window.c
-       plugins/common/msd-osd-window.h
+Files: plugins/common/csd-osd-window.c
+       plugins/common/csd-osd-window.h
 Copyright: 2006-2007 William Jon McCann <mccann@jhu.edu>
            2009, Novell, Inc
 License: LGPL-2+
 
-Files: plugins/media-keys/msd-media-keys-window.c
-       plugins/media-keys/msd-media-keys-window.h
+Files: plugins/media-keys/csd-media-keys-window.c
+       plugins/media-keys/csd-media-keys-window.h
 Copyright: 2006, William Jon McCann <mccann@jhu.edu>
            2006-2007, William Jon McCann <mccann@jhu.edu>
 License: LGPL-2+
 
-Files: plugins/clipboard/msd-clipboard-manager.c
+Files: plugins/clipboard/csd-clipboard-manager.c
 Copyright: 2007, Anders Carlsson
            2007, Matthias Clasen
            2007, Rodrigo Moya
@@ -188,35 +188,35 @@ Files: plugins/media-keys/acme.h
 Copyright: 2001, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
-Files: plugins/common/msd-input-helper.c
-       plugins/common/msd-input-helper.h
+Files: plugins/common/csd-input-helper.c
+       plugins/common/csd-input-helper.h
 Copyright: 2010, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
-Files: plugins/common/msd-keygrab.c
+Files: plugins/common/csd-keygrab.c
 Copyright: 2001-2003, Bastien Nocera <hadess@hadess.net>
            2006-2007, William Jon McCann <mccann@jhu.edu>
            2008, Jens Granseuer <jensgr@gmx.net>
 License: GPL-2+
 
-Files: plugins/media-keys/msd-media-keys-manager.c
+Files: plugins/media-keys/csd-media-keys-manager.c
 Copyright: 2001-2003, Bastien Nocera <hadess@hadess.net>
            2006-2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: plugins/housekeeping/msd-housekeeping-manager.c
+Files: plugins/housekeeping/csd-housekeeping-manager.c
 Copyright: 2008, Michael J. Chudobiak <mjc@avtechpulse.com>
            2012, Jasmine Hassan <jasmine.aura@gmail.com>
 License: GPL-2+
 
-Files: plugins/background/msd-background-manager.c
+Files: plugins/background/csd-background-manager.c
 Copyright: 2001, Ximian, Inc
            2007, Red Hat, Inc
            2007, William Jon McCann <mccann@jhu.edu>
            2012, Jasmine Hassan <jasmine.aura@gmail.com>
 License: GPL-2+
 
-Files: plugins/common/msd-keygrab.h
+Files: plugins/common/csd-keygrab.h
 Copyright: 2008, Jens Granseuer <jensgr@gmx.net>
 License: GPL-2+
 
@@ -226,30 +226,30 @@ Copyright: 2000-2001, Ximian, Inc
            2008, Novell, Inc
 License: GPL-2+
 
-Files: plugins/smartcard/msd-smartcard.h
+Files: plugins/smartcard/csd-smartcard.h
 Copyright: 2006, Ray Strode
 License: GPL-2+
 
-Files: plugins/smartcard/msd-smartcard.c
+Files: plugins/smartcard/csd-smartcard.c
 Copyright: 2006, Ray Strode <rstrode@redhat.com>
 License: GPL-2+
 
-Files: plugins/xrandr/msd-xrandr-manager.c
+Files: plugins/xrandr/csd-xrandr-manager.c
 Copyright: 2007, William Jon McCann <mccann@jhu.edu>
            2007-2008, Red Hat, Inc
 License: GPL-2+
 
-Files: plugins/xsettings/msd-xsettings-manager.c
+Files: plugins/xsettings/csd-xsettings-manager.c
 Copyright: 2007, Rodrigo Moya
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: plugins/xrdb/msd-xrdb-manager.c
+Files: plugins/xrdb/csd-xrdb-manager.c
 Copyright: 2003, Ross Burton <ross@burtonini.com>
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: plugins/housekeeping/msd-ldsm-trash-empty.c
+Files: plugins/housekeeping/csd-ldsm-trash-empty.c
 Copyright: Chris Coulson 2009, <chrisccoulson@googlemail.com>
            Ryan Lortie 2008
 License: GPL-3+
@@ -263,7 +263,7 @@ Files: plugins/common/eggaccelerators.h
 Copyright: 2002, Red Hat, Inc.
 License: LGPL-2+
 
-Files: plugins/mouse/msd-locate-pointer.h
+Files: plugins/mouse/csd-locate-pointer.h
 Copyright: 2001, Jonathan Blandford <jrb@gnome.org>
 License: MIT~OldStyle+RedHat
 
@@ -280,8 +280,8 @@ Files: .build.yml
        data/Makefile.am
        data/*.in.in
        data/*.in
-       data/msd-datetime-mechanism.1
-       data/msd-locate-pointer.1
+       data/csd-datetime-mechanism.1
+       data/csd-locate-pointer.1
        data/cafe-settings-daemon.1
        Makefile.am
        makepot
@@ -309,7 +309,7 @@ Files: .build.yml
        plugins/keyboard/*.png
        plugins/Makefile.am
        plugins/media-keys/Makefile.am
-       plugins/media-keys/msd-marshal.*
+       plugins/media-keys/csd-marshal.*
        plugins/media-keys/*.list
        plugins/media-keys/*.ui
        plugins/media-keys/*.xml
@@ -317,10 +317,10 @@ Files: .build.yml
        plugins/mpris/Makefile.am
        plugins/rfkill/61-cafe-settings-daemon-rfkill.rules
        plugins/rfkill/Makefile.am
-       plugins/rfkill/msd-rfkill-manager.c
-       plugins/rfkill/msd-rfkill-manager.h
-       plugins/rfkill/msd-rfkill-plugin.c
-       plugins/rfkill/msd-rfkill-plugin.h
+       plugins/rfkill/csd-rfkill-manager.c
+       plugins/rfkill/csd-rfkill-manager.h
+       plugins/rfkill/csd-rfkill-plugin.c
+       plugins/rfkill/csd-rfkill-plugin.h
        plugins/rfkill/rfkill-glib.c
        plugins/rfkill/rfkill-glib.h
        plugins/rfkill/rfkill.h
