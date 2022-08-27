@@ -9,5 +9,5 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  Type=Application
 -Categories=
  NoDisplay=true
- OnlyShowIn=MATE;
- X-MATE-AutoRestart=true
+ OnlyShowIn=CAFE;
+ X-CAFE-AutoRestart=true

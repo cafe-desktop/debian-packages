@@ -1,7 +1,7 @@
 Source: cafe-polkit
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -27,15 +27,15 @@ Architecture: all
 Depends: cafe-polkit (>= ${source:Version}),
          ${misc:Depends},
 Breaks: cafe-polkit (<< 1.12.0-3~),
-Description: MATE authentication agent for PolicyKit-1 (executable wrapper script)
+Description: CAFE authentication agent for PolicyKit-1 (executable wrapper script)
  The cafe-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
  .
- This package contains an executable wrapper script for the MATE policy kit
+ This package contains an executable wrapper script for the CAFE policy kit
  authentication agent.
  .
  This package eases using cafe-polkit as PolicyKit-1 authentication agent on
- non-MATE desktop environments that don't auto-launch their own authentication
+ non-CAFE desktop environments that don't auto-launch their own authentication
  agent (e.g., i3, awesome, ratpoison and alike).
 
 Package: cafe-polkit
@@ -47,11 +47,11 @@ Depends: accountsservice,
          ${misc:Depends},
          ${shlibs:Depends},
 Provides: polkit-1-auth-agent,
-Description: MATE authentication agent for PolicyKit-1
+Description: CAFE authentication agent for PolicyKit-1
  The cafe-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
  .
- This package contains the MATE policy kit authentication agent.
+ This package contains the CAFE policy kit authentication agent.
 
 Package: cafe-polkit-common
 Architecture: any
@@ -59,9 +59,9 @@ Multi-Arch: foreign
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: cafe-polkit (<< 1.8.0),
-Description: MATE authentication agent for PolicyKit-1 (common files)
+Description: CAFE authentication agent for PolicyKit-1 (common files)
  The cafe-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
  .
- This package contains common files for the MATE policy kit authentication
+ This package contains common files for the CAFE policy kit authentication
  agent.
