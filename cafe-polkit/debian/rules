@@ -21,7 +21,7 @@ DEB_CONFIGURE_EXTRA_FLAGS := --disable-silent-rules \
                              --localstatedir=/var \
                              --libdir=/usr/lib/$(DEB_HOST_MULTIARCH) \
                              --includedir=/usr/include/$(DEB_HOST_MULTIARCH) \
-                             --libexecdir=/usr/lib/$(DEB_HOST_MULTIARCH)/polkit-mate \
+                             --libexecdir=/usr/lib/$(DEB_HOST_MULTIARCH)/polkit-cafe \
                              --disable-silent-rules \
                              --disable-static \
                              --enable-gtk-doc
@@ -35,7 +35,7 @@ remove-cruft::
 
 install-wrapper::
 	mkdir -p debian/tmp/usr/bin/
-	sed -e 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/' < debian/bin/mate-polkit.in > debian/tmp/usr/bin/mate-polkit
+	sed -e 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/' < debian/bin/cafe-polkit.in > debian/tmp/usr/bin/cafe-polkit
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

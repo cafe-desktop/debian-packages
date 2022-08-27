@@ -1,10 +1,10 @@
 Description: Drop empty Categories= key. Fix line-wrapping after file has been translated.
 Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 
---- a/src/polkit-mate-authentication-agent-1.desktop.in.in
-+++ b/src/polkit-mate-authentication-agent-1.desktop.in.in
+--- a/src/polkit-cafe-authentication-agent-1.desktop.in.in
++++ b/src/polkit-cafe-authentication-agent-1.desktop.in.in
 @@ -4,7 +4,6 @@
- Exec=@FULL_LIBEXECDIR@/polkit-mate-authentication-agent-1
+ Exec=@FULL_LIBEXECDIR@/polkit-cafe-authentication-agent-1
  Terminal=false
  Type=Application
 -Categories=

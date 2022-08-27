@@ -1,4 +1,4 @@
-mate-polkit (1.24.0-2) unstable; urgency=medium
+cafe-polkit (1.24.0-2) unstable; urgency=medium
 
   * debian/patches:
     + Add 1001_drop-empty-categories.patch. Fix broken line-wrapping after
@@ -6,7 +6,7 @@ mate-polkit (1.24.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Feb 2020 08:53:45 +0100
 
-mate-polkit (1.24.0-1) unstable; urgency=medium
+cafe-polkit (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -29,7 +29,7 @@ mate-polkit (1.24.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 12:13:14 +0100
 
-mate-polkit (1.22.0-1) unstable; urgency=medium
+cafe-polkit (1.22.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -44,24 +44,24 @@ mate-polkit (1.22.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 12:34:55 +0200
 
-mate-polkit (1.20.2-1) unstable; urgency=medium
+cafe-polkit (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Bump Standards-Version: to 4.3.0. No changes needed.
   * debian/control:
-    + Move mate-polkit-bin from arch:any to arch:all.
+    + Move cafe-polkit-bin from arch:any to arch:all.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 09 Jan 2019 10:34:21 +0100
 
-mate-polkit (1.20.1-2) unstable; urgency=medium
+cafe-polkit (1.20.1-2) unstable; urgency=medium
 
   [ Helmut Grohne ]
   * debian/rules: Fix build/host confusion. (Closes: #913416).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Nov 2018 15:56:48 +0100
 
-mate-polkit (1.20.1-1) unstable; urgency=medium
+cafe-polkit (1.20.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/patches:
@@ -73,7 +73,7 @@ mate-polkit (1.20.1-1) unstable; urgency=medium
       (Closes: #880193).
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Use secure URI for copyright format.
     + Make Upstream-Name: field's value more human readable.
@@ -86,20 +86,20 @@ mate-polkit (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 18:31:46 +0200
 
-mate-polkit (1.20.0-1) unstable; urgency=medium
+cafe-polkit (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/{control,*.install} (already in 1.20.0-0ubuntu1):
-    + Drop obsolete gir1.2-polkitgtkmate-1.0, libmatepolkit-dev,
-      libmatepolkit-doc, libpolkit-gtk-mate-1-0 and gir1.2-mate-polkit.
+    + Drop obsolete gir1.2-polkitgtkcafe-1.0, libcafepolkit-dev,
+      libcafepolkit-doc, libpolkit-gtk-cafe-1-0 and gir1.2-cafe-polkit.
   * debian/copyright (already in 1.20.0-0ubuntu1):
     + Update copyright attributions.
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.0-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Add myself to Uploaders: field.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
@@ -109,19 +109,19 @@ mate-polkit (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 12 Feb 2018 10:54:13 +0100
 
-mate-polkit (1.20.0-0ubuntu1) bionic; urgency=medium
+cafe-polkit (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
 
-mate-polkit (1.19.0-0ubuntu1) bionic; urgency=medium
+cafe-polkit (1.19.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 22:40:17 +0000
 
-mate-polkit (1.18.2-2) unstable; urgency=medium
+cafe-polkit (1.18.2-2) unstable; urgency=medium
 
   * Rename GIR package to match Debian Policy.
 
@@ -130,7 +130,7 @@ mate-polkit (1.18.2-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 14 Dec 2017 12:24:42 +0100
 
-mate-polkit (1.18.2-1) unstable; urgency=medium
+cafe-polkit (1.18.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -141,7 +141,7 @@ mate-polkit (1.18.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Nov 2017 17:24:22 +0100
 
-mate-polkit (1.18.1-1) unstable; urgency=medium
+cafe-polkit (1.18.1-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -169,15 +169,15 @@ mate-polkit (1.18.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 15:28:52 +0200
 
-mate-polkit (1.16.0-2) unstable; urgency=medium
+cafe-polkit (1.16.0-2) unstable; urgency=medium
 
   * debian/control:
-    + Drop P (mate-polkit): policykit-1-gnome, replace by polkit-1-auth-agent.
+    + Drop P (cafe-polkit): policykit-1-gnome, replace by polkit-1-auth-agent.
       (Closes: #826488, #850298).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Jan 2017 18:37:26 +0100
 
-mate-polkit (1.16.0-1) unstable; urgency=medium
+cafe-polkit (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -193,7 +193,7 @@ mate-polkit (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 16:02:33 +0200
 
-mate-polkit (1.15.0-0ubuntu1) yakkety; urgency=medium
+cafe-polkit (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream development release.
@@ -209,12 +209,12 @@ mate-polkit (1.15.0-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
 
-mate-polkit (1.14.0-1) unstable; urgency=medium
+cafe-polkit (1.14.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
     + B-D: libgtk-3-dev
     + Processed with wrap-and-sort.
   * debian/rules:
@@ -226,10 +226,10 @@ mate-polkit (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 20 May 2016 16:37:18 +0200
 
-mate-polkit (1.12.0-3) unstable; urgency=medium
+cafe-polkit (1.12.0-3) unstable; urgency=medium
 
-  * New bin:package: mate-polkit-bin. Move wrapper script into
-    separate bin:package (for the sake of keeping bin:package mate-polkit
+  * New bin:package: cafe-polkit-bin. Move wrapper script into
+    separate bin:package (for the sake of keeping bin:package cafe-polkit
     multi-arch: same). (Closes: #814850).
   * debian/rules:
     + Enable all hardening flags.
@@ -238,44 +238,44 @@ mate-polkit (1.12.0-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Feb 2016 09:59:23 +0100
 
-mate-polkit (1.12.0-2) unstable; urgency=medium
+cafe-polkit (1.12.0-2) unstable; urgency=medium
 
-  * Add wrapper script "mate-polkit" (with man page) allowing execution of the
-    mate-polkit service outside of MATE desktops.
-  * New bin:package: libmate-polkit-doc. Enable building of mate-polkit API
+  * Add wrapper script "cafe-polkit" (with man page) allowing execution of the
+    cafe-polkit service outside of MATE desktops.
+  * New bin:package: libcafe-polkit-doc. Enable building of cafe-polkit API
     documentation and ship it in a separate bin:package. (Closes: #788902).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Feb 2016 08:02:28 +0100
 
-mate-polkit (1.12.0-1) unstable; urgency=medium
+cafe-polkit (1.12.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 20 Dec 2015 17:09:43 +0100
 
-mate-polkit (1.10.2-1) unstable; urgency=medium
+cafe-polkit (1.10.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
     + Drop obsolete B-D libdbus-glib-1-dev.
-    + Add to D (mate-polkit): accountsservice.
+    + Add to D (cafe-polkit): accountsservice.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Sep 2015 12:28:26 +0200
 
-mate-polkit (1.10.1-1) unstable; urgency=medium
+cafe-polkit (1.10.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Sep 2015 04:44:13 +0200
 
-mate-polkit (1.10.0-1) unstable; urgency=low
+cafe-polkit (1.10.0-1) unstable; urgency=low
 
   [ Martin Wimpress ]
   * debian/control:
-    + Add gir1.2-mate-polkit package.
+    + Add gir1.2-cafe-polkit package.
   * debian/rules:
     + Add --with-gtk=2.0.
     + Remove --disable-introspection.
@@ -285,7 +285,7 @@ mate-polkit (1.10.0-1) unstable; urgency=low
 
  -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Mon, 10 Aug 2015 13:56:40 +0200
 
-mate-polkit (1.10.0-1~exp1) experimental; urgency=low
+cafe-polkit (1.10.0-1~exp1) experimental; urgency=low
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -294,8 +294,8 @@ mate-polkit (1.10.0-1~exp1) experimental; urgency=low
 
   [ Mike Gabriel ]
   * debian/control:
-    + Add to D (libmatepolkit-dev): libpolkit-gobject-1-dev.
-    + Versioned D: mate-common (>= 1.10).
+    + Add to D (libcafepolkit-dev): libpolkit-gobject-1-dev.
+    + Versioned D: cafe-common (>= 1.10).
   * debian/rules:
     + Use upstream's NEWS file as upstream ChangeLog.
     + Specifically name documentation files, avoid CDBS to copy
@@ -305,7 +305,7 @@ mate-polkit (1.10.0-1~exp1) experimental; urgency=low
       upstream tarball as is and don't repack anymore.
   * debian/patches:
     + Drop 2001_omit-gfdl-licensed-API-documentation.patch. The new docs of
-      mate-polkit are now DFSG-compliant.
+      cafe-polkit are now DFSG-compliant.
 
   [ Vangelis Mouthsis ]
   * debian/control:
@@ -313,7 +313,7 @@ mate-polkit (1.10.0-1~exp1) experimental; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Jun 2015 16:45:46 +0200
 
-mate-polkit (1.8.0+dfsg1-4) unstable; urgency=medium
+cafe-polkit (1.8.0+dfsg1-4) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/rules:
@@ -325,26 +325,26 @@ mate-polkit (1.8.0+dfsg1-4) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
-    + Add 'Provide policykit-1-gnome' so that during installation mate-polkit
+    + Add 'Provide policykit-1-gnome' so that during installation cafe-polkit
       can satisfy dependencies for applications such as Ubuntu Software Center.
       This is how lxsession handles this sceanrio.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Jul 2014 10:38:48 +0200
 
-mate-polkit (1.8.0+dfsg1-3) unstable; urgency=low
+cafe-polkit (1.8.0+dfsg1-3) unstable; urgency=low
 
   * debian/control:
-    + Binary package mate-polkit-common breaks mate-polkit (<< 1.8.0).
+    + Binary package cafe-polkit-common breaks cafe-polkit (<< 1.8.0).
       (LP: #1270567).
     + Add versioned Breaks:/Replaces: for formerly named bin:package
-      libmatepolkit.
+      libcafepolkit.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 06 May 2014 17:56:10 +0200
 
-mate-polkit (1.8.0+dfsg1-2) unstable; urgency=low
+cafe-polkit (1.8.0+dfsg1-2) unstable; urgency=low
 
   * debian/copyright:
-    + Point to git.mate-desktop.org in Source: field.
+    + Point to git.cafe-desktop.org in Source: field.
   * debian/rules:
     + Enable parallel builds.
     + Turn on compiler commands during package build (configure option:
@@ -352,7 +352,7 @@ mate-polkit (1.8.0+dfsg1-2) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 16:20:58 +0200
 
-mate-polkit (1.8.0+dfsg1-1) unstable; urgency=low
+cafe-polkit (1.8.0+dfsg1-1) unstable; urgency=low
 
   * New upstream release.
   * Repack upstream tarball and omit non-DFSG (GFDL-1.1) files.
@@ -370,7 +370,7 @@ mate-polkit (1.8.0+dfsg1-1) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Mar 2014 21:28:21 +0100
 
-mate-polkit (1.6.1-1) unstable; urgency=low
+cafe-polkit (1.6.1-1) unstable; urgency=low
 
   * New upstream release.
     - This new upstream release will supersede packages
@@ -383,7 +383,7 @@ mate-polkit (1.6.1-1) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 05 Jan 2014 00:01:47 +0100
 
-mate-polkit (1.6.0-1) unstable; urgency=low
+cafe-polkit (1.6.0-1) unstable; urgency=low
 
   * Initial release. (Closes: #728467).
 
