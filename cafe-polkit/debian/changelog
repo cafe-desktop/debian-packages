@@ -90,8 +90,8 @@ cafe-polkit (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/{control,*.install} (already in 1.20.0-0ubuntu1):
-    + Drop obsolete gir1.2-polkitgtkcafe-1.0, libcafepolkit-dev,
-      libcafepolkit-doc, libpolkit-gtk-cafe-1-0 and gir1.2-cafe-polkit.
+    + Drop obsolete gir1.2-polkitctkcafe-1.0, libcafepolkit-dev,
+      libcafepolkit-doc, libpolkit-ctk-cafe-1-0 and gir1.2-cafe-polkit.
   * debian/copyright (already in 1.20.0-0ubuntu1):
     + Update copyright attributions.
 
@@ -148,7 +148,7 @@ cafe-polkit (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for CAFE 1.17.
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/control: Dependencies updated for CAFE 1.18.
   * debian/rules: Add --disable-silent-rules, as used in other packages.
 
@@ -187,7 +187,7 @@ cafe-polkit (1.16.0-1) unstable; urgency=medium
     + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
     + Dependencies updated for CAFE 1.16.
-    + Versioned B-D: libgtk-3-dev (>= 3.14).
+    + Versioned B-D: libctk-3-dev (>= 3.14).
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -215,10 +215,10 @@ cafe-polkit (1.14.0-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + Versioned B-D: cafe-common (>= 1.14)
-    + B-D: libgtk-3-dev
+    + B-D: libctk-3-dev
     + Processed with wrap-and-sort.
   * debian/rules:
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
 
   [ Mike Gabriel ]
   * debian/control:
@@ -277,7 +277,7 @@ cafe-polkit (1.10.0-1) unstable; urgency=low
   * debian/control:
     + Add gir1.2-cafe-polkit package.
   * debian/rules:
-    + Add --with-gtk=2.0.
+    + Add --with-ctk=2.0.
     + Remove --disable-introspection.
 
   [ John Paul Adrian Glaubitz ]
