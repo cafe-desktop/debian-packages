@@ -81,7 +81,7 @@ baul-extensions (1.22.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
 
   [ Mike Gabriel ]
   * debian/{compat,control}:
@@ -141,7 +141,7 @@ baul-extensions (1.20.0-1) unstable; urgency=medium
   * debian/control (already in 1.19.0-0ubuntu1):
     + Temporarily have pkg-mate-team ML under Uploaders:.
     + Update Maintainer: field to debian-mate ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
 
   [ Mike Gabriel ]
   * debian/patches:
@@ -188,9 +188,9 @@ baul-extensions (1.18.1-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/copyright: Update copyright attributions.
   * debian/control: Add baul-xattr-tags.
   * debian/baul-xattr-tags.install: Add baul-xattr-tags.
@@ -216,7 +216,7 @@ baul-extensions (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -226,7 +226,7 @@ baul-extensions (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 

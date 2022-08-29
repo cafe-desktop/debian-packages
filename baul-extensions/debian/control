@@ -1,7 +1,7 @@
 Source: baul-extensions
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -32,7 +32,7 @@ Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Baul extension to mass resize or rotate images
- Baul is the official file manager for the MATE desktop. This
+ Baul is the official file manager for the CAFE desktop. This
  package adds extended functionality to the Baul file manager.
  .
  This package adds a "Resize Images..." menu item to the context menu of
@@ -46,7 +46,7 @@ Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Baul plugin for opening terminals in arbitrary local paths
- Baul is the official file manager for the MATE desktop. This
+ Baul is the official file manager for the CAFE desktop. This
  package adds extended functionality to the Baul file manager.
  .
  baul-open-terminal is a proof-of-concept Baul extension
@@ -61,7 +61,7 @@ Suggests: pidgin (>= 2.0.0) | gajim,
           python-dbus,
           thunderbird | icedove | evolution (>= 2.28) | claws-mail,
 Description: integrates email clients and Pidgin into the Baul file manager
- Baul is the official file manager for the MATE desktop. This
+ Baul is the official file manager for the CAFE desktop. This
  package adds extended functionality to the Baul file manager.
  .
  The Baul Send To extension provides the Baul file manager with a context
@@ -79,7 +79,7 @@ Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Allows one to quickly share a folder from the Baul file manager
- Baul is the official file manager for the MATE desktop. This
+ Baul is the official file manager for the CAFE desktop. This
  package adds extended functionality to the Baul file manager.
  .
  The Baul share extension allows you to quickly share a folder from the
@@ -92,7 +92,7 @@ Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Allows one to quickly set a wallpaper from folders
- Baul is the official file manager for the MATE desktop. This
+ Baul is the official file manager for the CAFE desktop. This
  package adds extended functionality to the Baul file manager.
  .
  Baul Wallpaper allows you to quickly set a wallpaper directly from
@@ -104,7 +104,7 @@ Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Allows one to view extended attributes
- Baul is the official file manager for the MATE desktop. This
+ Baul is the official file manager for the CAFE desktop. This
  package adds extended functionality to the Baul file manager.
  .
  Baul xattr tags extension allows you to view file and folder
@@ -114,7 +114,7 @@ Package: baul-extensions-common
 Architecture: all
 Depends: ${misc:Depends},
 Description: Baul extensions (common files)
- Baul is the official file manager for the MATE desktop. This
+ Baul is the official file manager for the CAFE desktop. This
  package adds extended functionality to the Baul file manager.
  .
  This package contains the architecture independent files for
