@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Baul Extensions
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/baul-extensions
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/baul-extensions
 
 Files: image-converter/baul-image-converter.c
        image-converter/baul-image-converter.h
@@ -44,7 +44,7 @@ Files: .build.yml
        sendto/plugins/removable-devices/Makefile.am
        sendto/plugins/upnp/Makefile.am
        sendto/plugins/Makefile.am
-       sendto/org.mate.baul.extensions.sendto.gresource.xml
+       sendto/org.cafe.baul.extensions.sendto.gresource.xml
        sendto/Makefile.am
        sendto/*.ui
        sendto/*.in

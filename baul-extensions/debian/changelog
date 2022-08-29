@@ -34,7 +34,7 @@ baul-extensions (1.24.0-1) unstable; urgency=medium
     + Update copyright attributions.
   * debian/control:
     + Add B-D libxml2-utils.
-  * debian/mate-control-center-common.install:
+  * debian/cafe-control-center-common.install:
     + Remove obsolete reference to
       usr/share/baul-extensions/baul-sendto.ui.
 
@@ -112,7 +112,7 @@ baul-extensions (1.20.1-1) unstable; urgency=medium
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
     + White-space fix at EOF.
   * debian/rules:
     + Don't build gtk-doc for sendto extension. Should fix FTCBFS. (Closes:
@@ -139,8 +139,8 @@ baul-extensions (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.0-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
 
   [ Mike Gabriel ]
@@ -251,8 +251,8 @@ baul-extensions (1.14.0-1) unstable; urgency=medium
   * debian/control:
     + Versioned B-D: libbaul-extension-dev (>= 1.14).
     + B-D: libgtk-3-dev.
-    + Versioned B-D: libmate-desktop-dev (>= 1.14).
-    + Versioned B-D: mate-common (>= 1.14).
+    + Versioned B-D: libcafe-desktop-dev (>= 1.14).
+    + Versioned B-D: cafe-common (>= 1.14).
     + Use encrypted URLs for Vcs-*: field.
   * debian/rules:
     + CafeConf dropped upstream.
@@ -276,7 +276,7 @@ baul-extensions (1.12.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev (>= 1.12).
+    + Versioned B-D: cafe-common (>= 1.12) and libcafe-desktop-dev (>= 1.12).
 
   [ Mike Gabriel ]
   * debian/patches:¬
@@ -340,7 +340,7 @@ baul-extensions (1.8.0-2) unstable; urgency=medium
   [ Mike Gabriel ]
   * lintian: Grammar fix in override reasoning comment.
   * debian/control:
-    + Drop from S (baul-sendto): mate-bluetooth. (Not packaged in Debian).
+    + Drop from S (baul-sendto): cafe-bluetooth. (Not packaged in Debian).
   * debian/rules:
     + Use upstream's NEWS file as upstream ChangeLog.
   * debian/copyright:
