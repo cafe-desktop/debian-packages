@@ -6,7 +6,7 @@ Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (=12),
                dpkg-dev (>= 1.16.1.1),
                gobject-introspection,
-               ctk-doc-tools,
+               gtk-doc-tools,
                intltool,
                libdconf-dev,
                libexempi-dev,

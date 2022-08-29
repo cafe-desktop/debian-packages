@@ -29,7 +29,7 @@ override_dh_auto_configure:
 		--disable-static \
 		--localstatedir=/var \
 		--enable-introspection \
-		--enable-ctk-doc
+		--enable-gtk-doc
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test

@@ -516,9 +516,9 @@ baul (1.10.3-1) unstable; urgency=low
   * debian/baul.install:
     + Remove common files.
   * debian/libbaul-extension-dev.install:
-    + Add usr/share/ctk-doc.
+    + Add usr/share/gtk-doc.
   * debian/rules:
-    + Add --enable-ctk-doc.
+    + Add --enable-gtk-doc.
     + Remove dfsg suffix.
   * debian/watch:
     + Remove dfsg suffix.
@@ -665,7 +665,7 @@ baul (1.8.0-1) unstable; urgency=low
     + Add 1001_man-page-fixes.patch. Fix minor man page issues reported by
       lintian.
   * debian/baul.install:
-    + Omit /usr/share/ctk-doc/ from package. Not built anymore in 1.8.0.
+    + Omit /usr/share/gtk-doc/ from package. Not built anymore in 1.8.0.
   * lintian:
     + Drop not-needed-anymore overrides.
 
