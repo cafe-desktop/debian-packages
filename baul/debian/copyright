@@ -12,8 +12,8 @@ Files: eel/check-program.c
        eel/eel-debug.h
        eel/eel-cdk-extensions.c
        eel/eel-cdk-extensions.h
-       eel/eel-cdk-pixbuf-extensions.c
-       eel/eel-cdk-pixbuf-extensions.h
+       eel/eel-gdk-pixbuf-extensions.c
+       eel/eel-gdk-pixbuf-extensions.h
        eel/eel-glib-extensions.c
        eel/eel-glib-extensions.h
        eel/eel-graphic-effects.c
