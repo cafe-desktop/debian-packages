@@ -13,8 +13,8 @@ override_dh_missing:
 	dh_missing --fail-missing
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/caja-sendto/plugins/*.la
-	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	rm -rfv debian/tmp/usr/lib/*/baul-sendto/plugins/*.la
+	rm -rfv debian/tmp/usr/lib/*/baul/extensions-2.0/*.la
 	dh_install
 
 override_dh_installchangelogs:

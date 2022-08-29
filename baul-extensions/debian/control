@@ -1,4 +1,4 @@
-Source: caja-extensions
+Source: baul-extensions
 Section: x11
 Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
@@ -8,7 +8,7 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Build-Depends: debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
-               libcaja-extension-dev (>= 1.22),
+               libbaul-extension-dev (>= 1.22),
                libdbus-1-dev,
                libdbus-glib-1-dev,
                libdconf-dev,
@@ -22,12 +22,12 @@ Build-Depends: debhelper-compat (= 13),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/caja-extensions
-Vcs-Git: https://salsa.debian.org/debian-mate-team/caja-extensions.git
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/baul-extensions
+Vcs-Git: https://salsa.debian.org/debian-mate-team/baul-extensions.git
 
-Package: caja-image-converter
+Package: baul-image-converter
 Architecture: any
-Depends: caja-extensions-common (= ${source:Version}),
+Depends: baul-extensions-common (= ${source:Version}),
          imagemagick,
          ${misc:Depends},
          ${shlibs:Depends},
@@ -40,21 +40,21 @@ Description: Caja extension to mass resize or rotate images
  and file name. A click on "Resize" finally resizes the image(s) using
  ImageMagick's convert tool.
 
-Package: caja-open-terminal
+Package: baul-open-terminal
 Architecture: any
-Depends: caja-extensions-common (= ${source:Version}),
+Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Caja plugin for opening terminals in arbitrary local paths
  Caja is the official file manager for the MATE desktop. This
  package adds extended functionality to the Caja file manager.
  .
- caja-open-terminal is a proof-of-concept Caja extension
+ baul-open-terminal is a proof-of-concept Caja extension
  which allows you to open a terminal in arbitrary local folders.
 
-Package: caja-sendto
+Package: baul-sendto
 Architecture: any
-Depends: caja-extensions-common (= ${source:Version}),
+Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Suggests: pidgin (>= 2.0.0) | gajim,
@@ -72,9 +72,9 @@ Description: integrates email clients and Pidgin into the Caja file manager
  Caja Send To also provides the option of compressing the files (tar.bz2,
  tar.gz, or zip) before sending.
 
-Package: caja-share
+Package: baul-share
 Architecture: any
-Depends: caja-extensions-common (= ${source:Version}),
+Depends: baul-extensions-common (= ${source:Version}),
          samba-common-bin,
          ${misc:Depends},
          ${shlibs:Depends},
@@ -86,9 +86,9 @@ Description: Allows one to quickly share a folder from the Caja file manager
  Caja file manager without requiring root access. It uses Samba, so your
  folders can be accessed by any operating system.
 
-Package: caja-wallpaper
+Package: baul-wallpaper
 Architecture: any
-Depends: caja-extensions-common (= ${source:Version}),
+Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Allows one to quickly set a wallpaper from folders
@@ -98,9 +98,9 @@ Description: Allows one to quickly set a wallpaper from folders
  Caja Wallpaper allows you to quickly set a wallpaper directly from
  file browser folders.
 
-Package: caja-xattr-tags
+Package: baul-xattr-tags
 Architecture: any
-Depends: caja-extensions-common (= ${source:Version}),
+Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Allows one to view extended attributes
@@ -110,7 +110,7 @@ Description: Allows one to view extended attributes
  Caja xattr tags extension allows you to view file and folder
  extended attributes.
 
-Package: caja-extensions-common
+Package: baul-extensions-common
 Architecture: all
 Depends: ${misc:Depends},
 Description: Caja extensions (common files)

@@ -1,4 +1,4 @@
-caja-extensions (1.24.1-1) unstable; urgency=medium
+baul-extensions (1.24.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release
@@ -13,7 +13,7 @@ caja-extensions (1.24.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2020 11:31:17 +0200
 
-caja-extensions (1.24.0-1) unstable; urgency=medium
+baul-extensions (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -24,8 +24,8 @@ caja-extensions (1.24.0-1) unstable; urgency=medium
   * debian/patches:
     + Update 1001_pkg-config-macro-not-cross-compilation-safe.patch.
       Trivial rebase.
-  * debian/caja-wallpaper.lintian-overrides:
-     +Add library-not-linked-against-libc override for caja-wallpaper extension
+  * debian/baul-wallpaper.lintian-overrides:
+     +Add library-not-linked-against-libc override for baul-wallpaper extension
       file.
 
   [ Martin Wimpress ]
@@ -36,11 +36,11 @@ caja-extensions (1.24.0-1) unstable; urgency=medium
     + Add B-D libxml2-utils.
   * debian/mate-control-center-common.install:
     + Remove obsolete reference to
-      usr/share/caja-extensions/caja-sendto.ui.
+      usr/share/baul-extensions/baul-sendto.ui.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 11:53:26 +0100
 
-caja-extensions (1.22.1-2) unstable; urgency=medium
+baul-extensions (1.22.1-2) unstable; urgency=medium
 
   * debian/control:
     + Bump Standards-Version: to 4.4.1. No changes needed.
@@ -49,14 +49,14 @@ caja-extensions (1.22.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Jan 2020 06:33:18 +0100
 
-caja-extensions (1.22.1-1) unstable; urgency=medium
+baul-extensions (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:32:36 +0200
 
-caja-extensions (1.22.0-3) unstable; urgency=medium
+baul-extensions (1.22.0-3) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -65,7 +65,7 @@ caja-extensions (1.22.0-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 02 Sep 2019 16:52:03 +0200
 
-caja-extensions (1.22.0-2) unstable; urgency=medium
+baul-extensions (1.22.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
@@ -76,7 +76,7 @@ caja-extensions (1.22.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 Aug 2019 18:43:42 +0200
 
-caja-extensions (1.22.0-1) unstable; urgency=medium
+baul-extensions (1.22.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -95,7 +95,7 @@ caja-extensions (1.22.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jul 2019 16:25:58 +0200
 
-caja-extensions (1.20.2-1) unstable; urgency=medium
+baul-extensions (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -103,7 +103,7 @@ caja-extensions (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 04 Jan 2019 19:25:30 +0100
 
-caja-extensions (1.20.1-1) unstable; urgency=medium
+baul-extensions (1.20.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/patches:
@@ -117,7 +117,7 @@ caja-extensions (1.20.1-1) unstable; urgency=medium
   * debian/rules:
     + Don't build gtk-doc for sendto extension. Should fix FTCBFS. (Closes:
       #890522).
-  * debian/caja-sendto.install:
+  * debian/baul-sendto.install:
     + Drop gtk-doc folder.
   * debian/copyright:
     + Use secure URI for copyright format.
@@ -131,7 +131,7 @@ caja-extensions (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 13:24:31 +0200
 
-caja-extensions (1.20.0-1) unstable; urgency=medium
+baul-extensions (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.19.0-0ubuntu1):
@@ -151,28 +151,28 @@ caja-extensions (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 14:36:24 +0100
 
-caja-extensions (1.20.0-0ubuntu1) bionic; urgency=medium
+baul-extensions (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:56 +0000
 
-caja-extensions (1.19.0-0ubuntu1) bionic; urgency=medium
+baul-extensions (1.19.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 00:32:13 +0000
 
-caja-extensions (1.18.2-1) unstable; urgency=medium
+baul-extensions (1.18.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
 
   [ Mike Gabriel ]
-  * Drop caja-gksu bin:package. The gksu utility is deprecated and will be
+  * Drop baul-gksu bin:package. The gksu utility is deprecated and will be
     removed from Debian soon. (Closes: #822595).
   * debian/control:
-    + Typo fix in LONG_DESCRIPTION of bin:package caja-xattr.
+    + Typo fix in LONG_DESCRIPTION of bin:package baul-xattr.
   * debian/control:
     + Bump Standards-Version: to 4.1.3. No changes needed.
   * debian/{control,compat}:
@@ -182,7 +182,7 @@ caja-extensions (1.18.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 09 Jan 2018 15:23:02 +0100
 
-caja-extensions (1.18.1-1) unstable; urgency=medium
+baul-extensions (1.18.1-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -192,8 +192,8 @@ caja-extensions (1.18.1-1) unstable; urgency=medium
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/control: Dependencies updated for MATE 1.18.
   * debian/copyright: Update copyright attributions.
-  * debian/control: Add caja-xattr-tags.
-  * debian/caja-xattr-tags.install: Add caja-xattr-tags.
+  * debian/control: Add baul-xattr-tags.
+  * debian/baul-xattr-tags.install: Add baul-xattr-tags.
 
   [ Vangelis Mouhtsis ]
   * debian/compat:
@@ -207,7 +207,7 @@ caja-extensions (1.18.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 19:15:00 +0200
 
-caja-extensions (1.16.0-1) unstable; urgency=medium
+baul-extensions (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -222,7 +222,7 @@ caja-extensions (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 04 Oct 2016 10:35:22 +0200
 
-caja-extensions (1.15.0-0ubuntu1) yakkety; urgency=medium
+baul-extensions (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
@@ -232,7 +232,7 @@ caja-extensions (1.15.0-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
 
-caja-extensions (1.14.1-1) unstable; urgency=medium
+baul-extensions (1.14.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -244,12 +244,12 @@ caja-extensions (1.14.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 13:11:40 +0200
 
-caja-extensions (1.14.0-1) unstable; urgency=medium
+baul-extensions (1.14.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: libcaja-extension-dev (>= 1.14).
+    + Versioned B-D: libbaul-extension-dev (>= 1.14).
     + B-D: libgtk-3-dev.
     + Versioned B-D: libmate-desktop-dev (>= 1.14).
     + Versioned B-D: mate-common (>= 1.14).
@@ -271,7 +271,7 @@ caja-extensions (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 May 2016 05:28:30 +0200
 
-caja-extensions (1.12.0-1) unstable; urgency=medium
+baul-extensions (1.12.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -280,36 +280,36 @@ caja-extensions (1.12.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/patches:¬
-    + Add 2001_support-icedove-in-caja-sendto.patch. Support "icedove" as¬
-      MAILER_THUNDERBIRD variant in caja-sendto plugin. (Closes: #801364).¬
+    + Add 2001_support-icedove-in-baul-sendto.patch. Support "icedove" as¬
+      MAILER_THUNDERBIRD variant in baul-sendto plugin. (Closes: #801364).¬
   * lintian:
     + Drop not-used-anymore override postrm-has-useless-call-to-ldconfig for
       all plugin bin:packages.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 12:20:56 +0100
 
-caja-extensions (1.10.1-1) unstable; urgency=medium
+baul-extensions (1.10.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Sep 2015 06:22:30 +0200
 
-caja-extensions (1.10.0-1) unstable; urgency=medium
+baul-extensions (1.10.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New ustream release.
-  * debian/caja-gksu.install:
+  * debian/baul-gksu.install:
     + Update for new upstream release.
-  * debian/caja-image-converter.install:
+  * debian/baul-image-converter.install:
     + Update for new upstream release.
-  * debian/caja-open-terminal.install:
+  * debian/baul-open-terminal.install:
     + Update for new upstream release.
-  * debian/caja-sendto.install:
+  * debian/baul-sendto.install:
     + Update for new upstream release.
-  * debian/caja-wallpaper.install:
-    + Add new package caja-wallpaper.
+  * debian/baul-wallpaper.install:
+    + Add new package baul-wallpaper.
   * debian/control:
-    + Add new package caja-wallpaper.
+    + Add new package baul-wallpaper.
     + Process with wrap-and-sort.
     + Update descriptions.
   * debian/rules:
@@ -321,26 +321,26 @@ caja-extensions (1.10.0-1) unstable; urgency=medium
   * debian/copyright:
     + Update for new upstream release.
   * lintian:
-    + Add caja-wallpaper.lintian-overrides. Suppress erroneously triggered
+    + Add baul-wallpaper.lintian-overrides. Suppress erroneously triggered
       pkg-has-shlibs-control-file-but-no-actual-shared-libs,
       postinst-has-useless-call-to-ldconfig,
       postrm-has-useless-call-to-ldconfig.
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2015 17:06:18 +0200
 
-caja-extensions (1.8.0-3) unstable; urgency=medium
+baul-extensions (1.8.0-3) unstable; urgency=medium
 
   * debian/control:
-    + Add to D (caja-gksu): gksu. (Closes: #781951).
+    + Add to D (baul-gksu): gksu. (Closes: #781951).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 06 Apr 2015 15:54:52 +0200
 
-caja-extensions (1.8.0-2) unstable; urgency=medium
+baul-extensions (1.8.0-2) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * lintian: Grammar fix in override reasoning comment.
   * debian/control:
-    + Drop from S (caja-sendto): mate-bluetooth. (Not packaged in Debian).
+    + Drop from S (baul-sendto): mate-bluetooth. (Not packaged in Debian).
   * debian/rules:
     + Use upstream's NEWS file as upstream ChangeLog.
   * debian/copyright:
@@ -355,7 +355,7 @@ caja-extensions (1.8.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Oct 2014 19:31:47 +0200
 
-caja-extensions (1.8.0-1) unstable; urgency=low
+baul-extensions (1.8.0-1) unstable; urgency=low
 
   * Initial release. (Closes: #739374).
 

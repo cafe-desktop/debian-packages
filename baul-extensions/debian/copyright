@@ -1,21 +1,21 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Caja Extensions
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/caja-extensions
+Source: https://git.mate-desktop.org/baul-extensions
 
-Files: image-converter/caja-image-converter.c
-       image-converter/caja-image-converter.h
-       image-converter/caja-image-resizer.c
-       image-converter/caja-image-resizer.h
-       image-converter/caja-image-rotator.c
-       image-converter/caja-image-rotator.h
+Files: image-converter/baul-image-converter.c
+       image-converter/baul-image-converter.h
+       image-converter/baul-image-resizer.c
+       image-converter/baul-image-resizer.h
+       image-converter/baul-image-rotator.c
+       image-converter/baul-image-rotator.h
        image-converter/image-converter.c
 Copyright: 2004, 2005, 2006, 2008, Jürg Billeter
 License: GPL-2+
 
-Files: wallpaper/caja-wallpaper-command.c
-       wallpaper/caja-wallpaper-extension.c
-       wallpaper/caja-wallpaper-extension.h
+Files: wallpaper/baul-wallpaper-command.c
+       wallpaper/baul-wallpaper-extension.c
+       wallpaper/baul-wallpaper-extension.h
 Copyright: 2005, Adam Israel
            2014, Stefano Karapetsas
 License: GPL-2+
@@ -26,25 +26,25 @@ Files: .build.yml
        .github/issue_template.md
        .github/FUNDING.yml
        gksu/Makefile.am
-       gksu/libcaja-gksu.c
-       gksu/libcaja-gksu.caja-extension.desktop.in.in
+       gksu/libbaul-gksu.c
+       gksu/libbaul-gksu.baul-extension.desktop.in.in
        image-converter/Makefile.am
        image-converter/*.ui
-       image-converter/libcaja-image-converter.caja-extension.desktop.in.in
+       image-converter/libbaul-image-converter.baul-extension.desktop.in.in
        open-terminal/Makefile.am
        open-terminal/*.in
        po/LINGUAS
        po/Makevars
        po/POTFILES.in
        sendto/docs/*
-       sendto/plugins/caja-burn/Makefile.am
+       sendto/plugins/baul-burn/Makefile.am
        sendto/plugins/emailclient/Makefile.am
        sendto/plugins/gajim/Makefile.am
        sendto/plugins/pidgin/Makefile.am
        sendto/plugins/removable-devices/Makefile.am
        sendto/plugins/upnp/Makefile.am
        sendto/plugins/Makefile.am
-       sendto/org.mate.caja.extensions.sendto.gresource.xml
+       sendto/org.mate.baul.extensions.sendto.gresource.xml
        sendto/Makefile.am
        sendto/*.ui
        sendto/*.in
@@ -52,11 +52,11 @@ Files: .build.yml
        share/shares.c
        share/shares.h
        share/*.ui
-       share/libcaja-share.caja-extension.desktop.in.in
+       share/libbaul-share.baul-extension.desktop.in.in
        wallpaper/Makefile.am
-       wallpaper/libcaja-wallpaper.caja-extension.desktop.in.in
+       wallpaper/libbaul-wallpaper.baul-extension.desktop.in.in
        xattr-tags/Makefile.am
-       xattr-tags/libcaja-xattr-tags.caja-extension.desktop.in.in
+       xattr-tags/libbaul-xattr-tags.baul-extension.desktop.in.in
        AUTHORS
        ChangeLog
        Makefile.am
@@ -70,14 +70,14 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: sendto/caja-sendto.1
+Files: sendto/baul-sendto.1
 Copyright: 2006, Oystein Gisnas
 License: GPL-2+
 
-Files: open-terminal/caja-open-terminal.c
-       open-terminal/caja-open-terminal.h
+Files: open-terminal/baul-open-terminal.c
+       open-terminal/baul-open-terminal.h
        open-terminal/open-terminal.c
-       sendto/caja-nste.c
+       sendto/baul-nste.c
 Copyright: 2004, 2005, Free Software Foundation, Inc
 License: GPL-2+
 
@@ -87,18 +87,18 @@ Files: sendto/plugins/nst-common.c
 Copyright: *No copyright*
 License: GPL-2+
 
-Files: sendto/caja-nste.h
-       sendto/caja-sendto-command.c
-       sendto/caja-sendto-module.c
+Files: sendto/baul-nste.h
+       sendto/baul-sendto-command.c
+       sendto/baul-sendto-module.c
 Copyright: 2004, 2005, Roberto Majadas
 License: GPL-2+
 
-Files: share/caja-share.c
-       share/caja-share.h
+Files: share/baul-share.c
+       share/baul-share.h
 Copyright: 2005, Ethium, Inc
 License: GPL-2+
 
-Files: sendto/caja-sendto-plugin.h
+Files: sendto/baul-sendto-plugin.h
 Copyright: 2004, Roberto Majadas
            2009, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
@@ -107,7 +107,7 @@ Files: sendto/plugins/gajim/gajim.c
 Copyright: 2006, Dimitur Kirov
 License: GPL-2+
 
-Files: sendto/plugins/caja-burn/caja-burn.c
+Files: sendto/plugins/baul-burn/baul-burn.c
 Copyright: 2008, Jader Henrique da Silva
 License: GPL-2+
 
@@ -126,12 +126,12 @@ Copyright: 2004, Roberto Majadas <roberto.majadas@openshine.com>
            2012, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: xattr-tags/caja-xattr-tags-extension.c
-       xattr-tags/caja-xattr-tags-extension.h
+Files: xattr-tags/baul-xattr-tags-extension.c
+       xattr-tags/baul-xattr-tags-extension.h
 Copyright: 2016 Felipe Barriga Richards
 License: GPL-2+
 
-Files: caja-extensions.pot
+Files: baul-extensions.pot
        po/*.po
 Copyright: THE PACKAGE'S COPYRIGHT HOLDER
 License: GPL-2+

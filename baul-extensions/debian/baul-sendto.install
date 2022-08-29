@@ -1,8 +1,8 @@
-usr/bin/caja-sendto
-usr/include/caja-sendto/
-usr/lib/*/caja-sendto/plugins/*.so
-usr/lib/*/caja/extensions-2.0/libcaja-sendto.so
-usr/lib/*/pkgconfig/caja-sendto.pc
-usr/share/caja/extensions/libcaja-sendto.caja-extension
+usr/bin/baul-sendto
+usr/include/baul-sendto/
+usr/lib/*/baul-sendto/plugins/*.so
+usr/lib/*/baul/extensions-2.0/libbaul-sendto.so
+usr/lib/*/pkgconfig/baul-sendto.pc
+usr/share/baul/extensions/libbaul-sendto.baul-extension
 usr/share/glib-2.0/schemas/org.mate.Caja.Sendto.gschema.xml
-usr/share/man/man1/caja-sendto.*
+usr/share/man/man1/baul-sendto.*
