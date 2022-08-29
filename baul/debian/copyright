@@ -6,8 +6,8 @@ Source: https://github.com/cafe-desktop/baul
 Files: eel/check-program.c
        eel/eel-art-extensions.c
        eel/eel-art-extensions.h
-       eel/eel-art-gtk-extensions.c
-       eel/eel-art-gtk-extensions.h
+       eel/eel-art-ctk-extensions.c
+       eel/eel-art-ctk-extensions.h
        eel/eel-debug.c
        eel/eel-debug.h
        eel/eel-gdk-extensions.c
@@ -18,9 +18,9 @@ Files: eel/check-program.c
        eel/eel-glib-extensions.h
        eel/eel-graphic-effects.c
        eel/eel-graphic-effects.h
-       eel/eel-gtk-extensions.c
-       eel/eel-gtk-extensions.h
-       eel/eel-gtk-macros.h
+       eel/eel-ctk-extensions.c
+       eel/eel-ctk-extensions.h
+       eel/eel-ctk-macros.h
        eel/eel-image-table.c
        eel/eel-image-table.h
        eel/eel-labeled-image.c
@@ -456,8 +456,8 @@ Files: eel/eel-editable-label.c
 Copyright: 1995-1997, Peter Mattis, Spencer Kimball and Josh MacDonald
 License: LGPL-2+
 
-Files: eel/eel-gtk-container.c
-       eel/eel-gtk-container.h
+Files: eel/eel-ctk-container.c
+       eel/eel-ctk-container.h
 Copyright: 2001, Ramiro Estrugo
 License: LGPL-2+
 
