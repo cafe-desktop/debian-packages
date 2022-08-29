@@ -1,0 +1,6 @@
+# caja extensions in /usr/lib/*/caja/extensions-2.0/ erroneously trigger
+# debhelper's makeshlibs script
+caja-wallpaper: postinst-has-useless-call-to-ldconfig
+
+# checking manually 1.24.0: it is linked against libc. Is this a false-positive?
+caja-wallpaper: library-not-linked-against-libc usr/lib/x86_64-linux-gnu/caja/extensions-2.0/libcaja-wallpaper.so
