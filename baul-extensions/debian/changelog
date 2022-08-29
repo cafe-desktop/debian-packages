@@ -255,7 +255,7 @@ baul-extensions (1.14.0-1) unstable; urgency=medium
     + Versioned B-D: mate-common (>= 1.14).
     + Use encrypted URLs for Vcs-*: field.
   * debian/rules:
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
     + Add --with-gtk=3.0
   * debian/copyright:
     + Update copyright attributions.
