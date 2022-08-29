@@ -31,9 +31,9 @@ Depends: baul-extensions-common (= ${source:Version}),
          imagemagick,
          ${misc:Depends},
          ${shlibs:Depends},
-Description: Caja extension to mass resize or rotate images
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
+Description: Baul extension to mass resize or rotate images
+ Baul is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Baul file manager.
  .
  This package adds a "Resize Images..." menu item to the context menu of
  all images. This opens a dialog where you set the desired image size
@@ -45,11 +45,11 @@ Architecture: any
 Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Description: Caja plugin for opening terminals in arbitrary local paths
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
+Description: Baul plugin for opening terminals in arbitrary local paths
+ Baul is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Baul file manager.
  .
- baul-open-terminal is a proof-of-concept Caja extension
+ baul-open-terminal is a proof-of-concept Baul extension
  which allows you to open a terminal in arbitrary local folders.
 
 Package: baul-sendto
@@ -60,16 +60,16 @@ Depends: baul-extensions-common (= ${source:Version}),
 Suggests: pidgin (>= 2.0.0) | gajim,
           python-dbus,
           thunderbird | icedove | evolution (>= 2.28) | claws-mail,
-Description: integrates email clients and Pidgin into the Caja file manager
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
+Description: integrates email clients and Pidgin into the Baul file manager
+ Baul is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Baul file manager.
  .
- The Caja Send To extension provides the Caja file manager with a context
+ The Baul Send To extension provides the Baul file manager with a context
  menu component for quickly sending files to given email addresses, contacts
  on a Pidgin or Gajim instant messaging list, through Thunderbird/Icedove,
  or through Claws Mail.
  .
- Caja Send To also provides the option of compressing the files (tar.bz2,
+ Baul Send To also provides the option of compressing the files (tar.bz2,
  tar.gz, or zip) before sending.
 
 Package: baul-share
@@ -78,12 +78,12 @@ Depends: baul-extensions-common (= ${source:Version}),
          samba-common-bin,
          ${misc:Depends},
          ${shlibs:Depends},
-Description: Allows one to quickly share a folder from the Caja file manager
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
+Description: Allows one to quickly share a folder from the Baul file manager
+ Baul is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Baul file manager.
  .
- The Caja share extension allows you to quickly share a folder from the
- Caja file manager without requiring root access. It uses Samba, so your
+ The Baul share extension allows you to quickly share a folder from the
+ Baul file manager without requiring root access. It uses Samba, so your
  folders can be accessed by any operating system.
 
 Package: baul-wallpaper
@@ -92,10 +92,10 @@ Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Allows one to quickly set a wallpaper from folders
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
+ Baul is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Baul file manager.
  .
- Caja Wallpaper allows you to quickly set a wallpaper directly from
+ Baul Wallpaper allows you to quickly set a wallpaper directly from
  file browser folders.
 
 Package: baul-xattr-tags
@@ -104,18 +104,18 @@ Depends: baul-extensions-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Allows one to view extended attributes
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
+ Baul is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Baul file manager.
  .
- Caja xattr tags extension allows you to view file and folder
+ Baul xattr tags extension allows you to view file and folder
  extended attributes.
 
 Package: baul-extensions-common
 Architecture: all
 Depends: ${misc:Depends},
-Description: Caja extensions (common files)
- Caja is the official file manager for the MATE desktop. This
- package adds extended functionality to the Caja file manager.
+Description: Baul extensions (common files)
+ Baul is the official file manager for the MATE desktop. This
+ package adds extended functionality to the Baul file manager.
  .
  This package contains the architecture independent files for
- various available Caja extensions.
+ various available Baul extensions.

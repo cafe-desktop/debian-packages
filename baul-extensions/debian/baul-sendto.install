@@ -4,5 +4,5 @@ usr/lib/*/baul-sendto/plugins/*.so
 usr/lib/*/baul/extensions-2.0/libbaul-sendto.so
 usr/lib/*/pkgconfig/baul-sendto.pc
 usr/share/baul/extensions/libbaul-sendto.baul-extension
-usr/share/glib-2.0/schemas/org.mate.Caja.Sendto.gschema.xml
+usr/share/glib-2.0/schemas/org.mate.Baul.Sendto.gschema.xml
 usr/share/man/man1/baul-sendto.*
