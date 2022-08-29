@@ -388,7 +388,7 @@ baul (1.14.1-1) unstable; urgency=medium
     + Add to D (libbaul-extension-dev): libctk-3-dev.
     + Fix conflict between baul and libbaul-extension1 1.8.x.
     + Processed with wrap-and-sort.
-    + B-D: libgail-3-dev
+    + B-D: libcail-3-dev
     + Bump Standards: to 3.9.8. No changes needed.
   * debian/rules:
     + Add --with-ctk=3.0
