@@ -27,8 +27,8 @@ Files: eel/check-program.c
        eel/eel-labeled-image.h
        eel/eel-lib-self-check-functions.c
        eel/eel-lib-self-check-functions.h
-       eel/eel-mate-extensions.c
-       eel/eel-mate-extensions.h
+       eel/eel-cafe-extensions.c
+       eel/eel-cafe-extensions.h
        eel/eel-self-checks.c
        eel/eel-self-checks.h
        eel/eel-stock-dialogs.c
