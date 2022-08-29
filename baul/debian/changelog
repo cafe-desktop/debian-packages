@@ -16,7 +16,7 @@ baul (1.24.0-1) unstable; urgency=medium
   * debian/copyright:
     + Update copyright attributions.
   * debian/control:
-     + Update Build-Depends: to support MATE Desktop 1.24.
+     + Update Build-Depends: to support CAFE Desktop 1.24.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:48:13 +0100
 
@@ -52,7 +52,7 @@ baul (1.22.1-1) unstable; urgency=medium
   * debian/copyright:
     + Update copyright attributions.
   * debian/rules:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/control:
     + Correct order for Depends:
   * debian/patcches:
@@ -173,7 +173,7 @@ baul (1.20.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control (already in 1.19.3-0ubuntu1):
-    + Capitalize MATE in Maintainer: field.
+    + Capitalize CAFE in Maintainer: field.
   * debian/{control,compat}: Bump DH version level to 11.
   * debian/patches:
     Add 1001_use-correct-macros-to-cross-build.patch. Fix cross-building.
@@ -254,11 +254,11 @@ baul (1.18.3-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/baul.install: Remove obsolete usr/lib/baul/
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/control: Drop dependency on libunique3 (Closes: #827234)
   * debian/patches: Add 0001_return_custom_icons.patch.
   * debian/patches: Drop 0001_return_custom_icons.patch. Applied upstream.
@@ -342,7 +342,7 @@ baul (1.16.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -356,7 +356,7 @@ baul (1.15.4-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release. (Closes: #836349).
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
   * debian/changelog:
@@ -541,7 +541,7 @@ baul (1.10.1-1~exp1) experimental; urgency=low
     + Update copyright file after new upstream release.
   * debian/patches:
     + Drop 0001_fix-desktop-icon-size.patch. Applied upstream.
-    + Drop 0002_dont-start-desktop-outside-of-MATE-sessions.patch.
+    + Drop 0002_dont-start-desktop-outside-of-CAFE-sessions.patch.
       Applied upstream.
     + Drop 0003_fix-crash-in-places-sidebar.patch. Applied upstream.
   * debian/rules:
@@ -590,12 +590,12 @@ baul (1.8.2-2) unstable; urgency=medium
   * debian/patches:
     + Add 0001_fix-desktop-icon-size.patch. Make adjusting the default
       folder and desktop icon size predictable. (Closes: #775525).
-    + Add 0002_dont-start-desktop-outside-of-MATE-sessions.patch. Stop
-      launching a MATE desktop window when one opens Baul outside a MATE
+    + Add 0002_dont-start-desktop-outside-of-CAFE-sessions.patch. Stop
+      launching a CAFE desktop window when one opens Baul outside a CAFE
       desktop session. (Closes: #771587).
   * debian/control:
     + Add to B (bin:package baul). From this release on, baul relies on
-      mate-session-manager 1.8.1-7 or higher when running in a MATE session.
+      mate-session-manager 1.8.1-7 or higher when running in a CAFE session.
       However, baul does not depend on mate-session-manager.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 21 Jan 2015 14:58:18 +0100
