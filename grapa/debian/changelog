@@ -1,5 +1,11 @@
+grapa (1.25.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Tue, 30 Aug 2022 19:37:39 +0200
+
 grapa (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Mon, 04 Apr 2022 15:24:04 +0200
+ -- Pablo Barciela <scow@riseup.net>  Mon, 04 Apr 2022 15:24:04 +0200
