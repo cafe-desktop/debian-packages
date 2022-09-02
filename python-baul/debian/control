@@ -1,4 +1,4 @@
-Source: python-caja
+Source: python-baul
 Section: python
 Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
@@ -10,7 +10,7 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Build-Depends: debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
                gtk-doc-tools,
-               libcaja-extension-dev (>= 1.20),
+               libbaul-extension-dev (>= 1.20),
                libgirepository1.0-dev,
                libglib2.0-dev,
                mate-common (>= 1.20),
@@ -20,17 +20,17 @@ Build-Depends: debhelper-compat (= 13),
 Standards-Version: 4.5.1
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/python-caja
-Vcs-Git: https://salsa.debian.org/debian-mate-team/python-caja.git
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/python-baul
+Vcs-Git: https://salsa.debian.org/debian-mate-team/python-baul.git
 
-Package: python3-caja
+Package: python3-baul
 Architecture: any
-Depends: gir1.2-caja-2.0,
-         python-caja-common (= ${source:Version}),
+Depends: gir1.2-baul-2.0,
+         python-baul-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: python-caja (<< 1.23~),
-Replaces: python-caja (<< 1.23~),
+Breaks: python-baul (<< 1.23~),
+Replaces: python-baul (<< 1.23~),
 Description: Python3 binding for Caja components
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
@@ -40,11 +40,11 @@ Description: Python3 binding for Caja components
  The Python binding for Caja allows one to write Caja property page
  and menu item extensions in Python.
 
-Package: python-caja-common
+Package: python-baul-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: python-caja (<< 1.9.0),
-Breaks: python-caja (<< 1.9.0),
+Replaces: python-baul (<< 1.9.0),
+Breaks: python-baul (<< 1.9.0),
 Description: Python binding for Caja components (common files)
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated

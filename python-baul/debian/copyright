@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Python Caja
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/python-caja/
+Source: https://git.mate-desktop.org/python-baul/
 
 Files: autogen.sh
        examples/background-image.py
@@ -17,13 +17,13 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: src/caja-python.c
-       src/caja-python.h
+Files: src/baul-python.c
+       src/baul-python.h
 Copyright: 2004-2005, Johan Dahlin
 License: GPL-2+
 
-Files: src/caja-python-object.c
-       src/caja-python-object.h
+Files: src/baul-python-object.c
+       src/baul-python-object.h
 Copyright: 2003-2004, Novell, Inc.
 License: GPL-2+
 
@@ -36,28 +36,28 @@ Files: .travis.yml
        Makefile.am
        NEWS
        README
-       caja-python.pc.in
+       baul-python.pc.in
        configure.ac
        docs/Makefile.am
-       docs/reference/caja-python-class-reference.xml
-       docs/reference/caja-python-column-provider.xml
-       docs/reference/caja-python-column.xml
-       docs/reference/caja-python-enum-reference.xml
-       docs/reference/caja-python-file-info.xml
-       docs/reference/caja-python-info-provider.xml
-       docs/reference/caja-python-location-widget-provider.xml
-       docs/reference/caja-python-menu-item.xml
-       docs/reference/caja-python-menu-provider.xml
-       docs/reference/caja-python-menu.xml
-       docs/reference/caja-python-operation-handle.xml
-       docs/reference/caja-python-operation-result.xml
-       docs/reference/caja-python-overview-example.xml
-       docs/reference/caja-python-overview-methods.xml
-       docs/reference/caja-python-overview.xml
-       docs/reference/caja-python-property-page-provider.xml
-       docs/reference/caja-python-property-page.xml
-       docs/reference/caja-python-provider-reference.xml
-       docs/reference/caja-python-ref.xml
+       docs/reference/baul-python-class-reference.xml
+       docs/reference/baul-python-column-provider.xml
+       docs/reference/baul-python-column.xml
+       docs/reference/baul-python-enum-reference.xml
+       docs/reference/baul-python-file-info.xml
+       docs/reference/baul-python-info-provider.xml
+       docs/reference/baul-python-location-widget-provider.xml
+       docs/reference/baul-python-menu-item.xml
+       docs/reference/baul-python-menu-provider.xml
+       docs/reference/baul-python-menu.xml
+       docs/reference/baul-python-operation-handle.xml
+       docs/reference/baul-python-operation-result.xml
+       docs/reference/baul-python-overview-example.xml
+       docs/reference/baul-python-overview-methods.xml
+       docs/reference/baul-python-overview.xml
+       docs/reference/baul-python-property-page-provider.xml
+       docs/reference/baul-python-property-page.xml
+       docs/reference/baul-python-provider-reference.xml
+       docs/reference/baul-python-ref.xml
        docs/reference/entities.docbook.in
        docs/xsl/common.xsl
        docs/xsl/devhelp.xsl
@@ -69,7 +69,7 @@ Files: .travis.yml
        docs/xsl/style.css
        examples/Makefile.am
        examples/README
-       libcaja-python.caja-extension.desktop.in.in
+       libbaul-python.baul-extension.desktop.in.in
        makepot
        po/LINGUAS
        po/Makevars
@@ -80,7 +80,7 @@ License: GPL-2+
 Comment:
  Using license as found in COPYING file.
 
-Files: python-caja.pot
+Files: python-baul.pot
        po/*.po
 Copyright: YEAR, THE PACKAGE'S COPYRIGHT HOLDER
 License: GPL-2+

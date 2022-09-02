@@ -15,10 +15,10 @@ override_dh_missing:
 	dh_missing --fail-missing
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/caja-python/*.la
-	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
-	mkdir -p debian/tmp/usr/share/caja-python/extensions
-	touch debian/tmp/usr/share/caja-python/extensions/.placeholder
+	rm -rfv debian/tmp/usr/lib/*/baul-python/*.la
+	rm -rfv debian/tmp/usr/lib/*/baul/extensions-2.0/*.la
+	mkdir -p debian/tmp/usr/share/baul-python/extensions
+	touch debian/tmp/usr/share/baul-python/extensions/.placeholder
 	dh_install
 
 override_dh_installchangelogs:

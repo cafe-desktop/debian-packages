@@ -1,16 +1,16 @@
-python-caja (1.24.0-3) unstable; urgency=medium
+python-baul (1.24.0-3) unstable; urgency=medium
 
   * debian/control:
     + Bump DH compat level to version 13.
   * debian/watch:
-    + Revert temporarily allowing development release of python-caja.
+    + Revert temporarily allowing development release of python-baul.
     + Update to format version 4.
   * debian/control:
     + Bump Standards-Version: to 4.5.1. No changes needed.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 17 Feb 2021 17:34:02 +0100
 
-python-caja (1.24.0-2) unstable; urgency=medium
+python-baul (1.24.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -19,7 +19,7 @@ python-caja (1.24.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 15 Feb 2020 08:46:20 +0100
 
-python-caja (1.24.0-1) unstable; urgency=medium
+python-baul (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -40,26 +40,26 @@ python-caja (1.24.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 20:57:39 +0100
 
-python-caja (1.23.0-1) unstable; urgency=medium
+python-baul (1.23.0-1) unstable; urgency=medium
 
   * Upload to unstable as is.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Jan 2020 06:51:11 +0100
 
-python-caja (1.23.0-1~exp2) experimental; urgency=medium
+python-baul (1.23.0-1~exp2) experimental; urgency=medium
 
   * debian/control:
-    + Add B:/R: relation (python3-caja) to python-caja (<< 1.23~).
+    + Add B:/R: relation (python3-baul) to python-baul (<< 1.23~).
   * debian/patches:
     + Add 1002_port-fixref-py-with-2to3.patch. Port to Python3.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Dec 2019 10:27:53 +0100
 
-python-caja (1.23.0-1~exp1) experimental; urgency=medium
+python-baul (1.23.0-1~exp1) experimental; urgency=medium
 
   * New upstream (development) release.
   * debian/watch:
-    + Temporarily allow development releases of python-caja.
+    + Temporarily allow development releases of python-baul.
   * debian/control:
     + Bump Standards-Version: to 4.4.1. No changes needed.
     + Add Rules-Requires-Root: field and set it to no.
@@ -72,7 +72,7 @@ python-caja (1.23.0-1~exp1) experimental; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Dec 2019 09:23:20 +0100
 
-python-caja (1.22.1-2) unstable; urgency=medium
+python-baul (1.22.1-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -80,7 +80,7 @@ python-caja (1.22.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 30 Sep 2019 15:56:26 +0200
 
-python-caja (1.22.1-1) unstable; urgency=medium
+python-baul (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -90,7 +90,7 @@ python-caja (1.22.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:44:03 +0200
 
-python-caja (1.22.0-1) unstable; urgency=medium
+python-baul (1.22.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -113,7 +113,7 @@ python-caja (1.22.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Jul 2019 15:47:26 +0200
 
-python-caja (1.20.2-1) unstable; urgency=medium
+python-baul (1.20.2-1) unstable; urgency=medium
 
   * New upstream version.
   * debian/control:
@@ -122,7 +122,7 @@ python-caja (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 14 Jan 2019 11:09:27 +0100
 
-python-caja (1.20.1-1) unstable; urgency=medium
+python-baul (1.20.1-1) unstable; urgency=medium
 
   * New upstream version.
   * debian/patches:
@@ -146,7 +146,7 @@ python-caja (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 08 Jul 2018 03:15:43 +0200
 
-python-caja (1.20.0-1) unstable; urgency=medium
+python-baul (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.19.0-0ubuntu1):
@@ -170,25 +170,25 @@ python-caja (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 10:12:36 +0100
 
-python-caja (1.20.0-0ubuntu1) bionic; urgency=medium
+python-baul (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
 
-python-caja (1.19.0-0ubuntu1) bionic; urgency=medium
+python-baul (1.19.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 08:25:03 +0000
 
-python-caja (1.18.1-1) unstable; urgency=medium
+python-baul (1.18.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Jul 2017 19:37:24 +0200
 
-python-caja (1.18.0-1) unstable; urgency=medium
+python-baul (1.18.0-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -215,7 +215,7 @@ python-caja (1.18.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 14:23:54 +0200
 
-python-caja (1.16.0-1) unstable; urgency=medium
+python-baul (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -232,7 +232,7 @@ python-caja (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 21:53:47 +0200
 
-python-caja (1.15.0-0ubuntu1) yakkety; urgency=medium
+python-baul (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream development release.
@@ -248,7 +248,7 @@ python-caja (1.15.0-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
 
-python-caja (1.14.0-1) unstable; urgency=medium
+python-baul (1.14.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -260,7 +260,7 @@ python-caja (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: libcaja-extension-dev (>= 1.14)
+    + Versioned B-D: libbaul-extension-dev (>= 1.14)
     + Versioned B-D: mate-common (>= 1.14)
     + Processed with wrap-and-sort.
 
@@ -270,12 +270,12 @@ python-caja (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 May 2016 17:05:34 +0200
 
-python-caja (1.12.0-1) unstable; urgency=medium
+python-baul (1.12.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12) and libcaja-extension-dev (>= 1.12).
+    + Versioned B-D: mate-common (>= 1.12) and libbaul-extension-dev (>= 1.12).
   * debian/pycompat:
     + Not used by any modern Python helper. Removed.
 
@@ -286,11 +286,11 @@ python-caja (1.12.0-1) unstable; urgency=medium
     + Fix grammar error in LONG_DESCRIPTION of several bin:packages.
   * lintian:
     + Drop non-used-anymore override: postrm-has-useless-call-to-ldconfig
-      (python-caja).
+      (python-baul).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 08:51:03 +0100
 
-python-caja (1.10.0-2) unstable; urgency=medium
+python-baul (1.10.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
@@ -304,12 +304,12 @@ python-caja (1.10.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 17 Sep 2015 11:11:21 +0200
 
-python-caja (1.10.0-1) unstable; urgency=medium
+python-baul (1.10.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
-  * debian/python-caja.install:
-    + Remove usr/share/doc/python-caja/
-  * debian/python-caja-common.install:
+  * debian/python-baul.install:
+    + Remove usr/share/doc/python-baul/
+  * debian/python-baul-common.install:
     + Add usr/share/doc/.
 
   [ Mike Gabriel ]
@@ -317,18 +317,18 @@ python-caja (1.10.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2015 17:22:29 +0200
 
-python-caja (1.10.0-1~exp2) experimental; urgency=medium
+python-baul (1.10.0-1~exp2) experimental; urgency=medium
 
-  * debian/python-caja*.install:
+  * debian/python-baul*.install:
     + Make sure, both packages don't share common files. (Closes: #789626).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Jul 2015 20:17:43 +0200
 
-python-caja (1.10.0-1~exp1) experimental; urgency=medium
+python-baul (1.10.0-1~exp1) experimental; urgency=medium
 
   * New upstream release.
   * debian/control:
-    + Add python-caja-common.
+    + Add python-baul-common.
   * debian/patches:
     + Drop 1001_multi-arch-libdir-in-pkgconfig.patch. Applied upstream.
     + Drop 1002_dont-install-xsl-files.patch. Applied upstream.
@@ -344,11 +344,11 @@ python-caja (1.10.0-1~exp1) experimental; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 15:33:46 +0200
 
-python-caja (1.8.1-2) unstable; urgency=medium
+python-baul (1.8.1-2) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
-    + Fix typo in python-caja-dbg LONG_DESCRIPTION. (Closes: #768819, #768820).
+    + Fix typo in python-baul-dbg LONG_DESCRIPTION. (Closes: #768819, #768820).
 
   [ Mike Gabriel ]
   * debian/patches:
@@ -361,7 +361,7 @@ python-caja (1.8.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Nov 2014 14:51:43 +0100
 
-python-caja (1.8.1-1) unstable; urgency=medium
+python-baul (1.8.1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/rules:
@@ -374,13 +374,13 @@ python-caja (1.8.1-1) unstable; urgency=medium
     - Detect Python variables via pkg-config. (LP: #1170017).
   * debian/patches:
     + Add 1001_multi-arch-libdir-in-pkgconfig.patch. Put multi-arch linker
-      path in caja-python.pc.
+      path in baul-python.pc.
   * debian/rules:
-    + Provide an empty caja-python/extensions folder (with .placeholder file).
+    + Provide an empty baul-python/extensions folder (with .placeholder file).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 22:30:57 +0200
 
-python-caja (1.8.0-1) unstable; urgency=low
+python-baul (1.8.0-1) unstable; urgency=low
 
   * Initial release. (Closes: #734993).
 
