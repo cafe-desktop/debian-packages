@@ -29,8 +29,8 @@ Depends:
  python3-gi,
 Breaks: baulrename,
 Replaces: baulrename,
-Description: Batch renaming extension for Caja
- An extension for the Caja file browser allowing users to rename multiple
+Description: Batch renaming extension for Baul
+ An extension for the Baul file browser allowing users to rename multiple
  files/folders in a single pass.
  .
  The application can change the case, insert, replace and delete strings,
