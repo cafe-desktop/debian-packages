@@ -92,7 +92,7 @@ baul-rename (18.1.10~bzr26+repack1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Update Maintainer: field to debian-mate ML on lists.debian.org.
 
   [ Mike Gabriel ]

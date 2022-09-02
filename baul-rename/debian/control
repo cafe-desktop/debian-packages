@@ -1,7 +1,7 @@
 Source: baul-rename
 Section: utils
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders:
  Mike Gabriel <sunweaver@debian.org>,
  Robert Tari <robert.tari@gmail.com>,
