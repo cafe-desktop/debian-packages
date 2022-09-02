@@ -1,0 +1,110 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Python Caja
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/python-caja/
+
+Files: autogen.sh
+       examples/background-image.py
+       examples/block-size-column.py
+       examples/location-widget-provider.py
+       examples/md5sum-property-page.py
+       examples/mixed.py
+       examples/open-terminal.py
+       examples/submenu.py
+       examples/update-file-info-async.py
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: src/caja-python.c
+       src/caja-python.h
+Copyright: 2004-2005, Johan Dahlin
+License: GPL-2+
+
+Files: src/caja-python-object.c
+       src/caja-python-object.h
+Copyright: 2003-2004, Novell, Inc.
+License: GPL-2+
+
+Files: .travis.yml
+       .tx/config
+       .github/issue_template.md
+       .github/FUNDING.yml
+       AUTHORS
+       ChangeLog
+       Makefile.am
+       NEWS
+       README
+       caja-python.pc.in
+       configure.ac
+       docs/Makefile.am
+       docs/reference/caja-python-class-reference.xml
+       docs/reference/caja-python-column-provider.xml
+       docs/reference/caja-python-column.xml
+       docs/reference/caja-python-enum-reference.xml
+       docs/reference/caja-python-file-info.xml
+       docs/reference/caja-python-info-provider.xml
+       docs/reference/caja-python-location-widget-provider.xml
+       docs/reference/caja-python-menu-item.xml
+       docs/reference/caja-python-menu-provider.xml
+       docs/reference/caja-python-menu.xml
+       docs/reference/caja-python-operation-handle.xml
+       docs/reference/caja-python-operation-result.xml
+       docs/reference/caja-python-overview-example.xml
+       docs/reference/caja-python-overview-methods.xml
+       docs/reference/caja-python-overview.xml
+       docs/reference/caja-python-property-page-provider.xml
+       docs/reference/caja-python-property-page.xml
+       docs/reference/caja-python-provider-reference.xml
+       docs/reference/caja-python-ref.xml
+       docs/reference/entities.docbook.in
+       docs/xsl/common.xsl
+       docs/xsl/devhelp.xsl
+       docs/xsl/fixxref.py
+       docs/xsl/html.xsl
+       docs/xsl/pdf-style.xsl
+       docs/xsl/pdf.xsl
+       docs/xsl/ref-html-style.xsl
+       docs/xsl/style.css
+       examples/Makefile.am
+       examples/README
+       libcaja-python.caja-extension.desktop.in.in
+       makepot
+       po/LINGUAS
+       po/Makevars
+       po/POTFILES.in
+       src/Makefile.am
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license as found in COPYING file.
+
+Files: python-caja.pot
+       po/*.po
+Copyright: YEAR, THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+
+Comment:
+ Using license as found in COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

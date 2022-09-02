@@ -1,0 +1,16 @@
+Description: Fix Python libdir not found on Debian et al.
+Author: Martin Wimpress <martin.wimpress@ubuntu.com>
+
+diff --git a/configure.ac b/configure.ac
+index 233eb8f..d7f12b2 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -43,7 +43,7 @@ PKG_CHECK_MODULES([PYTHON], [${PYTHON_PKG}],,
+ 		PKG_CHECK_MODULES([PYTHON], [${PYTHON_PKG}])
+ 	]
+ )
+-PYTHON_LIB_LOC="`${PKG_CONFIG} ${PYTHON_PKG} --variable=libdir`"
++PYTHON_LIB_LOC="`$PKG_CONFIG gobject-introspection-1.0 --variable=libdir`"
+ PYTHON_ABIFLAGS=`$PYTHON -c 'import sys; exec("try: print (sys.abiflags)\nexcept: pass")'`
+ AC_SUBST(PYTHON_LIBS)
+ AC_SUBST(PYTHON_CFLAGS)

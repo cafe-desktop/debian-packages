@@ -1,0 +1,14 @@
+Description: Make build reproducible.
+Author: Chris Lamb <lamby@debian.org>
+
+--- a/docs/Makefile.am
++++ b/docs/Makefile.am
+@@ -88,7 +88,7 @@
+ 	$(HTML_FILES)
+ 
+ reference/builddate.xml: $(REFERENCE_DEPS)
+-	$(PYTHON) -c 'import datetime; print (datetime.date.today())' > $@
++	$(PYTHON) -c "import os, time, datetime; print (datetime.datetime.utcfromtimestamp(int(os.environ.get('SOURCE_DATE_EPOCH', time.time()))).strftime('%Y-%m-%d'))" > $@
+ 
+ $(HTML_FILES): $(REFERENCE_DEPS)
+ 	xsltproc --nonet --xinclude -o $(BUILDDIR)/html/ \
