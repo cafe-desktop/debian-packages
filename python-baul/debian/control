@@ -1,12 +1,8 @@
 Source: python-baul
 Section: python
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
-Uploaders: Mike Gabriel <sunweaver@debian.org>,
-           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
-           Martin Wimpress <code@flexion.org>,
+Maintainer: Pablo Barciela <scow@riseup.net>
+Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
                gtk-doc-tools,
