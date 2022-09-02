@@ -1,7 +1,7 @@
 Source: baul-rename
 Section: utils
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders:
  Mike Gabriel <sunweaver@debian.org>,
  Robert Tari <robert.tari@gmail.com>,
@@ -15,8 +15,8 @@ Build-Depends:
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
 Homepage: https://tari.in/www/software/baul-rename/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/baul-rename
-Vcs-Git: https://salsa.debian.org/debian-mate-team/baul-rename.git
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/baul-rename
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/baul-rename.git
 
 Package: baul-rename
 Architecture: all
