@@ -1,7 +1,7 @@
 Source: python-baul
 Section: python
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -32,9 +32,9 @@ Depends: gir1.2-baul-2.0,
 Breaks: python-baul (<< 1.23~),
 Replaces: python-baul (<< 1.23~),
 Description: Python3 binding for Baul components
- Baul is the official file manager for the MATE desktop. It allows one
+ Baul is the official file manager for the CAFE desktop. It allows one
  to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
+ with them. It is also responsible for handling the icons on the CAFE
  desktop. It works on local and remote filesystems.
  .
  The Python binding for Baul allows one to write Baul property page
@@ -46,9 +46,9 @@ Depends: ${misc:Depends},
 Replaces: python-baul (<< 1.9.0),
 Breaks: python-baul (<< 1.9.0),
 Description: Python binding for Baul components (common files)
- Baul is the official file manager for the MATE desktop. It allows one
+ Baul is the official file manager for the CAFE desktop. It allows one
  to browse directories, preview files and launch applications associated
- with them. It is also responsible for handling the icons on the MATE
+ with them. It is also responsible for handling the icons on the CAFE
  desktop. It works on local and remote filesystems.
  .
  The Python binding for Baul allows one to write Baul property page
