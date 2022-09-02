@@ -133,7 +133,7 @@ python-baul (1.20.1-1) unstable; urgency=medium
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Use secure URI for copyright format.
     + Make Upstream-Name: field's value more human readable.
@@ -154,8 +154,8 @@ python-baul (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.0-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
@@ -261,7 +261,7 @@ python-baul (1.14.0-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + Versioned B-D: libbaul-extension-dev (>= 1.14)
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
     + Processed with wrap-and-sort.
 
   [ Mike Gabriel ]
@@ -275,7 +275,7 @@ python-baul (1.12.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12) and libbaul-extension-dev (>= 1.12).
+    + Versioned B-D: cafe-common (>= 1.12) and libbaul-extension-dev (>= 1.12).
   * debian/pycompat:
     + Not used by any modern Python helper. Removed.
 
@@ -337,7 +337,7 @@ python-baul (1.10.0-1~exp1) experimental; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.10).
+    + Versioned B-D: cafe-common (>= 1.10).
     + Add Martin Wimpress to Uploaders: field.
   * debian/copyright:
     + Update for this upstream release. Provide info for po/*.po.
