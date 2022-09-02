@@ -1,4 +1,4 @@
-caja-rename (22.6.29-1) unstable; urgency=medium
+baul-rename (22.6.29-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -6,13 +6,13 @@ caja-rename (22.6.29-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 29 Jun 2022 23:07:19 +0200
 
-caja-rename (21.11.24-1) unstable; urgency=medium
+baul-rename (21.11.24-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Bump Standards-Version: to 4.6.0. No changes needed.
   * debian/rules:
-    + Fix perms (a-x) of cajarename.glade.
+    + Fix perms (a-x) of baulrename.glade.
   * debian/upstream/metadata:
     + Add file. Comply with DEP-12.
   * debian/watch:
@@ -20,7 +20,7 @@ caja-rename (21.11.24-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Dec 2021 15:46:11 +0100
 
-caja-rename (20.1.26-1) unstable; urgency=medium
+baul-rename (20.1.26-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/copyright:
@@ -39,7 +39,7 @@ caja-rename (20.1.26-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 22 Nov 2020 11:28:17 +0100
 
-caja-rename (20.1.25~bzr37-1) unstable; urgency=medium
+baul-rename (20.1.25~bzr37-1) unstable; urgency=medium
 
   * New upstream release (Bzr VCS snapshot).
   * debian/control:
@@ -48,13 +48,13 @@ caja-rename (20.1.25~bzr37-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2020 15:23:34 +0200
 
-caja-rename (19.7.15~bzr37-1) unstable; urgency=medium
+baul-rename (19.7.15~bzr37-1) unstable; urgency=medium
 
   * Upload to unstable as is.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Jan 2020 06:53:56 +0100
 
-caja-rename (19.7.15~bzr37-1~exp1) experimental; urgency=medium
+baul-rename (19.7.15~bzr37-1~exp1) experimental; urgency=medium
 
   * New upstream release (Bzr VCS snapshot).
   * debian/copyright:
@@ -71,7 +71,7 @@ caja-rename (19.7.15~bzr37-1~exp1) experimental; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 10 Dec 2019 11:09:29 +0100
 
-caja-rename (18.7.28~bzr25-1) unstable; urgency=medium
+baul-rename (18.7.28~bzr25-1) unstable; urgency=medium
 
   * New upstream release (Bzr VCS snapshot). (A little confused by
     the Bzr revision number having gone backwards. Alas, so be it).
@@ -88,7 +88,7 @@ caja-rename (18.7.28~bzr25-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 31 Jan 2019 12:21:15 +0100
 
-caja-rename (18.1.10~bzr26+repack1-1) unstable; urgency=medium
+baul-rename (18.1.10~bzr26+repack1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -107,7 +107,7 @@ caja-rename (18.1.10~bzr26+repack1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 22 Jul 2018 22:57:05 +0200
 
-caja-rename (17.3.28~bzr14+repack1-2) unstable; urgency=medium
+baul-rename (17.3.28~bzr14+repack1-2) unstable; urgency=medium
 
   * debian/watch:
     + Fix tarball filename in upstream URL.
@@ -116,7 +116,7 @@ caja-rename (17.3.28~bzr14+repack1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 01 Sep 2017 14:31:47 +0200
 
-caja-rename (17.3.28~bzr14+repack1-1) unstable; urgency=medium
+baul-rename (17.3.28~bzr14+repack1-1) unstable; urgency=medium
 
   * Initial release to Debian. (Closes: #871928).
 

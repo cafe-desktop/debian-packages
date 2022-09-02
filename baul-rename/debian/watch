@@ -1,2 +1,2 @@
 version=4
-https://github.com/tari01/caja-rename/tags .*/V?(\d\S*)\.tar\.gz
+https://github.com/tari01/baul-rename/tags .*/V?(\d\S*)\.tar\.gz

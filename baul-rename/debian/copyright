@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Caja Rename
 Upstream-Contact: Robert Tari <robert@tari.in>
-Source: https://github.com/tari01/caja-rename 
+Source: https://github.com/tari01/baul-rename 
 
 Files: *
 Copyright: 2017-2019, Robert Tari <robert.tari@gmail.com>

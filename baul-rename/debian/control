@@ -1,4 +1,4 @@
-Source: caja-rename
+Source: baul-rename
 Section: utils
 Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
@@ -14,21 +14,21 @@ Build-Depends:
  python3-polib,
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
-Homepage: https://tari.in/www/software/caja-rename/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/caja-rename
-Vcs-Git: https://salsa.debian.org/debian-mate-team/caja-rename.git
+Homepage: https://tari.in/www/software/baul-rename/
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/baul-rename
+Vcs-Git: https://salsa.debian.org/debian-mate-team/baul-rename.git
 
-Package: caja-rename
+Package: baul-rename
 Architecture: all
 Depends:
  ${misc:Depends},
  ${python3:Depends},
- caja,
+ baul,
  gir1.2-gtk-3.0,
- python3-caja (>= 1.23.0),
+ python3-baul (>= 1.23.0),
  python3-gi,
-Breaks: cajarename,
-Replaces: cajarename,
+Breaks: baulrename,
+Replaces: baulrename,
 Description: Batch renaming extension for Caja
  An extension for the Caja file browser allowing users to rename multiple
  files/folders in a single pass.
