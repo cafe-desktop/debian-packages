@@ -265,8 +265,8 @@ libcafeweather (1.14.0-1) unstable; urgency=medium
   * debian/control:
     + Bump Standards: to 3.9.7. No changes needed.
     + Versioned B-D: cafe-common (>= 1.14)
-    + B-D: libgtk-3-dev
-    + Add to D (libgtk-3-dev): libcafeweather-dev.
+    + B-D: libctk-3-dev
+    + Add to D (libctk-3-dev): libcafeweather-dev.
   * debian/rules:
     + Add --with-gtk=3.0
 
