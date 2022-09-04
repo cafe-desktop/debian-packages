@@ -1,0 +1,31 @@
+From 5e8a458cad1b92e6fc0b254856f0a2ad198df719 Mon Sep 17 00:00:00 2001
+From: Pablo Barciela <scow@riseup.net>
+Date: Sun, 4 Sep 2022 17:57:15 +0200
+Subject: [PATCH] baul-icon-container: Fix rename files/folders
+
+Fixes https://github.com/cafe-desktop/baul/issues/5
+
+it reverts https://github.com/mate-desktop/caja/commit/26a0aa2823f6411916f5ad37437bb797cf2cff26
+---
+ libbaul-private/baul-icon-container.c | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+
+diff --git a/libbaul-private/baul-icon-container.c b/libbaul-private/baul-icon-container.c
+index b9108ca..d57a9f9 100644
+--- a/libbaul-private/baul-icon-container.c
++++ b/libbaul-private/baul-icon-container.c
+@@ -1386,13 +1386,7 @@ lay_down_icons_horizontal (BaulIconContainer *container,
+     }
+     else
+     {
+-        int num_columns;
+-
+-        num_columns = floor(canvas_width / STANDARD_ICON_GRID_WIDTH);
+-        num_columns = fmax(num_columns, 1);
+-        /* Minimum of one column */
+-        grid_width = canvas_width / num_columns - 1;
+-        /* -1 prevents jitter */
++        grid_width = STANDARD_ICON_GRID_WIDTH;
+     }
+ 
+     gridded_layout = !baul_icon_container_is_tighter_layout (container);
