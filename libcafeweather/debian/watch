@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/libmateweather-$1.tar.gz/ \
+https://github.com/mate-desktop/libmateweather/tags .*/archive/v?(\d\.(?:[0-9]+|)[24680]\.\d).tar.gz
