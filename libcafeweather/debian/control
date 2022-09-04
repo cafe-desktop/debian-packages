@@ -34,7 +34,7 @@ Depends: libcafeweather-common (= ${source:Version}),
          ${shlibs:Depends},
 Breaks: libcafeweather,
 Replaces: libcafeweather,
-Description: MateWeather shared library
+Description: CafeWeather shared library
  libcafeweather is a library to access weather information from online
  services for numerous locations.
  .
@@ -46,7 +46,7 @@ Multi-Arch: foreign
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: libcafeweather (<= 1.0.0-3),
-Description: MateWeather shared library (common files)
+Description: CafeWeather shared library (common files)
  libcafeweather is a library to access weather information from online
  services for numerous locations.
  .
@@ -64,7 +64,7 @@ Depends: libglib2.0-dev,
          libxml2-dev,
          ${misc:Depends},
          ${shlibs:Depends},
-Description: MateWeather shared library (development files)
+Description: CafeWeather shared library (development files)
  libcafeweather is a library to access weather information from online
  services for numerous locations.
  .
