@@ -123,7 +123,7 @@ libcafeweather (1.20.0-1) unstable; urgency=medium
   * debian/control (all already in 1.19.1-0ubuntu1):
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 09 Feb 2018 22:38:44 +0100
@@ -157,10 +157,10 @@ libcafeweather (1.18.1-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Vangelis Mouhtsis ]
   * New upstream release.
@@ -199,7 +199,7 @@ libcafeweather (1.16.0-1) unstable; urgency=medium
 
   * New upstream version.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/changelog:
     + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
   * debian/watch:
@@ -215,7 +215,7 @@ libcafeweather (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
     debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/copyright:
     + Update copyright attributions.
   * debian/watch:
