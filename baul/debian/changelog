@@ -1,3 +1,9 @@
+baul (1.25.0-2) unstable; urgency=medium
+
+  * add 0001-baul-icon-container_Fix-rename.patch
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 04 Sep 2022 18:22:35 +0200
+
 baul (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
