@@ -1,21 +1,21 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: libmateweather
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/libmateweather
+Upstream-Name: libcafeweather
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/libcafeweather
 
-Files: libmateweather/location-entry.c
-       libmateweather/location-entry.h
-       libmateweather/mateweather-location.*
-       libmateweather/mateweather-timezone.*
-       libmateweather/parser.c
-       libmateweather/parser.h
-       libmateweather/timezone-menu.c
-       libmateweather/timezone-menu.h
+Files: libcafeweather/location-entry.c
+       libcafeweather/location-entry.h
+       libcafeweather/cafeweather-location.*
+       libcafeweather/cafeweather-timezone.*
+       libcafeweather/parser.c
+       libcafeweather/parser.h
+       libcafeweather/timezone-menu.c
+       libcafeweather/timezone-menu.h
 Copyright: 2008, Red Hat, Inc
            2008, Novell, Inc
 License: LGPL-2.1+
 
-Files: libmateweather/mateweather-xml.*
+Files: libcafeweather/cafeweather-xml.*
 Copyright: 2004, Gareth Owen
            2005, Ryan Lortie
 License: GPL-2+
@@ -31,12 +31,12 @@ Comment:
  PNGs are derived from SVGs, so assuming the same license.
 
 Files: icons/moonshadow.pl
-       libmateweather/mateweather-prefs.*
-       libmateweather/weather*.*
+       libcafeweather/cafeweather-prefs.*
+       libcafeweather/weather*.*
 Copyright: *No copyright*
 License: GPL-2+
 
-Files: libmateweather.pot
+Files: libcafeweather.pot
        po/*
 Copyright: 1998-2010, Free Software Foundation, Inc.
            2009, GNOME i18n Project for Vietnamese.
@@ -95,14 +95,14 @@ Files: .build.yml
        icons/Makefile.am
        its/locations.its
        its/locations.loc
-       libmateweather/AUTHORS
-       libmateweather/Makefile.am
-       libmateweather/mateweather-enum-types.c.tmpl
-       libmateweather/mateweather-enum-types.h.tmpl
-       libmateweather/mateweather-uninstalled.pc.in
-       libmateweather/org.mate.weather.gschema.xml.in
-       libmateweather/test_*.c
-       libmateweather/mateweather.pc.in
+       libcafeweather/AUTHORS
+       libcafeweather/Makefile.am
+       libcafeweather/cafeweather-enum-types.c.tmpl
+       libcafeweather/cafeweather-enum-types.h.tmpl
+       libcafeweather/cafeweather-uninstalled.pc.in
+       libcafeweather/org.cafe.weather.gschema.xml.in
+       libcafeweather/test_*.c
+       libcafeweather/cafeweather.pc.in
        makepot
        po/LINGUAS
        po/POTFILES.in
