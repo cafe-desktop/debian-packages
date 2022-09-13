@@ -99,7 +99,6 @@ configure_flags_deb = \
 	--enable-man \
 	--enable-shared \
 	--enable-introspection \
-	--enable-cloudprint \
 	--disable-static \
 	--enable-installed-tests
 
@@ -124,7 +123,6 @@ configure_flags_udeb = \
 	--disable-wayland-backend \
 	--enable-x11-backend \
 	--disable-introspection \
-	--disable-cloudprint \
 	--disable-colord \
 	--disable-xcomposite \
 	--disable-xdamage \
