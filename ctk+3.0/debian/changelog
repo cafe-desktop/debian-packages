@@ -1,3 +1,9 @@
+ctk+3.0 (3.25.4-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 01 Oct 2022 13:36:20 +0200
+
 ctk+3.0 (3.25.3-2) unstable; urgency=medium
 
   * add 0001-ctk-Makefile-move-ctkcolorsel-and-ctkcolorseldialog.patch
