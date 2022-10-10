@@ -1,7 +1,7 @@
 Source: cafe-control-center
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -61,26 +61,26 @@ Depends: caja-common (>= 1.8.0),
          ${shlibs:Depends},
 Suggests: gconf2,
 Breaks: ubuntu-cafe-default-settings (<< 16.04),
-Description: utilities to configure the MATE desktop
- The MATE control center contains configuration applets for the MATE desktop,
+Description: utilities to configure the CAFE desktop
+ The CAFE control center contains configuration applets for the CAFE desktop,
  allowing to set accessibility configuration, desktop fonts, keyboard
  and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
+ interface properties, screen resolution, and other CAFE parameters.
  .
  It also contains a front end to these applets, which can also be
- accessed with the MATE panel or the Caja file manager.
+ accessed with the CAFE panel or the Caja file manager.
 
 Package: cafe-control-center-common
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: cafe-control-center (<< 1.11.0),
-Description: utilities to configure the MATE desktop (common files)
- The MATE control center contains configuration applets for the MATE desktop,
+Description: utilities to configure the CAFE desktop (common files)
+ The CAFE control center contains configuration applets for the CAFE desktop,
  allowing to set accessibility configuration, desktop fonts, keyboard
  and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
+ interface properties, screen resolution, and other CAFE parameters.
  .
- This package contains the architecture independent files of MATE
+ This package contains the architecture independent files of CAFE
  control center.
 
 Package: libcafe-window-settings1
@@ -90,13 +90,13 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: cafe-control-center (<< 1.9.0),
-Description: utilities to configure the MATE desktop (window settings library)
- The MATE control center contains configuration applets for the MATE desktop,
+Description: utilities to configure the CAFE desktop (window settings library)
+ The CAFE control center contains configuration applets for the CAFE desktop,
  allowing to set accessibility configuration, desktop fonts, keyboard
  and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
+ interface properties, screen resolution, and other CAFE parameters.
  .
- This package contains the MATE window settings library for MATE control
+ This package contains the CAFE window settings library for CAFE control
  center.
 
 Package: libcafe-window-settings-dev
@@ -105,13 +105,13 @@ Architecture: any
 Multi-Arch: same
 Depends: libcafe-window-settings1 (= ${binary:Version}),
          ${misc:Depends},
-Description: utilities to configure the MATE desktop (window settings headers)
- The MATE control center contains configuration applets for the MATE desktop,
+Description: utilities to configure the CAFE desktop (window settings headers)
+ The CAFE control center contains configuration applets for the CAFE desktop,
  allowing to set accessibility configuration, desktop fonts, keyboard
  and mouse properties, sound setup, desktop theme and background, user
- interface properties, screen resolution, and other MATE parameters.
+ interface properties, screen resolution, and other CAFE parameters.
  .
- This package contains the development files for the MATE window settings
+ This package contains the development files for the CAFE window settings
  library.
 
 Package: libcafe-slab0
@@ -121,10 +121,10 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Description: beautification app library
- This library provides functionality to create applications like MATE
+ This library provides functionality to create applications like CAFE
  control center and the application-browser from gnome-main-menu.
  .
- This library has been forked from GNOMEv2 by the MATE project.
+ This library has been forked from GNOMEv2 by the CAFE project.
 
 Package: libcafe-slab-dev
 Section: libdevel
@@ -135,6 +135,6 @@ Depends: libcafe-slab0 (= ${binary:Version}),
          ${misc:Depends},
 Description: beautification app library (development headers)
  The libcafe-slab library provides functionality to create applications
- like MATE control center and the application-browser from gnome-main-menu.
+ like CAFE control center and the application-browser from gnome-main-menu.
  .
  This package contains the development files for libcafe-slab.

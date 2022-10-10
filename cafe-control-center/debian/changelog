@@ -37,7 +37,7 @@ cafe-control-center (1.24.0-1) unstable; urgency=medium
   * debian/copyright:
     + Update copyright attributions.
   * debian/control:
-    + Update Build-Depends: to support MATE Desktop 1.24.
+    + Update Build-Depends: to support CAFE Desktop 1.24.
     + Add B-D libaccountsservice-dev (>= 0.6.21).
     + Add B-D libxml2-utils.
   * debian/cafe-control-center-common.install:
@@ -75,9 +75,9 @@ cafe-control-center (1.22.1-1) unstable; urgency=medium
       lock.patch. Applied upstream.
     + Add 0001_fix_preferred_apps_icon_sizes.patch.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/libcafe-slab0.symbols:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
 
   [ Mike Gabriel ]
   * debian/{compat,control}:
@@ -136,7 +136,7 @@ cafe-control-center (1.20.2-2) unstable; urgency=medium
   [ Martin Wimpress ]
   * debian/patches:
     + Add 0001_default_xcursor_to_24.patch. Change cursor-size to 24px because
-      the MATE cursor theme doesn't have an 18px cursor and 24px looks correct
+      the CAFE cursor theme doesn't have an 18px cursor and 24px looks correct
       on regular DPI and HiDPI displays.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Apr 2018 23:01:06 +0200
@@ -189,7 +189,7 @@ cafe-control-center (1.20.0-1) unstable; urgency=medium
   * debian/control (already in 1.19.3-0ubuntu1):
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
 
   [ Mike Gabriel ]
   * debian/{control,compat}: Bump DH version level to 11.
@@ -239,12 +239,12 @@ cafe-control-center (1.18.2-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/control: Drop dependency on libunique3 (Closes: #827230)
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/cafe-control-center-common.install: Remove obsolete usr/share/cafe/
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/copyright: Update copyright attributions.
 
   [ Vangelis Mouhtsis ]
@@ -287,7 +287,7 @@ cafe-control-center (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.2-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -297,7 +297,7 @@ cafe-control-center (1.15.2-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
@@ -469,12 +469,12 @@ cafe-control-center (1.8.3+dfsg1-2) unstable; urgency=medium
 
   * debian/patches (i18n fixes):
     + Add 0003_fix-i18n-category-names.patch. Fix i18n names of Settings /
-      System sub-categories in MATE control center window. (Closes: #780580).
+      System sub-categories in CAFE control center window. (Closes: #780580).
     + Add 0004_fix-set-preferred-apps-in-some-locales.patch. Fix missing preferred
       applications launcher for Russion and Ukranian locale in common tasks
       section. (Closes: #781303).
     + Add 2002_fix-common-tasks-section-for-German-locale.patch. Fix translation
-      of items in the "Common Tasks" section of MATE's control center.
+      of items in the "Common Tasks" section of CAFE's control center.
   * debian/patches (functionality fixes):
     + Add 0005_fix-desktop-item-launching.patch. In libslab: do not reap child
       when launching desktop items. (Closes: #781247).
