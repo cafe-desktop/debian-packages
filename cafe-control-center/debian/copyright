@@ -133,8 +133,8 @@ Files: font-viewer/font-thumbnailer.c
 Copyright: 2002-2003, James Henstridge <james@daa.com.au>
 License: GPL-2+
 
-Files: capplets/mouse/msd-input-helper.c
-       capplets/mouse/msd-input-helper.h
+Files: capplets/mouse/csd-input-helper.c
+       capplets/mouse/csd-input-helper.h
 Copyright: 2010 Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
