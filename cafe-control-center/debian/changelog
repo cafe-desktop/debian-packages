@@ -515,7 +515,7 @@ cafe-control-center (1.8.2+dfsg1-1) unstable; urgency=medium
     + Drop 1004_add-main-category-to-categories-key-in-desktop-file.patch.
       Applied upstream.
   * debian/control:
-    + Add D (cafe-control-center): caja-common. (Closes: #756146).
+    + Add D (cafe-control-center): baul-common. (Closes: #756146).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Aug 2014 17:25:24 +0200
 

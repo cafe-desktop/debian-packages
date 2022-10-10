@@ -42,7 +42,7 @@ Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-control-center.git
 
 Package: cafe-control-center
 Architecture: any
-Depends: caja-common (>= 1.8.0),
+Depends: baul-common (>= 1.8.0),
          desktop-file-utils,
          gsettings-desktop-schemas,
          libglib2.0-bin,
