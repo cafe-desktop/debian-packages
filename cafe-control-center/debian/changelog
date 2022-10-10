@@ -331,7 +331,7 @@ cafe-control-center (1.14.0-1) unstable; urgency=medium
     + Versioned B-D: cafe-settings-daemon-dev (>= 1.14)
     + Processed with wrap-and-sort.
   * debian/rules:
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
     + Add --with-gtk=3.0
   * debian/patches:
     + Drop 0000_make_all_three_window_focus_modes_selectable.patch. Applied
@@ -438,7 +438,7 @@ cafe-control-center (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
   * debian/{control,copyright,*.install}:
     + Process with wrap-and-sort.
   * debian/{rules,cafe-control-center-common.install}:
-    + Drop /usr/share/MateConf from bin:package.
+    + Drop /usr/share/CafeConf from bin:package.
   * debian/rules:
     + Adapt repack algorithm, no m4/ folder in upstream sources anymore.
     Create orig tarball in ../ rather than in .
