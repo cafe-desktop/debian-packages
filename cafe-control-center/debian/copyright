@@ -90,7 +90,7 @@ Copyright: 2007-2008, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
 Files: capplets/windows/cafe-window-properties.c
-       libwindow-settings/marco-window-manager.c
+       libwindow-settings/croma-window-manager.c
        libwindow-settings/cafe-window-manager.c
        libwindow-settings/cafe-window-manager.h
        libwindow-settings/cafe-wm-manager.c
@@ -411,8 +411,8 @@ Files: capplets/about-me/Makefile.am
        font-viewer/*.in
        font-viewer/*.thumbnailer
        gla11y.mk
-       its/marco-keybindings.its
-       its/marco-keybindings.loc
+       its/croma-keybindings.its
+       its/croma-keybindings.loc
        its/mimeinfo.its
        its/mimeinfo.loc
        libslab/Makefile.am
@@ -422,7 +422,7 @@ Files: capplets/about-me/Makefile.am
        libslab/*.in
        libslab/*.list
        libwindow-settings/Makefile.am
-       libwindow-settings/marco-window-manager.h
+       libwindow-settings/croma-window-manager.h
        libwindow-settings/cafe-wm-manager.h
        libwindow-settings/*.in
        makepot

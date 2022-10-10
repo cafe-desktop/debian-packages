@@ -1,6 +1,6 @@
-libmarco.so libcafe-window-settings1 #MINVER#
+libcroma.so libcafe-window-settings1 #MINVER#
 * Build-Depends-Package: libcafe-window-settings-dev
- marco_window_manager_get_type@Base 1.8.1
+ croma_window_manager_get_type@Base 1.8.1
  window_manager_new@Base 1.8.1
 libcafe-window-settings.so.1 libcafe-window-settings1 #MINVER#
  cafe_window_manager_change_settings@Base 1.8.1

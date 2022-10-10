@@ -322,7 +322,7 @@ cafe-control-center (1.14.0-1) unstable; urgency=medium
   * debian/control:
     + B-D: libcanberra-gtk3-dev
     + B-D: libctk-3-dev
-    + Versioned B-D: libmarco-dev (>= 1.14)
+    + Versioned B-D: libcroma-dev (>= 1.14)
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
     + Versioned B-D: libcafekbd-dev (>= 1.14)
     + Versioned B-D: libcafe-menu-dev (>= 1.14)
@@ -370,7 +370,7 @@ cafe-control-center (1.12.1-1) unstable; urgency=medium
   * debian/control:
     + Add B (cafe-control-center): ubuntu-cafe-default-settings (<< 16.04).
     + Drop obsolete B-D: libxft-dev.
-    + Versioned B-D: cafe-common (>= 1.12), libmarco-dev (>= 1.12),
+    + Versioned B-D: cafe-common (>= 1.12), libcroma-dev (>= 1.12),
       libcafe-desktop-dev (>= 1.12) and cafe-settings-daemon-dev (>= 1.12).
   * debian/copyright:
     + Update copyright attributions.
@@ -434,7 +434,7 @@ cafe-control-center (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
   * debian/control:
     + Versioned B-D: cafe-common (>= 1.10).
     + Versioned B-D: libcafe-desktop-dev (>= 1.9.4).
-    + Versioned B-D: libmarco-dev (>= 1.9.1).
+    + Versioned B-D: libcroma-dev (>= 1.9.1).
   * debian/{control,copyright,*.install}:
     + Process with wrap-and-sort.
   * debian/{rules,cafe-control-center-common.install}:
@@ -522,7 +522,7 @@ cafe-control-center (1.8.2+dfsg1-1) unstable; urgency=medium
 cafe-control-center (1.8.1+dfsg1-4) unstable; urgency=medium
 
   * debian/control:
-    + Add D (cafe-control-center): marco-common. (Closes: #751944).
+    + Add D (cafe-control-center): croma-common. (Closes: #751944).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 19:51:55 +0200
 
