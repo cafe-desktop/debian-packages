@@ -46,7 +46,7 @@ libcafe-slab.so.0 libcafe-slab0 #MINVER#
 #MISSING: 1.19.2# libslab_desktop_item_is_logout@Base 1.8.1
  libslab_get_current_screen@Base 1.8.1
  libslab_get_current_time_millis@Base 1.8.1
-#MISSING: 1.19.2# libslab_gtk_image_set_by_id@Base 1.8.1
+#MISSING: 1.19.2# libslab_ctk_image_set_by_id@Base 1.8.1
 #MISSING: 1.24.1# libslab_handle_g_error@Base 1.8.1
 #MISSING: 1.19.2# libslab_cafe_desktop_item_get_docpath@Base 1.8.1
 #MISSING: 1.19.2# libslab_cafe_desktop_item_launch_default@Base 1.8.1

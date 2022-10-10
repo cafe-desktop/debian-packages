@@ -50,8 +50,8 @@ Files: capplets/appearance/appearance-desktop.c
        capplets/appearance/theme-save.h
        capplets/appearance/theme-util.c
        capplets/appearance/theme-util.h
-       capplets/common/gtkrc-utils.c
-       capplets/common/gtkrc-utils.h
+       capplets/common/ctkrc-utils.c
+       capplets/common/ctkrc-utils.h
        capplets/keyboard/cafe-keyboard-properties-a11y.c
 Copyright: 2007-2010, The GNOME Foundation
 License: GPL-2+

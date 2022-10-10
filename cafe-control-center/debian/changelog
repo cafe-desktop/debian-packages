@@ -241,7 +241,7 @@ cafe-control-center (1.18.2-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for CAFE 1.17.
   * debian/control: Drop dependency on libunique3 (Closes: #827230)
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/cafe-control-center-common.install: Remove obsolete usr/share/cafe/
   * debian/copyright: Update copyright attributions.
   * debian/control: Dependencies updated for CAFE 1.18.
@@ -320,8 +320,8 @@ cafe-control-center (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + B-D: libcanberra-gtk3-dev
-    + B-D: libgtk-3-dev
+    + B-D: libcanberra-ctk3-dev
+    + B-D: libctk-3-dev
     + Versioned B-D: libmarco-dev (>= 1.14)
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
     + Versioned B-D: libcafekbd-dev (>= 1.14)
@@ -332,7 +332,7 @@ cafe-control-center (1.14.0-1) unstable; urgency=medium
     + Processed with wrap-and-sort.
   * debian/rules:
     + CafeConf dropped upstream.
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
   * debian/patches:
     + Drop 0000_make_all_three_window_focus_modes_selectable.patch. Applied
       upstream.
