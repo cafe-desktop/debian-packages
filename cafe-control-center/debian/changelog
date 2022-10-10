@@ -320,7 +320,7 @@ cafe-control-center (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + B-D: libcanberra-ctk3-dev
+    + B-D: libcanberra-gtk3-dev
     + B-D: libctk-3-dev
     + Versioned B-D: libmarco-dev (>= 1.14)
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
