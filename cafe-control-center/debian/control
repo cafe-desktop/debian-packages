@@ -1,11 +1,8 @@
 Source: cafe-control-center
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
-Uploaders: Mike Gabriel <sunweaver@debian.org>,
-           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Maintainer: Pablo Barciela <scow@riseup.net>
+Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                desktop-file-utils,
                dpkg-dev (>= 1.16.1.1),
