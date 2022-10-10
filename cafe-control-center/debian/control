@@ -65,7 +65,7 @@ Description: utilities to configure the CAFE desktop
  interface properties, screen resolution, and other CAFE parameters.
  .
  It also contains a front end to these applets, which can also be
- accessed with the CAFE panel or the Caja file manager.
+ accessed with the CAFE panel or the Baul file manager.
 
 Package: cafe-control-center-common
 Architecture: all
