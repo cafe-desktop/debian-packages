@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Control Center
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-control-center/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-control-center/
 
 Files: libslab/app-resizer.c
        libslab/app-resizer.h
@@ -11,15 +11,15 @@ Files: libslab/app-resizer.c
        libslab/application-tile.h
        libslab/double-click-detector.c
        libslab/double-click-detector.h
-       libslab/mate-utils.h
+       libslab/cafe-utils.h
        libslab/nameplate-tile.c
        libslab/nameplate-tile.h
        libslab/search-bar.c
        libslab/search-bar.h
        libslab/shell-window.c
        libslab/shell-window.h
-       libslab/slab-mate-util.c
-       libslab/slab-mate-util.h
+       libslab/slab-cafe-util.c
+       libslab/slab-cafe-util.h
        libslab/slab-section.c
        libslab/slab-section.h
        libslab/slab.h
@@ -52,48 +52,48 @@ Files: capplets/appearance/appearance-desktop.c
        capplets/appearance/theme-util.h
        capplets/common/gtkrc-utils.c
        capplets/common/gtkrc-utils.h
-       capplets/keyboard/mate-keyboard-properties-a11y.c
+       capplets/keyboard/cafe-keyboard-properties-a11y.c
 Copyright: 2007-2010, The GNOME Foundation
 License: GPL-2+
 
-Files: capplets/appearance/mate-wp-info.c
-       capplets/appearance/mate-wp-info.h
-       capplets/appearance/mate-wp-item.c
-       capplets/appearance/mate-wp-item.h
-       capplets/appearance/mate-wp-xml.c
-       capplets/appearance/mate-wp-xml.h
+Files: capplets/appearance/cafe-wp-info.c
+       capplets/appearance/cafe-wp-info.h
+       capplets/appearance/cafe-wp-item.c
+       capplets/appearance/cafe-wp-item.h
+       capplets/appearance/cafe-wp-xml.c
+       capplets/appearance/cafe-wp-xml.h
 Copyright: 2003-2006, Novell, Inc.
 License: GPL-2
 
-Files: capplets/display/mate-display-properties-install-systemwide.c
+Files: capplets/display/cafe-display-properties-install-systemwide.c
        libslab/bookmark-agent.c
        libslab/bookmark-agent.h
        shell/control-center.c
 Copyright: 2006-2010 Novell, Inc.
 License: GPL-2+
 
-Files: capplets/keyboard/mate-keyboard-properties-xkb.c
-       capplets/keyboard/mate-keyboard-properties-xkblt.c
-       capplets/keyboard/mate-keyboard-properties-xkbltadd.c
-       capplets/keyboard/mate-keyboard-properties-xkbmc.c
-       capplets/keyboard/mate-keyboard-properties-xkbot.c
-       capplets/keyboard/mate-keyboard-properties-xkbpv.c
+Files: capplets/keyboard/cafe-keyboard-properties-xkb.c
+       capplets/keyboard/cafe-keyboard-properties-xkblt.c
+       capplets/keyboard/cafe-keyboard-properties-xkbltadd.c
+       capplets/keyboard/cafe-keyboard-properties-xkbmc.c
+       capplets/keyboard/cafe-keyboard-properties-xkbot.c
+       capplets/keyboard/cafe-keyboard-properties-xkbpv.c
 Copyright: 2003-2007, Sergey V. Udaltsov
 License: GPL-2+
 
 Files: capplets/about-me/fingerprint-strings.h
-       capplets/about-me/mate-about-me-fingerprint.c
-       capplets/about-me/mate-about-me-fingerprint.h
+       capplets/about-me/cafe-about-me-fingerprint.c
+       capplets/about-me/cafe-about-me-fingerprint.h
        font-viewer/totem-resources.c
        font-viewer/totem-resources.h
 Copyright: 2007-2008, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
-Files: capplets/windows/mate-window-properties.c
+Files: capplets/windows/cafe-window-properties.c
        libwindow-settings/marco-window-manager.c
-       libwindow-settings/mate-window-manager.c
-       libwindow-settings/mate-window-manager.h
-       libwindow-settings/mate-wm-manager.c
+       libwindow-settings/cafe-window-manager.c
+       libwindow-settings/cafe-window-manager.h
+       libwindow-settings/cafe-wm-manager.c
 Copyright: 1998-2002, Red Hat, Inc.
            2002, Seth Nickell
 License: GPL-2+
@@ -102,7 +102,7 @@ Files: capplets/common/capplet-util.c
        capplets/common/capplet-util.h
        capplets/common/file-transfer-dialog.c
        capplets/common/file-transfer-dialog.h
-       capplets/keyboard/mate-keyboard-properties-a11y.h
+       capplets/keyboard/cafe-keyboard-properties-a11y.h
 Copyright: 2001-2002, Ximian, Inc.
 License: GPL-2+
 
@@ -168,8 +168,8 @@ Files: typing-break/drw-timer.c
 Copyright: 2009, Nathaniel Smith <njs@pobox.com>
 License: GPL-2+
 
-Files: capplets/common/mate-theme-apply.h
-       capplets/common/mate-theme-info.h
+Files: capplets/common/cafe-theme-apply.h
+       capplets/common/cafe-theme-info.h
 Copyright: 2002, Jonathan Blandford <jrb@gnome.org>
 License: LGPL-2+
 
@@ -183,12 +183,12 @@ Files: typing-break/drw-selection.c
 Copyright: 2002, Red Hat, Inc.
 License: MIT~OldStyle+LegalDisclaimer
 
-Files: capplets/default-applications/mate-da-capplet.h
+Files: capplets/default-applications/cafe-da-capplet.h
 Copyright: 2005-2006, Luca Cavalli
            2010, Perberos <perberos@gmail.com>
 License: GPL-2
 
-Files: capplets/default-applications/mate-da-capplet.c
+Files: capplets/default-applications/cafe-da-capplet.c
 Copyright: 2005-2006, Luca Cavalli
            2008, Thomas Wood <thos@gnome.org>
            2010, Perberos <perberos@gmail.com>
@@ -205,16 +205,16 @@ Copyright: 2002, CodeFactory AB
            2002, Richard Hult <richard@imendi.com>
 License: GPL-2+
 
-Files: capplets/about-me/mate-about-me.c
+Files: capplets/about-me/cafe-about-me.c
 Copyright: 2002, Diego Gonzalez
 License: GPL-2+
 
-Files: capplets/about-me/mate-about-me-password.c
+Files: capplets/about-me/cafe-about-me-password.c
 Copyright: 2002, Diego Gonzalez
            2006, Johannes H. Jensen
 License: GPL-2+
 
-Files: capplets/keyboard/mate-keyboard-properties.c
+Files: capplets/keyboard/cafe-keyboard-properties.c
 Copyright: 2000-2001, Ximian, Inc.
            2001, Jonathan Blandford
 License: GPL-2+
@@ -223,16 +223,16 @@ Files: capplets/display/xrandr-capplet.c
 Copyright: 2007-2008, Red Hat, Inc.
 License: GPL-2+
 
-Files: capplets/mouse/mate-mouse-properties.c
+Files: capplets/mouse/cafe-mouse-properties.c
 Copyright: 2001, Red Hat, Inc.
            2001, Ximian, Inc.
 License: GPL-2+
 
-Files: capplets/keyboard/mate-keyboard-properties-xkb.h
+Files: capplets/keyboard/cafe-keyboard-properties-xkb.h
 Copyright: 2003-2007, Sergey V Udaltsov
 License: GPL-2+
 
-Files: capplets/network/mate-network-properties.c
+Files: capplets/network/cafe-network-properties.c
 Copyright: 2002, Sun Microsystems, Inc.
 License: GPL-2+
 
@@ -243,7 +243,7 @@ Copyright: 2018-2019 zhuyaliang
            2009, Evan Dandrea <evand@ubuntu.com>
 License: GPL-2+
 
-Files: capplets/common/mate-theme-apply.c
+Files: capplets/common/cafe-theme-apply.c
 Copyright: 2002, Jonathan Blandford <aes@gnome.org>
 License: LGPL-2.1+
 Comment:
@@ -251,9 +251,9 @@ Comment:
  does not exist. The license header also refers to "This library ...", which
  alludes that this file should actually be dealt with as licensed under LGPL-2.1+.
  .
- See https://github.com/mate-desktop/mate-control-center/issues/95.
+ See https://github.com/cafe-desktop/cafe-control-center/issues/95.
 
-Files: capplets/common/mate-theme-info.c
+Files: capplets/common/cafe-theme-info.c
 Copyright: 2002, Jonathan Blandford <jrb@gnome.org>
            2011, Perberos
 License: LGPL-2+
@@ -283,7 +283,7 @@ Comment:
  Several of the man pages have been derived from their
  equivalent in the GNOME project.
 
-Files: mate-control-center.pot
+Files: cafe-control-center.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright: 2003-2006, Miloslav Trmac <mitr@volny.cz>.
@@ -322,7 +322,7 @@ Copyright: Alexey Dunaev <keir.ru@gmail.com>
            Mario Blättermann <mario.blaettermann@t-online.de>
            Maxim V. Dziumanenko <dziumanenko@gmail.com>
            Robert Millan <rmh@aybabtu.com>
-           Satoru SATOH <ss@mate.gr.jp>
+           Satoru SATOH <ss@cafe.gr.jp>
            Tomasz Dominikowski <dominikowski@gmail.com>
            Wendell Silva <thluxx@gmail.com>
            Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
@@ -331,8 +331,8 @@ Copyright: Alexey Dunaev <keir.ru@gmail.com>
 License: GFDL-1.1+
 
 Files: capplets/about-me/Makefile.am
-       capplets/about-me/mate-about-me-password.h
-       capplets/about-me/org.mate.mcc.am.gresource.xml
+       capplets/about-me/cafe-about-me-password.h
+       capplets/about-me/org.cafe.mcc.am.gresource.xml
        capplets/about-me/ui-a11y.suppr
        capplets/about-me/*.list
        capplets/about-me/*.ui
@@ -340,7 +340,7 @@ Files: capplets/about-me/Makefile.am
        capplets/about-me/AUTHORS
        capplets/accessibility/at-properties/Makefile.am
        capplets/accessibility/at-properties/main.c
-       capplets/accessibility/at-properties/org.mate.mcc.accessibility.at.gresource.xml
+       capplets/accessibility/at-properties/org.cafe.mcc.accessibility.at.gresource.xml
        capplets/accessibility/at-properties/ui-a11y.suppr
        capplets/accessibility/at-properties/*.ui
        capplets/accessibility/at-properties/*.png
@@ -351,12 +351,12 @@ Files: capplets/about-me/Makefile.am
        capplets/appearance/data/*.in
        capplets/appearance/data/*.ui
        capplets/appearance/data/ui-a11y.suppr
-       capplets/appearance/org.mate.mcc.appearance.gresource.xml
+       capplets/appearance/org.cafe.mcc.appearance.gresource.xml
        capplets/appearance/Makefile.am
        capplets/common/Makefile.am
        capplets/common/activate-settings-daemon.c
        capplets/common/activate-settings-daemon.h
-       capplets/common/mate-theme-test.c
+       capplets/common/cafe-theme-test.c
        capplets/common/theme-thumbnail.c
        capplets/common/theme-thumbnail.h
        capplets/common/wm-common.c
@@ -366,45 +366,45 @@ Files: capplets/about-me/Makefile.am
        capplets/default-applications/icons/*/*/instant-messaging.png
        capplets/default-applications/*.in
        capplets/default-applications/*.ui
-       capplets/default-applications/org.mate.mcc.da.gresource.xml
+       capplets/default-applications/org.cafe.mcc.da.gresource.xml
        capplets/display/Makefile.am
        capplets/display/TODO
        capplets/display/*.ui
        capplets/display/*.in
        capplets/display/foo-marshal.*
        capplets/display/Makefile.am
-       capplets/display/org.mate.mcc.display.gresource.xml
+       capplets/display/org.cafe.mcc.display.gresource.xml
        capplets/display/ui-a11y.suppr
        capplets/keybindings/Makefile.am
        capplets/keybindings/eggcellrendererkeys.c
-       capplets/keybindings/mate-keybinding-properties.c
+       capplets/keybindings/cafe-keybinding-properties.c
        capplets/keybindings/*.in
        capplets/keybindings/*.ui
        capplets/keybindings/ui-a11y.suppr
-       capplets/keybindings/org.mate.mcc.keybindings.gresource.xml
+       capplets/keybindings/org.cafe.mcc.keybindings.gresource.xml
        capplets/keyboard/Makefile.am
        capplets/keyboard/*.in
        capplets/keyboard/*.ui
-       capplets/keyboard/org.mate.mcc.keyboard.gresource.xml
+       capplets/keyboard/org.cafe.mcc.keyboard.gresource.xml
        capplets/keyboard/ui-a11y.suppr
        capplets/mouse/Makefile.am
        capplets/mouse/double-click-maybe.svg
        capplets/mouse/double-click-off.svg
        capplets/mouse/double-click-on.svg
-       capplets/mouse/org.mate.mcc.mouse.gresource.xml
+       capplets/mouse/org.cafe.mcc.mouse.gresource.xml
        capplets/mouse/ui-a11y.suppr
        capplets/mouse/*.in
        capplets/mouse/*.ui
        capplets/network/Makefile.am
-       capplets/network/org.mate.mcc.network.gresource.xml
+       capplets/network/org.cafe.mcc.network.gresource.xml
        capplets/network/ui-a11y.suppr
        capplets/network/*.in
        capplets/network/*.ui
        capplets/windows/Makefile.am
        capplets/windows/*.in
-       capplets/windows/mate-metacity-support.c
-       capplets/windows/mate-metacity-support.h
-       capplets/windows/org.mate.mcc.windows.gresource.xml
+       capplets/windows/cafe-metacity-support.c
+       capplets/windows/cafe-metacity-support.h
+       capplets/windows/org.cafe.mcc.windows.gresource.xml
        capplets/windows/window-properties.ui
        capplets/Makefile.am
        font-viewer/Makefile.am
@@ -418,12 +418,12 @@ Files: capplets/about-me/Makefile.am
        libslab/Makefile.am
        libslab/libslab-utils.c
        libslab/libslab-utils.h
-       libslab/mate-utils.c
+       libslab/cafe-utils.c
        libslab/*.in
        libslab/*.list
        libwindow-settings/Makefile.am
        libwindow-settings/marco-window-manager.h
-       libwindow-settings/mate-wm-manager.h
+       libwindow-settings/cafe-wm-manager.h
        libwindow-settings/*.in
        makepot
        man/Makefile.am
@@ -450,7 +450,7 @@ Files: capplets/about-me/Makefile.am
        TODO
        autogen.sh
        configure.ac
-       org.mate.*.xml.in
+       org.cafe.*.xml.in
 Copyright: *No copyright*
 License: GPL-2+
 Comment:

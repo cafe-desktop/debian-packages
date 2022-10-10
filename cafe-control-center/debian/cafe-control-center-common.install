@@ -4,8 +4,8 @@ usr/share/help/
 usr/share/icons/
 usr/share/locale/
 usr/share/man/
-usr/share/mate-control-center/
-usr/share/mate-time-admin/
+usr/share/cafe-control-center/
+usr/share/cafe-time-admin/
 usr/share/mime/
 usr/share/polkit-1/
 usr/share/thumbnailers/

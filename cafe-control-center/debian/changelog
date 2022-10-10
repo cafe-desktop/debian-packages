@@ -1,8 +1,8 @@
-mate-control-center (1.24.1-1) unstable; urgency=medium
+cafe-control-center (1.24.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release
-  * debian/libmate-slab0.symbols:
+  * debian/libcafe-slab0.symbols:
     + Update symbols. Ported libslab_handle_g_error to the built-in GLib logging
       framework.
 
@@ -11,23 +11,23 @@ mate-control-center (1.24.1-1) unstable; urgency=medium
     + Bump DH compat level to version 13.
   * debian/copyright:
     + Update copyright attributions.
-  * debian/libmate-slab0.lintian-overrides:
+  * debian/libcafe-slab0.lintian-overrides:
     + Update tag name: exit-in-shared-library.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:13:30 +0200
 
-mate-control-center (1.24.0-1) unstable; urgency=medium
+cafe-control-center (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
     + Add Rules-Requires-Root: field and set it to no.
     + Bump Standards-Version: to 4.5.0. No changes needed.
-    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+    + Update versioned B-D on cafe-common (>= 1.24.0-1~).
   * debian/upstream/metadata:
     + Drop obsolete fields Contact: and Name:.
     + Append .git suffix to URLs in Repository: field.
-  * debian/{mate-time-admin.1,mate-control-center-common.manpages}:
-    + Add manpage for mate-time-admin.
+  * debian/{cafe-time-admin.1,cafe-control-center-common.manpages}:
+    + Add manpage for cafe-time-admin.
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -40,12 +40,12 @@ mate-control-center (1.24.0-1) unstable; urgency=medium
     + Update Build-Depends: to support MATE Desktop 1.24.
     + Add B-D libaccountsservice-dev (>= 0.6.21).
     + Add B-D libxml2-utils.
-  * debian/mate-control-center-common.install:
-    + Add usr/share/mate-time-admin/.
+  * debian/cafe-control-center-common.install:
+    + Add usr/share/cafe-time-admin/.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 20:39:15 +0100
 
-mate-control-center (1.22.2-2) unstable; urgency=medium
+cafe-control-center (1.22.2-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -55,7 +55,7 @@ mate-control-center (1.22.2-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Oct 2019 14:53:34 +0200
 
-mate-control-center (1.22.2-1) unstable; urgency=medium
+cafe-control-center (1.22.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -64,19 +64,19 @@ mate-control-center (1.22.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:48:58 +0200
 
-mate-control-center (1.22.1-1) unstable; urgency=medium
+cafe-control-center (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/copyright:
     + Update copyright attributions.
   * debian/patches:
-    + Drop 0001_UI-for-org-mate-accessibility-keyboard-stickykeys-latch-to-
+    + Drop 0001_UI-for-org-cafe-accessibility-keyboard-stickykeys-latch-to-
       lock.patch. Applied upstream.
     + Add 0001_fix_preferred_apps_icon_sizes.patch.
   * debian/control:
     + Updated for MATE Desktop 1.22
-  * debian/libmate-slab0.symbols:
+  * debian/libcafe-slab0.symbols:
     + Updated for MATE Desktop 1.22
 
   [ Mike Gabriel ]
@@ -89,19 +89,19 @@ mate-control-center (1.22.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Jul 2019 00:05:28 +0200
 
-mate-control-center (1.20.4-2) unstable; urgency=medium
+cafe-control-center (1.20.4-2) unstable; urgency=medium
 
   * debian/patches:
-    + Add 0001_UI-for-org-mate-accessibility-keyboard-stickykeys-latch-to-
-      lock.patch. Provide settings UI for org.mate.accessibility-
+    + Add 0001_UI-for-org-cafe-accessibility-keyboard-stickykeys-latch-to-
+      lock.patch. Provide settings UI for org.cafe.accessibility-
       keyboard.stickykeys-latch-to-lock.
   * debian/control:
-    + Explicitly depend on  mate-desktop (>= 1.20.4-2~). It introduces the
+    + Explicitly depend on  cafe-desktop (>= 1.20.4-2~). It introduces the
       stickykeys-latch-to-lock gschema settings item.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 16 Jan 2019 11:45:24 +0100
 
-mate-control-center (1.20.4-1) unstable; urgency=medium
+cafe-control-center (1.20.4-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -112,13 +112,13 @@ mate-control-center (1.20.4-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 06 Jan 2019 12:47:18 +0100
 
-mate-control-center (1.20.3-1) unstable; urgency=medium
+cafe-control-center (1.20.3-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Make Upstream-Name: field's value more human readable.
     + Update Upstream-Contact: field.
@@ -131,7 +131,7 @@ mate-control-center (1.20.3-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 16:06:43 +0200
 
-mate-control-center (1.20.2-2) unstable; urgency=medium
+cafe-control-center (1.20.2-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -141,7 +141,7 @@ mate-control-center (1.20.2-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Apr 2018 23:01:06 +0200
 
-mate-control-center (1.20.2-1) unstable; urgency=medium
+cafe-control-center (1.20.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -156,7 +156,7 @@ mate-control-center (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 12:34:32 +0200
 
-mate-control-center (1.20.0-2) unstable; urgency=medium
+cafe-control-center (1.20.0-2) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/copyright:
@@ -172,13 +172,13 @@ mate-control-center (1.20.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 19 Mar 2018 09:43:06 +0100
 
-mate-control-center (1.20.0-1) unstable; urgency=medium
+cafe-control-center (1.20.0-1) unstable; urgency=medium
 
   * debian/patches (already in 1.19.3-0ubuntu1):
     + Add 0000_hidpi.patch. HiDPI support.
     + Drop 0000_fix_external_localizations_in_desktop_files.patch. Applied
       upstream.
-  * debian/libmate-slab0.symbols (already in 1.19.3-0ubuntu1):
+  * debian/libcafe-slab0.symbols (already in 1.19.3-0ubuntu1):
     + Update symbols.
   * debian/patches (already in 1.19.3-0ubuntu2):
     + Update 0000_hidpi.patch. Remove ceil for scaled DPI.
@@ -187,8 +187,8 @@ mate-control-center (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.3-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
 
   [ Mike Gabriel ]
@@ -196,25 +196,25 @@ mate-control-center (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Feb 2018 17:05:52 +0100
 
-mate-control-center (1.20.0-0ubuntu1) bionic; urgency=medium
+cafe-control-center (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:56 +0000
 
-mate-control-center (1.19.3-0ubuntu2) bionic; urgency=medium
+cafe-control-center (1.19.3-0ubuntu2) bionic; urgency=medium
 
   * New maintainer upload.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Sat, 27 Jan 2018 12:35:23 +0000
 
-mate-control-center (1.19.3-0ubuntu1) bionic; urgency=medium
+cafe-control-center (1.19.3-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 11:08:22 +0000
 
-mate-control-center (1.18.2-2) unstable; urgency=medium
+cafe-control-center (1.18.2-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
@@ -233,7 +233,7 @@ mate-control-center (1.18.2-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 05 Jan 2018 23:13:58 +0100
 
-mate-control-center (1.18.2-1) unstable; urgency=medium
+cafe-control-center (1.18.2-1) unstable; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -242,7 +242,7 @@ mate-control-center (1.18.2-1) unstable; urgency=medium
   * debian/control: Dependencies updated for MATE 1.17.
   * debian/control: Drop dependency on libunique3 (Closes: #827230)
   * debian/rules: Remove obsolete --with-gtk=3.0
-  * debian/mate-control-center-common.install: Remove obsolete usr/share/mate/
+  * debian/cafe-control-center-common.install: Remove obsolete usr/share/cafe/
   * debian/copyright: Update copyright attributions.
   * debian/control: Dependencies updated for MATE 1.18.
   * debian/copyright: Update copyright attributions.
@@ -261,7 +261,7 @@ mate-control-center (1.18.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 12:54:46 +0200
 
-mate-control-center (1.16.1-1) unstable; urgency=medium
+cafe-control-center (1.16.1-1) unstable; urgency=medium
 
   * New upstream release.
     - Appearance: fix live updating of the various theme details.
@@ -270,7 +270,7 @@ mate-control-center (1.16.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 26 Apr 2017 22:05:40 +0200
 
-mate-control-center (1.16.0-2) unstable; urgency=medium
+cafe-control-center (1.16.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
@@ -278,7 +278,7 @@ mate-control-center (1.16.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 13:41:22 +0100
 
-mate-control-center (1.16.0-1) unstable; urgency=medium
+cafe-control-center (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -293,7 +293,7 @@ mate-control-center (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 02 Oct 2016 23:04:32 +0200
 
-mate-control-center (1.15.2-0ubuntu1) yakkety; urgency=medium
+cafe-control-center (1.15.2-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
@@ -303,7 +303,7 @@ mate-control-center (1.15.2-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
 
-mate-control-center (1.14.1-1) unstable; urgency=medium
+cafe-control-center (1.14.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -315,7 +315,7 @@ mate-control-center (1.14.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 11:37:10 +0200
 
-mate-control-center (1.14.0-1) unstable; urgency=medium
+cafe-control-center (1.14.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -323,12 +323,12 @@ mate-control-center (1.14.0-1) unstable; urgency=medium
     + B-D: libcanberra-gtk3-dev
     + B-D: libgtk-3-dev
     + Versioned B-D: libmarco-dev (>= 1.14)
-    + Versioned B-D: libmate-desktop-dev (>= 1.14)
-    + Versioned B-D: libmatekbd-dev (>= 1.14)
-    + Versioned B-D: libmate-menu-dev (>= 1.14)
+    + Versioned B-D: libcafe-desktop-dev (>= 1.14)
+    + Versioned B-D: libcafekbd-dev (>= 1.14)
+    + Versioned B-D: libcafe-menu-dev (>= 1.14)
     + B-D: libunique-3.0-dev
-    + Versioned B-D: mate-common (>= 1.14)
-    + Versioned B-D: mate-settings-daemon-dev (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
+    + Versioned B-D: cafe-settings-daemon-dev (>= 1.14)
     + Processed with wrap-and-sort.
   * debian/rules:
     + MateConf dropped upstream.
@@ -345,7 +345,7 @@ mate-control-center (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 May 2016 11:50:52 +0200
 
-mate-control-center (1.12.1-2) unstable; urgency=medium
+cafe-control-center (1.12.1-2) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -362,27 +362,27 @@ mate-control-center (1.12.1-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 28 Mar 2016 17:41:06 +0200
 
-mate-control-center (1.12.1-1) unstable; urgency=medium
+cafe-control-center (1.12.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
     - Add support for setting the primary monitor. (Closes: #794767).
   * debian/control:
-    + Add B (mate-control-center): ubuntu-mate-default-settings (<< 16.04).
+    + Add B (cafe-control-center): ubuntu-cafe-default-settings (<< 16.04).
     + Drop obsolete B-D: libxft-dev.
-    + Versioned B-D: mate-common (>= 1.12), libmarco-dev (>= 1.12),
-      libmate-desktop-dev (>= 1.12) and mate-settings-daemon-dev (>= 1.12).
+    + Versioned B-D: cafe-common (>= 1.12), libmarco-dev (>= 1.12),
+      libcafe-desktop-dev (>= 1.12) and cafe-settings-daemon-dev (>= 1.12).
   * debian/copyright:
     + Update copyright attributions.
 
   [ Mike Gabriel ]
   * debian/control:
-    + Fix various B/R relations to previous versions of mate-control-center
+    + Fix various B/R relations to previous versions of cafe-control-center
       bin:packages. Dropping all faulty R relations. (Closes: #797834).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 01 Jan 2016 15:10:54 +0100
 
-mate-control-center (1.10.2-1) unstable; urgency=medium
+cafe-control-center (1.10.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -391,20 +391,20 @@ mate-control-center (1.10.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Oct 2015 04:30:14 +0200
 
-mate-control-center (1.10.1+gfdl1-1) unstable; urgency=medium
+cafe-control-center (1.10.1+gfdl1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
-    + Drop 2001_omit-gfdl-help-licensed-help-files.patch, mate-control-panel
+    + Drop 2001_omit-gfdl-help-licensed-help-files.patch, cafe-control-panel
       help is DFSG compliant.
   * debian/control:
     + Process with wrap-and-sort.
     + Update build dependency versions.
-    + Correct build dependency for mate-settings-daemon-dev. (Closes: #796424).
-  * debian/mate-control-center-common.install:
-    + Add /usr/share/{help,man,mate-co50ntrol-center,mime,polkit-1,thumbnailers}
-  * debian/mate-control-center.install:
-    + Remove /usr/share/{man,mate-control-center,mime,polkit-1,thumbnailers}
+    + Correct build dependency for cafe-settings-daemon-dev. (Closes: #796424).
+  * debian/cafe-control-center-common.install:
+    + Add /usr/share/{help,man,cafe-co50ntrol-center,mime,polkit-1,thumbnailers}
+  * debian/cafe-control-center.install:
+    + Remove /usr/share/{man,cafe-control-center,mime,polkit-1,thumbnailers}
   * debian/rules:
     + Remove +dfsg1 suffix.
   * debian/watch:
@@ -415,29 +415,29 @@ mate-control-center (1.10.1+gfdl1-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * Upload to unstable.
-    - Be compliant with latest mate-desktop 1.10 API. (Closes: #794676).
+    - Be compliant with latest cafe-desktop 1.10 API. (Closes: #794676).
   * debian/control:
     + Bin:packages can't have Breaks:/Replaces: relationships with themselves
-      (mate-control-center-common).
+      (cafe-control-center-common).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Sep 2015 21:51:19 +0200
 
-mate-control-center (1.10.1+dfsg1-1~exp1) experimental; urgency=medium
+cafe-control-center (1.10.1+dfsg1-1~exp1) experimental; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 13:15:35 +0200
 
-mate-control-center (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
+cafe-control-center (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
 
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.10).
-    + Versioned B-D: libmate-desktop-dev (>= 1.9.4).
+    + Versioned B-D: cafe-common (>= 1.10).
+    + Versioned B-D: libcafe-desktop-dev (>= 1.9.4).
     + Versioned B-D: libmarco-dev (>= 1.9.1).
   * debian/{control,copyright,*.install}:
     + Process with wrap-and-sort.
-  * debian/{rules,mate-control-center-common.install}:
+  * debian/{rules,cafe-control-center-common.install}:
     + Drop /usr/share/MateConf from bin:package.
   * debian/rules:
     + Adapt repack algorithm, no m4/ folder in upstream sources anymore.
@@ -445,14 +445,14 @@ mate-control-center (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
   * man pages:
     + Now shipped in upstream sources. Remove Debian-provided man pages from
       debian/man/.
-    + Remove artifact (debian/patches/man/mate-control-center.1)
+    + Remove artifact (debian/patches/man/cafe-control-center.1)
   * debian/patches: Adapt Debian patchset to this release.
      + Drop 0001_fix-NEWS-1.8.3.patch. Requires more work upstream.
      + Drop 0002_initialize-mouse-focus-checkbox.patch. Applied upstream.
      + Drop 0003_fix-i18n-category-names.patch. Applied upstream.
      + Drop 0004_fix-set-preferred-apps-in-some-locales.patch. Applied upstream.
      + Drop 0005_fix-desktop-item-launching.patch. Applied upstream.
-     + Drop 1005_rename-libslab-to-libmate-slab0.patch. Applied upstream.
+     + Drop 1005_rename-libslab-to-libcafe-slab0.patch. Applied upstream.
      + Update 2001_omit-gfdl-licensed-help-files.patch. Rebased against this
        upstream release.
      + Drop 2002_fix-common-tasks-section-for-German-locale.patch. Applied
@@ -460,12 +460,12 @@ mate-control-center (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
   * debian/copyright:
     + Add copyright information for newly shipped man pages.
     + Don't mention man page files that were moved to the man/ folder.
-  * debian/mate-slab/mate-slab.pc.in:
+  * debian/cafe-slab/cafe-slab.pc.in:
     + Drop from package, provided in upstream sources.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 11:28:17 +0200
 
-mate-control-center (1.8.3+dfsg1-2) unstable; urgency=medium
+cafe-control-center (1.8.3+dfsg1-2) unstable; urgency=medium
 
   * debian/patches (i18n fixes):
     + Add 0003_fix-i18n-category-names.patch. Fix i18n names of Settings /
@@ -479,12 +479,12 @@ mate-control-center (1.8.3+dfsg1-2) unstable; urgency=medium
     + Add 0005_fix-desktop-item-launching.patch. In libslab: do not reap child
       when launching desktop items. (Closes: #781247).
   * debian/control:
-    + Switch to versioned D (mate-control-center): mate-desktop (>= 1.8.1+dfsg1-3).
+    + Switch to versioned D (cafe-control-center): cafe-desktop (>= 1.8.1+dfsg1-3).
       (required by new patch 0005_fix-desktop-item-launching.patch).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Mar 2015 15:16:54 +0100
 
-mate-control-center (1.8.3+dfsg1-1) unstable; urgency=medium
+cafe-control-center (1.8.3+dfsg1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -506,7 +506,7 @@ mate-control-center (1.8.3+dfsg1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 22 Oct 2014 22:52:11 +0200
 
-mate-control-center (1.8.2+dfsg1-1) unstable; urgency=medium
+cafe-control-center (1.8.2+dfsg1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/patches:
@@ -515,18 +515,18 @@ mate-control-center (1.8.2+dfsg1-1) unstable; urgency=medium
     + Drop 1004_add-main-category-to-categories-key-in-desktop-file.patch.
       Applied upstream.
   * debian/control:
-    + Add D (mate-control-center): caja-common. (Closes: #756146).
+    + Add D (cafe-control-center): caja-common. (Closes: #756146).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Aug 2014 17:25:24 +0200
 
-mate-control-center (1.8.1+dfsg1-4) unstable; urgency=medium
+cafe-control-center (1.8.1+dfsg1-4) unstable; urgency=medium
 
   * debian/control:
-    + Add D (mate-control-center): marco-common. (Closes: #751944).
+    + Add D (cafe-control-center): marco-common. (Closes: #751944).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 19:51:55 +0200
 
-mate-control-center (1.8.1+dfsg1-3) unstable; urgency=low
+cafe-control-center (1.8.1+dfsg1-3) unstable; urgency=low
 
   [ Vangelis Mouhtsis ]
   * debian/rules:
@@ -534,21 +534,21 @@ mate-control-center (1.8.1+dfsg1-3) unstable; urgency=low
 
   [ Mike Gabriel ]
   * debian/control:
-    + Add Breaks: field to mate-control-center-common. The package breaks
-      mate-control-center (<< 1.8.1).
+    + Add Breaks: field to cafe-control-center-common. The package breaks
+      cafe-control-center (<< 1.8.1).
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 08 May 2014 21:14:37 +0200
 
-mate-control-center (1.8.1+dfsg1-2) unstable; urgency=low
+cafe-control-center (1.8.1+dfsg1-2) unstable; urgency=low
 
   * debian/patches:
-    + Improve/update 1005_rename-libslab-to-libmate-slab0.patch. Allow
+    + Improve/update 1005_rename-libslab-to-libcafe-slab0.patch. Allow
       third-party software (gnome-main-menu) to be built against the renamed
-      libmate-slab library.
+      libcafe-slab library.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 May 2014 23:20:06 +0200
 
-mate-control-center (1.8.1+dfsg1-1) unstable; urgency=low
+cafe-control-center (1.8.1+dfsg1-1) unstable; urgency=low
 
   * Initial release. (Closes: #734663).
 
