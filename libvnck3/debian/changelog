@@ -67,7 +67,7 @@ libvnck3 (3.24.0-1) unstable; urgency=medium
   * New upstream release.
     - No longer uses deprecated gnome-common macros (closes: #829900).
   * Drop screen-Check-for-Wayland-display.patch, it was coming from upstream.
-  * Bump libgtk-3-dev build-dependency to 3.22.0, following configure.ac.
+  * Bump libctk-3-dev build-dependency to 3.22.0, following configure.ac.
   * Drop intltool and gnome-common build-dependencies, no longer needed.
   * Update debian/libvnck-3-0.symbols with new symbols.
   * Bump Standards-Version to 4.0.0, no changes needed.
@@ -103,7 +103,7 @@ libvnck3 (3.20.1-1) unstable; urgency=medium
 libvnck3 (3.20.0-1) unstable; urgency=medium
 
   * New upstream release.
-  * Drop 0001-ActionMenu-Use-gtk_label_set_text_with_mnemonic-inst.patch,
+  * Drop 0001-ActionMenu-Use-ctk_label_set_text_with_mnemonic-inst.patch,
     merged upstream.
   * Bump debhelper compatibility level to 9.
   * Set pkg-gnome-maintainers@lists.alioth.debian.org as Maintainer.
@@ -115,7 +115,7 @@ libvnck3 (3.20.0-1) unstable; urgency=medium
 
 libvnck3 (3.14.1-2) unstable; urgency=medium
 
-  * d/p/0001-ActionMenu-Use-gtk_label_set_text_with_mnemonic-inst.patch:
+  * d/p/0001-ActionMenu-Use-ctk_label_set_text_with_mnemonic-inst.patch:
     Cherry-pick from upstream to add mnemonics to labels. Thanks to Andrea
     Azzarone and Marco Trevisan. (LP: #1570812)
 
@@ -129,7 +129,7 @@ libvnck3 (3.14.1-1) unstable; urgency=medium
 
 libvnck3 (3.14.0-2) unstable; urgency=medium
 
-  * Bump libgtk-3-dev dependencies to 3.10, according to configure.ac.
+  * Bump libctk-3-dev dependencies to 3.10, according to configure.ac.
   * Upload to unstable.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Wed, 13 May 2015 13:05:36 +0300
@@ -162,7 +162,7 @@ libvnck3 (3.4.9-1) unstable; urgency=medium
 
   * New upstream release.
   * Drop patches from upstream now included in release:
-    - debian/patches/git_support_gtk_frame_extents.patch
+    - debian/patches/git_support_ctk_frame_extents.patch
     - debian/patches/git_window_action_menu_dispose_events.patch
   * Use DEB_DH_AUTORECONF_ARGS instead of patching ltmain manually.
     - drop debian/patches/99_ltmain_as-needed.patch
@@ -179,7 +179,7 @@ libvnck3 (3.4.9-1) unstable; urgency=medium
 
 libvnck3 (3.4.7-3) unstable; urgency=medium
 
-  * Add git_support_gtk_frame_extents.patch: Add support for
+  * Add git_support_ctk_frame_extents.patch: Add support for
     _GTK_FRAME_EXTENTS. Patch taken from upstream git.
 
  -- Martin Pitt <mpitt@debian.org>  Tue, 05 Aug 2014 16:04:50 +0200
@@ -212,7 +212,7 @@ libvnck3 (3.4.5-1) unstable; urgency=low
   * New upstream release.
   * Refresh patches.
   * Update symbols file.
-  * Bump required version of libglib2.0-dev to (>= 2.32) and libgtk-3-dev
+  * Bump required version of libglib2.0-dev to (>= 2.32) and libctk-3-dev
     to (>= 3.4).
   * Bump Standards-Version to 3.9.4. No further changes.
   * Add Build-Depends on autotools-dev as lintian was complaining about
@@ -273,7 +273,7 @@ libvnck3 (3.2.0-1) unstable; urgency=low
   * debian/libvnck-3-0.symbols:
     - Add new symbols.
   * debian/rules:
-    - Build the gtk-doc API documentation.
+    - Build the ctk-doc API documentation.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 16 Oct 2011 10:15:07 +0200
 
@@ -316,7 +316,7 @@ libvnck3 (2.91.90-1) experimental; urgency=low
   * 01_tasklist_orientation.patch: update for new version, and fix
     header.
   * Update build-dependencies.
-  * Move documentation back to /usr/share/gtk-doc.
+  * Move documentation back to /usr/share/ctk-doc.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 16 Mar 2011 21:03:10 +0100
 
@@ -405,7 +405,7 @@ libvnck (2.28.0-1) unstable; urgency=low
 
   * New upstream release.
     - debian/control.in:
-      + Bump libgtk2.0-dev build dependency to 2.16.0.
+      + Bump libctk2.0-dev build dependency to 2.16.0.
   * debian/patches/90_relibtoolize.patch:
     - Removed, no longer needed now that upstream uses a recent libtool.
   * debian/control.in:
@@ -419,7 +419,7 @@ libvnck (2.28.0-1) unstable; urgency=low
 
 libvnck (2.26.1-1) unstable; urgency=low
 
-  * Build-depend on libglib2.0-doc and libgtk2.0-doc to ensure proper
+  * Build-depend on libglib2.0-doc and libctk2.0-doc to ensure proper
     xrefs.
   * New upstream release.
   * Bump build-dep on libglib2.0-dev.
@@ -538,7 +538,7 @@ libvnck (2.19.5-1) experimental; urgency=low
     - Bump shlibs to 2.19.5 where the last API additions happened.
     - Unversion the libvnck-common dependency to permit parallel installation
       of libvnck18; it only ships translations.
-    - Bump libgtk2.0-dev build-dep to >= 2.11.3 and build-dep on
+    - Bump libctk2.0-dev build-dep to >= 2.11.3 and build-dep on
       libglib2.0-dev (>= 2.13.0).
     - Install new vnckprop utility in libvnck-dev as it doesn't warrant a new
       package but might still be useful.
@@ -656,7 +656,7 @@ libvnck (2.14.1-2) unstable; urgency=medium
 libvnck (2.14.1) unstable; urgency=low
 
   * New upstream release (bugfixes and translation updates).
-  * [debian/control.in] Bumped libgtk2.0-dev dependencies due to
+  * [debian/control.in] Bumped libctk2.0-dev dependencies due to
     libXrender/libXcursor transition.
 
  -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Fri, 21 Apr 2006 11:07:20 +0200
@@ -766,7 +766,7 @@ libvnck (2.8.0-1) experimental; urgency=low
   * [debian/watch] Updated.
   * [debian/rules] Don't build the documentation ourselves; use the files from
     the upstream tarball instead.
-  * [debian/control.in] Dropped gtk-doc-tools build dependency.
+  * [debian/control.in] Dropped ctk-doc-tools build dependency.
 
  -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Tue, 14 Sep 2004 18:02:52 +0200
 
@@ -839,7 +839,7 @@ libvnck (2.6.0.1-1) experimental; urgency=low
 
 libvnck (2.6.0-2) experimental; urgency=low
 
-  * Add dependency on docbook-xml and gtk-doc-tools.
+  * Add dependency on docbook-xml and ctk-doc-tools.
 
  -- Ondřej Surý <ondrej@debian.org>  Wed, 24 Mar 2004 16:34:02 +0100
 
@@ -1033,7 +1033,7 @@ libvnck (0.3-1) unstable; urgency=low
 
 libvnck (0.2-3) unstable; urgency=low
 
-  * Build against the latest libgtk1.3
+  * Build against the latest libctk1.3
 
  -- Christian Marillat <marillat@debian.org>  Sun,  3 Feb 2002 16:18:48 +0100
 
@@ -1051,7 +1051,7 @@ libvnck (0.2-1) unstable; urgency=low
 
 libvnck (0.1-3) unstable; urgency=low
 
-  * Build against th latest libgtk13 (Closes: #129089)
+  * Build against th latest libctk13 (Closes: #129089)
 
  -- Christian Marillat <marillat@debian.org>  Mon, 14 Jan 2002 10:10:49 +0100
 
