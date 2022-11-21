@@ -1,3 +1,3 @@
 version=4
-https://download.gnome.org/sources/libwnck/([\d\.]+[02468])/ \
-	libwnck@ANY_VERSION@\.tar\.xz
+https://download.gnome.org/sources/libvnck/([\d\.]+[02468])/ \
+	libvnck@ANY_VERSION@\.tar\.xz
