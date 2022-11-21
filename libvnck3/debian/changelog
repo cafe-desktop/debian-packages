@@ -191,7 +191,7 @@ libvnck3 (3.4.7-2) unstable; urgency=medium
   * Enable Multi-Arch.
   * Add debian/patches/git_window_action_menu_dispose_events.patch: Fix
     objects to get finalized correctly, making sure the internal idle into
-    WnckActionMenu gets stopped. Patch taken from upstream git.
+    VnckActionMenu gets stopped. Patch taken from upstream git.
     (LP: #1191853)
   * debian/copyright: Reformat for 1.0 standard.
   * Bump to Standards-Version 3.9.5.
