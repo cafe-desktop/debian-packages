@@ -1,0 +1,7 @@
+usr/include
+usr/bin/wnckprop
+usr/bin/wnck-urgency-monitor
+usr/lib/*/pkgconfig
+usr/lib/*/libwnck-3.so
+usr/share/gtk-doc/
+usr/share/gir-1.0
