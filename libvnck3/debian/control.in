@@ -68,7 +68,7 @@ Architecture: any
 Section: introspection
 Depends: ${gir:Depends}, ${misc:Depends}
 Multi-Arch: same
-Description: GObject introspection data for the WNCK library
+Description: GObject introspection data for the VNCK library
  This package contains introspection data for Window Navigator
  Construction Kit, a library to interact with window managers.
  .
