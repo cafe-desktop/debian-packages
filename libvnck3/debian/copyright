@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: libvnck
-Source: https://download.gnome.org/sources/libvnck
+Source: https://github.com/cafe-desktop/libvnck
 
 Files: *
 Copyright:
