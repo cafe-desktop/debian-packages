@@ -3,5 +3,5 @@ usr/bin/vnckprop
 usr/bin/vnck-urgency-monitor
 usr/lib/*/pkgconfig
 usr/lib/*/libvnck-3.so
-usr/share/ctk-doc/
+usr/share/gtk-doc/
 usr/share/gir-1.0

@@ -273,7 +273,7 @@ libvnck3 (3.2.0-1) unstable; urgency=low
   * debian/libvnck-3-0.symbols:
     - Add new symbols.
   * debian/rules:
-    - Build the ctk-doc API documentation.
+    - Build the gtk-doc API documentation.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 16 Oct 2011 10:15:07 +0200
 
@@ -316,7 +316,7 @@ libvnck3 (2.91.90-1) experimental; urgency=low
   * 01_tasklist_orientation.patch: update for new version, and fix
     header.
   * Update build-dependencies.
-  * Move documentation back to /usr/share/ctk-doc.
+  * Move documentation back to /usr/share/gtk-doc.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 16 Mar 2011 21:03:10 +0100
 
@@ -766,7 +766,7 @@ libvnck (2.8.0-1) experimental; urgency=low
   * [debian/watch] Updated.
   * [debian/rules] Don't build the documentation ourselves; use the files from
     the upstream tarball instead.
-  * [debian/control.in] Dropped ctk-doc-tools build dependency.
+  * [debian/control.in] Dropped gtk-doc-tools build dependency.
 
  -- J.H.M. Dassen (Ray) <jdassen@debian.org>  Tue, 14 Sep 2004 18:02:52 +0200
 
@@ -839,7 +839,7 @@ libvnck (2.6.0.1-1) experimental; urgency=low
 
 libvnck (2.6.0-2) experimental; urgency=low
 
-  * Add dependency on docbook-xml and ctk-doc-tools.
+  * Add dependency on docbook-xml and gtk-doc-tools.
 
  -- Ondřej Surý <ondrej@debian.org>  Wed, 24 Mar 2004 16:34:02 +0100
 
