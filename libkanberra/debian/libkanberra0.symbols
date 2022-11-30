@@ -1,6 +1,6 @@
 libkanberra.so.0 libkanberra0 #MINVER#
 * Build-Depends-Package: libkanberra-dev
- CANBERRA_0@CANBERRA_0 0.3
+ KANBERRA_0@KANBERRA_0 0.3
  (arch=!hurd-any)ca_cache_lookup_sound@Base 0.9
  (arch=!hurd-any)ca_cache_store_sound@Base 0.9
  ca_context_cache@Base 0.2
