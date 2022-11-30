@@ -94,8 +94,6 @@ Section: libdevel
 Architecture: all
 Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libkanberra-ctk-dev (<< 0.26)
-Replaces: libkanberra-ctk-dev (<< 0.26)
 Description: simple interface for playing event sounds (CTK+ shared development files)
  libkanberra-ctk provides a few functions that simplify
  libkanberra usage from CTK+.
@@ -106,26 +104,6 @@ Description: simple interface for playing event sounds (CTK+ shared development 
  .
  This package contains common headers for developing
  applications using libkanberra-ctk and libkanberra-ctk3
-
-Package: libkanberra-ctk-dev
-Section: libdevel
-Architecture: any
-Multi-Arch: same
-Depends: ${shlibs:Depends},
-   ${misc:Depends},
-   libkanberra-ctk0 (= ${binary:Version}),
-   libkanberra-dev (= ${binary:Version}),
-   libkanberra-ctk-common-dev
-Description: simple interface for playing event sounds (CTK+ 2 development files)
- libkanberra-ctk provides a few functions that simplify
- libkanberra usage from CTK+.
- .
- Contextual information is needed to play event sound. This library
- can help to compile directly event sounds property lists based on
- active CtkWidget objects or GdkEvent events.
- .
- This package contains headers and libraries for developing
- applications that play event sounds with libkanberra-ctk.
 
 Package: libkanberra-ctk-module
 Architecture: any
