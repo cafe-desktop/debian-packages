@@ -78,9 +78,9 @@ Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libkanberra-ctk-module
-Description: GTK+ helper for playing widget event sounds with libkanberra
+Description: CTK+ helper for playing widget event sounds with libkanberra
  libkanberra-ctk provides a few functions that simplify libkanberra
- usage from GTK+.
+ usage from CTK+.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
@@ -93,9 +93,9 @@ Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Breaks: libkanberra-ctk-dev (<< 0.26)
 Replaces: libkanberra-ctk-dev (<< 0.26)
-Description: simple interface for playing event sounds (GTK+ shared development files)
+Description: simple interface for playing event sounds (CTK+ shared development files)
  libkanberra-ctk provides a few functions that simplify
- libkanberra usage from GTK+.
+ libkanberra usage from CTK+.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
@@ -114,9 +114,9 @@ Depends: ${shlibs:Depends},
    libkanberra-dev (= ${binary:Version}),
    libctk2.0-dev (>= 2.20),
    libkanberra-ctk-common-dev
-Description: simple interface for playing event sounds (GTK+ 2 development files)
+Description: simple interface for playing event sounds (CTK+ 2 development files)
  libkanberra-ctk provides a few functions that simplify
- libkanberra usage from GTK+.
+ libkanberra usage from CTK+.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
@@ -129,18 +129,18 @@ Package: libkanberra-ctk-module
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, libctk2.0-0 (>= 2.24.5-4)
-Description: translates GTK+ widgets signals to event sounds
+Description: translates CTK+ widgets signals to event sounds
  A GtkModule which will automatically hook into all kinds of events
- inside a GTK+ program and generate sound events from them.
+ inside a CTK+ program and generate sound events from them.
 
 Package: libkanberra-ctk3-0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libkanberra-ctk3-module
-Description: GTK+ 3.0 helper for playing widget event sounds with libkanberra
+Description: CTK+ 3.0 helper for playing widget event sounds with libkanberra
  libkanberra-ctk provides a few functions that simplify libkanberra
- usage from GTK+ 3.0.
+ usage from CTK+ 3.0.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
@@ -156,9 +156,9 @@ Depends: ${shlibs:Depends},
  libkanberra-dev (= ${binary:Version}),
  libkanberra-ctk-common-dev,
  libctk-3-dev
-Description: simple interface for playing event sounds (GTK+ 3 development files)
+Description: simple interface for playing event sounds (CTK+ 3 development files)
  libkanberra-ctk3 provides a few functions that simplify
- libkanberra usage from GTK+ 3.0.
+ libkanberra usage from CTK+ 3.0.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
@@ -171,9 +171,9 @@ Package: libkanberra-ctk3-module
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, libctk-3-0 (>= 3.2.2-3)
-Description: translates GTK3 widgets signals to event sounds
+Description: translates CTK3 widgets signals to event sounds
  A GtkModule which will automatically hook into all kinds of events
- inside a GTK+ 3.0 program and generate sound events from them.
+ inside a CTK+ 3.0 program and generate sound events from them.
 
 Package: gnome-session-kanberra
 Architecture: any

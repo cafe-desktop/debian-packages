@@ -25,7 +25,7 @@ libkanberra (0.30-5) unstable; urgency=medium
     - Also drop obsolete Pre-Depends added for multiarch support
     - Have libkanberra0 depend on sound-theme-freedesktop since it is required
       by the freedesktop.org draft Sound Theme specification (LP: #790608)
-  * Install GTK+ 3 module for unity-settings-daemon too
+  * Install CTK+ 3 module for unity-settings-daemon too
   * Add 03_onlyshowin_unity.patch: Play login sound in Unity too (if enabled)
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 03 Dec 2017 16:50:26 -0500
@@ -117,7 +117,7 @@ libkanberra (0.28-5) unstable; urgency=low
     was maintained in git.
   * Call dh_autoreconf during build to update m4/libtool.m4 and prevent
     hurd-i386 to be built with rpath (Closes: #677343)
-  * debian/patches/undefined_reference.diff: Also link the GTK2 flavour
+  * debian/patches/undefined_reference.diff: Also link the CTK2 flavour
     against libX11 and the modules against libgmodule-2.0
 
  -- Laurent Bigonville <bigon@debian.org>  Sun, 23 Sep 2012 01:38:26 +0200
@@ -139,12 +139,12 @@ libkanberra (0.28-4) unstable; urgency=low
 libkanberra (0.28-3) unstable; urgency=low
 
   * Team Upload
-  * Rely on gnome-settings-daemon to load GTK module instead of Xsession.
+  * Rely on gnome-settings-daemon to load CTK module instead of Xsession.
     (Closes: #622992, #573757)
   * debian/control:
     - Add Add Homepage field
     - Bump Standards-Version to 3.9.2 (no further changes)
-    - Correctly capitalized GTK+ (Closes: #612018)
+    - Correctly capitalized CTK+ (Closes: #612018)
     - Add libgconf2-dev to build-dependencies
     - Move gnome-session-kanberra to Section: gnome
   * debian/rules:
@@ -207,7 +207,7 @@ libkanberra (0.24-1) unstable; urgency=low
 
   * New upstream version:
     + debian/control:
-      - Update GTK build dependency to >= 2.20.
+      - Update CTK build dependency to >= 2.20.
   * debian/control:
     + Update Standards-Version to 3.8.4.
   * debian/rules:
@@ -285,7 +285,7 @@ libkanberra (0.11-1) unstable; urgency=low
   * Move "kanberra-ctk-play" from libkanberra-ctk-dev to libkanberra-ctk0.
   * Add gnome-session-kanberra to play log in/out events.
   * Add 52libkanberra-ctk-module_add-to-ctk-modules to /etc/X11/Xsession.d
-    to load the GTK module.
+    to load the CTK module.
   * Add tdb-dev dependency (for themed file lookup caching)
 
   [ Sjoerd Simons ]
