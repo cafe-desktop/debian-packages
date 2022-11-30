@@ -42,7 +42,6 @@ override_dh_strip:
 	dh_strip -plibkanberra0 --dbgsym-migration='libkanberra0-dbg (<< 0.30-3~)'
 	dh_strip -plibkanberra-pulse --dbgsym-migration='libkanberra-pulse-dbg (<< 0.30-3~)'
 	dh_strip -plibkanberra-gstreamer --dbgsym-migration='libkanberra-gstreamer-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-ctk0 --dbgsym-migration='libkanberra-ctk0-dbg (<< 0.30-3~)'
 	dh_strip -plibkanberra-ctk-module --dbgsym-migration='libkanberra-ctk-module-dbg (<< 0.30-3~)'
 	dh_strip -plibkanberra-ctk3-0 --dbgsym-migration='libkanberra-ctk3-0-dbg (<< 0.30-3~)'
 	dh_strip -plibkanberra-ctk3-module --dbgsym-migration='libkanberra-ctk3-module-dbg (<< 0.30-3~)'

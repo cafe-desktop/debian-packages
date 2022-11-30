@@ -1,9 +1,0 @@
-libkanberra-ctk.so.0 libkanberra-ctk0 #MINVER#
-* Build-Depends-Package: libkanberra-ctk-dev
- ka_ctk_context_get@Base 0.2
- ka_ctk_context_get_for_screen@Base 0.17
- ka_ctk_play_for_event@Base 0.2
- ka_ctk_play_for_widget@Base 0.2
- ka_ctk_proplist_set_for_event@Base 0.2
- ka_ctk_proplist_set_for_widget@Base 0.2
- ka_ctk_widget_disable_sounds@Base 0.2
