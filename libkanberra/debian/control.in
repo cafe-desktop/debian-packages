@@ -84,7 +84,7 @@ Description: CTK+ helper for playing widget event sounds with libkanberra
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
- active GtkWidget objects or GdkEvent events.
+ active CtkWidget objects or GdkEvent events.
 
 Package: libkanberra-ctk-common-dev
 Section: libdevel
@@ -99,7 +99,7 @@ Description: simple interface for playing event sounds (CTK+ shared development 
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
- active GtkWidget objects or GdkEvent events.
+ active CtkWidget objects or GdkEvent events.
  .
  This package contains common headers for developing
  applications using libkanberra-ctk and libkanberra-ctk3
@@ -120,7 +120,7 @@ Description: simple interface for playing event sounds (CTK+ 2 development files
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
- active GtkWidget objects or GdkEvent events.
+ active CtkWidget objects or GdkEvent events.
  .
  This package contains headers and libraries for developing
  applications that play event sounds with libkanberra-ctk.
@@ -130,7 +130,7 @@ Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, libctk2.0-0 (>= 2.24.5-4)
 Description: translates CTK+ widgets signals to event sounds
- A GtkModule which will automatically hook into all kinds of events
+ A CtkModule which will automatically hook into all kinds of events
  inside a CTK+ program and generate sound events from them.
 
 Package: libkanberra-ctk3-0
@@ -144,7 +144,7 @@ Description: CTK+ 3.0 helper for playing widget event sounds with libkanberra
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
- active GtkWidget objects or GdkEvent events.
+ active CtkWidget objects or GdkEvent events.
 
 Package: libkanberra-ctk3-dev
 Section: libdevel
@@ -162,7 +162,7 @@ Description: simple interface for playing event sounds (CTK+ 3 development files
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
- active GtkWidget objects or GdkEvent events.
+ active CtkWidget objects or GdkEvent events.
  .
  This package contains headers and libraries for developing
  applications that play event sounds with libkanberra-ctk.
@@ -172,7 +172,7 @@ Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, libctk-3-0 (>= 3.2.2-3)
 Description: translates CTK3 widgets signals to event sounds
- A GtkModule which will automatically hook into all kinds of events
+ A CtkModule which will automatically hook into all kinds of events
  inside a CTK+ 3.0 program and generate sound events from them.
 
 Package: gnome-session-kanberra
