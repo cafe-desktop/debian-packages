@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 11),
                libvorbis-dev,
                libctk-3-dev (>= 3.0.0),
                libtdb-dev (>> 1.1) [!hurd-any],
-               ctk-doc-tools,
+               gtk-doc-tools,
                libpulse-dev (>= 0.9.11),
                libgstreamer1.0-dev
 Standards-Version: 4.3.0
