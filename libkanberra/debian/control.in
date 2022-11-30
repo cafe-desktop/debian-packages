@@ -23,7 +23,7 @@ Package: libkanberra0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, sound-theme-freedesktop
-Suggests: libkanberra-ctk0, libkanberra-pulse
+Suggests: libkanberra-pulse
 Description: simple abstract interface for playing event sounds
  libkanberra defines a simple abstract interface for playing event
  sounds.
@@ -71,18 +71,6 @@ Description: GStreamer backend for libkanberra
  sounds.
  .
  This package contains the GStreamer backend for libkanberra.
-
-Package: libkanberra-ctk0
-Architecture: any
-Multi-Arch: same
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: CTK+ helper for playing widget event sounds with libkanberra
- libkanberra-ctk provides a few functions that simplify libkanberra
- usage from CTK+.
- .
- Contextual information is needed to play event sound. This library
- can help to compile directly event sounds property lists based on
- active CtkWidget objects or GdkEvent events.
 
 Package: libkanberra-ctk-common-dev
 Section: libdevel
@@ -146,8 +134,6 @@ Package: gnome-session-kanberra
 Architecture: any
 Section: gnome
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkanberra-ctk0 (<< 0.28-5)
-Replaces: libkanberra-ctk0 (<< 0.28-5)
 Description: GNOME session log in and log out sound events
  Produce sound events on GNOME session log in and log out.
  .
