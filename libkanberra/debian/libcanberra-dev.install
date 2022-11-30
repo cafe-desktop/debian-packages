@@ -1,0 +1,4 @@
+usr/include/canberra.h
+usr/lib/*/libcanberra.so
+usr/lib/*/pkgconfig/libcanberra.pc
+usr/share/vala/vapi/libcanberra.vapi

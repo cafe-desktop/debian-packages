@@ -1,0 +1,3 @@
+version=4
+http://0pointer.de/lennart/projects/@PACKAGE@/ \
+	@PACKAGE@@ANY_VERSION@\.tar\.xz

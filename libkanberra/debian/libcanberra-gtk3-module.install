@@ -1,0 +1,3 @@
+usr/lib/*/gtk-3.0/modules/libcanberra-gtk-module.so
+usr/lib/*/gtk-3.0/modules/libcanberra-gtk3-module.so
+usr/lib/*/gnome-settings-daemon-3.0/gtk-modules/canberra-gtk3-module.desktop usr/lib/gnome-settings-daemon-3.0/gtk-modules
