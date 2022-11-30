@@ -39,7 +39,7 @@ libkanberra (0.30-4) unstable; urgency=medium
   * d/watch: Use @PACKAGE@ and @ANY_VERSION@ tokens
 
   [ Simon McVittie ]
-  * Run ctkdocize to update build system (Closes: #876596)
+  * Run gtkdocize to update build system (Closes: #876596)
   * Set Rules-Requires-Root: no
   * Switch from cdbs to dh
   * Move to debhelper compat level 10

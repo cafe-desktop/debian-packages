@@ -1,5 +1,5 @@
 #!/bin/sh
 # A simplified form of the upstream autogen.sh
 set -e
-ctkdocize --docdir ctkdoc/
+gtkdocize --docdir gtkdoc/
 autoreconf --force --install --symlink
