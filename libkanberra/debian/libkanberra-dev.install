@@ -1,4 +1,3 @@
 usr/include/kanberra.h
 usr/lib/*/libkanberra.so
 usr/lib/*/pkgconfig/libkanberra.pc
-usr/share/vala/vapi/libkanberra.vapi
