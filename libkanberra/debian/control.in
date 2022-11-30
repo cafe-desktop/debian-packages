@@ -76,7 +76,6 @@ Package: libkanberra-ctk0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: libkanberra-ctk-module
 Description: CTK+ helper for playing widget event sounds with libkanberra
  libkanberra-ctk provides a few functions that simplify libkanberra
  usage from CTK+.
@@ -100,14 +99,6 @@ Description: simple interface for playing event sounds (CTK+ shared development 
  .
  This package contains common headers for developing
  applications using libkanberra-ctk and libkanberra-ctk3
-
-Package: libkanberra-ctk-module
-Architecture: any
-Multi-Arch: same
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: translates CTK+ widgets signals to event sounds
- A CtkModule which will automatically hook into all kinds of events
- inside a CTK+ program and generate sound events from them.
 
 Package: libkanberra-ctk3-0
 Architecture: any
