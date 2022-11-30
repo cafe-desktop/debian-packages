@@ -17,7 +17,7 @@ DEB_CONFIGURE_EXTRA_FLAGS = 			\
 	--libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
 	--enable-pulse				\
 	--enable-gstreamer			\
-	--enable-ctk				\
+	--enable-ctk3				\
 	--enable-gtk-doc 			\
 	$(ENABLE_TDB) 				\
 	--with-builtin=dso
