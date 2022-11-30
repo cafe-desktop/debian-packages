@@ -2,7 +2,7 @@
 #
 # Modifications should be made to debian/control.in instead.
 # This file is regenerated automatically in the clean target.
-Source: libcanberra
+Source: libkanberra
 Section: libs
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
@@ -19,117 +19,117 @@ Build-Depends: debhelper (>= 11),
                libpulse-dev (>= 0.9.11),
                libgstreamer1.0-dev
 Standards-Version: 4.3.0
-Vcs-Browser: https://salsa.debian.org/gnome-team/libcanberra
-Vcs-Git: https://salsa.debian.org/gnome-team/libcanberra.git
-Homepage: http://0pointer.de/lennart/projects/libcanberra/
+Vcs-Browser: https://salsa.debian.org/gnome-team/libkanberra
+Vcs-Git: https://salsa.debian.org/gnome-team/libkanberra.git
+Homepage: http://0pointer.de/lennart/projects/libkanberra/
 Rules-Requires-Root: no
 
-Package: libcanberra0
+Package: libkanberra0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, sound-theme-freedesktop
-Suggests: libcanberra-gtk0, libcanberra-pulse
+Suggests: libkanberra-gtk0, libkanberra-pulse
 Description: simple abstract interface for playing event sounds
- libcanberra defines a simple abstract interface for playing event
+ libkanberra defines a simple abstract interface for playing event
  sounds.
  .
- libcanberra relies on the XDG sound naming specification for
+ libkanberra relies on the XDG sound naming specification for
  identifying event sounds. On Unix/Linux the right sound to play
  is found via the mechanisms defined in the XDG sound theming
  specification.
 
-Package: libcanberra-dev
+Package: libkanberra-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
 	 ${misc:Depends},
-	 libcanberra0 (= ${binary:Version})
+	 libkanberra0 (= ${binary:Version})
 Description: simple interface for playing event sounds (development files)
- libcanberra defines a simple abstract interface for playing event
+ libkanberra defines a simple abstract interface for playing event
  sounds.
  .
  This package contains headers and libraries for developing
- applications that play event sounds with libcanberra.
+ applications that play event sounds with libkanberra.
 
-Package: libcanberra-pulse
+Package: libkanberra-pulse
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
   ${misc:Depends},
-  libcanberra0 (= ${binary:Version}),
+  libkanberra0 (= ${binary:Version}),
   pulseaudio
-Description: PulseAudio backend for libcanberra
- libcanberra defines a simple abstract interface for playing event
+Description: PulseAudio backend for libkanberra
+ libkanberra defines a simple abstract interface for playing event
  sounds.
  .
- This package contains the PulseAudio backend for libcanberra.
+ This package contains the PulseAudio backend for libkanberra.
 
-Package: libcanberra-gstreamer
+Package: libkanberra-gstreamer
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
   ${misc:Depends},
-  libcanberra0 (= ${binary:Version})
-Description: GStreamer backend for libcanberra
- libcanberra defines a simple abstract interface for playing event
+  libkanberra0 (= ${binary:Version})
+Description: GStreamer backend for libkanberra
+ libkanberra defines a simple abstract interface for playing event
  sounds.
  .
- This package contains the GStreamer backend for libcanberra.
+ This package contains the GStreamer backend for libkanberra.
 
-Package: libcanberra-gtk0
+Package: libkanberra-gtk0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: libcanberra-gtk-module
-Description: GTK+ helper for playing widget event sounds with libcanberra
- libcanberra-gtk provides a few functions that simplify libcanberra
+Recommends: libkanberra-gtk-module
+Description: GTK+ helper for playing widget event sounds with libkanberra
+ libkanberra-gtk provides a few functions that simplify libkanberra
  usage from GTK+.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
  active GtkWidget objects or GdkEvent events.
 
-Package: libcanberra-gtk-common-dev
+Package: libkanberra-gtk-common-dev
 Section: libdevel
 Architecture: all
 Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Breaks: libcanberra-gtk-dev (<< 0.26)
-Replaces: libcanberra-gtk-dev (<< 0.26)
+Breaks: libkanberra-gtk-dev (<< 0.26)
+Replaces: libkanberra-gtk-dev (<< 0.26)
 Description: simple interface for playing event sounds (GTK+ shared development files)
- libcanberra-gtk provides a few functions that simplify
- libcanberra usage from GTK+.
+ libkanberra-gtk provides a few functions that simplify
+ libkanberra usage from GTK+.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
  active GtkWidget objects or GdkEvent events.
  .
  This package contains common headers for developing
- applications using libcanberra-gtk and libcanberra-gtk3
+ applications using libkanberra-gtk and libkanberra-gtk3
 
-Package: libcanberra-gtk-dev
+Package: libkanberra-gtk-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
    ${misc:Depends},
-   libcanberra-gtk0 (= ${binary:Version}),
-   libcanberra-dev (= ${binary:Version}),
+   libkanberra-gtk0 (= ${binary:Version}),
+   libkanberra-dev (= ${binary:Version}),
    libgtk2.0-dev (>= 2.20),
-   libcanberra-gtk-common-dev
+   libkanberra-gtk-common-dev
 Description: simple interface for playing event sounds (GTK+ 2 development files)
- libcanberra-gtk provides a few functions that simplify
- libcanberra usage from GTK+.
+ libkanberra-gtk provides a few functions that simplify
+ libkanberra usage from GTK+.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
  active GtkWidget objects or GdkEvent events.
  .
  This package contains headers and libraries for developing
- applications that play event sounds with libcanberra-gtk.
+ applications that play event sounds with libkanberra-gtk.
 
-Package: libcanberra-gtk-module
+Package: libkanberra-gtk-module
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, libgtk2.0-0 (>= 2.24.5-4)
@@ -137,41 +137,41 @@ Description: translates GTK+ widgets signals to event sounds
  A GtkModule which will automatically hook into all kinds of events
  inside a GTK+ program and generate sound events from them.
 
-Package: libcanberra-gtk3-0
+Package: libkanberra-gtk3-0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: libcanberra-gtk3-module
-Description: GTK+ 3.0 helper for playing widget event sounds with libcanberra
- libcanberra-gtk provides a few functions that simplify libcanberra
+Recommends: libkanberra-gtk3-module
+Description: GTK+ 3.0 helper for playing widget event sounds with libkanberra
+ libkanberra-gtk provides a few functions that simplify libkanberra
  usage from GTK+ 3.0.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
  active GtkWidget objects or GdkEvent events.
 
-Package: libcanberra-gtk3-dev
+Package: libkanberra-gtk3-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends},
  ${misc:Depends},
- libcanberra-gtk3-0 (= ${binary:Version}),
- libcanberra-dev (= ${binary:Version}),
- libcanberra-gtk-common-dev,
+ libkanberra-gtk3-0 (= ${binary:Version}),
+ libkanberra-dev (= ${binary:Version}),
+ libkanberra-gtk-common-dev,
  libgtk-3-dev
 Description: simple interface for playing event sounds (GTK+ 3 development files)
- libcanberra-gtk3 provides a few functions that simplify
- libcanberra usage from GTK+ 3.0.
+ libkanberra-gtk3 provides a few functions that simplify
+ libkanberra usage from GTK+ 3.0.
  .
  Contextual information is needed to play event sound. This library
  can help to compile directly event sounds property lists based on
  active GtkWidget objects or GdkEvent events.
  .
  This package contains headers and libraries for developing
- applications that play event sounds with libcanberra-gtk.
+ applications that play event sounds with libkanberra-gtk.
 
-Package: libcanberra-gtk3-module
+Package: libkanberra-gtk3-module
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}, libgtk-3-0 (>= 3.2.2-3)
@@ -179,30 +179,30 @@ Description: translates GTK3 widgets signals to event sounds
  A GtkModule which will automatically hook into all kinds of events
  inside a GTK+ 3.0 program and generate sound events from them.
 
-Package: gnome-session-canberra
+Package: gnome-session-kanberra
 Architecture: any
 Section: gnome
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libcanberra-gtk0 (<< 0.28-5)
-Replaces: libcanberra-gtk0 (<< 0.28-5)
+Breaks: libkanberra-gtk0 (<< 0.28-5)
+Replaces: libkanberra-gtk0 (<< 0.28-5)
 Description: GNOME session log in and log out sound events
  Produce sound events on GNOME session log in and log out.
  .
- This package is using canberra-gtk-play from libcanberra.
+ This package is using kanberra-gtk-play from libkanberra.
 
-Package: libcanberra-doc
+Package: libkanberra-doc
 Section: doc
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: simple abstract interface for playing event sounds - doc
- libcanberra defines a simple abstract interface for playing event
+ libkanberra defines a simple abstract interface for playing event
  sounds.
  .
- libcanberra relies on the XDG sound naming specification for
+ libkanberra relies on the XDG sound naming specification for
  identifying event sounds. On Unix/Linux the right sound to play
  is found via the mechanisms defined in the XDG sound theming
  specification.
  .
- This package contains the HTML documentation for libcanberra and
- libcanberra-gtk.
+ This package contains the HTML documentation for libkanberra and
+ libkanberra-gtk.

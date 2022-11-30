@@ -1,4 +1,4 @@
-libcanberra-gtk3.so.0 libcanberra-gtk3-0 #MINVER#
+libkanberra-gtk3.so.0 libkanberra-gtk3-0 #MINVER#
  ca_gtk_context_get@Base 0.25
  ca_gtk_context_get_for_screen@Base 0.25
  ca_gtk_play_for_event@Base 0.25

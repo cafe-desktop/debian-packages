@@ -5,8 +5,8 @@ set -e
 case "$1" in
   upgrade)
     if dpkg --compare-versions "$2" le "0.28-2"; then
-      if [ -f '/etc/X11/Xsession.d/52libcanberra-gtk3-module_add-to-gtk-modules/52libcanberra-gtk-module_add-to-gtk-modules' ]; then
-        rm -f '/etc/X11/Xsession.d/52libcanberra-gtk3-module_add-to-gtk-modules/52libcanberra-gtk-module_add-to-gtk-modules'
+      if [ -f '/etc/X11/Xsession.d/52libkanberra-gtk3-module_add-to-gtk-modules/52libkanberra-gtk-module_add-to-gtk-modules' ]; then
+        rm -f '/etc/X11/Xsession.d/52libkanberra-gtk3-module_add-to-gtk-modules/52libkanberra-gtk-module_add-to-gtk-modules'
       fi
     fi
 esac

@@ -1,1 +1,1 @@
-embedded-library usr/lib/*/libcanberra.so.0.2.5: ltdl
+embedded-library usr/lib/*/libkanberra.so.0.2.5: ltdl
