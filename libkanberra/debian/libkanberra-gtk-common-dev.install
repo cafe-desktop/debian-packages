@@ -1,2 +1,2 @@
-usr/include/kanberra-gtk.h
-usr/share/vala/vapi/libkanberra-gtk.vapi
+usr/include/kanberra-ctk.h
+usr/share/vala/vapi/libkanberra-ctk.vapi

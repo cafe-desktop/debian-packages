@@ -17,8 +17,8 @@ DEB_CONFIGURE_EXTRA_FLAGS = 			\
 	--libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH) \
 	--enable-pulse				\
 	--enable-gstreamer			\
-	--enable-gtk				\
-	--enable-gtk-doc 			\
+	--enable-ctk				\
+	--enable-ctk-doc 			\
 	$(ENABLE_TDB) 				\
 	--with-builtin=dso
 
@@ -34,23 +34,23 @@ override_dh_auto_configure:
 
 override_dh_makeshlibs:
 	dh_makeshlibs \
-		--exclude=usr/lib/$(DEB_HOST_MULTIARCH)/gtk-2.0/modules \
-		--exclude=usr/lib/$(DEB_HOST_MULTIARCH)/gtk-3.0/modules \
+		--exclude=usr/lib/$(DEB_HOST_MULTIARCH)/ctk-2.0/modules \
+		--exclude=usr/lib/$(DEB_HOST_MULTIARCH)/ctk-3.0/modules \
 		--exclude=usr/lib/$(DEB_HOST_MULTIARCH)/libkanberra-0.30 -- -c4
 
 override_dh_strip:
 	dh_strip -plibkanberra0 --dbgsym-migration='libkanberra0-dbg (<< 0.30-3~)'
 	dh_strip -plibkanberra-pulse --dbgsym-migration='libkanberra-pulse-dbg (<< 0.30-3~)'
 	dh_strip -plibkanberra-gstreamer --dbgsym-migration='libkanberra-gstreamer-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-gtk0 --dbgsym-migration='libkanberra-gtk0-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-gtk-module --dbgsym-migration='libkanberra-gtk-module-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-gtk3-0 --dbgsym-migration='libkanberra-gtk3-0-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-gtk3-module --dbgsym-migration='libkanberra-gtk3-module-dbg (<< 0.30-3~)'
+	dh_strip -plibkanberra-ctk0 --dbgsym-migration='libkanberra-ctk0-dbg (<< 0.30-3~)'
+	dh_strip -plibkanberra-ctk-module --dbgsym-migration='libkanberra-ctk-module-dbg (<< 0.30-3~)'
+	dh_strip -plibkanberra-ctk3-0 --dbgsym-migration='libkanberra-ctk3-0-dbg (<< 0.30-3~)'
+	dh_strip -plibkanberra-ctk3-module --dbgsym-migration='libkanberra-ctk3-module-dbg (<< 0.30-3~)'
 	dh_strip --remaining-packages
 
 override_dh_install:
-	cp -a src/kanberra-gtk-module.desktop \
-	      debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gnome-settings-daemon-3.0/gtk-modules/kanberra-gtk3-module.desktop
+	cp -a src/kanberra-ctk-module.desktop \
+	      debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gnome-settings-daemon-3.0/ctk-modules/kanberra-ctk3-module.desktop
 	find debian/tmp -name '*.la' -print -delete
 	dh_install
 

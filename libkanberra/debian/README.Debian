@@ -12,11 +12,11 @@ It is also planned to have different inter-conflicting packages for
 configurable backend installation.
 
 The GTK+ module is loaded when the GTK_MODULES environment variable
-contains the string "kanberra-gtk-module". Lennart proposed to enable
+contains the string "kanberra-ctk-module". Lennart proposed to enable
 this by default when the package is installed. I have to figure out
 how to do it correctly in Debian.
 
-This package target "experimental": libkanberra-gtk requires GTK+
+This package target "experimental": libkanberra-ctk requires GTK+
 2.13.4 in order to take the XSETTINGS configuration. However, GTK+
 2.13 is not available in Debian. But the package still compile with
 older version. A patch is included to avoid spurious debug messages.

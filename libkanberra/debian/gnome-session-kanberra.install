@@ -1,4 +1,4 @@
 usr/share/gnome/autostart/libkanberra-login-sound.desktop
 usr/share/gnome/shutdown/libkanberra-logout-sound.sh
 usr/share/gdm/autostart/LoginWindow/libkanberra-ready-sound.desktop
-usr/bin/kanberra-gtk-play
+usr/bin/kanberra-ctk-play

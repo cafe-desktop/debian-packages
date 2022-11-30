@@ -1,2 +1,2 @@
-usr/lib/*/libkanberra-gtk3.so
-usr/lib/*/pkgconfig/libkanberra-gtk3.pc
+usr/lib/*/libkanberra-ctk3.so
+usr/lib/*/pkgconfig/libkanberra-ctk3.pc
