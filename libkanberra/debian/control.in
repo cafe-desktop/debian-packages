@@ -1,8 +1,8 @@
 Source: libkanberra
 Section: libs
 Priority: optional
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: @GNOME_TEAM@
+Maintainer: Pablo Barciela <scow@riseup.net>
+Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper (>= 11),
                gnome-pkg-tools,
                libltdl-dev | libltdl7-dev (>= 2.2.6),
