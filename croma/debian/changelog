@@ -1,5 +1,11 @@
+croma (1.25.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 26 Dec 2022 17:39:26 +0100
+
 croma (1.25.0-1) unstable; urgency=medium
 
   * initial release
 
- -- ZenWalker <scow@riseup.net>  Sat, 09 Apr 2022 11:17:25 +0200
+ -- Pablo Barciela <scow@riseup.net>  Sat, 09 Apr 2022 11:17:25 +0200
