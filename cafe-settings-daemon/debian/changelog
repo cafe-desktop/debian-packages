@@ -1,3 +1,10 @@
+cafe-settings-daemon (1.25.1-1) unstable; urgency=medium
+
+  * debian/control: libkanberra-ctk3-dev instead libcanberra-gtk-dev
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 31 Dec 2022 17:14:27 +0100
+
 cafe-settings-daemon (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
