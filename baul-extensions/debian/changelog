@@ -1,3 +1,10 @@
+baul-extensions (1.25.1-1) unstable; urgency=medium
+
+  * control: 'libgupnp-1.6-dev' instead 'libgupnp-1.2-dev'
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 01 Jan 2023 22:17:44 +0100
+
 baul-extensions (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
