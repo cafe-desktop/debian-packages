@@ -1,5 +1,13 @@
+cafe-desktop (1.25.1-1) unstable; urgency=medium
+
+  * control: update uploaders and maintainer
+  * copyright: pupdate upstream contact and source urls
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 01 Feb 2023 10:34:18 +0100
+
 cafe-desktop (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Tue, 07 Jun 2022 09:19:03 +0200
+ -- Pablo Barciela <scow@riseup.net>  Tue, 07 Jun 2022 09:19:03 +0200
