@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Panel
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-panel
+Source: https://github.com/cafe-desktop/cafe-panel
 
 Files: applets/wncklet/wncklet.c
        mate-panel/panel-applet-frame.h
