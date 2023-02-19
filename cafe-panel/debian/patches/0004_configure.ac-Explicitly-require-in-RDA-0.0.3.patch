@@ -1,0 +1,28 @@
+From 5adcf338b28eda28008533f2e5717f6d00ed73d1 Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Sat, 19 Jan 2019 23:10:12 +0100
+Subject: [PATCH] configure.ac: Explicitly require in RDA >= 0.0.3.
+
+---
+ configure.ac | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -65,6 +65,7 @@
+ LIBWNCK_REQUIRED=3.4.6
+ LIBWNCK_PREVIEWS_OPTIONAL=3.32.0
+ WEATHER_REQUIRED=1.17.0
++RDA_REQUIRED=0.0.3
+ 
+ dnl pkg-config dependency checks
+ 
+@@ -246,7 +247,7 @@
+ 
+ dnl Remote Desktop Awareness
+ 
+-PKG_CHECK_MODULES(RDA, rda, have_rda=yes, have_rda=no)
++PKG_CHECK_MODULES(RDA, rda >= $RDA_REQUIRED, have_rda=yes, have_rda=no)
+ if test "x$have_rda" = "xyes"; then
+   AC_DEFINE(HAVE_RDA, 1, [Have the Remote Desktop Awareness library])
+ fi

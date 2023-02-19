@@ -1,0 +1,178 @@
+From cdf2210d25137b416cc38bf18b97d550156564d6 Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Wed, 27 Jun 2018 15:20:16 +0200
+Subject: [PATCH] RDA support: Make MATE panel aware of being run inside a
+ remote desktop technology.
+
+---
+ configure.ac                       |  7 ++++++
+ mate-panel/Makefile.am             |  2 ++
+ mate-panel/panel-action-button.c   | 38 ++++++++++++++++++++++++++++++
+ mate-panel/panel-enums-gsettings.h |  1 +
+ mate-panel/panel-icon-names.h      |  1 +
+ mate-panel/panel-menu-items.c      | 25 ++++++++++++++++++++
+ 6 files changed, 74 insertions(+)
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -244,6 +244,13 @@
+   AC_DEFINE(HAVE_RANDR, 1, [Have the Xrandr extension library])
+ fi
+ 
++dnl Remote Desktop Awareness
++
++PKG_CHECK_MODULES(RDA, rda, have_rda=yes, have_rda=no)
++if test "x$have_rda" = "xyes"; then
++  AC_DEFINE(HAVE_RDA, 1, [Have the Remote Desktop Awareness library])
++fi
++
+ dnl Modules dir
+ AC_SUBST([modulesdir],"\$(libdir)/mate-panel/modules")
+ 
+--- a/mate-panel/Makefile.am
++++ b/mate-panel/Makefile.am
+@@ -143,6 +143,7 @@
+ mate_panel_CPPFLAGS = \
+ 	$(AM_CPPFLAGS) \
+ 	$(XRANDR_CFLAGS) \
++	$(RDA_CFLAGS) \
+ 	-DPANEL_MODULES_DIR=\"$(modulesdir)\" \
+ 	-DMATEMENU_I_KNOW_THIS_IS_UNSTABLE
+ 
+@@ -159,6 +160,7 @@
+ 	$(PANEL_LIBS) \
+ 	$(DCONF_LIBS) \
+ 	$(XRANDR_LIBS) \
++	$(RDA_LIBS) \
+ 	$(X_LIBS) \
+ 	$(GTK_LAYER_SHELL_LIBS) \
+ 	-lm
+--- a/mate-panel/panel-action-button.c
++++ b/mate-panel/panel-action-button.c
+@@ -33,6 +33,10 @@
+ #include <glib/gi18n.h>
+ #include <gio/gio.h>
+ 
++#ifdef HAVE_RDA
++#include <rda/rda.h>
++#endif
++
+ #define MATE_DESKTOP_USE_UNSTABLE_API
+ #include <libmate-desktop/mate-desktop-utils.h>
+ #include <libmate-desktop/mate-gsettings.h>
+@@ -98,6 +102,9 @@
+ 	{ PANEL_ACTION_FORCE_QUIT,     "force-quit"     },
+ 	{ PANEL_ACTION_CONNECT_SERVER, "connect-server" },
+ 	{ PANEL_ACTION_SHUTDOWN,       "shutdown"       },
++#ifdef HAVE_RDA
++	{ PANEL_ACTION_SUSPEND,        "suspend"        },
++#endif
+ 	{ 0,                           NULL             },
+ };
+ 
+@@ -234,6 +241,24 @@
+ 						      PANEL_SESSION_MANAGER_LOGOUT_MODE_NORMAL);
+ }
+ 
++#ifdef HAVE_RDA
++/* Suspend Remote Session
++ */
++static void
++panel_action_suspend (GtkWidget *widget)
++{
++
++	rda_session_suspend();
++
++}
++
++static gboolean
++panel_action_suspend_not_supported(void)
++{
++	return (!rda_session_can_be_suspended());
++}
++#endif /* HAVE_RDA */
++
+ static void
+ panel_action_shutdown (GtkWidget *widget)
+ {
+@@ -430,6 +455,19 @@
+ 		panel_action_shutdown, NULL, NULL,
+ 		panel_action_shutdown_reboot_is_disabled
+ 	}
++#ifdef HAVE_RDA
++        ,
++	{
++		PANEL_ACTION_SUSPEND,
++		PANEL_ICON_SUSPEND,
++		N_("Suspend Session..."),
++		N_("Suspend the Remote Session and Resume later"),
++		"gospanel-20",
++		"ACTION:suspend:NEW",
++		panel_action_suspend, NULL, NULL,
++		panel_action_suspend_not_supported
++	}
++#endif /* HAVE_RDA */
+ };
+ 
+ gboolean
+--- a/mate-panel/panel-enums-gsettings.h
++++ b/mate-panel/panel-enums-gsettings.h
+@@ -68,6 +68,7 @@
+ 	PANEL_ACTION_FORCE_QUIT,
+ 	PANEL_ACTION_CONNECT_SERVER,
+ 	PANEL_ACTION_SHUTDOWN,
++	PANEL_ACTION_SUSPEND,
+ 	PANEL_ACTION_LAST
+ } PanelActionButtonType;
+ 
+--- a/mate-panel/panel-icon-names.h
++++ b/mate-panel/panel-icon-names.h
+@@ -33,6 +33,7 @@
+ #define PANEL_ICON_SAVED_SEARCH		"folder-saved-search"
+ #define PANEL_ICON_SEARCHTOOL		"system-search"
+ #define PANEL_ICON_SHUTDOWN		"system-shutdown"
++#define PANEL_ICON_SUSPEND		"stock_media-pause"
+ #define PANEL_ICON_THEME		"preferences-desktop-theme"
+ #define PANEL_ICON_TRASH		"user-trash"
+ #define PANEL_ICON_UNKNOWN		"image-missing"
+--- a/mate-panel/panel-menu-items.c
++++ b/mate-panel/panel-menu-items.c
+@@ -39,6 +39,9 @@
+ #include <string.h>
+ #include <glib/gi18n.h>
+ #include <gio/gio.h>
++#ifdef HAVE_RDA
++#include <rda/rda.h>
++#endif
+ #include <libmate-desktop/mate-gsettings.h>
+ 
+ #include <libpanel-util/panel-error.h>
+@@ -1575,6 +1578,28 @@
+ 	}
+ 	g_list_free (children);
+ 
++#ifdef HAVE_RDA
++	if (rda_session_can_be_suspended())
++	{
++
++		label = g_strdup_printf (_("Suspend %s Session..."),
++                                        rda_get_remote_technology_name());
++		tooltip = g_strdup_printf (_("Suspend this %s session and resume it later..."),
++                                        rda_get_remote_technology_name());
++		item = panel_menu_items_create_action_item_full (PANEL_ACTION_SUSPEND,
++                                                                label, tooltip);
++		g_free (label);
++		g_free (tooltip);
++
++		if (item != NULL) {
++			/* this separator will always be inserted */
++			add_menu_separator (menu);
++			gtk_menu_shell_append (GTK_MENU_SHELL (menu), item);
++		}
++
++	}
++#endif /* HAVE_RDA */
++
+ 	if (panel_lock_screen_action_available("lock"))
+ 	{
+ 		item = panel_menu_items_create_action_item(PANEL_ACTION_LOCK);

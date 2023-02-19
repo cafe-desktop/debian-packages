@@ -1,0 +1,4 @@
+0001_RDA-support-Make-MATE-panel-aware-of-being-run-insid.patch
+0002_mate-panel-panel-menu-items.c-Only-offer-Shutdown-bu.patch
+0003_configure.ac-Report-RDA-support-status-in-configurat.patch
+0004_configure.ac-Explicitly-require-in-RDA-0.0.3.patch

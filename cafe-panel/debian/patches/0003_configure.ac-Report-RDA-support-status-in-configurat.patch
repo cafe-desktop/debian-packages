@@ -1,0 +1,20 @@
+From 24001de6cf09ae9d2a028090fc6a082a03d0f0a6 Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Thu, 28 Jun 2018 15:39:47 +0200
+Subject: [PATCH] configure.ac: Report RDA support status in configuration
+ summary.
+
+---
+ configure.ac | 1 +
+ 1 file changed, 1 insertion(+)
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -387,6 +387,7 @@
+         Wayland support:               ${have_wayland}
+         X11 support:                   ${have_x11}
+         XRandr support:                ${have_randr}
++        RDA support:                   ${have_rda}
+         Build introspection support:   ${found_introspection}
+         Build gtk-doc documentation:   ${enable_gtk_doc}
+ 
