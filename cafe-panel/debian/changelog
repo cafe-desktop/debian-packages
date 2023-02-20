@@ -32,7 +32,7 @@ cafe-panel (1.24.0-1) unstable; urgency=medium
   * debian/control:
     + Add Rules-Requires-Root: field and set it to no.
     + Bump Standards-Version: to 4.5.0. No changes needed.
-    + Versioned B-D on libgtk-layer-shell-dev (>= 0.1.0-3~); earlier versions
+    + Versioned B-D on libctk-layer-shell-dev (>= 0.1.0-3~); earlier versions
       had no dependency on the shared lib bin:pkg.
   * debian/upstream/metadata:
     + Drop obsolete fields Contact: and Name:.
@@ -45,7 +45,7 @@ cafe-panel (1.24.0-1) unstable; urgency=medium
   * debian/copyright:
     + Update copyright attributions.
   * debian/control:
-    + Add B-D libgtk-layer-shell-dev.
+    + Add B-D libctk-layer-shell-dev.
     + Update Build-Depends: to support CAFE Desktop 1.24.
     + Add B-D autoconf-archive.
 
@@ -241,7 +241,7 @@ cafe-panel (1.20.0-1) unstable; urgency=medium
     + Drop 0001_down_scale_out_process_applet.patch. Applied upstream.
 
   [ Mike Gabriel ]
-  * Starting with CAFE 1.20, cafe-panel uses ~/.config/gtk-3.0/bookmarks.
+  * Starting with CAFE 1.20, cafe-panel uses ~/.config/ctk-3.0/bookmarks.
     (Closes: #760311).
   * debian/libcafe-panel-applet-4-1.symbols:
     + Update symbols file.
@@ -347,12 +347,12 @@ cafe-panel (1.18.4-1) unstable; urgency=medium
   * debian/control:
     + Dependencies updated for CAFE 1.17.
     + Dependencies updated for CAFE 1.18.
-    + Drop obsolete B-D for libcanberra-gtk3-dev.
+    + Drop obsolete B-D for libcanberra-ctk3-dev.
   * debian/copyright:
     + Update copyright attributions.
   * debian/rules:
     + Disable Python, it is no longer required.
-    + Remove obsolete --with-gtk=3.0
+    + Remove obsolete --with-ctk=3.0
   * debian/patches:
     + Add 1000_prevent_menubar_destruction_when_enabling_global_menus.patch.
     + Add 0000_add_gsettings_key_to_enable_sni.patch.
@@ -388,7 +388,7 @@ cafe-panel (1.16.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
-    + Drop excessive Depends gir1.2-gtk-3.0 (gir1.2-cafe-panel).
+    + Drop excessive Depends gir1.2-ctk-3.0 (gir1.2-cafe-panel).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 13:43:17 +0100
 
@@ -451,20 +451,20 @@ cafe-panel (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + B-D: libcanberra-gtk3-dev
-    + B-D: libgtk-3-dev
+    + B-D: libcanberra-ctk3-dev
+    + B-D: libctk-3-dev
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
     + Versioned B-D: libcafe-menu-dev (>= 1.14)
     + Versioned B-D: libcafeweather-dev (>= 1.14)
     + Versioned B-D: cafe-common (>= 1.14)
     + B-D: libwnck-3-dev.
     + Drop D (cafe-panel): python.
-    + Add to D (libcafe-panel-applet-dev): libgtk-3-dev.
-    + Add to D (gir1.2-cafe-panel): gir1.2-gtk-3.0.
+    + Add to D (libcafe-panel-applet-dev): libctk-3-dev.
+    + Add to D (gir1.2-cafe-panel): gir1.2-ctk-3.0.
     + Drop D (gir1.2-cafe-panel): {python:Depends}.
   * debian/rules:
     + MateConf dropped upstream.
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
   * debian/patches:
     + Drop 2002_stretched-buttons-on-vertical-plains.patch. Applied upstream.
   * debian/copyright:
@@ -490,7 +490,7 @@ cafe-panel (1.12.2-1) unstable; urgency=medium
     + Re-introduce 2002_stretched-buttons-on-vertical-plains.patch.
       (Closes: #785272, #810215)."
   * debian/control:
-    + Drop B-Ds: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-2.0,
+    + Drop B-Ds: gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-ctk-2.0,
       gir1.2-pango-1.0. Already pulled in as dependencies of lib*-dev
       packages found in Build-Depends: field.
     + Add B-D: libatk1.0-dev instead of gir1.2-atk-1.0.
@@ -514,7 +514,7 @@ cafe-panel (1.12.1-1) unstable; urgency=medium
     + Versioned B-D: cafe-common (>= 1.12) and libcafe-desktop-dev
       (>= 1.12).
   * debian/rules:
-    + Remove obsolete --disable-scrollkeeper build option. Add --with-gtk=2.0
+    + Remove obsolete --disable-scrollkeeper build option. Add --with-ctk=2.0
       build option.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 31 Dec 2015 14:33:10 +0100

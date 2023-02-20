@@ -46,7 +46,7 @@ Files: applets/clock/system-timezone.h
        cafe-panel/libpanel-util/panel-color.h
        cafe-panel/libpanel-util/panel-error.h
        cafe-panel/libpanel-util/panel-glib.h
-       cafe-panel/libpanel-util/panel-gtk.h
+       cafe-panel/libpanel-util/panel-ctk.h
        cafe-panel/libpanel-util/panel-icon-chooser.c
        cafe-panel/libpanel-util/panel-icon-chooser.h
        cafe-panel/libpanel-util/panel-launch.c
@@ -202,7 +202,7 @@ Files: cafe-panel/wayland-backend.c
 Copyright: 2019, William Wold <wm@wmww.sh>
 License: GPL-2+
 
-Files: cafe-panel/libpanel-util/panel-gtk.c
+Files: cafe-panel/libpanel-util/panel-ctk.c
        cafe-panel/libpanel-util/panel-xdg.c
 Copyright: 2005, 2006, Vincent Untz <vuntz@gnome.org>
            2010, Novell, Inc.
