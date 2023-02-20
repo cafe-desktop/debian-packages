@@ -457,7 +457,7 @@ cafe-panel (1.14.0-1) unstable; urgency=medium
     + Versioned B-D: libcafe-menu-dev (>= 1.14)
     + Versioned B-D: libcafeweather-dev (>= 1.14)
     + Versioned B-D: cafe-common (>= 1.14)
-    + B-D: libwnck-3-dev.
+    + B-D: libvnck-3-dev.
     + Drop D (cafe-panel): python.
     + Add to D (libcafe-panel-applet-dev): libctk-3-dev.
     + Add to D (gir1.2-cafe-panel): gir1.2-ctk-3.0.
@@ -494,7 +494,7 @@ cafe-panel (1.12.2-1) unstable; urgency=medium
       gir1.2-pango-1.0. Already pulled in as dependencies of lib*-dev
       packages found in Build-Depends: field.
     + Add B-D: libatk1.0-dev instead of gir1.2-atk-1.0.
-    + Versioned B-D on libwnck-dev (>= 2.30.7-5~).
+    + Versioned B-D on libvnck-dev (>= 2.30.7-5~).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 14 Feb 2016 15:31:24 +0100
 
@@ -650,7 +650,7 @@ cafe-panel (1.8.0+dfsg1-1) unstable; urgency=low
     + Close cafe-panel ITP now. (Closes: #730230).
   * debian/control:
     + Drop B-Ds: cafe-doc-utils, cafe-doc-utils-gnome.
-    + Update B-D: libcafewnck-dev -> libwnck-dev.
+    + Update B-D: libcafevnck-dev -> libvnck-dev.
   * debian/copyright:
     + Point to git.cafe-desktop.org in Source: field.
     + Adapt to file changes in new upstream source tree.

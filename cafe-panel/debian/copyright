@@ -3,7 +3,7 @@ Upstream-Name: CAFE Panel
 Upstream-Contact: Pablo Barciela <scow@riseup.net>
 Source: https://github.com/cafe-desktop/cafe-panel
 
-Files: applets/wncklet/wncklet.c
+Files: applets/vncklet/vncklet.c
        cafe-panel/panel-applet-frame.h
        cafe-panel/panel-action-protocol.c
        cafe-panel/panel-action-protocol.h
@@ -112,8 +112,8 @@ Copyright: 2007, Novell, Inc.
 License: LGPL-2+
 
 Files: applets/clock/clock-sunpos.c
-       applets/wncklet/showdesktop.c
-       applets/wncklet/showdesktop.h
+       applets/vncklet/showdesktop.c
+       applets/vncklet/showdesktop.h
 Copyright: 2002, 2007, Red Hat, Inc.
 License: GPL-2+
 
@@ -185,8 +185,8 @@ Files: cafe-panel/panel-run-dialog.c
 Copyright: 2003, Frank Worsley <fworsley@shaw.ca>
 License: GPL-2+
 
-Files: applets/wncklet/window-menu.c
-       applets/wncklet/window-menu.h
+Files: applets/vncklet/window-menu.c
+       applets/vncklet/window-menu.h
 Copyright: 2000, Helix Code, Inc.
            2001, Free Software Foundation, Inc.
            2003, Sun Microsystems, Inc.
@@ -262,15 +262,15 @@ Files: cafe-panel/panel-ditem-editor.c
 Copyright: 2004-2006 Vincent Untz
 License: LGPL-2+
 
-Files: applets/wncklet/window-list.h
-       applets/wncklet/workspace-switcher.h
+Files: applets/vncklet/window-list.h
+       applets/vncklet/workspace-switcher.h
 Copyright: 2001, Alexander Larsson
 License: GPL-2+
 Comment:
  Assuming license as found in COPYING file.
 
-Files: applets/wncklet/window-list.c
-       applets/wncklet/workspace-switcher.c
+Files: applets/vncklet/window-list.c
+       applets/vncklet/workspace-switcher.c
 Copyright: 2001, Alexander Larsson
   2001, Red Hat, Inc.
 License: GPL-2+
@@ -401,7 +401,7 @@ Copyright: 1999-2000, Red Hat, Inc.
            2007, Novell, Inc.
 License: LGPL-2+
 
-Files: applets/wncklet/wncklet.h
+Files: applets/vncklet/vncklet.h
 Copyright: 2003, Wipro Technologies
 License: LGPL-2+
 
@@ -512,10 +512,10 @@ Files: .build.yml
        applets/notification_area/system-tray/na-marshal.*
        applets/notification_area/*.xml
        applets/notification_area/org.cafe.panel.*.in
-       applets/wncklet/Makefile.am
-       applets/wncklet/org.cafe.panel.*.in
-       applets/wncklet/*.xml
-       applets/wncklet/*.ui
+       applets/vncklet/Makefile.am
+       applets/vncklet/org.cafe.panel.*.in
+       applets/vncklet/*.xml
+       applets/vncklet/*.ui
        data/Makefile.am
        data/org.cafe.panel.*.in
        data/default.layout
