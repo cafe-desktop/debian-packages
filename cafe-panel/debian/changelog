@@ -22,7 +22,7 @@ cafe-panel (1.24.0-2) unstable; urgency=medium
   [ Martin Wimpress ]
   * debian/patches:
     + Add 0005-enable-apps-in-addto-menu.patch. Fix adding application
-      launchers to MATE Panel. (LP: #1863435).
+      launchers to CAFE Panel. (LP: #1863435).
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 20 Feb 2020 07:48:58 +0100
 
@@ -46,7 +46,7 @@ cafe-panel (1.24.0-1) unstable; urgency=medium
     + Update copyright attributions.
   * debian/control:
     + Add B-D libgtk-layer-shell-dev.
-    + Update Build-Depends: to support MATE Desktop 1.24.
+    + Update Build-Depends: to support CAFE Desktop 1.24.
     + Add B-D autoconf-archive.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 13:13:15 +0100
@@ -78,10 +78,10 @@ cafe-panel (1.22.1-1) unstable; urgency=medium
   * debian/patches:
     + Add 0005_fix_panel_resets.patch. Fix random panel crashes on reset.
   * debian/patches:
-    + Rebase 0001_RDA-support-Make-MATE-panel-aware-of-being-run-insid.patch
+    + Rebase 0001_RDA-support-Make-CAFE-panel-aware-of-being-run-insid.patch
     + Rebase 0003_configure.ac-Report-RDA-support-status-in-configurat.patch
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
 
   [ Mike Gabriel ]
   * debian/control:
@@ -112,7 +112,7 @@ cafe-panel (1.20.4-1) unstable; urgency=medium
   * New upstream release.
     - Transfer focus on alt-F1 correctly. (Closes: #909176).
   * debian/patches:
-    + Add 0001_RDA-support-Make-MATE-panel-aware-of-being-run-insid.patch,
+    + Add 0001_RDA-support-Make-CAFE-panel-aware-of-being-run-insid.patch,
           0002_cafe-panel-panel-menu-items.c-Only-offer-Shutdown-bu.patch,
           0003_configure.ac-Report-RDA-support-status-in-configurat.patch.
       Introduce RDA (remote desktop awareness).
@@ -241,7 +241,7 @@ cafe-panel (1.20.0-1) unstable; urgency=medium
     + Drop 0001_down_scale_out_process_applet.patch. Applied upstream.
 
   [ Mike Gabriel ]
-  * Starting with MATE 1.20, cafe-panel uses ~/.config/gtk-3.0/bookmarks.
+  * Starting with CAFE 1.20, cafe-panel uses ~/.config/gtk-3.0/bookmarks.
     (Closes: #760311).
   * debian/libcafe-panel-applet-4-1.symbols:
     + Update symbols file.
@@ -285,7 +285,7 @@ cafe-panel (1.18.7-2) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Temporarily have pkg-cafe-team ML under Uploaders:.
 
@@ -345,8 +345,8 @@ cafe-panel (1.18.4-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control:
-    + Dependencies updated for MATE 1.17.
-    + Dependencies updated for MATE 1.18.
+    + Dependencies updated for CAFE 1.17.
+    + Dependencies updated for CAFE 1.18.
     + Drop obsolete B-D for libcanberra-gtk3-dev.
   * debian/copyright:
     + Update copyright attributions.
@@ -403,7 +403,7 @@ cafe-panel (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -413,7 +413,7 @@ cafe-panel (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release. (Closes: #836301, #836994).
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
@@ -592,7 +592,7 @@ cafe-panel (1.8.1+dfsg1-4) unstable; urgency=medium
 cafe-panel (1.8.1+dfsg1-3) unstable; urgency=medium
 
   * debian/rules:
-    + Install MATE panel applet executables to non-multi-arch libexecdir.
+    + Install CAFE panel applet executables to non-multi-arch libexecdir.
       (Closes: #769422).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 12 Dec 2014 11:33:42 +0100

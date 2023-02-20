@@ -51,8 +51,8 @@ Depends: libcafe-panel-applet-4-1 (= ${binary:Version}),
          ${shlibs:Depends},
 Breaks: cafe-panel-common (<< 1.1.1-4),
 Replaces: cafe-panel-common (<< 1.1.1-4),
-Description: launcher and docking facility for MATE
- The MATE Panel is an essential part of the MATE Desktop, providing
+Description: launcher and docking facility for CAFE
+ The CAFE Panel is an essential part of the CAFE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
  They are used to launch applications and embed a number of other
  functions, such as quick launch icons, the clock, the notification area,
@@ -64,8 +64,8 @@ Architecture: all
 Depends: ${misc:Depends},
 Breaks: cafe-panel (<= 1.9.0),
 Replaces: cafe-panel (<= 1.9.0),
-Description: launcher and docking facility for MATE (common files)
- The MATE Panel is an essential part of the MATE Desktop, providing
+Description: launcher and docking facility for CAFE (common files)
+ The CAFE Panel is an essential part of the CAFE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
  They are used to launch applications and embed a number of other
  functions, such as quick launch icons, the clock, the notification area,
@@ -87,15 +87,15 @@ Replaces: libcafe-panel-applet4-1,
           libcafepanelapplet,
 Provides: libcafe-panel-applet4-1,
           libcafepanelapplet,
-Description: library for MATE Panel applets
- The MATE Panel is an essential part of the MATE Desktop, providing
+Description: library for CAFE Panel applets
+ The CAFE Panel is an essential part of the CAFE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
  They are used to launch applications and embed a number of other
  functions, such as quick launch icons, the clock, the notification area,
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
  .
- This package contains the MATE Panel applet library.
+ This package contains the CAFE Panel applet library.
 
 Package: libcafe-panel-applet-dev
 Section: libdevel
@@ -111,15 +111,15 @@ Conflicts: libcafepanelapplet-dev,
 Breaks: gir1.2-cafe-panel (<< 1.18.7-3~),
 Replaces: libcafepanelapplet-dev,
           gir1.2-cafe-panel (<< 1.18.7-3~),
-Description: library for MATE Panel applets (development files)
- The MATE Panel is an essential part of the MATE Desktop, providing
+Description: library for CAFE Panel applets (development files)
+ The CAFE Panel is an essential part of the CAFE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
  They are used to launch applications and embed a number of other
  functions, such as quick launch icons, the clock, the notification area,
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
  .
- This package contains the development files of the MATE panel applet
+ This package contains the development files of the CAFE panel applet
  library.
 
 Package: libcafe-panel-applet-doc
@@ -129,15 +129,15 @@ Depends: ${misc:Depends},
 Provides: libcafepanelapplet-doc,
 Conflicts: libcafepanelapplet-doc,
 Replaces: libcafepanelapplet-doc,
-Description: library for MATE Panel applets (documentation files)
- The MATE Panel is an essential part of the MATE Desktop, providing
+Description: library for CAFE Panel applets (documentation files)
+ The CAFE Panel is an essential part of the CAFE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
  They are used to launch applications and embed a number of other
  functions, such as quick launch icons, the clock, the notification area,
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
  .
- This package contains the documentation files of the MATE panel applet
+ This package contains the documentation files of the CAFE panel applet
  library.
 
 Package: gir1.2-cafepanelapplet-4.0
@@ -149,15 +149,15 @@ Depends: ${gir:Depends},
          ${shlibs:Depends},
 Breaks: gir1.2-cafe-panel (<< 1.18.7-3~),
 Replaces: gir1.2-cafe-panel (<< 1.18.7-3~),
-Description: GObject introspection data for MATE panel
- The MATE Panel is an essential part of the MATE Desktop, providing
+Description: GObject introspection data for CAFE panel
+ The CAFE Panel is an essential part of the CAFE Desktop, providing
  toolbar-like “panels” which can be attached to the sides of your desktop.
  They are used to launch applications and embed a number of other
  functions, such as quick launch icons, the clock, the notification area,
  volume controls and the battery charge indicator, and utilities ranging
  from weather forecast to system monitoring.
  .
- This package contains introspection data for MATE panel.
+ This package contains introspection data for CAFE panel.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.

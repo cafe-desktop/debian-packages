@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Panel
+Upstream-Name: CAFE Panel
 Upstream-Contact: Pablo Barciela <scow@riseup.net>
 Source: https://github.com/cafe-desktop/cafe-panel
 
