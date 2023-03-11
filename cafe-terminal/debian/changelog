@@ -1,5 +1,11 @@
+cafe-terminal (1.25.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 11 Mar 2023 17:48:46 +0100
+
 cafe-terminal (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Tue, 10 Aug 2021 02:40:24 +0200
+ -- Pablo Barciela <scow@riseup.net>  Tue, 10 Aug 2021 02:40:24 +0200
