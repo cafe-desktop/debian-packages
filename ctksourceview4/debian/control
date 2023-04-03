@@ -32,7 +32,7 @@ Build-Depends-Indep: libglib2.0-doc <!nodoc>,
 Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/gnome-team/ctksourceview4
 Vcs-Git: https://salsa.debian.org/gnome-team/ctksourceview4.git
-Homepage: https://wiki.gnome.org/Projects/GtkSourceView
+Homepage: https://wiki.gnome.org/Projects/CtkSourceView
 
 Package: libctksourceview-4-0
 Architecture: any
@@ -42,8 +42,8 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libctksourceview-4-common (>= ${source:Version})
 Description: shared libraries for the CTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
- GtkTextView. It improves GtkTextView by implementing syntax highlighting and
+ CtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
+ CtkTextView. It improves CtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
  This package contains the shared libraries required by applications to use
@@ -54,12 +54,12 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Description: common files for the CTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
- GtkTextView. It improves GtkTextView by implementing syntax highlighting and
+ CtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
+ CtkTextView. It improves CtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
  This package contains the language specifications files for Ada, C, C++, C#,
- CSS, ".desktop", ".diff" (patch), Fortran 95, GtkRC, Haskell, HTML, IDL,
+ CSS, ".desktop", ".diff" (patch), Fortran 95, CtkRC, Haskell, HTML, IDL,
  ".ini", Java, JavaScript, LaTeX, Lua, MSIL, Nemerle, Pascal, Perl, PHP, ".po"
  (gettext), Python, R, Ruby, sh, SQL, Tcl, Texinfo, VB.NET, Verilog, VHDL and
  XML.
@@ -77,12 +77,12 @@ Breaks: libctksourceview-3.0-dev (<< 3.24.7-2~)
 Replaces: libctksourceview-3.0-dev (<< 3.24.7-2~)
 Suggests: libctksourceview-4-doc
 Description: development files for the CTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
- GtkTextView. It improves GtkTextView by implementing syntax highlighting and
+ CtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
+ CtkTextView. It improves CtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
  This package contains the header files required if you wish to develop
- software that uses the GtkSourceView widget.
+ software that uses the CtkSourceView widget.
 
 Package: libctksourceview-4-doc
 Section: doc
@@ -95,11 +95,11 @@ Suggests: devhelp,
           libgdk-pixbuf2.0-doc,
           libpango1.0-doc
 Description: documentation for the CTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
- GtkTextView. It improves GtkTextView by implementing syntax highlighting and
+ CtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
+ CtkTextView. It improves CtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
- This package contains the GtkSourceView reference manual.
+ This package contains the CtkSourceView reference manual.
 
 Package: gir1.2-ctksource-4
 Section: introspection
@@ -108,8 +108,8 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${gir:Depends}
 Description: gir files for the CTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
- GtkTextView. It improves GtkTextView by implementing syntax highlighting and
+ CtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
+ CtkTextView. It improves CtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
  This package contains GObject introspection information.
@@ -122,8 +122,8 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          libctksourceview-4-0 (= ${binary:Version}),
 Description: installed tests for the CTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
- GtkTextView. It improves GtkTextView by implementing syntax highlighting and
+ CtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
+ CtkTextView. It improves CtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
  This package includes tests to be used on the installed system.

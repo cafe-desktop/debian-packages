@@ -143,7 +143,7 @@ ctksourceview4 (4.3.1-1) experimental; urgency=medium
     - build without autoreconf, drop dh_autoreconf and dh_install/ overrides,
       those are not needed anymore when building without autools
     - don't build with -Wl,-Bsymbolic-functions otherwise tests fail on
-      'cannot register existing type 'GtkSourceStyleScheme'' errors
+      'cannot register existing type 'CtkSourceStyleScheme'' errors
     - updated build flag to the meson syntax
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 13:43:00 +0200
@@ -948,7 +948,7 @@ ctksourceview2 (1.90.2-0ubuntu1) gutsy; urgency=low
 ctksourceview (1.90.1-0ubuntu1) gutsy; urgency=low
 
   * New upstream release (1.90.1):
-    * GtkSourceStyle is now a gobject
+    * CtkSourceStyle is now a gobject
     * Be more careful about Language and LanguageManager lifecycles: add
       ctk_source_[language|style_scheme]_manager_get_default to obtain
       managers object owned by ctksourceview
@@ -958,7 +958,7 @@ ctksourceview (1.90.1-0ubuntu1) gutsy; urgency=low
     * Misc lang file updates
     * Misc bugfixes
   * New upstream release (1.90.0):
-    - This marks the road to GtkSourceView 2.0, and breaks the API. It is still
+    - This marks the road to CtkSourceView 2.0, and breaks the API. It is still
       considererd API-unstable.
     * API update/break
     * New highlighting and theming engines (Yevgen Muntyan, Marco Barisione)
@@ -1183,7 +1183,7 @@ ctksourceview (1.1.91-1) experimental; urgency=low
 
   * New upstream developmental release for GNOME 2.9.x
     - Removed: [debian/patches/01__R-lang.patch] (not a typo)
-  * Add Conflicts: with libctksourceview-cil (<= 0.5-2) due to GtkSourceView
+  * Add Conflicts: with libctksourceview-cil (<= 0.5-2) due to CtkSourceView
     providing its own nemerle.lang file.
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Wed, 26 Jan 2005 09:10:31 +1100
@@ -1208,7 +1208,7 @@ ctksourceview (1.1.1-1) unstable; urgency=low
 
 ctksourceview (1.0.1-5) unstable; urgency=low
 
-  * Create symlink for GtkSourceView documentation under devhelp's default
+  * Create symlink for CtkSourceView documentation under devhelp's default
     search path.
     (closes: #273495)
   * New language specification file for TCL.
