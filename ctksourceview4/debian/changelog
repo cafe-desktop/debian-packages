@@ -252,7 +252,7 @@ ctksourceview3 (3.21.6-1) unstable; urgency=medium
 
   * New upstream release.
   * Use dh_install --list-missing to show uninstalled files.
-  * Generate the ctk-doc documentation during build. Add necessary -doc
+  * Generate the gtk-doc documentation during build. Add necessary -doc
     packages to Build-Depends-Indep for proper cross-references. Also add
     those to Suggests of libctksourceview-3.0-doc.
 
@@ -302,7 +302,7 @@ ctksourceview3 (3.20.1-1) experimental; urgency=medium
   * New upstream release.
   * Update (build-)dependencies according to configure.ac changes:
     - Bump libctk-3-dev to >= 3.19.6
-    - Bump ctk-doc-tools to >= 1.25
+    - Bump gtk-doc-tools to >= 1.25
     - Bump libglib2.0-dev to >= 2.47.0
   * Update debian/libctksourceview-3.0-1.symbols with several additions.
   * Bump Standards-Version to 3.9.7
@@ -325,7 +325,7 @@ ctksourceview3 (3.18.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update build-dependencies according to configure.ac changes:
-    - bump ctk-doc-tools to >= 1.24
+    - bump gtk-doc-tools to >= 1.24
   * Update debian/libctksourceview-3.0-1.symbols with many additions.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 22 Sep 2015 13:17:14 +0200
@@ -1029,7 +1029,7 @@ ctksourceview (1.7.2-1) experimental; urgency=low
     - Bump shlibs to >= 1.7.2.
     - Stop shipping boo.lang, integrated upstream.
   * Sync with overrides and set libctksourceview-common's Section to misc.
-  * Install ctk-doc documentation in the standard upstream directory.
+  * Install gtk-doc documentation in the standard upstream directory.
     - Drop --with-html-dir from configure args.
     - Drop now useless libctksourceview-doc.dirs.
     - Update libctksourceview-doc.install, libctksourceview-doc.doc-base, and
