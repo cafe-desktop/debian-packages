@@ -2,7 +2,7 @@ Document: ctksourceview-4.0
 Title: GtkSourceView Reference Manual
 Author: The GtkSourceView team
 Abstract: This manual describes the GtkSourceView text widget. It extends the
- standard GTK+ 3.x text widget GtkTextView by implementing syntax highlighting
+ standard CTK+ 3.x text widget GtkTextView by implementing syntax highlighting
  and other features typical of a source editor.
 Section: Programming
 

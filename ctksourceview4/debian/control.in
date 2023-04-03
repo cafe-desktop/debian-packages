@@ -37,8 +37,8 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libctksourceview-4-common (>= ${source:Version})
-Description: shared libraries for the GTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard GTK+ 3.x text widget
+Description: shared libraries for the CTK+ syntax highlighting widget
+ GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
  GtkTextView. It improves GtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
@@ -49,8 +49,8 @@ Package: libctksourceview-4-common
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Description: common files for the GTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard GTK+ 3.x text widget
+Description: common files for the CTK+ syntax highlighting widget
+ GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
  GtkTextView. It improves GtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
@@ -72,8 +72,8 @@ Depends: ${misc:Depends},
 Breaks: libctksourceview-3.0-dev (<< 3.24.7-2~)
 Replaces: libctksourceview-3.0-dev (<< 3.24.7-2~)
 Suggests: libctksourceview-4-doc
-Description: development files for the GTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard GTK+ 3.x text widget
+Description: development files for the CTK+ syntax highlighting widget
+ GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
  GtkTextView. It improves GtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
@@ -90,8 +90,8 @@ Suggests: devhelp,
           libctk-3-doc,
           libgdk-pixbuf2.0-doc,
           libpango1.0-doc
-Description: documentation for the GTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard GTK+ 3.x text widget
+Description: documentation for the CTK+ syntax highlighting widget
+ GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
  GtkTextView. It improves GtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
@@ -103,8 +103,8 @@ Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends},
          ${gir:Depends}
-Description: gir files for the GTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard GTK+ 3.x text widget
+Description: gir files for the CTK+ syntax highlighting widget
+ GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
  GtkTextView. It improves GtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
@@ -117,8 +117,8 @@ Multi-Arch: foreign
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          libctksourceview-4-0 (= ${binary:Version}),
-Description: installed tests for the GTK+ syntax highlighting widget
- GtkSourceView is a text widget that extends the standard GTK+ 3.x text widget
+Description: installed tests for the CTK+ syntax highlighting widget
+ GtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
  GtkTextView. It improves GtkTextView by implementing syntax highlighting and
  other features typical of a source editor.
  .
