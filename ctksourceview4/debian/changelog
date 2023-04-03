@@ -1,18 +1,18 @@
-gtksourceview4 (4.8.4-4) unstable; urgency=medium
+ctksourceview4 (4.8.4-4) unstable; urgency=medium
 
   [ Debian Janitor ]
   * Add debian/upstream/metadata
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 12 Jan 2023 18:36:44 -0500
 
-gtksourceview4 (4.8.4-3) unstable; urgency=medium
+ctksourceview4 (4.8.4-3) unstable; urgency=medium
 
   * debian/patches/gitlab_installed_tests.patch:
     - the logic was slightly wrong there so fix it now
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 12 Jan 2023 09:11:31 +0100
 
-gtksourceview4 (4.8.4-2) unstable; urgency=medium
+ctksourceview4 (4.8.4-2) unstable; urgency=medium
 
   * Try fixing autopkgtests
   * debian/tests/control, debian/tests/installed-tests:
@@ -22,24 +22,24 @@ gtksourceview4 (4.8.4-2) unstable; urgency=medium
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 11 Jan 2023 17:10:27 +0100
 
-gtksourceview4 (4.8.4-1) unstable; urgency=medium
+ctksourceview4 (4.8.4-1) unstable; urgency=medium
 
   * New upstream release
-  * Create a libgtksourceview-4-tests binary for installed tests and use
+  * Create a libctksourceview-4-tests binary for installed tests and use
     those for autopkgtests.
   * debian/patches/git-newer-libglib.patch:
     - remove patch included in the new version
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 04 Nov 2022 20:29:10 +0100
 
-gtksourceview4 (4.8.3-1) unstable; urgency=medium
+ctksourceview4 (4.8.3-1) unstable; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.6.0
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 21 Mar 2022 13:24:00 -0400
 
-gtksourceview4 (4.8.2-1) unstable; urgency=medium
+ctksourceview4 (4.8.2-1) unstable; urgency=medium
 
   * New upstream release
   * Drop all patches: applied in new release
@@ -47,7 +47,7 @@ gtksourceview4 (4.8.2-1) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Thu, 09 Sep 2021 19:34:20 -0400
 
-gtksourceview4 (4.8.1-4) unstable; urgency=medium
+ctksourceview4 (4.8.1-4) unstable; urgency=medium
 
   * Team upload
   * d/p/build-ensure-access-to-resources-in-corelib-build.patch:
@@ -56,13 +56,13 @@ gtksourceview4 (4.8.1-4) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Mon, 30 Aug 2021 19:03:59 +0100
 
-gtksourceview4 (4.8.1-3) unstable; urgency=medium
+ctksourceview4 (4.8.1-3) unstable; urgency=medium
 
   * Cherry-pick build-disable-Werror-for-incompatible-pointer-types.patch
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 22 Aug 2021 21:33:54 -0400
 
-gtksourceview4 (4.8.1-2) unstable; urgency=medium
+ctksourceview4 (4.8.1-2) unstable; urgency=medium
 
   * Bump debhelper-compat to 13
   * Build-Depend on dh-sequence-gir and dh-sequence-gnome
@@ -72,69 +72,69 @@ gtksourceview4 (4.8.1-2) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 21 Aug 2021 07:55:33 -0400
 
-gtksourceview4 (4.8.1-1) experimental; urgency=medium
+ctksourceview4 (4.8.1-1) experimental; urgency=medium
 
   * New upstream release
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 15 Mar 2021 10:13:56 +0100
 
-gtksourceview4 (4.8.0-1) unstable; urgency=medium
+ctksourceview4 (4.8.0-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 16 Sep 2020 13:25:06 +0200
 
-gtksourceview4 (4.7.90-1) experimental; urgency=medium
+ctksourceview4 (4.7.90-1) experimental; urgency=medium
 
   * New upstream release
   * debian/control.in:
-    - updated gtk requirement
+    - updated ctk requirement
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 10 Aug 2020 16:30:21 +0200
 
-gtksourceview4 (4.6.1-1) unstable; urgency=medium
+ctksourceview4 (4.6.1-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 27 Jul 2020 16:37:30 +0200
 
-gtksourceview4 (4.6.0-1) unstable; urgency=medium
+ctksourceview4 (4.6.0-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Sebastien Bacher <seb128@debian.org>  Tue, 10 Mar 2020 13:30:31 +0100
 
-gtksourceview4 (4.5.91-1) experimental; urgency=medium
+ctksourceview4 (4.5.91-1) experimental; urgency=medium
 
   * New upstream release
-  * debian/libgtksourceview-4-0.docs:
+  * debian/libctksourceview-4-0.docs:
     - updated for the new README naming
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 19 Feb 2020 10:37:45 +0100
 
-gtksourceview4 (4.4.0-1) unstable; urgency=medium
+ctksourceview4 (4.4.0-1) unstable; urgency=medium
 
   * New upstream release, remove patch included in the new version
   * debian/control.in:
     - build-depends on libfribidi-dev
-    - updated glib and gtk requirements
-  * debian/libgtksourceview-4-0.symbols:;
+    - updated glib and ctk requirements
+  * debian/libctksourceview-4-0.symbols:;
     - new version update
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 10 Sep 2019 15:23:53 +0200
 
-gtksourceview4 (4.3.1-2) experimental; urgency=medium
+ctksourceview4 (4.3.1-2) experimental; urgency=medium
 
   * Correctly commit the .install change
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 16:48:17 +0200
 
-gtksourceview4 (4.3.1-1) experimental; urgency=medium
+ctksourceview4 (4.3.1-1) experimental; urgency=medium
 
   * New upstream release
   * debian/control.in:
     - Build-Depends on meson
-  * debian/libgtksourceview-4-dev:
+  * debian/libctksourceview-4-dev:
     - don't list the .a to install, meson doesn't create one
   * debian/patches/git_dtd_validation.patch:
     - backport an upstream patch to skip dtd validation, it's currently
@@ -148,13 +148,13 @@ gtksourceview4 (4.3.1-1) experimental; urgency=medium
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 13:43:00 +0200
 
-gtksourceview4 (4.2.0-1) experimental; urgency=medium
+ctksourceview4 (4.2.0-1) experimental; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 16 Mar 2019 17:40:25 -0400
 
-gtksourceview4 (4.0.3-2) unstable; urgency=medium
+ctksourceview4 (4.0.3-2) unstable; urgency=medium
 
   * Build-Depend on debhelper-compat 12 and drop debian/compat
   * Add -Wl,-O1 to our LDFLAGS
@@ -162,7 +162,7 @@ gtksourceview4 (4.0.3-2) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Tue, 25 Dec 2018 21:00:23 -0500
 
-gtksourceview4 (4.0.3-1) unstable; urgency=medium
+ctksourceview4 (4.0.3-1) unstable; urgency=medium
 
   * New upstream release
   * Run all the build tests. Use xvfb.
@@ -171,61 +171,61 @@ gtksourceview4 (4.0.3-1) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 08 Sep 2018 19:33:25 -0400
 
-gtksourceview4 (4.0.1-1) unstable; urgency=medium
+ctksourceview4 (4.0.1-1) unstable; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.1.4
-  * Add Breaks/Replaces against libgtksourceview-3.0-dev since
-    libgtksourceview-4-dev now ships the Glade catalog (Closes: #879909)
+  * Add Breaks/Replaces against libctksourceview-3.0-dev since
+    libctksourceview-4-dev now ships the Glade catalog (Closes: #879909)
   * Release to unstable
 
  -- Jeremy Bicha <jbicha@debian.org>  Mon, 14 May 2018 17:22:19 -0400
 
-gtksourceview4 (4.0.0-1) experimental; urgency=medium
+ctksourceview4 (4.0.0-1) experimental; urgency=medium
 
   * New upstream release (Closes: #876066)
   * Update Vcs fields for migration to https://salsa.debian.org/
 
  -- Tim Lunn <tim@feathertop.org>  Sun, 11 Mar 2018 11:53:30 +1100
 
-gtksourceview4 (3.99.7-1) experimental; urgency=medium
+ctksourceview4 (3.99.7-1) experimental; urgency=medium
 
   * New upstream release
-  * debian/libgtksourceview-4-0.symbols: Update
+  * debian/libctksourceview-4-0.symbols: Update
   * Update Vcs fields for conversion to git
   * Add debian/gbp.conf
   * Bump Standards-Version to 4.1.2
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 13 Dec 2017 10:28:25 -0500
 
-gtksourceview4 (3.99.6-1) experimental; urgency=medium
+ctksourceview4 (3.99.6-1) experimental; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 15 Oct 2017 08:08:35 -0400
 
-gtksourceview4 (3.99.5-1) experimental; urgency=medium
+ctksourceview4 (3.99.5-1) experimental; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.1.1
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 13 Oct 2017 22:56:36 -0400
 
-gtksourceview4 (3.99.4-1) experimental; urgency=medium
+ctksourceview4 (3.99.4-1) experimental; urgency=medium
 
   * New upstream release (Closes: #873970)
-    - gtksourceview4 is for gtk3, gtksourceview5 is planned for gtk4
+    - ctksourceview4 is for ctk3, ctksourceview5 is planned for ctk4
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 02 Sep 2017 15:54:57 -0400
 
-gtksourceview3 (3.24.3-1) unstable; urgency=medium
+ctksourceview3 (3.24.3-1) unstable; urgency=medium
 
   * New upstream release
-  * debian/libgtksourceview-3.0-1.symbols: Add new symbols
+  * debian/libctksourceview-3.0-1.symbols: Add new symbols
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 28 Aug 2017 21:59:46 -0400
 
-gtksourceview3 (3.22.2-1) unstable; urgency=medium
+ctksourceview3 (3.22.2-1) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * Update debian/watch to only look for stable 3.* series
@@ -235,106 +235,106 @@ gtksourceview3 (3.22.2-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Mon, 09 Jan 2017 01:17:18 +0100
 
-gtksourceview3 (3.22.1-1) unstable; urgency=medium
+ctksourceview3 (3.22.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 06 Nov 2016 20:25:32 +0100
 
-gtksourceview3 (3.22.0-1) unstable; urgency=medium
+ctksourceview3 (3.22.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Bump debhelper compat level to 10.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 18 Sep 2016 19:13:26 +0200
 
-gtksourceview3 (3.21.6-1) unstable; urgency=medium
+ctksourceview3 (3.21.6-1) unstable; urgency=medium
 
   * New upstream release.
   * Use dh_install --list-missing to show uninstalled files.
-  * Generate the gtk-doc documentation during build. Add necessary -doc
+  * Generate the ctk-doc documentation during build. Add necessary -doc
     packages to Build-Depends-Indep for proper cross-references. Also add
-    those to Suggests of libgtksourceview-3.0-doc.
+    those to Suggests of libctksourceview-3.0-doc.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 10 Sep 2016 14:11:35 +0200
 
-gtksourceview3 (3.21.5-2) unstable; urgency=medium
+ctksourceview3 (3.21.5-2) unstable; urgency=medium
 
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 01 Sep 2016 13:18:47 +0200
 
-gtksourceview3 (3.21.5-1) experimental; urgency=medium
+ctksourceview3 (3.21.5-1) experimental; urgency=medium
 
   * New upstream development release.
-  * Update debian/libgtksourceview-3.0-1.symbols with many additions.
+  * Update debian/libctksourceview-3.0-1.symbols with many additions.
 
  -- Andreas Henriksson <andreas@fatal.se>  Sun, 21 Aug 2016 22:47:01 +0200
 
-gtksourceview3 (3.20.4-1) unstable; urgency=medium
+ctksourceview3 (3.20.4-1) unstable; urgency=medium
 
   * New upstream release.
   * Convert from cdbs to dh.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 23 Jun 2016 01:42:05 +0200
 
-gtksourceview3 (3.20.3-1) unstable; urgency=medium
+ctksourceview3 (3.20.3-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Mon, 09 May 2016 13:07:30 +0200
 
-gtksourceview3 (3.20.2-1) unstable; urgency=medium
+ctksourceview3 (3.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * Bump Standards-Version to 3.9.8.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 27 Apr 2016 01:49:56 +0200
 
-gtksourceview3 (3.20.1-2) unstable; urgency=medium
+ctksourceview3 (3.20.1-2) unstable; urgency=medium
 
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 16 Apr 2016 23:31:19 +0200
 
-gtksourceview3 (3.20.1-1) experimental; urgency=medium
+ctksourceview3 (3.20.1-1) experimental; urgency=medium
 
   * New upstream release.
   * Update (build-)dependencies according to configure.ac changes:
-    - Bump libgtk-3-dev to >= 3.19.6
-    - Bump gtk-doc-tools to >= 1.25
+    - Bump libctk-3-dev to >= 3.19.6
+    - Bump ctk-doc-tools to >= 1.25
     - Bump libglib2.0-dev to >= 2.47.0
-  * Update debian/libgtksourceview-3.0-1.symbols with several additions.
+  * Update debian/libctksourceview-3.0-1.symbols with several additions.
   * Bump Standards-Version to 3.9.7
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 01 Apr 2016 16:10:09 +0200
 
-gtksourceview3 (3.18.2-1) unstable; urgency=medium
+ctksourceview3 (3.18.2-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 14 Jan 2016 22:36:59 +0100
 
-gtksourceview3 (3.18.1-1) unstable; urgency=medium
+ctksourceview3 (3.18.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 11 Oct 2015 15:47:49 +0200
 
-gtksourceview3 (3.18.0-1) unstable; urgency=medium
+ctksourceview3 (3.18.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update build-dependencies according to configure.ac changes:
-    - bump gtk-doc-tools to >= 1.24
-  * Update debian/libgtksourceview-3.0-1.symbols with many additions.
+    - bump ctk-doc-tools to >= 1.24
+  * Update debian/libctksourceview-3.0-1.symbols with many additions.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 22 Sep 2015 13:17:14 +0200
 
-gtksourceview3 (3.16.1-1) unstable; urgency=medium
+ctksourceview3 (3.16.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Update Build-Depends as per configure.ac:
-    - Bump libgtk-3-dev to (>= 3.16).
+    - Bump libctk-3-dev to (>= 3.16).
     - Bump libglib2.0-dev to (>= 2.44).
   * Point Vcs-* URLs to the unstable branch.
   * Drop obsolete Breaks/Replaces from pre-wheezy.
@@ -342,14 +342,14 @@ gtksourceview3 (3.16.1-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Sun, 14 Jun 2015 19:48:35 +0200
 
-gtksourceview3 (3.14.4-2) unstable; urgency=medium
+ctksourceview3 (3.14.4-2) unstable; urgency=medium
 
   * Upload to unstable.
   * Bump debhelper compatibility level to 9.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 20 May 2015 02:39:09 +0200
 
-gtksourceview3 (3.14.4-1) experimental; urgency=medium
+ctksourceview3 (3.14.4-1) experimental; urgency=medium
 
   * New upstream release 3.14.4
     + Fix a crash when destroying the widget during a search
@@ -358,7 +358,7 @@ gtksourceview3 (3.14.4-1) experimental; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Wed, 08 Apr 2015 15:50:15 +0100
 
-gtksourceview3 (3.14.3-1) experimental; urgency=medium
+ctksourceview3 (3.14.3-1) experimental; urgency=medium
 
   [ Jackson Doak ]
   * New upstream release. LP: #1423016
@@ -371,7 +371,7 @@ gtksourceview3 (3.14.3-1) experimental; urgency=medium
 
  -- Jackson Doak <noskcaj@ubuntu.com>  Thu, 05 Mar 2015 12:47:03 +0000
 
-gtksourceview3 (3.14.1-1) unstable; urgency=medium
+ctksourceview3 (3.14.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Update Homepage URL.
@@ -381,58 +381,58 @@ gtksourceview3 (3.14.1-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Mon, 13 Oct 2014 20:29:35 +0200
 
-gtksourceview3 (3.14.0-1) unstable; urgency=medium
+ctksourceview3 (3.14.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Upload to unstable.
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 22 Sep 2014 20:55:55 +0200
 
-gtksourceview3 (3.13.90-1) experimental; urgency=medium
+ctksourceview3 (3.13.90-1) experimental; urgency=medium
 
   * New upstream development release.
   * Update build-dependencies according to configure.ac:
-    + Bump libgtk-3-dev to (>= 3.13.7)
+    + Bump libctk-3-dev to (>= 3.13.7)
     + Add valac for new vala bindings
-  * Update debian/libgtksourceview-3.0-1.symbols with new additions.
-  * debian/libgtksourceview-3.0-dev.install: ship vala deps and vapi files
+  * Update debian/libctksourceview-3.0-1.symbols with new additions.
+  * debian/libctksourceview-3.0-dev.install: ship vala deps and vapi files
 
  -- Andreas Henriksson <andreas@fatal.se>  Sat, 06 Sep 2014 11:24:17 -0700
 
-gtksourceview3 (3.12.3-1) unstable; urgency=medium
+ctksourceview3 (3.12.3-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 28 Aug 2014 16:27:35 -0700
 
-gtksourceview3 (3.12.2-1) unstable; urgency=medium
+ctksourceview3 (3.12.2-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 16 May 2014 12:48:15 +0200
 
-gtksourceview3 (3.12.1-1) unstable; urgency=medium
+ctksourceview3 (3.12.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Upload to unstable.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 26 Apr 2014 09:58:53 +0200
 
-gtksourceview3 (3.12.0-1) experimental; urgency=medium
+ctksourceview3 (3.12.0-1) experimental; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 24 Mar 2014 18:57:59 +0100
 
-gtksourceview3 (3.11.90-1) experimental; urgency=medium
+ctksourceview3 (3.11.90-1) experimental; urgency=medium
 
   * New upstream release.
-  * Bump gtk+ build-dependency to 3.11.0 according to configure.ac
-  * Update debian/libgtksourceview-3.0-1.symbols with 2 added symbols.
+  * Bump ctk+ build-dependency to 3.11.0 according to configure.ac
+  * Update debian/libctksourceview-3.0-1.symbols with 2 added symbols.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 18 Feb 2014 22:47:48 +0100
 
-gtksourceview3 (3.10.2-1) unstable; urgency=medium
+ctksourceview3 (3.10.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control.in:
@@ -441,31 +441,31 @@ gtksourceview3 (3.10.2-1) unstable; urgency=medium
 
  -- Laurent Bigonville <bigon@debian.org>  Sun, 16 Feb 2014 17:37:56 +0100
 
-gtksourceview3 (3.10.1-1) experimental; urgency=low
+ctksourceview3 (3.10.1-1) experimental; urgency=low
 
   * New upstream release.
   * Bump build-dependencies according to configure.ac:
-    - libgtk-3-dev to >= 3.9.9
+    - libctk-3-dev to >= 3.9.9
     - libglib2.0-dev to >= 2.37.3
-  * Update debian/libgtksourceview-3.0-1.symbols with added symbols.
+  * Update debian/libctksourceview-3.0-1.symbols with added symbols.
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 17 Oct 2013 17:08:13 +0200
 
-gtksourceview3 (3.8.2-1) unstable; urgency=medium
+ctksourceview3 (3.8.2-1) unstable; urgency=medium
 
   * New upstream release.
   * Bump Standards-Version to 3.9.4
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 12 Aug 2013 13:04:45 +0200
 
-gtksourceview3 (3.8.0-1) experimental; urgency=low
+ctksourceview3 (3.8.0-1) experimental; urgency=low
 
   [ Andreas Henriksson ]
   * New upstream release (v3.7.92).
   * Bump required versions of build-dependencies according to configure.ac:
-    - libgtk-3-dev bumped from (>= 3.3.8) to (>= 3.7.12)
+    - libctk-3-dev bumped from (>= 3.3.8) to (>= 3.7.12)
     - libglib2.0-dev bumped from (>= 2.28.0) to (>= 2.34.0)
-  * Update libgtksourceview-3.0-0.symbols with many symbols dropped!
+  * Update libctksourceview-3.0-0.symbols with many symbols dropped!
     - no matches found by codesearch.debian.net and apparently these
       where meant to be private and never was available in headers.
   * New upstream release (v3.8.0)
@@ -474,27 +474,27 @@ gtksourceview3 (3.8.0-1) experimental; urgency=low
   [ Emilio Pozuelo Monfort ]
   * debian/control.in,
     debian/rules:
-    + Loosen libgtksourceview-3.0-1 dependency on the -common package
+    + Loosen libctksourceview-3.0-1 dependency on the -common package
       to allow for different versions of the library to be installed
       simultaneously.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 29 Mar 2013 21:07:50 +0100
 
-gtksourceview3 (3.4.2-1) unstable; urgency=low
+ctksourceview3 (3.4.2-1) unstable; urgency=low
 
   * New upstream release.
   * Update Vcs-* URLs.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 15 May 2012 20:13:54 +0200
 
-gtksourceview3 (3.4.1-2) unstable; urgency=low
+ctksourceview3 (3.4.1-2) unstable; urgency=low
 
-  * Bump minimum required version of libgtk-3-dev to 3.3.8 for
-    gtk_window_set_attached_to().
+  * Bump minimum required version of libctk-3-dev to 3.3.8 for
+    ctk_window_set_attached_to().
 
  -- Michael Biebl <biebl@debian.org>  Thu, 10 May 2012 13:39:47 +0200
 
-gtksourceview3 (3.4.1-1) unstable; urgency=low
+ctksourceview3 (3.4.1-1) unstable; urgency=low
 
   * New upstream bug fix release:
     - Fix problems with the completion popup when headers are hidden
@@ -505,85 +505,85 @@ gtksourceview3 (3.4.1-1) unstable; urgency=low
 
  -- Martin Pitt <mpitt@debian.org>  Thu, 19 Apr 2012 14:34:33 +0200
 
-gtksourceview3 (3.4.0-2) unstable; urgency=low
+ctksourceview3 (3.4.0-2) unstable; urgency=low
 
   * Add Build-Depends on libxml2-utils for xmllint which is required during
     "make check".
 
  -- Michael Biebl <biebl@debian.org>  Thu, 29 Mar 2012 22:00:22 +0200
 
-gtksourceview3 (3.4.0-1) unstable; urgency=low
+ctksourceview3 (3.4.0-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 27 Mar 2012 02:03:40 +0200
 
-gtksourceview3 (3.3.5-1) experimental; urgency=low
+ctksourceview3 (3.3.5-1) experimental; urgency=low
 
   * New upstream development release.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 20 Mar 2012 03:57:02 +0100
 
-gtksourceview3 (3.3.4-2) experimental; urgency=low
+ctksourceview3 (3.3.4-2) experimental; urgency=low
 
   * Convert to multiarch.
 
  -- Michael Biebl <biebl@debian.org>  Mon, 19 Mar 2012 17:52:30 +0100
 
-gtksourceview3 (3.3.4-1) experimental; urgency=low
+ctksourceview3 (3.3.4-1) experimental; urgency=low
 
   * New upstream development release.
-  * debian/libgtksourceview-3.0-0.symbols: Add new symbol.
+  * debian/libctksourceview-3.0-0.symbols: Add new symbol.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 17 Mar 2012 22:20:19 +0100
 
-gtksourceview3 (3.2.3-2) unstable; urgency=low
+ctksourceview3 (3.2.3-2) unstable; urgency=low
 
-  * Change section of gir1.2-gtksource-3.0 to introspection.
-  * Drop explicit Build-Depends on gir1.2-gtk-3.0 and gir1.2-atk-1.0.
-  * Move glade catalog file from libgtksourceview-3.0-common to
-    libgtksourceview-3.0-dev alongside the .so it references.
+  * Change section of gir1.2-ctksource-3.0 to introspection.
+  * Drop explicit Build-Depends on gir1.2-ctk-3.0 and gir1.2-atk-1.0.
+  * Move glade catalog file from libctksourceview-3.0-common to
+    libctksourceview-3.0-dev alongside the .so it references.
   * Add the necessary Breaks/Replaces.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 17 Mar 2012 21:33:38 +0100
 
-gtksourceview3 (3.2.3-1) unstable; urgency=low
+ctksourceview3 (3.2.3-1) unstable; urgency=low
 
   * New upstream release.
   * Rely on cdbs to call dh_girepository. Bump Build-Depends accordingly.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 15 Nov 2011 23:37:56 +0100
 
-gtksourceview3 (3.2.2-1) unstable; urgency=low
+ctksourceview3 (3.2.2-1) unstable; urgency=low
 
   * New upstream release.
   * debian/watch:
     - Track .xz tarballs.
   * debian/control.in:
-    - Suggest devhelp for libgtksourceview-3.0-doc.
+    - Suggest devhelp for libctksourceview-3.0-doc.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 19 Oct 2011 01:56:53 +0200
 
-gtksourceview3 (3.2.0-1) unstable; urgency=low
+ctksourceview3 (3.2.0-1) unstable; urgency=low
 
   * New upstream release.
-  * debian/libgtksourceview-3.0-0.symbols: Update symbols file.
+  * debian/libctksourceview-3.0-0.symbols: Update symbols file.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 29 Sep 2011 00:59:26 +0200
 
-gtksourceview3 (3.0.5-1) unstable; urgency=low
+ctksourceview3 (3.0.5-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Mon, 08 Aug 2011 02:22:16 +0200
 
-gtksourceview3 (3.0.4-1) unstable; urgency=low
+ctksourceview3 (3.0.4-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 22 Jun 2011 23:40:21 +0200
 
-gtksourceview3 (3.0.3-2) unstable; urgency=low
+ctksourceview3 (3.0.3-2) unstable; urgency=low
 
   * debian/watch: Track stable releases.
   * Refresh debian/patches/99_ltmain_as-needed.patch.
@@ -593,12 +593,12 @@ gtksourceview3 (3.0.3-2) unstable; urgency=low
     - Update Build-Depends on debhelper.
     - Strip debian/tmp/ from .install files.
   * Bump Standards-Version to 3.9.2. No further changes.
-  * Remove Conflicts/Replaces: gir1.0-gtksource-3.0, no longer necessary.
+  * Remove Conflicts/Replaces: gir1.0-ctksource-3.0, no longer necessary.
   * Upload to unstable, drop check-dist.mk include.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 16 Jun 2011 06:19:30 +0200
 
-gtksourceview3 (3.0.3-1) experimental; urgency=low
+ctksourceview3 (3.0.3-1) experimental; urgency=low
 
   * New upstream release.
   * Drop 00git_fix-c-lang-regression.patch, applied upstream.
@@ -607,7 +607,7 @@ gtksourceview3 (3.0.3-1) experimental; urgency=low
 
  -- Martin Pitt <mpitt@debian.org>  Tue, 31 May 2011 08:45:22 +0200
 
-gtksourceview3 (3.0.2-1) experimental; urgency=low
+ctksourceview3 (3.0.2-1) experimental; urgency=low
 
   * New upstream release.
   * Add 00git_fix-c-lang-regression.patch: Fix C language highlighting to work
@@ -615,7 +615,7 @@ gtksourceview3 (3.0.2-1) experimental; urgency=low
 
  -- Martin Pitt <mpitt@debian.org>  Wed, 25 May 2011 16:48:02 +0200
 
-gtksourceview3 (3.0.0-1) experimental; urgency=low
+ctksourceview3 (3.0.0-1) experimental; urgency=low
 
   [ Josselin Mouette ]
   * Make the -dev package depend on the gir package.
@@ -627,21 +627,21 @@ gtksourceview3 (3.0.0-1) experimental; urgency=low
 
  -- Jordi Mallach <jordi@debian.org>  Fri, 08 Apr 2011 14:09:15 +0200
 
-gtksourceview3 (2.91.5-1) experimental; urgency=low
+ctksourceview3 (2.91.5-1) experimental; urgency=low
 
   * New upstream release.
     + debian/control.in:
       - Update build dependencies.
-      - Update the gtk+ 3 dependencies for the new names.
+      - Update the ctk+ 3 dependencies for the new names.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 19 Feb 2011 14:20:40 +0000
 
-gtksourceview3 (2.91.4-1) experimental; urgency=low
+ctksourceview3 (2.91.4-1) experimental; urgency=low
 
   * New upstream release.
     + debian/patches/15-fix-catalog-var-name.patch:
       - Removed, fixed upstream.
-    + debian/libgtksourceview-3.0-0.symbols:
+    + debian/libctksourceview-3.0-0.symbols:
       - Updated.
     + debian/control.in:
       - Updated build dependencies.
@@ -653,14 +653,14 @@ gtksourceview3 (2.91.4-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 12 Jan 2011 22:34:11 +0000
 
-gtksourceview3 (2.91.2-1) experimental; urgency=low
+ctksourceview3 (2.91.2-1) experimental; urgency=low
 
   [ Michael Terry ]
-  * New upstream gtk3 version. Closes: #603610.
-  * Change source package name to gtksourceview3
-  * Add gir1.0-gtksource-3.0 package for gir typelib
+  * New upstream ctk3 version. Closes: #603610.
+  * Change source package name to ctksourceview3
+  * Add gir1.0-ctksource-3.0 package for gir typelib
   * Add dashes between 3.0 and package name for all packages,
-    so libgtksourceview2.0 becomes libgtksourceview-3.0
+    so libctksourceview2.0 becomes libctksourceview-3.0
   * debian/watch:
     - Update to point at development releases
   * debian/patches/15-fix-catalog-var-name.patch:
@@ -668,18 +668,18 @@ gtksourceview3 (2.91.2-1) experimental; urgency=low
 
   [ Emilio Pozuelo Monfort ]
   * New upstream release.
-  * debian/libgtksourceview-3.0-0.symbols:
+  * debian/libctksourceview-3.0-0.symbols:
     - Add a symbols file.
   * debian/control.in:
     - Update build dependencies.
     - Standards-Version is 3.9.1, no changes needed.
-    - Refer to gtksourceview3 in Vcs-*.
+    - Refer to ctksourceview3 in Vcs-*.
   * debian/rules:
     - Bump shlibs.
     - Remove useless comments.
     - Include check-dist.mk.
   * Update to the new gir policy:
-    - Rename gir1.0-gtksource-3.0 to gir1.2-gtksource-3.0.
+    - Rename gir1.0-ctksource-3.0 to gir1.2-ctksource-3.0.
     - Bump the gobject-introspection build dependency.
     - Build depend on gir1.2 packages.
   * debian/copyright:
@@ -687,32 +687,32 @@ gtksourceview3 (2.91.2-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 12 Dec 2010 21:13:46 +0100
 
-gtksourceview2 (2.10.4-1) unstable; urgency=low
+ctksourceview2 (2.10.4-1) unstable; urgency=low
 
   * New upstream bugfix and documentation release.
 
  -- Josselin Mouette <joss@debian.org>  Mon, 16 Aug 2010 19:17:09 +0200
 
-gtksourceview2 (2.10.3-1) unstable; urgency=low
+ctksourceview2 (2.10.3-1) unstable; urgency=low
 
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 31 May 2010 10:35:27 +0200
 
-gtksourceview2 (2.10.1-1) unstable; urgency=low
+ctksourceview2 (2.10.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 04 May 2010 09:57:37 +0200
 
-gtksourceview2 (2.10.0-1) unstable; urgency=low
+ctksourceview2 (2.10.0-1) unstable; urgency=low
 
   * New upstream release.
   * debian/rules:
     - Enable the Glade catalog.
     - Bump the shlibs version.
     - Stop calling dh_buildinfo.
-  * debian/libgtksourceview2.0-common.install:
+  * debian/libctksourceview2.0-common.install:
     - Install the glade catalog.
   * debian/control.in:
     - Update build dependencies.
@@ -725,27 +725,27 @@ gtksourceview2 (2.10.0-1) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 31 Mar 2010 12:29:53 +0200
 
-gtksourceview2 (2.8.2-1) unstable; urgency=low
+ctksourceview2 (2.8.2-1) unstable; urgency=low
 
   * New upstream bugfix release.
-  * Move libgtksourceview2.0-common to section libs. Closes: #548921.
+  * Move libctksourceview2.0-common to section libs. Closes: #548921.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 20 Dec 2009 03:08:06 +0100
 
-gtksourceview2 (2.8.1-1) unstable; urgency=low
+ctksourceview2 (2.8.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 29 Sep 2009 14:07:34 +0200
 
-gtksourceview2 (2.8.0-1) unstable; urgency=low
+ctksourceview2 (2.8.0-1) unstable; urgency=low
 
   * New upstream release.
   * Bump shlibs to version 2.7.2.
 
  -- Josselin Mouette <joss@debian.org>  Thu, 24 Sep 2009 23:29:05 +0200
 
-gtksourceview2 (2.6.2-1) unstable; urgency=low
+ctksourceview2 (2.6.2-1) unstable; urgency=low
 
   * New upstream release.
   * debian/watch: don't uupdate.
@@ -757,10 +757,10 @@ gtksourceview2 (2.6.2-1) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 28 Aug 2009 23:28:08 +0200
 
-gtksourceview2 (2.6.1-1) unstable; urgency=low
+ctksourceview2 (2.6.1-1) unstable; urgency=low
 
   [ Josselin Mouette ]
-  * Add libglib2.0-doc and libgtk2.0-doc to b-d-i to ensure proper
+  * Add libglib2.0-doc and libctk2.0-doc to b-d-i to ensure proper
     xrefs.
 
   [ Luca Bruno ]
@@ -768,7 +768,7 @@ gtksourceview2 (2.6.1-1) unstable; urgency=low
   * debian/control.in:
     - Update Standards-Version to 3.8.1, no additional changes needed.
     - Update Homepage fields to point to the new homepage
-      http://projects.gnome.org/gtksourceview/.
+      http://projects.gnome.org/ctksourceview/.
   * debian/copyright:
     - List upstream authors.
 
@@ -781,13 +781,13 @@ gtksourceview2 (2.6.1-1) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Thu, 16 Apr 2009 17:37:20 +0200
 
-gtksourceview2 (2.4.2-1) unstable; urgency=low
+ctksourceview2 (2.4.2-1) unstable; urgency=low
 
   * New upstream translation and bugfix release.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 04 Mar 2009 18:32:55 +0100
 
-gtksourceview2 (2.4.1-1) unstable; urgency=low
+ctksourceview2 (2.4.1-1) unstable; urgency=low
 
   [ Loic Minier ]
   * Fix spelling of Tcl in description.
@@ -797,26 +797,26 @@ gtksourceview2 (2.4.1-1) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Sun, 04 Jan 2009 13:09:10 +0100
 
-gtksourceview2 (2.4.0-2) unstable; urgency=low
+ctksourceview2 (2.4.0-2) unstable; urgency=low
 
   * Build-dep on intltool instead of libxml-parser-perl; closes: #500315.
   * Bump shlibs to >= 2.4.0 for API additions.
 
  -- Loic Minier <lool@dooz.org>  Sat, 27 Sep 2008 12:14:05 +0200
 
-gtksourceview2 (2.4.0-1) unstable; urgency=low
+ctksourceview2 (2.4.0-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Rob Bradford <robster@debian.org>  Fri, 26 Sep 2008 10:04:52 +0100
 
-gtksourceview2 (2.2.2-2) unstable; urgency=low
+ctksourceview2 (2.2.2-2) unstable; urgency=low
 
-  * debian/libgtksourceview2.0-doc.doc-base: fix section.
+  * debian/libctksourceview2.0-doc.doc-base: fix section.
 
  -- Emilio Pozuelo Monfort <pochu@ubuntu.com>  Thu, 25 Sep 2008 00:05:25 +0200
 
-gtksourceview2 (2.2.2-1) unstable; urgency=low
+ctksourceview2 (2.2.2-1) unstable; urgency=low
 
   * New upstream bugfix release:
     + debian/control.in:
@@ -826,20 +826,20 @@ gtksourceview2 (2.2.2-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Wed, 25 Jun 2008 08:01:42 +0200
 
-gtksourceview2 (2.2.1-1) unstable; urgency=low
+ctksourceview2 (2.2.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 08 Apr 2008 05:41:23 +0200
 
-gtksourceview2 (2.2.0-2) unstable; urgency=low
+ctksourceview2 (2.2.0-2) unstable; urgency=low
 
   * debian/rules:
     + Update shlibs to >= 2.2.0 because of API additions.
 
  -- Sebastian Dröge <slomo@debian.org>  Mon, 17 Mar 2008 00:28:19 +0100
 
-gtksourceview2 (2.2.0-1) unstable; urgency=low
+ctksourceview2 (2.2.0-1) unstable; urgency=low
 
   * New upstream release. (closes: #467174)
   - Bump build-deps based on configure.ac.
@@ -847,7 +847,7 @@ gtksourceview2 (2.2.0-1) unstable; urgency=low
 
  -- Rob Bradford <robster@debian.org>  Mon, 10 Mar 2008 13:50:24 +0000
 
-gtksourceview2 (2.0.2-1) unstable; urgency=low
+ctksourceview2 (2.0.2-1) unstable; urgency=low
 
   * New upstream bugfix release:
     + debian/rules:
@@ -857,17 +857,17 @@ gtksourceview2 (2.0.2-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 27 Nov 2007 04:36:33 +0100
 
-gtksourceview2 (2.0.1-1) unstable; urgency=low
+ctksourceview2 (2.0.1-1) unstable; urgency=low
 
   * New upstream bugfix release.
 
  -- Sebastian Dröge <slomo@debian.org>  Sun, 21 Oct 2007 17:22:11 +0200
 
-gtksourceview2 (2.0.0-1) unstable; urgency=low
+ctksourceview2 (2.0.0-1) unstable; urgency=low
 
   * First upload to Debian.
   * New upstream release with new API and package name, based on the
-    gtksourceview packaging. This is parallel installable with the old version.
+    ctksourceview packaging. This is parallel installable with the old version.
   * Updated package taken from Ubuntu. Thanks to Aron Sisak, Fernando
     Ribeiro and Sebastien Bacher for updating the package.
   * debian/rules:
@@ -881,7 +881,7 @@ gtksourceview2 (2.0.0-1) unstable; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Thu, 20 Sep 2007 09:42:09 +0200
 
-gtksourceview2 (2.0.0-0ubuntu1) gutsy; urgency=low
+ctksourceview2 (2.0.0-0ubuntu1) gutsy; urgency=low
 
   * New upstream release
 
@@ -893,7 +893,7 @@ gtksourceview2 (2.0.0-0ubuntu1) gutsy; urgency=low
 
  -- Fernando Ribeiro <fernando@staff.nerdgroup.org>  Mon, 17 Sep 2007 10:40:09 -0300
 
-gtksourceview2 (1.90.4-0ubuntu1) gutsy; urgency=low
+ctksourceview2 (1.90.4-0ubuntu1) gutsy; urgency=low
 
   * New upstream version:
     - Many improvements to all the lang files
@@ -907,7 +907,7 @@ gtksourceview2 (1.90.4-0ubuntu1) gutsy; urgency=low
 
  -- Sebastien Bacher <seb128@canonical.com>  Tue, 28 Aug 2007 11:24:26 +0200
 
-gtksourceview2 (1.90.3-0ubuntu1) gutsy; urgency=low
+ctksourceview2 (1.90.3-0ubuntu1) gutsy; urgency=low
 
   * New upstream release:
     - New default set of styles used to define a style scheme
@@ -922,7 +922,7 @@ gtksourceview2 (1.90.3-0ubuntu1) gutsy; urgency=low
 
  -- Aron Sisak <aron@ubuntu.hu>  Wed, 01 Aug 2007 13:42:48 +0200
 
-gtksourceview2 (1.90.2-0ubuntu1) gutsy; urgency=low
+ctksourceview2 (1.90.2-0ubuntu1) gutsy; urgency=low
 
   * New upstream version:
     - Library is now LGPL (some lang files aren't yet)
@@ -938,20 +938,20 @@ gtksourceview2 (1.90.2-0ubuntu1) gutsy; urgency=low
     - renamed the source and binary packages
   * debian/copyright:
     - updated
-  * debian/libgtksourceview-doc.preinst, debian/libgtksourceview-doc.prerm:
+  * debian/libctksourceview-doc.preinst, debian/libctksourceview-doc.prerm:
     - dropped, not required due to the renaming
   * debian/rules:
     - updated binaries naming
 
  -- Sebastien Bacher <seb128@canonical.com>  Wed, 04 Jul 2007 09:22:39 +0200
 
-gtksourceview (1.90.1-0ubuntu1) gutsy; urgency=low
+ctksourceview (1.90.1-0ubuntu1) gutsy; urgency=low
 
   * New upstream release (1.90.1):
     * GtkSourceStyle is now a gobject
     * Be more careful about Language and LanguageManager lifecycles: add
-      gtk_source_[language|style_scheme]_manager_get_default to obtain
-      managers object owned by gtksourceview
+      ctk_source_[language|style_scheme]_manager_get_default to obtain
+      managers object owned by ctksourceview
     * Most of the files are now officially licensed under LGPL, still
       waiting for a few approval before completely switching the license.
     * Port to GRegex
@@ -967,12 +967,12 @@ gtksourceview (1.90.1-0ubuntu1) gutsy; urgency=low
     * Mark Undo/Redo insensitive when the view is not editable (Carlos Garnacho)
     * Fix current line highlightging drawing artifacts (Yevgen Muntyan)
     * Updated translations
-  * debian/control.in, debian/rules, debian/libgtksourceview-{1,2}-0.install:
+  * debian/control.in, debian/rules, debian/libctksourceview-{1,2}-0.install:
     - updated to reflect soname change
 
  -- Aron Sisak <aron@ubuntu.hu>  Mon, 25 Jun 2007 19:39:13 +0200
 
-gtksourceview (1.8.5-1) unstable; urgency=high
+ctksourceview (1.8.5-1) unstable; urgency=high
 
   * Add a get-orig-source target to retrieve the upstream tarball.
   * New upstream stable releases; no API change; lang file updates (OCaml,
@@ -981,7 +981,7 @@ gtksourceview (1.8.5-1) unstable; urgency=high
 
  -- Loic Minier <lool@dooz.org>  Sun, 11 Mar 2007 16:37:03 +0100
 
-gtksourceview (1.8.3-1) unstable; urgency=low
+ctksourceview (1.8.3-1) unstable; urgency=low
 
   * New upstream stable release; no API nor ABI change; translations updates
     (ar, en_GB, nb), MIME type fixes in langage spec files, new DocBook and
@@ -990,7 +990,7 @@ gtksourceview (1.8.3-1) unstable; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Tue,  9 Jan 2007 10:22:34 +0100
 
-gtksourceview (1.8.2-1) unstable; urgency=medium
+ctksourceview (1.8.2-1) unstable; urgency=medium
 
   * New upstream stable release with new translations (ar, ne), translation
     updates (et, gl, nb, pl), fixes in langage spec files (R, java, nemerle,
@@ -999,20 +999,20 @@ gtksourceview (1.8.2-1) unstable; urgency=medium
 
  -- Loic Minier <lool@dooz.org>  Wed, 13 Dec 2006 14:28:59 +0100
 
-gtksourceview (1.8.1-2) unstable; urgency=low
+ctksourceview (1.8.1-2) unstable; urgency=low
 
   * Upload to unstable.
 
  -- Loic Minier <lool@dooz.org>  Thu, 19 Oct 2006 10:01:31 +0200
 
-gtksourceview (1.8.1-1) experimental; urgency=low
+ctksourceview (1.8.1-1) experimental; urgency=low
 
   * New upstream release; no API change.
   * Use HTTP in watch file.
 
  -- Loic Minier <lool@dooz.org>  Mon,  2 Oct 2006 18:30:01 +0200
 
-gtksourceview (1.8.0-1) experimental; urgency=low
+ctksourceview (1.8.0-1) experimental; urgency=low
 
   * New upstream release.
   * Small fix in the -dev depends.
@@ -1022,19 +1022,19 @@ gtksourceview (1.8.0-1) experimental; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Mon, 25 Sep 2006 22:33:52 +0200
 
-gtksourceview (1.7.2-1) experimental; urgency=low
+ctksourceview (1.7.2-1) experimental; urgency=low
 
   * New upstream development releases, with API additions.
     - Target at experimental.
     - Bump shlibs to >= 1.7.2.
     - Stop shipping boo.lang, integrated upstream.
-  * Sync with overrides and set libgtksourceview-common's Section to misc.
-  * Install gtk-doc documentation in the standard upstream directory.
+  * Sync with overrides and set libctksourceview-common's Section to misc.
+  * Install ctk-doc documentation in the standard upstream directory.
     - Drop --with-html-dir from configure args.
-    - Drop now useless libgtksourceview-doc.dirs.
-    - Update libgtksourceview-doc.install, libgtksourceview-doc.doc-base, and
-      libgtksourceview-doc.links.
-    - Drop /usr/share/doc/gtksourceview hierarchy.
+    - Drop now useless libctksourceview-doc.dirs.
+    - Update libctksourceview-doc.install, libctksourceview-doc.doc-base, and
+      libctksourceview-doc.links.
+    - Drop /usr/share/doc/ctksourceview hierarchy.
     - Add a preinst to manually drop symlinks on upgrades since dpkg can't
       handle switching a pathname from symlink to directory.
     - Add a prerm to manually drop the doc dir on downgrades since dpkg can't
@@ -1044,46 +1044,46 @@ gtksourceview (1.7.2-1) experimental; urgency=low
 
  -- Loic Minier <lool@dooz.org>  Thu, 10 Aug 2006 15:11:43 +0200
 
-gtksourceview (1.6.2-1) unstable; urgency=low
+ctksourceview (1.6.2-1) unstable; urgency=low
 
   * New upstream release; no API changes.
 
  -- Loic Minier <lool@dooz.org>  Sat, 29 Jul 2006 21:12:50 +0200
 
-gtksourceview (1.6.1-3) unstable; urgency=low
+ctksourceview (1.6.1-3) unstable; urgency=low
 
   * Readd boo.lang as it was removed from boo in 0.7.6.2237-1.
     [debian/control, debian/control.in,
-     debian/libgtksourceview-common.install]
+     debian/libctksourceview-common.install]
 
  -- Loic Minier <lool@dooz.org>  Tue, 23 May 2006 11:23:01 +0200
 
-gtksourceview (1.6.1-2) unstable; urgency=medium
+ctksourceview (1.6.1-2) unstable; urgency=medium
 
   * Revert the shipping of boo.lang as I forgot to request its removal from
     boo first. (Closes: #367975)
-    [debian/libgtksourceview-common.install]
+    [debian/libctksourceview-common.install]
   * Bump up Debhelper compatibility level to 5.
     [debian/compat, debian/control, debian/control.in]
 
  -- Loic Minier <lool@dooz.org>  Mon, 22 May 2006 14:33:57 +0200
 
-gtksourceview (1.6.1-1) unstable; urgency=low
+ctksourceview (1.6.1-1) unstable; urgency=low
 
   [ Loic Minier ]
   * Sync with Ubuntu.
     - New upstream releases.
-      . Bump up libgtk2.0-dev build-dep.
+      . Bump up libctk2.0-dev build-dep.
         [debian/control, debian/control.in]
     - Support the boo language and Replace the boo package which used to ship
       it.
       [debian/boo.lang, debian/control, debian/control.in,
-       debian/libgtksourceview-common.install]
+       debian/libctksourceview-common.install]
   * Distribution is unstable.
   * Update Uploaders.
     [debian/control, debian/control.in]
   * Support the ocaml language, thanks to Eric Cooper. (Closes: #343664)
-    [debian/libgtksourceview-common.install, debian/ocaml.lang]
+    [debian/libctksourceview-common.install, debian/ocaml.lang]
 
   [ Josselin Mouette ]
   * Make the package binNMU-safe.
@@ -1092,33 +1092,33 @@ gtksourceview (1.6.1-1) unstable; urgency=low
   * Update watch file.
   * Standards-version is 3.7.2.
   * rules,*.install: use dh_install more cleanly.
-  * libgtksourceview-dev.install: remove the libtool file.
-  * libgtksourceview-dev depends on the exact libgtksourceview1.0-0
+  * libctksourceview-dev.install: remove the libtool file.
+  * libctksourceview-dev depends on the exact libctksourceview1.0-0
     version.
 
  -- Josselin Mouette <joss@debian.org>  Thu, 18 May 2006 09:02:17 +0200
 
-gtksourceview (1.4.2-2) unstable; urgency=low
+ctksourceview (1.4.2-2) unstable; urgency=low
 
   * Add CDBS' utils. [debian/rules]
   * Enable building of static libraries. (Closes: #337025) [debian/rules]
 
  -- Loic Minier <lool@dooz.org>  Fri,  4 Nov 2005 11:58:26 +0100
 
-gtksourceview (1.4.2-1) unstable; urgency=high
+ctksourceview (1.4.2-1) unstable; urgency=high
 
   * Urgency high because of RC bug fix.
   * New upstream release (only translations updates).
   * Bump shlibs to >= 1.4. (Closes: #328420) [debian/rules]
   * Don't play with symlinks to save the changelogs and READMEs, keep the doc
-    under /usr/share/gtksourceview, with symlinks in
-    /usr/share/doc/*/gtksourceview pointing to it.
-    [debian/libgtksourceview1.0-0.links, libgtksourceview-dev.links,
-    libgtksourceview-doc.links debian/rules]
+    under /usr/share/ctksourceview, with symlinks in
+    /usr/share/doc/*/ctksourceview pointing to it.
+    [debian/libctksourceview1.0-0.links, libctksourceview-dev.links,
+    libctksourceview-doc.links debian/rules]
 
  -- Loic Minier <lool@dooz.org>  Tue,  4 Oct 2005 21:31:40 +0200
 
-gtksourceview (1.4.1-1) unstable; urgency=low
+ctksourceview (1.4.1-1) unstable; urgency=low
 
   [ Andrew Lau ]
   * Debian Standards-Version: 3.6.2
@@ -1134,14 +1134,14 @@ gtksourceview (1.4.1-1) unstable; urgency=low
   * Misc fixes taken from 1.4.1-0ubuntu1:
     - Remove spurious space between package entries.
       [debian/control, debian/control.in]
-    - Version libgtksourceview/libgtksourceview-common/dependencies in
+    - Version libctksourceview/libctksourceview-common/dependencies in
       >= ${Source-Version}. [debian/control, debian/control.in]
-    - Drop useless libgtksourceview-common deps.
+    - Drop useless libctksourceview-common deps.
       [debian/control, debian/control.in]
 
  -- Loic Minier <lool@dooz.org>  Sun, 25 Sep 2005 16:54:15 +0200
 
-gtksourceview (1.2.0-2) unstable; urgency=low
+ctksourceview (1.2.0-2) unstable; urgency=low
 
   * Designate '\' as an escape character in sql.lang
     + [debian/patches/00_sql-backslash.patch]
@@ -1152,7 +1152,7 @@ gtksourceview (1.2.0-2) unstable; urgency=low
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Wed,  8 Jun 2005 00:45:11 +1000
 
-gtksourceview (1.2.0-1) unstable; urgency=medium
+ctksourceview (1.2.0-1) unstable; urgency=medium
 
   * New upstream release for GNOME 2.10
   * [debian/control.in]:
@@ -1161,13 +1161,13 @@ gtksourceview (1.2.0-1) unstable; urgency=medium
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Wed, 16 Mar 2005 15:05:29 +1100
 
-gtksourceview (1.1.93-1) unstable; urgency=low
+ctksourceview (1.1.93-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Tue,  1 Mar 2005 23:26:31 +1100
 
-gtksourceview (1.1.92-1) unstable; urgency=low
+ctksourceview (1.1.92-1) unstable; urgency=low
 
   * New upstream release.
     - Improved LaTeX comment handling.
@@ -1179,16 +1179,16 @@ gtksourceview (1.1.92-1) unstable; urgency=low
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Sat, 26 Feb 2005 15:30:01 +1100
 
-gtksourceview (1.1.91-1) experimental; urgency=low
+ctksourceview (1.1.91-1) experimental; urgency=low
 
   * New upstream developmental release for GNOME 2.9.x
     - Removed: [debian/patches/01__R-lang.patch] (not a typo)
-  * Add Conflicts: with libgtksourceview-cil (<= 0.5-2) due to GtkSourceView
+  * Add Conflicts: with libctksourceview-cil (<= 0.5-2) due to GtkSourceView
     providing its own nemerle.lang file.
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Wed, 26 Jan 2005 09:10:31 +1100
 
-gtksourceview (1.1.90-1) experimental; urgency=low
+ctksourceview (1.1.90-1) experimental; urgency=low
 
   * New upstream developmental release for GNOME 2.9.x
     - Merged: [debian/patches/00_tcl-spec.patch]
@@ -1200,13 +1200,13 @@ gtksourceview (1.1.90-1) experimental; urgency=low
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Thu, 20 Jan 2005 01:37:59 +1100
 
-gtksourceview (1.1.1-1) unstable; urgency=low
+ctksourceview (1.1.1-1) unstable; urgency=low
 
   * New upstream release for GNOME 2.8.1
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Sat, 20 Nov 2004 17:50:03 +1100
 
-gtksourceview (1.0.1-5) unstable; urgency=low
+ctksourceview (1.0.1-5) unstable; urgency=low
 
   * Create symlink for GtkSourceView documentation under devhelp's default
     search path.
@@ -1217,47 +1217,47 @@ gtksourceview (1.0.1-5) unstable; urgency=low
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Sun,  3 Oct 2004 02:31:50 +1000
 
-gtksourceview (1.0.1-4) unstable; urgency=medium
+ctksourceview (1.0.1-4) unstable; urgency=medium
 
-  * Added conflict with libgtksourceview-cil (<= 0.5-1) to enable upgrades.
+  * Added conflict with libctksourceview-cil (<= 0.5-1) to enable upgrades.
     (closes: #265953)
-  * Separated documentation into libgtksourceview-doc package.
+  * Separated documentation into libctksourceview-doc package.
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Thu, 19 Aug 2004 23:10:40 +1000
 
-gtksourceview (1.0.1-3) unstable; urgency=low
+ctksourceview (1.0.1-3) unstable; urgency=low
 
   * Language specification files backported from CVS.
     - Updated: ada.lang, perl.lang
     - New: css.lang, fortran.lang, haskell.lang, javascript.lang, lua.lang,
       pascal.lang, ruby.lang, texinfo.lang and vbnet.lang
     (closes: #255668)
-  * Documentation now symlinked under /usr/share/doc/libgtk2.0-doc.
+  * Documentation now symlinked under /usr/share/doc/libctk2.0-doc.
     (closes: #261119)
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Mon, 16 Aug 2004 00:07:10 +1000
 
-gtksourceview (1.0.1-2) unstable; urgency=low
+ctksourceview (1.0.1-2) unstable; urgency=low
 
   * GNOME Team Upload.
   * Upload in unstable.
 
  -- Sebastien Bacher <seb128@debian.org>  Thu, 27 May 2004 20:46:01 +0200
 
-gtksourceview (1.0.1-1) experimental; urgency=low
+ctksourceview (1.0.1-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Fri, 23 Apr 2004 00:19:32 +1000
 
-gtksourceview (1.0.0-2) experimental; urgency=low
+ctksourceview (1.0.0-2) experimental; urgency=low
 
   * GNOME team upload.
   * debian/control.in: build-depend on libxml-parser-perl to fix a FTBFS.
 
  -- Jordi Mallach <jordi@debian.org>  Mon, 12 Apr 2004 17:09:05 +0200
 
-gtksourceview (1.0.0-1) experimental; urgency=low
+ctksourceview (1.0.0-1) experimental; urgency=low
 
   * New upstream release.
     + Corrects highlightning after an apostrophe (closes: #226215).
@@ -1268,7 +1268,7 @@ gtksourceview (1.0.0-1) experimental; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Mon, 29 Mar 2004 17:43:05 +0200
 
-gtksourceview (0.7.0-2) unstable; urgency=medium
+ctksourceview (0.7.0-2) unstable; urgency=medium
 
   * Regenerate autotools-dev/libtool files to work around -pthread linking
     build failures.
@@ -1276,28 +1276,28 @@ gtksourceview (0.7.0-2) unstable; urgency=medium
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Tue, 28 Oct 2003 22:12:18 +1100
 
-gtksourceview (0.7.0-1) unstable; urgency=low
+ctksourceview (0.7.0-1) unstable; urgency=low
 
   * New upstream release.
     (closes: #216946)
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Thu, 23 Oct 2003 02:41:36 +1000
 
-gtksourceview (0.6.0-1) unstable; urgency=low
+ctksourceview (0.6.0-1) unstable; urgency=low
 
   * New upstream release.
   * Debian Standards-Version: 3.6.1
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Thu, 28 Aug 2003 16:27:26 +1000
 
-gtksourceview (0.5.0-1) unstable; urgency=low
+ctksourceview (0.5.0-1) unstable; urgency=low
 
   * New upstream release.
   * Debian Standards-Version: 3.6.0
 
  -- Andrew Lau <netsnipe@users.sourceforge.net>  Wed, 13 Aug 2003 14:18:21 +1000
 
-gtksourceview (0.4.0-1) unstable; urgency=low
+ctksourceview (0.4.0-1) unstable; urgency=low
 
   * Initial Release of Debian GNU/Linux Packages.
     (closes: #195663)

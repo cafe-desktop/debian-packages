@@ -16,4 +16,4 @@ printf "group entry: "; getent group "$(id -g)" || echo "(exit status $?)"
 echo "Environment:"
 env | LC_ALL=C sort -u
 
-exec dbus-run-session -- xvfb-run -a gnome-desktop-testing-runner gtksourceview-4
+exec dbus-run-session -- xvfb-run -a gnome-desktop-testing-runner ctksourceview-4

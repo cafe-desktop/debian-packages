@@ -1,4 +1,4 @@
-Document: gtksourceview-4.0
+Document: ctksourceview-4.0
 Title: GtkSourceView Reference Manual
 Author: The GtkSourceView team
 Abstract: This manual describes the GtkSourceView text widget. It extends the
@@ -7,5 +7,5 @@ Abstract: This manual describes the GtkSourceView text widget. It extends the
 Section: Programming
 
 Format: HTML
-Index: /usr/share/gtk-doc/html/gtksourceview-4.0/index.html
-Files: /usr/share/gtk-doc/html/gtksourceview-4.0/*.html
+Index: /usr/share/ctk-doc/html/ctksourceview-4.0/index.html
+Files: /usr/share/ctk-doc/html/ctksourceview-4.0/*.html

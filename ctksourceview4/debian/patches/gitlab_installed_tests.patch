@@ -8,10 +8,10 @@ it's intended to be used as installed tests but in CI instead
  testsuite/meson.build | 7 ++++---
  1 file changed, 4 insertions(+), 3 deletions(-)
 
-Index: gtksourceview4/testsuite/meson.build
+Index: ctksourceview4/testsuite/meson.build
 ===================================================================
---- gtksourceview4.orig/testsuite/meson.build	2023-01-12 08:59:47.741505549 +0100
-+++ gtksourceview4/testsuite/meson.build	2023-01-12 09:10:00.669672844 +0100
+--- ctksourceview4.orig/testsuite/meson.build	2023-01-12 08:59:47.741505549 +0100
++++ ctksourceview4/testsuite/meson.build	2023-01-12 09:10:00.669672844 +0100
 @@ -26,7 +26,7 @@
    ['test-iter'],
    ['test-language'],
@@ -26,7 +26,7 @@ Index: gtksourceview4/testsuite/meson.build
  foreach test: testsuite_sources
    test_name = test.get(0)
 +  install_test = test.get(1, true) and get_option('install_tests')
-   test_sources = gtksource_res + [
+   test_sources = ctksource_res + [
      '@0@.c'.format(test_name),
    ]
 @@ -60,13 +61,13 @@
