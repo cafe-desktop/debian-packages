@@ -8,9 +8,9 @@ export DPKG_GENSYMBOLS_CHECK_LEVEL = 4
 export DEB_LDFLAGS_MAINT_STRIP := -Wl,-Bsymbolic-functions
 
 ifneq (,$(findstring nodoc,$(DEB_BUILD_PROFILES)))
-	DOC_FLAGS += -Dctk_doc=false
+	DOC_FLAGS += -Dgtk_doc=false
 else
-	DOC_FLAGS += -Dctk_doc=true
+	DOC_FLAGS += -Dgtk_doc=true
 endif
 
 %:
