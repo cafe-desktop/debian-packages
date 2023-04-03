@@ -22,7 +22,6 @@ Build-Depends: debhelper-compat (= 13),
                libgladeui-dev (>= 3.9),
                gobject-introspection (>= 0.9.12-4~),
                libgirepository1.0-dev (>= 0.9.0),
-               valac,
                xauth <!nocheck>,
                xvfb <!nocheck>
 Build-Depends-Indep: libglib2.0-doc <!nodoc>,
