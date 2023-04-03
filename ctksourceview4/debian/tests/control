@@ -1,0 +1,3 @@
+Tests: installed-tests
+Depends: @, at-spi2-core, dbus, gnome-desktop-testing, xauth, xvfb
+Restrictions: allow-stderr

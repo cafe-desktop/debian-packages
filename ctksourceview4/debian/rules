@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs
+export DPKG_GENSYMBOLS_CHECK_LEVEL = 4
+
+# needed with the Ubuntu toolchain to avoid issues
+export DEB_LDFLAGS_MAINT_STRIP := -Wl,-Bsymbolic-functions
+
+ifneq (,$(findstring nodoc,$(DEB_BUILD_PROFILES)))
+	DOC_FLAGS += -Dgtk_doc=false
+else
+	DOC_FLAGS += -Dgtk_doc=true
+endif
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-Dglade_catalog=true \
+		-Dinstall_tests=true \
+		$(DOC_FLAGS)
+
+override_dh_auto_test:
+	NO_AT_BRIDGE=1 xvfb-run -a dh_auto_test

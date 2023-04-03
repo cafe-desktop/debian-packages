@@ -1,0 +1,23 @@
+#!/bin/sh
+# (C) 2013,2019 Canonical Ltd.
+# (C) 2019 Simon McVittie
+# Authors: Iain Lane, Sebastien Bacher, Simon McVittie
+# SPDX-License-Identifier: LGPL-2.0-or-later
+
+set -eu
+
+export G_MESSAGES_DEBUG=all
+export XDG_RUNTIME_DIR="$AUTOPKGTEST_TMP"
+
+# unset proxy, it creates issues with the uhttpmock resolver
+# details on https://gitlab.gnome.org/GNOME/libgdata/issues/37
+unset http_proxy https_proxy
+
+printf "Running as: "; id -a
+printf "passwd entry: "; getent passwd "$(id -u)" || echo "(exit status $?)"
+printf "group entry: "; getent group "$(id -g)" || echo "(exit status $?)"
+echo "Environment:"
+env | LC_ALL=C sort -u
+
+gnome-desktop-testing-runner libgdata
+
