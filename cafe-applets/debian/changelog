@@ -1,0 +1,557 @@
+mate-applets (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:48:34 +0200
+
+mate-applets (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+  * debian/rules:
+    + Remove superfluous man pages.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D policykit-1.
+  * debian/rules:
+    + Remove obsolete -with-cpufreq-lib=cpupower.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 14:26:34 +0100
+
+mate-applets (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_FTBFS-against-libcpupower.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:33:24 +0200
+
+mate-applets (1.22.1-4) unstable; urgency=medium
+
+  * debian/control:
+    + Restrict B-D to [linux-any] architectures. Fixes FTBFS on kfreebsd-* and
+      hurd-i386.
+  * debian/control:
+    + Allow libcpufreq-dev as alternative B-D on e.g. Ubuntu build daemons, as
+      libcpupower-dev is not available for Ubuntu at this time.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 10 Aug 2019 21:19:46 +0200
+
+mate-applets (1.22.1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1001_FTBFS-against-libcpupower.patch. Fix build
+      --with-libcpufreq=cpupower.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 10 Aug 2019 02:00:41 +0200
+
+mate-applets (1.22.1-2) unstable; urgency=medium
+
+  [ Frédéric Bonnard ]
+  * Switch to libcpupower usage. (Closes: #930783).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 09 Aug 2019 10:56:01 +0200
+
+mate-applets (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control (et al.):
+    + Drop Python and mention of the Invest applet (Closes: #927875).
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Jul 2019 00:56:21 +0200
+
+mate-applets (1.20.3-2) unstable; urgency=medium
+
+  * debian/control:
+    + Drop from D (mate-applets): gir1.2-mate-panel. (Closes: #922143).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Mar 2019 09:28:08 +0100
+
+mate-applets (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 05 Jan 2019 22:13:26 +0100
+
+mate-applets (1.20.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Drop 1001_fix-weather-reports-spamming-with-notifications.patch. Causes
+      FTBFS.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 08 Jul 2018 02:07:25 +0200
+
+mate-applets (1.20.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Add 1001_fix-weather-reports-spamming-with-notifications.patch. Fix
+      weather reports spamming screen with notifications. (Closes: #823790).
+    + Drop 0001_preserve_size_of_multiload_applet.patch. Applied upstream.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop from R (mate-applets): cpufrequtils. (Closes: #902303).
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+    + Update copyright attributions.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 15:10:50 +0200
+
+mate-applets (1.20.1-3) unstable; urgency=medium
+
+  * debian/mate-applets.install:
+    + Replace broken conditional [!hurd-any !kfreebsd-any] by [linux-any].
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Wed, 18 Apr 2018 14:11:44 +0200
+
+mate-applets (1.20.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add debian/patches/0001_preserve_size_of_multiload_applet.patch. Preserve
+      the size of the multiload applet and correct type mismatch in
+      g_settings_set_value.
+
+  [ Mike Gabriel ]
+  * debian/mate-applets.install:
+    + We don't build usr/bin/mate-cpufreq-selector on kfreebsd-any architectures.
+      So omitting it from installation into the bin:pkg. This should fix
+      recently observed FTBFS on Debian GNU/kFreeBSD.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 13:59:25 +0200
+
+mate-applets (1.20.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_add_style_class_multiload_applet.patch. Applied upstream.
+    + Drop 0002_fix_cpufreq_applet_spacing.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 12:07:32 +0200
+
+mate-applets (1.20.0-4) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0002_fix_cpufreq_applet_spacing.patch. Fix cpufreq applet spacing on
+      HiDPI displays.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add patch header to 0002_fix_cpufreq_applet_spacing.patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 22 Mar 2018 21:55:56 +0100
+
+mate-applets (1.20.0-3) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_add_style_class_multiload_applet.patch. Add style class
+      multiload-applet.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Mar 2018 14:55:59 +0100
+
+mate-applets (1.20.0-2) unstable; urgency=medium
+
+  * debian/copyright:
+    + Use secure URI for copyright format.
+  * debian/mate-applets.install:
+    + Fix FTBFS (post-build) on Hurd. Now that the invest-applet has been
+      dropped, there is no usr/bin/ on Hurd anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 01 Mar 2018 20:17:02 +0100
+
+mate-applets (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.4-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.4-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Feb 2018 18:07:14 +0100
+
+mate-applets (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
+
+mate-applets (1.19.4-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 06:34:43 +0000
+
+mate-applets (1.18.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 09:24:55 +0100
+
+mate-applets (1.18.1-3) unstable; urgency=medium
+
+  * debian/control:
+    + Add B-D: dh-exec (for arch-specific file installation).
+  * debian/mate-applets.install:
+    + On hurd-any systems, we don't generate an /etc/ directory, due to
+      non-built battstat and cpufreq applets.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Aug 2017 13:52:54 +0200
+
+mate-applets (1.18.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Don't B-D on libiw-dev when building on kfreebsd-i386, kfreebsd-amd64
+      and hurd-i386.
+  * debian/mate-applets-common.install:
+    + Simplify .install file, works around an FTBFS on kfreebsd (where the
+      polkit-1/ folders does not get created/populated due to lack of CPU
+      governor support).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Aug 2017 18:34:33 +0200
+
+mate-applets (1.18.1-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/control: Dependencies updated for MATE 1.18.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for DEB_DH_MISSING_ARGS.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Switch from DEB_DH_INSTALL_ARGS += --fail-missing to list-missing target
+      from CDBS's utils.mk.
+  * debian/control:
+    + Add D (mate-applets): python. Needed by invest-applet.
+      This makes lintian happy.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 13:07:26 +0200
+
+mate-applets (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Add 1000-fix-build-on-linux-4.7-or-newer.patch. (Closes: #837005).
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.2-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 21:00:41 +0200
+
+mate-applets (1.15.2-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
+
+mate-applets (1.14.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 13:26:57 +0200
+
+mate-applets (1.14.0-3) unstable; urgency=medium
+
+  * debian/control:
+    + Add to R (mate-applets-common): mate-netspeed (<< 1.13.0). Thanks to
+      Andreas Beckmann for having me understand Breaks:/Replaces: better.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Jun 2016 22:46:55 +0200
+
+mate-applets (1.14.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add to B (mate-applets-common): mate-netspeed (<< 1.13.0). (Closes:
+      #825733).
+  * dbgsym: Don't build dbg:packages anymore.
+    See https://wiki.debian.org/AutomaticDebugPackages.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 29 May 2016 14:40:28 +0200
+
+mate-applets (1.14.0-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+    + Use encrypted URLs for Vcs-*: field.
+  * debian/rules:
+    + Enable all hardening flags.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + B-D: libgtk-3-dev
+    + B-D: libgtksourceview-3.0-dev
+    + Versioned B-D: libmate-desktop-dev (>= 1.14)
+    + Versioned B-D: libmate-panel-applet-dev (>= 1.14)
+    + Versioned B-D: libmateweather-dev (>= 1.14)
+    + B-D: libwnck-3-dev.
+    + Versioned B-D: mate-common (>= 1.14)
+    + B-D: libiw-dev.
+  * debian/rules:
+    + Add --with-gtk=3.0
+    + MateConf dropped upstream.
+  * debian/control:
+    + Add references to netspeed applet, which is now included in mate-applets
+      and obsoletes mate-netspeed-applet.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Use kommas between copyright year and author.
+  + debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 May 2016 16:56:54 +0200
+
+mate-applets (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Drop obsolete B-D and Depends: mate-icon-theme.
+    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev (>= 1.12).
+  * debian/watch:
+    + Drop +gfdl suffix.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 08:36:00 +0100
+
+mate-applets (1.10.3+gfdl1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/rules:
+    + Add --with-cpufreq-lib due to upstream changes.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 08 Sep 2015 22:16:34 +0200
+
+mate-applets (1.10.3+gfdl1-1) unstable; urgency=medium
+
+  * debian/patches:
+    + Drop 2001_omit-gfdl-licensed-help-files.patch, mate-applets help
+    is dfsg compliant.
+  * debian/control:
+    + Remove obsolete build dependencies.
+    + Update for new upstream release.
+    + Update descriptions.
+    + Process with wrap-and-sort.
+  * debian/rules:
+    + Remove dfsg suffix.
+    + Remove references to timer-applet.
+  * debian/watch:
+    + Remove dfsg suffix.
+  * debian/copyright:
+    + Add copyright attributions for documentation authors and translators.
+
+  [ Mike Gabriel ]
+  * Re-upload to unstable.
+    - Temporarily use a +gfdl1 suffix to make this upload's
+      upstream version greater than the previous +dfsg1 upload.
+      FIXME: drop the upstream version suffix completely with next upstream
+      release).
+    - Drop all dependencies on GStreamer. The mate-applets package now only
+      provide pulseaudio support and dropped GStreamer support from the 1.10.x
+      series (and later) completely. (Closes: #785880). The corresponding
+      change in debian/control got already introduced in Debian package version
+      1.10.0+dfsg1-1~exp1.
+  * debian/copyright:
+    + Fine-granulate copyright attribution for help files. Refraining from
+      too much wildcard usage.
+  * debian/control:
+    + Add D (mate-applets): python (for mate-invest-chart).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Aug 2015 15:04:50 +0200
+
+mate-applets (1.10.3+dfsg1-1~exp2) experimental; urgency=medium
+
+  * debian/mate-applets-common.install:
+    + Don't ship /etc files in mate-applets-common. (Closes: #789348).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 14:35:06 +0200
+
+mate-applets (1.10.3+dfsg1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_add-man-to-SUBDIRS.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 02:36:04 +0200
+
+mate-applets (1.10.0+dfsg1-1~exp2) experimental; urgency=medium
+
+  * debian/mate-applets.install:
+    + Fix duplicate files in mate-applets and mate-applets-common.
+      (Closes: #789348).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Jul 2015 11:36:55 +0200
+
+mate-applets (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Add Martin Wimpress to Uploaders: field.
+    + Versioned B-D: mate-common (>= 1.10).
+    + Versioned B-D: libmate-desktop-dev (>= 1.9.0).
+    + Process with wrap-and-sort.
+  * debian/rules:
+    + Create orig tarball in ../ rather than in $(CURDIR).
+    + Only install NEWS as upstream changelog.gz (and not also as NEWS.gz).
+  * debian/patches:
+    + Rebase 2001_omit-gfdl-licensed-help-files.patch against latest upstream.
+    + Add 1001_add-man-to-SUBDIRS.patch. Don't forget to install man pages on
+      make install.
+  * man pages:
+    + Drop Debian-provided man pages. They are now shipped upstream.
+  * debian/copyright:
+    + Update to latest upstream release.
+    + Provide info for shipped man pages.
+    + Upstream dropped several man pages (that already had no corresponding
+      applets in 1.8.x). The remaining man pages have been renamed (see above).
+  * debian/mate-applets*.install:
+    + Upstream now installs UI .xml files to /usr/share/mate/ui/. Adding these
+      to bin:package mate-applets-common.
+    + No such folder -usr/share/mate-2.0/ in build of mate-applets anymore.
+    + Add /usr/share/man/.
+    + Move over to bin:package mate-applets-common.
+    + Move /usr/share/mate-applets/,
+           /usr/share/man/,
+           /usr/share/mate-panel/,
+           /usr/share/polkit-1/
+      over to bin:package mate-applets-common.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 13:56:58 +0200
+
+mate-applets (1.8.1+dfsg1-3) unstable; urgency=medium
+
+  * debian/rules:
+    + Different approach: Use NEWS file as upstream ChangeLog file.
+      Now really create a meaningful changelog.gz file in the
+      /usr/share/doc/<pkg>/ folder.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 22 Oct 2014 22:12:04 +0200
+
+mate-applets (1.8.1+dfsg1-2) unstable; urgency=high
+
+  * debian/mate-applets.manpages:
+    + Drop additional upstream man pages from bin:package again. Status of
+      those man pages is unclear and several have the same name as the man
+      pages in the gnome-applets bin:package. (Closes: #764448).
+  * debian/rules:
+    + Interpret NEWS file as upstream ChangeLog.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 09 Oct 2014 22:41:33 +0200
+
+mate-applets (1.8.1+dfsg1-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/rules:
+    + Remove stickynotes-applet.convert from build before running dh_install.
+  * debian/patches:
+    + Provide README file that explains about our patch numbering scheme.
+  * debian/copyright:
+    + Update file to latest upstream release.
+    + Really mention all source files.
+    + Drop copyright information for non-existent-anymore files.
+  * debian/mate-applets.manpages:
+    + Add more man pages from src:package.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Stefano Karapetsas ]
+  * debian/control:
+    + Add B-D: libgtksourceview2.0-dev. (Closes: #763585).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 06 Oct 2014 21:44:27 +0200
+
+mate-applets (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734888).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Apr 2014 13:57:07 +0200
