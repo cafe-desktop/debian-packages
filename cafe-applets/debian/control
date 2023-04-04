@@ -1,7 +1,7 @@
 Source: cafe-applets
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -52,7 +52,7 @@ Recommends: cafe-media,
             cafe-system-monitor,
 Replaces: cafe-netspeed (<< 1.13.0),
 Breaks: cafe-netspeed (<< 1.13.0),
-Description: Various applets for the MATE panel
+Description: Various applets for the CAFE panel
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
  .
@@ -62,7 +62,7 @@ Description: Various applets for the MATE panel
  characters, such as accented characters, mathematical symbols, special
  symbols, and punctuation marks.
  .
- MATE CPUFreq Applet: CPU frequency scaling monitor
+ CAFE CPUFreq Applet: CPU frequency scaling monitor
  .
  Drivemount: lets you mount and unmount drives and file systems.
  .
@@ -90,7 +90,7 @@ Replaces: cafe-applets (<< 1.9.0),
 Breaks: cafe-applets (<< 1.9.0),
         cafe-netspeed (<< 1.13.0),
         cafe-netspeed-common (<< 1.13.0),
-Description: Various applets for the MATE panel (common files)
+Description: Various applets for the CAFE panel (common files)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
  .
@@ -100,7 +100,7 @@ Description: Various applets for the MATE panel (common files)
  characters, such as accented characters, mathematical symbols, special
  symbols, and punctuation marks.
  .
- MATE CPUFreq Applet: CPU frequency scaling monitor
+ CAFE CPUFreq Applet: CPU frequency scaling monitor
  .
  Drivemount: lets you mount and unmount drives and file systems.
  .

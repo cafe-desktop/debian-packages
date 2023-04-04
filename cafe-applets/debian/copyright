@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Applets
+Upstream-Name: CAFE Applets
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
 Source: https://git.cafe-desktop.org/cafe-applets/
 
@@ -415,7 +415,7 @@ Files: battstat/docs/C/*
  battstat/docs/uk/figures/battstat-applet.png
  battstat/docs/uk/figures/battstat-preferences.png
  battstat/docs/zh_CN/figures/battstat-applet.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2005, Davyd Madeley
   2004. Angela Boyle
   2004, Sun Microsystems
@@ -443,7 +443,7 @@ Files: charpick/help/C/*
  charpick/help/uk/figures/charpalette_applet.png
  charpick/help/uk/figures/charpick-preferences.png
  charpick/help/uk/figures/charpick_characters.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2005, Davyd Madeley
   2004, Angela Boyle
   2002, 2003, 2004, Sun Microsystems
@@ -472,7 +472,7 @@ Files: cpufreq/help/C/*
  cpufreq/help/sv/figures/cpufreq-applet-preferences.png
  cpufreq/help/uk/figures/cpufreq-applet-preferences.png
  cpufreq/help/uk/figures/cpufreq-applet-selector.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2005, Davyd Madeley
   2004, GNOME Foundation
 License: GFDL-1.1+
@@ -515,7 +515,7 @@ Files: drivemount/help/C/*
  drivemount/help/uk/figures/drivemount-applet_mount.png
  drivemount/help/uk/figures/drivemount-applet_open.png
  drivemount/help/uk/figures/drivemount-applet_status.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2005, Trent Lloyd
   2004, Sun Microsystems
   2002, John Fleck
@@ -523,7 +523,7 @@ Copyright: 2015, MATE Documentation Project
 License: GFDL-1.1+
 
 Files: geyes/docs/C/*
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2002, 2003, 2004, Sun Microsystems
   2000, Telsa Gwynne
   2000, Arjan Scherpenisse
@@ -587,7 +587,7 @@ Files: cafeweather/docs/C/*
  cafeweather/docs/uk/figures/cafeweather-prefs-locations.png
  cafeweather/docs/uk/figures/cafeweather.png
  cafeweather/docs/zh_CN/figures/cafeweather_applet.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2005, Davyd Madeley
   2004, Angela Boyle
   2002, 2003, 2004, Sun Microsystems
@@ -611,7 +611,7 @@ Files: multiload/docs/C/*
  multiload/docs/uk/figures/multiload-preferences.png
  multiload/docs/uk/figures/system-monitor-applet_window.png
  multiload/docs/zh_CN/figures/system-monitor-applet_window.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2005, Davyd Madeley
   2004, Sun Microsystems
   2003, 2004, Chee Bin HOH
@@ -678,7 +678,7 @@ Files: stickynotes/docs/C/*
  stickynotes/docs/zh_CN/figures/stickynotes_applet.png
  stickynotes/docs/zh_HK/figures/stickynotes_applet.png
  stickynotes/docs/zh_TW/figures/stickynotes_applet.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2005, Davyd Madeley
   2004, Shaun McCance
   2004, Angela Boyle
@@ -699,7 +699,7 @@ Files: trashapplet/docs/C/*
  trashapplet/docs/pa/figures/trash-applet.png
  trashapplet/docs/sv/figures/trash-applet.png
  trashapplet/docs/uk/figures/trash-applet.png
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
   2006, GNOME Documentation Project
   2005, Davyd Madeley
   2004, Michiel Sikkes
@@ -2083,7 +2083,7 @@ Files: stickynotes/docs/am/*
  cafe-stickynotes-applet.pot
  cafe-trashapplet.pot
  cafeweather.pot
-Copyright: 2015, MATE Documentation Project
+Copyright: 2015, CAFE Documentation Project
 License: GFDL-1.1+
 Comment:
  Assuming same license as for the documentation files.
