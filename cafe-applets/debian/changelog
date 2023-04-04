@@ -369,7 +369,7 @@ mate-applets (1.14.0-1) unstable; urgency=medium
     + Versioned B-D: libmate-desktop-dev (>= 1.14)
     + Versioned B-D: libmate-panel-applet-dev (>= 1.14)
     + Versioned B-D: libmateweather-dev (>= 1.14)
-    + B-D: libwnck-3-dev.
+    + B-D: libvnck-3-dev.
     + Versioned B-D: mate-common (>= 1.14)
     + B-D: libiw-dev.
   * debian/rules:
