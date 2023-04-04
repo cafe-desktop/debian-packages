@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Applets
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-applets/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-applets/
 
 Files: .build.yml
        .travis.yml
@@ -69,21 +69,21 @@ Files: .build.yml
        m4/*.m4
        makepot
        man/Makefile.am
-       mateweather/AUTHORS
-       mateweather/Makefile.am
-       mateweather/main.c
-       mateweather/mateweather-about.c
-       mateweather/mateweather-about.h
-       mateweather/mateweather-applet.c
-       mateweather/mateweather-applet.h
-       mateweather/mateweather-dialog.c
-       mateweather/mateweather-dialog.h
-       mateweather/mateweather-pref.c
-       mateweather/mateweather-pref.h
-       mateweather/mateweather.h
-       mateweather/*.in
-       mateweather/*.xml
-       mateweather/docs/Makefile.am
+       cafeweather/AUTHORS
+       cafeweather/Makefile.am
+       cafeweather/main.c
+       cafeweather/cafeweather-about.c
+       cafeweather/cafeweather-about.h
+       cafeweather/cafeweather-applet.c
+       cafeweather/cafeweather-applet.h
+       cafeweather/cafeweather-dialog.c
+       cafeweather/cafeweather-dialog.h
+       cafeweather/cafeweather-pref.c
+       cafeweather/cafeweather-pref.h
+       cafeweather/cafeweather.h
+       cafeweather/*.in
+       cafeweather/*.xml
+       cafeweather/docs/Makefile.am
        multiload/AUTHORS
        multiload/Makefile.am
        multiload/autoscaler.c
@@ -102,15 +102,15 @@ Files: .build.yml
        netspeed/Makefile.am
        netspeed/data/Makefile.am
        netspeed/data/netspeed-menu.xml
-       netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in
-       netspeed/data/org.mate.panel.applet.NetspeedAppletFactory.service.in
-       netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in
+       netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in
+       netspeed/data/org.cafe.panel.applet.NetspeedAppletFactory.service.in
+       netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in
        netspeed/help/Makefile.am
        netspeed/icons/22x22/apps/Makefile.am
        netspeed/icons/22x22/apps/*.png
        netspeed/icons/22x22/Makefile.am
        netspeed/icons/22x22/devices/Makefile.am
-       netspeed/icons/22x22/devices/mate-netspeed-plip.png
+       netspeed/icons/22x22/devices/cafe-netspeed-plip.png
        netspeed/icons/16x16/apps/Makefile.am
        netspeed/icons/16x16/apps/*.png
        netspeed/icons/16x16/devices/Makefile.am
@@ -120,19 +120,19 @@ Files: .build.yml
        netspeed/icons/32x32/apps/*.png
        netspeed/icons/32x32/Makefile.am
        netspeed/icons/32x32/devices/Makefile.am
-       netspeed/icons/32x32/devices/mate-netspeed-plip.png
+       netspeed/icons/32x32/devices/cafe-netspeed-plip.png
        netspeed/icons/24x24/apps/Makefile.am
        netspeed/icons/24x24/apps/*.png
        netspeed/icons/24x24/status/Makefile.am
        netspeed/icons/24x24/status/*.png
        netspeed/icons/24x24/Makefile.am
        netspeed/icons/24x24/devices/Makefile.am
-       netspeed/icons/24x24/devices/mate-netspeed-plip.png
+       netspeed/icons/24x24/devices/cafe-netspeed-plip.png
        netspeed/icons/48x48/apps/Makefile.am
        netspeed/icons/48x48/apps/*.png
        netspeed/icons/48x48/Makefile.am
        netspeed/icons/48x48/devices/Makefile.am
-       netspeed/icons/48x48/devices/mate-netspeed-plip.png
+       netspeed/icons/48x48/devices/cafe-netspeed-plip.png
        netspeed/icons/scalable/apps/Makefile.am
        netspeed/icons/scalable/Makefile.am
        netspeed/icons/Makefile.am
@@ -218,7 +218,7 @@ Copyright: 2006-2008, Jörgen Scheibengruber <mfcn@gmx.de>
 License: GPL-2+
 
 Files: netspeed/help/C/index.docbook
-       netspeed/help/mate_netspeed_applet.omf.in
+       netspeed/help/cafe_netspeed_applet.omf.in
        netspeed/help/C/legal.xml
        netspeed/help/*/figures/*.png
        netspeed/help/*/*.xml
@@ -227,7 +227,7 @@ Copyright: 2008, Jonh Wendell <jwendell@gnome.org>
            2008, Jorge Gonzalez <jorgegonz@svn.gnome.org>
 License: GFDL-1.1+
 
-Files: netspeed/icons/scalable/apps/mate-netspeed-applet.svg
+Files: netspeed/icons/scalable/apps/cafe-netspeed-applet.svg
 Copyright: Jimmac (http://jimmac.musichall.cz/)
 License: CC-BY-SA
 
@@ -328,10 +328,10 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: mate-applets.pot
+Files: cafe-applets.pot
        po/*.po
        po/gnome-copyrights.txt
-Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
+Copyright: 2007, THE cafe-applets COPYRIGHT HOLDER
            1998-2006, Free Software Foundation, Inc.
            2005, Norayr Chilingaryan
            2009-2010, The Gnome Foundation
@@ -529,64 +529,64 @@ Copyright: 2015, MATE Documentation Project
   2000, Arjan Scherpenisse
 License: GFDL-1.1+
 
-Files: mateweather/docs/C/*
- mateweather/docs/ca/figures/mateweather-details.png
- mateweather/docs/ca/figures/mateweather-menu-prefs.png
- mateweather/docs/ca/figures/mateweather-prefs-general.png
- mateweather/docs/ca/figures/mateweather-prefs-locations.png
- mateweather/docs/cs/figures/mateweather-details.png
- mateweather/docs/cs/figures/mateweather-menu-prefs.png
- mateweather/docs/cs/figures/mateweather-prefs-general.png
- mateweather/docs/cs/figures/mateweather-prefs-locations.png
- mateweather/docs/de/figures/mateweather-details.png
- mateweather/docs/de/figures/mateweather-menu-prefs.png
- mateweather/docs/de/figures/mateweather-prefs-general.png
- mateweather/docs/de/figures/mateweather-prefs-locations.png
- mateweather/docs/de/figures/mateweather_applet.png
- mateweather/docs/el/figures/mateweather-details.png
- mateweather/docs/el/figures/mateweather-menu-prefs.png
- mateweather/docs/el/figures/mateweather-prefs-general.png
- mateweather/docs/el/figures/mateweather-prefs-locations.png
- mateweather/docs/es/figures/mateweather-details.png
- mateweather/docs/es/figures/mateweather-menu-prefs.png
- mateweather/docs/es/figures/mateweather-prefs-general.png
- mateweather/docs/es/figures/mateweather-prefs-locations.png
- mateweather/docs/eu/figures/mateweather-details.png
- mateweather/docs/eu/figures/mateweather-menu-prefs.png
- mateweather/docs/eu/figures/mateweather-prefs-general.png
- mateweather/docs/eu/figures/mateweather-prefs-locations.png
- mateweather/docs/fi/figures/mateweather-details.png
- mateweather/docs/fi/figures/mateweather-menu-prefs.png
- mateweather/docs/fi/figures/mateweather-prefs-general.png
- mateweather/docs/fi/figures/mateweather-prefs-locations.png
- mateweather/docs/fr/figures/mateweather-details.png
- mateweather/docs/fr/figures/mateweather-menu-prefs.png
- mateweather/docs/fr/figures/mateweather-prefs-general.png
- mateweather/docs/fr/figures/mateweather-prefs-locations.png
- mateweather/docs/fr/figures/mateweather_applet.png
- mateweather/docs/nl/figures/mateweather-details.png
- mateweather/docs/nl/figures/mateweather-menu-prefs.png
- mateweather/docs/nl/figures/mateweather-prefs-general.png
- mateweather/docs/nl/figures/mateweather-prefs-locations.png
- mateweather/docs/nl/figures/mateweather_applet.png
- mateweather/docs/pt_BR/figures/mateweather-details.png
- mateweather/docs/pt_BR/figures/mateweather-menu-prefs.png
- mateweather/docs/pt_BR/figures/mateweather-prefs-general.png
- mateweather/docs/pt_BR/figures/mateweather-prefs-locations.png
- mateweather/docs/ru/figures/mateweather-details.png
- mateweather/docs/ru/figures/mateweather-menu-prefs.png
- mateweather/docs/ru/figures/mateweather-prefs-general.png
- mateweather/docs/ru/figures/mateweather-prefs-locations.png
- mateweather/docs/sv/figures/mateweather-details.png
- mateweather/docs/sv/figures/mateweather-menu-prefs.png
- mateweather/docs/sv/figures/mateweather-prefs-general.png
- mateweather/docs/sv/figures/mateweather-prefs-locations.png
- mateweather/docs/sv/figures/mateweather_applet.png
- mateweather/docs/uk/figures/mateweather-details.png
- mateweather/docs/uk/figures/mateweather-prefs-general.png
- mateweather/docs/uk/figures/mateweather-prefs-locations.png
- mateweather/docs/uk/figures/mateweather.png
- mateweather/docs/zh_CN/figures/mateweather_applet.png
+Files: cafeweather/docs/C/*
+ cafeweather/docs/ca/figures/cafeweather-details.png
+ cafeweather/docs/ca/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/ca/figures/cafeweather-prefs-general.png
+ cafeweather/docs/ca/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/cs/figures/cafeweather-details.png
+ cafeweather/docs/cs/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/cs/figures/cafeweather-prefs-general.png
+ cafeweather/docs/cs/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/de/figures/cafeweather-details.png
+ cafeweather/docs/de/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/de/figures/cafeweather-prefs-general.png
+ cafeweather/docs/de/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/de/figures/cafeweather_applet.png
+ cafeweather/docs/el/figures/cafeweather-details.png
+ cafeweather/docs/el/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/el/figures/cafeweather-prefs-general.png
+ cafeweather/docs/el/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/es/figures/cafeweather-details.png
+ cafeweather/docs/es/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/es/figures/cafeweather-prefs-general.png
+ cafeweather/docs/es/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/eu/figures/cafeweather-details.png
+ cafeweather/docs/eu/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/eu/figures/cafeweather-prefs-general.png
+ cafeweather/docs/eu/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/fi/figures/cafeweather-details.png
+ cafeweather/docs/fi/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/fi/figures/cafeweather-prefs-general.png
+ cafeweather/docs/fi/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/fr/figures/cafeweather-details.png
+ cafeweather/docs/fr/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/fr/figures/cafeweather-prefs-general.png
+ cafeweather/docs/fr/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/fr/figures/cafeweather_applet.png
+ cafeweather/docs/nl/figures/cafeweather-details.png
+ cafeweather/docs/nl/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/nl/figures/cafeweather-prefs-general.png
+ cafeweather/docs/nl/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/nl/figures/cafeweather_applet.png
+ cafeweather/docs/pt_BR/figures/cafeweather-details.png
+ cafeweather/docs/pt_BR/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/pt_BR/figures/cafeweather-prefs-general.png
+ cafeweather/docs/pt_BR/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/ru/figures/cafeweather-details.png
+ cafeweather/docs/ru/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/ru/figures/cafeweather-prefs-general.png
+ cafeweather/docs/ru/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/sv/figures/cafeweather-details.png
+ cafeweather/docs/sv/figures/cafeweather-menu-prefs.png
+ cafeweather/docs/sv/figures/cafeweather-prefs-general.png
+ cafeweather/docs/sv/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/sv/figures/cafeweather_applet.png
+ cafeweather/docs/uk/figures/cafeweather-details.png
+ cafeweather/docs/uk/figures/cafeweather-prefs-general.png
+ cafeweather/docs/uk/figures/cafeweather-prefs-locations.png
+ cafeweather/docs/uk/figures/cafeweather.png
+ cafeweather/docs/zh_CN/figures/cafeweather_applet.png
 Copyright: 2015, MATE Documentation Project
   2005, Davyd Madeley
   2004, Angela Boyle
@@ -954,133 +954,133 @@ Files: stickynotes/docs/am/*
  drivemount/help/mai/mai.po
  drivemount/help/mk/mk.po
  drivemount/help/nn/nn.po
- mateweather/docs/C/*
- mateweather/docs/am/am.po
- mateweather/docs/sl/sl.po
- mateweather/docs/ast/ast.po
- mateweather/docs/af/af.po
- mateweather/docs/nds/nds.po
- mateweather/docs/fur/fur.po
- mateweather/docs/lv/lv.po
- mateweather/docs/ku/ku.po
- mateweather/docs/ps/ps.po
- mateweather/docs/ko/ko.po
- mateweather/docs/li/li.po
- mateweather/docs/pa/pa.po
- mateweather/docs/ug/ug.po
- mateweather/docs/zu/zu.po
- mateweather/docs/es_NI/es_NI.po
- mateweather/docs/yo/yo.po
- mateweather/docs/si/si.po
- mateweather/docs/tr/tr.po
- mateweather/docs/kn/kn.po
- mateweather/docs/la/la.po
- mateweather/docs/ie/ie.po
- mateweather/docs/ig/ig.po
- mateweather/docs/en_AU/en_AU.po
- mateweather/docs/es_UY/es_UY.po
- mateweather/docs/es_SV/es_SV.po
- mateweather/docs/mr/mr.po
- mateweather/docs/ga/ga.po
- mateweather/docs/es_ES/es_ES.po
- mateweather/docs/el/el.po
- mateweather/docs/nb/nb.po
- mateweather/docs/cmn/cmn.po
- mateweather/docs/uk/uk.po
- mateweather/docs/id/id.po
- mateweather/docs/te/te.po
- mateweather/docs/be/be.po
- mateweather/docs/es_EC/es_EC.po
- mateweather/docs/mn/mn.po
- mateweather/docs/sr@latin/sr@latin.po
- mateweather/docs/is/is.po
- mateweather/docs/es_VE/es_VE.po
- mateweather/docs/sq/sq.po
- mateweather/docs/es_MX/es_MX.po
- mateweather/docs/br/br.po
- mateweather/docs/fa/fa.po
- mateweather/docs/es_PE/es_PE.po
- mateweather/docs/eu/eu.po
- mateweather/docs/kab/kab.po
- mateweather/docs/es_PR/es_PR.po
- mateweather/docs/es_CR/es_CR.po
- mateweather/docs/bn/bn.po
- mateweather/docs/ca/ca.po
- mateweather/docs/en_CA/en_CA.po
- mateweather/docs/fi/fi.po
- mateweather/docs/eo/eo.po
- mateweather/docs/ta/ta.po
- mateweather/docs/pl/pl.po
- mateweather/docs/da/da.po
- mateweather/docs/ky/ky.po
- mateweather/docs/bs/bs.po
- mateweather/docs/ha/ha.po
- mateweather/docs/sk/sk.po
- mateweather/docs/frp/frp.po
- mateweather/docs/de/de.po
- mateweather/docs/lt/lt.po
- mateweather/docs/hy/hy.po
- mateweather/docs/hi/hi.po
- mateweather/docs/mi/mi.po
- mateweather/docs/es_PA/es_PA.po
- mateweather/docs/xh/xh.po
- mateweather/docs/es_CL/es_CL.po
- mateweather/docs/ur/ur.po
- mateweather/docs/es_AR/es_AR.po
- mateweather/docs/pt/pt.po
- mateweather/docs/ro/ro.po
- mateweather/docs/mg/mg.po
- mateweather/docs/ar/ar.po
- mateweather/docs/uz/uz.po
- mateweather/docs/ka/ka.po
- mateweather/docs/fr/fr.po
- mateweather/docs/pt_BR/pt_BR.po
- mateweather/docs/gu/gu.po
- mateweather/docs/en_GB/en_GB.po
- mateweather/docs/ne/ne.po
- mateweather/docs/ru/ru.po
- mateweather/docs/km/km.po
- mateweather/docs/ca@valencia/ca@valencia.po
- mateweather/docs/et/et.po
- mateweather/docs/hu/hu.po
- mateweather/docs/nso/nso.po
- mateweather/docs/cs/cs.po
- mateweather/docs/es/es.po
- mateweather/docs/ml/ml.po
- mateweather/docs/nl/nl.po
- mateweather/docs/hr/hr.po
- mateweather/docs/crh/crh.po
- mateweather/docs/az/az.po
- mateweather/docs/it/it.po
- mateweather/docs/ms/ms.po
- mateweather/docs/oc/oc.po
- mateweather/docs/bg/bg.po
- mateweather/docs/wa/wa.po
- mateweather/docs/as/as.po
- mateweather/docs/he/he.po
- mateweather/docs/es_CO/es_CO.po
- mateweather/docs/ku_IQ/ku_IQ.po
- mateweather/docs/dz/dz.po
- mateweather/docs/rw/rw.po
- mateweather/docs/kk/kk.po
- mateweather/docs/zh_CN/zh_CN.po
- mateweather/docs/fy/fy.po
- mateweather/docs/bn_IN/bn_IN.po
- mateweather/docs/gl/gl.po
- mateweather/docs/es_DO/es_DO.po
- mateweather/docs/sv/sv.po
- mateweather/docs/zh_TW/zh_TW.po
- mateweather/docs/vi/vi.po
- mateweather/docs/th/th.po
- mateweather/docs/or/or.po
- mateweather/docs/ja/ja.po
- mateweather/docs/sr/sr.po
- mateweather/docs/cy/cy.po
- mateweather/docs/zh_HK/zh_HK.po
- mateweather/docs/tk/tk.po
- mateweather/docs/mai/mai.po
- mateweather/docs/mk/mk.po
- mateweather/docs/nn/nn.po
+ cafeweather/docs/C/*
+ cafeweather/docs/am/am.po
+ cafeweather/docs/sl/sl.po
+ cafeweather/docs/ast/ast.po
+ cafeweather/docs/af/af.po
+ cafeweather/docs/nds/nds.po
+ cafeweather/docs/fur/fur.po
+ cafeweather/docs/lv/lv.po
+ cafeweather/docs/ku/ku.po
+ cafeweather/docs/ps/ps.po
+ cafeweather/docs/ko/ko.po
+ cafeweather/docs/li/li.po
+ cafeweather/docs/pa/pa.po
+ cafeweather/docs/ug/ug.po
+ cafeweather/docs/zu/zu.po
+ cafeweather/docs/es_NI/es_NI.po
+ cafeweather/docs/yo/yo.po
+ cafeweather/docs/si/si.po
+ cafeweather/docs/tr/tr.po
+ cafeweather/docs/kn/kn.po
+ cafeweather/docs/la/la.po
+ cafeweather/docs/ie/ie.po
+ cafeweather/docs/ig/ig.po
+ cafeweather/docs/en_AU/en_AU.po
+ cafeweather/docs/es_UY/es_UY.po
+ cafeweather/docs/es_SV/es_SV.po
+ cafeweather/docs/mr/mr.po
+ cafeweather/docs/ga/ga.po
+ cafeweather/docs/es_ES/es_ES.po
+ cafeweather/docs/el/el.po
+ cafeweather/docs/nb/nb.po
+ cafeweather/docs/cmn/cmn.po
+ cafeweather/docs/uk/uk.po
+ cafeweather/docs/id/id.po
+ cafeweather/docs/te/te.po
+ cafeweather/docs/be/be.po
+ cafeweather/docs/es_EC/es_EC.po
+ cafeweather/docs/mn/mn.po
+ cafeweather/docs/sr@latin/sr@latin.po
+ cafeweather/docs/is/is.po
+ cafeweather/docs/es_VE/es_VE.po
+ cafeweather/docs/sq/sq.po
+ cafeweather/docs/es_MX/es_MX.po
+ cafeweather/docs/br/br.po
+ cafeweather/docs/fa/fa.po
+ cafeweather/docs/es_PE/es_PE.po
+ cafeweather/docs/eu/eu.po
+ cafeweather/docs/kab/kab.po
+ cafeweather/docs/es_PR/es_PR.po
+ cafeweather/docs/es_CR/es_CR.po
+ cafeweather/docs/bn/bn.po
+ cafeweather/docs/ca/ca.po
+ cafeweather/docs/en_CA/en_CA.po
+ cafeweather/docs/fi/fi.po
+ cafeweather/docs/eo/eo.po
+ cafeweather/docs/ta/ta.po
+ cafeweather/docs/pl/pl.po
+ cafeweather/docs/da/da.po
+ cafeweather/docs/ky/ky.po
+ cafeweather/docs/bs/bs.po
+ cafeweather/docs/ha/ha.po
+ cafeweather/docs/sk/sk.po
+ cafeweather/docs/frp/frp.po
+ cafeweather/docs/de/de.po
+ cafeweather/docs/lt/lt.po
+ cafeweather/docs/hy/hy.po
+ cafeweather/docs/hi/hi.po
+ cafeweather/docs/mi/mi.po
+ cafeweather/docs/es_PA/es_PA.po
+ cafeweather/docs/xh/xh.po
+ cafeweather/docs/es_CL/es_CL.po
+ cafeweather/docs/ur/ur.po
+ cafeweather/docs/es_AR/es_AR.po
+ cafeweather/docs/pt/pt.po
+ cafeweather/docs/ro/ro.po
+ cafeweather/docs/mg/mg.po
+ cafeweather/docs/ar/ar.po
+ cafeweather/docs/uz/uz.po
+ cafeweather/docs/ka/ka.po
+ cafeweather/docs/fr/fr.po
+ cafeweather/docs/pt_BR/pt_BR.po
+ cafeweather/docs/gu/gu.po
+ cafeweather/docs/en_GB/en_GB.po
+ cafeweather/docs/ne/ne.po
+ cafeweather/docs/ru/ru.po
+ cafeweather/docs/km/km.po
+ cafeweather/docs/ca@valencia/ca@valencia.po
+ cafeweather/docs/et/et.po
+ cafeweather/docs/hu/hu.po
+ cafeweather/docs/nso/nso.po
+ cafeweather/docs/cs/cs.po
+ cafeweather/docs/es/es.po
+ cafeweather/docs/ml/ml.po
+ cafeweather/docs/nl/nl.po
+ cafeweather/docs/hr/hr.po
+ cafeweather/docs/crh/crh.po
+ cafeweather/docs/az/az.po
+ cafeweather/docs/it/it.po
+ cafeweather/docs/ms/ms.po
+ cafeweather/docs/oc/oc.po
+ cafeweather/docs/bg/bg.po
+ cafeweather/docs/wa/wa.po
+ cafeweather/docs/as/as.po
+ cafeweather/docs/he/he.po
+ cafeweather/docs/es_CO/es_CO.po
+ cafeweather/docs/ku_IQ/ku_IQ.po
+ cafeweather/docs/dz/dz.po
+ cafeweather/docs/rw/rw.po
+ cafeweather/docs/kk/kk.po
+ cafeweather/docs/zh_CN/zh_CN.po
+ cafeweather/docs/fy/fy.po
+ cafeweather/docs/bn_IN/bn_IN.po
+ cafeweather/docs/gl/gl.po
+ cafeweather/docs/es_DO/es_DO.po
+ cafeweather/docs/sv/sv.po
+ cafeweather/docs/zh_TW/zh_TW.po
+ cafeweather/docs/vi/vi.po
+ cafeweather/docs/th/th.po
+ cafeweather/docs/or/or.po
+ cafeweather/docs/ja/ja.po
+ cafeweather/docs/sr/sr.po
+ cafeweather/docs/cy/cy.po
+ cafeweather/docs/zh_HK/zh_HK.po
+ cafeweather/docs/tk/tk.po
+ cafeweather/docs/mai/mai.po
+ cafeweather/docs/mk/mk.po
+ cafeweather/docs/nn/nn.po
  netspeed/help/am/am.po
  netspeed/help/sl/sl.po
  netspeed/help/ast/ast.po
@@ -2072,17 +2072,17 @@ Files: stickynotes/docs/am/*
  charpick/help/mai/mai.po
  charpick/help/mk/mk.po
  charpick/help/nn/nn.po
- mate-accessx-status.pot
- mate-battstat.pot
- mate-char-palette.pot
- mate-cpufreq-applet.pot
- mate-drivemount.pot
- mate-geyes.pot
- mate-multiload.pot
- mate-netspeed-applet.pot
- mate-stickynotes-applet.pot
- mate-trashapplet.pot
- mateweather.pot
+ cafe-accessx-status.pot
+ cafe-battstat.pot
+ cafe-char-palette.pot
+ cafe-cpufreq-applet.pot
+ cafe-drivemount.pot
+ cafe-geyes.pot
+ cafe-multiload.pot
+ cafe-netspeed-applet.pot
+ cafe-stickynotes-applet.pot
+ cafe-trashapplet.pot
+ cafeweather.pot
 Copyright: 2015, MATE Documentation Project
 License: GFDL-1.1+
 Comment:

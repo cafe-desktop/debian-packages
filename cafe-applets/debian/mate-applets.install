@@ -1,4 +1,4 @@
 #! /usr/bin/dh-exec
 [!hurd-any] etc/
-[linux-any] usr/bin/mate-cpufreq-selector
+[linux-any] usr/bin/cafe-cpufreq-selector
 usr/lib/

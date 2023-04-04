@@ -20,7 +20,7 @@ DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
 DEB_CONFIGURE_EXTRA_FLAGS += \
                 --disable-silent-rules \
-                --libexecdir=/usr/lib/mate-applets \
+                --libexecdir=/usr/lib/cafe-applets \
                 --localstatedir=/var \
                 --disable-static
 
@@ -29,15 +29,15 @@ common-install-arch:: remove-cruft
 common-binary-post-install-arch:: list-missing
 
 remove-cruft::
-	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyc
-	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyo
+	rm -rfv debian/*/usr/lib/python*/dist-packages/cafe_invest/*.pyc
+	rm -rfv debian/*/usr/lib/python*/dist-packages/cafe_invest/*.pyo
 
-	# applets have been moved to <PREFIX>/lib/mate-applets/ (and renamed) since 1.24.0
-	rm -fv  debian/*/usr/share/man/man1/mate-charpick-applet.1*
-	rm -fv  debian/*/usr/share/man/man1/mate-drivemount-applet.1*
-	rm -fv  debian/*/usr/share/man/man1/mate-geyes-applet.1*
-	rm -fv  debian/*/usr/share/man/man1/mate-multiload-applet.1*
-	rm -fv  debian/*/usr/share/man/man1/mateweather.1*
+	# applets have been moved to <PREFIX>/lib/cafe-applets/ (and renamed) since 1.24.0
+	rm -fv  debian/*/usr/share/man/man1/cafe-charpick-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/cafe-drivemount-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/cafe-geyes-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/cafe-multiload-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/cafeweather.1*
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..

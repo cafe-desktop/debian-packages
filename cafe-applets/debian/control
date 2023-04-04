@@ -1,7 +1,7 @@
-Source: mate-applets
+Source: cafe-applets
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -23,35 +23,35 @@ Build-Depends: cdbs,
                libgtop2-dev,
                libgucharmap-2-90-dev,
                libiw-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
-               libmate-panel-applet-dev (>= 1.18),
-               libmateweather-dev (>= 1.18),
+               libcafe-panel-applet-dev (>= 1.18),
+               libcafeweather-dev (>= 1.18),
                libnotify-dev,
                libpolkit-gobject-1-dev,
                libupower-glib-dev,
                libvnck-3-dev,
                libx11-dev,
                libxml2-dev,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
                policykit-1,
                x11proto-kb-dev,
                yelp-tools,
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-applets
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-applets.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-applets
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-applets.git
 
-Package: mate-applets
+Package: cafe-applets
 Architecture: any
 Depends: gsettings-desktop-schemas,
          gvfs,
-         mate-applets-common (= ${source:Version}),
-         mate-panel,
+         cafe-applets-common (= ${source:Version}),
+         cafe-panel,
          ${misc:Depends},
          ${shlibs:Depends},
-Recommends: mate-media,
-            mate-polkit,
-            mate-system-monitor,
-Replaces: mate-netspeed (<< 1.13.0),
-Breaks: mate-netspeed (<< 1.13.0),
+Recommends: cafe-media,
+            cafe-polkit,
+            cafe-system-monitor,
+Replaces: cafe-netspeed (<< 1.13.0),
+Breaks: cafe-netspeed (<< 1.13.0),
 Description: Various applets for the MATE panel
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -81,15 +81,15 @@ Description: Various applets for the MATE panel
  Service (NWS) servers, including the Interactive Weather Information
  Network (IWIN).
 
-Package: mate-applets-common
+Package: cafe-applets-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: mate-applets (<< 1.9.0),
-          mate-netspeed (<< 1.13.0),
-          mate-netspeed-common (<< 1.13.0),
-Breaks: mate-applets (<< 1.9.0),
-        mate-netspeed (<< 1.13.0),
-        mate-netspeed-common (<< 1.13.0),
+Replaces: cafe-applets (<< 1.9.0),
+          cafe-netspeed (<< 1.13.0),
+          cafe-netspeed-common (<< 1.13.0),
+Breaks: cafe-applets (<< 1.9.0),
+        cafe-netspeed (<< 1.13.0),
+        cafe-netspeed-common (<< 1.13.0),
 Description: Various applets for the MATE panel (common files)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
