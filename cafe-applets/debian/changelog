@@ -374,7 +374,7 @@ cafe-applets (1.14.0-1) unstable; urgency=medium
     + B-D: libiw-dev.
   * debian/rules:
     + Add --with-ctk=3.0
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
   * debian/control:
     + Add references to netspeed applet, which is now included in cafe-applets
       and obsoletes cafe-netspeed-applet.
