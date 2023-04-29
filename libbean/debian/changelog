@@ -454,7 +454,7 @@ libbean (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
   * Update debian/libbean-1.0-0.symbols.
-  * debian/rules: Build ctk-doc documentation.
+  * debian/rules: Build gtk-doc documentation.
   * Install the complete /usr/lib/bean-demo directory and remove compiled
     python and libtool .la files afterwards. This way we don't fail on
     architectures where seed is disabled and no .js files are installed.
@@ -638,7 +638,7 @@ libbean (0.5.3-0ubuntu4) maverick; urgency=low
 libbean (0.5.3-0ubuntu3) maverick; urgency=low
 
   * debian/control:
-    - Build-depend on intltool, ctk-doc-tools
+    - Build-depend on intltool, gtk-doc-tools
 
  -- Robert Ancell <robert.ancell@canonical.com>  Mon, 09 Aug 2010 16:44:03 +1000
 
