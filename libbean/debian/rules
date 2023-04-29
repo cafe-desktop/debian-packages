@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
+
+# needed with the Ubuntu toolchain to avoid issues
+export DEB_LDFLAGS_MAINT_STRIP := -Wl,-Bsymbolic-functions
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-Dgtk_doc=true \
+		-Dpython2=false \
+		-Dpython3=true
+
+override_dh_makeshlibs:
+	dh_makeshlibs -p libpeas-1.0-0 \
+		-X/usr/lib/$(DEB_HOST_MULTIARCH)/libpeas-1.0/ -- -c4
+	dh_makeshlibs --remaining-packages
+
+override_dh_install:
+	# remove compiled python and libtool .la files
+	find debian/tmp \( \
+		-name '*.la' -o -name '*.pyc' -o -name '*.pyo' \
+		\) -print -delete
+	rm -rf debian/tmp/usr/lib/*/peas-demo/plugins/*/__pycache__
+	dh_install
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_auto_test:
+	HOME=$(CURDIR) xvfb-run -a dh_auto_test

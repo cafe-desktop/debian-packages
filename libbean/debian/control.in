@@ -1,0 +1,85 @@
+Source: libpeas
+Section: libs
+Priority: optional
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: adwaita-icon-theme <!nocheck>,
+               debhelper-compat (= 12),
+               dh-sequence-gir,
+               dh-sequence-gnome,
+               gnome-common,
+               gtk-doc-tools (>= 1.11),
+               intltool (>= 0.40),
+               libgirepository1.0-dev (>= 1.39.0),
+               libgirepository1.0-doc <!nodoc>,
+               libgladeui-dev,
+               libglib2.0-dev (>= 2.38.0),
+               libglib2.0-doc <!nodoc>,
+               libgtk-3-dev (>= 3.0.0),
+               libgtk-3-doc <!nodoc>,
+               meson (>= 0.47.1),
+               python-gi-dev (>= 3.7.2),
+               python3-dev (>= 3.2.0),
+               python3-gi (>= 3.7.2),
+               xauth <!nocheck>,
+               xvfb <!nocheck>
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/gnome-team/libpeas
+Vcs-Git: https://salsa.debian.org/gnome-team/libpeas.git
+Homepage: https://wiki.gnome.org/Projects/Libpeas
+
+Package: libpeas-1.0-0
+Architecture: any
+Depends: libpeas-common, ${misc:Depends}, ${shlibs:Depends}
+Multi-Arch: same
+Description: Application plugin library
+ libpeas is a library that allows applications to support plugins.
+
+Package: libpeas-dev
+Section: libdevel
+Architecture: any
+Depends: gir1.2-peas-1.0 (= ${binary:Version}),
+         libgirepository1.0-dev (>= 1.39.0),
+         libglib2.0-dev (>= 2.38.0),
+         libgtk-3-dev (>= 3.0.0),
+         libpeas-1.0-0 (= ${binary:Version}),
+         ${misc:Depends}
+Suggests: libpeas-doc
+Multi-Arch: same
+Description: Application plugin library (development files)
+ libpeas is a library that allows applications to support plugins.
+ .
+ This package contains the headers files required for developing software that
+ uses libpeas.
+
+Package: libpeas-doc
+Section: doc
+Multi-Arch: foreign
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Build-Profiles: <!nodoc>
+Description: Application plugin library (documentation)
+ libpeas is a library that allows applications to support plugins.
+ .
+ This package contains the API reference for libpeas.
+
+Package: libpeas-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Application plugin library (common files)
+ libpeas is a library that allows applications to support plugins.
+ .
+ This package contains common files, such as translations and icons.
+
+Package: gir1.2-peas-1.0
+Section: introspection
+Architecture: any
+Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Provides: gir1.2-peasgtk-1.0 (= ${binary:Version})
+Multi-Arch: same
+Description: Application plugin library (introspection files)
+ libpeas is a library that allows applications to support plugins.
+ .
+ This package can be used by other packages using the GIRepository format to
+ generate dynamic bindings.

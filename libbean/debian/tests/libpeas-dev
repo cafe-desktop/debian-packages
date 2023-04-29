@@ -1,0 +1,52 @@
+#!/bin/sh
+
+set -eux
+
+cd "$AUTOPKGTEST_TMP"
+
+if [ -n "${DEB_HOST_GNU_TYPE:-}" ]; then
+    CROSS_COMPILE="$DEB_HOST_GNU_TYPE-"
+else
+    CROSS_COMPILE=
+fi
+
+cat > peas.c <<'EOF'
+#include <glib-object.h>
+#include <libpeas/peas.h>
+
+int main (int argc, char *argv[])
+{
+    PeasEngine *engine = peas_engine_new ();
+
+    g_assert_nonnull (engine);
+    peas_engine_enable_loader (engine, "python3");
+    g_object_unref (engine);
+    return 0;
+}
+EOF
+
+# Deliberately word-splitting, that's how pkg-config works:
+# shellcheck disable=SC2046
+"${CROSS_COMPILE}gcc" -o peas peas.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libpeas-1.0)
+test -x peas
+G_DEBUG=fatal_warnings,fatal_criticals ./peas
+
+cat > gtk.c <<'EOF'
+#include <glib-object.h>
+#include <libpeas-gtk/peas-gtk.h>
+
+int main (int argc, char *argv[])
+{
+    GType type = peas_gtk_plugin_manager_get_type ();
+
+    g_assert_cmpuint (type, !=, G_TYPE_INVALID);
+    return 0;
+}
+EOF
+
+# shellcheck disable=SC2046
+"${CROSS_COMPILE}gcc" -o gtk gtk.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libpeas-gtk-1.0)
+test -x gtk
+G_DEBUG=fatal_warnings,fatal_criticals ./gtk
+
+echo "# everything seems OK"
