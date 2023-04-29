@@ -11,7 +11,7 @@ export DEB_LDFLAGS_MAINT_STRIP := -Wl,-Bsymbolic-functions
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		-Dgtk_doc=true \
+		-Dctk_doc=true \
 		-Dpython2=false \
 		-Dpython3=true
 

@@ -31,13 +31,13 @@ EOF
 test -x bean
 G_DEBUG=fatal_warnings,fatal_criticals ./bean
 
-cat > gtk.c <<'EOF'
+cat > ctk.c <<'EOF'
 #include <glib-object.h>
-#include <libbean-gtk/bean-gtk.h>
+#include <libbean-ctk/bean-ctk.h>
 
 int main (int argc, char *argv[])
 {
-    GType type = bean_gtk_plugin_manager_get_type ();
+    GType type = bean_ctk_plugin_manager_get_type ();
 
     g_assert_cmpuint (type, !=, G_TYPE_INVALID);
     return 0;
@@ -45,8 +45,8 @@ int main (int argc, char *argv[])
 EOF
 
 # shellcheck disable=SC2046
-"${CROSS_COMPILE}gcc" -o gtk gtk.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-gtk-1.0)
-test -x gtk
-G_DEBUG=fatal_warnings,fatal_criticals ./gtk
+"${CROSS_COMPILE}gcc" -o ctk ctk.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-ctk-1.0)
+test -x ctk
+G_DEBUG=fatal_warnings,fatal_criticals ./ctk
 
 echo "# everything seems OK"

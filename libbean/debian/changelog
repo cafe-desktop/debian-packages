@@ -35,7 +35,7 @@ libbean (1.26.0-1) unstable; urgency=medium
   [ Laurent Bigonville ]
   * New upstream release (Closes: #953348)
   * debian/control.in: Add libglib2.0-doc, libgirepository1.0-doc and
-    libgtk-3-doc so the links between documentation are properly resolved
+    libctk-3-doc so the links between documentation are properly resolved
   * debian/libbean-1.0-0.symbols: Add newly exported symbols
   * debian/control.in: Bump Standards-Version to 4.5.0 (no further changes)
   * debian/contron.in: Mark libbean-doc with Build-profiles: <!nodoc>
@@ -115,7 +115,7 @@ libbean (1.22.0-3) unstable; urgency=medium
 libbean (1.22.0-2) unstable; urgency=medium
 
   [ Simon McVittie ]
-  * gir1.2-bean-1.0 Provides gir1.2-beangtk-1.0, reflecting the fact
+  * gir1.2-bean-1.0 Provides gir1.2-beanctk-1.0, reflecting the fact
     that it contains both Bean-1.0.typelib and BeanGtk-1.0.typelib
   * Bump priorities from extra to optional. Priority: extra is now
     deprecated.
@@ -363,7 +363,7 @@ libbean (1.7.0-1) experimental; urgency=low
     - Build-Depends on python-gi-dev (>= 3.7.2) to pass testsuite.
     - Build-Depends on xvfb and xauth to run testsuite.
     - Build-Depends on libgjs-dev to build gjs loader.
-    - Build-Depends on libseed-gtk3-dev also on ia64.
+    - Build-Depends on libseed-ctk3-dev also on ia64.
   * debian/rules:
     - Enable python3 loader (Closes: #678354).
     - Enable gjs loader.
@@ -454,7 +454,7 @@ libbean (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
   * Update debian/libbean-1.0-0.symbols.
-  * debian/rules: Build gtk-doc documentation.
+  * debian/rules: Build ctk-doc documentation.
   * Install the complete /usr/lib/bean-demo directory and remove compiled
     python and libtool .la files afterwards. This way we don't fail on
     architectures where seed is disabled and no .js files are installed.
@@ -514,7 +514,7 @@ libbean (1.0.0-2) experimental; urgency=low
     the tests with -Bsymbolic-functions, which confuses them. Thanks to
     Michael Terry for the patch! (Closes: #627115)
   * debian/control.in: Add gnome-icon-theme build dependency. One of the self
-    tests checks the "gtk-about" stock icon, so ensure that it can actually
+    tests checks the "ctk-about" stock icon, so ensure that it can actually
     find it.
   * debian/control.in: Bump Standards-Version to 3.9.2, no changes necessary.
   * debian/copyright: Update FSF address, thanks lintian.
@@ -557,7 +557,7 @@ libbean (0.7.3-1) experimental; urgency=low
 
   [ Sjoerd Simons ]
   * New upstream release (0.7.3)
-  * Transition to libgtk-3-* package nameing
+  * Transition to libctk-3-* package nameing
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sat, 26 Feb 2011 16:17:43 +0000
 
@@ -613,7 +613,7 @@ libbean (0.7.0-0ubuntu1) natty; urgency=low
     - Dropped, not needed now
   * debian/rules:
     - Don't call autoreconf
-    - Don't build against gtk2
+    - Don't build against ctk2
     - Call dh_girepository to set gir:Depends
   * debian/watch:
     - Use bz2 tarballs
@@ -638,7 +638,7 @@ libbean (0.5.3-0ubuntu4) maverick; urgency=low
 libbean (0.5.3-0ubuntu3) maverick; urgency=low
 
   * debian/control:
-    - Build-depend on intltool, gtk-doc-tools
+    - Build-depend on intltool, ctk-doc-tools
 
  -- Robert Ancell <robert.ancell@canonical.com>  Mon, 09 Aug 2010 16:44:03 +1000
 

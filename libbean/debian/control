@@ -12,15 +12,15 @@ Build-Depends: adwaita-icon-theme <!nocheck>,
                dh-sequence-gir,
                dh-sequence-gnome,
                gnome-common,
-               gtk-doc-tools (>= 1.11),
+               ctk-doc-tools (>= 1.11),
                intltool (>= 0.40),
                libgirepository1.0-dev (>= 1.39.0),
                libgirepository1.0-doc <!nodoc>,
                libgladeui-dev,
                libglib2.0-dev (>= 2.38.0),
                libglib2.0-doc <!nodoc>,
-               libgtk-3-dev (>= 3.0.0),
-               libgtk-3-doc <!nodoc>,
+               libctk-3-dev (>= 3.0.0),
+               libctk-3-doc <!nodoc>,
                meson (>= 0.47.1),
                python-gi-dev (>= 3.7.2),
                python3-dev (>= 3.2.0),
@@ -45,7 +45,7 @@ Architecture: any
 Depends: gir1.2-bean-1.0 (= ${binary:Version}),
          libgirepository1.0-dev (>= 1.39.0),
          libglib2.0-dev (>= 2.38.0),
-         libgtk-3-dev (>= 3.0.0),
+         libctk-3-dev (>= 3.0.0),
          libbean-1.0-0 (= ${binary:Version}),
          ${misc:Depends}
 Suggests: libbean-doc
@@ -80,7 +80,7 @@ Package: gir1.2-bean-1.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
-Provides: gir1.2-beangtk-1.0 (= ${binary:Version})
+Provides: gir1.2-beanctk-1.0 (= ${binary:Version})
 Multi-Arch: same
 Description: Application plugin library (introspection files)
  libbean is a library that allows applications to support plugins.
