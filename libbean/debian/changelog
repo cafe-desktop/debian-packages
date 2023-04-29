@@ -116,7 +116,7 @@ libbean (1.22.0-2) unstable; urgency=medium
 
   [ Simon McVittie ]
   * gir1.2-bean-1.0 Provides gir1.2-beangtk-1.0, reflecting the fact
-    that it contains both Peas-1.0.typelib and PeasGtk-1.0.typelib
+    that it contains both Bean-1.0.typelib and BeanGtk-1.0.typelib
   * Bump priorities from extra to optional. Priority: extra is now
     deprecated.
 

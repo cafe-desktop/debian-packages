@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
 import gi
-gi.require_version('Peas', '1.0')
-from gi.repository import Peas
-Peas.Engine().enable_loader("python3")
+gi.require_version('Bean', '1.0')
+from gi.repository import Bean
+Bean.Engine().enable_loader("python3")

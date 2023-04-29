@@ -16,7 +16,7 @@ cat > bean.c <<'EOF'
 
 int main (int argc, char *argv[])
 {
-    PeasEngine *engine = bean_engine_new ();
+    BeanEngine *engine = bean_engine_new ();
 
     g_assert_nonnull (engine);
     bean_engine_enable_loader (engine, "python3");
