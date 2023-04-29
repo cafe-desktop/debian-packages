@@ -10,16 +10,16 @@ else
     CROSS_COMPILE=
 fi
 
-cat > peas.c <<'EOF'
+cat > bean.c <<'EOF'
 #include <glib-object.h>
-#include <libpeas/peas.h>
+#include <libbean/bean.h>
 
 int main (int argc, char *argv[])
 {
-    PeasEngine *engine = peas_engine_new ();
+    PeasEngine *engine = bean_engine_new ();
 
     g_assert_nonnull (engine);
-    peas_engine_enable_loader (engine, "python3");
+    bean_engine_enable_loader (engine, "python3");
     g_object_unref (engine);
     return 0;
 }
@@ -27,17 +27,17 @@ EOF
 
 # Deliberately word-splitting, that's how pkg-config works:
 # shellcheck disable=SC2046
-"${CROSS_COMPILE}gcc" -o peas peas.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libpeas-1.0)
-test -x peas
-G_DEBUG=fatal_warnings,fatal_criticals ./peas
+"${CROSS_COMPILE}gcc" -o bean bean.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-1.0)
+test -x bean
+G_DEBUG=fatal_warnings,fatal_criticals ./bean
 
 cat > gtk.c <<'EOF'
 #include <glib-object.h>
-#include <libpeas-gtk/peas-gtk.h>
+#include <libbean-gtk/bean-gtk.h>
 
 int main (int argc, char *argv[])
 {
-    GType type = peas_gtk_plugin_manager_get_type ();
+    GType type = bean_gtk_plugin_manager_get_type ();
 
     g_assert_cmpuint (type, !=, G_TYPE_INVALID);
     return 0;
@@ -45,7 +45,7 @@ int main (int argc, char *argv[])
 EOF
 
 # shellcheck disable=SC2046
-"${CROSS_COMPILE}gcc" -o gtk gtk.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libpeas-gtk-1.0)
+"${CROSS_COMPILE}gcc" -o gtk gtk.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-gtk-1.0)
 test -x gtk
 G_DEBUG=fatal_warnings,fatal_criticals ./gtk
 

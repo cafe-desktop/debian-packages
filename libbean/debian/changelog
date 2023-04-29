@@ -1,4 +1,4 @@
-libpeas (1.28.0-2) unstable; urgency=medium
+libbean (1.28.0-2) unstable; urgency=medium
 
   * Team upload
   * d/p/tests-Explicitly-depend-on-the-GIR-and-typelib.patch:
@@ -6,22 +6,22 @@ libpeas (1.28.0-2) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Fri, 18 Sep 2020 14:11:36 +0100
 
-libpeas (1.28.0-1) unstable; urgency=medium
+libbean (1.28.0-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 15 Sep 2020 21:37:32 +0200
 
-libpeas (1.26.0-2) unstable; urgency=medium
+libbean (1.26.0-2) unstable; urgency=medium
 
   * Tests: Drop tests for python2 loader
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 10 Mar 2020 14:33:16 +0100
 
-libpeas (1.26.0-1) unstable; urgency=medium
+libbean (1.26.0-1) unstable; urgency=medium
 
   [ Andreas Henriksson ]
-  * Drop libpeas-1.0-python2loader (Closes: #936900)
+  * Drop libbean-1.0-python2loader (Closes: #936900)
 
   [ Debian Janitor ]
   * Bump debhelper from old 11 to 12.
@@ -36,20 +36,20 @@ libpeas (1.26.0-1) unstable; urgency=medium
   * New upstream release (Closes: #953348)
   * debian/control.in: Add libglib2.0-doc, libgirepository1.0-doc and
     libgtk-3-doc so the links between documentation are properly resolved
-  * debian/libpeas-1.0-0.symbols: Add newly exported symbols
+  * debian/libbean-1.0-0.symbols: Add newly exported symbols
   * debian/control.in: Bump Standards-Version to 4.5.0 (no further changes)
-  * debian/contron.in: Mark libpeas-doc with Build-profiles: <!nodoc>
+  * debian/contron.in: Mark libbean-doc with Build-profiles: <!nodoc>
 
  -- Laurent Bigonville <bigon@debian.org>  Mon, 09 Mar 2020 21:16:07 +0100
 
-libpeas (1.24.1-2) experimental; urgency=medium
+libbean (1.24.1-2) experimental; urgency=medium
 
   * debian/control.in:
     - Build-Depends on python2-dev instead of python-dev
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 21 Jan 2020 11:08:09 +0200
 
-libpeas (1.24.1-1) experimental; urgency=medium
+libbean (1.24.1-1) experimental; urgency=medium
 
   * Team upload
   * Merge packaging changes from unstable
@@ -59,7 +59,7 @@ libpeas (1.24.1-1) experimental; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Mon, 23 Dec 2019 17:45:24 +0000
 
-libpeas (1.22.0-5) unstable; urgency=medium
+libbean (1.22.0-5) unstable; urgency=medium
 
   * Team upload
   * Build-depend on python-gi and python3-gi, in addition to
@@ -75,7 +75,7 @@ libpeas (1.22.0-5) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Mon, 23 Dec 2019 16:32:13 +0000
 
-libpeas (1.24.0-2) experimental; urgency=medium
+libbean (1.24.0-2) experimental; urgency=medium
 
   * debian/rules:
     - strip -Wl,-Bsymbolic-functions from the build flags, fixes the
@@ -83,7 +83,7 @@ libpeas (1.24.0-2) experimental; urgency=medium
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Mon, 16 Sep 2019 15:48:29 +0100
 
-libpeas (1.24.0-1) experimental; urgency=medium
+libbean (1.24.0-1) experimental; urgency=medium
 
   * New upstream release.
   * debian/rules: update for switch to meson
@@ -96,14 +96,14 @@ libpeas (1.24.0-1) experimental; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 13 Sep 2019 21:48:12 +0200
 
-libpeas (1.22.0-4) unstable; urgency=medium
+libbean (1.22.0-4) unstable; urgency=medium
 
   * Add -Wl,-O1 to our LDFLAGS
   * Bump Standards-Version to 4.3.0
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 28 Dec 2018 08:31:54 -0500
 
-libpeas (1.22.0-3) unstable; urgency=medium
+libbean (1.22.0-3) unstable; urgency=medium
 
   * Update Vcs fields for migration to https://salsa.debian.org/
   * Bump Standards-Version to 4.2.1
@@ -112,10 +112,10 @@ libpeas (1.22.0-3) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 02 Dec 2018 08:19:21 -0500
 
-libpeas (1.22.0-2) unstable; urgency=medium
+libbean (1.22.0-2) unstable; urgency=medium
 
   [ Simon McVittie ]
-  * gir1.2-peas-1.0 Provides gir1.2-peasgtk-1.0, reflecting the fact
+  * gir1.2-bean-1.0 Provides gir1.2-beangtk-1.0, reflecting the fact
     that it contains both Peas-1.0.typelib and PeasGtk-1.0.typelib
   * Bump priorities from extra to optional. Priority: extra is now
     deprecated.
@@ -129,20 +129,20 @@ libpeas (1.22.0-2) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Tue, 19 Dec 2017 16:49:57 -0500
 
-libpeas (1.22.0-1) unstable; urgency=medium
+libbean (1.22.0-1) unstable; urgency=medium
 
   * New upstream translations release
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 10 Sep 2017 11:01:40 -0400
 
-libpeas (1.21.0-1) unstable; urgency=medium
+libbean (1.21.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Bump Standards-Version to 4.1.0
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 29 Aug 2017 13:50:55 -0400
 
-libpeas (1.20.0-1) unstable; urgency=medium
+libbean (1.20.0-1) unstable; urgency=medium
 
   * Convert from cdbs to dh.
   * Bump to dh compat 10 (automatic dh-autoreconf)
@@ -151,7 +151,7 @@ libpeas (1.20.0-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 19 Sep 2016 19:15:48 +0200
 
-libpeas (1.18.0-3) unstable; urgency=medium
+libbean (1.18.0-3) unstable; urgency=medium
 
   * Convert to multiarch. (Closes: #815727)
   * Add some Conflicts/Replaces/Provides for the benefit of users
@@ -159,7 +159,7 @@ libpeas (1.18.0-3) unstable; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Tue, 05 Jul 2016 10:21:20 +0100
 
-libpeas (1.18.0-2) unstable; urgency=medium
+libbean (1.18.0-2) unstable; urgency=medium
 
   * Add Build-Depends-Package meta-tags to symbols file.
   * Split out python2 loader in a separate package (Closes: #806824)
@@ -168,7 +168,7 @@ libpeas (1.18.0-2) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 15 Apr 2016 10:17:52 +0200
 
-libpeas (1.18.0-1) experimental; urgency=medium
+libbean (1.18.0-1) experimental; urgency=medium
 
   [ Hideki Yamane ]
   * debian/watch
@@ -181,11 +181,11 @@ libpeas (1.18.0-1) experimental; urgency=medium
   * Bump Standards-Version to 3.9.7
   * Append '-V -- -c4' to dh makeshlib args.
     - prevents package being built with auto-generated symbols file.
-  * Update debian/libpeas-1.0-0.symbols with three additions.
+  * Update debian/libbean-1.0-0.symbols with three additions.
 
  -- Andreas Henriksson <andreas@fatal.se>  Sat, 02 Apr 2016 15:47:48 +0200
 
-libpeas (1.16.0-1) unstable; urgency=medium
+libbean (1.16.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update debian/patches/0001-Fix-Python-plugin-loader-module-paths.patch
@@ -193,7 +193,7 @@ libpeas (1.16.0-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 22 Sep 2015 13:44:28 +0200
 
-libpeas (1.14.0-1) unstable; urgency=medium
+libbean (1.14.0-1) unstable; urgency=medium
 
   [ Iain Lane ]
   * Depend on adwaita-icon-theme for the test. This is GNOME's new default
@@ -215,20 +215,20 @@ libpeas (1.14.0-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Fri, 04 Sep 2015 00:33:39 +0200
 
-libpeas (1.12.1-2) unstable; urgency=medium
+libbean (1.12.1-2) unstable; urgency=medium
 
   * Disable seed support everywhere.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 06 Nov 2014 13:13:34 +0100
 
-libpeas (1.12.1-1) unstable; urgency=medium
+libbean (1.12.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Bump libglib2.0-dev build-dependency to >= 2.32.0 according to configure.ac
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 22 Sep 2014 21:10:34 +0200
 
-libpeas (1.10.1-4) unstable; urgency=medium
+libbean (1.10.1-4) unstable; urgency=medium
 
   * Also exclude arm64 hppa and arm from the seed build-dependency.
   * Add ppc64el and ia64 to archs where we don't enable seed
@@ -236,20 +236,20 @@ libpeas (1.10.1-4) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Sun, 07 Sep 2014 22:01:32 +0200
 
-libpeas (1.10.1-3) unstable; urgency=medium
+libbean (1.10.1-3) unstable; urgency=medium
 
   * Also add arm64 to platforms where we don't enable seed.
 
  -- Andreas Henriksson <andreas@fatal.se>  Sun, 07 Sep 2014 21:48:58 +0200
 
-libpeas (1.10.1-2) unstable; urgency=medium
+libbean (1.10.1-2) unstable; urgency=medium
 
   * Add hppa and alpha to the list of architectures where we don't enable
     seed (Closes: #757241)
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 05 Sep 2014 00:01:41 +0200
 
-libpeas (1.10.1-1) unstable; urgency=medium
+libbean (1.10.1-1) unstable; urgency=medium
 
   [ Emilio Pozuelo Monfort ]
   * debian/rules:
@@ -265,7 +265,7 @@ libpeas (1.10.1-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 28 Aug 2014 16:43:26 -0700
 
-libpeas (1.10.0-2) unstable; urgency=medium
+libbean (1.10.0-2) unstable; urgency=medium
 
   * debian/rules, debian/control.in:
     Disable seed support on big-endian architectures (Closes: #727127)
@@ -274,7 +274,7 @@ libpeas (1.10.0-2) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Sat, 26 Apr 2014 20:06:47 +0200
 
-libpeas (1.10.0-1) experimental; urgency=medium
+libbean (1.10.0-1) experimental; urgency=medium
 
   * export NOCONFIGURE in debian/rules to avoid double-configure.
   * Add --disable-gjs configure flag for now.
@@ -293,7 +293,7 @@ libpeas (1.10.0-1) experimental; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 01 Apr 2014 21:13:05 +0200
 
-libpeas (1.9.0-1) experimental; urgency=low
+libbean (1.9.0-1) experimental; urgency=low
 
   * New upstream release
   * debian/patches/0001-Fix-tests-after-glib-string-change.patch
@@ -306,7 +306,7 @@ libpeas (1.9.0-1) experimental; urgency=low
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sun, 03 Nov 2013 20:52:13 +0100
 
-libpeas (1.8.1-2) unstable; urgency=low
+libbean (1.8.1-2) unstable; urgency=low
 
   * debian/patches/0002-Fix-autogen-with-latest-gnome-common.patch:
     Cherry-pick patch from upstream to drop usage of AM_GNU_GETTEXT as this is
@@ -316,7 +316,7 @@ libpeas (1.8.1-2) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Mon, 14 Oct 2013 11:53:01 +0200
 
-libpeas (1.8.1-1) unstable; urgency=low
+libbean (1.8.1-1) unstable; urgency=low
 
   [ Michael Biebl ]
   * Upload to unstable.
@@ -335,7 +335,7 @@ libpeas (1.8.1-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Thu, 01 Aug 2013 17:29:30 +0200
 
-libpeas (1.8.0-1) experimental; urgency=low
+libbean (1.8.0-1) experimental; urgency=low
 
   * New upstream release.
     + debian/patches/30_fix_python2-config.patch:
@@ -343,7 +343,7 @@ libpeas (1.8.0-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 28 Mar 2013 02:19:29 +0100
 
-libpeas (1.7.0-2) experimental; urgency=low
+libbean (1.7.0-2) experimental; urgency=low
 
   * debian/control.in:
     + Bump libgjs-dev build dependency to build against libgjs0c.
@@ -353,7 +353,7 @@ libpeas (1.7.0-2) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 24 Mar 2013 21:58:10 +0100
 
-libpeas (1.7.0-1) experimental; urgency=low
+libbean (1.7.0-1) experimental; urgency=low
 
   * New upstream release.
   * debian/control:
@@ -376,28 +376,28 @@ libpeas (1.7.0-1) experimental; urgency=low
 
  -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Sat, 16 Mar 2013 07:27:26 +0100
 
-libpeas (1.6.2-1) experimental; urgency=low
+libbean (1.6.2-1) experimental; urgency=low
 
   * New upstream release
   * Drop vala build-dep and configure flag,
     vala demo plugin dropped upstream. (Closes: #675656)
-  * Update for new libpeas-1.0-0 symbols (2 additions)
+  * Update for new libbean-1.0-0 symbols (2 additions)
 
  -- Andreas Henriksson <andreas@fatal.se>  Sun, 09 Dec 2012 22:54:16 +0100
 
-libpeas (1.4.0-2) unstable; urgency=low
+libbean (1.4.0-2) unstable; urgency=low
 
   * Don't enable the seed plugin on ia64 and mips since seed is not available
     on those architectures.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 31 Mar 2012 23:37:26 +0200
 
-libpeas (1.4.0-1) unstable; urgency=low
+libbean (1.4.0-1) unstable; urgency=low
 
   * New upstream release.
   * debian/watch: Track .xz tarballs.
   * Bump (Build-)Depends on libglib2.0-dev to (>= 2.31.2).
-  * debian/libpeas-1.0-0.symbols: Add new symbols and remove 2 internal
+  * debian/libbean-1.0-0.symbols: Add new symbols and remove 2 internal
     symbols which were dropped upstream.
   * Explicitly enable the plugins (vala, python, seed) for more reliable build
     results.
@@ -406,29 +406,29 @@ libpeas (1.4.0-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Sat, 31 Mar 2012 08:26:42 +0200
 
-libpeas (1.2.0-2) unstable; urgency=low
+libbean (1.2.0-2) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Replace python-gobject by python-gi.
 
   [ Michael Biebl ]
-  * Change section of gir1.2-peas-1.0 to introspection.
+  * Change section of gir1.2-bean-1.0 to introspection.
 
   [ Josselin Mouette ]
   * Update repository URL.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 15 Mar 2012 20:17:11 +0100
 
-libpeas (1.2.0-1) unstable; urgency=low
+libbean (1.2.0-1) unstable; urgency=low
 
   [ Oliver Sauder ]
-  * Renamed peas vapi file to libpeas-1.0.vapi (Closes: #639625)
+  * Renamed bean vapi file to libbean-1.0.vapi (Closes: #639625)
 
   [ Laurent Bigonville ]
   * debian/control.in:
     - Bump Priority to optional
     - Drop duplicate Section to please lintian
-  * debian/libpeas-doc.lintian-overrides:
+  * debian/libbean-doc.lintian-overrides:
     Override documentation-package-not-architecture-independent
 
   [ Sjoerd Simons ]
@@ -436,40 +436,40 @@ libpeas (1.2.0-1) unstable; urgency=low
   * Binds plugin module symbols globally, fixes python plugins (Closes: 647292)
   * Sync with ubuntu:
     * Don't ship vapi files, rely on valac-0.14 shipping them
-    * debian/libpeas-1.0-0.symbols: Updates
-    * Put libpeas-1.0-0, libpeas-common and gir1.2-peas-1.0 in section libs
+    * debian/libbean-1.0-0.symbols: Updates
+    * Put libbean-1.0-0, libbean-common and gir1.2-bean-1.0 in section libs
     * Don't run the GTK test as they require an X server
     * Set priority to extra
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sun, 20 Nov 2011 23:21:10 +0000
 
-libpeas (1.1.1-1) unstable; urgency=low
+libbean (1.1.1-1) unstable; urgency=low
 
   * New upstream release.
-  * debian/libpeas-1.0-0.symbols: Update for new API additions.
+  * debian/libbean-1.0-0.symbols: Update for new API additions.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 03 Aug 2011 19:11:54 +0200
 
-libpeas (1.1.0-1) unstable; urgency=low
+libbean (1.1.0-1) unstable; urgency=low
 
   * New upstream release.
-  * Update debian/libpeas-1.0-0.symbols.
+  * Update debian/libbean-1.0-0.symbols.
   * debian/rules: Build gtk-doc documentation.
-  * Install the complete /usr/lib/peas-demo directory and remove compiled
+  * Install the complete /usr/lib/bean-demo directory and remove compiled
     python and libtool .la files afterwards. This way we don't fail on
     architectures where seed is disabled and no .js files are installed.
 
  -- Michael Biebl <biebl@debian.org>  Fri, 22 Jul 2011 00:16:40 +0200
 
-libpeas (1.0.0-5) unstable; urgency=low
+libbean (1.0.0-5) unstable; urgency=low
 
-  * debian/libpeas-doc.install:
-    - Install .js and .py plugin files for peas-demo.
+  * debian/libbean-doc.install:
+    - Install .js and .py plugin files for bean-demo.
   * Disable seed support on mips. Should be re-enabled when #633730 is fixed.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 21 Jul 2011 18:41:59 +0200
 
-libpeas (1.0.0-4) unstable; urgency=low
+libbean (1.0.0-4) unstable; urgency=low
 
   [ Sebastien Bacher ]
   * debian/control.in: build-depends on libgladeui-dev
@@ -486,30 +486,30 @@ libpeas (1.0.0-4) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Wed, 13 Jul 2011 10:49:51 +0200
 
-libpeas (1.0.0-3) experimental; urgency=low
+libbean (1.0.0-3) experimental; urgency=low
 
-  * Exclude plugin directory when calling dh_makeshlibs for libpeas-1.0-0 and
-    remove those symbols from debian/libpeas-1.0-0.symbols.
+  * Exclude plugin directory when calling dh_makeshlibs for libbean-1.0-0 and
+    remove those symbols from debian/libbean-1.0-0.symbols.
   * debian/watch: Don't run uupdate.
   * debian/control.in:
     - Bump dependency on libgirepository1.0-dev to (>= 0.10.1) for
-      libpeas-dev according to the .pc file.
+      libbean-dev according to the .pc file.
     - Bump Build-Depends on libgirepository1.0-dev to (>= 0.10.1).
-  * Don't install libtool .la files for loader plugins and peas-demo.
+  * Don't install libtool .la files for loader plugins and bean-demo.
 
  -- Michael Biebl <biebl@debian.org>  Sun, 19 Jun 2011 01:19:40 +0200
 
-libpeas (1.0.0-2) experimental; urgency=low
+libbean (1.0.0-2) experimental; urgency=low
 
   [ Michael Terry ]
-  * debian/libpeas-1.0-0.symbols: add symbols file
+  * debian/libbean-1.0-0.symbols: add symbols file
 
   [ Martin Pitt ]
   * Enable Vala support:
     - debian/control.in: Add valac-0.12 build dependency. configure picks that
       up and enables Vala support.
     - debian/rules: Call vapigen to build a vapi from generated gir.
-    - debian/libpeas-dev.install: Ship libpeas-1.0.vapi.
+    - debian/libbean-dev.install: Ship libbean-1.0.vapi.
   * debian/rules: Run tests during build, but make sure that we don't build
     the tests with -Bsymbolic-functions, which confuses them. Thanks to
     Michael Terry for the patch! (Closes: #627115)
@@ -521,7 +521,7 @@ libpeas (1.0.0-2) experimental; urgency=low
 
  -- Martin Pitt <mpitt@debian.org>  Tue, 31 May 2011 15:29:55 +0200
 
-libpeas (1.0.0-1) experimental; urgency=low
+libbean (1.0.0-1) experimental; urgency=low
 
   [ Josselin Mouette ]
   * Make the -dev package depend on the gir package.
@@ -536,19 +536,19 @@ libpeas (1.0.0-1) experimental; urgency=low
 
  -- Frederic Peters <fpeters@debian.org>  Wed, 13 Apr 2011 16:59:57 +0200
 
-libpeas (0.9.0-1) experimental; urgency=low
+libbean (0.9.0-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Frederic Peters <fpeters@debian.org>  Mon, 28 Mar 2011 12:05:11 +0530
 
-libpeas (0.7.3-2) experimental; urgency=low
+libbean (0.7.3-2) experimental; urgency=low
 
-  * Fix typo in the libpeas-dev dependencies
+  * Fix typo in the libbean-dev dependencies
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sat, 26 Feb 2011 16:45:50 +0000
 
-libpeas (0.7.3-1) experimental; urgency=low
+libbean (0.7.3-1) experimental; urgency=low
 
   [ Sebastien Bacher ]
   * debian/control.in:
@@ -561,13 +561,13 @@ libpeas (0.7.3-1) experimental; urgency=low
 
  -- Sjoerd Simons <sjoerd@debian.org>  Sat, 26 Feb 2011 16:17:43 +0000
 
-libpeas (0.7.1-1) experimental; urgency=low
+libbean (0.7.1-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 31 Jan 2011 23:29:06 +0000
 
-libpeas (0.7.0-1) experimental; urgency=low
+libbean (0.7.0-1) experimental; urgency=low
 
   [ Sjoerd Simons ]
   * Initial debian revision
@@ -580,17 +580,17 @@ libpeas (0.7.0-1) experimental; urgency=low
     - Call dh_girepository.
   * debian/control.in:
     - Update the Homepage.
-    - Fix the libpeas-dev dependencies.
+    - Fix the libbean-dev dependencies.
   * debian/copyright:
     - Remove version from the download location.
   * debian/control.in,
-    debian/libpeas-{examples,doc}.install:
-    - Rename libpeas-examples to libpeas-doc and ship the documentation
+    debian/libbean-{examples,doc}.install:
+    - Rename libbean-examples to libbean-doc and ship the documentation
       on it.
   * debian/control.in,
-    debian/libpeas-common.install:
+    debian/libbean-common.install:
     - Add a common package.
-  * debian/libpeas-dev:
+  * debian/libbean-dev:
     - Don't install libtool .la files.
   * debian/control.in,
     debian/compat:
@@ -598,13 +598,13 @@ libpeas (0.7.0-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 20 Dec 2010 00:55:33 +0000
 
-libpeas (0.7.0-0ubuntu2) natty; urgency=low
+libbean (0.7.0-0ubuntu2) natty; urgency=low
 
   * Rebuild with python 2.7 as the python default.
 
  -- Matthias Klose <doko@ubuntu.com>  Thu, 09 Dec 2010 16:52:36 +0000
 
-libpeas (0.7.0-0ubuntu1) natty; urgency=low
+libbean (0.7.0-0ubuntu1) natty; urgency=low
 
   * New upstream release
   * debian/control:
@@ -620,36 +620,36 @@ libpeas (0.7.0-0ubuntu1) natty; urgency=low
 
  -- Michael Terry <mterry@ubuntu.com>  Mon, 15 Nov 2010 16:38:37 -0500
 
-libpeas (0.5.3-0ubuntu5) maverick; urgency=low
+libbean (0.5.3-0ubuntu5) maverick; urgency=low
 
   * debian/control:
-  * debian/gir1.0-libpeas-1.0.install:
-  * debian/gir1.0-peas-1.0.install:
+  * debian/gir1.0-libbean-1.0.install:
+  * debian/gir1.0-bean-1.0.install:
     - Fix name of GIR package
 
  -- Robert Ancell <robert.ancell@canonical.com>  Fri, 20 Aug 2010 15:36:33 +1000
 
-libpeas (0.5.3-0ubuntu4) maverick; urgency=low
+libbean (0.5.3-0ubuntu4) maverick; urgency=low
 
   * Rebuild against latest gobject-introspection
 
  -- Robert Ancell <robert.ancell@canonical.com>  Wed, 11 Aug 2010 09:19:37 +1000
 
-libpeas (0.5.3-0ubuntu3) maverick; urgency=low
+libbean (0.5.3-0ubuntu3) maverick; urgency=low
 
   * debian/control:
     - Build-depend on intltool, gtk-doc-tools
 
  -- Robert Ancell <robert.ancell@canonical.com>  Mon, 09 Aug 2010 16:44:03 +1000
 
-libpeas (0.5.3-0ubuntu2) maverick; urgency=low
+libbean (0.5.3-0ubuntu2) maverick; urgency=low
 
   * debian/control:
     - Build-depend on gobject-introspection
 
  -- Robert Ancell <robert.ancell@canonical.com>  Mon, 09 Aug 2010 12:14:50 +1000
 
-libpeas (0.5.3-0ubuntu1) maverick; urgency=low
+libbean (0.5.3-0ubuntu1) maverick; urgency=low
 
   * Initial release
 
