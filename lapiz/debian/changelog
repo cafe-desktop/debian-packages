@@ -121,7 +121,7 @@ lapiz (1.20.1-3) unstable; urgency=medium
   [ Pablo Barciela ]
   * debian/patches:
     + Add 0002_Fix_secondary_mouse_button_under_line_numbers.patch
-    + Add 0003_Fix_Pluma_crashes_with_mouse_wheel_over_a_tab.patch.
+    + Add 0003_Fix_Lapiz_crashes_with_mouse_wheel_over_a_tab.patch.
       (Closes: #898637).
     + Add 0004_Fix_behavior_of_mouse_buttons_in_print_preview.patch
 
@@ -135,7 +135,7 @@ lapiz (1.20.1-2) unstable; urgency=medium
     + Add D (lapiz): libpeas-1.0-python2loader. (LP: #1743132)
   * debian/patches:
     + Add 0001_disable_python_plugins.patch. Disable Python plugins because
-      libpeas only supports Python3 and the Python plugins in Pluma only
+      libpeas only supports Python3 and the Python plugins in Lapiz only
       support Python2. (LP: #1743133) (LP: #1743137)
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Apr 2018 22:53:27 +0200
@@ -230,7 +230,7 @@ lapiz (1.18.2-1) unstable; urgency=medium
   * debian/control: Dependencies updated for MATE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/lapiz.install: Remove obsolete usr/lib/*/lapiz/plugin-loaders/*.so
-  * debian/gir1.2-lapiz.install: Add GObject introspection data for Pluma.
+  * debian/gir1.2-lapiz.install: Add GObject introspection data for Lapiz.
   * debian/patches: Drop 2000_disable_python_plugins.patch.
     Upstream migrated to libpeas.
   * debian/copyright: Update copyright attributions.
@@ -513,7 +513,7 @@ lapiz (1.8.0+dfsg1-1) unstable; urgency=low
   * debian/control:
     + Put zenity in Recommends: field instead of mate-dialogs.
     + For standalone installations (without the complete MATE desktop
-      environment), Pluma expects the file org.mate.lockdown.gschema.xml.
+      environment), Lapiz expects the file org.mate.lockdown.gschema.xml.
       Thus, adding mate-desktop-common as dependency. (Closes: #744087).
     + Drop bin:package lapiz-doc.
   * debian/patches:

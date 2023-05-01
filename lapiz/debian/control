@@ -44,18 +44,18 @@ Provides: mate-text-editor,
 Breaks: mate-text-editor (<< 1.5.0),
 Replaces: mate-text-editor (<< 1.5.0),
 Description: official text editor of the MATE desktop environment
- Pluma is a text editor which supports most standard editor features,
+ Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
- found in simple text editors. Pluma is a graphical application which
+ found in simple text editors. Lapiz is a graphical application which
  supports editing multiple text files in one window (known sometimes as
  tabs or MDI).
  .
- Pluma fully supports international text through its use of the
+ Lapiz fully supports international text through its use of the
  Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
  highlighting of source code, auto indentation and printing and print preview
  support.
  .
- Pluma is also extensible through its plugin system, which currently
+ Lapiz is also extensible through its plugin system, which currently
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
 
@@ -65,18 +65,18 @@ Depends: python3,
          ${misc:Depends},
 Breaks: mate-text-editor (<< 1.5.0),
 Description: official text editor of the MATE desktop environment (common files)
- Pluma is a text editor which supports most standard editor features,
+ Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
- found in simple text editors. Pluma is a graphical application which
+ found in simple text editors. Lapiz is a graphical application which
  supports editing multiple text files in one window (known sometimes as
  tabs or MDI).
  .
- Pluma fully supports international text through its use of the
+ Lapiz fully supports international text through its use of the
  Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
  highlighting of source code, auto indentation and printing and print preview
  support.
  .
- Pluma is also extensible through its plugin system, which currently
+ Lapiz is also extensible through its plugin system, which currently
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
  .
@@ -90,40 +90,40 @@ Depends: lapiz (= ${binary:Version}),
          ${misc:Depends},
 Breaks: mate-text-editor (<< 1.5.0),
 Description: official text editor of the MATE desktop environment (development files)
- Pluma is a text editor which supports most standard editor features,
+ Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
- found in simple text editors. Pluma is a graphical application which
+ found in simple text editors. Lapiz is a graphical application which
  supports editing multiple text files in one window (known sometimes as
  tabs or MDI).
  .
- Pluma fully supports international text through its use of the
+ Lapiz fully supports international text through its use of the
  Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
  highlighting of source code, auto indentation and printing and print preview
  support.
  .
- Pluma is also extensible through its plugin system, which currently
+ Lapiz is also extensible through its plugin system, which currently
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
  .
- This package contains the development files for building Pluma plugins.
+ This package contains the development files for building Lapiz plugins.
 
 Package: lapiz-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
 Description: official text editor of the MATE desktop environment (documentation files)
- Pluma is a text editor which supports most standard editor features,
+ Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
- found in simple text editors. Pluma is a graphical application which
+ found in simple text editors. Lapiz is a graphical application which
  supports editing multiple text files in one window (known sometimes as
  tabs or MDI).
  .
- Pluma fully supports international text through its use of the
+ Lapiz fully supports international text through its use of the
  Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
  highlighting of source code, auto indentation and printing and print preview
  support.
  .
- Pluma is also extensible through its plugin system, which currently
+ Lapiz is also extensible through its plugin system, which currently
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
  .
@@ -139,23 +139,23 @@ Breaks: lapiz-dev (<< 1.18.2-2),
         gir1.2-lapiz (<< 1.18.2-2),
 Replaces: lapiz-dev (<< 1.18.2-2),
           gir1.2-lapiz (<< 1.18.2-1~),
-Description: GObject introspection data for Pluma
- Pluma is a text editor which supports most standard editor features,
+Description: GObject introspection data for Lapiz
+ Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
- found in simple text editors. Pluma is a graphical application which
+ found in simple text editors. Lapiz is a graphical application which
  supports editing multiple text files in one window (known sometimes as
  tabs or MDI).
  .
- Pluma fully supports international text through its use of the
+ Lapiz fully supports international text through its use of the
  Unicode UTF-8 encoding in edited files. Its core feature set includes syntax
  highlighting of source code, auto indentation and printing and print preview
  support.
  .
- Pluma is also extensible through its plugin system, which currently
+ Lapiz is also extensible through its plugin system, which currently
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
  .
- This package contains introspection data for Pluma.
+ This package contains introspection data for Lapiz.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
