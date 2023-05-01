@@ -1,5 +1,5 @@
 usr/bin/
-usr/lib/*/pluma/plugins/
-usr/lib/pluma/pluma-bugreport.sh
+usr/lib/*/lapiz/plugins/
+usr/lib/lapiz/lapiz-bugreport.sh
 usr/share/applications/
 usr/share/man/

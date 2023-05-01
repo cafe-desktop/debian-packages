@@ -9,29 +9,29 @@ Files: Makefile.am
  autogen.sh
  configure.ac
  data/Makefile.am
- data/org.mate.pluma.gschema.xml.in
- data/pluma-bugreport.sh.in
- data/pluma.1
- data/pluma.desktop.in.in
- data/pluma.pc.in
+ data/org.mate.lapiz.gschema.xml.in
+ data/lapiz-bugreport.sh.in
+ data/lapiz.1
+ data/lapiz.desktop.in.in
+ data/lapiz.pc.in
  debian/control
  debian/files
- debian/gir1.2-pluma-1.0.install
+ debian/gir1.2-lapiz-1.0.install
  debian/patches/README
- debian/pluma-common.install
- debian/pluma-common.lintian-overrides
- debian/pluma-dev.install
- debian/pluma-doc.install
- debian/pluma.install
+ debian/lapiz-common.install
+ debian/lapiz-common.lintian-overrides
+ debian/lapiz-dev.install
+ debian/lapiz-doc.install
+ debian/lapiz.install
  debian/rules
  debian/source/format
  debian/upstream
  debian/watch
  docs/Makefile.am
  docs/reference/Makefile.am
- docs/reference/pluma-docs.sgml
- docs/reference/pluma-sections.txt
- docs/reference/pluma.types
+ docs/reference/lapiz-docs.sgml
+ docs/reference/lapiz-sections.txt
+ docs/reference/lapiz.types
  gla11y.mk
  help/C/legal.xml
  help/Makefile.am
@@ -97,8 +97,8 @@ Files: Makefile.am
  help/nn/nn.po
  help/or/or.po
  help/pl/pl.po
- help/pluma.omf.in
- help/pluma.pot
+ help/lapiz.omf.in
+ help/lapiz.pot
  help/ps/ps.po
  help/ro/ro.po
  help/ru/ru.po
@@ -123,8 +123,8 @@ Files: Makefile.am
  help/zh_CN/zh_CN.po
  help/zh_HK/zh_HK.po
  help/zh_TW/zh_TW.po
- its/pluma-taglist.its
- its/pluma-taglist.loc
+ its/lapiz-taglist.its
+ its/lapiz-taglist.loc
  makepot
  pixmaps/Makefile.am
  plugins/Makefile.am
@@ -150,19 +150,19 @@ Files: Makefile.am
  plugins/externaltools/tools/ui-a11y.suppr
  plugins/filebrowser/Makefile.am
  plugins/filebrowser/README.md
- plugins/filebrowser/org.mate.pluma.plugins.filebrowser.gschema.xml.in
- plugins/filebrowser/pluma-file-browser-enum-register.c.template
- plugins/filebrowser/pluma-file-browser-enum-types.c.template
- plugins/filebrowser/pluma-file-browser-enum-types.h.template
- plugins/filebrowser/pluma-file-browser-marshal.list
- plugins/filebrowser/pluma-file-browser-messages.c
- plugins/filebrowser/pluma-file-browser-utils.h
- plugins/filebrowser/pluma-file-browser-widget-ui.xml
+ plugins/filebrowser/org.mate.lapiz.plugins.filebrowser.gschema.xml.in
+ plugins/filebrowser/lapiz-file-browser-enum-register.c.template
+ plugins/filebrowser/lapiz-file-browser-enum-types.c.template
+ plugins/filebrowser/lapiz-file-browser-enum-types.h.template
+ plugins/filebrowser/lapiz-file-browser-marshal.list
+ plugins/filebrowser/lapiz-file-browser-messages.c
+ plugins/filebrowser/lapiz-file-browser-utils.h
+ plugins/filebrowser/lapiz-file-browser-widget-ui.xml
  plugins/modelines/Makefile.am
  plugins/modelines/README.md
  plugins/modelines/language-mappings
  plugins/pythonconsole/Makefile.am
- plugins/pythonconsole/org.mate.pluma.plugins.pythonconsole.gschema.xml.in
+ plugins/pythonconsole/org.mate.lapiz.plugins.pythonconsole.gschema.xml.in
  plugins/pythonconsole/pythonconsole/Makefile.am
  plugins/pythonconsole/pythonconsole/ui-a11y.suppr
  plugins/quickopen/Makefile.am
@@ -202,8 +202,8 @@ Files: Makefile.am
  plugins/sort/ui-a11y.suppr
  plugins/spell/Makefile.am
  plugins/spell/README.md
- plugins/spell/org.mate.pluma.plugins.spell.gschema.xml.in
- plugins/spell/pluma-spell-marshal.list
+ plugins/spell/org.mate.lapiz.plugins.spell.gschema.xml.in
+ plugins/spell/lapiz-spell-marshal.list
  plugins/spell/ui-a11y.suppr
  plugins/taglist/HTML.tags.xml.in
  plugins/taglist/Latex.tags.xml.in
@@ -213,37 +213,37 @@ Files: Makefile.am
  plugins/taglist/XUL.tags.xml.in
  plugins/time/Makefile.am
  plugins/time/README.md
- plugins/time/org.mate.pluma.plugins.time.gschema.xml.in
+ plugins/time/org.mate.lapiz.plugins.time.gschema.xml.in
  plugins/time/ui-a11y.suppr
  plugins/trailsave/Makefile.am
  plugins/trailsave/README.md
- pluma/Makefile.am
- pluma/dialogs/Makefile.am
- pluma/dialogs/ui-a11y.suppr
- pluma/pluma-enum-types.c.template
- pluma/pluma-enum-types.h.template
- pluma/pluma-marshal.list
- pluma/pluma-message-bus.c
- pluma/pluma-message-bus.h
- pluma/pluma-message-type.c
- pluma/pluma-message-type.h
- pluma/pluma-message.c
- pluma/pluma-message.h
- pluma/pluma.rc
- pluma/smclient/Makefile.am
- pluma/ui-a11y.suppr
+ lapiz/Makefile.am
+ lapiz/dialogs/Makefile.am
+ lapiz/dialogs/ui-a11y.suppr
+ lapiz/lapiz-enum-types.c.template
+ lapiz/lapiz-enum-types.h.template
+ lapiz/lapiz-marshal.list
+ lapiz/lapiz-message-bus.c
+ lapiz/lapiz-message-bus.h
+ lapiz/lapiz-message-type.c
+ lapiz/lapiz-message-type.h
+ lapiz/lapiz-message.c
+ lapiz/lapiz-message.h
+ lapiz/lapiz.rc
+ lapiz/smclient/Makefile.am
+ lapiz/ui-a11y.suppr
  po/LINGUAS
  po/POTFILES.in
  po/POTFILES.skip
  tests/Makefile.am
  tests/setup-document-saver.sh
  tools/plugin_template/Makefile.am
- tools/plugin_template/pluma-plugin.desktop.in
+ tools/plugin_template/lapiz-plugin.desktop.in
 Copyright: NONE
 License: UNKNOWN
  FIXME
 
-Files: pluma.pot
+Files: lapiz.pot
  po/af.po
  po/am.po
  po/ar.po
@@ -362,43 +362,43 @@ Copyright: YEAR MATE Desktop Environment team
 License: UNKNOWN
  FIXME
 
-Files: plugins/taglist/pluma-taglist-plugin-panel.c
- plugins/taglist/pluma-taglist-plugin-panel.h
- plugins/taglist/pluma-taglist-plugin-parser.c
- plugins/taglist/pluma-taglist-plugin-parser.h
- plugins/taglist/pluma-taglist-plugin.c
- plugins/taglist/pluma-taglist-plugin.h
- plugins/time/pluma-time-plugin.c
- plugins/time/pluma-time-plugin.h
- pluma/pluma-app.c
- pluma/pluma-app.h
- pluma/pluma-documents-panel.c
- pluma/pluma-documents-panel.h
- pluma/pluma-encodings-combo-box.c
- pluma/pluma-encodings-combo-box.h
- pluma/pluma-file-chooser-dialog.c
- pluma/pluma-file-chooser-dialog.h
- pluma/pluma-help.c
- pluma/pluma-help.h
- pluma/pluma-io-error-message-area.c
- pluma/pluma-io-error-message-area.h
- pluma/pluma-language-manager.c
- pluma/pluma-language-manager.h
- pluma/pluma-notebook.c
- pluma/pluma-notebook.h
- pluma/pluma-panel.c
- pluma/pluma-panel.h
- pluma/pluma-plugins-engine.h
- pluma/pluma-progress-message-area.c
- pluma/pluma-progress-message-area.h
- pluma/pluma-tab.c
- pluma/pluma-tab.h
- pluma/pluma-ui.h
- pluma/pluma-ui.xml
- pluma/pluma-window-private.h
- pluma/pluma-window.c
- pluma/pluma-window.h
- pluma/pluma.c
+Files: plugins/taglist/lapiz-taglist-plugin-panel.c
+ plugins/taglist/lapiz-taglist-plugin-panel.h
+ plugins/taglist/lapiz-taglist-plugin-parser.c
+ plugins/taglist/lapiz-taglist-plugin-parser.h
+ plugins/taglist/lapiz-taglist-plugin.c
+ plugins/taglist/lapiz-taglist-plugin.h
+ plugins/time/lapiz-time-plugin.c
+ plugins/time/lapiz-time-plugin.h
+ lapiz/lapiz-app.c
+ lapiz/lapiz-app.h
+ lapiz/lapiz-documents-panel.c
+ lapiz/lapiz-documents-panel.h
+ lapiz/lapiz-encodings-combo-box.c
+ lapiz/lapiz-encodings-combo-box.h
+ lapiz/lapiz-file-chooser-dialog.c
+ lapiz/lapiz-file-chooser-dialog.h
+ lapiz/lapiz-help.c
+ lapiz/lapiz-help.h
+ lapiz/lapiz-io-error-message-area.c
+ lapiz/lapiz-io-error-message-area.h
+ lapiz/lapiz-language-manager.c
+ lapiz/lapiz-language-manager.h
+ lapiz/lapiz-notebook.c
+ lapiz/lapiz-notebook.h
+ lapiz/lapiz-panel.c
+ lapiz/lapiz-panel.h
+ lapiz/lapiz-plugins-engine.h
+ lapiz/lapiz-progress-message-area.c
+ lapiz/lapiz-progress-message-area.h
+ lapiz/lapiz-tab.c
+ lapiz/lapiz-tab.h
+ lapiz/lapiz-ui.h
+ lapiz/lapiz-ui.xml
+ lapiz/lapiz-window-private.h
+ lapiz/lapiz-window.c
+ lapiz/lapiz-window.h
+ lapiz/lapiz.c
 Copyright: 2002-2005, - Paolo Maggi
   2003-2005, - Paolo Maggi
   2003-2006, - Paolo Maggi
@@ -408,36 +408,36 @@ Copyright: 2002-2005, - Paolo Maggi
 License: GPL (v2 or later)
  FIXME
 
-Files: plugins/docinfo/pluma-docinfo-plugin.c
- plugins/docinfo/pluma-docinfo-plugin.h
- plugins/spell/pluma-automatic-spell-checker.c
- plugins/spell/pluma-automatic-spell-checker.h
- plugins/spell/pluma-spell-checker-dialog.c
- plugins/spell/pluma-spell-checker-dialog.h
- plugins/spell/pluma-spell-checker-language.c
- plugins/spell/pluma-spell-checker-language.h
- plugins/spell/pluma-spell-checker.c
- plugins/spell/pluma-spell-checker.h
- plugins/spell/pluma-spell-language-dialog.c
- plugins/spell/pluma-spell-language-dialog.h
- plugins/spell/pluma-spell-plugin.c
- plugins/spell/pluma-spell-plugin.h
- pluma/dialogs/pluma-encodings-dialog.c
- pluma/dialogs/pluma-encodings-dialog.h
- pluma/dialogs/pluma-preferences-dialog.c
- pluma/dialogs/pluma-preferences-dialog.h
- pluma/dialogs/pluma-search-dialog.c
- pluma/dialogs/pluma-search-dialog.h
- pluma/pluma-encodings.c
- pluma/pluma-encodings.h
- pluma/pluma-metadata-manager.c
- pluma/pluma-metadata-manager.h
- pluma/pluma-plugins-engine.c
- pluma/pluma-prefs-manager-app.c
- pluma/pluma-prefs-manager-app.h
- pluma/pluma-prefs-manager-private.h
- pluma/pluma-prefs-manager.c
- pluma/pluma-prefs-manager.h
+Files: plugins/docinfo/lapiz-docinfo-plugin.c
+ plugins/docinfo/lapiz-docinfo-plugin.h
+ plugins/spell/lapiz-automatic-spell-checker.c
+ plugins/spell/lapiz-automatic-spell-checker.h
+ plugins/spell/lapiz-spell-checker-dialog.c
+ plugins/spell/lapiz-spell-checker-dialog.h
+ plugins/spell/lapiz-spell-checker-language.c
+ plugins/spell/lapiz-spell-checker-language.h
+ plugins/spell/lapiz-spell-checker.c
+ plugins/spell/lapiz-spell-checker.h
+ plugins/spell/lapiz-spell-language-dialog.c
+ plugins/spell/lapiz-spell-language-dialog.h
+ plugins/spell/lapiz-spell-plugin.c
+ plugins/spell/lapiz-spell-plugin.h
+ lapiz/dialogs/lapiz-encodings-dialog.c
+ lapiz/dialogs/lapiz-encodings-dialog.h
+ lapiz/dialogs/lapiz-preferences-dialog.c
+ lapiz/dialogs/lapiz-preferences-dialog.h
+ lapiz/dialogs/lapiz-search-dialog.c
+ lapiz/dialogs/lapiz-search-dialog.h
+ lapiz/lapiz-encodings.c
+ lapiz/lapiz-encodings.h
+ lapiz/lapiz-metadata-manager.c
+ lapiz/lapiz-metadata-manager.h
+ lapiz/lapiz-plugins-engine.c
+ lapiz/lapiz-prefs-manager-app.c
+ lapiz/lapiz-prefs-manager-app.h
+ lapiz/lapiz-prefs-manager-private.h
+ lapiz/lapiz-prefs-manager.c
+ lapiz/lapiz-prefs-manager.h
 Copyright: 2001-2005, Paolo Maggi
   2002, Paolo Maggi
   2002-2005, Paolo Maggi
@@ -459,32 +459,32 @@ Files: ChangeLog
  plugins/snippets/snippets/snippets.ui
  plugins/sort/sort.ui
  plugins/spell/languages-dialog.ui
- plugins/spell/pluma-spell-setup-dialog.ui
+ plugins/spell/lapiz-spell-setup-dialog.ui
  plugins/spell/spell-checker.ui
- plugins/time/pluma-time-dialog.ui
- plugins/time/pluma-time-setup-dialog.ui
- pluma/dialogs/pluma-encodings-dialog.ui
- pluma/dialogs/pluma-preferences-dialog.ui
- pluma/pluma-print-preferences.ui
+ plugins/time/lapiz-time-dialog.ui
+ plugins/time/lapiz-time-setup-dialog.ui
+ lapiz/dialogs/lapiz-encodings-dialog.ui
+ lapiz/dialogs/lapiz-preferences-dialog.ui
+ lapiz/lapiz-print-preferences.ui
 Copyright: NONE
 License: GENERATED FILE
  FIXME
 
-Files: pluma/pluma-commands-documents.c
- pluma/pluma-commands-edit.c
- pluma/pluma-commands-file-print.c
- pluma/pluma-commands-file.c
- pluma/pluma-commands-search.c
- pluma/pluma-commands-view.c
- pluma/pluma-commands.h
- pluma/pluma-debug.c
- pluma/pluma-debug.h
- pluma/pluma-document.c
- pluma/pluma-document.h
- pluma/pluma-utils.c
- pluma/pluma-utils.h
- pluma/pluma-view.c
- pluma/pluma-view.h
+Files: lapiz/lapiz-commands-documents.c
+ lapiz/lapiz-commands-edit.c
+ lapiz/lapiz-commands-file-print.c
+ lapiz/lapiz-commands-file.c
+ lapiz/lapiz-commands-search.c
+ lapiz/lapiz-commands-view.c
+ lapiz/lapiz-commands.h
+ lapiz/lapiz-debug.c
+ lapiz/lapiz-debug.h
+ lapiz/lapiz-document.c
+ lapiz/lapiz-document.h
+ lapiz/lapiz-utils.c
+ lapiz/lapiz-utils.h
+ lapiz/lapiz-view.c
+ lapiz/lapiz-view.h
 Copyright: 1998-1999, Alex Roberts, Evan Lawrence
   2000, 2002, Chema Celorio, Paolo Maggi
   2000-2001, Chema Celorio, Paolo Maggi
@@ -494,35 +494,35 @@ Copyright: 1998-1999, Alex Roberts, Evan Lawrence
 License: GPL (v2 or later)
  FIXME
 
-Files: plugins/filebrowser/pluma-file-bookmarks-store.c
- plugins/filebrowser/pluma-file-bookmarks-store.h
- plugins/filebrowser/pluma-file-browser-error.h
- plugins/filebrowser/pluma-file-browser-messages.h
- plugins/filebrowser/pluma-file-browser-plugin.c
- plugins/filebrowser/pluma-file-browser-plugin.h
- plugins/filebrowser/pluma-file-browser-store.c
- plugins/filebrowser/pluma-file-browser-store.h
- plugins/filebrowser/pluma-file-browser-utils.c
- plugins/filebrowser/pluma-file-browser-view.c
- plugins/filebrowser/pluma-file-browser-view.h
- plugins/filebrowser/pluma-file-browser-widget.c
- plugins/filebrowser/pluma-file-browser-widget.h
+Files: plugins/filebrowser/lapiz-file-bookmarks-store.c
+ plugins/filebrowser/lapiz-file-bookmarks-store.h
+ plugins/filebrowser/lapiz-file-browser-error.h
+ plugins/filebrowser/lapiz-file-browser-messages.h
+ plugins/filebrowser/lapiz-file-browser-plugin.c
+ plugins/filebrowser/lapiz-file-browser-plugin.h
+ plugins/filebrowser/lapiz-file-browser-store.c
+ plugins/filebrowser/lapiz-file-browser-store.h
+ plugins/filebrowser/lapiz-file-browser-utils.c
+ plugins/filebrowser/lapiz-file-browser-view.c
+ plugins/filebrowser/lapiz-file-browser-view.h
+ plugins/filebrowser/lapiz-file-browser-widget.c
+ plugins/filebrowser/lapiz-file-browser-widget.h
 Copyright: 2006, - Jesse van den Kieboom <jesse@icecrew.nl>
   2008, - Jesse van den Kieboom <jesse@icecrew.nl>
 License: GPL (v2 or later)
  FIXME
 
-Files: plugins/changecase/pluma-changecase-plugin.c
- plugins/changecase/pluma-changecase-plugin.h
- pluma/pluma-close-button.c
- pluma/pluma-close-button.h
- pluma/pluma-history-entry.c
- pluma/pluma-history-entry.h
- pluma/pluma-statusbar.c
- pluma/pluma-statusbar.h
- pluma/pluma-style-scheme-manager.h
- pluma/pluma-tab-label.c
- pluma/pluma-tab-label.h
+Files: plugins/changecase/lapiz-changecase-plugin.c
+ plugins/changecase/lapiz-changecase-plugin.h
+ lapiz/lapiz-close-button.c
+ lapiz/lapiz-close-button.h
+ lapiz/lapiz-history-entry.c
+ lapiz/lapiz-history-entry.h
+ lapiz/lapiz-statusbar.c
+ lapiz/lapiz-statusbar.h
+ lapiz/lapiz-style-scheme-manager.h
+ lapiz/lapiz-tab-label.c
+ lapiz/lapiz-tab-label.h
 Copyright: 2004-2005, - Paolo Borelli
   2005, - Paolo Borelli
   2006, - Paolo Borelli
@@ -535,10 +535,10 @@ Files: plugins/quickopen/quickopen/__init__.py
  plugins/quickopen/quickopen/popup.py
  plugins/quickopen/quickopen/virtualdirs.py
  plugins/quickopen/quickopen/windowhelper.py
- plugins/spell/pluma-spell-utils.c
- plugins/spell/pluma-spell-utils.h
- pluma/pluma-status-combo-box.c
- pluma/pluma-status-combo-box.h
+ plugins/spell/lapiz-spell-utils.c
+ plugins/spell/lapiz-spell-utils.h
+ lapiz/lapiz-status-combo-box.c
+ lapiz/lapiz-status-combo-box.h
  tests/document-loader.c
  tests/document-saver.c
 Copyright: 2008, - Jesse van den Kieboom
@@ -562,12 +562,12 @@ Copyright: 2005-2006, Jesse van den Kieboom <jesse@icecrew.nl>
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-document-input-stream.c
- pluma/pluma-document-input-stream.h
- pluma/pluma-document-output-stream.c
- pluma/pluma-document-output-stream.h
- pluma/pluma-smart-charset-converter.c
- pluma/pluma-smart-charset-converter.h
+Files: lapiz/lapiz-document-input-stream.c
+ lapiz/lapiz-document-input-stream.h
+ lapiz/lapiz-document-output-stream.c
+ lapiz/lapiz-document-output-stream.h
+ lapiz/lapiz-smart-charset-converter.c
+ lapiz/lapiz-smart-charset-converter.h
  tests/document-input-stream.c
  tests/document-output-stream.c
  tests/smart-converter.c
@@ -576,10 +576,10 @@ Copyright: 2009, - Ignacio Casal Quinteiro
 License: GPL (v2 or later)
  FIXME
 
-Files: plugins/sort/pluma-sort-plugin.c
- plugins/sort/pluma-sort-plugin.h
- plugins/trailsave/pluma-trail-save-plugin.c
- plugins/trailsave/pluma-trail-save-plugin.h
+Files: plugins/sort/lapiz-sort-plugin.c
+ plugins/sort/lapiz-sort-plugin.h
+ plugins/trailsave/lapiz-trail-save-plugin.c
+ plugins/trailsave/lapiz-trail-save-plugin.h
  update-authors.pl
 Copyright: NONE
 License: GPL (v2 or later)
@@ -604,8 +604,8 @@ License: GPL (v2 or later)
 
 Files: plugins/modelines/modeline-parser.c
  plugins/modelines/modeline-parser.h
- plugins/modelines/pluma-modeline-plugin.c
- plugins/modelines/pluma-modeline-plugin.h
+ plugins/modelines/lapiz-modeline-plugin.c
+ plugins/modelines/lapiz-modeline-plugin.h
 Copyright: 2005-2007, - Steve FrÃ©cinaux <code@istique.net>
 License: GPL (v2 or later)
  FIXME
@@ -618,10 +618,10 @@ Copyright: 2005-2006, Steve FrÃ©cinaux <steve@istique.net>
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/smclient/eggdesktopfile.h
- pluma/smclient/eggsmclient-private.h
- pluma/smclient/eggsmclient.c
- pluma/smclient/eggsmclient.h
+Files: lapiz/smclient/eggdesktopfile.h
+ lapiz/smclient/eggsmclient-private.h
+ lapiz/smclient/eggsmclient.c
+ lapiz/smclient/eggsmclient.h
 Copyright: 2007, Novell, Inc.
 License: LGPL (v2 or later)
  FIXME
@@ -629,7 +629,7 @@ License: LGPL (v2 or later)
 Files: help/hy/hy.po
  help/mn/mn.po
  help/ur/ur.po
- pixmaps/pluma.ico
+ pixmaps/lapiz.ico
 Copyright: 
 License: UNKNOWN
  FIXME
@@ -642,18 +642,18 @@ Copyright: 2002-2005, Paolo Maggi
 License: UNKNOWN
  FIXME
 
-Files: pluma/pluma-gio-document-loader.c
- pluma/pluma-gio-document-loader.h
- pluma/pluma-gio-document-saver.h
+Files: lapiz/lapiz-gio-document-loader.c
+ lapiz/lapiz-gio-document-loader.h
+ lapiz/lapiz-gio-document-saver.h
 Copyright: 2005, - Paolo Maggi
   2007, - Paolo Maggi, Steve FrÃ©cinaux
   2008, - Jesse van den Kieboom
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-document-loader.c
- pluma/pluma-document-loader.h
- pluma/pluma-document-saver.h
+Files: lapiz/lapiz-document-loader.c
+ lapiz/lapiz-document-loader.h
+ lapiz/lapiz-document-saver.h
 Copyright: 2005, - Paolo Maggi
   2007, - Paolo Maggi, Steve FrÃ©cinaux
 License: GPL (v2 or later)
@@ -677,40 +677,40 @@ Copyright: 2005, Steve FrÃ©cinaux
 License: UNKNOWN
  FIXME
 
-Files: pluma/pluma-session.c
- pluma/pluma-session.h
+Files: lapiz/lapiz-session.c
+ lapiz/lapiz-session.h
 Copyright: 2002, Ximian, Inc.
   2005, - Paolo Maggi
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/bacon-message-connection.c
- pluma/bacon-message-connection.h
+Files: lapiz/bacon-message-connection.c
+ lapiz/bacon-message-connection.h
 Copyright: 2003, Bastien Nocera <hadess@hadess.net>
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-print-job.c
- pluma/pluma-print-job.h
+Files: lapiz/lapiz-print-job.c
+ lapiz/lapiz-print-job.h
 Copyright: 2000-2001, Chema Celorio, Paolo Maggi
   2002-2008, Paolo Maggi
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/dialogs/pluma-close-confirmation-dialog.c
- pluma/dialogs/pluma-close-confirmation-dialog.h
+Files: lapiz/dialogs/lapiz-close-confirmation-dialog.c
+ lapiz/dialogs/lapiz-close-confirmation-dialog.h
 Copyright: 2004-2005, GNOME Foundation
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/plumatextregion.c
- pluma/plumatextregion.h
+Files: lapiz/lapiztextregion.c
+ lapiz/lapiztextregion.h
 Copyright: 2002, Gustavo GirÃ¡ldez <gustavo.giraldez@gmx.net>
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-print-preview.c
- pluma/pluma-print-preview.h
+Files: lapiz/lapiz-print-preview.c
+ lapiz/lapiz-print-preview.h
 Copyright: 2008, Paolo Borelli
 License: GPL (v2 or later)
  FIXME
@@ -721,8 +721,8 @@ Copyright: 2009-2010, Per Arneng <per.arneng@anyplanet.com>
 License: GPL (v2 or later)
  FIXME
 
-Files: tools/plugin_template/pluma-plugin.c
- tools/plugin_template/pluma-plugin.h
+Files: tools/plugin_template/lapiz-plugin.c
+ tools/plugin_template/lapiz-plugin.h
 Copyright: NONE
 License: GPL (v2 or later) (with incorrect FSF address)
  FIXME
@@ -737,25 +737,25 @@ Copyright: 2008, - B. Clausius
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-gio-document-saver.c
+Files: lapiz/lapiz-gio-document-saver.c
 Copyright: 2005-2006, - Paolo Borelli and Paolo Maggi
   2007, - Paolo Borelli, Paolo Maggi, Steve FrÃ©cinaux
   2008, - Jesse van den Kieboom
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-style-scheme-manager.c
+Files: lapiz/lapiz-style-scheme-manager.c
 Copyright: 2007, - Paolo Borelli and Paolo Maggi
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-document-saver.c
+Files: lapiz/lapiz-document-saver.c
 Copyright: 2005-2006, - Paolo Borelli and Paolo Maggi
   2007, - Paolo Borelli, Paolo Maggi, Steve FrÃ©cinaux
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-commands-help.c
+Files: lapiz/lapiz-commands-help.c
 Copyright: 1998-1999, Alex Roberts, Evan Lawrence
   2000-2001, Chema Celorio, Paolo Maggi
   2002-2005, Paolo Maggi
@@ -768,12 +768,12 @@ Copyright: 2019, Andrew Fowlie
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-dirs.h
+Files: lapiz/lapiz-dirs.h
 Copyright: 2008, Ignacio Casal Quinteiro
 License: GPL (v2 or later)
  FIXME
 
-Files: pluma/pluma-dirs.c
+Files: lapiz/lapiz-dirs.c
 Copyright: 2008, Ignacio Casal Quinteiro
   2011, Perberos
 License: GPL (v2 or later)
@@ -790,12 +790,12 @@ Copyright: 2006, Steve FrÃ©cinaux <code@istique.net>
 License: GPL (v2 or later)
  FIXME
 
-Files: plugins/externaltools/scripts/pluma-tool-merge.pl
+Files: plugins/externaltools/scripts/lapiz-tool-merge.pl
 Copyright: 2006, - Steve FrÃ©cinaux <code@istique.net>
 License: GPL (v2 or later) GENERATED FILE
  FIXME
 
-Files: pluma/dialogs/pluma-search-dialog.ui
+Files: lapiz/dialogs/lapiz-search-dialog.ui
 Copyright: MATE Developer
 License: GPL (v2 or later) GENERATED FILE
  FIXME
@@ -810,14 +810,14 @@ Copyright: NONE
 License: GPL (v2)
  FIXME
 
-Files: pluma/smclient/eggdesktopfile.c
+Files: lapiz/smclient/eggdesktopfile.c
 Copyright: 1999-2000, Red Hat Inc.
   2001, George Lebl
   2007, Novell, Inc.
 License: LGPL (v2 or later)
  FIXME
 
-Files: pluma/smclient/eggsmclient-xsmp.c
+Files: lapiz/smclient/eggsmclient-xsmp.c
 Copyright: 1998, The Open Group.
   2001, Havoc Pennington, MateClient (C) 1998 Carsten Schaar, and twm
   2007, Novell, Inc.
@@ -850,7 +850,7 @@ Copyright: 1989, 1991, Free Software Foundation, Inc.,
 License: UNKNOWN
  FIXME
 
-Files: data/pluma.appdata.xml.in
+Files: data/lapiz.appdata.xml.in
 Copyright: 2014, MATE team <mate-dev@ml.mate-desktop.org> -->
 License: UNKNOWN
  FIXME
@@ -902,7 +902,7 @@ Copyright: attributions.
 License: UNKNOWN
  FIXME
 
-Files: pluma/pluma.about
+Files: lapiz/lapiz.about
 Copyright: bastien Wilmet <wilmet%gnome.org>;V.Barkov <neverscaired%gmail.com>;Vadim Barkov <vbrkov%gmail.com>;Vlad Orlov <monsta%inbox.ru>;Wolfgang Ulbrich <mate%raveit.de>;Wu Xiaotian <yetist%gmail.com>;Yaakov Selkowitz <yselkowitz%users.sourceforge.net>;ZenWalker <scow%riseup.net>;
 License: UNKNOWN
  FIXME

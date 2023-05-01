@@ -1,4 +1,4 @@
-Source: pluma
+Source: lapiz
 Section: x11
 Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
@@ -26,17 +26,17 @@ Build-Depends: debhelper-compat (= 13),
                yelp-tools,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/pluma
-Vcs-Git: https://salsa.debian.org/debian-mate-team/pluma.git
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/lapiz
+Vcs-Git: https://salsa.debian.org/debian-mate-team/lapiz.git
 Homepage: http://www.mate-desktop.org/
 
-Package: pluma
+Package: lapiz
 Architecture: any
 Depends: gir1.2-peas-1.0,
-         gir1.2-pluma-1.0 (= ${binary:Version}),
+         gir1.2-lapiz-1.0 (= ${binary:Version}),
          iso-codes,
          mate-desktop-common,
-         pluma-common (= ${source:Version}),
+         lapiz-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: zenity,
@@ -59,7 +59,7 @@ Description: official text editor of the MATE desktop environment
  includes support for spell checking, comparing files, viewing CVS
  ChangeLogs, and adjusting indentation levels.
 
-Package: pluma-common
+Package: lapiz-common
 Architecture: all
 Depends: python3,
          ${misc:Depends},
@@ -82,11 +82,11 @@ Description: official text editor of the MATE desktop environment (common files)
  .
  This package contains the architecture independent files.
 
-Package: pluma-dev
+Package: lapiz-dev
 Architecture: any
 Section: libdevel
-Depends: pluma (= ${binary:Version}),
-         gir1.2-pluma-1.0 (= ${binary:Version}),
+Depends: lapiz (= ${binary:Version}),
+         gir1.2-lapiz-1.0 (= ${binary:Version}),
          ${misc:Depends},
 Breaks: mate-text-editor (<< 1.5.0),
 Description: official text editor of the MATE desktop environment (development files)
@@ -107,7 +107,7 @@ Description: official text editor of the MATE desktop environment (development f
  .
  This package contains the development files for building Pluma plugins.
 
-Package: pluma-doc
+Package: lapiz-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
@@ -129,16 +129,16 @@ Description: official text editor of the MATE desktop environment (documentation
  .
  This package contains the documentation files.
 
-Package: gir1.2-pluma-1.0
+Package: gir1.2-lapiz-1.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: pluma-dev (<< 1.18.2-2),
-        gir1.2-pluma (<< 1.18.2-2),
-Replaces: pluma-dev (<< 1.18.2-2),
-          gir1.2-pluma (<< 1.18.2-1~),
+Breaks: lapiz-dev (<< 1.18.2-2),
+        gir1.2-lapiz (<< 1.18.2-2),
+Replaces: lapiz-dev (<< 1.18.2-2),
+          gir1.2-lapiz (<< 1.18.2-1~),
 Description: GObject introspection data for Pluma
  Pluma is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
