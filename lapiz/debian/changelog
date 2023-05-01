@@ -324,7 +324,7 @@ lapiz (1.14.0-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + B-D: libctk-3-dev
-    + B-D: libctksourceview-3.0-dev
+    + B-D: libctksourceview-4-dev
     + Versioned B-D: libmate-desktop-dev (>= 1.14)
     + Versioned B-D: mate-common (>= 1.14)
     + Drop all Python support, including deprecated
