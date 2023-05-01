@@ -53,7 +53,7 @@ lapiz (1.22.1-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/copyright:
     + Update copyright attributions.
   * debian/lapiz-common.install:
@@ -173,7 +173,7 @@ lapiz (1.20.0-1) unstable; urgency=medium
   * debian/control (already in 1.19.3-0ubuntu1):
     + Temporarily have pkg-mate-team ML under Uploaders:.
     + Update Maintainer: field to debian-mate ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Pablo Barciela ]
@@ -227,14 +227,14 @@ lapiz (1.18.2-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/lapiz.install: Remove obsolete usr/lib/*/lapiz/plugin-loaders/*.so
   * debian/gir1.2-lapiz.install: Add GObject introspection data for Lapiz.
   * debian/patches: Drop 2000_disable_python_plugins.patch.
     Upstream migrated to libpeas.
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Vangelis Mouhtsis ]
   * debian/compat:
@@ -286,7 +286,7 @@ lapiz (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.2-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -296,7 +296,7 @@ lapiz (1.15.2-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/patches:
     + Rebase 2000_disable_python_plugins.patch.
   * debian/watch:
@@ -512,7 +512,7 @@ lapiz (1.8.0+dfsg1-1) unstable; urgency=low
   * New upstream release.
   * debian/control:
     + Put zenity in Recommends: field instead of mate-dialogs.
-    + For standalone installations (without the complete MATE desktop
+    + For standalone installations (without the complete CAFE desktop
       environment), Lapiz expects the file org.mate.lockdown.gschema.xml.
       Thus, adding mate-desktop-common as dependency. (Closes: #744087).
     + Drop bin:package lapiz-doc.

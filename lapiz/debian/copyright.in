@@ -358,7 +358,7 @@ Files: lapiz.pot
  po/zh_HK.po
  po/zh_TW.po
  po/zu.po
-Copyright: YEAR MATE Desktop Environment team
+Copyright: YEAR CAFE Desktop Environment team
 License: UNKNOWN
  FIXME
 
@@ -796,7 +796,7 @@ License: GPL (v2 or later) GENERATED FILE
  FIXME
 
 Files: lapiz/dialogs/lapiz-search-dialog.ui
-Copyright: MATE Developer
+Copyright: CAFE Developer
 License: GPL (v2 or later) GENERATED FILE
  FIXME
 
@@ -831,7 +831,7 @@ License: LGPL (v2 or later)
 
 Files: plugins/externaltools/data/switch-c.tool.in
 Copyright: 2011, Perberos
-  2012-2017, MATE developers
+  2012-2017, CAFE developers
 License: LGPL (v2.1 or later)
  FIXME
 
@@ -851,7 +851,7 @@ License: UNKNOWN
  FIXME
 
 Files: data/lapiz.appdata.xml.in
-Copyright: 2014, MATE team <mate-dev@ml.mate-desktop.org> -->
+Copyright: 2014, CAFE team <mate-dev@ml.mate-desktop.org> -->
 License: UNKNOWN
  FIXME
 
@@ -882,7 +882,7 @@ License: UNKNOWN
 
 Files: po/gl.po
 Copyright: Rivero Castillo <hab130@gmail.com>, 2018
-  YEAR MATE Desktop Environment team
+  YEAR CAFE Desktop Environment team
 License: UNKNOWN
  FIXME
 
@@ -976,7 +976,7 @@ License: UNKNOWN
  FIXME
 
 Files: help/he/he.po
-Copyright: × MATE"
+Copyright: × CAFE"
 License: UNKNOWN
  FIXME
 

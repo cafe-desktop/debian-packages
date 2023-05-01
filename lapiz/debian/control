@@ -1,7 +1,7 @@
 Source: lapiz
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -43,7 +43,7 @@ Recommends: zenity,
 Provides: mate-text-editor,
 Breaks: mate-text-editor (<< 1.5.0),
 Replaces: mate-text-editor (<< 1.5.0),
-Description: official text editor of the MATE desktop environment
+Description: official text editor of the CAFE desktop environment
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
  found in simple text editors. Lapiz is a graphical application which
@@ -64,7 +64,7 @@ Architecture: all
 Depends: python3,
          ${misc:Depends},
 Breaks: mate-text-editor (<< 1.5.0),
-Description: official text editor of the MATE desktop environment (common files)
+Description: official text editor of the CAFE desktop environment (common files)
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
  found in simple text editors. Lapiz is a graphical application which
@@ -89,7 +89,7 @@ Depends: lapiz (= ${binary:Version}),
          gir1.2-lapiz-1.0 (= ${binary:Version}),
          ${misc:Depends},
 Breaks: mate-text-editor (<< 1.5.0),
-Description: official text editor of the MATE desktop environment (development files)
+Description: official text editor of the CAFE desktop environment (development files)
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
  found in simple text editors. Lapiz is a graphical application which
@@ -111,7 +111,7 @@ Package: lapiz-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
-Description: official text editor of the MATE desktop environment (documentation files)
+Description: official text editor of the CAFE desktop environment (documentation files)
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
  found in simple text editors. Lapiz is a graphical application which
