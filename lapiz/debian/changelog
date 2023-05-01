@@ -202,7 +202,7 @@ lapiz (1.19.3-0ubuntu1) bionic; urgency=medium
 lapiz (1.18.3-2) unstable; urgency=medium
 
   * debian/control:
-    + Drop D (lapiz) again: python-gtksourceview2. This was a mistake
+    + Drop D (lapiz) again: python-ctksourceview2. This was a mistake
       in the previous upload and a fix only valid for Debian jessie.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 26 Nov 2017 21:07:43 +0100
@@ -216,7 +216,7 @@ lapiz (1.18.3-1) unstable; urgency=medium
   * debian/control:
     + Bump Standards-Version: to 4.1.1. No changes needed.
     + Drop now useless B-D: autotools-dev.
-    + Add D (lapiz): python-gtksourceview2. (Closes: #851854).
+    + Add D (lapiz): python-ctksourceview2. (Closes: #851854).
   * debian/watch: Use secure URI.
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 10:35:34 +0100
@@ -228,7 +228,7 @@ lapiz (1.18.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for MATE 1.17.
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/lapiz.install: Remove obsolete usr/lib/*/lapiz/plugin-loaders/*.so
   * debian/gir1.2-lapiz.install: Add GObject introspection data for Lapiz.
   * debian/patches: Drop 2000_disable_python_plugins.patch.
@@ -323,17 +323,17 @@ lapiz (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + B-D: libgtk-3-dev
-    + B-D: libgtksourceview-3.0-dev
+    + B-D: libctk-3-dev
+    + B-D: libctksourceview-3.0-dev
     + Versioned B-D: libmate-desktop-dev (>= 1.14)
     + Versioned B-D: mate-common (>= 1.14)
     + Drop all Python support, including deprecated
-      dependency on python-gtksourceview2. (Closes: #822591).
+      dependency on python-ctksourceview2. (Closes: #822591).
   * debian/rules:
     + Drop --with python2.
     + MateConf dropped upstream.
     + Drop all Python support.
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
   * debian/patches:
     + Drop 0000_prevent_shell_code_injection.patch. Applied upstream.
     + Add 2000_disable_python_plugins.patch.
@@ -453,7 +453,7 @@ lapiz (1.10.2+dfsg1-1) unstable; urgency=medium
 lapiz (1.8.1+dfsg1-4) unstable; urgency=medium
 
   * debian/control:
-    + Add D (lapiz): python-gtksourceview2. (Closes: #785243).
+    + Add D (lapiz): python-ctksourceview2. (Closes: #785243).
     + Add to B-D: dh-python.
   * debian/copyright:
     + Fix several mentioned files reported as wildcard-matches-nothing
