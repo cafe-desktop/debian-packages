@@ -1,0 +1,551 @@
+pluma (1.24.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 27 Aug 2020 14:13:35 +0200
+
+pluma (1.24.0-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump B-D from libenchant-dev to libenchant-2-dev. (Closes: #956689).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 16 Apr 2020 09:21:03 +0200
+
+pluma (1.24.0-1) unstable; urgency=medium
+
+  [ Andreas Henriksson ]
+  * New upstream release.
+  * Upstream ported to python3 (Closes: #940199)
+    - Drop libpeas-1.0-python2loader dependency
+    - Switch python dependency to python3
+  * debian/control:
+    + Adjust build-deps for upstream porting from intltool to gettext
+    + Add gla11y build-dep for checking .ui accessability
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+    + Update auto-generated copyright.in file.
+  * debian/patches:
+    + Add 1001_ensure-python3-execution.patch. Ensure Py3 usage for switch-c
+      script.
+  * debian/rules:
+    + Don't install Python cache dirs into bin:pkg.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Feb 2020 09:04:28 +0100
+
+pluma (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:35:24 +0200
+
+pluma (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Updated for MATE Desktop 1.22
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/pluma-common.install:
+    + Collapse everything in /usr/share/pluma
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Jul 2019 21:47:55 +0200
+
+pluma (1.20.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+  * debian/rules:
+    + Drop moval of appdata.xml file. It's at the correct location now.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 09 Jan 2019 22:10:09 +0100
+
+pluma (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix crashes when opening files with BOM at beginning (Closes: #912188).
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Bump Standards-Version: to 4.2.1. No changes needed.
+    + List gir1.2-pluma-1.0 under D of pluma-dev, too, so lintian becomes
+      happy.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 22 Nov 2018 12:49:35 +0100
+
+pluma (1.20.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop all patches. Shipped upstream now.
+  * debian/control:
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 08 Jul 2018 03:10:32 +0200
+
+pluma (1.20.1-3) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+  * debian/control:
+    + Add B:/R: (gir1.2-pluma-1.0): gir1.2-pluma (<< 1.18.2-1~).
+
+  [ Pablo Barciela ]
+  * debian/patches:
+    + Add 0002_Fix_secondary_mouse_button_under_line_numbers.patch
+    + Add 0003_Fix_Pluma_crashes_with_mouse_wheel_over_a_tab.patch.
+      (Closes: #898637).
+    + Add 0004_Fix_behavior_of_mouse_buttons_in_print_preview.patch
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 24 May 2018 11:33:51 +0200
+
+pluma (1.20.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Move D: gir1.2-pluma-1.0 from (pluma-dev) to (pluma). (LP: #1723259)
+    + Add D (pluma): libpeas-1.0-python2loader. (LP: #1743132)
+  * debian/patches:
+    + Add 0001_disable_python_plugins.patch. Disable Python plugins because
+      libpeas only supports Python3 and the Python plugins in Pluma only
+      support Python2. (LP: #1743133) (LP: #1743137)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 Apr 2018 22:53:27 +0200
+
+pluma (1.20.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 13:54:18 +0200
+
+pluma (1.20.0-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Use secure URI for copyright format.
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Add D: gir1.2-peas-1.0 (pluma). (LP: #1757333)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 22 Mar 2018 21:54:28 +0100
+
+pluma (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.3-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.3-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Pablo Barciela ]
+  * debian/patches (already in 1.19.3-0ubuntu1):
+    + Add 0000_Fix_list_of_recently_used_files.patch. (Closes: #883866).
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/{rules,pluma-common.install}:
+    + Move appstream metainfo to correct location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 10:39:01 +0100
+
+pluma (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
+
+pluma (1.19.3-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 08:17:43 +0000
+
+pluma (1.18.3-2) unstable; urgency=medium
+
+  * debian/control:
+    + Drop D (pluma) again: python-gtksourceview2. This was a mistake
+      in the previous upload and a fix only valid for Debian jessie.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 26 Nov 2017 21:07:43 +0100
+
+pluma (1.18.3-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+    + Drop now useless B-D: autotools-dev.
+    + Add D (pluma): python-gtksourceview2. (Closes: #851854).
+  * debian/watch: Use secure URI.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 10:35:34 +0100
+
+pluma (1.18.2-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/pluma.install: Remove obsolete usr/lib/*/pluma/plugin-loaders/*.so
+  * debian/gir1.2-pluma.install: Add GObject introspection data for Pluma.
+  * debian/patches: Drop 2000_disable_python_plugins.patch.
+    Upstream migrated to libpeas.
+  * debian/copyright: Update copyright attributions.
+  * debian/control: Dependencies updated for MATE 1.18.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Remove Python byte-code before installing files into the pluma
+      bin:package.
+  * debian/{control,gir1.2-pluma-1.0.install}:
+    + Rename GIR package to a name that matches its TypeLib file name.
+  * debian/control:
+    + Add D (pluma-dev): gir1.2-pluma-1.0 (same binary version as
+      pluma-dev).
+    + GIR packages are in section 'introspection'.
+    + The corresponding dev:package must be in section libdevel (i.e.
+      pluma-dev).
+    + Add B:/R: to gir-1.2-pluma-1.0 for pluma-dev (<< 1.18.2-1~).
+  * debian/{pluma-dev,gir1.2-pluma-1.0}.install:
+    + Move /usr/share/gir-1.0/ into pluma-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 16:21:05 +0200
+
+pluma (1.16.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * lintian:
+    + Comment out privacy-breach-generic for snippets's mallard.xml. It will
+      be needed again with pluma 1.18.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 26 Apr 2017 20:56:02 +0200
+
+pluma (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.2-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 22:35:09 +0200
+
+pluma (1.15.2-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/patches:
+    + Rebase 2000_disable_python_plugins.patch.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
+
+pluma (1.14.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Refactor 2000_disable_python_plugins.patch.
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + dbgsym: Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 13:47:48 +0200
+
+pluma (1.14.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + B-D: libgtk-3-dev
+    + B-D: libgtksourceview-3.0-dev
+    + Versioned B-D: libmate-desktop-dev (>= 1.14)
+    + Versioned B-D: mate-common (>= 1.14)
+    + Drop all Python support, including deprecated
+      dependency on python-gtksourceview2. (Closes: #822591).
+  * debian/rules:
+    + Drop --with python2.
+    + MateConf dropped upstream.
+    + Drop all Python support.
+    + Add --with-gtk=3.0
+  * debian/patches:
+    + Drop 0000_prevent_shell_code_injection.patch. Applied upstream.
+    + Add 2000_disable_python_plugins.patch.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 25 May 2016 17:25:43 +0200
+
+pluma (1.12.2-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0000_prevent_shell_code_injection.patch. Closes (LP: #1466633)
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Mar 2016 22:08:23 +0100
+
+pluma (1.12.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Use encrypted URLs for Vcs-*: field.
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+  * debian/rules:
+    + Enable all hardening flags.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 16 Feb 2016 10:58:53 +0100
+
+pluma (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/patches:
+    + Drop 2003_omit-non-linux-build-files.patch. Applied upstream.
+  * debian/watch:
+    + Drop +dfsg1 suffix.
+  * debian/rules:
+    + Remove obsolete repacking.
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev (>= 1.12).
+
+  [ Mike Gabriel ]
+  * Bug triaging: Check that pluma really builds against Python2 and the
+    correct build rules are enabled. This is solved since 1.10.2+dfsg1-2.
+    (Closes: #796883).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 13:19:18 +0100
+
+pluma (1.10.2+dfsg1-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Use NEWS file as upstream changelog.
+
+  [ Martin Wimpress ]
+  * debian/pluma-common.lintian-overrides:
+    + Catch false positive for privacy-breach-generic.
+  * debian/control:
+    + Add Python dependencies for plugins. (Closes: #797130).
+  * debian/rules:
+    + Update build rules to use Python.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Aug 2015 15:52:47 +0200
+
+pluma (1.10.2+dfsg1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0002_use-zenity-instead-of-mate-dialogs.patch, applied
+    upstream.
+    + Drop 1001_no-timestamped-gzip-files.patch, applied upstream.
+    + Drop 0003_glib243-compat.patch, applied upstream.
+    + Drop 2001_fix-man-page-errors.patch, applied upstream.
+    + Drop 2002_omit-gfdl-licensed-help-files.patch, applied upstream.
+    + Rebase 2003_omit-non-linux-build-files.patch.
+  * debian/control:
+    + Add new package pluma-doc.install.
+    + Update build dependencies for new upstream release.
+    + Update descriptions.
+    + Process with wrap-and-sort.
+  * debian/pluma-common.install:
+    + Add usr/share/{appdata,help}.
+    + Process with wrap-and-sort.
+  * debian/pluma.install:
+    + Process with wrap-and-sort.
+  * debian/rules:
+    + Update for new upstream released.
+  * debian/copyright:
+    + Add help/ files, update for this upstream release.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Create orig tar ball in ../ rather than in $(CURDIR).
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.10).
+  * debian/copyright:
+    + Add copyright.in template file.
+    + More fine-tuning before uploading.
+  * lintian:
+    + Drop obsolete override "privacy-breach-generic" (pluma-common).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 19 Aug 2015 21:41:43 +0200
+
+pluma (1.8.1+dfsg1-4) unstable; urgency=medium
+
+  * debian/control:
+    + Add D (pluma): python-gtksourceview2. (Closes: #785243).
+    + Add to B-D: dh-python.
+  * debian/copyright:
+    + Fix several mentioned files reported as wildcard-matches-nothing
+      by lintian.
+  * debian/pluma-common.lintian-overrides:
+    + Fix URL in privacy-breach-generic lintian override.
+  * debian/rules:
+    + Remove .pyc and .pyo files before installing plugin files into
+      the pluma bin:package.
+  * debian/patches:
+    + Add 1001_no-timestamped-gzip-files.patch. No timestamps in gzip
+      compressed package files.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 06 Jun 2015 23:22:14 +0200
+
+pluma (1.8.1+dfsg1-3) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing
+    + Remove non-packaged *.convert files after build
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add 0003_glib243-compat.patch. Filebrowser plugin: first connect to
+      settings, then read them. (Closes: #780791).
+  * debian/copyright:
+    + Add copyright information for several more upstream files.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 11 May 2015 12:56:12 +0200
+
+pluma (1.8.1+dfsg1-2) unstable; urgency=low
+
+  * debian/rules:
+    + Fix copy+paste error in tarball repacking code.
+  * debian/pluma-common.install:
+    + Drop mate-conf .convert files from package.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 12:50:35 +0200
+
+pluma (1.8.1+dfsg1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    + Fix copy+paste error in LONG_DESCRIPTION of bin:package pluma-dbg.
+  * debian/copyright:
+    + Fix typo (opinion -> option).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 14:05:04 +0200
+
+pluma (1.8.0+dfsg1-1) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/control:
+    + Put zenity in Recommends: field instead of mate-dialogs.
+    + For standalone installations (without the complete MATE desktop
+      environment), Pluma expects the file org.mate.lockdown.gschema.xml.
+      Thus, adding mate-desktop-common as dependency. (Closes: #744087).
+    + Drop bin:package pluma-doc.
+  * debian/patches:
+    + Add 0002_use-zenity-instead-of-mate-dialogs.patch. Use zenity instead of
+      mate-dialogs.
+    + Drop 0001_fix-ftbfs-due-to-gettext.patch. Was cherry-picked from upstream
+      and is included in this release.
+    + Drop 1001_add-keywords-to-desktop-file.patch. Applied upstream.
+    + Drop 1002_typo-fix-whether.patch. Applied upstream.
+    + Drop 1003_dont-install-usr-bin-mate-text-editor.patch. Applied upstream.
+    + Update 2002_omit-gfdl-licensed-help-files.patch.
+    + Update 2003_omit-non-linux-build-files.patch
+    + Add 2001_fix-man-page-errors.patch. Silence lintian a
+      manpage-has-errors-from-man complaint.
+  * debian/rules:
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+  * lintian: Drop unused overrides.
+
+  [ Vangelis Mouhtsis ]
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/copyright:
+    + Adapt to file changes in new upstream source tree.
+  * debian/rules:
+    + Build package using autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 17 Apr 2014 21:11:03 +0200
+
+pluma (1.6.2+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734965).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 20 Feb 2014 15:56:26 +0100

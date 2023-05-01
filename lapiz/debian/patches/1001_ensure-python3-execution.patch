@@ -1,0 +1,11 @@
+Description: Ensure Py3 usage for switch-c script
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+
+--- a/plugins/externaltools/data/switch-c.tool.in
++++ b/plugins/externaltools/data/switch-c.tool.in
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python3
+ # -*- coding: utf-8 -*-
+ # Copyright © 2011 Perberos
+ # Copyright © 2012-2017 MATE developers
