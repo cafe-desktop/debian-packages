@@ -9,7 +9,7 @@ Files: Makefile.am
  autogen.sh
  configure.ac
  data/Makefile.am
- data/org.mate.lapiz.gschema.xml.in
+ data/org.cafe.lapiz.gschema.xml.in
  data/lapiz-bugreport.sh.in
  data/lapiz.1
  data/lapiz.desktop.in.in
@@ -150,7 +150,7 @@ Files: Makefile.am
  plugins/externaltools/tools/ui-a11y.suppr
  plugins/filebrowser/Makefile.am
  plugins/filebrowser/README.md
- plugins/filebrowser/org.mate.lapiz.plugins.filebrowser.gschema.xml.in
+ plugins/filebrowser/org.cafe.lapiz.plugins.filebrowser.gschema.xml.in
  plugins/filebrowser/lapiz-file-browser-enum-register.c.template
  plugins/filebrowser/lapiz-file-browser-enum-types.c.template
  plugins/filebrowser/lapiz-file-browser-enum-types.h.template
@@ -162,7 +162,7 @@ Files: Makefile.am
  plugins/modelines/README.md
  plugins/modelines/language-mappings
  plugins/pythonconsole/Makefile.am
- plugins/pythonconsole/org.mate.lapiz.plugins.pythonconsole.gschema.xml.in
+ plugins/pythonconsole/org.cafe.lapiz.plugins.pythonconsole.gschema.xml.in
  plugins/pythonconsole/pythonconsole/Makefile.am
  plugins/pythonconsole/pythonconsole/ui-a11y.suppr
  plugins/quickopen/Makefile.am
@@ -202,7 +202,7 @@ Files: Makefile.am
  plugins/sort/ui-a11y.suppr
  plugins/spell/Makefile.am
  plugins/spell/README.md
- plugins/spell/org.mate.lapiz.plugins.spell.gschema.xml.in
+ plugins/spell/org.cafe.lapiz.plugins.spell.gschema.xml.in
  plugins/spell/lapiz-spell-marshal.list
  plugins/spell/ui-a11y.suppr
  plugins/taglist/HTML.tags.xml.in
@@ -213,7 +213,7 @@ Files: Makefile.am
  plugins/taglist/XUL.tags.xml.in
  plugins/time/Makefile.am
  plugins/time/README.md
- plugins/time/org.mate.lapiz.plugins.time.gschema.xml.in
+ plugins/time/org.cafe.lapiz.plugins.time.gschema.xml.in
  plugins/time/ui-a11y.suppr
  plugins/trailsave/Makefile.am
  plugins/trailsave/README.md
@@ -851,7 +851,7 @@ License: UNKNOWN
  FIXME
 
 Files: data/lapiz.appdata.xml.in
-Copyright: 2014, CAFE team <mate-dev@ml.mate-desktop.org> -->
+Copyright: 2014, CAFE team <cafe-dev@ml.cafe-desktop.org> -->
 License: UNKNOWN
  FIXME
 
@@ -903,7 +903,7 @@ License: UNKNOWN
  FIXME
 
 Files: lapiz/lapiz.about
-Copyright: bastien Wilmet <wilmet%gnome.org>;V.Barkov <neverscaired%gmail.com>;Vadim Barkov <vbrkov%gmail.com>;Vlad Orlov <monsta%inbox.ru>;Wolfgang Ulbrich <mate%raveit.de>;Wu Xiaotian <yetist%gmail.com>;Yaakov Selkowitz <yselkowitz%users.sourceforge.net>;ZenWalker <scow%riseup.net>;
+Copyright: bastien Wilmet <wilmet%gnome.org>;V.Barkov <neverscaired%gmail.com>;Vadim Barkov <vbrkov%gmail.com>;Vlad Orlov <monsta%inbox.ru>;Wolfgang Ulbrich <cafe%raveit.de>;Wu Xiaotian <yetist%gmail.com>;Yaakov Selkowitz <yselkowitz%users.sourceforge.net>;ZenWalker <scow%riseup.net>;
 License: UNKNOWN
  FIXME
 

@@ -1,7 +1,7 @@
 Source: lapiz
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -22,27 +22,27 @@ Build-Depends: debhelper-compat (= 13),
                libsm-dev,
                libx11-dev,
                libxml2-dev,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
                yelp-tools,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/lapiz
-Vcs-Git: https://salsa.debian.org/debian-mate-team/lapiz.git
-Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/lapiz
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/lapiz.git
+Homepage: http://www.cafe-desktop.org/
 
 Package: lapiz
 Architecture: any
 Depends: gir1.2-peas-1.0,
          gir1.2-lapiz-1.0 (= ${binary:Version}),
          iso-codes,
-         mate-desktop-common,
+         cafe-desktop-common,
          lapiz-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: zenity,
-Provides: mate-text-editor,
-Breaks: mate-text-editor (<< 1.5.0),
-Replaces: mate-text-editor (<< 1.5.0),
+Provides: cafe-text-editor,
+Breaks: cafe-text-editor (<< 1.5.0),
+Replaces: cafe-text-editor (<< 1.5.0),
 Description: official text editor of the CAFE desktop environment
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
@@ -63,7 +63,7 @@ Package: lapiz-common
 Architecture: all
 Depends: python3,
          ${misc:Depends},
-Breaks: mate-text-editor (<< 1.5.0),
+Breaks: cafe-text-editor (<< 1.5.0),
 Description: official text editor of the CAFE desktop environment (common files)
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
@@ -88,7 +88,7 @@ Section: libdevel
 Depends: lapiz (= ${binary:Version}),
          gir1.2-lapiz-1.0 (= ${binary:Version}),
          ${misc:Depends},
-Breaks: mate-text-editor (<< 1.5.0),
+Breaks: cafe-text-editor (<< 1.5.0),
 Description: official text editor of the CAFE desktop environment (development files)
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
