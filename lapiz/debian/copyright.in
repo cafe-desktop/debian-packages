@@ -819,7 +819,7 @@ License: LGPL (v2 or later)
 
 Files: lapiz/smclient/eggsmclient-xsmp.c
 Copyright: 1998, The Open Group.
-  2001, Havoc Pennington, MateClient (C) 1998 Carsten Schaar, and twm
+  2001, Havoc Pennington, CafeClient (C) 1998 Carsten Schaar, and twm
   2007, Novell, Inc.
 License: LGPL (v2 or later)
  FIXME

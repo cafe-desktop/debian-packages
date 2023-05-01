@@ -331,7 +331,7 @@ lapiz (1.14.0-1) unstable; urgency=medium
       dependency on python-ctksourceview2. (Closes: #822591).
   * debian/rules:
     + Drop --with python2.
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
     + Drop all Python support.
     + Add --with-ctk=3.0
   * debian/patches:
