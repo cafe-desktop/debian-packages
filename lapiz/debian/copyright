@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Lapiz
-Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/lapiz/
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
+Source: https://github.com/cafe-desktop/lapiz
 
 Files: plugins/docinfo/lapiz-docinfo-plugin.c
        plugins/docinfo/lapiz-docinfo-plugin.h
