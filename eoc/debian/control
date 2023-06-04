@@ -47,8 +47,8 @@ Depends: eoc-common (= ${source:Version}),
          ${shlibs:Depends},
 Breaks: cafe-image-viewer (<= 1.0.0-1),
 Replaces: cafe-image-viewer (<= 1.0.0-1),
-Description: Eye of MATE graphics viewer program
- eoc or the Eye of MATE is a simple graphics viewer for the MATE
+Description: Eye of CAFE graphics viewer program
+ eoc or the Eye of CAFE is a simple graphics viewer for the CAFE
  desktop which uses the gdk-pixbuf library. It can deal with large
  images, and zoom and scroll with constant memory usage. Its goals are
  simplicity and standards compliance.
@@ -59,8 +59,8 @@ Depends: ${misc:Depends},
 Breaks: eoc (<= 1.6.1-1),
         cafe-image-viewer (<= 1.0.0-1),
 Replaces: cafe-image-viewer (<= 1.0.0-1),
-Description: Eye of MATE graphics viewer program (common files)
- eoc or the Eye of MATE is a simple graphics viewer for the MATE
+Description: Eye of CAFE graphics viewer program (common files)
+ eoc or the Eye of CAFE is a simple graphics viewer for the CAFE
  desktop which uses the gdk-pixbuf library. It can deal with large
  images, and zoom and scroll with constant memory usage. Its goals are
  simplicity and standards compliance.
@@ -77,8 +77,8 @@ Breaks: cafe-image-viewer (<= 1.0.0-1),
         gir1.2-eoc (<< 1.18.3-2~),
 Replaces: cafe-image-viewer (<= 1.0.0-1),
           gir1.2-eoc (<< 1.18.3-2~),
-Description: Eye of MATE graphics viewer program (development files)
- eoc or the Eye of MATE is a simple graphics viewer for the MATE
+Description: Eye of CAFE graphics viewer program (development files)
+ eoc or the Eye of CAFE is a simple graphics viewer for the CAFE
  desktop which uses the gdk-pixbuf library. It can deal with large
  images, and zoom and scroll with constant memory usage. Its goals are
  simplicity and standards compliance.
@@ -94,7 +94,7 @@ Depends: ${gir:Depends},
 Breaks: gir1.2-eoc (<< 1.18.3-2~),
 Replaces: gir1.2-eoc (<< 1.18.3-2~),
 Description: GObject introspection data for the eoc library
- eoc or the Eye of MATE is a simple graphics viewer for the MATE
+ eoc or the Eye of CAFE is a simple graphics viewer for the CAFE
  desktop which uses the gdk-pixbuf library.  It can deal with large
  images, and zoom and scroll with constant memory usage.  Its goals are
  simplicity and standards compliance.

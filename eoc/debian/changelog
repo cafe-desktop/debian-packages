@@ -47,7 +47,7 @@ eoc (1.22.1-1) unstable; urgency=medium
   * debian/copyright:
     + Update copyright attributions.
   * debian/eoc-common.install:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/control:
     + Add D gir1.2-eoc-1.0 (Closes: #926600).
 
@@ -154,10 +154,10 @@ eoc (1.18.2-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Vangelis Mouhtsis ]
   * debian/compat:
@@ -205,7 +205,7 @@ eoc (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -215,7 +215,7 @@ eoc (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
@@ -378,7 +378,7 @@ eoc (1.10.3-1) unstable; urgency=medium
 
 eoc (1.8.0+dfsg1-4) unstable; urgency=medium
 
-  * Add librsvg features to Eye of MATE. (Closes: #752282).
+  * Add librsvg features to Eye of CAFE. (Closes: #752282).
 
   * debian/control:
     + Add B-D: librsvg2-dev.

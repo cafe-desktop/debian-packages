@@ -163,7 +163,7 @@ Comment:
  Using license from COPYING file.
 
 Files: thumbnailer/eoc-thumbnailer.c
-Copyright: 2020, MATE Developers
+Copyright: 2020, CAFE Developers
 License: GPL-2+
 
 Files: .build.yml
