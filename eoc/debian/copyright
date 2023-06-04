@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Eoc
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/eoc/
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
+Source: https://github.com/cafe-desktop/eoc
 
 Files: plugins/statusbar-date/eoc-statusbar-date-plugin.c
        plugins/statusbar-date/eoc-statusbar-date-plugin.h
