@@ -210,7 +210,7 @@ Files: .build.yml
        data/eoc-multiple-save-as-dialog.ui
        data/eoc.appdata.xml.in
        data/eoc.desktop.in.in
-       data/org.mate.eoc.gschema.xml.in
+       data/org.cafe.eoc.gschema.xml.in
        data/pixmaps/thumbnail-frame.png
        data/eoc-ui.xml
        doc/reference/eoc-docs.sgml.in

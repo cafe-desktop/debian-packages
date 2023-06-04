@@ -89,7 +89,7 @@ eoc (1.20.1-1) unstable; urgency=medium
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Use secure URI for copyright format.
     + Make Upstream-Name: field's value more human readable.
@@ -239,8 +239,8 @@ eoc (1.14.1-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + B-D: libctk-3-dev
-    + Versioned B-D: libmate-desktop-dev (>= 1.14)
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: libcafe-desktop-dev (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
     + B-D-I: libctk-3-doc
   * debian/rules:
     + MateConf dropped upstream.
@@ -289,7 +289,7 @@ eoc (1.12.1-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev (>= 1.12).
+    + Versioned B-D: cafe-common (>= 1.12) and libcafe-desktop-dev (>= 1.12).
   * debian/eoc.lintian-overrides:
     + Whitespace cleanup.
 
@@ -314,7 +314,7 @@ eoc (1.10.4-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Remove obsolete B-D mate-icon-theme.
+    + Remove obsolete B-D cafe-icon-theme.
 
   [ Mike Gabriel ]
   * debian/copyright:
@@ -403,7 +403,7 @@ eoc (1.8.0+dfsg1-3) unstable; urgency=low
 eoc (1.8.0+dfsg1-2) unstable; urgency=low
 
   * debian/control:
-    + Add D (bin:package eoc): mate-desktop-common.
+    + Add D (bin:package eoc): cafe-desktop-common.
   * debian/rules:
     + Fix copy+paste error in tarball repacking code.
   * debian/copyright:
@@ -426,7 +426,7 @@ eoc (1.8.0+dfsg1-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
-    + Drop B-Ds: mate-doc-utils, mate-doc-utils-gnome. Add B-D: yelp-tools.
+    + Drop B-Ds: cafe-doc-utils, cafe-doc-utils-gnome. Add B-D: yelp-tools.
     + Add B-D: libdconf-dev.
   * debian/rules:
     + Enable parallel builds.

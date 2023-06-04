@@ -5,9 +5,9 @@ Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/eoc
-Vcs-Git: https://salsa.debian.org/debian-mate-team/eoc.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/eoc
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/eoc.git
 Build-Depends: autoconf-archive,
                debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
@@ -22,12 +22,12 @@ Build-Depends: autoconf-archive,
                libctk-3-dev,
                libjpeg-dev,
                liblcms2-dev,
-               libmate-desktop-dev (>= 1.18),
+               libcafe-desktop-dev (>= 1.18),
                libpeas-dev,
                librsvg2-dev (>= 2.36.2),
                libstartup-notification0-dev,
                libxml2-dev,
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
                shared-mime-info,
                x11proto-core-dev,
                yelp-tools,
@@ -40,13 +40,13 @@ Architecture: any
 Depends: eoc-common (= ${source:Version}),
          gir1.2-eoc-1.0,
          librsvg2-common (>= 2.36.2),
-         mate-desktop-common,
+         cafe-desktop-common,
          shared-mime-info,
          libgl1-mesa-glx | libgl1,
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: mate-image-viewer (<= 1.0.0-1),
-Replaces: mate-image-viewer (<= 1.0.0-1),
+Breaks: cafe-image-viewer (<= 1.0.0-1),
+Replaces: cafe-image-viewer (<= 1.0.0-1),
 Description: Eye of MATE graphics viewer program
  eoc or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library. It can deal with large
@@ -57,8 +57,8 @@ Package: eoc-common
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: eoc (<= 1.6.1-1),
-        mate-image-viewer (<= 1.0.0-1),
-Replaces: mate-image-viewer (<= 1.0.0-1),
+        cafe-image-viewer (<= 1.0.0-1),
+Replaces: cafe-image-viewer (<= 1.0.0-1),
 Description: Eye of MATE graphics viewer program (common files)
  eoc or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library. It can deal with large
@@ -73,9 +73,9 @@ Architecture: any
 Depends: eoc (= ${binary:Version}),
          ${misc:Depends},
          gir1.2-eoc-1.0 (= ${binary:Version}),
-Breaks: mate-image-viewer (<= 1.0.0-1),
+Breaks: cafe-image-viewer (<= 1.0.0-1),
         gir1.2-eoc (<< 1.18.3-2~),
-Replaces: mate-image-viewer (<= 1.0.0-1),
+Replaces: cafe-image-viewer (<= 1.0.0-1),
           gir1.2-eoc (<< 1.18.3-2~),
 Description: Eye of MATE graphics viewer program (development files)
  eoc or the Eye of MATE is a simple graphics viewer for the MATE
