@@ -1,0 +1,3 @@
+# eom ships plugins in /usr/lib/eom/plugins/*.so, this erroneously triggers debhelper's
+# makeshlibs script
+eom: postinst-has-useless-call-to-ldconfig
