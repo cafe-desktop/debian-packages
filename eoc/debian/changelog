@@ -179,7 +179,7 @@ eoc (1.18.2-1) unstable; urgency=medium
 eoc (1.16.1-1) unstable; urgency=medium
 
   * New upstream release.
-    - Fix EOM auto reload of externally modified files.
+    - Fix EOC auto reload of externally modified files.
       (Closes: #816914).
     - Fix runtime warning.
     - Fix memleak when loading SVG fails.
@@ -329,7 +329,7 @@ eoc (1.10.3-2) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/copyright:
-    + EOM's help files are licensed GFDL-1.1+, not GFDL-1.2+.
+    + EOC's help files are licensed GFDL-1.1+, not GFDL-1.2+.
 
   [ Martin Wimpress ]
   * debian/control:
