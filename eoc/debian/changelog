@@ -243,7 +243,7 @@ eoc (1.14.1-1) unstable; urgency=medium
     + Versioned B-D: cafe-common (>= 1.14)
     + B-D-I: libctk-3-doc
   * debian/rules:
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
     + Add --with-ctk=3.0
   * debian/patches:
     + Drop 0001_fix_man_page_formatting.patch. Applied upstream.
