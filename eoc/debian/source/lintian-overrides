@@ -1,2 +1,2 @@
-# ignore lintian about gir1.2-eom complaints, the package is a transitional package
-source: typelib-missing-gir-depends gir1.2-eom
+# ignore lintian about gir1.2-eoc complaints, the package is a transitional package
+source: typelib-missing-gir-depends gir1.2-eoc

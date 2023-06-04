@@ -1,5 +1,5 @@
-usr/bin/eom
-usr/lib/*/eom/plugins/
-usr/share/applications/eom.desktop
+usr/bin/eoc
+usr/lib/*/eoc/plugins/
+usr/share/applications/eoc.desktop
 usr/share/glib-2.0/
 usr/share/man/

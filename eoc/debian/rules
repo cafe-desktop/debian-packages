@@ -13,7 +13,7 @@ override _dh_missing:
 	dh_missing --fail-missing
 
 override_dh_install:
-	rm -rfv debian/tmp/usr/lib/*/eom/plugins/*.la
+	rm -rfv debian/tmp/usr/lib/*/eoc/plugins/*.la
 	dh_install
 
 override_dh_auto_configure:

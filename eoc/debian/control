@@ -1,4 +1,4 @@
-Source: eom
+Source: eoc
 Section: graphics
 Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
@@ -9,8 +9,8 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/eom
-Vcs-Git: https://salsa.debian.org/debian-mate-team/eom.git
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/eoc
+Vcs-Git: https://salsa.debian.org/debian-mate-team/eoc.git
 Build-Depends: autoconf-archive,
                debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
@@ -38,10 +38,10 @@ Build-Depends: autoconf-archive,
 Build-Depends-Indep: libglib2.0-doc,
                      libgtk-3-doc,
 
-Package: eom
+Package: eoc
 Architecture: any
-Depends: eom-common (= ${source:Version}),
-         gir1.2-eom-1.0,
+Depends: eoc-common (= ${source:Version}),
+         gir1.2-eoc-1.0,
          librsvg2-common (>= 2.36.2),
          mate-desktop-common,
          shared-mime-info,
@@ -51,67 +51,67 @@ Depends: eom-common (= ${source:Version}),
 Breaks: mate-image-viewer (<= 1.0.0-1),
 Replaces: mate-image-viewer (<= 1.0.0-1),
 Description: Eye of MATE graphics viewer program
- eom or the Eye of MATE is a simple graphics viewer for the MATE
+ eoc or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library. It can deal with large
  images, and zoom and scroll with constant memory usage. Its goals are
  simplicity and standards compliance.
 
-Package: eom-common
+Package: eoc-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: eom (<= 1.6.1-1),
+Breaks: eoc (<= 1.6.1-1),
         mate-image-viewer (<= 1.0.0-1),
 Replaces: mate-image-viewer (<= 1.0.0-1),
 Description: Eye of MATE graphics viewer program (common files)
- eom or the Eye of MATE is a simple graphics viewer for the MATE
+ eoc or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library. It can deal with large
  images, and zoom and scroll with constant memory usage. Its goals are
  simplicity and standards compliance.
  .
  This package contains the architecture independent files.
 
-Package: eom-dev
+Package: eoc-dev
 Section: libdevel
 Architecture: any
-Depends: eom (= ${binary:Version}),
+Depends: eoc (= ${binary:Version}),
          ${misc:Depends},
-         gir1.2-eom-1.0 (= ${binary:Version}),
+         gir1.2-eoc-1.0 (= ${binary:Version}),
 Breaks: mate-image-viewer (<= 1.0.0-1),
-        gir1.2-eom (<< 1.18.3-2~),
+        gir1.2-eoc (<< 1.18.3-2~),
 Replaces: mate-image-viewer (<= 1.0.0-1),
-          gir1.2-eom (<< 1.18.3-2~),
+          gir1.2-eoc (<< 1.18.3-2~),
 Description: Eye of MATE graphics viewer program (development files)
- eom or the Eye of MATE is a simple graphics viewer for the MATE
+ eoc or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library. It can deal with large
  images, and zoom and scroll with constant memory usage. Its goals are
  simplicity and standards compliance.
  .
- This package contains the development files for building eom plugins.
+ This package contains the development files for building eoc plugins.
 
-Package: gir1.2-eom-1.0
+Package: gir1.2-eoc-1.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: gir1.2-eom (<< 1.18.3-2~),
-Replaces: gir1.2-eom (<< 1.18.3-2~),
-Description: GObject introspection data for the eom library
- eom or the Eye of MATE is a simple graphics viewer for the MATE
+Breaks: gir1.2-eoc (<< 1.18.3-2~),
+Replaces: gir1.2-eoc (<< 1.18.3-2~),
+Description: GObject introspection data for the eoc library
+ eoc or the Eye of MATE is a simple graphics viewer for the MATE
  desktop which uses the gdk-pixbuf library.  It can deal with large
  images, and zoom and scroll with constant memory usage.  Its goals are
  simplicity and standards compliance.
  .
- This package contains introspection data for eom.
+ This package contains introspection data for eoc.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: gir1.2-eom
+Package: gir1.2-eoc
 Section: oldlibs
 Architecture: any
 Depends: ${misc:Depends},
-         gir1.2-eom-1.0 (= ${binary:Version}),
-Description: GObject introspection data for eom (transitional package)
- This package is a transitional package to gir1.2-eom-1.0. The package
+         gir1.2-eoc-1.0 (= ${binary:Version}),
+Description: GObject introspection data for eoc (transitional package)
+ This package is a transitional package to gir1.2-eoc-1.0. The package
  can be safely removed.
