@@ -437,7 +437,7 @@ eoc (1.8.0+dfsg1-1) unstable; urgency=medium
     + Add 1001_fix-hyphens-on-man-page.patch. Fix hypens used as minus signs
       in eoc.1 man page.
   * debian/eoc-dev.install:
-    + We don't build /usr/share/ctk-doc files anymore.
+    + We don't build /usr/share/gtk-doc files anymore.
   * lintian: Drop unused overrides.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 17 Apr 2014 12:59:43 +0200
