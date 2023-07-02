@@ -160,7 +160,7 @@ cafe-media (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for CAFE 1.17.
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/copyright: Update copyright attributions.
   * debian/control: Dependencies updated for CAFE 1.18.
   * debian/control: Drop dependency on libunique3 (Closes: #827231)
@@ -228,15 +228,15 @@ cafe-media (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + B-D: libcanberra-gtk3-dev
-    + B-D: libgtk-3-dev
+    + B-D: libcanberra-ctk3-dev
+    + B-D: libctk-3-dev
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
     + Versioned B-D: libcafemixer-dev (>= 1.14)
     + B-D: libunique-3.0-dev
     + Versioned B-D: cafe-common (>= 1.14)
     + Versioned D (cafe-media): cafe-desktop-common (>= 1.14).
   * debian/rules:
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
 
   [ Mike Gabriel ]
   * debian/control:
