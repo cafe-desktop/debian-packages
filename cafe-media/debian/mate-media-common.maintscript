@@ -1,0 +1,1 @@
+mv_conffile /etc/xdg/autostart/mate-volume-control-applet.desktop /etc/xdg/autostart/mate-volume-control-status-icon.desktop 1.22.1-1~

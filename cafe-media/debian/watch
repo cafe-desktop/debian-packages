@@ -1,0 +1,3 @@
+version=3
+https://git.mate-desktop.org/mate-media/ \
+    snapshot/mate-media-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
