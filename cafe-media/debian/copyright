@@ -1,45 +1,45 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Media
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-media/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-media/
 
-Files: mate-volume-control/gvc-balance-bar.h
-       mate-volume-control/gvc-channel-bar.h
-       mate-volume-control/gvc-combo-box.h
-       mate-volume-control/gvc-speaker-test.h
-       mate-volume-control/gvc-stream-status-icon.h
+Files: cafe-volume-control/gvc-balance-bar.h
+       cafe-volume-control/gvc-channel-bar.h
+       cafe-volume-control/gvc-combo-box.h
+       cafe-volume-control/gvc-speaker-test.h
+       cafe-volume-control/gvc-stream-status-icon.h
 Copyright: 2008-2009, Red Hat, Inc.
 License: GPL-2+
 
-Files: mate-volume-control/gvc-balance-bar.c
-       mate-volume-control/gvc-channel-bar.c
-       mate-volume-control/gvc-mixer-dialog.c
-       mate-volume-control/gvc-mixer-dialog.h
-       mate-volume-control/gvc-stream-status-icon.c
-       mate-volume-control/gvc-stream-status-icon.h
+Files: cafe-volume-control/gvc-balance-bar.c
+       cafe-volume-control/gvc-channel-bar.c
+       cafe-volume-control/gvc-mixer-dialog.c
+       cafe-volume-control/gvc-mixer-dialog.h
+       cafe-volume-control/gvc-stream-status-icon.c
+       cafe-volume-control/gvc-stream-status-icon.h
 Copyright: 2008, William Jon McCann
 License: GPL-2+
 
-Files: mate-volume-control/gvc-combo-box.c
-       mate-volume-control/gvc-combo-box.h
-       mate-volume-control/gvc-speaker-test.c
-       mate-volume-control/gvc-speaker-test.h
+Files: cafe-volume-control/gvc-combo-box.c
+       cafe-volume-control/gvc-combo-box.h
+       cafe-volume-control/gvc-speaker-test.c
+       cafe-volume-control/gvc-speaker-test.h
 Copyright: 2009, Bastien Nocera
 License: GPL-2+
 
-Files: mate-volume-control/sound-theme-file-utils.c
-       mate-volume-control/sound-theme-file-utils.h
+Files: cafe-volume-control/sound-theme-file-utils.c
+       cafe-volume-control/sound-theme-file-utils.h
 Copyright: 2008, Bastien Nocera <hadess@hadess.net>
 License: GPL-2+
 
-Files: mate-volume-control/gvc-sound-theme-chooser.c
-       mate-volume-control/gvc-sound-theme-chooser.h
+Files: cafe-volume-control/gvc-sound-theme-chooser.c
+       cafe-volume-control/gvc-sound-theme-chooser.h
 Copyright: 2008, Bastien Nocera <hadess@hadess.net>
            2008, William Jon McCann
 License: GPL-2+
 
-Files: mate-volume-control/gvc-level-bar.c
-       mate-volume-control/gvc-level-bar.h
+Files: cafe-volume-control/gvc-level-bar.c
+       cafe-volume-control/gvc-level-bar.h
 Copyright: 2008, William Jon McCann <william.jon.mccann@gmail.com>
 License: GPL-2+
 
@@ -47,17 +47,17 @@ Files: build-aux/git-version-gen
 Copyright: 2007-2008, Free Software Foundation, Inc.
 License: GPL-3+
 
-Files: mate-volume-control/applet-main.c
-       mate-volume-control/dialog-main.c
-       mate-volume-control/gvc-applet.c
-       mate-volume-control/gvc-applet.h
-       mate-volume-control/gvc-utils.c
-       mate-volume-control/gvc-utils.h
+Files: cafe-volume-control/applet-main.c
+       cafe-volume-control/dialog-main.c
+       cafe-volume-control/gvc-applet.c
+       cafe-volume-control/gvc-applet.h
+       cafe-volume-control/gvc-utils.c
+       cafe-volume-control/gvc-utils.h
 Copyright: 2008, Red Hat, Inc.
            2014, Michal Ratajsky <michal.ratajsky@gmail.com>
 License: GPL-2+
 
-Files: mate-media.pot
+Files: cafe-media.pot
        po/*.po
 Copyright: 1998-2010, Free Software Foundation, Inc.
            2009, GNOME i18n Project for Vietnamese.
@@ -70,7 +70,7 @@ Copyright: 1998-2010, Free Software Foundation, Inc.
            2004-2006, Adam Weinberger and the GNOME Foundation
            2004, Gurban Mühemmet Tewekgeli and
            2005, Canonical Ltd.
-           2006, Lukas Novotny <lukasnov@cvs.mate.org>.
+           2006, Lukas Novotny <lukasnov@cvs.cafe.org>.
            THE PACKAGE'S COPYRIGHT HOLDER
 License: LGPL-2+ or GPL-2+
 Comment:
@@ -87,19 +87,19 @@ Files: data/Makefile.am
        data/icons/*/devices/*.svg
        man/Makefile.am
        man/*.1
-       mate-volume-control/Makefile.am
+       cafe-volume-control/Makefile.am
        data/sounds/Makefile.am
        data/sounds/*.ogg
        data/sounds/*.in
        its/sounds.its
        its/sounds.loc
-       mate-volume-control/gvc-status-icon.c
-       mate-volume-control/gvc-status-icon.h
-       mate-volume-control/gvc-stream-applet-icon.c
-       mate-volume-control/gvc-stream-applet-icon.h
-       mate-volume-control/org.mate.applets.GvcApplet.mate-panel-applet.desktop.in.in
-       mate-volume-control/org.mate.panel.applet.GvcAppletFactory.service.in
-       mate-volume-control/status-icon-main.c
+       cafe-volume-control/gvc-status-icon.c
+       cafe-volume-control/gvc-status-icon.h
+       cafe-volume-control/gvc-stream-applet-icon.c
+       cafe-volume-control/gvc-stream-applet-icon.h
+       cafe-volume-control/org.cafe.applets.GvcApplet.cafe-panel-applet.desktop.in.in
+       cafe-volume-control/org.cafe.panel.applet.GvcAppletFactory.service.in
+       cafe-volume-control/status-icon-main.c
        .build.yml
        .travis.yml
        .tx/config
