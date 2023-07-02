@@ -13,7 +13,7 @@ override_dh_missing:
 	dh_missing --fail-missing
 
 override_dh_install:
-	# Ubuntu MATE enables indicators by default which include indicator-sound
+	# Ubuntu CAFE enables indicators by default which include indicator-sound
 ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
 	rm -f debian/tmp/etc/xdg/autostart/cafe-volume-control-status-icon.desktop
 endif

@@ -1,7 +1,7 @@
 Source: cafe-media
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -35,8 +35,8 @@ Replaces: cafe-media-gstreamer (<< 1.9.0),
           cafe-media-pulse (<< 1.9.0),
 Breaks: cafe-media-gstreamer (<< 1.9.0),
         cafe-media-pulse (<< 1.9.0),
-Description: MATE media utilities
- MATE media utilities are the audio mixer and the volume
+Description: CAFE media utilities
+ CAFE media utilities are the audio mixer and the volume
  control applet.
  .
  This package utilizes the libcafemixer library which provides
@@ -49,8 +49,8 @@ Replaces: cafe-media-gstreamer (<< 1.9.0),
           cafe-media-pulse (<< 1.9.0),
 Breaks: cafe-media-gstreamer (<< 1.9.0),
         cafe-media-pulse (<< 1.9.0),
-Description: MATE media utilities (common files)
- MATE media utilities are the audio mixer and the volume
+Description: CAFE media utilities (common files)
+ CAFE media utilities are the audio mixer and the volume
  control applet.
  .
  This package contains the common files.

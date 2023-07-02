@@ -125,14 +125,14 @@ cafe-media (1.18.2-2) unstable; urgency=medium
   [ Martin Wimpress ]
   * debian/rules:
     + Delete /etc/xdg/autostart/cafe-volume-control-applet.desktop on Ubuntu.
-      Ubuntu MATE enables indicators by default which include indicator-sound.
+      Ubuntu CAFE enables indicators by default which include indicator-sound.
 
   [ Vangelis Mouhtsis ]
   * debian/control:
     + Bump Standards-Version: to 4.1.3. No changes needed.
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
 
   [ Mike Gabriel ]
   * debian/watch:
@@ -159,10 +159,10 @@ cafe-media (1.18.1-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/control: Drop dependency on libunique3 (Closes: #827231)
 
   [ Vangelis Mouhtsis ]
@@ -188,7 +188,7 @@ cafe-media (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -198,7 +198,7 @@ cafe-media (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
@@ -323,7 +323,7 @@ cafe-media (1.8.0+dfsg1-4) unstable; urgency=medium
 cafe-media (1.8.0+dfsg1-3) unstable; urgency=medium
 
   * debian/control:
-    + Prefer pulse backend of MATE media to the gstreamer backend on default
+    + Prefer pulse backend of CAFE media to the gstreamer backend on default
       installations. (Closes: #753584).
     + Fix EOLs for several multi-line fields.
 
