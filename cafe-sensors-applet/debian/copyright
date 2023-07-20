@@ -1,0 +1,221 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: MATE Sensors Applet
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-sensors-applet/
+
+Files: lib/sensors-applet-plugin.c
+       plugins/acpi/acpi-plugin.c
+       plugins/acpi/acpi-plugin.h
+       plugins/hddtemp/hddtemp-plugin.c
+       plugins/hddtemp/hddtemp-plugin.h
+       plugins/i2c-proc/i2c-proc-plugin.c
+       plugins/i2c-proc/i2c-proc-plugin.h
+       plugins/i2c-sys/i2c-sys-plugin.c
+       plugins/i2c-sys/i2c-sys-plugin.h
+       plugins/i8k/i8k-plugin.c
+       plugins/i8k/i8k-plugin.h
+       plugins/ibm-acpi/ibm-acpi-plugin.c
+       plugins/ibm-acpi/ibm-acpi-plugin.h
+       plugins/libsensors/libsensors-plugin.c
+       plugins/libsensors/libsensors-plugin.h
+       plugins/omnibook/omnibook-plugin.c
+       plugins/omnibook/omnibook-plugin.h
+       plugins/pmu-sys/pmu-sys-plugin.c
+       plugins/pmu-sys/pmu-sys-plugin.h
+       plugins/smu-sys/smu-sys-plugin.c
+       plugins/smu-sys/smu-sys-plugin.h
+       plugins/sonypi/sonypi-plugin.c
+       sensors-applet/about-dialog.h
+       sensors-applet/active-sensor-libnotify.c
+       sensors-applet/active-sensor-libnotify.h
+       sensors-applet/active-sensor.c
+       sensors-applet/active-sensor.h
+       sensors-applet/main.c
+       sensors-applet/prefs-dialog.c
+       sensors-applet/prefs-dialog.h
+       sensors-applet/sensor-config-dialog.c
+       sensors-applet/sensor-config-dialog.h
+       sensors-applet/sensors-applet-plugin.h
+       sensors-applet/sensors-applet-plugins.c
+       sensors-applet/sensors-applet-plugins.h
+       sensors-applet/sensors-applet-sensor.h
+       sensors-applet/sensors-applet.c
+       sensors-applet/sensors-applet.h
+Copyright: 2005-2009, Alex Murray <murray.alex@gmail.com>
+License: GPL-2+
+
+Files: plugins/mbmon/mbmon-plugin.c
+       plugins/mbmon/mbmon-plugin.h
+Copyright: 2010 Daniele Napolitano <dnax88@gmail.com>
+License: GPL-2+
+
+Files: sensors-applet/sensors-applet-settings.c
+       sensors-applet/sensors-applet-settings.h
+Copyright: 2005-2009, Alex Murray <murray.alex@gmail.com>
+           2013, Stefano Karapetsas <stefano@karapetsas.com>
+License: GPL-2+
+
+Files: plugins/aticonfig/aticonfig-plugin.c
+       plugins/aticonfig/aticonfig-plugin.h
+Copyright: 2009, Jaap Versteegh <j.r.versteegh@gmail.com>
+License: GPL-2+
+
+Files: plugins/udisks2/Makefile.am
+       plugins/udisks2/udisks2-plugin.c
+       plugins/udisks2/udisks2-plugin.h
+Copyright: 2009, Pramod Dematagoda <pmd.lotr.gandalf@gmail.com>
+License: GPL-2+
+
+Files: plugins/nvidia/nvidia-plugin.c
+       plugins/nvidia/nvidia-plugin.h
+Copyright: 2006, Sven Peter <svpe@gmx.net>
+License: GPL-2+
+
+Files: sensors-applet/about-dialog.c
+Copyright: 2005-2009, Alex Murray <murray.alex@gmail.com>
+License: GPL-2+
+
+Files: plugins/sonypi/sonypi-plugin.h
+Copyright: 2006, Thanate Dhirasakdanon <dthanate@gmail.com>
+License: GPL-2+
+
+Files: mate-sensors-applet.pot
+       po/*.po
+Copyright: Alex Murray <murray.alex@gmail.com>
+           ABE Tsunehiko
+           abuyop <abuyop@gmail.com>
+           Alexei Sorokin <sor.alexei@meowr.ru>
+           Asier Iturralde Sarasola <asier.iturralde@gmail.com>
+           Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+           Carlos Moreira <crolidge@gmail.com>
+           Daniel <danny34ever@yahoo.com>
+           Darkcircle <darkcircle.0426@gmail.com>
+           Efstathios Iosifidis <iefstathios@gmail.com>
+           emfi <emrefirat93@gmail.com>
+           Emiliano Fascetti
+           exoos <mince.lesovski@gmail.com>
+           Martin Wimpress <code@flexion.org>
+           Ivar Smolin <okul@linux.ee>
+           Ján Ďanovský <dagsoftware@yahoo.com>
+           jierro <jierro@windowslive.com>
+           Joe Hansen <joedalton2@yahoo.dk>
+           Marcio Andre Padula <padula1000@gmail.com>
+           Matriks404 <marcink96@gmail.com>
+           mbouzada <mbouzada@gmail.com>
+           Michael Findlay <keltoiboy@gmail.com>
+           Michael Steenbeek <m.o.steenbeek@gmail.com>
+           Mihail Varantsou <meequz@gmail.com>
+           Mislav E. Lukšić <meluksic@yahoo.com>
+           Patrik Nilsson <asavartzeth@gmail.com>
+           Rezső Páder <rezso@rezso.net>
+           Sadgamaya <g.raghavan.g@gmail.com>
+           samson <sambelet@yahoo.com>
+           segfault <lukas.kvidera@seznam.cz>
+           Stefano Karapetsas <stefano@karapetsas.com>
+           Tobias Bannert <tobannert@gmail.com>
+           Vaibhav S Dalvi <vaibhav.dlv@gmail.com>
+           Wei-Lun Chao <bluebat@member.fsf.org>
+           willysr <willysr@slackware-id.org>
+           Wylmer Wang <wantinghard@gmail.com>
+           Микола Ткач <Stuartlittle1970@gmail.com>
+           Мирослав Николић <miroslavnikolic@rocketmail.com>
+           ప్రవీణ్ ఇళ్ళ <mail2ipn@gmail.com>
+           柏諺 黃 <s8321414@gmail.com>
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: help/*
+Copyright: Alex Murray <murray.alex@gmail.com>
+License: GFDL-1.1+
+
+Files: git.mk
+Copyright: 2009, Red Hat, Inc.
+           2010,2011,2012,2013, Behdad Esfahbod
+License: public-domain~gitmk
+
+Files: .build.yml
+       .travis.yml
+       .tx/config
+       .github/issue_template.md
+       .github/FUNDING.yml
+       lib/Makefile.am
+       pixmaps/Makefile.am
+       pixmaps/*.png
+       plugins/dummy/Makefile.am
+       plugins/dummy/dummy-plugin.c
+       plugins/dummy/dummy-plugin.h
+       plugins/omnibook/Makefile.am
+       plugins/nvidia/Makefile.am
+       plugins/mbmon/Makefile.am
+       plugins/smu-sys/Makefile.am
+       plugins/hddtemp/Makefile.am
+       plugins/aticonfig/Makefile.am
+       plugins/Makefile.am
+       plugins/libsensors/Makefile.am
+       plugins/pmu-sys/Makefile.am
+       plugins/i2c-sys/Makefile.am
+       plugins/acpi/Makefile.am
+       plugins/i8k/Makefile.am
+       plugins/ibm-acpi/Makefile.am
+       plugins/sonypi/Makefile.am
+       plugins/i2c-proc/Makefile.am
+       plugins/netbsd/Makefile.am
+       plugins/netbsd/netbsd-plugin.c
+       plugins/netbsd/netbsd-plugin.h
+       po/ChangeLog
+       po/LINGUAS
+       po/Makevars
+       po/POTFILES.*
+       sensors-applet/Makefile.am
+       Makefile.am
+       SensorsApplet.xml
+       autogen.sh
+       configure.ac
+       makepot
+       org.mate.*.in
+       AUTHORS
+       ChangeLog
+       NEWS
+       README
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".
+
+License: public-domain~gitmk
+ Copying and distribution of this file, with or without modification,
+ is permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved.

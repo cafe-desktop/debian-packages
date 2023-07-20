@@ -1,0 +1,116 @@
+Source: mate-sensors-applet
+Section: x11
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+           Martin Wimpress <code@flexion.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-exec,
+               docbook-xml,
+               dpkg-dev (>= 1.16.1.1),
+               intltool,
+               libcairo2-dev,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libmate-panel-applet-dev (>= 1.18),
+               libnotify-dev,
+               libsensors-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
+               libtool,
+               libxml-parser-perl,
+               libxnvctrl-dev [amd64 armhf i386],
+               mate-common (>= 1.18),
+               yelp-tools,
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-sensors-applet
+Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-sensors-applet.git
+
+Package: mate-sensors-applet
+Architecture: any
+Depends: libmate-sensors-applet-plugin0 (= ${binary:Version}),
+         mate-sensors-applet-common (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: hddtemp,
+Suggests: mate-sensors-applet-nvidia,
+Description: Display readings from hardware sensors in your MATE panel
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ It can gather data from the following sources:
+  * ACPI thermal zones, via the Linux kernel ACPI modules
+  * Linux kernel i2c modules
+  * lm-sensors (libsensors)
+  * Linux kernel i8k module (for Dell Inspiron Laptops)
+  * Linux kernel ibm-acpi module
+  * Linux kernel PowerPC modules therm_adt746x and therm_windtunnel
+  * Linux kernel iMac G5 Windfarm module
+  * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
+  * Linux kernel Omnibook module
+  * NVIDIA graphics cards (supplied with mate-sensors-applet-nvidia package)
+  * Linux kernel sonypi module (for Sony Vaio laptops)
+ .
+ Alarms can be set for each sensor to notify the user once a certain high or
+ low value has been reached, and can be configured to execute a given command
+ at given repeated intervals.
+
+Package: mate-sensors-applet-common
+Architecture: all
+Depends: ${misc:Depends},
+Replaces: mate-sensors-applet (<< 1.9.0),
+Breaks: mate-sensors-applet (<< 1.9.0),
+Description: Display readings from hardware sensors in your MATE panel (common files)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the architecture independent files.
+
+Package: mate-sensors-applet-nvidia
+Architecture: amd64 armhf i386
+Depends: mate-sensors-applet (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains plugin for NVIDIA graphics cards.
+
+Package: libmate-sensors-applet-plugin0
+Architecture: any
+Section: libs
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: libmatesensorsappletplugin,
+Replaces: libmatesensorsappletplugin,
+Description: Library for plugins for the mate-sensors-applet package
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the library that is used to create plugins for
+ the applet.
+
+Package: libmate-sensors-applet-plugin-dev
+Architecture: any
+Section: libdevel
+Depends: libglib2.0-dev,
+         libmate-sensors-applet-plugin0 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: libmatesensorsappletplugin-dev,
+Replaces: libmatesensorsappletplugin-dev,
+Description: Library for plugins for the mate-sensors-applet package (development files)
+ MATE Sensors Applet is an applet for the MATE panel that displays
+ readings from hardware sensors, including temperatures, fan speeds and
+ voltage readings.
+ .
+ This package contains the files necessary to develop plugins for the
+ applet.

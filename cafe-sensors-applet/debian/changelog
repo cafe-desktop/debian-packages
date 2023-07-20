@@ -1,0 +1,386 @@
+mate-sensors-applet (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_fix-FTBFS-on-hurd.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Aug 2020 14:45:48 +0200
+
+mate-sensors-applet (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to no.
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 16:49:13 +0100
+
+mate-sensors-applet (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+    + Remove empty lines at EOF
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 31 Jul 2019 15:56:24 +0200
+
+mate-sensors-applet (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Switch B-D from libsensors4-dev to libsensors-dev. (Closes: #917441).
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+  * debian/libmate-sensors-applet-plugin0.symbols:
+    + Add Build-Depends-Package: meta data field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 09 Jan 2019 12:07:23 +0100
+
+mate-sensors-applet (1.20.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+    + Update copyright attributions.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 06 Jul 2018 11:29:51 +0200
+
+mate-sensors-applet (1.20.1-3) unstable; urgency=medium
+
+  * debian/mate-sensors-applet.install:
+    + libudisks2.so plugin gets now also built on Debian GNU/kFreeBSD. Should fix
+      FTBFS on kfreebsd-any architectures.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 15:40:37 +0200
+
+mate-sensors-applet (1.20.1-2) unstable; urgency=medium
+
+  * debian/mate-sensors-applet.install:
+    + Syntax fix, use space as separator, not komma, in [architecture] fields.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 Mar 2018 07:00:45 +0100
+
+mate-sensors-applet (1.20.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Mike Gabriel ]
+  * debian/mate-sensors-applet.install:
+    + On hurd, we now also have the udisks2 plugin.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 01 Mar 2018 20:01:06 +0100
+
+mate-sensors-applet (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/mate-sensors-applet.install (already in 1.19.1-0ubuntu1):
+    + Make sure UDisks v1 and v2 plugin are installed.
+  * debian/copyright (already in 1.19.1-0ubuntu1):
+    + Update copyright attributions.
+  * debian/mate-sensors-applet.install (already in 1.20.0-0ubuntu1):
+    + Remove libeee plugin. Dropped upstream.
+  * debian/control (already in 1.20.0-0ubuntu1):
+    + Drop obsolete B-Ds libatasmart-dev and libdbus-glib-1-dev.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.1-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Mike Gabriel ]
+  * Debian issues resolved by this upstream release:
+    - Expose the preference of hiding thermal unit. (Closes: #778756).
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+  * debian/rules:
+    + Don't initialize DEB_BUILD_ARCH_OS. Done automatically via
+      dpkg-buildpackage.
+  * debian/copyright (for 1.20.0-1):
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 11:56:36 +0100
+
+mate-sensors-applet (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
+
+mate-sensors-applet (1.19.1-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 24 Jan 2018 06:56:32 +0000
+
+mate-sensors-applet (1.18.3-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0000_fix_invisible_graphs.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Nov 2017 09:54:27 +0100
+
+mate-sensors-applet (1.18.2-5) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches: Add 0000_fix_invisible_graphs.patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 25 Sep 2017 11:12:38 +0200
+
+mate-sensors-applet (1.18.2-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Fix 1001_fix-FTBFS-on-hurd.patch. Only the _IOR() macro passages require
+      a type change from guint8 to uint8_t.
+  * debian/mate-sensors-applet.install:
+    + libi2c-* plugins are also built on hurd-any platforms.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Aug 2017 14:28:13 +0200
+
+mate-sensors-applet (1.18.2-3) unstable; urgency=medium
+
+  * debian/{control,rules,mate-sensors-applet.install}:
+    + Switch to far more elegant dh-exec based approach when it comes to
+      installing arch-specific files into our bin:package(s).
+  * debian/patches:
+    + Add 1001_fix-FTBFS-on-hurd.patch. Fix FTBFS in sonypi plugin on GNU/Hurd.
+      Refrain from using non-standard guint8 in the _IOR call, instead use the
+      standard u_int8_t.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Aug 2017 17:25:23 +0200
+
+mate-sensors-applet (1.18.2-2) unstable; urgency=medium
+
+  * debian/control:
+    + libatasmart-dev and libsensors4-dev are not available on hurd-i386,
+      either. So excluding both as B-D when building on hurd-i386 platform.
+  * debian/rules:
+    + Fix FTBFS on kfreebsd and possibly on hurd architectures.
+      - On kfreebsd and hurd exclude liblibsensors.so and libudisks.so plugin,
+        as it does not get built there.
+      - On kfreebsd include libi2c-proc.so and libi2c-sys.so.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Aug 2017 17:52:31 +0200
+
+mate-sensors-applet (1.18.2-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/rules: Add --disable-silent-rules, as used in other packages.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 18:54:37 +0200
+
+mate-sensors-applet (1.16.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * lintian: Drop unused override:
+    pkg-has-shlibs-control-file-but-no-actual-shared-libs.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 17:58:30 +0100
+
+mate-sensors-applet (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Drop alternative B-D: nvidia-settings.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 04 Oct 2016 10:10:55 +0200
+
+mate-sensors-applet (1.15.0-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:48 +0100
+
+mate-sensors-applet (1.14.0-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+    + Use encrypted URLs for Vcs-*: field.
+  * debian/rules:
+    + Enable all hardening flags.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + B-D: libgtk-3-dev.
+    + Versioned B-D: libmate-panel-applet-dev (>= 1.14).
+    + Versioned B-D: mate-common (>= 1.14).
+  * debian/rules:
+    + Add --with-gtk=3.0
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 May 2016 05:14:59 +0200
+
+mate-sensors-applet (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Make mate-sensors-applet-nvidia and mate-sensors-applet-nvidia-dbg
+      architecture specific.
+    + Vrsioned B-D: mate-common (>= 1.12).
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/mate-sensors-applet.install:
+    + Add libmbmon.so plugin.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 11:50:45 +0100
+
+mate-sensors-applet (1.10.4-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 2001_omit-gfdl-licensed-help-files.patch, mate-sensors-applet
+      help is DFSG compliant.
+  * debian/control:
+    + Remove cdbs.
+  * debian/mate-sensors-applet-common.install:
+    + Add usr/share/help.
+  * debian/rules:
+    + Remove cdbs.
+    + Remove +dfsg1 suffix.
+  * debian/watch:
+    + Remove +dfsg1 suffix.
+  * debian/libmate-sensors-applet-plugin-dev.install:
+    + Update for new upstream release.
+  * debian/libmate-sensors-applet-plugin0.install:
+    + Update for new upstream release.
+  * debian/mate-sensors-applet-nvidia.install:
+    + Update for new upstream release.
+  * debian/mate-sensors-applet.install:
+    + Update for new upstream release.
+  * debian/copyright:
+    + Add copyright attributions for help authors and translators.
+
+  [ Mike Gabriel ]
+  * Upload to unstable.
+  * debian/{control,rules}:
+    + New bin:package mate-sensors-applet-nvidia-dbg.
+  * debian/control:
+    + Typo fix in LONG_DESCRIPTION for a package name.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 03 Sep 2015 06:05:25 +0200
+
+mate-sensors-applet (1.10.3+dfsg1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 15:24:20 +0200
+
+mate-sensors-applet (1.10.1+dfsg1-1~exp2) experimental; urgency=medium
+
+  * debian/control:
+    + Fix Breaks:/Replaces: version (mate-sensors-applet-common)
+      mate-sensors-applet (<< 1.9.0) instead of (<< 1.8.0). (Closes:
+      #789346).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jun 2015 17:03:07 +0200
+
+mate-sensors-applet (1.10.1+dfsg1-1~exp1) experimental; urgency=low
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Add mate-sensors-applet-common package.
+    + Add mate-sensors-applet-nvidia package. (Closes: #781316,
+      LP:#1364527)
+  * debian/copyright:
+    + Update for upstream release.
+  * debian/patches:
+    + Drop 1001_fix-udisks-libatasmart-conditional.patch. Applied upstream.
+  * debian/rules:
+    + Create orig tarball in ../ rather than in .
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add Martin Wimpress to Uploaders: field.
+    + Versioned B-D: mate-common (>= 1.10).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 11:38:39 +0200
+
+mate-sensors-applet (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734955).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Apr 2014 07:10:35 +0200

@@ -1,0 +1,7 @@
+libmate-sensors-applet-plugin.so.0 libmate-sensors-applet-plugin0 #MINVER#
+* Build-Depends-Package: libmate-sensors-applet-plugin-dev
+ sensors_applet_plugin_add_sensor@Base 1.8.0
+ sensors_applet_plugin_add_sensor_with_limits@Base 1.8.0
+ sensors_applet_plugin_default_sensor_limits@Base 1.8.0
+ sensors_applet_plugin_error_quark@Base 1.8.0
+ sensors_applet_plugin_find_sensors@Base 1.8.0

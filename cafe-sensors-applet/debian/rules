@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@ $(DHFLAGS) --without autoreconf
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_install:
+	rm -rfv debian/tmp/usr/lib/*/*.a
+	rm -rfv debian/tmp/usr/lib/*/*.la
+	rm -rfv debian/tmp/usr/lib/*/mate-sensors-applet/plugins/*.a
+	rm -rfv debian/tmp/usr/lib/*/mate-sensors-applet/plugins/*.la
+
+	dh_install
+
+override_dh_auto_configure:
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--libexecdir=/usr/lib/mate-sensors-applet \
+		--disable-silent-rules \
+		--with-nvidia=yes
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
