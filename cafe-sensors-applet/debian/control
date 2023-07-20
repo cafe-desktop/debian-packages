@@ -1,7 +1,7 @@
 Source: cafe-sensors-applet
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -37,8 +37,8 @@ Depends: libcafe-sensors-applet-plugin0 (= ${binary:Version}),
          ${shlibs:Depends},
 Recommends: hddtemp,
 Suggests: cafe-sensors-applet-nvidia,
-Description: Display readings from hardware sensors in your MATE panel
- MATE Sensors Applet is an applet for the MATE panel that displays
+Description: Display readings from hardware sensors in your CAFE panel
+ CAFE Sensors Applet is an applet for the CAFE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
@@ -64,8 +64,8 @@ Architecture: all
 Depends: ${misc:Depends},
 Replaces: cafe-sensors-applet (<< 1.9.0),
 Breaks: cafe-sensors-applet (<< 1.9.0),
-Description: Display readings from hardware sensors in your MATE panel (common files)
- MATE Sensors Applet is an applet for the MATE panel that displays
+Description: Display readings from hardware sensors in your CAFE panel (common files)
+ CAFE Sensors Applet is an applet for the CAFE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
@@ -76,8 +76,8 @@ Architecture: amd64 armhf i386
 Depends: cafe-sensors-applet (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
- MATE Sensors Applet is an applet for the MATE panel that displays
+Description: Display readings from hardware sensors in your CAFE panel (NVIDIA sensors)
+ CAFE Sensors Applet is an applet for the CAFE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
@@ -91,7 +91,7 @@ Depends: ${misc:Depends},
 Breaks: libcafesensorsappletplugin,
 Replaces: libcafesensorsappletplugin,
 Description: Library for plugins for the cafe-sensors-applet package
- MATE Sensors Applet is an applet for the MATE panel that displays
+ CAFE Sensors Applet is an applet for the CAFE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
@@ -108,7 +108,7 @@ Depends: libglib2.0-dev,
 Breaks: libcafesensorsappletplugin-dev,
 Replaces: libcafesensorsappletplugin-dev,
 Description: Library for plugins for the cafe-sensors-applet package (development files)
- MATE Sensors Applet is an applet for the MATE panel that displays
+ CAFE Sensors Applet is an applet for the CAFE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
  .
