@@ -1,7 +1,7 @@
-Source: mate-sensors-applet
+Source: cafe-sensors-applet
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -15,28 +15,28 @@ Build-Depends: debhelper-compat (= 13),
                libcairo2-dev,
                libglib2.0-dev,
                libgtk-3-dev,
-               libmate-panel-applet-dev (>= 1.18),
+               libcafe-panel-applet-dev (>= 1.18),
                libnotify-dev,
                libsensors-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
                libtool,
                libxml-parser-perl,
                libxnvctrl-dev [amd64 armhf i386],
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
                yelp-tools,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-sensors-applet
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-sensors-applet.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-sensors-applet
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-sensors-applet.git
 
-Package: mate-sensors-applet
+Package: cafe-sensors-applet
 Architecture: any
-Depends: libmate-sensors-applet-plugin0 (= ${binary:Version}),
-         mate-sensors-applet-common (= ${source:Version}),
+Depends: libcafe-sensors-applet-plugin0 (= ${binary:Version}),
+         cafe-sensors-applet-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: hddtemp,
-Suggests: mate-sensors-applet-nvidia,
+Suggests: cafe-sensors-applet-nvidia,
 Description: Display readings from hardware sensors in your MATE panel
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
@@ -52,18 +52,18 @@ Description: Display readings from hardware sensors in your MATE panel
   * Linux kernel iMac G5 Windfarm module
   * hddtemp daemon for reading temperatures from S.M.A.R.T. equipped hard disks
   * Linux kernel Omnibook module
-  * NVIDIA graphics cards (supplied with mate-sensors-applet-nvidia package)
+  * NVIDIA graphics cards (supplied with cafe-sensors-applet-nvidia package)
   * Linux kernel sonypi module (for Sony Vaio laptops)
  .
  Alarms can be set for each sensor to notify the user once a certain high or
  low value has been reached, and can be configured to execute a given command
  at given repeated intervals.
 
-Package: mate-sensors-applet-common
+Package: cafe-sensors-applet-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: mate-sensors-applet (<< 1.9.0),
-Breaks: mate-sensors-applet (<< 1.9.0),
+Replaces: cafe-sensors-applet (<< 1.9.0),
+Breaks: cafe-sensors-applet (<< 1.9.0),
 Description: Display readings from hardware sensors in your MATE panel (common files)
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
@@ -71,9 +71,9 @@ Description: Display readings from hardware sensors in your MATE panel (common f
  .
  This package contains the architecture independent files.
 
-Package: mate-sensors-applet-nvidia
+Package: cafe-sensors-applet-nvidia
 Architecture: amd64 armhf i386
-Depends: mate-sensors-applet (= ${binary:Version}),
+Depends: cafe-sensors-applet (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Description: Display readings from hardware sensors in your MATE panel (NVIDIA sensors)
@@ -83,14 +83,14 @@ Description: Display readings from hardware sensors in your MATE panel (NVIDIA s
  .
  This package contains plugin for NVIDIA graphics cards.
 
-Package: libmate-sensors-applet-plugin0
+Package: libcafe-sensors-applet-plugin0
 Architecture: any
 Section: libs
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmatesensorsappletplugin,
-Replaces: libmatesensorsappletplugin,
-Description: Library for plugins for the mate-sensors-applet package
+Breaks: libcafesensorsappletplugin,
+Replaces: libcafesensorsappletplugin,
+Description: Library for plugins for the cafe-sensors-applet package
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.
@@ -98,16 +98,16 @@ Description: Library for plugins for the mate-sensors-applet package
  This package contains the library that is used to create plugins for
  the applet.
 
-Package: libmate-sensors-applet-plugin-dev
+Package: libcafe-sensors-applet-plugin-dev
 Architecture: any
 Section: libdevel
 Depends: libglib2.0-dev,
-         libmate-sensors-applet-plugin0 (= ${binary:Version}),
+         libcafe-sensors-applet-plugin0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libmatesensorsappletplugin-dev,
-Replaces: libmatesensorsappletplugin-dev,
-Description: Library for plugins for the mate-sensors-applet package (development files)
+Breaks: libcafesensorsappletplugin-dev,
+Replaces: libcafesensorsappletplugin-dev,
+Description: Library for plugins for the cafe-sensors-applet package (development files)
  MATE Sensors Applet is an applet for the MATE panel that displays
  readings from hardware sensors, including temperatures, fan speeds and
  voltage readings.

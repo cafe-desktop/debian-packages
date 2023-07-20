@@ -1,3 +1,3 @@
-# mate-sensor-applet plugins erroneously trigger debhelper's makeshlibs script
-mate-sensors-applet: postinst-has-useless-call-to-ldconfig
-mate-sensors-applet: postrm-has-useless-call-to-ldconfig
+# cafe-sensor-applet plugins erroneously trigger debhelper's makeshlibs script
+cafe-sensors-applet: postinst-has-useless-call-to-ldconfig
+cafe-sensors-applet: postrm-has-useless-call-to-ldconfig

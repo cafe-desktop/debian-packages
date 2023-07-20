@@ -1,2 +1,2 @@
-usr/include/mate-sensors-applet
-usr/lib/*/libmate-sensors-applet-plugin.so
+usr/include/cafe-sensors-applet
+usr/lib/*/libcafe-sensors-applet-plugin.so

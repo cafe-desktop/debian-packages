@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Sensors Applet
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-sensors-applet/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-sensors-applet/
 
 Files: lib/sensors-applet-plugin.c
        plugins/acpi/acpi-plugin.c
@@ -79,7 +79,7 @@ Files: plugins/sonypi/sonypi-plugin.h
 Copyright: 2006, Thanate Dhirasakdanon <dthanate@gmail.com>
 License: GPL-2+
 
-Files: mate-sensors-applet.pot
+Files: cafe-sensors-applet.pot
        po/*.po
 Copyright: Alex Murray <murray.alex@gmail.com>
            ABE Tsunehiko
@@ -173,7 +173,7 @@ Files: .build.yml
        autogen.sh
        configure.ac
        makepot
-       org.mate.*.in
+       org.cafe.*.in
        AUTHORS
        ChangeLog
        NEWS

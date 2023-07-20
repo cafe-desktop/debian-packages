@@ -15,15 +15,15 @@ override_dh_missing:
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.a
 	rm -rfv debian/tmp/usr/lib/*/*.la
-	rm -rfv debian/tmp/usr/lib/*/mate-sensors-applet/plugins/*.a
-	rm -rfv debian/tmp/usr/lib/*/mate-sensors-applet/plugins/*.la
+	rm -rfv debian/tmp/usr/lib/*/cafe-sensors-applet/plugins/*.a
+	rm -rfv debian/tmp/usr/lib/*/cafe-sensors-applet/plugins/*.la
 
 	dh_install
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
-		--libexecdir=/usr/lib/mate-sensors-applet \
+		--libexecdir=/usr/lib/cafe-sensors-applet \
 		--disable-silent-rules \
 		--with-nvidia=yes
 
