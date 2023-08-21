@@ -1,3 +1,10 @@
+cafe-settings-daemon (1.25.2-1) unstable; urgency=medium
+
+  * control: GLib 2.67.3 required
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 21 Aug 2023 19:05:59 +0200
+
 cafe-settings-daemon (1.25.1-1) unstable; urgency=medium
 
   * debian/control: libkanberra-ctk3-dev instead libcanberra-gtk-dev
