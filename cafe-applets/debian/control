@@ -28,7 +28,6 @@ Build-Depends: cdbs,
                libx11-dev,
                libxml2-dev,
                cafe-common (>= 1.24.0-1~),
-               policykit-1,
                x11proto-kb-dev,
                yelp-tools,
 Homepage: http://www.cafe-desktop.org/
