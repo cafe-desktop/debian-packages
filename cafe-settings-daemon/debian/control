@@ -29,7 +29,6 @@ Build-Depends: debhelper (>= 10.3~),
                libxklavier-dev,
                libxrandr-dev,
                libxt-dev,
-               policykit-1,
                cafe-common (>= 1.18),
                x11proto-kb-dev,
 Standards-Version: 4.5.0
