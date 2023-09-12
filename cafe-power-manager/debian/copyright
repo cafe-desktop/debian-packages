@@ -5,12 +5,12 @@ Source: https://git.cafe-desktop.org/cafe-power-manager/
 
 Files: applets/brightness/egg-debug.c
        applets/brightness/egg-debug.h
-       applets/brightness/gpm-common.c
-       applets/brightness/gpm-common.h
+       applets/brightness/cpm-common.c
+       applets/brightness/cpm-common.h
        applets/inhibit/egg-debug.c
        applets/inhibit/egg-debug.h
-       applets/inhibit/gpm-common.c
-       applets/inhibit/gpm-common.h
+       applets/inhibit/cpm-common.c
+       applets/inhibit/cpm-common.h
        src/egg-array-float.c
        src/egg-array-float.h
        src/egg-color.c
@@ -27,49 +27,49 @@ Files: applets/brightness/egg-debug.c
        src/egg-precision.h
        src/egg-test.c
        src/egg-test.h
-       src/gpm-backlight-helper.c
-       src/gpm-brightness.c
-       src/gpm-brightness.h
-       src/gpm-button.c
-       src/gpm-button.h
-       src/gpm-common.c
-       src/gpm-common.h
-       src/gpm-control.c
-       src/gpm-engine.c
-       src/gpm-engine.h
-       src/gpm-graph-widget.c
-       src/gpm-graph-widget.h
-       src/gpm-load.c
-       src/gpm-load.h
-       src/gpm-networkmanager.c
-       src/gpm-networkmanager.h
-       src/gpm-phone.c
-       src/gpm-phone.h
-       src/gpm-point-obj.c
-       src/gpm-point-obj.h
-       src/gpm-prefs-core.h
-       src/gpm-screensaver.c
-       src/gpm-screensaver.h
-       src/gpm-self-test.c
-       src/gpm-session.c
-       src/gpm-session.h
-       src/gpm-statistics.c
-       src/gpm-upower.c
-       src/gpm-upower.h
+       src/cpm-backlight-helper.c
+       src/cpm-brightness.c
+       src/cpm-brightness.h
+       src/cpm-button.c
+       src/cpm-button.h
+       src/cpm-common.c
+       src/cpm-common.h
+       src/cpm-control.c
+       src/cpm-engine.c
+       src/cpm-engine.h
+       src/cpm-graph-widget.c
+       src/cpm-graph-widget.h
+       src/cpm-load.c
+       src/cpm-load.h
+       src/cpm-networkmanager.c
+       src/cpm-networkmanager.h
+       src/cpm-phone.c
+       src/cpm-phone.h
+       src/cpm-point-obj.c
+       src/cpm-point-obj.h
+       src/cpm-prefs-core.h
+       src/cpm-screensaver.c
+       src/cpm-screensaver.h
+       src/cpm-self-test.c
+       src/cpm-session.c
+       src/cpm-session.h
+       src/cpm-statistics.c
+       src/cpm-upower.c
+       src/cpm-upower.h
 Copyright: 2005-2010, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: src/gpm-backlight.c
-       src/gpm-backlight.h
-       src/gpm-control.h
-       src/gpm-dpms.c
-       src/gpm-dpms.h
-       src/gpm-idle.c
-       src/gpm-idle.h
-       src/gpm-manager.c
-       src/gpm-manager.h
-       src/gpm-tray-icon.c
-       src/gpm-tray-icon.h
+Files: src/cpm-backlight.c
+       src/cpm-backlight.h
+       src/cpm-control.h
+       src/cpm-dpms.c
+       src/cpm-dpms.h
+       src/cpm-idle.c
+       src/cpm-idle.h
+       src/cpm-manager.c
+       src/cpm-manager.h
+       src/cpm-tray-icon.c
+       src/cpm-tray-icon.h
 Copyright: 2004-2005, William Jon McCann <mccann@jhu.edu>
            2005-2009, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
@@ -115,7 +115,7 @@ Files: .build.yml
        policy/Makefile.am
        policy/*.in2
        src/Makefile.am
-       src/gpm-marshal.list
+       src/cpm-marshal.list
        src/*.xml
        AUTHORS
        ChangeLog
@@ -130,8 +130,8 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: src/gpm-kbd-backlight.c
-       src/gpm-kbd-backlight.h
+Files: src/cpm-kbd-backlight.c
+       src/cpm-kbd-backlight.h
 Copyright: 2010, Alex Launi <alex launi canonical com>
 License: GPL-2+
 
@@ -141,8 +141,8 @@ Copyright: 2006, Benjamin Canou <bookeldor@gmail.com>
            2006-2009, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: src/gpm-prefs-core.c
-       src/gpm-prefs.c
+Files: src/cpm-prefs-core.c
+       src/cpm-prefs.c
 Copyright: 2005, Jaap Haitsma <jaap@haitsma.org>
            2005, William Jon McCann <mccann@jhu.edu>
            2005-2009, Richard Hughes <richard@hughsie.com>
@@ -153,13 +153,13 @@ Files: src/csd_media-keys-window.c
 Copyright: 2006-2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: src/gpm-main.c
+Files: src/cpm-main.c
 Copyright: 2003, David Zeuthen, <david@fubar.dk>
            2004, Benjamin Kahn, <xkahn@zoned.net>
            2005-2007, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: src/gpm-icon-names.h
+Files: src/cpm-icon-names.h
 Copyright: 2002, Jorn Baayen
            2003-2004, Colin Walters <walters@verbum.org>
            2005-2007, Richard Hughes <richard@hughsie.com>

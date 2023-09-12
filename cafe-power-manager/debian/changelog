@@ -396,7 +396,7 @@ cafe-power-manager (1.10.2-1) unstable; urgency=medium
     + Remove dfsg suffix.
   * debian/copyright:
     + Add copyright attribution for help authors and translators.
-    + Remove patches/gpm-manager.patch, no longer upstream.
+    + Remove patches/cpm-manager.patch, no longer upstream.
   * debian/patches:
     + Drop 2001_omit-gfdl-licensed-help-files.patch, the cafe-power-manager
       help is DFSG compliant.
@@ -539,8 +539,8 @@ cafe-power-manager (1.8.0+dfsg1-4) unstable; urgency=medium
     + Add some stray files without license/copyright information.
     + Add license/copyright information for src/csd_osd-window.*.
     + Add short license name for m4/ltsugar.m4.
-    + Don't reference build-crufted files (src/gpm-marshal.c,
-      src/gpm-marshal.h).
+    + Don't reference build-crufted files (src/cpm-marshal.c,
+      src/cpm-marshal.h).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Sep 2014 12:42:39 +0200
 
