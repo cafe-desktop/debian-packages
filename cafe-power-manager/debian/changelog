@@ -348,7 +348,7 @@ cafe-power-manager (1.14.0-1) unstable; urgency=medium
     + B-D: libwnck-3-dev.
     + Versioned B-D: cafe-common (>= 1.14)
   * debian/rules:
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
     + Add --with-gtk=3.0
   * debian/patches:
     + Drop 0001_dont-crash-if-XRRGetScreenResourceCurrent-fails.patch. Applied
