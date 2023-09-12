@@ -1,0 +1,3 @@
+[org.mate.power-manager]
+icon-policy='never'
+notify-low-capacity=false

@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+
+DHFLAGS=--parallel
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+
+%:
+	dh $@ $(DHFLAGS) --without autoreconf
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_install:
+	dh_install
+	# Ubuntu MATE enables indicators by default which include indicator-power
+	# so override mate-power-manager defaults accordingly.
+ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
+	dh_install -pmate-power-manager-common debian/25_mate-power-manager-ubuntu.gschema.override /usr/share/glib-2.0/schemas/
+endif
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_auto_configure:
+	# Ubuntu MATE enables indicators by default which include indicator-power
+	# so patch disable some UI in mate-power-manager that is irrelevant
+ifeq ($(shell dpkg-vendor --is Ubuntu && echo yes),yes)
+	patch data/gpm-prefs.ui < debian/patches/2000_disable_notification_prefs_ui.patch
+endif
+	# upstream is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
+	dh_auto_configure $(DHFLAGS) -- \
+		--disable-silent-rules \
+		--libexecdir=/usr/lib/mate-power-manager \
+		--enable-applets \
+		--without-keyring \
+		--enable-deprecated
+
+get-orig-source:
+	uscan --noconf --force-download --rename --download-current-version --destdir=..
