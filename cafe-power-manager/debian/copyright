@@ -148,8 +148,8 @@ Copyright: 2005, Jaap Haitsma <jaap@haitsma.org>
            2005-2009, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: src/gsd-media-keys-window.c
-       src/gsd-media-keys-window.h
+Files: src/csd_media-keys-window.c
+       src/csd_media-keys-window.h
 Copyright: 2006-2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
