@@ -537,7 +537,7 @@ cafe-power-manager (1.8.0+dfsg1-4) unstable; urgency=medium
       Suggests: field. (Closes: #761471).
   * debian/copyright:
     + Add some stray files without license/copyright information.
-    + Add license/copyright information for src/msd-osd-window.*.
+    + Add license/copyright information for src/csd_osd-window.*.
     + Add short license name for m4/ltsugar.m4.
     + Don't reference build-crufted files (src/gpm-marshal.c,
       src/gpm-marshal.h).

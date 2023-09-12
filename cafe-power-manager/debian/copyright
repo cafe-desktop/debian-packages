@@ -74,8 +74,8 @@ Copyright: 2004-2005, William Jon McCann <mccann@jhu.edu>
            2005-2009, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: src/msd-osd-window.c
-       src/msd-osd-window.h
+Files: src/csd_osd-window.c
+       src/csd_osd-window.h
 Copyright:  2006, William Jon McCann <mccann@jhu.edu>
             2009, Novell, Inc
 License: LGPL-2+
