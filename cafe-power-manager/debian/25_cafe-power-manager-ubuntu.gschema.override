@@ -1,3 +1,3 @@
-[org.mate.power-manager]
+[org.cafe.power-manager]
 icon-policy='never'
 notify-low-capacity=false

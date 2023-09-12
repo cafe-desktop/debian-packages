@@ -1,7 +1,7 @@
-Source: mate-power-manager
+Source: cafe-power-manager
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -15,7 +15,7 @@ Build-Depends: debhelper-compat (= 13),
                libgcrypt20-dev,
                libglib2.0-dev,
                libgtk-3-dev,
-               libmate-panel-applet-dev (>= 1.18),
+               libcafe-panel-applet-dev (>= 1.18),
                libnotify-dev,
                libpolkit-gobject-1-dev,
                libupower-glib-dev,
@@ -23,27 +23,27 @@ Build-Depends: debhelper-compat (= 13),
                libxext-dev,
                libxml2-utils,
                libxrandr-dev,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
                pkg-config,
                xmlto,
                yelp-tools,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-power-manager
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-power-manager.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-power-manager
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-power-manager.git
 
-Package: mate-power-manager
+Package: cafe-power-manager
 Architecture: any
 Depends: default-dbus-session-bus | dbus-session-bus,
-         mate-notification-daemon | notification-daemon,
-         mate-power-manager-common (= ${source:Version}),
+         cafe-notification-daemon | notification-daemon,
+         cafe-power-manager-common (= ${source:Version}),
          polkitd, pkexec,
          systemd | elogind | consolekit,
          upower,
          ${misc:Depends},
          ${shlibs:Depends},
-Suggests: mate-polkit,
+Suggests: cafe-polkit,
 Description: power management tool for the MATE desktop
  MATE Power Manager is a session daemon for the MATE desktop
  that takes care of system or desktop events related to power, and
@@ -55,11 +55,11 @@ Description: power management tool for the MATE desktop
  power saving, and can trigger suspend-to-RAM, hibernate or shutdown
  events, all integrated to other components of the MATE desktop.
 
-Package: mate-power-manager-common
+Package: cafe-power-manager-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-power-manager (<< 1.9.0),
-Replaces: mate-power-manager (<< 1.9.0),
+Breaks: cafe-power-manager (<< 1.9.0),
+Replaces: cafe-power-manager (<< 1.9.0),
 Description: power management tool for the MATE desktop (common files)
  MATE Power Manager is a session daemon for the MATE desktop
  that takes care of system or desktop events related to power, and

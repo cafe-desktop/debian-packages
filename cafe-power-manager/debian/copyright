@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Power Manager
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-power-manager/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-power-manager/
 
 Files: applets/brightness/egg-debug.c
        applets/brightness/egg-debug.h
@@ -99,10 +99,10 @@ Files: .build.yml
        data/icons/*/status/*.png
        data/icons/*/status/*.svg
        data/icons/Makefile.am
-       data/mate-power-manager.about
-       data/org.mate.power-manager.manager.gresource.xml
-       data/org.mate.power-manager.preferences.gresource.xml
-       data/org.mate.power-manager.statistics.gresource.xml
+       data/cafe-power-manager.about
+       data/org.cafe.power-manager.manager.gresource.xml
+       data/org.cafe.power-manager.preferences.gresource.xml
+       data/org.cafe.power-manager.statistics.gresource.xml
        data/Makefile.am
        data/*.ui
        data/*.in
@@ -165,12 +165,12 @@ Copyright: 2002, Jorn Baayen
            2005-2007, Richard Hughes <richard@hughsie.com>
 License: GPL-2+
 
-Files: mate-power-manager.pot
+Files: cafe-power-manager.pot
        po/*.po
 Copyright: 2005-2010, Free Software Foundation, Inc.
            2005-2006, Adam Weinberger <adamw@gnome.org>
            2005-2009, Richard Hughes <richard@hughsie.com>
-           2005-2010, THE mate-power-manager'S COPYRIGHT HOLDER
+           2005-2010, THE cafe-power-manager'S COPYRIGHT HOLDER
            2006–2010, The Gnome Project.
            2006, Sharif FarsiWeb, Inc.
            2006-2007, Rosetta Contributors and Canonical Ltd.
@@ -184,7 +184,7 @@ Comment:
 Files: help/*
 Copyright: Amanpreet Singh Alam <aalam@users.sf.net>
            Daniel Nylander <po@danielnylander.se>
-           Gabor Kelemen <kelemeng@mate.hu>
+           Gabor Kelemen <kelemeng@cafe.hu>
            Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
            Joan Duran <jodufi@gmail.com>
            Jorge González <jorgegonz@svn.gnome.org>
