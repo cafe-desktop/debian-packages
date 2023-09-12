@@ -74,7 +74,7 @@ cafe-power-manager (1.22.1-1) unstable; urgency=medium
     + Add Ubuntu specific UI patch so that indicator-power integrates
       neatly.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/patches:
     + Drop 2001_libtool-bin.patch. Applied upstream.
 
@@ -185,7 +185,7 @@ cafe-power-manager (1.18.1-3) unstable; urgency=medium
     + Add 2000_disable_notification_prefs_ui.patch. Disable the notification
       preferences so options are not presented that indicator-power now handles.
   * debian/rules:
-    + Override cafe-power-manager defaults on Ubuntu. Ubuntu MATE enables
+    + Override cafe-power-manager defaults on Ubuntu. Ubuntu CAFE enables
       indicators by default which include indicator-power, these overrides
       ensure indicator-power integrates with cafe-power-manager.
   * debian/25_cafe-power-manager-ubuntu.gschema.override:
@@ -204,7 +204,7 @@ cafe-power-manager (1.18.1-2) unstable; urgency=medium
   [ Vangelis Mouhtsis ]
   * debian/control:
     + Bump Standards-Version: to 4.1.3. No changes needed.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Temporarily have pkg-cafe-team ML under Uploaders:.
 
@@ -242,10 +242,10 @@ cafe-power-manager (1.18.0-2) unstable; urgency=medium
 cafe-power-manager (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/copyright: Update copyright attributions.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/copyright: Update copyright attributions for 1.17.x.
   * debian/rules: Remove obsolete --disable-strict.
 
@@ -299,7 +299,7 @@ cafe-power-manager (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.1-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -309,7 +309,7 @@ cafe-power-manager (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release. (Closes: #827232).
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
