@@ -243,7 +243,7 @@ cafe-power-manager (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for CAFE 1.17.
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/copyright: Update copyright attributions.
   * debian/control: Dependencies updated for CAFE 1.18.
   * debian/copyright: Update copyright attributions for 1.17.x.
@@ -340,8 +340,8 @@ cafe-power-manager (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + B-D: libkanberra-gtk3-dev
-    + B-D: libgtk-3-dev
+    + B-D: libkanberra-ctk3-dev
+    + B-D: libctk-3-dev
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
     + Versioned B-D: libcafe-panel-applet-dev (>= 1.14)
     + B-D: libunique-3.0-dev
@@ -349,7 +349,7 @@ cafe-power-manager (1.14.0-1) unstable; urgency=medium
     + Versioned B-D: cafe-common (>= 1.14)
   * debian/rules:
     + CafeConf dropped upstream.
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
   * debian/patches:
     + Drop 0001_dont-crash-if-XRRGetScreenResourceCurrent-fails.patch. Applied
       upstream.
@@ -427,7 +427,7 @@ cafe-power-manager (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
     + New bin:package: cafe-power-manager-common.
     + Processed with wrap-and-sort
   * debian/patches:
-    + Drop 0001_fix-backlight-popup-gtkbuilder.patch. Applied upstream.
+    + Drop 0001_fix-backlight-popup-ctkbuilder.patch. Applied upstream.
     + Drop 0002_handle-UP-DEVICE-STATE-UNKNOWN.patch. Applied upstream.
     + Drop 0003_fix-power-statistics-when-unplugging-wireless-device-with-
       battery.patch. Applied upstream.
@@ -484,7 +484,7 @@ cafe-power-manager (1.8.1+dfsg1-4) unstable; urgency=medium
 cafe-power-manager (1.8.1+dfsg1-3) unstable; urgency=medium
 
   * debian/patches:
-    + Add 0001_fix-backlight-popup-gtkbuilder.patch. Fix GTKBuilder script for
+    + Add 0001_fix-backlight-popup-ctkbuilder.patch. Fix GTKBuilder script for
       media keys popup window. (Closes: #766749).
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 12 Jan 2015 06:11:46 +0100
