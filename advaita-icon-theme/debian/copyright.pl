@@ -280,13 +280,13 @@ Comment:
  Public License can be found in `/usr/share/common-licenses/GPL'.
 
 Files:
- Adwaita/scalable/status/night-light-symbolic.svg
- Adwaita/scalable/ui/pan-down-symbolic.svg
- Adwaita/scalable/ui/pan-end-symbolic-rtl.svg
- Adwaita/scalable/ui/pan-end-symbolic.svg
- Adwaita/scalable/ui/pan-start-symbolic-rtl.svg
- Adwaita/scalable/ui/pan-start-symbolic.svg
- Adwaita/scalable/ui/pan-up-symbolic.svg
+ Advaita/scalable/status/night-light-symbolic.svg
+ Advaita/scalable/ui/pan-down-symbolic.svg
+ Advaita/scalable/ui/pan-end-symbolic-rtl.svg
+ Advaita/scalable/ui/pan-end-symbolic.svg
+ Advaita/scalable/ui/pan-start-symbolic-rtl.svg
+ Advaita/scalable/ui/pan-start-symbolic.svg
+ Advaita/scalable/ui/pan-up-symbolic.svg
  src/fullcolor/application-x-sharedlib.svg
  src/symbolic/gnome-stencils.svg
 Copyright:

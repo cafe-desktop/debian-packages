@@ -4,4 +4,4 @@ set -e
 #DEBHELPER#
 
 update-alternatives --install /usr/share/icons/default/index.theme \
-        x-cursor-theme /usr/share/icons/Adwaita/cursor.theme 90
+        x-cursor-theme /usr/share/icons/Advaita/cursor.theme 90

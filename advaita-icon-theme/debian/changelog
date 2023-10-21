@@ -318,7 +318,7 @@ advaita-icon-theme (3.13.91-1) experimental; urgency=medium
 
   * New upstream development release.
   * Add Replaces/Breaks on gnome-themes-standard-data (<< 3.13.90)
-    - we're taking over /usr/share/icons/Adwaita/cursors/
+    - we're taking over /usr/share/icons/Advaita/cursors/
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 04 Sep 2014 20:40:48 +0200
 

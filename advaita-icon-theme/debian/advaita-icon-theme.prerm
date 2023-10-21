@@ -6,6 +6,6 @@ set -e
 case "$1" in
   remove|deconfigure|failed-upgrade)
     update-alternatives --remove x-cursor-theme \
-        /usr/share/icons/Adwaita/cursor.theme
+        /usr/share/icons/Advaita/cursor.theme
   ;;
 esac
