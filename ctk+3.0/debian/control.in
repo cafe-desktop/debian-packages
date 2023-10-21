@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: Pablo Barciela <scow@riseup.net>
-Build-Depends: adwaita-icon-theme <!nocheck>,
+Build-Depends: advaita-icon-theme <!nocheck>,
                at-spi2-core <!nocheck>,
                dbus <!nocheck>,
                debhelper-compat (= 12),
@@ -63,7 +63,7 @@ Homepage: https://github.com/cafe-desktop/ctk
 Package: @SHARED_PKG@
 Architecture: any
 Multi-Arch: same
-Depends: adwaita-icon-theme,
+Depends: advaita-icon-theme,
          hicolor-icon-theme,
          shared-mime-info,
          ${misc:Depends},
