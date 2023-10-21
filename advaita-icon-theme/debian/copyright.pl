@@ -7,9 +7,9 @@ print <<'EOF';
 This package was originally debianized by Takuo KITAME <kitame@debian.org> on
 Fri, 17 Jan 2003 14:57:28 +0900.
 Andreas Henriksson <andreas@fatal.se> later reused the gnome-icon-theme
-packaging for the new adwaita-icon-theme package name.
+packaging for the new advaita-icon-theme package name.
 
-It was downloaded from <https://download.gnome.org/sources/adwaita-icon-theme/>
+It was downloaded from <https://download.gnome.org/sources/advaita-icon-theme/>
 
 Files: *
 Copyright:

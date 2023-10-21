@@ -2,7 +2,7 @@
 #
 # Modifications should be made to debian/control.in instead.
 # This file is regenerated automatically in the clean target.
-Source: adwaita-icon-theme
+Source: advaita-icon-theme
 Section: gnome
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
@@ -16,10 +16,10 @@ Build-Depends-Indep: gettext,
                      librsvg2-common:native,
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
-Vcs-Browser: https://salsa.debian.org/gnome-team/adwaita-icon-theme
-Vcs-Git: https://salsa.debian.org/gnome-team/adwaita-icon-theme.git
+Vcs-Browser: https://salsa.debian.org/gnome-team/advaita-icon-theme
+Vcs-Git: https://salsa.debian.org/gnome-team/advaita-icon-theme.git
 
-Package: adwaita-icon-theme
+Package: advaita-icon-theme
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},

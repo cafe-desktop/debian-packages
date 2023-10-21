@@ -1,31 +1,31 @@
-adwaita-icon-theme (41.0-1) unstable; urgency=medium
+advaita-icon-theme (41.0-1) unstable; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.6.0
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 19 Sep 2021 08:19:49 -0400
 
-adwaita-icon-theme (40.1.1-2) unstable; urgency=medium
+advaita-icon-theme (40.1.1-2) unstable; urgency=medium
 
   * Bump debhelper-compat to 13
   * Release to unstable
 
  -- Jeremy Bicha <jbicha@debian.org>  Sat, 21 Aug 2021 08:37:45 -0400
 
-adwaita-icon-theme (40.1.1-1) experimental; urgency=medium
+advaita-icon-theme (40.1.1-1) experimental; urgency=medium
 
   * New upstream release
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Fri, 28 May 2021 15:29:48 +0200
 
-adwaita-icon-theme (3.38.0-1) unstable; urgency=medium
+advaita-icon-theme (3.38.0-1) unstable; urgency=medium
 
   * New upstream release
   * Revert "debian/watch: Watch for unstable releases"
 
  -- Iain Lane <laney@debian.org>  Tue, 15 Sep 2020 17:59:46 +0100
 
-adwaita-icon-theme (3.37.92-1) experimental; urgency=medium
+advaita-icon-theme (3.37.92-1) experimental; urgency=medium
 
   * Team upload
   * New upstream release
@@ -33,18 +33,18 @@ adwaita-icon-theme (3.37.92-1) experimental; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Tue, 01 Sep 2020 12:22:20 +0100
 
-adwaita-icon-theme (3.36.1-2) unstable; urgency=medium
+advaita-icon-theme (3.36.1-2) unstable; urgency=medium
 
   * Team upload
   * Build-Depend on librsvg2-common:native.
     This package contains the SVG backend for gdk-pixbuf, which is necessary
     to ensure that gtk-encode-symbolic-svg can actually load SVGs. It was
     previously pulled in via the dependency chain
-    libgtk-3-0 -> adwaita-icon-theme -> librsvg2-common. (Closes: #959629)
+    libgtk-3-0 -> advaita-icon-theme -> librsvg2-common. (Closes: #959629)
 
  -- Simon McVittie <smcv@debian.org>  Wed, 06 May 2020 18:26:22 +0100
 
-adwaita-icon-theme (3.36.1-1) unstable; urgency=medium
+advaita-icon-theme (3.36.1-1) unstable; urgency=medium
 
   * New upstream release
   * debian/control.in: Downgrade librsvg2-common to recommends
@@ -54,7 +54,7 @@ adwaita-icon-theme (3.36.1-1) unstable; urgency=medium
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 21 Apr 2020 10:28:04 +0200
 
-adwaita-icon-theme (3.36.0-1) unstable; urgency=medium
+advaita-icon-theme (3.36.0-1) unstable; urgency=medium
 
   * New upstream release
   * debian/control.in: Bump Standards-Version to 4.5.0
@@ -62,19 +62,19 @@ adwaita-icon-theme (3.36.0-1) unstable; urgency=medium
 
  -- Laurent Bigonville <bigon@debian.org>  Fri, 13 Mar 2020 13:09:41 +0100
 
-adwaita-icon-theme (3.35.91-1) experimental; urgency=medium
+advaita-icon-theme (3.35.91-1) experimental; urgency=medium
 
   * New upstream release
 
  -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Wed, 26 Feb 2020 17:29:09 +0000
 
-adwaita-icon-theme (3.34.0-2) unstable; urgency=medium
+advaita-icon-theme (3.34.0-2) unstable; urgency=medium
 
   * Release to unstable
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 15 Sep 2019 19:02:28 -0400
 
-adwaita-icon-theme (3.34.0-1) experimental; urgency=medium
+advaita-icon-theme (3.34.0-1) experimental; urgency=medium
 
   * New upstream release
     - fullcolor: colorful packages
@@ -95,53 +95,53 @@ adwaita-icon-theme (3.34.0-1) experimental; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Thu, 12 Sep 2019 16:52:47 +0100
 
-adwaita-icon-theme (3.32.0-1) experimental; urgency=medium
+advaita-icon-theme (3.32.0-1) experimental; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Mon, 18 Mar 2019 18:24:32 -0400
 
-adwaita-icon-theme (3.31.91-1) experimental; urgency=medium
+advaita-icon-theme (3.31.91-1) experimental; urgency=medium
 
   * New upstream development release
   * debian/docs: README isn't included in this release
 
  -- Jeremy Bicha <jbicha@debian.org>  Tue, 19 Feb 2019 17:51:23 -0500
 
-adwaita-icon-theme (3.30.1-1) unstable; urgency=medium
+advaita-icon-theme (3.30.1-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Fri, 14 Dec 2018 13:44:35 -0500
 
-adwaita-icon-theme (3.30.0-1) unstable; urgency=medium
+advaita-icon-theme (3.30.0-1) unstable; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.2.1
 
  -- Jeremy Bicha <jbicha@debian.org>  Thu, 20 Sep 2018 21:43:53 -0400
 
-adwaita-icon-theme (3.28.0-1) unstable; urgency=medium
+advaita-icon-theme (3.28.0-1) unstable; urgency=medium
 
   * New upstream release
   * Release to unstable
 
  -- Jeremy Bicha <jbicha@debian.org>  Tue, 13 Mar 2018 21:11:42 -0400
 
-adwaita-icon-theme (3.27.90-1) unstable; urgency=medium
+advaita-icon-theme (3.27.90-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Thu, 08 Feb 2018 10:32:48 -0500
 
-adwaita-icon-theme (3.26.1-3) unstable; urgency=medium
+advaita-icon-theme (3.26.1-3) unstable; urgency=medium
 
   * Update Vcs fields for migration to https://salsa.debian.org/
   * Bump debhelper compat to 11
 
  -- Jeremy Bicha <jbicha@debian.org>  Mon, 22 Jan 2018 21:22:53 -0500
 
-adwaita-icon-theme (3.26.1-2) unstable; urgency=medium
+advaita-icon-theme (3.26.1-2) unstable; urgency=medium
 
   * Update Vcs fields for conversion to git
   * Add debian/gbp.conf
@@ -149,7 +149,7 @@ adwaita-icon-theme (3.26.1-2) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 13 Dec 2017 08:33:49 -0500
 
-adwaita-icon-theme (3.26.1-1) unstable; urgency=medium
+advaita-icon-theme (3.26.1-1) unstable; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.1.1
@@ -158,20 +158,20 @@ adwaita-icon-theme (3.26.1-1) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Mon, 27 Nov 2017 12:26:57 -0500
 
-adwaita-icon-theme (3.26.0-1) unstable; urgency=medium
+advaita-icon-theme (3.26.0-1) unstable; urgency=medium
 
   * New upstream release
 
  -- Jeremy Bicha <jbicha@debian.org>  Thu, 14 Sep 2017 19:53:19 -0400
 
-adwaita-icon-theme (3.25.91-1) unstable; urgency=medium
+advaita-icon-theme (3.25.91-1) unstable; urgency=medium
 
   * New upstream release
   * Bump Standards-Version to 4.1.0
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Wed, 30 Aug 2017 07:35:44 -0400
 
-adwaita-icon-theme (3.24.0-1) unstable; urgency=medium
+advaita-icon-theme (3.24.0-1) unstable; urgency=medium
 
   * New upstream release.
     - Fix malformed send-to-symbolic icon (Closes: #838961)
@@ -179,7 +179,7 @@ adwaita-icon-theme (3.24.0-1) unstable; urgency=medium
 
  -- Laurent Bigonville <bigon@debian.org>  Fri, 07 Jul 2017 12:04:33 +0200
 
-adwaita-icon-theme (3.22.0-1) unstable; urgency=medium
+advaita-icon-theme (3.22.0-1) unstable; urgency=medium
 
   [ Andreas Henriksson ]
   * Convert from cdbs to dh
@@ -190,7 +190,7 @@ adwaita-icon-theme (3.22.0-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Wed, 21 Sep 2016 14:57:40 +0200
 
-adwaita-icon-theme (3.21.91-1) unstable; urgency=medium
+advaita-icon-theme (3.21.91-1) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * Set Provides: gnome-icon-theme-symbolic
@@ -200,7 +200,7 @@ adwaita-icon-theme (3.21.91-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 02 Sep 2016 13:10:48 +0200
 
-adwaita-icon-theme (3.20-3) unstable; urgency=medium
+advaita-icon-theme (3.20-3) unstable; urgency=medium
 
   * Replace dependency on libgtk-3-bin with gtk-update-icon-cache to break a
     dependency cycle when building src:gtk+3.0, see #824999. (Closes: #763669)
@@ -209,20 +209,20 @@ adwaita-icon-theme (3.20-3) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Sun, 22 May 2016 20:59:38 +0200
 
-adwaita-icon-theme (3.20-2) unstable; urgency=medium
+advaita-icon-theme (3.20-2) unstable; urgency=medium
 
   * Upload to unstable.
   * Drop Build-Depends on icon-naming-utils, no longer needed.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 16 Apr 2016 19:57:41 +0200
 
-adwaita-icon-theme (3.20-1) experimental; urgency=medium
+advaita-icon-theme (3.20-1) experimental; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 24 Mar 2016 14:53:56 +0100
 
-adwaita-icon-theme (3.19.91-1) experimental; urgency=medium
+advaita-icon-theme (3.19.91-1) experimental; urgency=medium
 
   * New upstream release.
   * Drop intltool build-dependency
@@ -232,7 +232,7 @@ adwaita-icon-theme (3.19.91-1) experimental; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 15 Mar 2016 20:59:05 +0100
 
-adwaita-icon-theme (3.18.0-2) unstable; urgency=medium
+advaita-icon-theme (3.18.0-2) unstable; urgency=medium
 
   * Add cursor.theme, formerly shipped in gnome-themes-standard package.
     - Also add appropriate prerm/postinst scripts.
@@ -244,7 +244,7 @@ adwaita-icon-theme (3.18.0-2) unstable; urgency=medium
 
  -- Dmitry Shachnev <mitya57@debian.org>  Mon, 28 Dec 2015 22:37:38 +0300
 
-adwaita-icon-theme (3.18.0-1) unstable; urgency=medium
+advaita-icon-theme (3.18.0-1) unstable; urgency=medium
 
   [ Andreas Henriksson ]
   * Drop libgtk*-bin build-dependency
@@ -259,7 +259,7 @@ adwaita-icon-theme (3.18.0-1) unstable; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Wed, 23 Sep 2015 19:19:02 +0200
 
-adwaita-icon-theme (3.16.2.1-2) unstable; urgency=medium
+advaita-icon-theme (3.16.2.1-2) unstable; urgency=medium
 
   * debian/control.in,
     debian/rules:
@@ -272,14 +272,14 @@ adwaita-icon-theme (3.16.2.1-2) unstable; urgency=medium
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 27 May 2015 18:30:59 +0200
 
-adwaita-icon-theme (3.16.2.1-1) unstable; urgency=medium
+advaita-icon-theme (3.16.2.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Upload to unstable.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 23 May 2015 13:37:23 +0200
 
-adwaita-icon-theme (3.16.0-1) experimental; urgency=medium
+advaita-icon-theme (3.16.0-1) experimental; urgency=medium
 
   [ Pedro Beja ]
   * Fix capital letters (Closes: #764861).
@@ -290,7 +290,7 @@ adwaita-icon-theme (3.16.0-1) experimental; urgency=medium
 
  -- Sjoerd Simons <sjoerd@debian.org>  Fri, 08 May 2015 14:35:09 +0200
 
-adwaita-icon-theme (3.14.0-2) unstable; urgency=high
+advaita-icon-theme (3.14.0-2) unstable; urgency=high
 
   * Team upload.
   * Add an assortment of missing licenses and approximately 200 potential
@@ -301,20 +301,20 @@ adwaita-icon-theme (3.14.0-2) unstable; urgency=high
 
  -- Simon McVittie <smcv@debian.org>  Sat, 04 Oct 2014 11:30:57 +0100
 
-adwaita-icon-theme (3.14.0-1) unstable; urgency=medium
+advaita-icon-theme (3.14.0-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Andreas Henriksson <andreas@fatal.se>  Tue, 23 Sep 2014 20:49:19 +0200
 
-adwaita-icon-theme (3.13.91-2) unstable; urgency=medium
+advaita-icon-theme (3.13.91-2) unstable; urgency=medium
 
   * Add "Multi-arch: foreign" (see #762035)
   * Upload to unstable.
 
  -- Andreas Henriksson <andreas@fatal.se>  Fri, 19 Sep 2014 21:38:54 +0200
 
-adwaita-icon-theme (3.13.91-1) experimental; urgency=medium
+advaita-icon-theme (3.13.91-1) experimental; urgency=medium
 
   * New upstream development release.
   * Add Replaces/Breaks on gnome-themes-standard-data (<< 3.13.90)
@@ -322,10 +322,10 @@ adwaita-icon-theme (3.13.91-1) experimental; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Thu, 04 Sep 2014 20:40:48 +0200
 
-adwaita-icon-theme (3.13.5-1) experimental; urgency=medium
+advaita-icon-theme (3.13.5-1) experimental; urgency=medium
 
   * New upstream development release with new name!
-  * debian/*: update to new adwaita-icon-theme name.
+  * debian/*: update to new advaita-icon-theme name.
   * debian/control.in: drop obsolete Breaks and Enhances.
   * debian/control.in: Update package description.
   * debian/copyright: minor update for new download location and mention
@@ -339,7 +339,7 @@ adwaita-icon-theme (3.13.5-1) experimental; urgency=medium
     switch to this new package anytime soon.)
   * debian/rules: remove gnome-foot and debian-swirl related manual
                   handling of the icon cache (drop --no-act).
-  * debian/watch: update url for new adwaita-icon-theme name.
+  * debian/watch: update url for new advaita-icon-theme name.
   * debian/copyright: update based on AUTHORS and COPYING*.
 
  -- Andreas Henriksson <andreas@fatal.se>  Sat, 30 Aug 2014 09:19:44 -0700
