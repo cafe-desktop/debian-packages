@@ -1,0 +1,31 @@
+Source: adwaita-icon-theme
+Section: gnome
+Priority: optional
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-gnome
+Build-Depends-Indep: gettext,
+                     pkg-config,
+                     libgtk-3-bin (>= 3.24.13),
+                     librsvg2-bin,
+                     librsvg2-common:native,
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/gnome-team/adwaita-icon-theme
+Vcs-Git: https://salsa.debian.org/gnome-team/adwaita-icon-theme.git
+
+Package: adwaita-icon-theme
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         hicolor-icon-theme,
+         gtk-update-icon-cache,
+Recommends: librsvg2-common
+Breaks: gnome-themes-standard-data (<< 3.18.0-2~)
+Replaces: gnome-themes-standard-data (<< 3.18.0-2~)
+Provides: gnome-icon-theme-symbolic
+Description: default icon theme of GNOME
+ This package contains the default icon theme used by the GNOME desktop.
+ The icons are used in many of the official GNOME applications like eog,
+ Evince, system monitor, and many more.
