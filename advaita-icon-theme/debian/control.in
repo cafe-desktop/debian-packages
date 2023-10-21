@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
-               dh-sequence-gnome
 Build-Depends-Indep: gettext,
                      pkg-config,
                      libctk-3-bin (>= 3.24.13),
