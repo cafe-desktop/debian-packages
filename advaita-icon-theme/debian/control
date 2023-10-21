@@ -5,8 +5,8 @@
 Source: advaita-icon-theme
 Section: gnome
 Priority: optional
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Iain Lane <laney@debian.org>, Jeremy Bicha <jbicha@debian.org>, Laurent Bigonville <bigon@debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
+Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                dh-sequence-gnome
 Build-Depends-Indep: gettext,
