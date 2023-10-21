@@ -11,7 +11,7 @@ Build-Depends: debhelper-compat (= 13),
                dh-sequence-gnome
 Build-Depends-Indep: gettext,
                      pkg-config,
-                     libgtk-3-bin (>= 3.24.13),
+                     libctk-3-bin (>= 3.24.13),
                      librsvg2-bin,
                      librsvg2-common:native,
 Standards-Version: 4.6.0
@@ -24,7 +24,7 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
          hicolor-icon-theme,
-         gtk-update-icon-cache,
+         ctk-update-icon-cache,
 Recommends: librsvg2-common
 Breaks: gnome-themes-standard-data (<< 3.18.0-2~)
 Replaces: gnome-themes-standard-data (<< 3.18.0-2~)

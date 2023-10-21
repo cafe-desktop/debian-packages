@@ -38,9 +38,9 @@ advaita-icon-theme (3.36.1-2) unstable; urgency=medium
   * Team upload
   * Build-Depend on librsvg2-common:native.
     This package contains the SVG backend for gdk-pixbuf, which is necessary
-    to ensure that gtk-encode-symbolic-svg can actually load SVGs. It was
+    to ensure that ctk-encode-symbolic-svg can actually load SVGs. It was
     previously pulled in via the dependency chain
-    libgtk-3-0 -> advaita-icon-theme -> librsvg2-common. (Closes: #959629)
+    libctk-3-0 -> advaita-icon-theme -> librsvg2-common. (Closes: #959629)
 
  -- Simon McVittie <smcv@debian.org>  Wed, 06 May 2020 18:26:22 +0100
 
@@ -202,8 +202,8 @@ advaita-icon-theme (3.21.91-1) unstable; urgency=medium
 
 advaita-icon-theme (3.20-3) unstable; urgency=medium
 
-  * Replace dependency on libgtk-3-bin with gtk-update-icon-cache to break a
-    dependency cycle when building src:gtk+3.0, see #824999. (Closes: #763669)
+  * Replace dependency on libctk-3-bin with ctk-update-icon-cache to break a
+    dependency cycle when building src:ctk+3.0, see #824999. (Closes: #763669)
   * Bump Standards-Version to 3.9.8.
   * Bump debhelper compatibility level to 9.
 
@@ -247,11 +247,11 @@ advaita-icon-theme (3.18.0-2) unstable; urgency=medium
 advaita-icon-theme (3.18.0-1) unstable; urgency=medium
 
   [ Andreas Henriksson ]
-  * Drop libgtk*-bin build-dependency
-    - there's no point to gtk-update-icon-cache during build,
+  * Drop libctk*-bin build-dependency
+    - there's no point to ctk-update-icon-cache during build,
       we let the postinst do it on package install.
-  * Add missing build-dependency on gtk-3-examples
-    - the gtk-encode-symbolic-svg program is used during build to
+  * Add missing build-dependency on ctk-3-examples
+    - the ctk-encode-symbolic-svg program is used during build to
       create specially prepared png files (faster to load than svg).
 
   [ Pedro Beja ]
@@ -476,8 +476,8 @@ gnome-icon-theme (3.0.0-2) experimental; urgency=low
   * Remove icon-theme.cache from the package. Closes: #626515.
 
   [ Martin Pitt ]
-  * debian/postinst: Use gtk-update-icon-cache-3.0 instead of the 2.0 binary.
-    Move libgtk2.0-bin dependency to libgtk-3-bin for this.
+  * debian/postinst: Use ctk-update-icon-cache-3.0 instead of the 2.0 binary.
+    Move libctk2.0-bin dependency to libctk-3-bin for this.
   * debian/control.in: Bump Standards-Version to 3.9.2 (no changes necessary).
 
  -- Martin Pitt <mpitt@debian.org>  Mon, 23 May 2011 07:49:01 +0200
@@ -608,7 +608,7 @@ gnome-icon-theme (2.24.0-4) unstable; urgency=low
     Closes: #484684.
   * Register a trigger so that the cache is regerenerated when
     necessary.
-  * Depend on libgtk2.0-bin to have gtk-update-icon-cache.
+  * Depend on libctk2.0-bin to have ctk-update-icon-cache.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 25 Mar 2009 15:02:01 +0100
 
@@ -818,7 +818,7 @@ gnome-icon-theme (2.8.0-3) unstable; urgency=low
 
 gnome-icon-theme (2.8.0-2) unstable; urgency=low
 
-  * postinst, prerm: use gtk-update-icon-cache to update icon-theme.cache
+  * postinst, prerm: use ctk-update-icon-cache to update icon-theme.cache
     files.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 16 Feb 2005 19:46:35 +0100
