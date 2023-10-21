@@ -142,8 +142,8 @@ override_dh_clean: debian/control
 	# when resources change. Force an update in case we ship a patch which
 	# modifies the theme CSS files.
 	rm -f ctk/ctkresources.c ctk/ctkresources.h
-	rm -f ctk/theme/Adwaita/ctk-contained.css
-	rm -f ctk/theme/Adwaita/ctk-contained-dark.css
+	rm -f ctk/theme/Advaita/ctk-contained.css
+	rm -f ctk/theme/Advaita/ctk-contained-dark.css
 	rm -f ctk/theme/HighContrast/ctk-contained.css
 	rm -f ctk/theme/HighContrast/ctk-contained-inverse.css
 	# We just don't want to have to review these...
@@ -186,7 +186,7 @@ ifneq ($(filter %-udeb,$(built_binaries)),)
 endif
 
 override_dh_auto_build:
-	( cd ctk/theme/Adwaita; ./parse-sass.sh )
+	( cd ctk/theme/Advaita; ./parse-sass.sh )
 	( cd ctk/theme/HighContrast; ./parse-sass.sh )
 	dh_auto_build --builddirectory=debian/build/deb
 ifneq ($(filter %-udeb,$(built_binaries)),)
