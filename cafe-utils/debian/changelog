@@ -233,7 +233,7 @@ cafe-utils (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + B-D: libcanberra-ctk3-dev
+    + B-D: libkanberra-ctk3-dev
     + B-D: libctk-3-dev
     + Versioned B-D: libcafe-panel-applet-dev (>= 1.14)
     + Versioned B-D: cafe-common (>= 1.14)
