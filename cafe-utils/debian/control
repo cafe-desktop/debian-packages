@@ -1,7 +1,7 @@
 Source: cafe-utils
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -39,8 +39,8 @@ Depends: libcafedict6 (= ${binary:Version}),
          cafe-utils-common (>= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Description: MATE desktop utilities
- This package contains all the tools bundled as MATE utilities:
+Description: CAFE desktop utilities
+ This package contains all the tools bundled as CAFE utilities:
   - cafe-disk-usage-analyzer, a disk usage analyser
   - cafe-dictionary, a program which can look up the definition of words
     over the internet (including a panel applet to do the same)
@@ -54,8 +54,8 @@ Architecture: all
 Depends: ${misc:Depends},
 Replaces: cafe-utils (<< 1.9.0),
 Breaks: cafe-utils (<< 1.9.0),
-Description: MATE desktop utilities (common files)
- This package contains all the tools bundled as MATE utilities:
+Description: CAFE desktop utilities (common files)
+ This package contains all the tools bundled as CAFE utilities:
   - cafe-disk-usage-analyzer, a disk usage analyser
   - cafe-dictionary, a program which can look up the definition of words
     over the internet (including a panel applet to do the same)
@@ -73,12 +73,12 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
 Breaks: cafe-utils (<< 1.8.0),
 Replaces: cafe-utils (<< 1.8.0),
-Description: MATE desktop utilities (cafedict library)
- The MATE dictionary is a program which can look up the definition of words
- over the internet (including a panel applet to do the same). MATE
- dictionary is included in the MATE utilities bundle.
+Description: CAFE desktop utilities (cafedict library)
+ The CAFE dictionary is a program which can look up the definition of words
+ over the internet (including a panel applet to do the same). CAFE
+ dictionary is included in the CAFE utilities bundle.
  .
- This package provides the MATE dictionary library.
+ This package provides the CAFE dictionary library.
 
 Package: libcafedict-dev
 Section: libdevel
@@ -88,9 +88,9 @@ Depends: libcafedict6 (= ${binary:Version}),
 Breaks: cafe-utils (<< 1.5.0),
         cafe-utils-dev (<< 1.8.0),
 Replaces: cafe-utils-dev (<< 1.8.0),
-Description: MATE desktop utilities (cafedict development files)
- The MATE dictionary is a program which can look up the definition of words
- over the internet (including a panel applet to do the same). MATE
- dictionary is included in the MATE utilities bundle.
+Description: CAFE desktop utilities (cafedict development files)
+ The CAFE dictionary is a program which can look up the definition of words
+ over the internet (including a panel applet to do the same). CAFE
+ dictionary is included in the CAFE utilities bundle.
  .
- This package provides the development files of the MATE dictionary library.
+ This package provides the development files of the CAFE dictionary library.
