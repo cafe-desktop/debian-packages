@@ -1,0 +1,571 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: MATE Utils
+Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
+Source: https://git.mate-desktop.org/mate-utils/
+
+Files: mate-dictionary/libgdict/gdict-client-context.c
+       mate-dictionary/libgdict/gdict-client-context.h
+       mate-dictionary/libgdict/gdict-context-private.h
+       mate-dictionary/libgdict/gdict-context.c
+       mate-dictionary/libgdict/gdict-context.h
+       mate-dictionary/libgdict/gdict-database-chooser.c
+       mate-dictionary/libgdict/gdict-database-chooser.h
+       mate-dictionary/libgdict/gdict-debug.h
+       mate-dictionary/libgdict/gdict-defbox.c
+       mate-dictionary/libgdict/gdict-defbox.h
+       mate-dictionary/libgdict/gdict-private.h
+       mate-dictionary/libgdict/gdict-source-loader.c
+       mate-dictionary/libgdict/gdict-source-loader.h
+       mate-dictionary/libgdict/gdict-source.c
+       mate-dictionary/libgdict/gdict-source.h
+       mate-dictionary/libgdict/gdict-speller.c
+       mate-dictionary/libgdict/gdict-speller.h
+       mate-dictionary/libgdict/gdict-strategy-chooser.c
+       mate-dictionary/libgdict/gdict-strategy-chooser.h
+       mate-dictionary/libgdict/gdict-utils.c
+       mate-dictionary/libgdict/gdict-utils.h
+       mate-dictionary/libgdict/gdict.h
+Copyright: 2005-2006, Emmanuele Bassi <ebassi@gmail.com>
+License: LGPL-2+
+
+Files: mate-dictionary/src/gdict-about.h
+       mate-dictionary/src/gdict-app.c
+       mate-dictionary/src/gdict-app.h
+       mate-dictionary/src/gdict-common.c
+       mate-dictionary/src/gdict-common.h
+       mate-dictionary/src/gdict-pref-dialog.c
+       mate-dictionary/src/gdict-pref-dialog.h
+       mate-dictionary/src/gdict-print.c
+       mate-dictionary/src/gdict-print.h
+       mate-dictionary/src/gdict-source-dialog.c
+       mate-dictionary/src/gdict-source-dialog.h
+       mate-dictionary/src/gdict-window.c
+       mate-dictionary/src/gdict-window.h
+Copyright: 2005, Emmanuele Bassi
+License: GPL-2+
+
+Files: baobab/src/baobab-prefs.c
+       baobab/src/baobab-prefs.h
+       baobab/src/baobab-scan.c
+       baobab/src/baobab-scan.h
+       baobab/src/baobab-treeview.c
+       baobab/src/baobab-treeview.h
+       baobab/src/baobab-utils.c
+       baobab/src/baobab-utils.h
+       baobab/src/baobab.c
+       baobab/src/baobab.h
+       baobab/src/callbacks.c
+       baobab/src/callbacks.h
+Copyright: 2005-2006, Fabio Marzocca <thesaltydog@gmail.com>
+License: GPL-2+
+
+Files: mate-screenshot/src/screenshot-dialog.c
+       mate-screenshot/src/screenshot-dialog.h
+       mate-screenshot/src/screenshot-save.c
+       mate-screenshot/src/screenshot-save.h
+       mate-screenshot/src/screenshot-shadow.c
+       mate-screenshot/src/screenshot-shadow.h
+       mate-screenshot/src/screenshot-utils.h
+Copyright: 2001-2006, Jonathan Blandford <jrb@alum.mit.edu>
+License: GPL-2+
+
+Files: logview/src/logview-log.c
+       logview/src/logview-log.h
+       logview/src/logview-utils.c
+       logview/src/logview-utils.h
+       logview/src/logview-window.c
+       logview/src/logview-window.h
+Copyright: 1998, Cesar Miquel <miquel@df.uba.ar>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: logview/src/logview-about.h
+       logview/src/logview-findbar.c
+       logview/src/logview-findbar.h
+       logview/src/logview-loglist.c
+       logview/src/logview-loglist.h
+       logview/src/logview-prefs.h
+Copyright: 2004-2005, Vincent Noel <vnoel@cox.net>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: gsearchtool/src/gsearchtool-callbacks.c
+       gsearchtool/src/gsearchtool-callbacks.h
+       gsearchtool/src/gsearchtool-support.c
+       gsearchtool/src/gsearchtool-support.h
+       gsearchtool/src/gsearchtool.c
+       gsearchtool/src/gsearchtool.h
+Copyright: 1998-2002, Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: logview/src/logview-app.c
+       logview/src/logview-app.h
+       logview/src/logview-manager.c
+       logview/src/logview-manager.h
+Copyright: 2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: baobab/src/baobab-chart.c
+       baobab/src/baobab-chart.h
+       baobab/src/baobab-ringschart.c
+       baobab/src/baobab-treemap.c
+Copyright: 2006-2008, Igalia
+License: GPL-2+
+
+Files: logview/src/logview-filter-manager.c
+       logview/src/logview-filter-manager.h
+       logview/src/logview-filter.c
+       logview/src/logview-filter.h
+Copyright: 2009, Johannes Schmid <jhs@gnome.org>
+License: GPL-3+
+
+Files: gsearchtool/libeggsmclient/eggdesktopfile.h
+       gsearchtool/libeggsmclient/eggsmclient-private.h
+       gsearchtool/libeggsmclient/eggsmclient.c
+       gsearchtool/libeggsmclient/eggsmclient.h
+Copyright: 2007, Novell, Inc.
+License: LGPL-2+
+
+Files: mate-screenshot/src/screenshot-utils.c
+       mate-screenshot/src/screenshot-xfer.c
+       mate-screenshot/src/screenshot-xfer.h
+Copyright: 2001, 2006, Jonathan Blandford <jrb@alum.mit.edu>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: gsearchtool/libmateui-deprecated/gsearchtool-entry.c
+       gsearchtool/libmateui-deprecated/gsearchtool-entry.h
+Copyright: 2006, Paolo Borelli
+           2009, Dennis Cranston
+License: GPL-2+
+
+Files: mate-dictionary/src/gdict-applet.c
+       mate-dictionary/src/gdict-applet.h
+Copyright: 2005, Emmanuele Bassi <ebassi@gmail.com>
+License: GPL-2+
+
+Files: baobab/src/baobab-remote-connect-dialog.c
+       baobab/src/baobab-remote-connect-dialog.h
+Copyright: 2003, Red Hat, Inc.
+           2005, Fabio Marzocca
+License: GPL-2+
+
+Files: baobab/src/baobab-ringschart.h
+       baobab/src/baobab-treemap.h
+Copyright: 2008, igalia
+License: GPL-2+
+
+Files: mate-dictionary/src/gdict-aligned-window.c
+       mate-dictionary/src/gdict-aligned-window.h
+Copyright: 2003, Seth Nickell
+           2005, 2006, Emmanuele Bassi <ebassi@gmail.com>
+License: LGPL-2+
+
+Files: mate-dictionary/libgdict/gdict-source-chooser.c
+       mate-dictionary/libgdict/gdict-source-chooser.h
+Copyright: 2007, Emmanuele Bassi <ebassi@gnome.org>
+License: LGPL-2+
+
+Files: baobab/src/baobab-cell-renderer-progress.c
+       baobab/src/baobab-cell-renderer-progress.h
+Copyright: 2006, Paolo Borelli
+License: LGPL-2+
+
+Files: mate-dictionary/src/gdict-sidebar.c
+       mate-dictionary/src/gdict-sidebar.h
+Copyright: 2004, Red Hat, Inc.
+           2006, Emmanuele Bassi <ebassi@gmail.com>
+License: LGPL-2.1+
+
+Files: mate-dictionary/src/gdict-about.c
+Copyright: 2005-2006, Emmanuele Bassi
+License: GPL-2+
+
+Files: logview/src/logview-prefs.c
+Copyright: 1998, Cesar Miquel <miquel@df.uba.ar>
+           2004, Vincent Noel
+           2006, Emmanuele Bassi
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: mate-screenshot/src/mate-screenshot.c
+Copyright: 2001, Jonathan Blandford <jrb@alum.mit.edu>
+           2006, Emmanuele Bassi <ebassi@gnome.org>
+           2008, Cosimo Cecchi <cosimoc@gnome.org>
+License: GPL-2+
+
+Files: logview/src/logview-main.c
+Copyright: 2004-2008, Vincent Noel, Cosimo Cecchi and others
+License: GPL-2+
+
+Files: mate-disk-image-mounter/src/main.c
+Copyright: 2012, Red Hat, Inc.
+License: GPL-2+
+
+Files: gsearchtool/libeggsmclient/eggsmclient-xsmp.c
+Copyright: 1998, Carsten Schaar
+           1998, The Open Group
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: gsearchtool/libeggsmclient/eggdesktopfile.c
+Copyright: 1999, 2000, Red Hat, Inc.
+           2001, George Lebl
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: mate-utils.pot
+       po/*.po
+       po/gnome-copyrights.txt
+Copyright: 2009, The Gnome Foundation
+License: GPL-2+ or LGPL-2.1+
+Comment:
+ Using licenses as found either in the COPYING or
+ the COPYING.libs file.
+
+Files: baobab/help/*
+Copyright: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Emmanuele Bassi <ebassi@cvs.mate.org>
+           Fabio Marzocca <thesaltydog@gmail.com>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           Gil Forcada <gforcada@gnome.org>
+           Ilkka Tuohela <hile@iki.fi>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Kenneth Nielsen <k.nielsen81@gmail.com>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Milo Casagrande <milo@ubuntu.com>
+           Petr Kovar <pknbe@volny.cz>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Roberto Majadas <telemaco@openshine.com>
+           Simos Xenitellis <simos@gnome.org>
+           Timo Jyrinki <timo.jyrinki@iki.fi>
+           Tomasz Dominikowski <tdominikowski@aviary.pl>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Yannig Marchegay <yannig@marchegay.org>
+           Andrea Zagli <azagli@libero.it>
+           Ask Hjorth Larsen <asklarsen@gmail.com>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Kevin-Wei-2 <kevin_wei3@yahoo.com.tw>
+           Lucas Lommer <llommer@svn.mate.org>
+           Mario Blättermann <mario.blaettermann@t-online.de>
+           Maxim V. Dziumanenko <dziumanenko@softprom.kiev.ua>
+           Philip Withnall <philip@tecnocode.co.uk>
+           TeliuTe <teliute@163.com>
+           Tomasz Dominikowski <dominikowski@gmail.com>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+           Βασίλης Κοντογιάνης <vasilisk@ics.forth.gr>
+License: GFDL-1.1+
+
+Files: gsearchtool/help/*
+Copyright: Changwoo Ryu <cwryu@debian.org>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Jonas Haag <jonas@jonashaag.de>
+           Dennis Cranston <dennis_cranston@yahoo.com>
+           Emmanuele Bassi <ebassi@cvs.gnome.org>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           German Poo-Caaman~o <gpoo@ubiobio.cl>
+           Ilkka Tuohela <hile@iki.fi>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jan Arne Petersen <jpetersen@jpetersen.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Philipp Kerling <k.philipp@gmail.com>
+           Simos Xenitellis <simos@gnome.org>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Changwoo Ryu <cwryu@debian.org>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Marek Černocký <marek@manet.cz>
+           Mario Blättermann <mariobl@gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Milo Casagrande <milo@ubuntu.com>
+           Sterios Prosiniklis <steriosprosiniklis@gmail.com>
+           TeliuTe <teliute@163.com>
+           Vasiliy Faronov <qvvx@yandex.ru>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+License: GFDL-1.1+
+
+Files: logview/help/*
+Copyright: Changwoo Ryu <cwryu@debian.org>
+           Christophe Bliard <christophe.bliard@trux.info>
+           Claude Paroz <claude@2xlibre.net>
+           Cosimo Cecchi <cosimoc@gnome.org>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Emmanuele Bassi <ebassi@cvs.gnome.org>
+           Francisco Javier F. Serrador <serrador@cvs.gnome.org>
+           German Poo-Caaman~o <gpoo@ubiobio.cl>
+           Gil Forcada <gforcada@gnome.org>
+           Ilkka Tuohela <hile@iki.fi>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Kjartan Maraas <kmaraas@gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <mvd@mylinux.ua>
+           Milo Casagrande <milo@ubuntu.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Simos Xenitellis <simos@gnome.org>
+           Timo Jyrinki <timo.jyrinki@iki.fi>
+           V. Mironov <sergo@bk.ru>
+           Adrian Guniš <andygun696@gmail.com>
+           Bakaoukas Nikolaos <nikolaosx1@gmail.com>
+           Changwoo Ryu <cwryu@debian.org>
+           Claude Paroz <claude@2xlibre.net>
+           Daniel Nylander <po@danielnylander.se>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Mario Blättermann <mariobl@gnome.org>
+           Maxim V. Dziumanenko <mvd@mylinux.ua>
+           Milo Casagrande <milo@ubuntu.com>
+           Philip Withnall <philip@tecnocode.co.uk>
+           Sergey V. Mironov <sergo@bk.ru>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+License: GFDL-1.1+
+
+Files: mate-dictionary/help/*
+Copyright: Christophe Bliard <christophe.bliard@trux.info>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Dennis Cranston <dennis_cranston@yahoo.com>
+           Emmanuele Bassi <ebassi@cvs.gnome.org>
+           Francisco Javier F. Serrador <serrador@openshine.com>
+           German Poo-Caaman~o <gpoo@ubiobio.cl>
+           Ilkka Tuohela <<hile@iki.fi>>
+           Inaki Larranaga Murgoitio <dooteo@euskalgnu.org>
+           Jordi Mas <jmas@softcatala.org>
+           Jorge Gonzalez <jorgegonz@svn.gnome.org>
+           Kjartan Maraas <kmaraas@gnome.org>
+           Luca Ferretti <elle.uca@libero.it>
+           Mario Blättermann <mariobl@svn.gnome.org>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.ru>
+           Nikos Charonitakis <nikosx@gmail.com>
+           Simos Xenitellis <simos@gnome.org>
+           Yannig Marchegay <yannig@marchegay.org>
+           Andrea Zagli <azagli@inwind.it>
+           Claude Paroz <paroz@email.ch>
+           Daniel Nylander <po@danielnylander.se>
+           David Lodge <dave@cirt.net>
+           Fotis Tsamis <ftsamis@gmail.com>
+           Gil Forcada <gilforcada@guifi.net>
+           Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
+           Joe Hansen <joedalton2@yahoo.dk>
+           Jorge González <jorgegonz@svn.mate.org>
+           Jukka Heikkilä <jutsco@gmail.com>
+           Mario Blättermann <mario.blaettermann@t-online.de>
+           Maxim Dziumanenko <dziumanenko@gmail.com>
+           Nickolay V. Shmyrev <nshmyrev@yandex.r>
+           Petr Kovar <pknbe@volny.cz>
+           TeliuTe <teliute@163.com>
+           Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
+License: GFDL-1.1+
+
+Files: .travis.yml
+       .tx/config
+       .github/issue_template.md
+       .github/FUNDING.yml
+       baobab/data/Makefile.am
+       baobab/data/*.ui
+       baobab/data/*.1
+       baobab/data/*.in
+       baobab/data/org.mate.disk-usage-analyzer.gresource.xml
+       baobab/AUTHORS
+       baobab/Makefile.am
+       baobab/README
+       baobab/TODO
+       baobab/pixmaps/Makefile.am
+       baobab/pixmaps/hicolor_apps_scalable_mate-disk-usage-analyzer.svg
+       baobab/pixmaps/*.png
+       baobab/src/Makefile.am
+       gsearchtool/data/Makefile.am
+       gsearchtool/data/*.png
+       gsearchtool/libmateui-deprecated/Makefile.am
+       gsearchtool/AUTHORS
+       gsearchtool/Makefile.am
+       gsearchtool/*.1
+       gsearchtool/*.in
+       gsearchtool/src/Makefile.am
+       gsearchtool/libeggsmclient/Makefile.am
+       logview/data/*.1
+       logview/data/*.in
+       logview/data/*.ui
+       logview/data/*.xml
+       logview/data/icons/*
+       logview/data/Makefile.am
+       logview/src/Makefile.am
+       logview/src/logview-marshal.list
+       logview/src/tests/Makefile.am
+       logview/src/tests/test-reader.c
+       logview/Makefile.am
+       logview/TODO
+       mate-dictionary/data/Makefile.am
+       mate-dictionary/data/*.1
+       mate-dictionary/data/*.in
+       mate-dictionary/data/*.ui
+       mate-dictionary/data/*.xml
+       mate-dictionary/docs/reference/gdict/Makefile.am
+       mate-dictionary/docs/reference/gdict/gdict*
+       mate-dictionary/docs/reference/gdict/*.in
+       mate-dictionary/docs/reference/Makefile.am
+       mate-dictionary/docs/Makefile.am
+       mate-dictionary/docs/source-configuration.txt
+       mate-dictionary/libgdict/Makefile.am
+       mate-dictionary/libgdict/*.in
+       mate-dictionary/libgdict/*.list
+       mate-dictionary/src/Makefile.am
+       mate-dictionary/src/main.c
+       mate-dictionary/AUTHORS
+       mate-dictionary/Makefile.am
+       mate-dictionary/README
+       mate-dictionary/TODO
+       mate-disk-image-mounter/Makefile.am
+       mate-disk-image-mounter/data/Makefile.am
+       mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in
+       mate-disk-image-mounter/src/Makefile.am
+       mate-screenshot/Makefile.am
+       mate-screenshot/*.1
+       mate-screenshot/*.in
+       mate-screenshot/*.ui
+       mate-screenshot/data/Makefile.am
+       mate-screenshot/data/org.mate.screenshot.gresource.xml
+       mate-screenshot/src/Makefile.am
+       po/LINGUAS
+       po/Makevars
+       po/POTFILES.*
+       AUTHORS
+       ChangeLog
+       Makefile.am
+       NEWS
+       README
+       THANKS
+       configure.ac
+       autogen.sh
+       makepot
+       mate-dictionary.pot
+       mate-disk-usage-analyzer.pot
+       mate-search-tool.pot
+       mate-system-log.pot
+Copyright: *No copyright*
+License: GPL-2+ or LGPL-2.1+
+Comment:
+ Using licenses as found either in the COPYING or
+ the COPYING.libs file.
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ MA  02110-1301  USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2,1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".

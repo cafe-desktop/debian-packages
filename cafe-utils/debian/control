@@ -1,0 +1,96 @@
+Source: mate-utils
+Section: x11
+Priority: optional
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
+           Stefano Karapetsas <stefano@karapetsas.com>,
+           Vangelis Mouhtsis <vangelis@gnugr.org>,
+           Martin Wimpress <code@flexion.org>,
+Build-Depends: debhelper-compat (=12),
+               dpkg-dev (>= 1.16.1.1),
+               gtk-doc-tools,
+               intltool,
+               libcanberra-gtk3-dev,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libgtop2-dev,
+               libmate-panel-applet-dev (>= 1.18),
+               libudisks2-dev,
+               libx11-dev,
+               libxext-dev,
+               libxt-dev,
+               mate-common (>= 1.18),
+               librsvg2-bin,
+               x11proto-xext-dev,
+               xsltproc,
+               yelp-tools,
+               zlib1g-dev,
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: http://www.mate-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-utils
+Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-utils.git
+
+Package: mate-utils
+Architecture: any
+Depends: libmatedict6 (= ${binary:Version}),
+         mate-desktop-common,
+         mate-utils-common (>= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: MATE desktop utilities
+ This package contains all the tools bundled as MATE utilities:
+  - mate-disk-usage-analyzer, a disk usage analyser
+  - mate-dictionary, a program which can look up the definition of words
+    over the internet (including a panel applet to do the same)
+  - mate-search-tool, with which one can find files by name or content
+  - mate-system-log, a log viewing application
+  - mate-screenshot, a tool to take desktop screenshots and save them into
+    a file
+
+Package: mate-utils-common
+Architecture: all
+Depends: ${misc:Depends},
+Replaces: mate-utils (<< 1.9.0),
+Breaks: mate-utils (<< 1.9.0),
+Description: MATE desktop utilities (common files)
+ This package contains all the tools bundled as MATE utilities:
+  - mate-disk-usage-analyzer, a disk usage analyser
+  - mate-dictionary, a program which can look up the definition of words
+    over the internet (including a panel applet to do the same)
+  - mate-search-tool, with which one can find files by name or content
+  - mate-system-log, a log viewing application
+  - mate-screenshot, a tool to take desktop screenshots and save them into
+    a file
+ .
+ This package contains the architecture independent files.
+
+Package: libmatedict6
+Section: libs
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: mate-utils (<< 1.8.0),
+Replaces: mate-utils (<< 1.8.0),
+Description: MATE desktop utilities (matedict library)
+ The MATE dictionary is a program which can look up the definition of words
+ over the internet (including a panel applet to do the same). MATE
+ dictionary is included in the MATE utilities bundle.
+ .
+ This package provides the MATE dictionary library.
+
+Package: libmatedict-dev
+Section: libdevel
+Architecture: any
+Depends: libmatedict6 (= ${binary:Version}),
+         ${misc:Depends},
+Breaks: mate-utils (<< 1.5.0),
+        mate-utils-dev (<< 1.8.0),
+Replaces: mate-utils-dev (<< 1.8.0),
+Description: MATE desktop utilities (matedict development files)
+ The MATE dictionary is a program which can look up the definition of words
+ over the internet (including a panel applet to do the same). MATE
+ dictionary is included in the MATE utilities bundle.
+ .
+ This package provides the development files of the MATE dictionary library.
