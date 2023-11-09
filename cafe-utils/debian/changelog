@@ -238,7 +238,7 @@ cafe-utils (1.14.0-1) unstable; urgency=medium
     + Versioned B-D: libcafe-panel-applet-dev (>= 1.14)
     + Versioned B-D: cafe-common (>= 1.14)
   * debian/rules:
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
   * debian/rules:
     + Add --with-gtk=3.0
   * debian/copyright:
@@ -308,7 +308,7 @@ cafe-utils (1.10.2+gfdl1-1) unstable; urgency=medium
       FIXME: drop the upstream version suffix completely with next upstream
       release).
   * debian/rules,debian/cafe-utils-common.install:
-    + Stop installing MateConf .convert file/folder.
+    + Stop installing CafeConf .convert file/folder.
   * debian/copyright:
     + Use same indentation style for help files.
 
