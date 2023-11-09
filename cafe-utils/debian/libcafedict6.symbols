@@ -1,5 +1,5 @@
-libmatedict.so.6 libmatedict6 #MINVER#
-* Build-Depends-Package: libmatedict-dev
+libcafedict.so.6 libcafedict6 #MINVER#
+* Build-Depends-Package: libcafedict-dev
  DBType@Base 1.8.0
  StratType@Base 1.8.0
  _gdict_database_new@Base 1.8.0

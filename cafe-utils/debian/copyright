@@ -1,46 +1,46 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Utils
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-utils/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-utils/
 
-Files: mate-dictionary/libgdict/gdict-client-context.c
-       mate-dictionary/libgdict/gdict-client-context.h
-       mate-dictionary/libgdict/gdict-context-private.h
-       mate-dictionary/libgdict/gdict-context.c
-       mate-dictionary/libgdict/gdict-context.h
-       mate-dictionary/libgdict/gdict-database-chooser.c
-       mate-dictionary/libgdict/gdict-database-chooser.h
-       mate-dictionary/libgdict/gdict-debug.h
-       mate-dictionary/libgdict/gdict-defbox.c
-       mate-dictionary/libgdict/gdict-defbox.h
-       mate-dictionary/libgdict/gdict-private.h
-       mate-dictionary/libgdict/gdict-source-loader.c
-       mate-dictionary/libgdict/gdict-source-loader.h
-       mate-dictionary/libgdict/gdict-source.c
-       mate-dictionary/libgdict/gdict-source.h
-       mate-dictionary/libgdict/gdict-speller.c
-       mate-dictionary/libgdict/gdict-speller.h
-       mate-dictionary/libgdict/gdict-strategy-chooser.c
-       mate-dictionary/libgdict/gdict-strategy-chooser.h
-       mate-dictionary/libgdict/gdict-utils.c
-       mate-dictionary/libgdict/gdict-utils.h
-       mate-dictionary/libgdict/gdict.h
+Files: cafe-dictionary/libgdict/gdict-client-context.c
+       cafe-dictionary/libgdict/gdict-client-context.h
+       cafe-dictionary/libgdict/gdict-context-private.h
+       cafe-dictionary/libgdict/gdict-context.c
+       cafe-dictionary/libgdict/gdict-context.h
+       cafe-dictionary/libgdict/gdict-database-chooser.c
+       cafe-dictionary/libgdict/gdict-database-chooser.h
+       cafe-dictionary/libgdict/gdict-debug.h
+       cafe-dictionary/libgdict/gdict-defbox.c
+       cafe-dictionary/libgdict/gdict-defbox.h
+       cafe-dictionary/libgdict/gdict-private.h
+       cafe-dictionary/libgdict/gdict-source-loader.c
+       cafe-dictionary/libgdict/gdict-source-loader.h
+       cafe-dictionary/libgdict/gdict-source.c
+       cafe-dictionary/libgdict/gdict-source.h
+       cafe-dictionary/libgdict/gdict-speller.c
+       cafe-dictionary/libgdict/gdict-speller.h
+       cafe-dictionary/libgdict/gdict-strategy-chooser.c
+       cafe-dictionary/libgdict/gdict-strategy-chooser.h
+       cafe-dictionary/libgdict/gdict-utils.c
+       cafe-dictionary/libgdict/gdict-utils.h
+       cafe-dictionary/libgdict/gdict.h
 Copyright: 2005-2006, Emmanuele Bassi <ebassi@gmail.com>
 License: LGPL-2+
 
-Files: mate-dictionary/src/gdict-about.h
-       mate-dictionary/src/gdict-app.c
-       mate-dictionary/src/gdict-app.h
-       mate-dictionary/src/gdict-common.c
-       mate-dictionary/src/gdict-common.h
-       mate-dictionary/src/gdict-pref-dialog.c
-       mate-dictionary/src/gdict-pref-dialog.h
-       mate-dictionary/src/gdict-print.c
-       mate-dictionary/src/gdict-print.h
-       mate-dictionary/src/gdict-source-dialog.c
-       mate-dictionary/src/gdict-source-dialog.h
-       mate-dictionary/src/gdict-window.c
-       mate-dictionary/src/gdict-window.h
+Files: cafe-dictionary/src/gdict-about.h
+       cafe-dictionary/src/gdict-app.c
+       cafe-dictionary/src/gdict-app.h
+       cafe-dictionary/src/gdict-common.c
+       cafe-dictionary/src/gdict-common.h
+       cafe-dictionary/src/gdict-pref-dialog.c
+       cafe-dictionary/src/gdict-pref-dialog.h
+       cafe-dictionary/src/gdict-print.c
+       cafe-dictionary/src/gdict-print.h
+       cafe-dictionary/src/gdict-source-dialog.c
+       cafe-dictionary/src/gdict-source-dialog.h
+       cafe-dictionary/src/gdict-window.c
+       cafe-dictionary/src/gdict-window.h
 Copyright: 2005, Emmanuele Bassi
 License: GPL-2+
 
@@ -59,13 +59,13 @@ Files: baobab/src/baobab-prefs.c
 Copyright: 2005-2006, Fabio Marzocca <thesaltydog@gmail.com>
 License: GPL-2+
 
-Files: mate-screenshot/src/screenshot-dialog.c
-       mate-screenshot/src/screenshot-dialog.h
-       mate-screenshot/src/screenshot-save.c
-       mate-screenshot/src/screenshot-save.h
-       mate-screenshot/src/screenshot-shadow.c
-       mate-screenshot/src/screenshot-shadow.h
-       mate-screenshot/src/screenshot-utils.h
+Files: cafe-screenshot/src/screenshot-dialog.c
+       cafe-screenshot/src/screenshot-dialog.h
+       cafe-screenshot/src/screenshot-save.c
+       cafe-screenshot/src/screenshot-save.h
+       cafe-screenshot/src/screenshot-shadow.c
+       cafe-screenshot/src/screenshot-shadow.h
+       cafe-screenshot/src/screenshot-utils.h
 Copyright: 2001-2006, Jonathan Blandford <jrb@alum.mit.edu>
 License: GPL-2+
 
@@ -126,21 +126,21 @@ Files: gsearchtool/libeggsmclient/eggdesktopfile.h
 Copyright: 2007, Novell, Inc.
 License: LGPL-2+
 
-Files: mate-screenshot/src/screenshot-utils.c
-       mate-screenshot/src/screenshot-xfer.c
-       mate-screenshot/src/screenshot-xfer.h
+Files: cafe-screenshot/src/screenshot-utils.c
+       cafe-screenshot/src/screenshot-xfer.c
+       cafe-screenshot/src/screenshot-xfer.h
 Copyright: 2001, 2006, Jonathan Blandford <jrb@alum.mit.edu>
            2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
-Files: gsearchtool/libmateui-deprecated/gsearchtool-entry.c
-       gsearchtool/libmateui-deprecated/gsearchtool-entry.h
+Files: gsearchtool/libcafeui-deprecated/gsearchtool-entry.c
+       gsearchtool/libcafeui-deprecated/gsearchtool-entry.h
 Copyright: 2006, Paolo Borelli
            2009, Dennis Cranston
 License: GPL-2+
 
-Files: mate-dictionary/src/gdict-applet.c
-       mate-dictionary/src/gdict-applet.h
+Files: cafe-dictionary/src/gdict-applet.c
+       cafe-dictionary/src/gdict-applet.h
 Copyright: 2005, Emmanuele Bassi <ebassi@gmail.com>
 License: GPL-2+
 
@@ -155,14 +155,14 @@ Files: baobab/src/baobab-ringschart.h
 Copyright: 2008, igalia
 License: GPL-2+
 
-Files: mate-dictionary/src/gdict-aligned-window.c
-       mate-dictionary/src/gdict-aligned-window.h
+Files: cafe-dictionary/src/gdict-aligned-window.c
+       cafe-dictionary/src/gdict-aligned-window.h
 Copyright: 2003, Seth Nickell
            2005, 2006, Emmanuele Bassi <ebassi@gmail.com>
 License: LGPL-2+
 
-Files: mate-dictionary/libgdict/gdict-source-chooser.c
-       mate-dictionary/libgdict/gdict-source-chooser.h
+Files: cafe-dictionary/libgdict/gdict-source-chooser.c
+       cafe-dictionary/libgdict/gdict-source-chooser.h
 Copyright: 2007, Emmanuele Bassi <ebassi@gnome.org>
 License: LGPL-2+
 
@@ -171,13 +171,13 @@ Files: baobab/src/baobab-cell-renderer-progress.c
 Copyright: 2006, Paolo Borelli
 License: LGPL-2+
 
-Files: mate-dictionary/src/gdict-sidebar.c
-       mate-dictionary/src/gdict-sidebar.h
+Files: cafe-dictionary/src/gdict-sidebar.c
+       cafe-dictionary/src/gdict-sidebar.h
 Copyright: 2004, Red Hat, Inc.
            2006, Emmanuele Bassi <ebassi@gmail.com>
 License: LGPL-2.1+
 
-Files: mate-dictionary/src/gdict-about.c
+Files: cafe-dictionary/src/gdict-about.c
 Copyright: 2005-2006, Emmanuele Bassi
 License: GPL-2+
 
@@ -188,7 +188,7 @@ Copyright: 1998, Cesar Miquel <miquel@df.uba.ar>
            2008, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
-Files: mate-screenshot/src/mate-screenshot.c
+Files: cafe-screenshot/src/cafe-screenshot.c
 Copyright: 2001, Jonathan Blandford <jrb@alum.mit.edu>
            2006, Emmanuele Bassi <ebassi@gnome.org>
            2008, Cosimo Cecchi <cosimoc@gnome.org>
@@ -198,7 +198,7 @@ Files: logview/src/logview-main.c
 Copyright: 2004-2008, Vincent Noel, Cosimo Cecchi and others
 License: GPL-2+
 
-Files: mate-disk-image-mounter/src/main.c
+Files: cafe-disk-image-mounter/src/main.c
 Copyright: 2012, Red Hat, Inc.
 License: GPL-2+
 
@@ -214,7 +214,7 @@ Copyright: 1999, 2000, Red Hat, Inc.
            2007, Novell, Inc.
 License: LGPL-2+
 
-Files: mate-utils.pot
+Files: cafe-utils.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright: 2009, The Gnome Foundation
@@ -229,7 +229,7 @@ Copyright: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
            Claude Paroz <claude@2xlibre.net>
            Daniel Nylander <po@danielnylander.se>
            David Lodge <dave@cirt.net>
-           Emmanuele Bassi <ebassi@cvs.mate.org>
+           Emmanuele Bassi <ebassi@cvs.cafe.org>
            Fabio Marzocca <thesaltydog@gmail.com>
            Francisco Javier F. Serrador <serrador@openshine.com>
            Gil Forcada <gforcada@gnome.org>
@@ -256,10 +256,10 @@ Copyright: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
            Daniel Nylander <po@danielnylander.se>
            Gil Forcada <gilforcada@guifi.net>
            Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
-           Jorge González <jorgegonz@svn.mate.org>
+           Jorge González <jorgegonz@svn.cafe.org>
            Jukka Heikkilä <jutsco@gmail.com>
            Kevin-Wei-2 <kevin_wei3@yahoo.com.tw>
-           Lucas Lommer <llommer@svn.mate.org>
+           Lucas Lommer <llommer@svn.cafe.org>
            Mario Blättermann <mario.blaettermann@t-online.de>
            Maxim V. Dziumanenko <dziumanenko@softprom.kiev.ua>
            Philip Withnall <philip@tecnocode.co.uk>
@@ -299,7 +299,7 @@ Copyright: Changwoo Ryu <cwryu@debian.org>
            David Lodge <dave@cirt.net>
            Gil Forcada <gilforcada@guifi.net>
            Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
-           Jorge González <jorgegonz@svn.mate.org>
+           Jorge González <jorgegonz@svn.cafe.org>
            Jukka Heikkilä <jutsco@gmail.com>
            Marek Černocký <marek@manet.cz>
            Mario Blättermann <mariobl@gnome.org>
@@ -343,7 +343,7 @@ Copyright: Changwoo Ryu <cwryu@debian.org>
            Daniel Nylander <po@danielnylander.se>
            Gil Forcada <gilforcada@guifi.net>
            Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
-           Jorge González <jorgegonz@svn.mate.org>
+           Jorge González <jorgegonz@svn.cafe.org>
            Jukka Heikkilä <jutsco@gmail.com>
            Mario Blättermann <mariobl@gnome.org>
            Maxim V. Dziumanenko <mvd@mylinux.ua>
@@ -354,7 +354,7 @@ Copyright: Changwoo Ryu <cwryu@debian.org>
            Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
 License: GFDL-1.1+
 
-Files: mate-dictionary/help/*
+Files: cafe-dictionary/help/*
 Copyright: Christophe Bliard <christophe.bliard@trux.info>
            Daniel Nylander <po@danielnylander.se>
            David Lodge <dave@cirt.net>
@@ -382,7 +382,7 @@ Copyright: Christophe Bliard <christophe.bliard@trux.info>
            Gil Forcada <gilforcada@guifi.net>
            Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
            Joe Hansen <joedalton2@yahoo.dk>
-           Jorge González <jorgegonz@svn.mate.org>
+           Jorge González <jorgegonz@svn.cafe.org>
            Jukka Heikkilä <jutsco@gmail.com>
            Mario Blättermann <mario.blaettermann@t-online.de>
            Maxim Dziumanenko <dziumanenko@gmail.com>
@@ -400,18 +400,18 @@ Files: .travis.yml
        baobab/data/*.ui
        baobab/data/*.1
        baobab/data/*.in
-       baobab/data/org.mate.disk-usage-analyzer.gresource.xml
+       baobab/data/org.cafe.disk-usage-analyzer.gresource.xml
        baobab/AUTHORS
        baobab/Makefile.am
        baobab/README
        baobab/TODO
        baobab/pixmaps/Makefile.am
-       baobab/pixmaps/hicolor_apps_scalable_mate-disk-usage-analyzer.svg
+       baobab/pixmaps/hicolor_apps_scalable_cafe-disk-usage-analyzer.svg
        baobab/pixmaps/*.png
        baobab/src/Makefile.am
        gsearchtool/data/Makefile.am
        gsearchtool/data/*.png
-       gsearchtool/libmateui-deprecated/Makefile.am
+       gsearchtool/libcafeui-deprecated/Makefile.am
        gsearchtool/AUTHORS
        gsearchtool/Makefile.am
        gsearchtool/*.1
@@ -430,37 +430,37 @@ Files: .travis.yml
        logview/src/tests/test-reader.c
        logview/Makefile.am
        logview/TODO
-       mate-dictionary/data/Makefile.am
-       mate-dictionary/data/*.1
-       mate-dictionary/data/*.in
-       mate-dictionary/data/*.ui
-       mate-dictionary/data/*.xml
-       mate-dictionary/docs/reference/gdict/Makefile.am
-       mate-dictionary/docs/reference/gdict/gdict*
-       mate-dictionary/docs/reference/gdict/*.in
-       mate-dictionary/docs/reference/Makefile.am
-       mate-dictionary/docs/Makefile.am
-       mate-dictionary/docs/source-configuration.txt
-       mate-dictionary/libgdict/Makefile.am
-       mate-dictionary/libgdict/*.in
-       mate-dictionary/libgdict/*.list
-       mate-dictionary/src/Makefile.am
-       mate-dictionary/src/main.c
-       mate-dictionary/AUTHORS
-       mate-dictionary/Makefile.am
-       mate-dictionary/README
-       mate-dictionary/TODO
-       mate-disk-image-mounter/Makefile.am
-       mate-disk-image-mounter/data/Makefile.am
-       mate-disk-image-mounter/data/mate-disk-image-mounter.desktop.in
-       mate-disk-image-mounter/src/Makefile.am
-       mate-screenshot/Makefile.am
-       mate-screenshot/*.1
-       mate-screenshot/*.in
-       mate-screenshot/*.ui
-       mate-screenshot/data/Makefile.am
-       mate-screenshot/data/org.mate.screenshot.gresource.xml
-       mate-screenshot/src/Makefile.am
+       cafe-dictionary/data/Makefile.am
+       cafe-dictionary/data/*.1
+       cafe-dictionary/data/*.in
+       cafe-dictionary/data/*.ui
+       cafe-dictionary/data/*.xml
+       cafe-dictionary/docs/reference/gdict/Makefile.am
+       cafe-dictionary/docs/reference/gdict/gdict*
+       cafe-dictionary/docs/reference/gdict/*.in
+       cafe-dictionary/docs/reference/Makefile.am
+       cafe-dictionary/docs/Makefile.am
+       cafe-dictionary/docs/source-configuration.txt
+       cafe-dictionary/libgdict/Makefile.am
+       cafe-dictionary/libgdict/*.in
+       cafe-dictionary/libgdict/*.list
+       cafe-dictionary/src/Makefile.am
+       cafe-dictionary/src/main.c
+       cafe-dictionary/AUTHORS
+       cafe-dictionary/Makefile.am
+       cafe-dictionary/README
+       cafe-dictionary/TODO
+       cafe-disk-image-mounter/Makefile.am
+       cafe-disk-image-mounter/data/Makefile.am
+       cafe-disk-image-mounter/data/cafe-disk-image-mounter.desktop.in
+       cafe-disk-image-mounter/src/Makefile.am
+       cafe-screenshot/Makefile.am
+       cafe-screenshot/*.1
+       cafe-screenshot/*.in
+       cafe-screenshot/*.ui
+       cafe-screenshot/data/Makefile.am
+       cafe-screenshot/data/org.cafe.screenshot.gresource.xml
+       cafe-screenshot/src/Makefile.am
        po/LINGUAS
        po/Makevars
        po/POTFILES.*
@@ -473,10 +473,10 @@ Files: .travis.yml
        configure.ac
        autogen.sh
        makepot
-       mate-dictionary.pot
-       mate-disk-usage-analyzer.pot
-       mate-search-tool.pot
-       mate-system-log.pot
+       cafe-dictionary.pot
+       cafe-disk-usage-analyzer.pot
+       cafe-search-tool.pot
+       cafe-system-log.pot
 Copyright: *No copyright*
 License: GPL-2+ or LGPL-2.1+
 Comment:
