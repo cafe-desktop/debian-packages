@@ -1,0 +1,570 @@
+mate-session-manager (1.24.1-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0006_util-Blacklist-some-session-specific-variables.patch. Fix
+      systemd-logind originated problems when unlocking screen saver.
+      (Closes: #986100). Thanks to Simon McVittie and Iain Lane for
+      digging into this.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 17 May 2021 00:11:38 +0200
+
+mate-session-manager (1.24.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release
+  * debian/patches:
+    + Drop 0006-desktop-spec-v1.1.patch. Applied upstream.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump DH compat level to version 13.
+  * debian/patches:
+    + Trivial rebase of 0005_lock-session-before-user-switch.patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 14:30:25 +0200
+
+mate-session-manager (1.24.0-2) unstable; urgency=medium
+
+  * debian/control:
+    + Add B-D libgles-dev on hurd-any and kfreebsd-any. Thanks to Svante Signell
+      for providing the patch. (Closes: #951544).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 20 Feb 2020 07:58:04 +0100
+
+mate-session-manager (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Update Depends: to support MATE Desktop 1.24.
+    + Add B-D: autoconf-archive.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 12:38:46 +0100
+
+mate-session-manager (1.22.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_fix_gnome_keyring_timeout.patch. Applied upstream.
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to 'no'.
+    + Bump Standards-Version: to 4.4.1. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 15 Dec 2019 16:08:17 +0100
+
+mate-session-manager (1.22.2-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_fix_gnome_keyring_timeout.patch. GNOME_KEYRING_LIFETIME_FD was removed from
+      gnome-keyring in 2009. Use new control protocol for daemon. (LP: #1846987)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Oct 2019 10:51:27 +0200
+
+mate-session-manager (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_hide_NoDisplay_apps.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 22:56:52 +0200
+
+mate-session-manager (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_fix-mate-wm-script.patch. Applied upstream.
+    + Add 0001_hide_NoDisplay_apps.patch. Hide NoDisplay Apps in Startup
+      Applications.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 18:09:53 +0200
+
+mate-session-manager (1.20.2-1) unstable; urgency=medium
+
+  * debian/default-settings/mate/defaults.list:
+    + Reference firefox-esr and thunderbird rather than iceweasel and icedove.
+      (Closes: #911223).
+  * debian/control:
+    + Bump Standards-Version: to 4.3.0. No changes needed.
+  * debian/{control,compat}:
+    + Drop compat file, switch to debhelper-compat notation in control file.
+    + Bump to DH compat level version 12.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Jan 2019 14:48:56 +0100
+
+mate-session-manager (1.20.1-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Fix 1001_fix-mate-wm-script.patch. Drop set -x for debugging.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 06 Jul 2018 15:09:55 +0200
+
+mate-session-manager (1.20.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Add 1001_fix-mate-wm-script.patch. Fix mate-wm script that reports '<wm>'
+      as WINDOW_MANAGER (quoted), not just <wm>. (Closes: #889907).
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+  * debian/copyright:
+    + Use secure URI for copyright format.
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+    + Update copyright attributions.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 06 Jul 2018 14:13:35 +0200
+
+mate-session-manager (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.1-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control (already in 1.19.1-0ubuntu1):
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    * Bump Standards-Version: to 4.1.3. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/{control,compat}:
+    + Bump DH version level to 11.
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Feb 2018 16:16:51 +0100
+
+mate-session-manager (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:55 +0000
+
+mate-session-manager (1.19.1-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 23:12:41 +0000
+
+mate-session-manager (1.18.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1000_add_style_class_logout-dialog.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Nov 2017 09:43:17 +0100
+
+mate-session-manager (1.18.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 1000_add_style_class_logout-dialog.patch.
+    + Drop
+      2000_revert_updating_environment_for_dbus_and_systemd_user_session.patch.
+      Obsolete.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Aug 2017 16:22:31 +0200
+
+mate-session-manager (1.18.1-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/patches: Add
+    2000_revert_updating_environment_for_dbus_and_systemd_user_session.patch.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 16:28:32 +0200
+
+mate-session-manager (1.16.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 18:15:47 +0100
+
+mate-session-manager (1.16.0-2) unstable; urgency=medium
+
+  * debian/mate-session-manager.postinst:
+    + Use prio 50 when registering mate-session as x-session-manager
+      alternative. (Closes: #845997).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Nov 2016 09:39:54 +0100
+
+mate-session-manager (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.0-0ubuntu1 upload
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned B-D: libgtk-3-dev (>= 3.14).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 02 Oct 2016 21:54:05 +0200
+
+mate-session-manager (1.15.0-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
+
+mate-session-manager (1.14.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + dbgsym: Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 11:17:14 +0200
+
+mate-session-manager (1.14.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + B-D: libgtk-3-dev
+    + Drop B-D: libmate-desktop-dev.
+    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned D (mate-session-manager): mate-desktop-common (>= 1.14).
+    + Processed with wrap-and-sort.
+  * debian/rules:
+    + Add --with-gtk=3.0
+  * debian/mate-session-manager.install:
+    + Processed with wrap-and-sort.
+  * debian/patches:
+    + Drop 1003_typo-fix.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards: to 3.9.8. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 May 2016 10:50:10 +0200
+
+mate-session-manager (1.12.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Bump Standards: to 3.9.7. No changes needed.
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Enable all hardening flags.
+  * debian/control:
+    + Use encrypted URLs for Vcs-*: field.
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 08 Apr 2016 10:27:02 +0200
+
+mate-session-manager (1.12.1-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0005_lock-session-before-user-switch.patch. Lock screen before user
+      switch request if user switching is requested from within the logout
+      dialog window. (Closes: #809798).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Jan 2016 09:45:41 +0100
+
+mate-session-manager (1.12.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 1002_libsystemd-transition.patch. Applied upstream.
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev (>= 1.12).
+
+  [ Mike Gabriel ]
+  * debian-mate-default-settings_gtk-accessibility.sh:
+    + Use single = instead of == (which is a bashism). (Closes: #805382).
+  * debian/copyright:
+    + Fix one comment where the Comment: field identifier was missing.
+  * debian-mate-default-settings:
+    + Check that default application pinning via /etc/mate/defaults.list
+      really works. No observable issues in MATE 1.12. (Closes: #805502).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 03 Jan 2016 09:58:51 +0100
+
+mate-session-manager (1.10.2-4) unstable; urgency=medium
+
+  * debian-mate-default-settings: Introduce new bin:package shipping some
+    Debian specific MATE defaults, this package should genuinely co-exist
+    with other <vendor>-mate-defaults-settings packages, e.g. as
+    ubuntu-mate-default-settings from Ubuntu MATE.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 19 Oct 2015 12:26:18 +0200
+
+mate-session-manager (1.10.2-3) unstable; urgency=medium
+
+  * debian/defaults.list:
+    + Add a list of default applications for handling various MIME types.
+      For making this defaults.list file perceivable by the MATE desktop
+      components, we add /usr/share/mate/ (where the defaults.list file is
+      placed) to XDG_DATA_DIRS during Xsession startup. (Closes: #778302).
+  * debian/patches:
+    + Update 1002_libsystemd-transition.patch. Rebase against latest upstream.
+    + Add 1003_typo-fix.patch. Typo fix in g_warning message in
+      gsd-idle-monitor.c.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Oct 2015 07:19:10 +0200
+
+mate-session-manager (1.10.2-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Add to D (mate-session-manager): mate-desktop-common.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Sep 2015 11:44:32 +0200
+
+mate-session-manager (1.10.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Remove superfluous build dependencies.
+  * debian/rules:
+    + Remove superfluous build options.
+
+  [ John Paul Adrian Glaubitz ]
+  * Fix minor typo in debian/control (an -> and).
+  * Fix minor spelling mistake in debian/control (in -> into).
+  * Upload to unstable.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Sun, 16 Aug 2015 17:45:34 +0200
+
+mate-session-manager (1.10.1-1~exp1) experimental; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Featuring "change user" functionality with LightDM. (Closes:
+      #770615).
+  * debian/patches:
+    + Drop 0001_msmgnome-Allow-users-to-disable-one-or-both-compatib.patch.
+      Applied upstream.
+    + Drop 0002_msmgnome-Allow-users-to-disable-one-or-both-compatib.patch.
+      Applied upstream.
+    + Drop 0003_set-XDG-CURRENT-DESKTOP-if-empty.patch. Applied upstream.
+    + Drop 0004_no-crash-if-no-req-apps-found.patch. Applied upstream.
+    + Drop 1001_hypen-used-as-minus-sign-man-page-fix.patch. Applied
+      upstream.
+  * debian/control: processed with wrap-and-sort
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned B-D: mate-common (>= 1.10).
+    + Add versioned B-D: libmate-desktop-dev (>= 1.9.3).
+  * debian/copyright:
+    + Update to this upstream release.
+  * debian/patches:
+    + Update 1002_libsystemd-transition.patch. Add patch header.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 16 Jun 2015 20:13:02 +0200
+
+mate-session-manager (1.8.2-3) unstable; urgency=medium
+
+  * Re-upload to unstable.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 19 May 2015 17:25:18 +0200
+
+mate-session-manager (1.8.2-2) experimental; urgency=medium
+
+  * debian/patches:
+    + Add 1002_libsystemd-transition.patch. Make sure autoconf looks for
+      the correct .pc file when searching for libsystemd-dev.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 11 Mar 2015 11:50:34 +0100
+
+mate-session-manager (1.8.2-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Including GLib >= 2.43 compatibility patch. (Closes: #778775).
+  * debian/control:
+    + Update B-D: libsystemd-login-dev -> libsystemd-dev. (Closes: #779776).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 11 Mar 2015 10:55:15 +0100
+
+mate-session-manager (1.8.1-8) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0004_no-crash-if-no-req-apps-found.patch. Avoid dereferencing NULL
+      pointer, avoid m-s-m crashing if no required applications can be found.
+      (Closes: #778817).
+    + Update 0001_msmgnome-Allow-users-to-disable-one-or-both-compatib.patch.
+      Fix typo in gsettings schema file. (Closes: #778826).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 08:14:50 +0100
+
+mate-session-manager (1.8.1-7) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0002_msmgnome-Allow-users-to-disable-one-or-both-compatib.patch.
+      Follow-up patch for previously added dconf switch that handles
+      gnome-keyring and smproxy compat mode (see: #775198). (Closes:
+      #775571).
+    + Add 0003_set-XDG-CURRENT-DESKTOP-if-empty.patch. Make sure that
+      XDG_CURRENT_DESKTOP gets set if not already set by DM. (Closes:
+      #775905).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 21 Jan 2015 14:11:56 +0100
+
+mate-session-manager (1.8.1-6) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_msmgnome-Allow-users-to-disable-one-or-both-compatib.patch.
+      Allow users to disable gnome-compat options (i.e. interaction with
+      gnome-keyring and/or gnome-smproxy). (Closes: #775189).
+  * debian/copyright:
+    + Add missing entry for file mate-session/gsm-systemd.c.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Jan 2015 10:04:21 +0100
+
+mate-session-manager (1.8.1-5) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Use --without-systemd configure option for kfreebsd builds. (Closes:
+      #744264).
+    + Use upstream's NEWS file as upstream ChangeLog.
+  * debian/copyright:
+    + Really mention all upstream files. Drop information for
+      not-anymore-existing files.
+  * debian/control:
+    + Don't use the package name as SYNOPSIS.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 24 Oct 2014 13:47:51 +0200
+
+mate-session-manager (1.8.1-4) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * Add Provides: x-session-manager.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 18:33:36 +0200
+
+mate-session-manager (1.8.1-3) unstable; urgency=low
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules: Replace on dh_install --list-missing -> --fail-missing.
+
+  [ Mike Gabriel ]
+  * postinst/prerm:
+    + Tab'ify package scripts.
+  * debian/control:
+    + Drop B-D: libupower-glib-dev. MATE's session manager currently fails
+      to build against upcoming upower version (>= 0.99). (Closes: 748934).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 14:17:58 +0200
+
+mate-session-manager (1.8.1-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * postinst/prerm:
+    + Tab'ify package scripts.
+
+  [ Stefano Karapetsas ]
+  * debian/control:
+    + Modify B-D: Use [linux-any] for libsystemd-login-dev. Allow build with
+      non-Linux kernels.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 14:28:07 +0200
+
+mate-session-manager (1.8.1-1) unstable; urgency=low
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/copyright:
+    + Point to git.mate-desktop.org in Source: field.
+    + Adapt to file changes in new upstream source tree.
+  * debian/rules:
+    + Build package using autogen.sh.
+    + Enable parallel builds.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+  * debian/patches:
+    + Drop 1001_fix-mate-bugtracker-url-in-man-pages.patch. Applied upstream.
+    + Drop 1002_hyphen-as-minus-sign-in-man-page.patch. Applied Upstream.
+    + Drop 1003_add-keywords-to-desktop-files.patch. Applied upstream.
+    + Add 1001_hypen-used-as-minus-sign-man-page-fix.patch. Fix typo in man
+      pages, that triggers lintian's hyphen-used-as-minus-sign test.
+  * lintian: Drop unused overrides.
+
+  [ Stefano Karapetsas ]
+  * Add libsystemd-login-dev dependency to build systemd support.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 09 Apr 2014 00:56:17 +0200
+
+mate-session-manager (1.6.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #730212).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 17 Feb 2014 10:04:14 +0100

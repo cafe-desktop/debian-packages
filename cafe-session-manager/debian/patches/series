@@ -1,0 +1,2 @@
+0005_lock-session-before-user-switch.patch
+0006_util-Blacklist-some-session-specific-variables.patch
