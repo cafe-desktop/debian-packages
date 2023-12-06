@@ -1,11 +1,8 @@
 Source: cafe-session-manager
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
-Uploaders: Mike Gabriel <sunweaver@debian.org>,
-           John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Maintainer: Pablo Barciela <scow@riseup.net>
+Uploaders: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Build-Depends: autoconf-archive,
