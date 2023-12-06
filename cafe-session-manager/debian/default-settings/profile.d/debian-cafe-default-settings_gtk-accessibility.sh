@@ -17,9 +17,9 @@
 if [ "x$DESKTOP_SESSION" = "xcafe" ] || [ "x$XDG_SESSION_DESKTOP" = "xcafe" ]; then
 	# Ensure CTK accessibility modules are active.
 	if [ -z "$CTK_MODULES" ] ; then
-		CTK_MODULES=gail:atk-bridge
+		CTK_MODULES=cail:atk-bridge
 	else
-		CTK_MODULES="$CTK_MODULES:gail:atk-bridge"
+		CTK_MODULES="$CTK_MODULES:cail:atk-bridge"
 	fi
 	export CTK_MODULES
 fi
