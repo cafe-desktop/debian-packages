@@ -19,9 +19,9 @@
 
 if [ "x$DESKTOP_SESSION" = "xcafe" ] || [ "x$XDG_SESSION_DESKTOP" = "xcafe" ]; then
     if [ -z "$CTK_MODULES" ] ; then
-        CTK_MODULES="canberra-ctk-module"
+        CTK_MODULES="kanberra-ctk-module"
     else
-        CTK_MODULES="$CTK_MODULES:canberra-ctk-module"
+        CTK_MODULES="$CTK_MODULES:kanberra-ctk-module"
     fi
     export CTK_MODULES
 
