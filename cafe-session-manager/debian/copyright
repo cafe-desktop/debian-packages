@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Session Manager
+Upstream-Name: CAFE Session Manager
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
 Source: https://git.cafe-desktop.org/cafe-session-manager/
 

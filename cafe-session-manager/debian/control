@@ -1,7 +1,7 @@
 Source: cafe-session-manager
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -47,7 +47,7 @@ Recommends: caja,
             cafe-settings-daemon,
 Breaks: cafe-settings-daemon (<< 1.11.0),
 Provides: x-session-manager,
-Description: Session manager of the MATE desktop environment
+Description: Session manager of the CAFE desktop environment
  This package contains a session that can be started from a display
  manager such as MDM. It will load all necessary applications for a
  full-featured user session.
@@ -55,8 +55,8 @@ Description: Session manager of the MATE desktop environment
  The session manager also features the ability to save a running session
  and restore it later.
  .
- This version is configured to start the MATE desktop, based on the
- MATE panel.
+ This version is configured to start the CAFE desktop, based on the
+ CAFE panel.
 
 Package: debian-cafe-default-settings
 Breaks: cafe-session-manager (<< 1.10.2-4~),
@@ -66,7 +66,7 @@ Depends: desktop-file-utils,
 Suggests: cafe-desktop-environment-core (>= 1.10.0),
 Conflicts: mint-cafe-default-settings,
            ubuntu-cafe-default-settings,
-Description: Default settings for MATE on Debian
+Description: Default settings for CAFE on Debian
  This package comes together with cafe-session-manager as provided by upstream
  but does a little tweaking here and there to provide best experience of the
- MATE desktop environment on Debian systems.
+ CAFE desktop environment on Debian systems.

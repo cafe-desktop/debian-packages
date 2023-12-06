@@ -8,14 +8,14 @@ Things like XDG_SESSION_ID should not be uploaded to the environment.
 For example this is broken currently:
 
   1. SSH to your machine
-  2. Log in to MATE Shell
+  2. Log in to CAFE Shell
   3. Log out
   4. Log in again
   5. Lock the screen
   6. Try to unlock
 
 You can't, and this is because the XDG_SESSION_ID from the first session
-(step 2) has leaked through to the second one (step 4), and so MATE
+(step 2) has leaked through to the second one (step 4), and so CAFE
 Shell is listening to the `logind` `UnlockSession` signal for the wrong
 session. The SSH session established in step 1 serves to keep the
 `systemd --user` instance alive, so that the state is not torn down
@@ -23,7 +23,7 @@ between logins.
 
 Original patch for GNOME by Iain Lane <iainl@gnome.org>.
 
-Patch ported over to MATE's session manager by Mike Gabriel
+Patch ported over to CAFE's session manager by Mike Gabriel
 <sunweaver@debian.org>.
 
 ---

@@ -1,4 +1,4 @@
-# If we are running the MATE session, source ~/.caferc
+# If we are running the CAFE session, source ~/.caferc
 
 BASESTARTUP=${STARTUP%% *}
 BASESTARTUP=${BASESTARTUP##*/}
@@ -7,9 +7,9 @@ if [ "$BASESTARTUP" = x-session-manager ]; then
 fi
 case "$BASESTARTUP" in
   cafe-session*)
-    MATERC=$HOME/.caferc
-    if [ -r "$MATERC" ]; then
-      . "$MATERC"
+    CAFERC=$HOME/.caferc
+    if [ -r "$CAFERC" ]; then
+      . "$CAFERC"
     fi
     # We prepend /usr/share/cafe since its defaults.list actually points
     # to /etc so it is configurable.
