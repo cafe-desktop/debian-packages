@@ -1,4 +1,4 @@
-# If we are running the MATE session, source ~/.materc
+# If we are running the MATE session, source ~/.caferc
 
 BASESTARTUP=${STARTUP%% *}
 BASESTARTUP=${BASESTARTUP##*/}
@@ -6,17 +6,17 @@ if [ "$BASESTARTUP" = x-session-manager ]; then
     BASESTARTUP=$(basename $(readlink /etc/alternatives/x-session-manager))
 fi
 case "$BASESTARTUP" in
-  mate-session*)
-    MATERC=$HOME/.materc
+  cafe-session*)
+    MATERC=$HOME/.caferc
     if [ -r "$MATERC" ]; then
       . "$MATERC"
     fi
-    # We prepend /usr/share/mate since its defaults.list actually points
+    # We prepend /usr/share/cafe since its defaults.list actually points
     # to /etc so it is configurable.
     if [ -z "$XDG_DATA_DIRS" ]; then
-      XDG_DATA_DIRS=/usr/share/mate:/usr/local/share/:/usr/share/
+      XDG_DATA_DIRS=/usr/share/cafe:/usr/local/share/:/usr/share/
     else
-      XDG_DATA_DIRS=/usr/share/mate:"$XDG_DATA_DIRS"
+      XDG_DATA_DIRS=/usr/share/cafe:"$XDG_DATA_DIRS"
     fi
     export XDG_DATA_DIRS
     ;;

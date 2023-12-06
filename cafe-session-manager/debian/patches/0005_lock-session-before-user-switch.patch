@@ -4,8 +4,8 @@ Date:   Wed Dec 9 13:52:31 2015 +0100
 
     Enforce screen locking before requesting to switch to a different user.
 
---- a/mate-session/gsm-manager.c
-+++ b/mate-session/gsm-manager.c
+--- a/cafe-session/gsm-manager.c
++++ b/cafe-session/gsm-manager.c
 @@ -3415,6 +3415,19 @@
          case GTK_RESPONSE_DELETE_EVENT:
                  break;
@@ -17,7 +17,7 @@ Date:   Wed Dec 9 13:52:31 2015 +0100
 +                 */
 +                GError *error;
 +                error = NULL;
-+                g_spawn_command_line_async ("mate-screensaver-command --lock", &error);
++                g_spawn_command_line_async ("cafe-screensaver-command --lock", &error);
 +                if (error != NULL) {
 +                    g_warning ("Couldn't lock screen: %s", error->message);
 +                    g_error_free (error);

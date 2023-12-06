@@ -1,4 +1,4 @@
-Document: mate-session-manager
+Document: cafe-session-manager
 Title: MATE Session documentation
 Author: William Jon McCann
 Abstract: This documents describes how MATE sessions integrate with DBUS.
@@ -7,5 +7,5 @@ Abstract: This documents describes how MATE sessions integrate with DBUS.
 Section: Programming/X11
 
 Format: HTML
-Index: /usr/share/doc/mate-session-manager/dbus/mate-session.html
-Files: /usr/share/doc/mate-session-manager/dbus/mate-session.html
+Index: /usr/share/doc/cafe-session-manager/dbus/cafe-session.html
+Files: /usr/share/doc/cafe-session-manager/dbus/cafe-session.html

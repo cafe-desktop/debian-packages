@@ -1,7 +1,7 @@
 From 29bd7ce251aa617d9f93c8ed95ee7ab49c8684ef Mon Sep 17 00:00:00 2001
 From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 Date: Mon, 17 May 2021 00:05:16 +0200
-Forwarded: https://github.com/mate-desktop/mate-session-manager/pull/282
+Forwarded: https://github.com/cafe-desktop/cafe-session-manager/pull/282
 Subject: [PATCH] util: Blacklist some session-specific variables
 
 Things like XDG_SESSION_ID should not be uploaded to the environment.
@@ -27,11 +27,11 @@ Patch ported over to MATE's session manager by Mike Gabriel
 <sunweaver@debian.org>.
 
 ---
- mate-session/gsm-util.c | 17 ++++++++++++++++-
+ cafe-session/gsm-util.c | 17 ++++++++++++++++-
  1 file changed, 16 insertions(+), 1 deletion(-)
 
---- a/mate-session/gsm-util.c
-+++ b/mate-session/gsm-util.c
+--- a/cafe-session/gsm-util.c
++++ b/cafe-session/gsm-util.c
 @@ -38,6 +38,13 @@
  
  static gchar *_saved_session_dir = NULL;

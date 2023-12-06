@@ -14,7 +14,7 @@
 # On Debian systems, the complete text of the GNU General Public
 # License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-if [ "x$DESKTOP_SESSION" = "xmate" ] || [ "x$XDG_SESSION_DESKTOP" = "xmate" ]; then
+if [ "x$DESKTOP_SESSION" = "xcafe" ] || [ "x$XDG_SESSION_DESKTOP" = "xcafe" ]; then
 	# Ensure GTK accessibility modules are active.
 	if [ -z "$GTK_MODULES" ] ; then
 		GTK_MODULES=gail:atk-bridge

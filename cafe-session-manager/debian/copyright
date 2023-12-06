@@ -1,40 +1,40 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Session Manager
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-session-manager/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-session-manager/
 
-Files: mate-session/gs-idle-monitor.c
-       mate-session/gs-idle-monitor.h
-       mate-session/gsm-dbus-client.c
-       mate-session/gsm-dbus-client.h
-       mate-session/gsm-inhibitor.c
-       mate-session/gsm-inhibitor.h
-       mate-session/gsm-presence.c
-       mate-session/gsm-presence.h
-       mate-session/test-client-dbus.c
-       mate-session/test-inhibit.c
+Files: cafe-session/gs-idle-monitor.c
+       cafe-session/gs-idle-monitor.h
+       cafe-session/gsm-dbus-client.c
+       cafe-session/gsm-dbus-client.h
+       cafe-session/gsm-inhibitor.c
+       cafe-session/gsm-inhibitor.h
+       cafe-session/gsm-presence.c
+       cafe-session/gsm-presence.h
+       cafe-session/test-client-dbus.c
+       cafe-session/test-inhibit.c
 Copyright: 2008-2009 Red Hat, Inc.
 License: GPL-2+
 
-Files: mate-session/gsm-app.c
-       mate-session/gsm-app.h
-       mate-session/gsm-autostart-app.c
-       mate-session/gsm-autostart-app.h
-       mate-session/gsm-client.c
-       mate-session/gsm-client.h
-       mate-session/gsm-xsmp-client.c
-       mate-session/main.c
+Files: cafe-session/gsm-app.c
+       cafe-session/gsm-app.h
+       cafe-session/gsm-autostart-app.c
+       cafe-session/gsm-autostart-app.h
+       cafe-session/gsm-client.c
+       cafe-session/gsm-client.h
+       cafe-session/gsm-xsmp-client.c
+       cafe-session/main.c
 Copyright: 2006-2007 Novell, Inc.
            2008, Red Hat, Inc.
 License: GPL-2+
 
-Files: mate-session/gsm-inhibit-dialog.c
-       mate-session/gsm-inhibit-dialog.h
-       mate-session/gsm-store.c
-       mate-session/gsm-store.h
-       mate-session/mdm-log.c
-       mate-session/mdm-log.h
-       mate-session/mdm-signal-handler.h
+Files: cafe-session/gsm-inhibit-dialog.c
+       cafe-session/gsm-inhibit-dialog.h
+       cafe-session/gsm-store.c
+       cafe-session/gsm-store.h
+       cafe-session/mdm-log.c
+       cafe-session/mdm-log.h
+       cafe-session/mdm-signal-handler.h
 Copyright: 2007-2008 William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
@@ -52,15 +52,15 @@ License: GPL-2+
 Files: capplet/gsm-app-dialog.c
        capplet/gsm-app-dialog.h
        capplet/gsm-properties-dialog.h
-       mate-session/gsm-manager.h
-       mate-session/gsm-xsmp-server.h
+       cafe-session/gsm-manager.h
+       cafe-session/gsm-xsmp-server.h
 Copyright: 2008, William Jon McCann <jmccann@redhat.com>
 License: GPL-2+
 
-Files: mate-session/gsm-session-save.c
-       mate-session/gsm-session-save.h
-       mate-session/gsm-util.c
-       mate-session/gsm-util.h
+Files: cafe-session/gsm-session-save.c
+       cafe-session/gsm-session-save.h
+       cafe-session/gsm-util.c
+       cafe-session/gsm-util.h
 Copyright: 2008, Lucas Rocha
 License: GPL-2+
 
@@ -73,30 +73,30 @@ License: LGPL-2+
 
 Files: capplet/gsp-keyfile.c
        capplet/gsp-keyfile.h
-       mate-session/gsm-xsmp-client.h
+       cafe-session/gsm-xsmp-client.h
 Copyright: 2007-2009 Novell, Inc.
 License: GPL-2+
 
-Files: mate-session/msm-gnome.c
-       mate-session/msm-gnome.h
+Files: cafe-session/msm-gnome.c
+       cafe-session/msm-gnome.h
 Copyright: 2004-2005 Benedikt Meurer <benny@xfce.org>
 License: GPL-2+
 
-Files: mate-session/mdm.c
-       mate-session/mdm.h
+Files: cafe-session/mdm.c
+       cafe-session/mdm.h
 Copyright: 2001, Queen of England
            2002-2003, George Lebl
            2005, Raffaele Sandrini
            2005, Red Hat, Inc.
 License: GPL-2+
 
-Files: mate-session/gsm-consolekit.c
-       mate-session/gsm-consolekit.h
+Files: cafe-session/gsm-consolekit.c
+       cafe-session/gsm-consolekit.h
 Copyright: 2008, Jon McCann <jmccann@redhat.com>
 License: GPL-2+
 
-Files: mate-session/gsm-manager.c
-       mate-session/gsm-xsmp-server.c
+Files: cafe-session/gsm-manager.c
+       cafe-session/gsm-xsmp-server.c
 Copyright: 2007, Novell, Inc.
            2008, Red Hat, Inc.
            2008, William Jon McCann <jmccann@redhat.com>
@@ -107,35 +107,35 @@ Copyright: 1999, Free Software Foundation, Inc.
            2008, Lucas Rocha
 License: GPL-2+
 
-Files: tools/mate-session-save.c
+Files: tools/cafe-session-save.c
 Copyright: 1998, Tom Tromey
            2008, Red Hat, Inc.
 License: GPL-2+
 
-Files: tools/mate-session-inhibit.c
+Files: tools/cafe-session-inhibit.c
 Copyright: 2012, Red Hat, Inc.
 License: GPL-2+
 
-Files: mate-session/gsm-logout-dialog.c
+Files: cafe-session/gsm-logout-dialog.c
 Copyright: 2006, Vincent Untz
            2008, Red Hat, Inc.
 License: GPL-2+
 
-Files: mate-session/mdm-signal-handler.c
+Files: cafe-session/mdm-signal-handler.c
 Copyright: 2006, Red Hat, Inc.
            2007, William Jon McCann <mccann@jhu.edu>
 License: GPL-2+
 
-Files: mate-session/gsm-systemd.c
-       mate-session/gsm-systemd.h
+Files: cafe-session/gsm-systemd.c
+       cafe-session/gsm-systemd.h
 Copyright: 2013, Stefano Karapetsas
 License: GPL-2+
 
-Files: ./mate-session/gsm-systemd.c
+Files: ./cafe-session/gsm-systemd.c
 Copyright: 2013, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-2+
 
-Files: mate-session/gsm-logout-dialog.h
+Files: cafe-session/gsm-logout-dialog.h
 Copyright: 2006, Vincent Untz
 License: GPL-2+
 
@@ -151,7 +151,7 @@ Copyright: 1999-2000, Red Hat Inc.
            2007, Novell, Inc.
 License: LGPL-2+
 
-Files: mate-session-manager.pot
+Files: cafe-session-manager.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright: 2004, Zuza Software Foundation
@@ -171,17 +171,17 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: tools/mate-session-check-accelerated-common.h
+Files: tools/cafe-session-check-accelerated-common.h
 Copyright: 2013, SUSE LINUX Products GmbH, Nuernberg, Germany.
 License: GPL-2+
 
-Files: tools/mate-session-check-accelerated-gl-helper.c
-       tools/mate-session-check-accelerated.c
+Files: tools/cafe-session-check-accelerated-gl-helper.c
+       tools/cafe-session-check-accelerated.c
 Copyright: 2006-2009 Red Hat, Inc.
            2010-2001, Novell, Inc.
 License: GPL-2+
 
-Files: tools/mate-session-check-accelerated-gles-helper.c
+Files: tools/cafe-session-check-accelerated-gles-helper.c
 Copyright: 2016, Endless Mobile, Inc
 License: GPL-2+
 
@@ -193,17 +193,17 @@ Files: .github/issue_template.md
        data/*.desktop.in*
        data/*.xml.in*
        data/hardware-compatibility
-       data/mate-wm
+       data/cafe-wm
        doc/dbus/config.xsl
        doc/dbus/dbus-introspect-docs.dtd
        doc/dbus/docbook.css
-       doc/dbus/mate-session.xml.in
+       doc/dbus/cafe-session.xml.in
        doc/dbus/spec-to-docbook.xsl
        doc/man/*.1
        doc/man/*.xml
-       mate-session/README
-       mate-session/gsm-marshal.list
-       mate-session/*.xml
+       cafe-session/README
+       cafe-session/gsm-marshal.list
+       cafe-session/*.xml
        po/LINGUAS
        po/Makevars
        po/POTFILES.*
@@ -230,7 +230,7 @@ Files: .github/issue_template.md
        NEWS
        README
        makepot
-       mate-session/Makefile.am
+       cafe-session/Makefile.am
        tools/Makefile.am
        autogen.sh
        configure.ac

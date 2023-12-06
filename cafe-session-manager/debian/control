@@ -1,7 +1,7 @@
-Source: mate-session-manager
+Source: cafe-session-manager
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -26,26 +26,26 @@ Build-Depends: autoconf-archive,
                libxt-dev,
                libxtst-dev,
                libgles-dev [hurd-any kfreebsd-any],
-               mate-common (>= 1.18),
+               cafe-common (>= 1.18),
                xmlto,
                xsltproc,
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-session-manager
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-session-manager.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-session-manager
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-session-manager.git
 
-Package: mate-session-manager
+Package: cafe-session-manager
 Architecture: any
 Depends: dbus-x11,
-         mate-desktop-common (>= 1.24),
-         mint-mate-default-settings | ubuntu-mate-default-settings | debian-mate-default-settings (>= ${source:Version}),
+         cafe-desktop-common (>= 1.24),
+         mint-cafe-default-settings | ubuntu-cafe-default-settings | debian-cafe-default-settings (>= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: caja,
             marco,
-            mate-panel,
-            mate-polkit,
-            mate-settings-daemon,
-Breaks: mate-settings-daemon (<< 1.11.0),
+            cafe-panel,
+            cafe-polkit,
+            cafe-settings-daemon,
+Breaks: cafe-settings-daemon (<< 1.11.0),
 Provides: x-session-manager,
 Description: Session manager of the MATE desktop environment
  This package contains a session that can be started from a display
@@ -58,15 +58,15 @@ Description: Session manager of the MATE desktop environment
  This version is configured to start the MATE desktop, based on the
  MATE panel.
 
-Package: debian-mate-default-settings
-Breaks: mate-session-manager (<< 1.10.2-4~),
+Package: debian-cafe-default-settings
+Breaks: cafe-session-manager (<< 1.10.2-4~),
 Architecture: all
 Depends: desktop-file-utils,
          ${misc:Depends},
-Suggests: mate-desktop-environment-core (>= 1.10.0),
-Conflicts: mint-mate-default-settings,
-           ubuntu-mate-default-settings,
+Suggests: cafe-desktop-environment-core (>= 1.10.0),
+Conflicts: mint-cafe-default-settings,
+           ubuntu-cafe-default-settings,
 Description: Default settings for MATE on Debian
- This package comes together with mate-session-manager as provided by upstream
+ This package comes together with cafe-session-manager as provided by upstream
  but does a little tweaking here and there to provide best experience of the
  MATE desktop environment on Debian systems.
