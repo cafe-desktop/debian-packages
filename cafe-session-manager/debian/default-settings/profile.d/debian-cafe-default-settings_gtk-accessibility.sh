@@ -15,11 +15,11 @@
 # License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
 if [ "x$DESKTOP_SESSION" = "xcafe" ] || [ "x$XDG_SESSION_DESKTOP" = "xcafe" ]; then
-	# Ensure GTK accessibility modules are active.
-	if [ -z "$GTK_MODULES" ] ; then
-		GTK_MODULES=gail:atk-bridge
+	# Ensure CTK accessibility modules are active.
+	if [ -z "$CTK_MODULES" ] ; then
+		CTK_MODULES=gail:atk-bridge
 	else
-		GTK_MODULES="$GTK_MODULES:gail:atk-bridge"
+		CTK_MODULES="$CTK_MODULES:gail:atk-bridge"
 	fi
-	export GTK_MODULES
+	export CTK_MODULES
 fi
