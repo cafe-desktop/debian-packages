@@ -19,9 +19,9 @@
 
 if [ "x$DESKTOP_SESSION" = "xcafe" ] || [ "x$XDG_SESSION_DESKTOP" = "xcafe" ]; then
     if [ -z "$CTK_MODULES" ] ; then
-        CTK_MODULES="canberra-gtk-module"
+        CTK_MODULES="canberra-ctk-module"
     else
-        CTK_MODULES="$CTK_MODULES:canberra-gtk-module"
+        CTK_MODULES="$CTK_MODULES:canberra-ctk-module"
     fi
     export CTK_MODULES
 
@@ -30,8 +30,8 @@ if [ "x$DESKTOP_SESSION" = "xcafe" ] || [ "x$XDG_SESSION_DESKTOP" = "xcafe" ]; t
 
     # Sadly this environment variable can cause applications to segfault.
     # For example:
-    #  - Telegram doesn't work with QT_STYLE_OVERRIDE=gtk
-    # export QT_STYLE_OVERRIDE=gtk
+    #  - Telegram doesn't work with QT_STYLE_OVERRIDE=ctk
+    # export QT_STYLE_OVERRIDE=ctk
 
     # Workaround clutter issue (LP: #1462445)
     export CLUTTER_BACKEND=x11
