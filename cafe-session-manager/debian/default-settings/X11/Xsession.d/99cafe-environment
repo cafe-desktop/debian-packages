@@ -28,6 +28,9 @@ if [ "x$DESKTOP_SESSION" = "xcafe" ] || [ "x$XDG_SESSION_DESKTOP" = "xcafe" ]; t
     # Disable CTK3 overlay scrollbars
     export CTK_OVERLAY_SCROLLING=0
 
+    # Disable GTK3 overlay scrollbars
+    export GTK_OVERLAY_SCROLLING=0
+
     # Sadly this environment variable can cause applications to segfault.
     # For example:
     #  - Telegram doesn't work with QT_STYLE_OVERRIDE=ctk
