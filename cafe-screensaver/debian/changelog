@@ -38,7 +38,7 @@ cafe-screensaver (1.22.2-2) unstable; urgency=medium
     + Add Rules-Requires-Root: field and set it to no.
   * debian/patches:
     + Trivial rebase of
-      1002_RDA-support-Make-MATE-s-screensaver-aware-of-being-r.patch.
+      1002_RDA-support-Make-CAFE-s-screensaver-aware-of-being-r.patch.
     + Add 1003_RDA-Disable-switch-user-button-if-session-is-remote.patch.
       Hide the switch user button if a session is remote.
 
@@ -79,9 +79,9 @@ cafe-screensaver (1.22.1-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/patches:
-    + Rebase 1002_RDA-support-Make-MATE-s-screensaver-aware-of-being-r.patch.
+    + Rebase 1002_RDA-support-Make-CAFE-s-screensaver-aware-of-being-r.patch.
       What was 1004_configure.ac-Explicitly-require-in-RDA-0.0.3.patch has
       been merged in to this single patch.
     + Drop 1003_cafe-screensaver-command-Support-unlocking-unlock-th.patch.
@@ -89,7 +89,7 @@ cafe-screensaver (1.22.1-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/patches:
-    + Rebase 1002_RDA-support-Make-MATE-s-screensaver-aware-of-being-r.patch.
+    + Rebase 1002_RDA-support-Make-CAFE-s-screensaver-aware-of-being-r.patch.
   * debian/{compat,control}:
     + Use debhelper-compat notation. Bump to DH compat level version 12.
   * debian/control:
@@ -114,7 +114,7 @@ cafe-screensaver (1.20.3-2) unstable; urgency=medium
   * debian/patches:
     + Add 1003_cafe-screensaver-command-Support-unlocking-unlock-th.patch.
       Support unlocking the screensaver via cafe-screensaver-command.
-    + Add 1002_RDA-support-Make-MATE-s-screensaver-aware-of-being-r.patch. Show
+    + Add 1002_RDA-support-Make-CAFE-s-screensaver-aware-of-being-r.patch. Show
       remote desktop session disconnect button when screensaver is locked.
     + Add 1004_configure.ac-Explicitly-require-in-RDA-0.0.3.patch. Explicitly
       require RDA 0.0.3 or higher.
@@ -176,7 +176,7 @@ cafe-screensaver (1.20.0-1) unstable; urgency=medium
   * debian/control (already in 1.19.1-0ubuntu1):
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
@@ -232,9 +232,9 @@ cafe-screensaver (1.18.1-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Vangelis Mouhtsis ]
   * debian/compat:
@@ -268,7 +268,7 @@ cafe-screensaver (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -278,7 +278,7 @@ cafe-screensaver (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 

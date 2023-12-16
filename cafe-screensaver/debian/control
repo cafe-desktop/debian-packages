@@ -1,7 +1,7 @@
 Source: cafe-screensaver
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -52,9 +52,9 @@ Suggests: rss-glx,
           xscreensaver-data,
 Breaks: cafe-screensaver-common (<< 1.9.0),
 Replaces: cafe-screensaver-common (<< 1.9.0),
-Description: MATE screen saver and locker
+Description: CAFE screen saver and locker
  cafe-screensaver is a screen saver and locker that aims to have simple,
- sane and secure defaults, and be well integrated with the MATE desktop.
+ sane and secure defaults, and be well integrated with the CAFE desktop.
  .
  It is designed to support, among other things:
  .
@@ -66,8 +66,8 @@ Package: cafe-screensaver-common
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: cafe-screensaver (<< 1.5.2),
-Description: MATE screen saver and locker (common files)
+Description: CAFE screen saver and locker (common files)
  cafe-screensaver is a screen saver and locker that aims to have simple,
- sane and secure defaults, and be well integrated with the MATE desktop.
+ sane and secure defaults, and be well integrated with the CAFE desktop.
  .
  This package contains the architecture independent files.
