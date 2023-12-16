@@ -1,7 +1,7 @@
-Source: mate-screensaver
+Source: cafe-screensaver
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -14,9 +14,9 @@ Build-Depends: debhelper-compat (= 13),
                libgl1-mesa-dev | libgl1-mesa-swx11-dev,
                libglib2.0-dev,
                libgtk-3-dev,
-               libmate-desktop-dev (>= 1.18),
-               libmate-menu-dev (>= 1.22),
-               libmatekbd-dev (>= 1.18),
+               libcafe-desktop-dev (>= 1.18),
+               libcafe-menu-dev (>= 1.22),
+               libcafekbd-dev (>= 1.18),
                libnotify-dev,
                libpam0g-dev,
                librda-dev (>= 0.0.3-2~),
@@ -28,32 +28,32 @@ Build-Depends: debhelper-compat (= 13),
                libxss-dev,
                libxt-dev,
                libxxf86vm-dev,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
                x11proto-scrnsaver-dev,
                x11proto-xext-dev,
                x11proto-xf86vidmode-dev,
                xmlto,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-screensaver
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-screensaver.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-screensaver
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-screensaver.git
 
-Package: mate-screensaver
+Package: cafe-screensaver
 Architecture: any
 Depends: dbus-x11,
-         mate-desktop-common,
-         mate-screensaver-common (= ${source:Version}),
-         mate-session-manager (>= 1.11.0),
+         cafe-desktop-common,
+         cafe-screensaver-common (= ${source:Version}),
+         cafe-session-manager (>= 1.11.0),
          ${misc:Depends},
          ${shlibs:Depends},
-Recommends: mate-power-manager,
+Recommends: cafe-power-manager,
 Suggests: rss-glx,
           xscreensaver-data,
-Breaks: mate-screensaver-common (<< 1.9.0),
-Replaces: mate-screensaver-common (<< 1.9.0),
+Breaks: cafe-screensaver-common (<< 1.9.0),
+Replaces: cafe-screensaver-common (<< 1.9.0),
 Description: MATE screen saver and locker
- mate-screensaver is a screen saver and locker that aims to have simple,
+ cafe-screensaver is a screen saver and locker that aims to have simple,
  sane and secure defaults, and be well integrated with the MATE desktop.
  .
  It is designed to support, among other things:
@@ -62,12 +62,12 @@ Description: MATE screen saver and locker
   * translation into other languages
   * user switching
 
-Package: mate-screensaver-common
+Package: cafe-screensaver-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: mate-screensaver (<< 1.5.2),
+Breaks: cafe-screensaver (<< 1.5.2),
 Description: MATE screen saver and locker (common files)
- mate-screensaver is a screen saver and locker that aims to have simple,
+ cafe-screensaver is a screen saver and locker that aims to have simple,
  sane and secure defaults, and be well integrated with the MATE desktop.
  .
  This package contains the architecture independent files.

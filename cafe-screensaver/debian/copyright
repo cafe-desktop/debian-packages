@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Screensaver
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-screensaver/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-screensaver/
 
 Files: savers/gs-theme-engine.c
        savers/gs-theme-engine.h
@@ -35,12 +35,12 @@ Files: savers/gs-theme-engine.c
        src/gs-watcher.h
        src/gs-window-x11.c
        src/gs-window.h
-       src/mate-screensaver-command.c
-       src/mate-screensaver-dialog.c
-       src/mate-screensaver-gl-helper.c
-       src/mate-screensaver-preferences.c
-       src/mate-screensaver.c
-       src/mate-screensaver.h
+       src/cafe-screensaver-command.c
+       src/cafe-screensaver-dialog.c
+       src/cafe-screensaver-gl-helper.c
+       src/cafe-screensaver-preferences.c
+       src/cafe-screensaver.c
+       src/cafe-screensaver.h
        src/test-fade.c
        src/test-passwd.c
        src/test-watcher.c
@@ -96,13 +96,13 @@ Copyright: 1991-2003, Jamie Zawinski <jwz@jwz.org>
            2004, William Jon McCann <mccann@jhu.edu>
 License: MIT~OldStyle
 
-Files: data/mate-screensaver-command.1
-       data/mate-screensaver-preferences.1
-       data/mate-screensaver.1
+Files: data/cafe-screensaver-command.1
+       data/cafe-screensaver-preferences.1
+       data/cafe-screensaver.1
 Copyright: *No copyright*
 License: GPL-2+
 
-Files: mate-screensaver.pot
+Files: cafe-screensaver.pot
        po/*.po
        po/ChangeLog
        po/gnome-copyrights.txt
@@ -129,13 +129,13 @@ Files: .build.yml
        data/Makefile.am
        data/xscreensaver-config.xsl
        data/*.ui
-       data/mate-screensaver
+       data/cafe-screensaver
        data/*.desktop.in
        data/*.pc.in
        data/*.menu.in
        data/*.service.in
        data/*.sh
-       data/org.mate.*
+       data/org.cafe.*
        data/images/Makefile.am
        data/images/*.svg
        data/images/cosmos/*

@@ -24,8 +24,8 @@ override_dh_install:
 	rm -rfv debian/tmp/usr/share/help/*/fdl/
 	rm -rfv debian/tmp/usr/share/help/*/gpl/
 	rm -rfv debian/tmp/usr/share/help/*/lgpl/
-	# For Debian we ship our own mate-screensaver PAM configuration...
-	rm -rfv debian/tmp/etc/pam.d/mate-screensaver
+	# For Debian we ship our own cafe-screensaver PAM configuration...
+	rm -rfv debian/tmp/etc/pam.d/cafe-screensaver
 	dh_install
 
 override_dh_auto_configure:
@@ -37,7 +37,7 @@ override_dh_auto_configure:
 	        --with-xscreensaverdir=/usr/share/xscreensaver/config \
 	        --with-xscreensaverhackdir=/usr/lib/xscreensaver \
 	        --with-mit-ext \
-	        --libexecdir=/usr/lib/mate-screensaver \
+	        --libexecdir=/usr/lib/cafe-screensaver \
 	        --with-console-kit \
 	        --with-libnotify \
 	        --enable-locking \
