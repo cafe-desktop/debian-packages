@@ -1,0 +1,420 @@
+From 02a195c95d1296c067f445d7bf85d238fbc84be4 Mon Sep 17 00:00:00 2001
+From: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date: Sat, 19 Jan 2019 22:58:55 +0100
+Subject: [PATCH] RDA support: Make MATE's screensaver aware of being run
+ inside a remote desktop technology.
+
+     This patch adds "Disconnect <remote-tech>" button to MATE's screensaver
+     (if the <remote-tech> supports disconnecting from a running session).
+
+     When this button gets clicked, the remote session will get suspended
+     via librda's API (RDA = Remote Desktop Awareness).
+---
+ configure.ac                  |  11 ++++
+ data/lock-dialog-default.ui   |  22 ++++++-
+ src/Makefile.am               |   4 ++
+ src/gs-lock-plug.c            | 117 ++++++++++++++++++++++++++++++++++
+ src/gs-window-x11.c           |  11 ++++
+ src/mate-screensaver-dialog.c |  13 ++++
+ 6 files changed, 175 insertions(+), 3 deletions(-)
+
+--- a/configure.ac
++++ b/configure.ac
+@@ -50,6 +50,7 @@
+ LIBMATE_MENU_REQUIRED_VERSION=1.21.0
+ MATE_DESKTOP_REQUIRED_VERSION=1.17.0
+ LIBMATEKBDUI_REQUIRED_VERSION=1.17.0
++RDA_REQUIRED_VERSION=0.0.3
+ 
+ AC_CHECK_HEADERS(unistd.h)
+ AC_CHECK_HEADERS(crypt.h sys/select.h)
+@@ -414,6 +415,15 @@
+ fi
+ 
+ dnl ---------------------------------------------------------------------------
++dnl - Check if Remote Desktop Awareness support is available
++dnl ---------------------------------------------------------------------------
++
++PKG_CHECK_MODULES(RDA, rda >= $RDA_REQUIRED_VERSION, have_rda=yes, have_rda=no)
++if test "x$have_rda" = "xyes"; then
++  AC_DEFINE(HAVE_RDA, 1, [Have the Remote Desktop Awareness library])
++fi
++
++dnl ---------------------------------------------------------------------------
+ dnl - The --enable-locking option
+ dnl ---------------------------------------------------------------------------
+ 
+@@ -1182,6 +1192,7 @@
+         Have enhanced shadow:     ${have_shadow_enhanced}
+         Have HPUX shadow:         ${have_shadow_hpux}
+         Have password helper:     ${have_passwd_helper}
++        Have RD awareness:        ${have_rda}
+         Authentication scheme:    ${AUTH_SCHEME}"
+ 
+ if test "x$need_setuid" = "xyes" -a "x$have_pam" != "xyes" ; then
+--- a/data/lock-dialog-default.ui
++++ b/data/lock-dialog-default.ui
+@@ -250,6 +250,22 @@
+                       </packing>
+                     </child>
+                     <child>
++                      <object class="GtkButton" id="auth-suspend-button">
++                        <property name="label" translatable="yes">_Disconnect</property>
++                        <property name="visible">False</property>
++                        <property name="can_focus">True</property>
++                        <property name="focus_on_click">False</property>
++                        <property name="can_default">True</property>
++                        <property name="receives_default">False</property>
++                        <property name="use_underline">True</property>
++                      </object>
++                      <packing>
++                        <property name="expand">False</property>
++                        <property name="fill">False</property>
++                        <property name="position">2</property>
++                      </packing>
++                    </child>
++                    <child>
+                       <object class="GtkButton" id="auth-logout-button">
+                         <property name="label" translatable="yes">_Log Out</property>
+                         <property name="visible">True</property>
+@@ -262,7 +278,7 @@
+                       <packing>
+                         <property name="expand">False</property>
+                         <property name="fill">False</property>
+-                        <property name="position">2</property>
++                        <property name="position">3</property>
+                       </packing>
+                     </child>
+                     <child>
+@@ -278,7 +294,7 @@
+                       <packing>
+                         <property name="expand">False</property>
+                         <property name="fill">False</property>
+-                        <property name="position">3</property>
++                        <property name="position">4</property>
+                       </packing>
+                     </child>
+                     <child>
+@@ -293,7 +309,7 @@
+                       <packing>
+                         <property name="expand">False</property>
+                         <property name="fill">False</property>
+-                        <property name="position">4</property>
++                        <property name="position">5</property>
+                       </packing>
+                     </child>
+                   </object>
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -33,6 +33,7 @@
+ 	$(LIBNOTIFY_CFLAGS)					\
+ 	$(SYSTEMD_CFLAGS)					\
+ 	$(LIBELOGIND_CFLAGS)					\
++	$(RDA_CFLAGS)						\
+ 	$(NULL)
+ 
+ bin_PROGRAMS = \
+@@ -130,6 +131,7 @@
+ test_window_LDADD =			\
+ 	$(MATE_SCREENSAVER_LIBS)	\
+ 	$(SAVER_LIBS)			\
++	$(RDA_LIBS)			\
+ 	$(NULL)
+ 
+ mate_screensaver_dialog_SOURCES = 	\
+@@ -158,6 +160,7 @@
+ 	$(AUTH_LIBS)			\
+ 	$(LIBMATEKBDUI_LIBS)		\
+ 	$(LIBNOTIFY_LIBS)		\
++	$(RDA_LIBS)			\
+ 	$(NULL)
+ 
+ BUILT_SOURCES = 		\
+@@ -218,6 +221,7 @@
+ 	$(SAVER_LIBS)			\
+ 	$(SYSTEMD_LIBS)			\
+ 	$(LIBELOGIND_LIBS)		\
++	$(RDA_LIBS)			\
+ 	$(NULL)
+ 
+ mate_screensaver_LDFLAGS = -export-dynamic
+--- a/src/gs-lock-plug.c
++++ b/src/gs-lock-plug.c
+@@ -39,6 +39,10 @@
+ #include <gtk/gtkx.h>
+ #include <gio/gio.h>
+ 
++#ifdef HAVE_RDA
++#include <rda/rda.h>
++#endif /* HAVE_RDA */
++
+ #define MATE_DESKTOP_USE_UNSTABLE_API
+ #include <libmate-desktop/mate-desktop-utils.h>
+ 
+@@ -101,6 +105,7 @@
+ 	GtkWidget   *auth_switch_button;
+ 	GtkWidget   *auth_cancel_button;
+ 	GtkWidget   *auth_logout_button;
++	GtkWidget   *auth_suspend_button;
+ 	GtkWidget   *auth_note_button;
+ 	GtkWidget   *note_tab;
+ 	GtkWidget   *note_tab_label;
+@@ -112,6 +117,9 @@
+ 
+ 	gboolean     caps_lock_on;
+ 	gboolean     switch_enabled;
++#ifdef HAVE_RDA
++	gboolean     suspend_enabled;
++#endif /* HAVE_RDA */
+ 	gboolean     leave_note_enabled;
+ 	gboolean     logout_enabled;
+ 	char        *logout_command;
+@@ -148,6 +156,9 @@
+     PROP_LOGOUT_ENABLED,
+     PROP_LOGOUT_COMMAND,
+     PROP_SWITCH_ENABLED,
++#ifdef HAVE_RDA
++    PROP_SUSPEND_ENABLED,
++#endif /* HAVE_RDA */
+     PROP_STATUS_MESSAGE
+ };
+ 
+@@ -1096,6 +1107,37 @@
+ 	}
+ }
+ 
++#ifdef HAVE_RDA
++static void
++gs_lock_plug_set_suspend_enabled (GSLockPlug *plug,
++                                  gboolean    suspend_enabled)
++{
++	g_return_if_fail (GS_LOCK_PLUG (plug));
++
++	if (plug->priv->suspend_enabled == suspend_enabled)
++	{
++		return;
++	}
++
++	plug->priv->suspend_enabled = suspend_enabled;
++	g_object_notify (G_OBJECT (plug), "suspend-enabled");
++
++	if (plug->priv->auth_suspend_button == NULL)
++	{
++		return;
++	}
++
++	if (suspend_enabled)
++	{
++		gtk_widget_show (plug->priv->auth_suspend_button);
++	}
++	else
++	{
++		gtk_widget_hide (plug->priv->auth_suspend_button);
++	}
++}
++#endif /* HAVE_RDA */
++
+ static void
+ gs_lock_plug_set_logout_command (GSLockPlug *plug,
+                                  const char *command)
+@@ -1159,6 +1201,11 @@
+ 	case PROP_SWITCH_ENABLED:
+ 		g_value_set_boolean (value, self->priv->switch_enabled);
+ 		break;
++#ifdef HAVE_RDA
++	case PROP_SUSPEND_ENABLED:
++		g_value_set_boolean (value, self->priv->suspend_enabled);
++		break;
++#endif /* HAVE_RDA */
+ 	case PROP_STATUS_MESSAGE:
+ 		g_value_set_string (value, self->priv->status_message);
+ 		break;
+@@ -1240,6 +1287,11 @@
+ 	case PROP_SWITCH_ENABLED:
+ 		gs_lock_plug_set_switch_enabled (self, g_value_get_boolean (value));
+ 		break;
++#ifdef HAVE_RDA
++	case PROP_SUSPEND_ENABLED:
++		gs_lock_plug_set_suspend_enabled (self, g_value_get_boolean (value));
++		break;
++#endif /* HAVE_RDA */
+ 	default:
+ 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
+ 		break;
+@@ -1329,6 +1381,15 @@
+ 	                                         NULL,
+ 	                                         FALSE,
+ 	                                         G_PARAM_READWRITE));
++#ifdef HAVE_RDA
++	g_object_class_install_property (object_class,
++	                                 PROP_SUSPEND_ENABLED,
++	                                 g_param_spec_boolean ("suspend-enabled",
++	                                         NULL,
++	                                         NULL,
++	                                         FALSE,
++	                                         G_PARAM_READWRITE));
++#endif /* HAVE_RDA */
+ 
+ 	binding_set = gtk_binding_set_by_class (klass);
+ 
+@@ -1456,6 +1517,25 @@
+ 	}
+ }
+ 
++#ifdef HAVE_RDA
++static void
++suspend_button_clicked (GtkButton  *button,
++                        GSLockPlug *plug)
++{
++	remove_response_idle (plug);
++
++	gs_lock_plug_set_sensitive (plug, FALSE);
++
++	plug->priv->response_idle_id = g_timeout_add (2000,
++	        (GSourceFunc)response_cancel_idle_cb,
++	        plug);
++
++	gs_lock_plug_set_busy (plug);
++
++	rda_session_suspend();
++}
++#endif
++
+ void
+ gs_lock_plug_set_busy (GSLockPlug *plug)
+ {
+@@ -1670,6 +1750,12 @@
+ 	gtk_widget_set_focus_on_click (GTK_WIDGET (plug->priv->auth_logout_button), FALSE);
+ 	gtk_widget_set_no_show_all (plug->priv->auth_logout_button, TRUE);
+ 
++	plug->priv->auth_suspend_button = gs_lock_plug_add_button (GS_LOCK_PLUG (plug),
++	                                  plug->priv->auth_action_area,
++	                                  _("Disconnect"));
++	gtk_widget_set_focus_on_click (GTK_WIDGET (plug->priv->auth_suspend_button), FALSE);
++	gtk_widget_set_no_show_all (plug->priv->auth_suspend_button, TRUE);
++
+ 	plug->priv->auth_cancel_button =  gs_lock_plug_add_button (GS_LOCK_PLUG (plug),
+ 	                                  plug->priv->auth_action_area,
+ 	                                  "gtk-cancel");
+@@ -2044,6 +2130,7 @@
+ 	plug->priv->auth_cancel_button = GTK_WIDGET (gtk_builder_get_object(builder, "auth-cancel-button"));
+ 	plug->priv->auth_logout_button = GTK_WIDGET (gtk_builder_get_object(builder, "auth-logout-button"));
+ 	plug->priv->auth_switch_button = GTK_WIDGET (gtk_builder_get_object(builder, "auth-switch-button"));
++	plug->priv->auth_suspend_button = GTK_WIDGET (gtk_builder_get_object(builder, "auth-suspend-button"));
+ 	plug->priv->auth_note_button = GTK_WIDGET (gtk_builder_get_object(builder, "auth-note-button"));
+ 	plug->priv->note_tab = GTK_WIDGET (gtk_builder_get_object(builder, "note-tab"));
+ 	plug->priv->note_tab_label = GTK_WIDGET (gtk_builder_get_object(builder, "note-tab-label"));
+@@ -2061,6 +2148,10 @@
+ 	{
+ 		gtk_widget_set_no_show_all (plug->priv->auth_switch_button, TRUE);
+ 	}
++	if (plug->priv->auth_suspend_button != NULL)
++	{
++		gtk_widget_set_no_show_all (plug->priv->auth_suspend_button, TRUE);
++	}
+ 	if (plug->priv->auth_note_button != NULL)
+ 	{
+ 		gtk_widget_set_no_show_all (plug->priv->auth_note_button, TRUE);
+@@ -2219,6 +2310,24 @@
+ 		}
+ 	}
+ 
++#ifdef HAVE_RDA
++	if (! plug->priv->suspend_enabled)
++	{
++		if (plug->priv->auth_suspend_button != NULL)
++		{
++			gtk_widget_hide (plug->priv->auth_suspend_button);
++		}
++	}
++	if (plug->priv->auth_suspend_button != NULL)
++	{
++		gchar *btn_label;
++		btn_label = g_strdup_printf (_("_Disconnect %s"), rda_get_remote_technology_name());
++		gs_debug ("Renaming remote suspension button to %s", btn_label);
++		gtk_button_set_label (GTK_BUTTON (plug->priv->auth_suspend_button), btn_label);
++		g_free (btn_label);
++	}
++#endif /* HAVE_RDA */
++
+ 	plug->priv->timeout = DIALOG_TIMEOUT_MSEC;
+ 
+ 	g_signal_connect (plug, "key_press_event",
+@@ -2255,6 +2364,14 @@
+ 		                  G_CALLBACK (switch_user_button_clicked), plug);
+ 	}
+ 
++#ifdef HAVE_RDA
++	if (plug->priv->auth_suspend_button != NULL)
++	{
++		g_signal_connect (plug->priv->auth_suspend_button, "clicked",
++		                  G_CALLBACK (suspend_button_clicked), plug);
++	}
++#endif /* HAVE_RDA */
++
+ 	if (plug->priv->auth_note_button != NULL)
+ 	{
+ 		g_signal_connect (plug->priv->auth_note_button, "clicked",
+--- a/src/gs-window-x11.c
++++ b/src/gs-window-x11.c
+@@ -32,6 +32,10 @@
+ #include <gtk/gtk.h>
+ #include <gtk/gtkx.h>
+ 
++#ifdef HAVE_RDA
++#include <rda/rda.h>
++#endif
++
+ #include "gs-window.h"
+ #include "gs-marshal.h"
+ #include "subprocs.h"
+@@ -1729,6 +1733,13 @@
+ 		command = g_string_append (command, " --enable-switch");
+ 	}
+ 
++#ifdef HAVE_RDA
++	if (rda_session_is_remote() && rda_session_can_be_suspended())
++	{
++		command = g_string_append (command, " --enable-suspend");
++	}
++#endif /* HAVE_RDA */
++
+ 	if (gs_debug_enabled ())
+ 	{
+ 		command = g_string_append (command, " --verbose");
+--- a/src/mate-screensaver-dialog.c
++++ b/src/mate-screensaver-dialog.c
+@@ -49,6 +49,9 @@
+ static gboolean show_version = FALSE;
+ static gboolean enable_logout = FALSE;
+ static gboolean enable_switch = FALSE;
++#ifdef HAVE_RDA
++static gboolean enable_suspend = FALSE;
++#endif /* HAVE_RDA */
+ static char* logout_command = NULL;
+ static char* status_message = NULL;
+ static char* away_message = NULL;
+@@ -57,6 +60,9 @@
+ 	{"verbose", 0, 0, G_OPTION_ARG_NONE, &verbose, N_("Show debugging output"), NULL},
+ 	{"version", 0, 0, G_OPTION_ARG_NONE, &show_version, N_("Version of this application"), NULL},
+ 	{"enable-logout", 0, 0, G_OPTION_ARG_NONE, &enable_logout, N_("Show the logout button"), NULL},
++#ifdef HAVE_RDA
++	{"enable-suspend", 0, 0, G_OPTION_ARG_NONE, &enable_suspend, N_("Show the suspend button if session is remote\n\t\t\t\t and suspension is supported"), NULL},
++#endif /* HAVE_RDA */
+ 	{"logout-command", 0, 0, G_OPTION_ARG_STRING, &logout_command, N_("Command to invoke from the logout button"), NULL},
+ 	{"enable-switch", 0, 0, G_OPTION_ARG_NONE, &enable_switch, N_("Show the switch user button"), NULL},
+ 	{"status-message", 0, 0, G_OPTION_ARG_STRING, &status_message, N_("Message to show in the dialog"), N_("MESSAGE")},
+@@ -389,6 +395,13 @@
+ 		g_object_set(widget, "logout-enabled", TRUE, NULL);
+ 	}
+ 
++#ifdef HAVE_RDA
++	if (enable_suspend)
++	{
++		g_object_set(widget, "suspend-enabled", TRUE, NULL);
++	}
++#endif /* HAVE_RDA */
++
+ 	if (logout_command)
+ 	{
+ 		g_object_set(widget, "logout-command", logout_command, NULL);
