@@ -1,0 +1,9 @@
+This repo can be used as debian repository for amd64
+
+The packages are stored inside gh-pages branch
+
+Just add the line:
+
+deb [trusted=yes] https://cafe-desktop.github.io/debian-packages/ ./
+
+to your /etc/apt/sources.list
