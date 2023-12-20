@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Screensaver
-Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/cafe-screensaver/
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
+Source: https://github.com/cafe-desktop/cafe-screensaver
 
 Files: savers/gs-theme-engine.c
        savers/gs-theme-engine.h
