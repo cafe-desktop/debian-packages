@@ -1,4 +1,4 @@
-mate-backgrounds (1.24.2-1) unstable; urgency=medium
+cafe-backgrounds (1.24.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/copyright:
@@ -6,13 +6,13 @@ mate-backgrounds (1.24.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Sep 2020 17:59:35 +0200
 
-mate-backgrounds (1.24.1-1) unstable; urgency=medium
+cafe-backgrounds (1.24.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 16 Mar 2020 11:52:59 +0100
 
-mate-backgrounds (1.24.0-1) unstable; urgency=medium
+cafe-backgrounds (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -31,7 +31,7 @@ mate-backgrounds (1.24.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:40:33 +0100
 
-mate-backgrounds (1.22.0-1) unstable; urgency=medium
+cafe-backgrounds (1.22.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -46,12 +46,12 @@ mate-backgrounds (1.22.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 11 Jul 2019 12:15:32 +0200
 
-mate-backgrounds (1.20.0-2) unstable; urgency=medium
+cafe-backgrounds (1.20.0-2) unstable; urgency=medium
 
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright
    + Use secure URI for copyright format.
     + Make Upstream-Name: field's value more human readable.
@@ -63,7 +63,7 @@ mate-backgrounds (1.20.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 15:17:10 +0200
 
-mate-backgrounds (1.20.0-1) unstable; urgency=medium
+cafe-backgrounds (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.20.0-0ubuntu1):
@@ -71,8 +71,8 @@ mate-backgrounds (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control (already in 1.19.0-0ubuntu1):
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
@@ -83,19 +83,19 @@ mate-backgrounds (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 12 Feb 2018 10:02:43 +0100
 
-mate-backgrounds (1.20.0-0ubuntu1) bionic; urgency=medium
+cafe-backgrounds (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:56 +0000
 
-mate-backgrounds (1.19.0-0ubuntu1) bionic; urgency=medium
+cafe-backgrounds (1.19.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 23:20:52 +0000
 
-mate-backgrounds (1.18.0-1) unstable; urgency=medium
+cafe-backgrounds (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for MATE 1.17.
@@ -120,7 +120,7 @@ mate-backgrounds (1.18.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Jul 2017 13:27:32 +0200
 
-mate-backgrounds (1.16.0-1) unstable; urgency=medium
+cafe-backgrounds (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -135,7 +135,7 @@ mate-backgrounds (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 13:36:54 +0200
 
-mate-backgrounds (1.15.0-0ubuntu1) yakkety; urgency=medium
+cafe-backgrounds (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
@@ -145,7 +145,7 @@ mate-backgrounds (1.15.0-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
 
-mate-backgrounds (1.14.0-1) unstable; urgency=medium
+cafe-backgrounds (1.14.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -155,7 +155,7 @@ mate-backgrounds (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
 
   [ Mike Gabriel ]
   * debian/control:
@@ -163,22 +163,22 @@ mate-backgrounds (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 20 May 2016 16:17:40 +0200
 
-mate-backgrounds (1.12.0-1) unstable; urgency=medium
+cafe-backgrounds (1.12.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12).
+    + Versioned B-D: cafe-common (>= 1.12).
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 20 Dec 2015 16:43:28 +0100
 
-mate-backgrounds (1.10.0-1) unstable; urgency=medium
+cafe-backgrounds (1.10.0-1) unstable; urgency=medium
 
   * Re-upload to unstable.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2015 16:32:12 +0200
 
-mate-backgrounds (1.10.0-1~exp1) experimental; urgency=low
+cafe-backgrounds (1.10.0-1~exp1) experimental; urgency=low
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -189,7 +189,7 @@ mate-backgrounds (1.10.0-1~exp1) experimental; urgency=low
 
   [ Mike Gabriel ]
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.10).
+    + Versioned B-D: cafe-common (>= 1.10).
   * debian/copyright:
     + Really mention all files.
     + Add copyright info for desktop/Float-into-MATE.png, desktop/Stripes.png.
@@ -202,15 +202,15 @@ mate-backgrounds (1.10.0-1~exp1) experimental; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 16 Jun 2015 21:01:44 +0200
 
-mate-backgrounds (1.8.0-2) unstable; urgency=low
+cafe-backgrounds (1.8.0-2) unstable; urgency=low
 
   * debian/copyright:
-    + Point to git.mate-desktop.org in Source: field.
+    + Point to git.cafe-desktop.org in Source: field.
     + Fix typo (opinion -> option).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 May 2014 09:09:23 +0200
 
-mate-backgrounds (1.8.0-1) unstable; urgency=low
+cafe-backgrounds (1.8.0-1) unstable; urgency=low
 
   * New upstream release.
   * debian/copyright:
@@ -222,7 +222,7 @@ mate-backgrounds (1.8.0-1) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 12 Mar 2014 01:33:57 +0100
 
-mate-backgrounds (1.6.0-1) unstable; urgency=low
+cafe-backgrounds (1.6.0-1) unstable; urgency=low
 
   * Initial release. (Closes: #728460).
 

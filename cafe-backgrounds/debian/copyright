@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Backgrounds
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-backgrounds/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-backgrounds/
 
 Files: abstract/Silk.png
        abstract/Spring.png
@@ -118,16 +118,16 @@ Files: .build.yml
        abstract/Arc-Colors-Transparent-Wallpaper.png
        abstract/Makefile.am
        abstract/meson.build
-       abstract/mate-abstract.xml.in.in
+       abstract/cafe-abstract.xml.in.in
        desktop/Makefile.am
        desktop/meson.build
-       desktop/mate-desktop.xml.in.in
+       desktop/cafe-desktop.xml.in.in
        its/wallpaper.its
        its/wallpaper.loc
        configure.ac
        nature/Makefile.am
        nature/meson.build
-       nature/mate-nature.xml.in.in
+       nature/cafe-nature.xml.in.in
        po/ChangeLog
        po/LINGUAS
        po/Makevars
@@ -135,7 +135,7 @@ Files: .build.yml
        po/POTFILES.*
        po/gnome-copyrights.txt
        makepot
-       mate-backgrounds.pot
+       cafe-backgrounds.pot
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
@@ -153,7 +153,7 @@ Files: po/ar.po
        po/ku.po
        po/rw.po
 Copyright: 2005, THE PACKAGE'S COPYRIGHT HOLDER
-           2005, mate-backgrounds.
+           2005, cafe-backgrounds.
            2005, Free Software Foundation, Inc.
            2007, Nurali Abdurahmonov <mavnur@gmail.com>
 License: GPL-2+
@@ -200,7 +200,7 @@ License: CC-BY-SA-4.0
  Creative Commons public licenses does not create a lawyer-client or
  other relationship. Creative Commons makes its licenses and related
  information available on an "as-is" basis. Creative Commons gives no
- warranties regarding its licenses, any material licensed under their
+ warranties regarding its licenses, any caferial licensed under their
  terms and conditions, or any related information. Creative Commons
  disclaims all liability for damages resulting from their use to the
  fullest extent possible.
@@ -209,36 +209,36 @@ License: CC-BY-SA-4.0
  .
  Creative Commons public licenses provide a standard set of terms and
  conditions that creators and other rights holders may use to share
- original works of authorship and other material subject to copyright
+ original works of authorship and other caferial subject to copyright
  and certain other rights specified in the public license below. The
  following considerations are for informational purposes only, are not
  exhaustive, and do not form part of our licenses.
  .
      Considerations for licensors: Our public licenses are
      intended for use by those authorized to give the public
-     permission to use material in ways otherwise restricted by
+     permission to use caferial in ways otherwise restricted by
      copyright and certain other rights. Our licenses are
      irrevocable. Licensors should read and understand the terms
      and conditions of the license they choose before applying it.
      Licensors should also secure all rights necessary before
      applying our licenses so that the public can reuse the
-     material as expected. Licensors should clearly mark any
-     material not subject to the license. This includes other CC-
-     licensed material, or material used under an exception or
+     caferial as expected. Licensors should clearly mark any
+     caferial not subject to the license. This includes other CC-
+     licensed caferial, or caferial used under an exception or
      limitation to copyright. More considerations for licensors:
         wiki.creativecommons.org/Considerations_for_licensors
  .
      Considerations for the public: By using one of our public
      licenses, a licensor grants the public permission to use the
-     licensed material under specified terms and conditions. If
+     licensed caferial under specified terms and conditions. If
      the licensor's permission is not necessary for any reason--for
      example, because of any applicable exception or limitation to
      copyright--then that use is not regulated by the license. Our
      licenses grant only permissions under copyright and certain
      other rights that a licensor has authority to grant. Use of
-     the licensed material may still be restricted for other
+     the licensed caferial may still be restricted for other
      reasons, including because others have copyright or other
-     rights in the material. A licensor may make special requests,
+     rights in the caferial. A licensor may make special requests,
      such as asking that all changes be marked or described.
      Although not required by our licenses, you are encouraged to
      respect those requests where reasonable. More_considerations
@@ -262,7 +262,7 @@ License: CC-BY-SA-4.0
  .
  Section 1 -- Definitions.
  .
-  a. Adapted Material means material subject to Copyright and Similar
+  a. Adapted Material means caferial subject to Copyright and Similar
      Rights that is derived from or based upon the Licensed Material
      and in which the Licensed Material is translated, altered,
      arranged, transformed, or otherwise modified in a manner requiring
@@ -303,7 +303,7 @@ License: CC-BY-SA-4.0
      Public License are Attribution and ShareAlike.
  .
   h. Licensed Material means the artistic or literary work, database,
-     or other material to which the Licensor applied this Public
+     or other caferial to which the Licensor applied this Public
      License.
  .
   i. Licensed Rights means the rights granted to You subject to the
@@ -314,12 +314,12 @@ License: CC-BY-SA-4.0
   j. Licensor means the individual(s) or entity(ies) granting rights
      under this Public License.
  .
-  k. Share means to provide material to the public by any means or
+  k. Share means to provide caferial to the public by any means or
      process that requires permission under the Licensed Rights, such
      as reproduction, public display, public performance, distribution,
-     dissemination, communication, or importation, and to make material
+     dissemination, communication, or importation, and to make caferial
      available to the public including in ways that members of the
-     public may access the material from a place and at a time
+     public may access the caferial from a place and at a time
      individually chosen by them.
  .
   l. Sui Generis Database Rights means rights other than copyright
@@ -526,7 +526,7 @@ License: CC-BY-SA-4.0
  .
   c. The disclaimer of warranties and limitation of liability provided
      above shall be interpreted in a manner that, to the extent
-     possible, most closely approximates an absolute disclaimer and
+     possible, most closely approxicafes an absolute disclaimer and
      waiver of all liability.
  .
  Section 6 -- Term and Termination.
@@ -593,16 +593,16 @@ License: CC-BY-SA-4.0
  .
  Creative Commons is not a party to its public licenses.
  Notwithstanding, Creative Commons may elect to apply one of its public
- licenses to material it publishes and in those instances will be
+ licenses to caferial it publishes and in those instances will be
  considered the "Licensor." Except for the limited purpose of indicating
- that material is shared under a Creative Commons public license or as
+ that caferial is shared under a Creative Commons public license or as
  otherwise permitted by the Creative Commons policies published at
  creativecommons.org/policies, Creative Commons does not authorize the
  use of the trademark "Creative Commons" or any other trademark or logo
  of Creative Commons without its prior written consent including,
  without limitation, in connection with any unauthorized modifications
  to any of its public licenses or any other arrangements,
- understandings, or agreements concerning use of licensed material. For
+ understandings, or agreements concerning use of licensed caferial. For
  the avoidance of doubt, this paragraph does not form part of the public
  licenses.
  .
