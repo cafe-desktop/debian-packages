@@ -73,7 +73,7 @@ cafe-backgrounds (1.20.0-1) unstable; urgency=medium
   * debian/control (already in 1.19.0-0ubuntu1):
     + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Update Maintainer: field to debian-cafe ML on lists.debian.org.
-    + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
+    + Rename pretty name of our team -> Debian+Ubuntu CAFE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
   [ Mike Gabriel ]
@@ -98,8 +98,8 @@ cafe-backgrounds (1.19.0-0ubuntu1) bionic; urgency=medium
 cafe-backgrounds (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.18.
 
   [ Aron Xu ]
   * New upstream release
@@ -129,7 +129,7 @@ cafe-backgrounds (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.0-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -139,7 +139,7 @@ cafe-backgrounds (1.15.0-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 
@@ -192,7 +192,7 @@ cafe-backgrounds (1.10.0-1~exp1) experimental; urgency=low
     + Versioned B-D: cafe-common (>= 1.10).
   * debian/copyright:
     + Really mention all files.
-    + Add copyright info for desktop/Float-into-MATE.png, desktop/Stripes.png.
+    + Add copyright info for desktop/Float-into-CAFE.png, desktop/Stripes.png.
     + Typo fix in filename nature/Dune.jpg.
   * debian/rules:
     + Use upstream's NEWS file as upstream ChangeLog.

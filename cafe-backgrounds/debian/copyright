@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: MATE Backgrounds
+Upstream-Name: CAFE Backgrounds
 Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
 Source: https://git.cafe-desktop.org/cafe-backgrounds/
 
@@ -82,13 +82,13 @@ Copyright: 2008, Jean-François Fortin Tam <nekohayo@gmail.com>
 License: GPL-2+
 Comment: Copyright holders are found in AUTHORS file.
 
-Files: desktop/Float-into-MATE.png
+Files: desktop/Float-into-CAFE.png
 Copyright: 2013, François Vogelweith (Bisigi project)
            2014, Joseph "Rowen Stipe" Krieger <rowen.stipe@gmail.com>
 License: GPL-2+
 Comment: Copyright holders are found in AUTHORS file.
 
-Files: desktop/MATE-Stripes-*.png
+Files: desktop/CAFE-Stripes-*.png
 Copyright: 2014 Adam Erdman
 License: GPL-2+
 Comment: Copyright holders are found in AUTHORS file.
@@ -504,9 +504,9 @@ License: CC-BY-SA-4.0
  Section 5 -- Disclaimer of Warranties and Limitation of Liability.
  .
   a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE
-     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS
+     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED CAFERIAL AS-IS
      AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF
-     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,
+     ANY KIND CONCERNING THE LICENSED CAFERIAL, WHETHER EXPRESS,
      IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,
      WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
      PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
@@ -519,7 +519,7 @@ License: CC-BY-SA-4.0
      NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,
      INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,
      COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR
-     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
+     USE OF THE LICENSED CAFERIAL, EVEN IF THE LICENSOR HAS BEEN
      ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR
      DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR
      IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
