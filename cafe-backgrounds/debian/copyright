@@ -25,11 +25,6 @@ Copyright: 2020, Wyng Stancikaite <wyng.stancikaite@gmail.com>
 License: GPL-2+
 Comment: Copyright holders are found in AUTHORS file.
 
-Files: desktop/GreenTraditional.jpg
-Copyright:  2012, l0r4n0n <info@stefan-geissler.net>
-License: GPL-2+
-Comment: Copyright holders are found in AUTHORS file.
-
 Files: nature/Aqua.jpg
        nature/LadyBird.jpg
        nature/YellowFlower.jpg
@@ -79,17 +74,6 @@ Comment: Copyright holders are found in AUTHORS file.
 
 Files: nature/Wood.jpg
 Copyright: 2008, Jean-François Fortin Tam <nekohayo@gmail.com>
-License: GPL-2+
-Comment: Copyright holders are found in AUTHORS file.
-
-Files: desktop/Float-into-CAFE.png
-Copyright: 2013, François Vogelweith (Bisigi project)
-           2014, Joseph "Rowen Stipe" Krieger <rowen.stipe@gmail.com>
-License: GPL-2+
-Comment: Copyright holders are found in AUTHORS file.
-
-Files: desktop/CAFE-Stripes-*.png
-Copyright: 2014 Adam Erdman
 License: GPL-2+
 Comment: Copyright holders are found in AUTHORS file.
 
