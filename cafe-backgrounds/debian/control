@@ -1,11 +1,8 @@
 Source: cafe-backgrounds
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
-Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
-           Stefano Karapetsas <stefano@karapetsas.com>,
-           Mike Gabriel <sunweaver@debian.org>,
-           Vangelis Mouhtsis <vangelis@gnugr.org>,
+Maintainer: Pablo Barciela <scow@riseup.net>
+Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                libglib2.0-dev,
                cafe-common (>= 1.18),
