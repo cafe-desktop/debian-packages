@@ -1,7 +1,7 @@
-Source: mate-notification-daemon
+Source: cafe-notification-daemon
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
@@ -17,22 +17,22 @@ Build-Depends: debhelper-compat (= 13),
                libx11-dev,
                libxml2-dev,
                libxml2-utils,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/mate-notification-daemon
-Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-notification-daemon.git
+Homepage: http://www.cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-notification-daemon
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-notification-daemon.git
 
-Package: mate-notification-daemon
+Package: cafe-notification-daemon
 Architecture: any
-Depends: mate-notification-daemon-common (= ${source:Version}),
+Depends: cafe-notification-daemon-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
          libglib2.0-bin,
 Provides: notification-daemon,
 Description: daemon to display passive popup notifications
- mate-notification-daemon displays passive popup notifications, as per
+ cafe-notification-daemon displays passive popup notifications, as per
  the Desktop Notifications Specification.
  .
  The Desktop Notifications Specification provides a standard way of
@@ -42,13 +42,13 @@ Description: daemon to display passive popup notifications
  automatically disappear after a short period of time, as per the
  Desktop Notifications spec.
 
-Package: mate-notification-daemon-common
+Package: cafe-notification-daemon-common
 Architecture: all
 Depends: ${misc:Depends},
-Replaces: mate-notification-daemon (<< 1.11.0),
-Breaks: mate-notification-daemon (<< 1.11.0),
+Replaces: cafe-notification-daemon (<< 1.11.0),
+Breaks: cafe-notification-daemon (<< 1.11.0),
 Description: daemon to display passive popup notifications (common files)
- mate-notification-daemon displays passive popup notifications, as per
+ cafe-notification-daemon displays passive popup notifications, as per
  the Desktop Notifications Specification.
  .
  The Desktop Notifications Specification provides a standard way of

@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Notification Daemon
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/mate-notification-daemon/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/cafe-notification-daemon/
 
 Files: src/daemon/daemon.c
        src/daemon/daemon.h
@@ -28,7 +28,7 @@ Copyright: 2007, Jim Ramsay <i.am@jimramsay.com>
            2011, Perberos <perberos@gmail.com>
 License: GPL-2+
 
-Files: src/capplet/mate-notification-properties.c
+Files: src/capplet/cafe-notification-properties.c
 Copyright: 2007, Jonh Wendell <wendell@bani.com.br>
            2011, Perberos <perberos@gmail.com>
 License: GPL-2+
@@ -44,7 +44,7 @@ Copyright: 2008, Martin Sourada
            2012, Stefano Karapetsas <stefano@karapetsas.com>
 License: GPL-3+
 
-Files: mate-notification-daemon.pot
+Files: cafe-notification-daemon.pot
        po/*.po
        po/Rules-quot
        po/boldquot.sed
@@ -73,10 +73,10 @@ Files: .github/issue_template.md
        src/daemon/Makefile.am
        src/Makefile.am
        src/capplet/Makefile.am
-       src/capplet/mate-notification-properties.1
-       src/capplet/mate-notification-properties.desktop.in
-       src/capplet/mate-notification-properties.ui
-       src/capplet/org.mate.notifications.properties.gresource.xml
+       src/capplet/cafe-notification-properties.1
+       src/capplet/cafe-notification-properties.desktop.in
+       src/capplet/cafe-notification-properties.ui
+       src/capplet/org.cafe.notifications.properties.gresource.xml
        src/daemon/mnd-daemon.c
        src/daemon/notificationdaemon.xml
        acinclude.m4

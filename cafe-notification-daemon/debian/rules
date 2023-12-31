@@ -14,7 +14,7 @@ override_dh_missing:
 
 override_dh_install:
 	rm -f debian/tmp/usr/lib/*/*/*/*.a
-	rm -rfv debian/tmp/usr/lib/*/mate-notification-daemon/engines/*.la
+	rm -rfv debian/tmp/usr/lib/*/cafe-notification-daemon/engines/*.la
 	dh_install
 
 override_dh_installchangelogs:
@@ -24,7 +24,7 @@ override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
 		--disable-silent-rules \
-		--libexecdir=/usr/lib/mate-notification-daemon \
+		--libexecdir=/usr/lib/cafe-notification-daemon \
 		--disable-static
 
 get-orig-source:

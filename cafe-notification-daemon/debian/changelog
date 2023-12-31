@@ -1,4 +1,4 @@
-mate-notification-daemon (1.24.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.24.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -11,13 +11,13 @@ mate-notification-daemon (1.24.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 18 Aug 2020 14:32:51 +0200
 
-mate-notification-daemon (1.24.0-1) unstable; urgency=medium
+cafe-notification-daemon (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
     + Add Rules-Requires-Root: field and set it to no.
     + Bump Standards-Version: to 4.5.0. No changes needed.
-    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+    + Update versioned B-D on cafe-common (>= 1.24.0-1~).
   * debian/upstream/metadata:
     + Drop obsolete fields Contact: and Name:.
     + Append .git suffix to URLs in Repository: field.
@@ -30,12 +30,12 @@ mate-notification-daemon (1.24.0-1) unstable; urgency=medium
     + Update copyright attributions.
   * debian/control:
     + Add B-D libxml2-utils.
-  * debian/mate-notification-daemon-common.install:
-    + Drop obsolete reference to usr/share/mate-notification-daemon/.
+  * debian/cafe-notification-daemon-common.install:
+    + Drop obsolete reference to usr/share/cafe-notification-daemon/.
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 20:28:55 +0100
 
-mate-notification-daemon (1.22.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -45,7 +45,7 @@ mate-notification-daemon (1.22.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sat, 28 Sep 2019 00:28:37 +0200
 
-mate-notification-daemon (1.22.0-2) unstable; urgency=medium
+cafe-notification-daemon (1.22.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -55,7 +55,7 @@ mate-notification-daemon (1.22.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 02 Sep 2019 16:21:23 +0200
 
-mate-notification-daemon (1.22.0-1) unstable; urgency=medium
+cafe-notification-daemon (1.22.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -76,7 +76,7 @@ mate-notification-daemon (1.22.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 21 Jul 2019 23:49:28 +0200
 
-mate-notification-daemon (1.20.2-1) unstable; urgency=medium
+cafe-notification-daemon (1.20.2-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
@@ -85,13 +85,13 @@ mate-notification-daemon (1.20.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 09 Jan 2019 10:28:38 +0100
 
-mate-notification-daemon (1.20.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.20.1-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
   * debian/copyright:
     + Make Upstream-Name: field's value more human readable.
     + Update Upstream-Contact: field.
@@ -103,7 +103,7 @@ mate-notification-daemon (1.20.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 18:18:54 +0200
 
-mate-notification-daemon (1.20.0-2) unstable; urgency=medium
+cafe-notification-daemon (1.20.0-2) unstable; urgency=medium
 
   * debian/copyright:
     + Use secure URI for copyright format.
@@ -111,11 +111,11 @@ mate-notification-daemon (1.20.0-2) unstable; urgency=medium
     + Add 1001_convert-gvfs-open-to-gio-open.patch. Replace deprecated call
       to gvfs-open by call to "gio open".
   * debian/control:
-    + Add D (mate-notification-daemon): libglib2.0-bin (for gio cmdline tool).
+    + Add D (cafe-notification-daemon): libglib2.0-bin (for gio cmdline tool).
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 13:28:54 +0200
 
-mate-notification-daemon (1.20.0-1) unstable; urgency=medium
+cafe-notification-daemon (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/copyright (already in 1.19.1-0ubuntu1):
@@ -123,8 +123,8 @@ mate-notification-daemon (1.20.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
-    + Temporarily have pkg-mate-team ML under Uploaders:.
-    + Update Maintainer: field to debian-mate ML on lists.debian.org.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
+    + Update Maintainer: field to debian-cafe ML on lists.debian.org.
     + Rename pretty name of our team -> Debian+Ubuntu MATE Packaging Team.
     + Bump Standards-Version: to 4.1.3. No changes needed.
 
@@ -135,19 +135,19 @@ mate-notification-daemon (1.20.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Feb 2018 16:56:48 +0100
 
-mate-notification-daemon (1.20.0-0ubuntu1) bionic; urgency=medium
+cafe-notification-daemon (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:56 +0000
 
-mate-notification-daemon (1.19.1-0ubuntu1) bionic; urgency=medium
+cafe-notification-daemon (1.19.1-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 23:26:40 +0000
 
-mate-notification-daemon (1.18.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -160,7 +160,7 @@ mate-notification-daemon (1.18.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Nov 2017 09:59:55 +0100
 
-mate-notification-daemon (1.18.0-2) unstable; urgency=medium
+cafe-notification-daemon (1.18.0-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/patches:
@@ -169,7 +169,7 @@ mate-notification-daemon (1.18.0-2) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Aug 2017 16:02:14 +0200
 
-mate-notification-daemon (1.18.0-1) unstable; urgency=medium
+cafe-notification-daemon (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for MATE 1.17.
@@ -195,14 +195,14 @@ mate-notification-daemon (1.18.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 10:43:29 +0200
 
-mate-notification-daemon (1.16.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.16.1-1) unstable; urgency=medium
 
   * New upstream release.
     - Fix bold formatting in markup parser. (Closes: #846523).
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 13 Dec 2016 09:31:57 +0100
 
-mate-notification-daemon (1.16.0-1) unstable; urgency=medium
+cafe-notification-daemon (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release. (Closes: #769968).
@@ -221,7 +221,7 @@ mate-notification-daemon (1.16.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 02 Oct 2016 22:52:32 +0200
 
-mate-notification-daemon (1.15.1-0ubuntu1) yakkety; urgency=medium
+cafe-notification-daemon (1.15.1-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
@@ -231,7 +231,7 @@ mate-notification-daemon (1.15.1-0ubuntu1) yakkety; urgency=medium
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
 
-mate-notification-daemon (1.14.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.14.1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/{control,rules}:
@@ -243,7 +243,7 @@ mate-notification-daemon (1.14.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 14 Jul 2016 12:34:23 +0200
 
-mate-notification-daemon (1.14.0-1) unstable; urgency=medium
+cafe-notification-daemon (1.14.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -254,13 +254,13 @@ mate-notification-daemon (1.14.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
-  * debian/mate-notification-daemon-common.install:
+  * debian/cafe-notification-daemon-common.install:
     + MateConf dropped upstream.
   * debian/control:
     + B-D: libcanberra-gtk3-dev
     + B-D: libgtk-3-dev
     + B-D: libwnck-3-dev.
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
     + Bump Standards: to 3.9.7. No changes needed.
   * debian/rules:
     + Add --with-gtk=3.0
@@ -273,12 +273,12 @@ mate-notification-daemon (1.14.0-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 May 2016 11:44:23 +0200
 
-mate-notification-daemon (1.12.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.12.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.12).
+    + Versioned B-D: cafe-common (>= 1.12).
 
   [ Mike Gabriel ]
   * debian/copyright:
@@ -286,7 +286,7 @@ mate-notification-daemon (1.12.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 31 Dec 2015 14:51:37 +0100
 
-mate-notification-daemon (1.10.2-1) unstable; urgency=medium
+cafe-notification-daemon (1.10.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -295,7 +295,7 @@ mate-notification-daemon (1.10.2-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Oct 2015 04:55:49 +0200
 
-mate-notification-daemon (1.10.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.10.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
@@ -305,14 +305,14 @@ mate-notification-daemon (1.10.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2015 11:34:34 +0200
 
-mate-notification-daemon (1.10.0-1~exp1) experimental; urgency=medium
+cafe-notification-daemon (1.10.0-1~exp1) experimental; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Add bin:package mate-notification-daemon-common.
-  * debian/mate-notification-daemon.install
-    + Remove entries now in mate-notification-deamon-common.install.
+    + Add bin:package cafe-notification-daemon-common.
+  * debian/cafe-notification-daemon.install
+    + Remove entries now in cafe-notification-deamon-common.install.
   * debian/rules:
     + Add --disable-static and --with-gtk=2.0.
   * Whitespace cleanup.
@@ -320,17 +320,17 @@ mate-notification-daemon (1.10.0-1~exp1) experimental; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
-    + Versioned B-D: mate-common (>= 1.10).
+    + Versioned B-D: cafe-common (>= 1.10).
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 17 Jun 2015 10:10:02 +0200
 
-mate-notification-daemon (1.8.2-2) unstable; urgency=medium
+cafe-notification-daemon (1.8.2-2) unstable; urgency=medium
 
   * Re-upload to unstable (debian/1.8.2-2).
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 21 May 2015 05:58:07 +0200
 
-mate-notification-daemon (1.8.2-1) experimental; urgency=medium
+cafe-notification-daemon (1.8.2-1) experimental; urgency=medium
 
   * New upstream release.
     - Including GLib >= 2.43 compatibility patch. (Closes: #778809,
@@ -341,7 +341,7 @@ mate-notification-daemon (1.8.2-1) experimental; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 13 Mar 2015 11:51:40 +0100
 
-mate-notification-daemon (1.8.1-3) unstable; urgency=medium
+cafe-notification-daemon (1.8.1-3) unstable; urgency=medium
 
   * debian/patches:
     + Add 0001_segfaults-in-notify-stack-set-location.patch. Prevent from
@@ -349,15 +349,15 @@ mate-notification-daemon (1.8.1-3) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 06 Mar 2015 06:11:35 +0100
 
-mate-notification-daemon (1.8.1-2) unstable; urgency=medium
+cafe-notification-daemon (1.8.1-2) unstable; urgency=medium
 
   * debian/rules:
-    - Install mate-notification-daemon executable to non-multi-arch
+    - Install cafe-notification-daemon executable to non-multi-arch
       libexecdir. (Closes: #769419).
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 12 Dec 2014 11:13:40 +0100
 
-mate-notification-daemon (1.8.1-1) unstable; urgency=medium
+cafe-notification-daemon (1.8.1-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/rules:
@@ -378,7 +378,7 @@ mate-notification-daemon (1.8.1-1) unstable; urgency=medium
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 23 Oct 2014 13:20:03 +0200
 
-mate-notification-daemon (1.8.0-2) unstable; urgency=low
+cafe-notification-daemon (1.8.0-2) unstable; urgency=low
 
   * debian/rules:
     + Enable parallel builds.
@@ -388,14 +388,14 @@ mate-notification-daemon (1.8.0-2) unstable; urgency=low
   * debian/control:
     + Improve LONG_DESCRIPTION of dbg:package
   * debian/copyright:
-    + Point to git.mate-desktop.org in Source: field.
+    + Point to git.cafe-desktop.org in Source: field.
   * man pages:
-    + Use mate-notification-properties man page as provided by upstream
+    + Use cafe-notification-properties man page as provided by upstream
       since 1.8.0.
 
  -- Mike Gabriel <sunweaver@debian.org>  Fri, 02 May 2014 10:24:53 +0200
 
-mate-notification-daemon (1.8.0-1) unstable; urgency=low
+cafe-notification-daemon (1.8.0-1) unstable; urgency=low
 
   * New upstream release.
   * debian/watch:
@@ -403,7 +403,7 @@ mate-notification-daemon (1.8.0-1) unstable; urgency=low
   * debian/copyright:
     + Adapt to files in new upstream tarball.
   * debian/control:
-    + Replace B-D libmatewnck-dev with libwnck-dev.
+    + Replace B-D libcafewnck-dev with libwnck-dev.
     + Drop B-D: dh-autoreconf.
   * debian/patches:
     + Drop patch: 1001_lacking-keyword-entry-in-desktop-file.patch. Fixed upstream.
@@ -412,7 +412,7 @@ mate-notification-daemon (1.8.0-1) unstable; urgency=low
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 12 Mar 2014 13:38:42 +0100
 
-mate-notification-daemon (1.6.1-1) unstable; urgency=low
+cafe-notification-daemon (1.6.1-1) unstable; urgency=low
 
   * Initial release. (Closes: #733036).
 
