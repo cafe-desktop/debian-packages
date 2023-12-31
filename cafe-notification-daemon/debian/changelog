@@ -257,7 +257,7 @@ cafe-notification-daemon (1.14.0-1) unstable; urgency=medium
   * debian/cafe-notification-daemon-common.install:
     + CafeConf dropped upstream.
   * debian/control:
-    + B-D: libcanberra-ctk3-dev
+    + B-D: libkanberra-ctk3-dev
     + B-D: libctk-3-dev
     + B-D: libwnck-3-dev.
     + Versioned B-D: cafe-common (>= 1.14)
