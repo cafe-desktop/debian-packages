@@ -255,7 +255,7 @@ cafe-notification-daemon (1.14.0-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/cafe-notification-daemon-common.install:
-    + MateConf dropped upstream.
+    + CafeConf dropped upstream.
   * debian/control:
     + B-D: libcanberra-gtk3-dev
     + B-D: libgtk-3-dev
