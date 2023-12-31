@@ -259,7 +259,7 @@ cafe-notification-daemon (1.14.0-1) unstable; urgency=medium
   * debian/control:
     + B-D: libkanberra-ctk3-dev
     + B-D: libctk-3-dev
-    + B-D: libwnck-3-dev.
+    + B-D: libvnck-3-dev.
     + Versioned B-D: cafe-common (>= 1.14)
     + Bump Standards: to 3.9.7. No changes needed.
   * debian/rules:
@@ -403,7 +403,7 @@ cafe-notification-daemon (1.8.0-1) unstable; urgency=low
   * debian/copyright:
     + Adapt to files in new upstream tarball.
   * debian/control:
-    + Replace B-D libcafewnck-dev with libwnck-dev.
+    + Replace B-D libcafevnck-dev with libvnck-dev.
     + Drop B-D: dh-autoreconf.
   * debian/patches:
     + Drop patch: 1001_lacking-keyword-entry-in-desktop-file.patch. Fixed upstream.
