@@ -15,7 +15,7 @@ override_dh_install:
 	rm  -fv debian/cafe-themes/usr/share/themes/Menta/emerald/README
 	rm  -fv debian/cafe-themes/usr/share/themes/Menta/gtk-2.0/widgets/README
 	rm  -fv debian/cafe-themes/usr/share/themes/TraditionalOk/xfwm4/README
-	# remove themes with borders - Marco provides invisible borders now https://pad.lv/1769411
+	# remove themes with borders - Croma provides invisible borders now https://pad.lv/1769411
 	rm  -rfv debian/cafe-themes/usr/share/themes/*-border
 	# add cursor theme entries
 	cp debian/cafe-white.theme debian/cafe-themes/usr/share/icons/cafe/cursor.theme
