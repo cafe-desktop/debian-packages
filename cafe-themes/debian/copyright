@@ -104,8 +104,8 @@ Files: cursor-themes/Makefile.am
        desktop-themes/Menta-border/Makefile.am
        desktop-themes/Menta-border/metacity-1/Makefile.am
        icon-themes/Makefile.am
-       marco-themes/HighContrast/metacity-theme-1.xml
-       marco-themes/Makefile.am
+       croma-themes/HighContrast/metacity-theme-1.xml
+       croma-themes/Makefile.am
        Makefile.am
        autogen.sh
        configure.ac
@@ -202,7 +202,7 @@ Comment:
  .
  Applying license as found in COPYING file in this package's base folder.
 
-Files: marco-themes/Shiny/*
+Files: croma-themes/Shiny/*
 Copyright: 2005-2007, Daniel Borgmann <daniel.borgmann@gmail.com>
            2005-2007, Andrea Cimitan <andrea.cimitan@gmail.com>
 License: LGPL-2.1+
