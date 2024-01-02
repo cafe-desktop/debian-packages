@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: CAFE Notification Daemon
-Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/cafe-notification-daemon/
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
+Source: https://github.com/cafe-desktop/cafe-notification-daemon
 
 Files: src/daemon/daemon.c
        src/daemon/daemon.h
