@@ -57,7 +57,7 @@ lector (1.22.1-1) unstable; urgency=medium
   * debian/copyright:
     + Update copyright attributions.
   * debian/rules:
-    + Updated for MATE Desktop 1.22
+    + Updated for CAFE Desktop 1.22
   * debian/lector-common.install:
     + Correct order.
 
@@ -195,13 +195,13 @@ lector (1.18.0-1) unstable; urgency=medium
   * New upstream release.
 
   [ Martin Wimpress ]
-  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/control: Dependencies updated for CAFE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/debian/lector.install: Remove obsolete
     usr/lib/*/lector-convert-metadata
   * debian/copyright: Update copyright attributions.
   * debian/rules: Enable dh_girespository helper.
-  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Dependencies updated for CAFE 1.18.
   * debian/copyright: Update copyright attributions.
   * debian/liblector{document,view}3.symbols: Update symbols for 1.18 release.
   * debian/rules: Add --disable-silent-rules, as used in other packages.
@@ -274,7 +274,7 @@ lector (1.16.0-1) unstable; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.3-0ubuntu1 upload.
   * debian/control:
-    + Dependencies updated for MATE 1.16.
+    + Dependencies updated for CAFE 1.16.
   * debian/watch:
     + Update version matching again to _not_ support development releases.
 
@@ -291,7 +291,7 @@ lector (1.15.3-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release.
   * debian/control:
-    + Dependencies updated for MATE 1.15.
+    + Dependencies updated for CAFE 1.15.
   * debian/watch:
     + Update version matching to support development releases.
 

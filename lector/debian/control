@@ -1,7 +1,7 @@
 Source: lector
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
+Maintainer: Debian+Ubuntu CAFE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -58,7 +58,7 @@ Suggests: caja,
           unrar,
 Breaks: liblectordocument3 (<< 1.13.0),
 Replaces: liblectordocument3 (<< 1.13.0),
-Description: MATE document viewer
+Description: CAFE document viewer
  Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
@@ -71,7 +71,7 @@ Package: lector-common
 Architecture: all
 Depends: ${misc:Depends},
 Breaks: lector (<= 1.0.3-3),
-Description: MATE document viewer (common files)
+Description: CAFE document viewer (common files)
  Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
@@ -85,7 +85,7 @@ Depends: liblectordocument3 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Replaces: liblector (<< 1.9.0),
-Description: MATE document viewing library
+Description: CAFE document viewing library
  Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
@@ -100,7 +100,7 @@ Depends: liblectorview3 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
 Breaks: liblector-dev (<< 1.9.0),
-Description: MATE document viewing library (development files)
+Description: CAFE document viewing library (development files)
  Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
@@ -116,7 +116,7 @@ Depends: libjs-mathjax,
          ${shlibs:Depends},
 Breaks: liblector (<< 1.9.0),
 Replaces: liblector (<< 1.9.0),
-Description: MATE document rendering library
+Description: CAFE document rendering library
  Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
@@ -134,7 +134,7 @@ Breaks: liblector-dev (<< 1.9.0),
         gir1.2-lector (<< 1.18.3-2~),
 Replaces: liblector-dev (<< 1.9.0),
           gir1.2-lector (<< 1.18.3-2~),
-Description: MATE document rendering library (development files)
+Description: CAFE document rendering library (development files)
  Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
