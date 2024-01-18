@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Lector
-Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/lector/
+Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
+Source: https://git.cafe-desktop.org/lector/
 
 Files: backend/dvi/cairo-device.c
        backend/dvi/cairo-device.h
@@ -522,19 +522,19 @@ Copyright: Jonathan Blandford <jrb@redhat.com>
            Jan Arne Petersen  <jpetersen@jpetersen.org>
            Joachim Noreiko <jnoreiko@yahoo.com>
            Jonh Wendell <jwendell@gnome.org>
-           Jorge Gonzalez  <jorgegonz@svn.mate.org>
+           Jorge Gonzalez  <jorgegonz@svn.cafe.org>
            Josep Puigdemont i Casamajó  <josep.puigdemont@gmail.com>
            Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
            Luca Ferretti  <elle.uca@libero.it>
            Marc Brockschmidt  <bugzilla.g@marcbrockschmidt.de>
-           Mario Blättermann  <mariobl@svn.mate.org>
+           Mario Blättermann  <mariobl@svn.cafe.org>
            Maxim Dziumanenko <dziumanenko@gmail.com>
            Nickolay V. Shmyrev <nshmyrev@yandex.ru>
            Nikos Charonitakis  <charosn@her.forthnet.gr>
            Philip Withnall  <philip@tecnocode.co.uk>
            Raykov <zbrox@i-space.org>
            Reinout van Schouwen <reinout@cs.vu.nl>
-           Satoru SATOH <ss@mate.gr.jp>
+           Satoru SATOH <ss@cafe.gr.jp>
            Simos Xenitellis  <simos@gnome.org>
            Timo Jyrinki  <timo.jyrinki@iki.fi>
            Tommi Vainikainen  <thv@iki.fi>
@@ -547,7 +547,7 @@ Copyright: Jonathan Blandford <jrb@redhat.com>
            Daniel Nylander <po@danielnylander.se>
            Daniel S. Koda <danielskoda@gmail.com>
            Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>
-           Jorge González <jorgegonz@svn.mate.org>
+           Jorge González <jorgegonz@svn.cafe.org>
            Kostas Papadimas <pkst@gnome.org>
            Marek Černocký <marek@manet.cz>
            Mario Blättermann <mariobl@gnome.org>
@@ -556,9 +556,9 @@ Copyright: Jonathan Blandford <jrb@redhat.com>
            Nguyễn Đình Trung <nguyendinhtrung141@gmail.com>
            Nickolay V. Shmyrev <nshmyrev@yandex.ru>
            Philip Withnall <philip@tecnocode.co.uk>
-           Satoru SATOH <ss@mate.gr.jp>
+           Satoru SATOH <ss@cafe.gr.jp>
            Tommi Vainikainen <Tommi.Vainikainen@iki.fi>
-           Wouter Bolsterlee <uws+mate@xs4all.nl>
+           Wouter Bolsterlee <uws+cafe@xs4all.nl>
            Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>
            Данило Шеган <danilo@gnome.org>
            朱涛 <bill_zt@sina.com>

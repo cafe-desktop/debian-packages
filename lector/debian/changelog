@@ -3,7 +3,7 @@ lector (1.24.0-1) unstable; urgency=medium
   [ Mike Gabriel ]
   * debian/control:
     + Bump Standards-Version: to 4.5.0. No changes needed.
-    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+    + Update versioned B-D on cafe-common (>= 1.24.0-1~).
   * debian/upstream/metadata:
     + Drop obsolete fields Contact: and Name:.
     + Append .git suffix to URLs in Repository: field.
@@ -91,8 +91,8 @@ lector (1.20.2-1) unstable; urgency=medium
   * debian/control:
     + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
     + Bump Standards-Version: to 4.1.4. No changes needed.
-    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
-    + Drop from D (lector): mate-desktop-common. (Closes: #899412).
+    + Drop pkg-cafe-team Alioth mailing list from Uploaders: field.
+    + Drop from D (lector): cafe-desktop-common. (Closes: #899412).
   * debian/copyright:
     + Make Upstream-Name: field's value more human readable.
     + Update Upstream-Contact: field.
@@ -162,9 +162,9 @@ lector (1.18.3-2) unstable; urgency=medium
   [ Vangelis Mouhtsis ]
   * debian/control:
     + Rename pretty name of our team -> Debian+Ubuntu Mate Packaging Team.
-    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Temporarily have pkg-cafe-team ML under Uploaders:.
     + Bump Standards-Version: to 4.1.3. No changes needed.
-    + Update Maintainer: field to debian-mate ML on list.debian.org.
+    + Update Maintainer: field to debian-cafe ML on list.debian.org.
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 24 Jan 2018 23:21:07 +0100
 
@@ -332,9 +332,9 @@ lector (1.14.1-1) unstable; urgency=medium
     + Versioned B-D: libcaja-extension-dev (>= 1.14)
     + B-D: libgail-3-dev
     + B-D: libgtk-3-dev
-    + Versioned B-D: libmate-desktop-dev (>= 1.14)
+    + Versioned B-D: libcafe-desktop-dev (>= 1.14)
     + B-D: libwebkit2gtk-4.0-dev
-    + Versioned B-D: mate-common (>= 1.14)
+    + Versioned B-D: cafe-common (>= 1.14)
     + Bump Standards: to 3.9.8. No changes needed.
     + Processed with wrap-and-sort.
   * debian/rules:
@@ -365,9 +365,9 @@ lector (1.12.2-1) unstable; urgency=medium
   * debian/rules:
     + Remove obsolete repacking.
   * debian/control:
-    + Drop obsolete B-D and D (lector): mate-icon-theme.
-    + Versioned B-D: mate-common (>= 1.12), libcaja-extension-dev (>= 1.12) and
-      libmate-desktop-dev (>= 1.12).
+    + Drop obsolete B-D and D (lector): cafe-icon-theme.
+    + Versioned B-D: cafe-common (>= 1.12), libcaja-extension-dev (>= 1.12) and
+      libcafe-desktop-dev (>= 1.12).
 
   [ Mike Gabriel ]
   * debian/control:

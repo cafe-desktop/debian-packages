@@ -1,7 +1,7 @@
 Source: lector
 Section: x11
 Priority: optional
-Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
+Maintainer: Debian+Ubuntu MATE Packaging Team <debian-cafe@lists.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
            John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
@@ -30,15 +30,15 @@ Build-Depends: debhelper-compat (=12),
                libxml2-dev,
                libxml2-utils,
                lsb-release,
-               mate-common (>= 1.24.0-1~),
+               cafe-common (>= 1.24.0-1~),
                xsltproc,
                yelp-tools,
                zlib1g-dev,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: https://mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/lector
-Vcs-Git: https://salsa.debian.org/debian-mate-team/lector.git
+Homepage: https://cafe-desktop.org/
+Vcs-Browser: https://salsa.debian.org/debian-cafe-team/lector
+Vcs-Git: https://salsa.debian.org/debian-cafe-team/lector.git
 
 Package: lector
 Architecture: any

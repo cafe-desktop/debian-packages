@@ -84,8 +84,8 @@ Files: Makefile.am
  data/icons/scalable/apps/lector.svg
  data/icons/scalable/mimetypes/Makefile.am
  data/icons/scalable/mimetypes/x-office-presentation.svg
- data/org.mate.Lector.gschema.xml
- data/org.mate.lector.Daemon.service.in
+ data/org.cafe.Lector.gschema.xml
+ data/org.cafe.lector.Daemon.service.in
  debian/lector-common.install
  debian/lector.install
  debian/lector.lintian-overrides
@@ -921,7 +921,7 @@ License: UNKNOWN
  FIXME
 
 Files: data/lector.appdata.xml.in
-Copyright: 2014, MATE team <mate-dev@ml.mate-desktop.org> -->
+Copyright: 2014, MATE team <cafe-dev@ml.cafe-desktop.org> -->
 License: UNKNOWN
  FIXME
 
