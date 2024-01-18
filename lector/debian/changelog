@@ -132,7 +132,7 @@ lector (1.20.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * Debian bugs resolved by this upstream release:
-    - Atril segfaults when selecting text on DjVu documents. (Closes: #880628).
+    - Lector segfaults when selecting text on DjVu documents. (Closes: #880628).
 
  -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 11:12:07 +0100
 
@@ -447,7 +447,7 @@ lector (1.8.1+dfsg1-3) unstable; urgency=medium
 
   * debian/patches:
     + Add 0001_open-multiple-files.patch. Allow selecting multiple files
-      and opening them in Atril. (Closes: #772014).
+      and opening them in Lector. (Closes: #772014).
 
  -- Mike Gabriel <sunweaver@debian.org>  Thu, 04 Dec 2014 12:32:18 +0100
 

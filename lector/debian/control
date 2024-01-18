@@ -59,7 +59,7 @@ Suggests: caja,
 Breaks: liblectordocument3 (<< 1.13.0),
 Replaces: liblectordocument3 (<< 1.13.0),
 Description: MATE document viewer
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
@@ -72,7 +72,7 @@ Architecture: all
 Depends: ${misc:Depends},
 Breaks: lector (<= 1.0.3-3),
 Description: MATE document viewer (common files)
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
@@ -86,11 +86,11 @@ Depends: liblectordocument3 (= ${binary:Version}),
          ${shlibs:Depends},
 Replaces: liblector (<< 1.9.0),
 Description: MATE document viewing library
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains the document viewing library used by Atril.
+ This package contains the document viewing library used by Lector.
 
 Package: liblectorview-dev
 Section: libdevel
@@ -101,7 +101,7 @@ Depends: liblectorview3 (= ${binary:Version}),
          ${shlibs:Depends},
 Breaks: liblector-dev (<< 1.9.0),
 Description: MATE document viewing library (development files)
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
@@ -117,11 +117,11 @@ Depends: libjs-mathjax,
 Breaks: liblector (<< 1.9.0),
 Replaces: liblector (<< 1.9.0),
 Description: MATE document rendering library
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains the document rendering library used by Atril.
+ This package contains the document rendering library used by Lector.
 
 Package: liblectordocument-dev
 Section: libdevel
@@ -135,7 +135,7 @@ Breaks: liblector-dev (<< 1.9.0),
 Replaces: liblector-dev (<< 1.9.0),
           gir1.2-lector (<< 1.18.3-2~),
 Description: MATE document rendering library (development files)
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
@@ -151,7 +151,7 @@ Depends: ${gir:Depends},
 Breaks: gir1.2-lector (<< 1.18.3-2~),
 Replaces: gir1.2-lector (<< 1.18.3-2~),
 Description: GObject introspection data for liblectordocument
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
@@ -169,7 +169,7 @@ Depends: ${gir:Depends},
 Breaks: gir1.2-lector (<< 1.18.3-2~),
 Replaces: gir1.2-lector (<< 1.18.3-2~),
 Description: GObject introspection data for liblectorview
- Atril is a simple multi-page document viewer.  It can display
+ Lector is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
