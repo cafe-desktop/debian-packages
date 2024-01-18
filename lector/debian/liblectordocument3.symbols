@@ -1,5 +1,5 @@
-libatrildocument.so.3 libatrildocument3 #MINVER#
-* Build-Depends-Package: libatrildocument-dev
+liblectordocument.so.3 liblectordocument3 #MINVER#
+* Build-Depends-Package: liblectordocument-dev
  ev_annotation_attachment_get_attachment@Base 1.8.0
  ev_annotation_attachment_get_type@Base 1.8.0
  ev_annotation_attachment_new@Base 1.8.0
@@ -325,23 +325,23 @@ libatrildocument.so.3 libatrildocument3 #MINVER#
  ev_transition_effect_new@Base 1.8.0
  ev_transition_effect_type_get_type@Base 1.8.0
  ev_xfer_uri_simple@Base 1.8.0
-libcomicsdocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.8.0
-libdjvudocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.8.0
-libdvidocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.8.0
-libepubdocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.10.1
-libpdfdocument.so libatrildocument3 #MINVER#
+libcomicsdocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.8.0
+libdjvudocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.8.0
+libdvidocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.8.0
+libepubdocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.10.1
+libpdfdocument.so liblectordocument3 #MINVER#
  _Z29pdf_document_images_get_imageP17_EvDocumentImagesP8_EvImage@Base 1.8.0
  pdf_document_get_type@Base 1.8.0
- register_atril_backend@Base 1.8.0
-libpixbufdocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.8.0
-libpsdocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.8.0
-libtiffdocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.8.0
-libxpsdocument.so libatrildocument3 #MINVER#
- register_atril_backend@Base 1.8.0
+ register_lector_backend@Base 1.8.0
+libpixbufdocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.8.0
+libpsdocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.8.0
+libtiffdocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.8.0
+libxpsdocument.so liblectordocument3 #MINVER#
+ register_lector_backend@Base 1.8.0

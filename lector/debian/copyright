@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Atril
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: https://git.mate-desktop.org/atril/
+Source: https://git.mate-desktop.org/lector/
 
 Files: backend/dvi/cairo-device.c
        backend/dvi/cairo-device.h
@@ -243,8 +243,8 @@ Files: cut-n-paste/smclient/eggdesktopfile.h
 Copyright: 2007, Novell, Inc.
 License: LGPL-2+
 
-Files: atril-document.h
-       atril-view.h
+Files: lector-document.h
+       lector-view.h
        libdocument/ev-init.c
        libdocument/ev-init.h
 Copyright: 2009, Christian Persch
@@ -327,7 +327,7 @@ Copyright: 2010, Yaco Sistemas, Daniel Garcia <danigm@yaco.es>
 License: GPL-2+
 
 Files: previewer/previewer.gresource.xml
-       shell/atril.gresource.xml
+       shell/lector.gresource.xml
 Copyright: 2012, Christian Persch
 License: GPL-3+
 
@@ -416,7 +416,7 @@ Copyright: 2004, Martin Kretzschmar
            2010, 2012, Christian Persch
 License: GPL-2+
 
-Files: thumbnailer/atril-thumbnailer.c
+Files: thumbnailer/lector-thumbnailer.c
 Copyright: 2005, Fernando Herrera <fherrera@onirica.com>
 License: GPL-2+
 
@@ -469,7 +469,7 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: atril.pot
+Files: lector.pot
        po/*.po
        po/gnome-copyrights.txt
 Copyright: THE PACKAGE'S COPYRIGHT HOLDER
@@ -480,7 +480,7 @@ License: GPL-2+
 Comment:
  Using license from COPYING file.
 
-Files: properties/libatril-properties-page.caja-extension.desktop.in.in
+Files: properties/liblector-properties-page.caja-extension.desktop.in.in
 Copyright: 2000, 2001 Eazel Inc.
            2003 Andrew Sobala <aes@gnome.org>
            2005 Bastien Nocera <hadess@hadess.net>
@@ -491,7 +491,7 @@ Comment:
 
 Files: backend/epub/epub-document.c
        backend/epub/epub-document.h
-       backend/epub/epubdocument.atril-backend.desktop.in
+       backend/epub/epubdocument.lector-backend.desktop.in
        backend/epub/minizip/Makefile.am
        backend/epub/minizip/ioapi.c
        backend/epub/minizip/ioapi.h
@@ -642,7 +642,7 @@ Files: .travis.yml
        data/icons/Makefile.am
        data/Makefile.am
        data/*.xml
-       data/atril.1
+       data/lector.1
        data/*.png
        data/*.in
        libdocument/Makefile.am
@@ -659,14 +659,14 @@ Files: .travis.yml
        po/Makevars
        po/POTFILES.*
        previewer/Makefile.am
-       previewer/atril-previewer.1
+       previewer/lector-previewer.1
        previewer/previewer-ui.xml
        properties/Makefile.am
        shell/Makefile.am
-       shell/atril.about
-       shell/atril-toolbar.xml
-       shell/atril-ui.xml
-       shell/atril.css
+       shell/lector.about
+       shell/lector-toolbar.xml
+       shell/lector-ui.xml
+       shell/lector.css
        shell/ev-daemon-gdbus.xml
        shell/ev-gdbus.xml
        test/Makefile.am
@@ -676,16 +676,16 @@ Files: .travis.yml
        test/test-mime.bin
        test/test-page-labels.pdf
        thumbnailer/Makefile.am
-       thumbnailer/atril-thumbnailer.1
-       thumbnailer/atril.thumbnailer.in
+       thumbnailer/lector-thumbnailer.1
+       thumbnailer/lector.thumbnailer.in
        AUTHORS
        ChangeLog
        Makefile.am
        NEWS
        README
        autogen.sh
-       atril-document.*
-       atril-view.*
+       lector-document.*
+       lector-view.*
        configure.ac
        update-authors.pl
 Copyright: *No copyright*

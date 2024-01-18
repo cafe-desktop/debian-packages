@@ -1,4 +1,4 @@
-Source: atril
+Source: lector
 Section: x11
 Priority: optional
 Maintainer: Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
@@ -37,14 +37,14 @@ Build-Depends: debhelper-compat (=12),
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: https://mate-desktop.org/
-Vcs-Browser: https://salsa.debian.org/debian-mate-team/atril
-Vcs-Git: https://salsa.debian.org/debian-mate-team/atril.git
+Vcs-Browser: https://salsa.debian.org/debian-mate-team/lector
+Vcs-Git: https://salsa.debian.org/debian-mate-team/lector.git
 
-Package: atril
+Package: lector
 Architecture: any
-Depends: atril-common (>= ${source:Version}),
-         libatrildocument3 (= ${binary:Version}),
-         libatrilview3 (= ${binary:Version}),
+Depends: lector-common (>= ${source:Version}),
+         liblectordocument3 (= ${binary:Version}),
+         liblectorview3 (= ${binary:Version}),
          shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends},
@@ -56,8 +56,8 @@ Provides: djvu-viewer,
 Suggests: caja,
           poppler-data,
           unrar,
-Breaks: libatrildocument3 (<< 1.13.0),
-Replaces: libatrildocument3 (<< 1.13.0),
+Breaks: liblectordocument3 (<< 1.13.0),
+Replaces: liblectordocument3 (<< 1.13.0),
 Description: MATE document viewer
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -67,10 +67,10 @@ Description: MATE document viewer
  copying text to the clipboard, hypertext navigation, and
  table-of-contents bookmarks.
 
-Package: atril-common
+Package: lector-common
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: atril (<= 1.0.3-3),
+Breaks: lector (<= 1.0.3-3),
 Description: MATE document viewer (common files)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -78,13 +78,13 @@ Description: MATE document viewer (common files)
  .
  This package contains the architecture independent files.
 
-Package: libatrilview3
+Package: liblectorview3
 Section: libs
 Architecture: any
-Depends: libatrildocument3 (= ${binary:Version}),
+Depends: liblectordocument3 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Replaces: libatril (<< 1.9.0),
+Replaces: liblector (<< 1.9.0),
 Description: MATE document viewing library
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -92,30 +92,30 @@ Description: MATE document viewing library
  .
  This package contains the document viewing library used by Atril.
 
-Package: libatrilview-dev
+Package: liblectorview-dev
 Section: libdevel
 Architecture: any
-Depends: libatrilview3 (= ${binary:Version}),
-         gir1.2-atrilview-1.5.0 (= ${binary:Version}),
+Depends: liblectorview3 (= ${binary:Version}),
+         gir1.2-lectorview-1.5.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libatril-dev (<< 1.9.0),
+Breaks: liblector-dev (<< 1.9.0),
 Description: MATE document viewing library (development files)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains the development files for the libatrilview
+ This package contains the development files for the liblectorview
  library.
 
-Package: libatrildocument3
+Package: liblectordocument3
 Section: libs
 Architecture: any
 Depends: libjs-mathjax,
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libatril (<< 1.9.0),
-Replaces: libatril (<< 1.9.0),
+Breaks: liblector (<< 1.9.0),
+Replaces: liblector (<< 1.9.0),
 Description: MATE document rendering library
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
@@ -123,67 +123,67 @@ Description: MATE document rendering library
  .
  This package contains the document rendering library used by Atril.
 
-Package: libatrildocument-dev
+Package: liblectordocument-dev
 Section: libdevel
 Architecture: any
-Depends: libatrildocument3 (= ${binary:Version}),
-         gir1.2-atrildocument-1.5.0 (= ${binary:Version}),
+Depends: liblectordocument3 (= ${binary:Version}),
+         gir1.2-lectordocument-1.5.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libatril-dev (<< 1.9.0),
-        gir1.2-atril (<< 1.18.3-2~),
-Replaces: libatril-dev (<< 1.9.0),
-          gir1.2-atril (<< 1.18.3-2~),
+Breaks: liblector-dev (<< 1.9.0),
+        gir1.2-lector (<< 1.18.3-2~),
+Replaces: liblector-dev (<< 1.9.0),
+          gir1.2-lector (<< 1.18.3-2~),
 Description: MATE document rendering library (development files)
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains the development files for the libatrildocument
+ This package contains the development files for the liblectordocument
  library.
 
-Package: gir1.2-atrildocument-1.5.0
+Package: gir1.2-lectordocument-1.5.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: gir1.2-atril (<< 1.18.3-2~),
-Replaces: gir1.2-atril (<< 1.18.3-2~),
-Description: GObject introspection data for libatrildocument
+Breaks: gir1.2-lector (<< 1.18.3-2~),
+Replaces: gir1.2-lector (<< 1.18.3-2~),
+Description: GObject introspection data for liblectordocument
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains introspection data for libatrildocument.
+ This package contains introspection data for liblectordocument.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: gir1.2-atrilview-1.5.0
+Package: gir1.2-lectorview-1.5.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: gir1.2-atril (<< 1.18.3-2~),
-Replaces: gir1.2-atril (<< 1.18.3-2~),
-Description: GObject introspection data for libatrilview
+Breaks: gir1.2-lector (<< 1.18.3-2~),
+Replaces: gir1.2-lector (<< 1.18.3-2~),
+Description: GObject introspection data for liblectorview
  Atril is a simple multi-page document viewer.  It can display
  and print PostScript (PS), Encapsulated PostScript (EPS), DJVU, DVI and
  Portable Document Format (PDF) files.
  .
- This package contains introspection data for libatrilview.
+ This package contains introspection data for liblectorview.
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: gir1.2-atril
+Package: gir1.2-lector
 Section: oldlibs
 Architecture: any
 Depends: ${misc:Depends},
-         gir1.2-atrildocument-1.5.0 (= ${binary:Version}),
-         gir1.2-atrilview-1.5.0 (= ${binary:Version}),
-Description: GObject introspection data for libatril* (transitional package)
- This package is a transitional package to gir1.2-atrildocument-1.5.0 and
- gir1.2-atrilview-1.5.0. This package can be safely removed.
+         gir1.2-lectordocument-1.5.0 (= ${binary:Version}),
+         gir1.2-lectorview-1.5.0 (= ${binary:Version}),
+Description: GObject introspection data for liblector* (transitional package)
+ This package is a transitional package to gir1.2-lectordocument-1.5.0 and
+ gir1.2-lectorview-1.5.0. This package can be safely removed.

@@ -21,7 +21,7 @@ override_dh_missing:
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
-	rm -rfv debian/tmp/usr/lib/*/atril/3/backends/*.la
+	rm -rfv debian/tmp/usr/lib/*/lector/3/backends/*.la
 	dh_install
 
 override_dh_auto_test:
@@ -39,7 +39,7 @@ override_dh_auto_configure:
 		--enable-introspection \
 		--disable-silent-rules \
 		--disable-static \
-		--libexecdir=/usr/lib/atril \
+		--libexecdir=/usr/lib/lector \
 		$(DEB_ATRIL_FLAGS)
 
 get-orig-source:

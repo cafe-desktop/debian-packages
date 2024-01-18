@@ -1,5 +1,5 @@
-libatrilview.so.3 libatrilview3 #MINVER#
-* Build-Depends-Package: libatrilview-dev
+liblectorview.so.3 liblectorview3 #MINVER#
+* Build-Depends-Package: liblectorview-dev
 #MISSING: 1.14.0# ev_web_view_find_set_highlight_search@Base 1.10.1
 #MISSING: 1.14.0# ev_web_view_get_has_selection@Base 1.10.1
  ev_annotation_window_get_annotation@Base 1.8.0
