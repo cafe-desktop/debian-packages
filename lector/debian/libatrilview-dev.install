@@ -1,0 +1,4 @@
+usr/include/atril/*/*view*
+usr/lib/*/*view*.so
+usr/lib/*/pkgconfig/*view*
+usr/share/gir-1.0/AtrilView*.gir

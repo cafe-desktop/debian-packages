@@ -1,0 +1,4 @@
+usr/include/atril/*/*document*
+usr/lib/*/*document*.so
+usr/lib/*/pkgconfig/*document*
+usr/share/gir-1.0/AtrilDocument*.gir

@@ -1,0 +1,511 @@
+atril (1.24.0-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
+  * debian/upstream/metadata:
+    + Drop obsolete fields Contact: and Name:.
+    + Append .git suffix to URLs in Repository: field.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop CVE-2019-11459.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D libsynctex-dev.
+    + Add B-D libxml2-utils.
+  * debian/libatrildocument3.symbols:
+    + Update symbols.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 11:22:02 +0100
+
+atril (1.22.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/changelog: Document security issue closure for 1.22.1-1.
+  * debian/patches:
+    + Add CVE-2019-11459.patch. tiff: Handle failure from
+      TIFFReadRGBAImageOriented. (Closes: #927821, CVE-2019-11459).
+  * debian/control:
+    + Add Rules-Requires-Root: field and set it to 'no'.
+    + Bump Standards-Version: to 4.4.1. No changes needed.
+
+ -- Mike Gabriel <mike.gabriel@das-netzwerkteam.de>  Mon, 16 Dec 2019 10:23:05 +0100
+
+atril (1.22.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_prevent_no_doc_segfault.patch. Applied upstream.
+    + Drop 0002_CVE-2019-1010006.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 27 Sep 2019 19:16:12 +0200
+
+atril (1.22.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Add 0002_CVE-2019-1010006.patch. Fix buffer overflow.
+      (CVE-2019-1010006)
+    + Add 0001_prevent_no_doc_segfault.patch. Prevent segfaults when no
+      document is loaded.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/rules:
+    + Updated for MATE Desktop 1.22
+  * debian/atril-common.install:
+    + Correct order.
+
+  [ Mike Gabriel ]
+  * debian/{compat,control}:
+    + Use debhelper-compat notation. Bump to DH compat level version 12.
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 30 Jul 2019 23:35:21 +0200
+
+atril (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Reduce chattiness of atril-daemon. (Closes: #798616).
+  * debian/control:
+    + Bump Standards-Version: to 4.2.1. No changes needed.
+    + Use secure URL in Homepage: field.
+  * debian/libatril*.symbols:
+    + Add Build-Depends-Package: meta data field.
+
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Dec 2018 22:24:46 +0100
+
+atril (1.20.2-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/control:
+    + Update Vcs-*: fields. Package has been migrated to salsa.debian.org.
+    + Bump Standards-Version: to 4.1.4. No changes needed.
+    + Drop pkg-mate-team Alioth mailing list from Uploaders: field.
+    + Drop from D (atril): mate-desktop-common. (Closes: #899412).
+  * debian/copyright:
+    + Make Upstream-Name: field's value more human readable.
+    + Update Upstream-Contact: field.
+    + Update Source: field. Use secure URLs.
+  * debian/upstream/metadata:
+    + Add file. Be compliant with DEP-12 proposal.
+    + Use Martin's address as Contact: address.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Jul 2018 12:50:36 +0200
+
+atril (1.20.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/libatrilview3.symbols:
+    + Update symbols.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Use secure URI for copyright format.
+    + Add auto-generated copyright.in file.
+    + Update copyright attributions.
+  * debian/source/lintian-overrides:
+    + Move to new/correct location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 04 Apr 2018 23:10:03 +0200
+
+atril (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/libatril{view,document}3.symbols (already in 1.19.6-0ubuntu1:
+    + Update symbols.
+  * debian/control (already in 1.19.6-0ubuntu1):
+    + White space removal.
+  * debian/copyright (already in 1.19.6-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * Debian bugs resolved by this upstream release:
+    - Atril segfaults when selecting text on DjVu documents. (Closes: #880628).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 14 Feb 2018 11:12:07 +0100
+
+atril (1.20.0-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:56 +0000
+
+atril (1.19.6-0ubuntu1) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Tue, 23 Jan 2018 23:55:02 +0000
+
+atril (1.18.3-2) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * Rename GIR package to match Debian Policy.
+  * debian/{rules,atril-common.install}:
+    + Move atril.appdata.xml to /usr/share/metainfo/ before running dh_install.
+  * debian/control:
+    + White-space clean-up.
+  * debian/{control,compat}:
+    + Bump DH version level to 11.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Rename pretty name of our team -> Debian+Ubuntu Mate Packaging Team.
+    + Temporarily have pkg-mate-team ML under Uploaders:.
+    + Bump Standards-Version: to 4.1.3. No changes needed.
+    + Update Maintainer: field to debian-mate ML on list.debian.org.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 24 Jan 2018 23:21:07 +0100
+
+atril (1.18.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+  * debian/watch:
+    + Use secure URL to obtain upstream sources.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 26 Nov 2017 21:10:57 +0100
+
+atril (1.18.1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+    - ev-window: remove deprecated GtkToolbar-shadow-type. (Closes: #869657).
+    - sidebar-layers: Make it usable at all + various improvments. (Closes:
+      #860160, #869358).
+    - ... (see upstream changelog)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 22 Aug 2017 20:14:45 +0200
+
+atril (1.18.0-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/debian/atril.install: Remove obsolete
+    usr/lib/*/atril-convert-metadata
+  * debian/copyright: Update copyright attributions.
+  * debian/rules: Enable dh_girespository helper.
+  * debian/control: Dependencies updated for MATE 1.18.
+  * debian/copyright: Update copyright attributions.
+  * debian/libatril{document,view}3.symbols: Update symbols for 1.18 release.
+  * debian/rules: Add --disable-silent-rules, as used in other packages.
+
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10.3~).
+  * debian/rules:
+    + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
+  * debian/rules:
+    + Disable autoreconf, handled by autogen.sh.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Drop 0001-CVE-2017-1000083-comics-Remove-support-for-tar-and-tar-like-
+      command.patch. Upstream has a better fix for this.
+    + Add 0001-CVE-2017-1000083-comics-make-files-containing-checkpoint-action-
+      unsupported.patch. Leave functionality intact _and_ properly address
+      CVE-2017-1000083.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 17:57:07 +0200
+
+atril (1.16.1-2.1) unstable; urgency=high
+
+  * Non-maintainer upload
+  * Add 0001-CVE-2017-1000083-comics-Remove-support-for-tar-and-tar-like-command.patch
+    Fixes a command injection vulnerability in CBT handler. CVE-2017-1000083
+    (Closes: #868500)
+
+ -- Santiago Ruano Rincón <santiagorr@riseup.net>  Fri, 21 Jul 2017 06:59:09 +0200
+
+atril (1.16.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/rules: Enable dh_girespository helper.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Replace R: dbus-x11 by R: default-dbus-session-bus | dbus-session-bus.
+      (Closes: #835835).
+  * debian/rules:
+    + Drop override_dh_builddeb, use normal xz compression. Fixes FTBFS on
+      mipsel. (Closes: #846611).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 09:34:03 +0100
+
+atril (1.16.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Support image/vnd.djvu+multipage MIME type. (Closes: #840324).
+    - Build: require poppler 0.22.0 (for case-sensitive search in PDFs).
+      Fix PDF case-sensitive search (Closes: #798533).
+  * debian/control:
+    + Versioned B-D: libpoppler-glib-dev (>= 0.22.0).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 27 Nov 2016 14:59:23 +0100
+
+atril (1.16.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.3-0ubuntu1 upload.
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
+  [ Mike Gabriel ]
+  * debian/*.symbols:
+    + Update for 1.16.0.
+  * debian/atril.lintian-overrides:
+    + Drop unused override
+      pkg-has-shlibs-control-file-but-no-actual-shared-libs.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 22:57:32 +0200
+
+atril (1.15.3-0ubuntu1) yakkety; urgency=medium
+
+  * New upstream development release.
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:47 +0100
+
+atril (1.14.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 12:21:00 +0200
+
+atril (1.14.1-2) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add B:/R: (atril) for libatrildocument3 (<< 1.13.0). (Closes: #825805).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 03 Jun 2016 00:03:19 +0200
+
+atril (1.14.1-1) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Use encrypted URLs for Vcs-*: field.
+    + Versioned B-D on dpkg-dev (>= 1.16.1.1).
+  * debian/rules:
+    + Enable all hardening flags.
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/control:
+    + Versioned B-D: libcaja-extension-dev (>= 1.14)
+    + B-D: libgail-3-dev
+    + B-D: libgtk-3-dev
+    + Versioned B-D: libmate-desktop-dev (>= 1.14)
+    + B-D: libwebkit2gtk-4.0-dev
+    + Versioned B-D: mate-common (>= 1.14)
+    + Bump Standards: to 3.9.8. No changes needed.
+    + Processed with wrap-and-sort.
+  * debian/rules:
+    + MateConf dropped upstream.
+    + Add --with-gtk=3.0
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/libatrilview3.symbols:
+    + Update symbols for 1.14.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Add --libexecdir=/usr/lib/atril. Avoid non-shared library files ending
+      up in a shared library location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 26 May 2016 04:58:44 +0200
+
+atril (1.12.2-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/patches:
+    + Drop 2001_dont-ship-mathjax.patch. Applied upstream.
+  * debian/watch:
+    + Drop +repack suffix.
+  * debian/rules:
+    + Remove obsolete repacking.
+  * debian/control:
+    + Drop obsolete B-D and D (atril): mate-icon-theme.
+    + Versioned B-D: mate-common (>= 1.12), libcaja-extension-dev (>= 1.12) and
+      libmate-desktop-dev (>= 1.12).
+
+  [ Mike Gabriel ]
+  * debian/control:
+    + Add D (gir1.2-atril): libatrildocument3. (Closes: #799068).
+    + Versioned B-D: libgxps-dev (>= 0.2.0).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 12:51:31 +0100
+
+atril (1.10.2+repack1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/{libatrildocument3,atril}.install:
+    + Process with wrap-and-sort.
+  * debian/control:
+    + Clean up build dependencies. Process with wrap-and-sort.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 02 Sep 2015 05:17:52 +0200
+
+atril (1.10.1+repack1-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Drop 0001_open-multiple-files.patch. Applied upstream.
+    + Drop 0002_forgotten-mutex-unlock.patch. Applied upstream.
+    + Drop 0003_bug-tracker-url.patch. Applied upstream.
+    + Drop 2001_omit-gfdl-licensed-help-files.patch. Help files are DFSG
+      compliant.
+  * debian/atril-common.install:
+    + Add usr/share/{appdata,caja/extensions,gtk-doc,help}
+  * debian/atril.install:
+    + Add usr/lib/*/{atrild,atril-convert-metadata}.
+    + Remove usr/share/MateConf/gettings/atril.convert.
+  * debian/control:
+    + Update for new upstream release.
+    + Remove cdbs.
+  * debian/gir1.2-atril.install:
+    + New package.
+  * debian/watch:
+    + Remove +dfsg1 suffix.
+  * debian/rules:
+    + Update for new release.
+
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Use same indentation style for help/ files.
+  * debian/control:
+    + Add Martin Wimpress to Uploaders: field.
+  * Don't ship embedded MathJax Javascript library. Use Debian's version of
+    libjs-mathjax instead. This requires repacking atril's orig tarball (for
+    dropping the embedded code).
+  * debian/*.symbols:
+    + Update .symbols files for shared libraries.
+  * debian/*.install:
+    + Fix various install locations for this new upstream release.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 24 Aug 2015 12:53:51 +0200
+
+atril (1.8.1+dfsg1-5) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0003_bug-tracker-url.patch. Point to the Github issue tracker
+      where atril sources are hosted. (Closes: #780500).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 28 May 2015 10:44:35 +0200
+
+atril (1.8.1+dfsg1-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0002_forgotten-mutex-unlock.patch. Don't forget to unlock the
+      trylock'ed mutex. Prevents from unpredictable behaviour after that
+      mutex unlocking has been forgotten. (Closes: #779848).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 09 Mar 2015 09:26:24 +0100
+
+atril (1.8.1+dfsg1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_open-multiple-files.patch. Allow selecting multiple files
+      and opening them in Atril. (Closes: #772014).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 04 Dec 2014 12:32:18 +0100
+
+atril (1.8.1+dfsg1-2) unstable; urgency=medium
+
+  [ Vangelis Mouhtsis ]
+  * debian/control: Bump Standards: to 3.9.6.
+    + No changes needed.
+
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Use upstream's NEWS file as upstream ChangeLog.
+  * debian/rules:
+    + Drop libatril-properties-page.la on non-amd64 builds, as well.
+  * debian/copyright:
+    + Drop information of ev-version.h. Not shipped in upstream sources
+      anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 25 Oct 2014 18:45:13 +0200
+
+atril (1.8.1+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_add-keywords-key-to-desktop-files.patch. Applied upstream.
+    + Drop 1002_FTBFS-atril-with-clang.patch. Applied upstream.
+  * debian/copyright:
+    + Really mention all upstream files.
+    + Fix short license names in two locations.
+    + Remove duplicate file paragraph for po/*.po.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Sep 2014 10:47:57 +0200
+
+atril (1.8.0+dfsg1-4) unstable; urgency=medium
+
+  * debian/control:
+    + Modify B-D: libtiff4-dev -> libtiff-dev. (Closes: #753820).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 08 Jul 2014 01:15:47 +0200
+
+atril (1.8.0+dfsg1-3) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 1002_FTBFS-atril-with-clang.patch. Fix FTBFS when build with clang.
+      (Closes: #753344).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 01 Jul 2014 20:16:19 +0200
+
+atril (1.8.0+dfsg1-2) unstable; urgency=low
+
+  * debian/control:
+    + Drop B-D: libt1-dev. Package has been removed from Debian unstable.
+      (For reference see #638759 and #744881).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 05 May 2014 08:39:16 +0200
+
+atril (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734911).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Apr 2014 11:47:31 +0200

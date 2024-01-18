@@ -1,0 +1,4 @@
+# atril ships a caja extension and those extensions are known to erroneously
+# trigger debhelper's makeshlibs script
+atril: postinst-has-useless-call-to-ldconfig
+atril: postrm-has-useless-call-to-ldconfig
