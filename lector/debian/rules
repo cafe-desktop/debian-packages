@@ -5,10 +5,10 @@ DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
 DHFLAGS=--parallel
-DEB_ATRIL_FLAGS=
+DEB_LECTOR_FLAGS=
 ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
 ifeq ($(shell lsb_release -cs),wheezy)
-	DEB_ATRIL_FLAGS=--without-keyring
+	DEB_LECTOR_FLAGS=--without-keyring
 endif
 endif
 
@@ -40,7 +40,7 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--disable-static \
 		--libexecdir=/usr/lib/lector \
-		$(DEB_ATRIL_FLAGS)
+		$(DEB_LECTOR_FLAGS)
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
