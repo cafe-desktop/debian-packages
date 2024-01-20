@@ -182,7 +182,7 @@ lector (1.18.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
-    - ev-window: remove deprecated GtkToolbar-shadow-type. (Closes: #869657).
+    - ev-window: remove deprecated CtkToolbar-shadow-type. (Closes: #869657).
     - sidebar-layers: Make it usable at all + various improvments. (Closes:
       #860160, #869358).
     - ... (see upstream changelog)
