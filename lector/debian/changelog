@@ -333,7 +333,6 @@ lector (1.14.1-1) unstable; urgency=medium
     + B-D: libcail-3-dev
     + B-D: libctk-3-dev
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
-    + B-D: libwebkit2ctk-4.0-dev
     + Versioned B-D: cafe-common (>= 1.14)
     + Bump Standards: to 3.9.8. No changes needed.
     + Processed with wrap-and-sort.
