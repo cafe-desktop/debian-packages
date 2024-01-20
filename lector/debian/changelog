@@ -396,7 +396,7 @@ lector (1.10.1+repack1-1) unstable; urgency=medium
     + Drop 2001_omit-gfdl-licensed-help-files.patch. Help files are DFSG
       compliant.
   * debian/lector-common.install:
-    + Add usr/share/{appdata,caja/extensions,ctk-doc,help}
+    + Add usr/share/{appdata,caja/extensions,gtk-doc,help}
   * debian/lector.install:
     + Add usr/lib/*/{lectord,lector-convert-metadata}.
     + Remove usr/share/MateConf/gettings/lector.convert.
