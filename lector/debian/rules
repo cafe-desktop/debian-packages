@@ -30,7 +30,7 @@ override_dh_auto_test:
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure $(DHFLAGS) -- \
-		--enable-gtk-doc \
+		--enable-ctk-doc \
 		--enable-djvu \
 		--enable-dvi \
 		--enable-t1lib \

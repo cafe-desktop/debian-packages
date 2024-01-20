@@ -196,7 +196,7 @@ lector (1.18.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for CAFE 1.17.
-  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/rules: Remove obsolete --with-ctk=3.0
   * debian/debian/lector.install: Remove obsolete
     usr/lib/*/lector-convert-metadata
   * debian/copyright: Update copyright attributions.
@@ -331,15 +331,15 @@ lector (1.14.1-1) unstable; urgency=medium
   * debian/control:
     + Versioned B-D: libcaja-extension-dev (>= 1.14)
     + B-D: libgail-3-dev
-    + B-D: libgtk-3-dev
+    + B-D: libctk-3-dev
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
-    + B-D: libwebkit2gtk-4.0-dev
+    + B-D: libwebkit2ctk-4.0-dev
     + Versioned B-D: cafe-common (>= 1.14)
     + Bump Standards: to 3.9.8. No changes needed.
     + Processed with wrap-and-sort.
   * debian/rules:
     + MateConf dropped upstream.
-    + Add --with-gtk=3.0
+    + Add --with-ctk=3.0
   * debian/copyright:
     + Update copyright attributions.
   * debian/liblectorview3.symbols:
@@ -397,7 +397,7 @@ lector (1.10.1+repack1-1) unstable; urgency=medium
     + Drop 2001_omit-gfdl-licensed-help-files.patch. Help files are DFSG
       compliant.
   * debian/lector-common.install:
-    + Add usr/share/{appdata,caja/extensions,gtk-doc,help}
+    + Add usr/share/{appdata,caja/extensions,ctk-doc,help}
   * debian/lector.install:
     + Add usr/lib/*/{lectord,lector-convert-metadata}.
     + Remove usr/share/MateConf/gettings/lector.convert.
