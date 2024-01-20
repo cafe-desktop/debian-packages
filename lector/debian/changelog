@@ -330,7 +330,7 @@ lector (1.14.1-1) unstable; urgency=medium
   * New upstream release.
   * debian/control:
     + Versioned B-D: libcaja-extension-dev (>= 1.14)
-    + B-D: libgail-3-dev
+    + B-D: libcail-3-dev
     + B-D: libctk-3-dev
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
     + B-D: libwebkit2ctk-4.0-dev
