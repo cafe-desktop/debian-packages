@@ -893,7 +893,7 @@ Copyright: (already in 1.19.6-0ubuntu1):
 License: UNKNOWN
  FIXME
 
-Files: properties/liblector-properties-page.caja-extension.in.in
+Files: properties/liblector-properties-page.baul-extension.in.in
 Copyright: 2000-2001, Eazel Inc.nCopyright (C) 2003 Andrew Sobala <aes@gnome.org>nCopyright (C) 2005 Bastien Nocera <hadess@hadess.net>nCopyright (C) 2005 Red Hat, IncnCopyright (C) 2012-2018 The CAFE developers
 License: UNKNOWN
  FIXME

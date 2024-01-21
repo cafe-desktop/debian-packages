@@ -20,7 +20,7 @@ override_dh_missing:
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
-	rm -rfv debian/tmp/usr/lib/*/caja/extensions-2.0/*.la
+	rm -rfv debian/tmp/usr/lib/*/baul/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/lib/*/lector/3/backends/*.la
 	dh_install
 

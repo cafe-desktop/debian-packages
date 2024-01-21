@@ -329,7 +329,7 @@ lector (1.14.1-1) unstable; urgency=medium
   [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
-    + Versioned B-D: libcaja-extension-dev (>= 1.14)
+    + Versioned B-D: libbaul-extension-dev (>= 1.14)
     + B-D: libcail-3-dev
     + B-D: libctk-3-dev
     + Versioned B-D: libcafe-desktop-dev (>= 1.14)
@@ -365,7 +365,7 @@ lector (1.12.2-1) unstable; urgency=medium
     + Remove obsolete repacking.
   * debian/control:
     + Drop obsolete B-D and D (lector): cafe-icon-theme.
-    + Versioned B-D: cafe-common (>= 1.12), libcaja-extension-dev (>= 1.12) and
+    + Versioned B-D: cafe-common (>= 1.12), libbaul-extension-dev (>= 1.12) and
       libcafe-desktop-dev (>= 1.12).
 
   [ Mike Gabriel ]
@@ -396,7 +396,7 @@ lector (1.10.1+repack1-1) unstable; urgency=medium
     + Drop 2001_omit-gfdl-licensed-help-files.patch. Help files are DFSG
       compliant.
   * debian/lector-common.install:
-    + Add usr/share/{appdata,caja/extensions,gtk-doc,help}
+    + Add usr/share/{appdata,baul/extensions,gtk-doc,help}
   * debian/lector.install:
     + Add usr/lib/*/{lectord,lector-convert-metadata}.
     + Remove usr/share/MateConf/gettings/lector.convert.
