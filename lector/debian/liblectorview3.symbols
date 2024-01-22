@@ -238,23 +238,3 @@ liblectorview.so.3 liblectorview3 #MINVER#
  ev_view_zoom_in@Base 1.8.0
  ev_view_zoom_out@Base 1.8.0
  ev_view_zoom_reset@Base 1.20.1
- ev_web_view_copy@Base 1.10.1
- ev_web_view_disconnect_handlers@Base 1.10.1
- ev_web_view_find_cancel@Base 1.10.1
- ev_web_view_find_changed@Base 1.10.1
- ev_web_view_find_next@Base 1.10.1
- ev_web_view_find_previous@Base 1.10.1
- ev_web_view_find_search_changed@Base 1.10.1
- ev_web_view_get_type@Base 1.10.1
- ev_web_view_handle_link@Base 1.10.1
- ev_web_view_new@Base 1.10.1
- ev_web_view_next_page@Base 1.10.1
- ev_web_view_previous_page@Base 1.10.1
- ev_web_view_reload@Base 1.10.1
- ev_web_view_reload_page@Base 1.10.1
- ev_web_view_select_all@Base 1.10.1
- ev_web_view_set_handler@Base 1.10.1
- ev_web_view_set_model@Base 1.10.1
- ev_web_view_zoom_in@Base 1.10.1
- ev_web_view_zoom_out@Base 1.10.1
- ev_web_view_zoom_reset@Base 1.20.1
