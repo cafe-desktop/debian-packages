@@ -158,12 +158,10 @@ liblectordocument.so.3 liblectordocument3 #MINVER#
  ev_document_misc_format_date@Base 1.8.0
  ev_document_misc_get_loading_thumbnail@Base 1.8.0
  ev_document_misc_get_monitor_dpi@Base 1.24.0
- ev_document_misc_get_page_border_size@Base 1.8.0
  ev_document_misc_get_pointer_position@Base 1.16.0
  ev_document_misc_get_thumbnail_frame@Base 1.8.0
  ev_document_misc_invert_pixbuf@Base 1.8.0
  ev_document_misc_invert_surface@Base 1.8.0
- ev_document_misc_paint_one_page@Base 1.8.0
  ev_document_misc_pixbuf_from_surface@Base 1.8.0
  ev_document_misc_surface_from_pixbuf@Base 1.8.0
  ev_document_misc_surface_rotate_and_scale@Base 1.8.0
@@ -331,8 +329,6 @@ libdjvudocument.so liblectordocument3 #MINVER#
  register_lector_backend@Base 1.8.0
 libdvidocument.so liblectordocument3 #MINVER#
  register_lector_backend@Base 1.8.0
-libepubdocument.so liblectordocument3 #MINVER#
- register_lector_backend@Base 1.10.1
 libpdfdocument.so liblectordocument3 #MINVER#
  _Z29pdf_document_images_get_imageP17_EvDocumentImagesP8_EvImage@Base 1.8.0
  pdf_document_get_type@Base 1.8.0
