@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Lector
-Upstream-Contact: Martin Wimpress <martin@cafe-desktop.org>
-Source: https://git.cafe-desktop.org/lector/
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
+Source: https://github.com/cafe-desktop/lector
 
 Files: backend/dvi/cairo-device.c
        backend/dvi/cairo-device.h
