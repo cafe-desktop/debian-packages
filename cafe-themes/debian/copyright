@@ -69,7 +69,7 @@ Files: cursor-themes/Makefile.am
        desktop-themes/BlueMenta/gtk-2.0/apps/Handles/Makefile.am
        desktop-themes/BlueMenta/gtk-2.0/apps/Makefile.am
        desktop-themes/BlueMenta/gtk-2.0/apps/Others/Makefile.am
-       desktop-themes/BlueMenta/gtk-2.0/apps/Caja/Makefile.am
+       desktop-themes/BlueMenta/gtk-2.0/apps/Baul/Makefile.am
        desktop-themes/BlueMenta/metacity-1/Makefile.am
        desktop-themes/BlueMenta-border/Makefile.am
        desktop-themes/BlueMenta-border/metacity-1/Makefile.am
@@ -99,7 +99,7 @@ Files: cursor-themes/Makefile.am
        desktop-themes/Menta/gtk-2.0/apps/Handles/Makefile.am
        desktop-themes/Menta/gtk-2.0/apps/Makefile.am
        desktop-themes/Menta/gtk-2.0/apps/Others/Makefile.am
-       desktop-themes/Menta/gtk-2.0/apps/Caja/Makefile.am
+       desktop-themes/Menta/gtk-2.0/apps/Baul/Makefile.am
        desktop-themes/Menta/metacity-1/Makefile.am
        desktop-themes/Menta-border/Makefile.am
        desktop-themes/Menta-border/metacity-1/Makefile.am
