@@ -1,5 +1,11 @@
+cafe-common (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 27 Dec 2024 11:00:33 +0100
+
 cafe-common (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Sat, 26 Mar 2022 11:59:27 +0100
+ -- Pablo Barciela <scow@riseup.net>  Sat, 26 Mar 2022 11:59:27 +0100
