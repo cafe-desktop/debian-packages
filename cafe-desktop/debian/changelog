@@ -1,3 +1,11 @@
+cafe-desktop (2.0.0-1) unstable; urgency=medium
+
+  * GLib 2.67.3 required
+  * control: 'libgdk-pixbuf-2.0-dev' instead 'libgdk-pixbuf2.0-dev'
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 27 Dec 2024 19:57:12 +0100
+
 cafe-desktop (1.25.1-1) unstable; urgency=medium
 
   * control: update uploaders and maintainer
