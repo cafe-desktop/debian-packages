@@ -1,3 +1,9 @@
+python-baul (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Tue, 28 Jan 2025 09:44:27 +0100
+
 python-baul (1.25.0-3) unstable; urgency=medium
 
   * Rebuild 1.25.0 to work baul-rename again
