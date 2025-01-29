@@ -1,3 +1,9 @@
+baul-rename (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 29 Jan 2025 09:45:53 +0100
+
 baul-rename (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
