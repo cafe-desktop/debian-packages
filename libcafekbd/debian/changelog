@@ -1,5 +1,11 @@
+libcafekbd (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 06 Feb 2025 17:42:57 +0100
+
 libcafekbd (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Thu, 14 Apr 2022 22:12:53 +0200
+ -- Pablo Barciela <scow@riseup.net>  Thu, 14 Apr 2022 22:12:53 +0200
