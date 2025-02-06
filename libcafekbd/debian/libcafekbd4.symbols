@@ -75,7 +75,6 @@ libcafekbdui.so.4 libcafekbd4 #MINVER#
  cafekbd_indicator_get_max_width_height_ratio@Base 1.6.1
  cafekbd_indicator_get_type@Base 1.6.1
  cafekbd_indicator_get_xkl_engine@Base 1.6.1
- cafekbd_indicator_load_images@Base 1.6.1
  cafekbd_indicator_new@Base 1.6.1
  cafekbd_indicator_reinit_ui@Base 1.6.1
  cafekbd_indicator_set_angle@Base 1.6.1
