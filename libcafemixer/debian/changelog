@@ -1,5 +1,11 @@
+libcafemixer (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 07 Feb 2025 13:49:13 +0100
+
 libcafemixer (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Thu, 30 Jun 2022 21:01:43 +0200
+ -- Pablo Barciela <scow@riseup.net>  Thu, 30 Jun 2022 21:01:43 +0200
