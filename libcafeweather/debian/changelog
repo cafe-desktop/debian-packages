@@ -1,3 +1,10 @@
+libcafeweather (2.0.0-1) unstable; urgency=medium
+
+  * control: require glib 2.56 and libsoup 3.5
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 10 Feb 2025 13:31:02 +0100
+
 libcafeweather (1.25.0-1) unstable; urgency=medium
 
   * New upstream release
