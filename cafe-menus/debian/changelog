@@ -1,5 +1,11 @@
-cafe-menus (1.25.0-1) UNRELEASED; urgency=medium
+cafe-menus (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Sat, 25 Jun 2022 18:33:25 +0200
+ -- Pablo Barciela <scow@riseup.net>  Thu, 13 Feb 2025 10:29:52 +0100
+
+cafe-menus (1.25.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 25 Jun 2022 18:33:25 +0200
