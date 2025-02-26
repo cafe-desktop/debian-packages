@@ -1,3 +1,9 @@
+libvnck3 (3.41.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 26 Feb 2025 09:09:55 +0100
+
 libvnck3 (3.40.0-1) unstable; urgency=medium
 
   * New upstream release
