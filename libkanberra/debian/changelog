@@ -1,3 +1,9 @@
+libkanberra (1.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 17 Apr 2025 17:02:05 +0200
+
 libkanberra (0.31-1) unstable; urgency=medium
 
   * New upstream release
