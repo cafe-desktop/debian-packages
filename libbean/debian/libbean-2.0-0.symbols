@@ -1,4 +1,4 @@
-libean-1.0.so.0 libbean-1.0-0 #MINVER#
+libean-2.0.so.0 libbean-2.0-0 #MINVER#
  _bean_engine_shutdown@Base 1.28.0-2
  bean_activatable_activate@Base 1.28.0-2
  bean_activatable_deactivate@Base 1.28.0-2
@@ -83,15 +83,15 @@ libean-1.0.so.0 libbean-1.0-0 #MINVER#
  bean_plugin_loader_load@Base 1.28.0-2
  bean_plugin_loader_provides_extension@Base 1.28.0-2
  bean_plugin_loader_unload@Base 1.28.0-2
-libean-ctk-1.0.so.0 libbean-1.0-0 #MINVER#
- bean_ctk_configurable_create_configure_widget@Base 1.28.0-2
- bean_ctk_configurable_get_type@Base 1.28.0-2
- bean_ctk_plugin_manager_get_type@Base 1.28.0-2
- bean_ctk_plugin_manager_get_view@Base 1.28.0-2
- bean_ctk_plugin_manager_new@Base 1.28.0-2
- bean_ctk_plugin_manager_view_get_selected_plugin@Base 1.28.0-2
- bean_ctk_plugin_manager_view_get_show_builtin@Base 1.28.0-2
- bean_ctk_plugin_manager_view_get_type@Base 1.28.0-2
- bean_ctk_plugin_manager_view_new@Base 1.28.0-2
- bean_ctk_plugin_manager_view_set_selected_plugin@Base 1.28.0-2
- bean_ctk_plugin_manager_view_set_show_builtin@Base 1.28.0-2
+libean-ctk-2.0.so.0 libbean-2.0-0 #MINVER#
+ bean_ctk_configurable_create_configure_widget@Base 2.0.0-1
+ bean_ctk_configurable_get_type@Base 2.0.0-1
+ bean_ctk_plugin_manager_get_type@Base 2.0.0-1
+ bean_ctk_plugin_manager_get_view@Base 2.0.0-1
+ bean_ctk_plugin_manager_new@Base 2.0.0-1
+ bean_ctk_plugin_manager_view_get_selected_plugin@Base 2.0.0-1
+ bean_ctk_plugin_manager_view_get_show_builtin@Base 2.0.0-1
+ bean_ctk_plugin_manager_view_get_type@Base 2.0.0-1
+ bean_ctk_plugin_manager_view_new@Base 2.0.0-1
+ bean_ctk_plugin_manager_view_set_selected_plugin@Base 2.0.0-1
+ bean_ctk_plugin_manager_view_set_show_builtin@Base 2.0.0-1

@@ -4,4 +4,4 @@ Depends: build-essential, libbean-dev, pkg-config
 
 Tests: python3
 Restrictions: allow-stderr, superficial
-Depends: gir1.2-bean-1.0, python3, python3-gi
+Depends: gir1.2-bean-2.0, python3, python3-gi

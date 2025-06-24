@@ -27,7 +27,7 @@ EOF
 
 # Deliberately word-splitting, that's how pkg-config works:
 # shellcheck disable=SC2046
-"${CROSS_COMPILE}gcc" -o bean bean.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-1.0)
+"${CROSS_COMPILE}gcc" -o bean bean.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-2.0)
 test -x bean
 G_DEBUG=fatal_warnings,fatal_criticals ./bean
 

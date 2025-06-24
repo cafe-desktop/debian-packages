@@ -16,8 +16,8 @@ override_dh_auto_configure:
 		-Dpython3=true
 
 override_dh_makeshlibs:
-	dh_makeshlibs -p libbean-1.0-0 \
-		-X/usr/lib/$(DEB_HOST_MULTIARCH)/libbean-1.0/ -- -c4
+	dh_makeshlibs -p libbean-2.0-0 \
+		-X/usr/lib/$(DEB_HOST_MULTIARCH)/libbean-2.0/ -- -c4
 	dh_makeshlibs --remaining-packages
 
 override_dh_install:

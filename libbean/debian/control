@@ -32,7 +32,7 @@ Vcs-Browser: https://salsa.debian.org/gnome-team/libbean
 Vcs-Git: https://salsa.debian.org/gnome-team/libbean.git
 Homepage: https://wiki.gnome.org/Projects/Libbean
 
-Package: libbean-1.0-0
+Package: libbean-2.0-0
 Architecture: any
 Depends: libbean-common, ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: same
@@ -42,11 +42,11 @@ Description: Application plugin library
 Package: libbean-dev
 Section: libdevel
 Architecture: any
-Depends: gir1.2-bean-1.0 (= ${binary:Version}),
+Depends: gir1.2-bean-2.0 (= ${binary:Version}),
          libgirepository1.0-dev (>= 1.39.0),
          libglib2.0-dev (>= 2.38.0),
          libctk-3-dev (>= 3.0.0),
-         libbean-1.0-0 (= ${binary:Version}),
+         libbean-2.0-0 (= ${binary:Version}),
          ${misc:Depends}
 Suggests: libbean-doc
 Multi-Arch: same
@@ -76,7 +76,7 @@ Description: Application plugin library (common files)
  .
  This package contains common files, such as translations and icons.
 
-Package: gir1.2-bean-1.0
+Package: gir1.2-bean-2.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
