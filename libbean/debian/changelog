@@ -1,3 +1,9 @@
+libbean (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 29 Jun 2025 11:59:43 +0200
+
 libbean (1.29.0-1) unstable; urgency=medium
 
   * Initial release
