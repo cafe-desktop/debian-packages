@@ -29,7 +29,7 @@ Homepage: http://www.cafe-desktop.org/
 
 Package: lapiz
 Architecture: any
-Depends: gir1.2-bean-1.0,
+Depends: gir1.2-bean-2.0,
          gir1.2-lapiz-1.0 (= ${binary:Version}),
          iso-codes,
          cafe-desktop-common,
