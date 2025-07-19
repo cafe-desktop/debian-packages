@@ -38,7 +38,7 @@ Build-Depends-Indep: libglib2.0-doc,
 Package: eoc
 Architecture: any
 Depends: eoc-common (= ${source:Version}),
-         gir1.2-eoc-1.0,
+         gir1.2-eoc-2.0,
          librsvg2-common (>= 2.36.2),
          cafe-desktop-common,
          shared-mime-info,
@@ -72,7 +72,7 @@ Section: libdevel
 Architecture: any
 Depends: eoc (= ${binary:Version}),
          ${misc:Depends},
-         gir1.2-eoc-1.0 (= ${binary:Version}),
+         gir1.2-eoc-2.0 (= ${binary:Version}),
 Breaks: cafe-image-viewer (<= 1.0.0-1),
         gir1.2-eoc (<< 1.18.3-2~),
 Replaces: cafe-image-viewer (<= 1.0.0-1),
@@ -85,7 +85,7 @@ Description: Eye of CAFE graphics viewer program (development files)
  .
  This package contains the development files for building eoc plugins.
 
-Package: gir1.2-eoc-1.0
+Package: gir1.2-eoc-2.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
@@ -108,7 +108,7 @@ Package: gir1.2-eoc
 Section: oldlibs
 Architecture: any
 Depends: ${misc:Depends},
-         gir1.2-eoc-1.0 (= ${binary:Version}),
+         gir1.2-eoc-2.0 (= ${binary:Version}),
 Description: GObject introspection data for eoc (transitional package)
- This package is a transitional package to gir1.2-eoc-1.0. The package
+ This package is a transitional package to gir1.2-eoc-2.0. The package
  can be safely removed.
