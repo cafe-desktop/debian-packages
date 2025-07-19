@@ -1,3 +1,9 @@
+eoc (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 19 Jul 2025 09:48:22 +0200
+
 eoc (1.25.0-1) unstable; urgency=medium
 
   * Initial release
