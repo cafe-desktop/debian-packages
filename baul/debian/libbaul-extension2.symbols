@@ -1,4 +1,4 @@
-libbaul-extension.so.1 libbaul-extension1 #MINVER#
+libbaul-extension.so.1 libbaul-extension2 #MINVER#
 * Build-Depends-Package: libbaul-extension-dev
  baul_file_info_lookup@Base 1.6.3
  baul_property_page_get_type@Base 1.6.3
