@@ -1,4 +1,4 @@
-libcafemixer-alsa.so libcafemixer0 #MINVER#
+libcafemixer-alsa.so libcafemixer2 #MINVER#
 * Build-Depends-Package: libcafemixer-dev
  alsa_backend_get_type@Base 1.10.0
  alsa_channel_map_from@Base 1.10.0
@@ -49,11 +49,11 @@ libcafemixer-alsa.so libcafemixer0 #MINVER#
  alsa_toggle_new@Base 1.10.0
  backend_module_get_info@Base 1.10.0
  backend_module_init@Base 1.10.0
-libcafemixer-null.so libcafemixer0 #MINVER#
+libcafemixer-null.so libcafemixer2 #MINVER#
  backend_module_get_info@Base 1.10.0
  backend_module_init@Base 1.10.0
  null_backend_get_type@Base 1.10.0
-libcafemixer-pulse.so libcafemixer0 #MINVER#
+libcafemixer-pulse.so libcafemixer2 #MINVER#
  backend_module_get_info@Base 1.10.0
  backend_module_init@Base 1.10.0
  pulse_backend_get_type@Base 1.10.0
@@ -172,7 +172,7 @@ libcafemixer-pulse.so libcafemixer0 #MINVER#
  pulse_stream_get_device@Base 1.10.0
  pulse_stream_get_index@Base 1.10.0
  pulse_stream_get_type@Base 1.10.0
-libcafemixer.so.0 libcafemixer0 #MINVER#
+libcafemixer.so.0 libcafemixer2 #MINVER#
  _cafe_mixer_app_info_copy@Base 1.10.0
  _cafe_mixer_app_info_free@Base 1.10.0
  _cafe_mixer_app_info_new@Base 1.10.0
