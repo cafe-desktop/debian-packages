@@ -30,7 +30,7 @@ Homepage: http://www.cafe-desktop.org/
 Package: lapiz
 Architecture: any
 Depends: gir1.2-bean-2.0,
-         gir1.2-lapiz-1.0 (= ${binary:Version}),
+         gir1.2-lapiz-2.0 (= ${binary:Version}),
          iso-codes,
          cafe-desktop-common,
          lapiz-common (= ${source:Version}),
@@ -83,7 +83,7 @@ Package: lapiz-dev
 Architecture: any
 Section: libdevel
 Depends: lapiz (= ${binary:Version}),
-         gir1.2-lapiz-1.0 (= ${binary:Version}),
+         gir1.2-lapiz-2.0 (= ${binary:Version}),
          ${misc:Depends},
 Breaks: cafe-text-editor (<< 1.5.0),
 Description: official text editor of the CAFE desktop environment (development files)
@@ -126,7 +126,7 @@ Description: official text editor of the CAFE desktop environment (documentation
  .
  This package contains the documentation files.
 
-Package: gir1.2-lapiz-1.0
+Package: gir1.2-lapiz-2.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends},

@@ -16,7 +16,7 @@ Files: Makefile.am
  data/lapiz.pc.in
  debian/control
  debian/files
- debian/gir1.2-lapiz-1.0.install
+ debian/gir1.2-lapiz-2.0.install
  debian/patches/README
  debian/lapiz-common.install
  debian/lapiz-common.lintian-overrides
