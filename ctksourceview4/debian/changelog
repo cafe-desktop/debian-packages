@@ -1,3 +1,9 @@
+ctksourceview4 (4.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 20 Jul 2025 17:16:11 +0200
+
 ctksourceview4 (4.9.0-1) unstable; urgency=medium
 
   * Initial release
