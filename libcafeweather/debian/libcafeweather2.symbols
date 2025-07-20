@@ -1,4 +1,4 @@
-libcafeweather.so.1 libcafeweather1 #MINVER#
+libcafeweather.so.1 libcafeweather2 #MINVER#
 * Build-Depends-Package: libcafeweather-dev
  _weather_info_fill@Base 1.6.2
  bom_start_open@Base 1.6.2

@@ -20,7 +20,7 @@ Homepage: http://www.cafe-desktop.org/
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/libcafeweather
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/libcafeweather.git
 
-Package: libcafeweather1
+Package: libcafeweather2
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
@@ -53,7 +53,7 @@ Architecture: any
 Multi-Arch: same
 Depends: libglib2.0-dev (>= 2.56.0),
          libctk-3-dev,
-         libcafeweather1 (= ${binary:Version}),
+         libcafeweather2 (= ${binary:Version}),
          libsoup-3.0-dev (>= 3.5.0),
          libxml2-dev,
          ${misc:Depends},
