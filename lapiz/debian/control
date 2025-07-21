@@ -132,10 +132,7 @@ Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: lapiz-dev (<< 1.18.2-2),
-        gir1.2-lapiz (<< 1.18.2-2),
-Replaces: lapiz-dev (<< 1.18.2-2),
-          gir1.2-lapiz (<< 1.18.2-1~),
+Replaces: gir1.2-lapiz-1.0,
 Description: GObject introspection data for Lapiz
  Lapiz is a text editor which supports most standard editor features,
  extending this basic functionality with other features not usually
