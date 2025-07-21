@@ -27,8 +27,7 @@ Pre-Depends: ${misc:Pre-Depends},
 Depends: libcafeweather-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: libcafeweather,
-Replaces: libcafeweather,
+Replaces: libcafeweather1,
 Description: CafeWeather shared library
  libcafeweather is a library to access weather information from online
  services for numerous locations.
