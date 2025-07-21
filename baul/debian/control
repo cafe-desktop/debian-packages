@@ -80,9 +80,7 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Replaces: libbaul-extension (<< 1.7.0),
-Breaks: libbaul-extension (<< 1.7.0),
-Provides: libbaul-extension,
+Replaces: libbaul-extension1,
 Description: libraries for Baul components
  Baul is the official file manager for the CAFE desktop. It allows one
  to browse directories, preview files and launch applications associated
