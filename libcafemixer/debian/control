@@ -24,6 +24,7 @@ Depends: iso-codes,
          libcafemixer-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
+Replaces: libcafemixer0,
 Description: Mixer library for CAFE Desktop
  Mixer library for CAFE Desktop. It provides an abstract API allowing
  access to mixer functionality available in the PulseAudio, ALSA and OSS
