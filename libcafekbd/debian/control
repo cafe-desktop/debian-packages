@@ -81,8 +81,7 @@ Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
          ${shlibs:Depends},
-Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
-Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
+Replaces: gir1.2-cafekbd-1.0,
 Description: GObject introspection data for libcafekbd and libcafekbdui
  libcafekbd offers an API to manage the keyboard in CAFE applications.
  .
