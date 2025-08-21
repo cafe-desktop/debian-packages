@@ -1,5 +1,11 @@
-cafe-calc (1.25.0-1) UNRELEASED; urgency=medium
+cafe-calc (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
 
- -- ZenWalker <scow@riseup.net>  Mon, 26 Jul 2021 14:02:36 +0200
+ -- Pablo Barciela <scow@riseup.net>  Thu, 21 Aug 2025 17:19:37 +0200
+
+cafe-calc (1.25.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 26 Jul 2021 14:02:36 +0200
