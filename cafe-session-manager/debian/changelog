@@ -1,3 +1,10 @@
+cafe-session-manager (2.0.0-1) unstable; urgency=medium
+
+  * lector instead atril
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 03 Sep 2025 18:45:27 +0200
+
 cafe-session-manager (1.25.0-1) unstable; urgency=medium
 
   * Initial release
