@@ -1,6 +1,6 @@
 Tests: libbean-dev
 Restrictions: allow-stderr, superficial
-Depends: build-essential, libbean-dev, pkg-config
+Depends: build-essential, libbean-dev, pkgconf
 
 Tests: python3
 Restrictions: allow-stderr, superficial

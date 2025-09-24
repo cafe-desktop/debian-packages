@@ -9,7 +9,7 @@ Build-Depends-Indep: gettext,
                      ctk-icon-naming-utils (>= 0.8.7),
                      intltool (>= 0.40.0),
                      librsvg2-bin,
-                     pkg-config,
+                     pkgconf,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.cafe-desktop.org/

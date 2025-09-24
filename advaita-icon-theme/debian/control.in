@@ -5,7 +5,7 @@ Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
 Build-Depends-Indep: gettext,
-                     pkg-config,
+                     pkgconf,
                      libctk-3-bin (>= 3.24.13),
                      librsvg2-bin,
                      librsvg2-common:native,

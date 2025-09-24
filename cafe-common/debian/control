@@ -9,7 +9,7 @@ Build-Depends: autoconf,
                gettext,
                intltool,
                libtool,
-               pkg-config,
+               pkgconf,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.cafe-desktop.org
@@ -27,7 +27,7 @@ Depends: autoconf,
          gtk-doc-tools,
          intltool,
          libtool,
-         pkg-config,
+         pkgconf,
          ${misc:Depends},
 Description: common scripts and macros to develop with CAFE
  cafe-common is an extension to autoconf, automake and libtool for the CAFE
