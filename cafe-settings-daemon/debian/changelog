@@ -1,3 +1,10 @@
+cafe-settings-daemon (2.0.0-1) unstable; urgency=medium
+
+  * B-D: remove obsolete 'policykit-1'
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 12 Oct 2025 12:20:38 +0200
+
 cafe-settings-daemon (1.25.2-1) unstable; urgency=medium
 
   * control: GLib 2.67.3 required
