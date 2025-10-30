@@ -3,10 +3,8 @@ Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Uploaders: Pablo Barciela <scow@riseup.net>
-Standards-Version: 4.5.0
-Rules-Requires-Root: no
-Build-Depends: cdbs,
-               debhelper (>= 10.3~),
+Standards-Version: 4.7.2
+Build-Depends: debhelper-compat (= 13),
                dh-exec,
                dpkg-dev (>= 1.16.1.1),
                intltool,
