@@ -1,3 +1,10 @@
+ctksourceview4 (4.11.0-1) unstable; urgency=medium
+
+  * remove glade support
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 30 Oct 2025 11:56:22 +0100
+
 ctksourceview4 (4.10.0-1) unstable; urgency=medium
 
   * New upstream release
