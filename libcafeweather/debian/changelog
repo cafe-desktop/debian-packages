@@ -1,3 +1,11 @@
+libcafeweather (2.0.1-1) unstable; urgency=medium
+
+  * rename package libcafeweather1 -> libcafeweather2
+  * libcafeweather2 replaces libcafeweather1
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 30 Oct 2025 12:43:46 +0100
+
 libcafeweather (2.0.0-1) unstable; urgency=medium
 
   * control: require glib 2.56 and libsoup 3.5
