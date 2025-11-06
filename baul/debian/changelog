@@ -1,3 +1,11 @@
+baul (2.1.0-1) unstable; urgency=medium
+
+  * rename package libbaul-extension1 -> libbaul-extension2
+  * control: libbaul-extension2 replaces libbaul-extension1
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 06 Nov 2025 11:27:01 +0100
+
 baul (2.0.0-1) unstable; urgency=medium
 
   * control: GLib 2.67.3 required
