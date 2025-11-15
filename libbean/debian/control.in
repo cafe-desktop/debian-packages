@@ -76,7 +76,7 @@ Package: gir1.2-bean-2.0
 Section: introspection
 Architecture: any
 Depends: ${gir:Depends}, ${misc:Depends}, ${shlibs:Depends}
-Provides: gir1.2-beanctk-1.0 (= ${binary:Version})
+Provides: gir1.2-beanctk-2.0 (= ${binary:Version})
 Multi-Arch: same
 Description: Application plugin library (introspection files)
  libbean is a library that allows applications to support plugins.
