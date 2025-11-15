@@ -45,7 +45,7 @@ int main (int argc, char *argv[])
 EOF
 
 # shellcheck disable=SC2046
-"${CROSS_COMPILE}gcc" -o ctk ctk.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-ctk-1.0)
+"${CROSS_COMPILE}gcc" -o ctk ctk.c $("${CROSS_COMPILE}pkg-config" --cflags --libs libbean-ctk-2.0)
 test -x ctk
 G_DEBUG=fatal_warnings,fatal_criticals ./ctk
 
