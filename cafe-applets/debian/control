@@ -2,7 +2,6 @@ Source: cafe-applets
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.7.2
 Build-Depends: debhelper-compat (= 13),
                dh-exec,

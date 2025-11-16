@@ -2,7 +2,6 @@ Source: cafe-backgrounds
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                libglib2.0-dev,
                cafe-common (>= 1.18),

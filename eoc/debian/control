@@ -2,7 +2,6 @@ Source: eoc
 Section: graphics
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: http://www.cafe-desktop.org/

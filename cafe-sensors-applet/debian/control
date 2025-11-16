@@ -2,7 +2,6 @@ Source: cafe-sensors-applet
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                dh-exec,
                docbook-xml,

@@ -2,7 +2,6 @@ Source: ctk+3.0
 Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: advaita-icon-theme <!nocheck>,
                at-spi2-core <!nocheck>,
                dbus <!nocheck>,

@@ -6,7 +6,6 @@ Source: libbean
 Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: adwaita-icon-theme <!nocheck>,
                debhelper-compat (= 12),
                dh-sequence-gir,

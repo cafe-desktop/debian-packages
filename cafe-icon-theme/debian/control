@@ -2,7 +2,6 @@ Source: cafe-icon-theme
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (=12),
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,

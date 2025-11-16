@@ -2,7 +2,6 @@ Source: cafe-common
 Section: devel
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: autoconf,
                automake,
                debhelper-compat (= 12),

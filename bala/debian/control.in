@@ -2,7 +2,6 @@ Source: bala
 Section: devel
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper (>= 11),
                libglib2.0-dev (>= 2.48),
                libgraphviz-dev (>= 2.16),

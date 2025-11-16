@@ -2,7 +2,6 @@ Source: cafe-panel
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Bariclea <scow@riseup.net>
 Build-Depends: autoconf-archive,
                debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),

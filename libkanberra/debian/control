@@ -6,7 +6,6 @@ Source: libkanberra
 Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Uploaders: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper (>= 11),
                gnome-pkg-tools,
                libltdl-dev | libltdl7-dev (>= 2.2.6),

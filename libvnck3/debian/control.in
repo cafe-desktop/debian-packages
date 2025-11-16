@@ -2,7 +2,6 @@ Source: libvnck3
 Section: libs
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: @GNOME_TEAM@
 Build-Depends: debhelper-compat (= 12),
                docbook-xml,
                gettext (>= 0.19.4),
