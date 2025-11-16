@@ -17,7 +17,7 @@ Build-Depends: debhelper-compat (= 13),
                pkgconf,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.cafe-desktop.org/
+Homepage: https://github.com/cafe-desktop/baul-extensions
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/baul-extensions
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/baul-extensions.git
 

@@ -11,7 +11,7 @@ Build-Depends-Indep: cafe-common,
                      libgtk2.0-dev,
                      libxml-parser-perl,
                      pkgconf,
-Homepage: http://www.cafe-desktop.org/
+Homepage: https://github.com/cafe-desktop/cafe-themes
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-themes
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-themes.git
 

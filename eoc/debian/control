@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.cafe-desktop.org/
+Homepage: https://github.com/cafe-desktop/eoc
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/eoc
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/eoc.git
 Build-Depends: autoconf-archive,

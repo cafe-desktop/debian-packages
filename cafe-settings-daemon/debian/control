@@ -32,7 +32,7 @@ Build-Depends: debhelper (>= 10.3~),
                x11proto-kb-dev,
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
-Homepage: http://www.cafe-desktop.org/
+Homepage: https://github.com/cafe-desktop/cafe-settings-daemon
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-settings-daemon
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-settings-daemon.git
 

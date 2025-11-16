@@ -25,7 +25,7 @@ Build-Depends: adwaita-icon-theme <!nocheck>,
 Standards-Version: 4.5.0
 Vcs-Browser: https://salsa.debian.org/gnome-team/libbean
 Vcs-Git: https://salsa.debian.org/gnome-team/libbean.git
-Homepage: https://wiki.gnome.org/Projects/Libbean
+Homepage: https://github.com/cafe-desktop/libbean
 
 Package: libbean-2.0-0
 Architecture: any

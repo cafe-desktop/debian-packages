@@ -23,7 +23,7 @@ Build-Depends-Indep: libatk1.0-doc <!nodoc>,
 Standards-Version: 4.5.1
 Vcs-Browser: https://salsa.debian.org/gnome-team/bte2.91
 Vcs-Git: https://salsa.debian.org/gnome-team/bte2.91.git
-Homepage: https://wiki.gnome.org/Apps/Terminal/BTE
+Homepage: https://github.com/cafe-desktop/bte
 
 Package: libbte-2.91-0
 Architecture: any

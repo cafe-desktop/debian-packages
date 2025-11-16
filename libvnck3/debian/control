@@ -25,7 +25,7 @@ Build-Depends: debhelper-compat (= 12),
 Standards-Version: 4.5.0
 Vcs-Browser: https://salsa.debian.org/gnome-team/libvnck3
 Vcs-Git: https://salsa.debian.org/gnome-team/libvnck3.git
-Homepage: https://gitlab.gnome.org/GNOME/libvnck
+Homepage: https://github.com/cafe-desktop/libvnck
 
 Package: libvnck-3-0
 Architecture: any

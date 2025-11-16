@@ -11,7 +11,7 @@ Build-Depends:
  python3-polib,
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
-Homepage: https://tari.in/www/software/baul-rename/
+Homepage: https://github.com/cafe-desktop/baul-rename
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/baul-rename
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/baul-rename.git
 
