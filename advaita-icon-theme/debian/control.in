@@ -9,7 +9,6 @@ Build-Depends-Indep: gettext,
                      librsvg2-bin,
                      librsvg2-common:native,
 Standards-Version: 4.6.0
-Rules-Requires-Root: no
 Vcs-Browser: https://salsa.debian.org/gnome-team/advaita-icon-theme
 Vcs-Git: https://salsa.debian.org/gnome-team/advaita-icon-theme.git
 

@@ -31,7 +31,6 @@ Build-Depends: autoconf-archive,
                cafe-common (>= 1.18),
                yelp-tools,
 Standards-Version: 4.5.0
-Rules-Requires-Root: no
 Homepage: https://github.com/cafe-desktop/cafe-panel
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-panel
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-panel.git

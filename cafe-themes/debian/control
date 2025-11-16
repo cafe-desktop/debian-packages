@@ -3,7 +3,6 @@ Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.5.0
-Rules-Requires-Root: no
 Build-Depends: debhelper-compat (=12),
 Build-Depends-Indep: cafe-common,
                      icon-naming-utils,

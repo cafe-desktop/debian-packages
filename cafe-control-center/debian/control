@@ -34,7 +34,6 @@ Build-Depends: debhelper-compat (= 13),
                xsltproc,
                yelp-tools,
 Standards-Version: 4.5.0
-Rules-Requires-Root: no
 Homepage: https://github.com/cafe-desktop/cafe-control-center
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/cafe-control-center
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/cafe-control-center.git

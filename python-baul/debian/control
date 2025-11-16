@@ -13,7 +13,6 @@ Build-Depends: debhelper-compat (= 13),
                python-gi-dev,
                quilt,
 Standards-Version: 4.5.1
-Rules-Requires-Root: no
 Homepage: https://github.com/cafe-desktop/python-baul
 Vcs-Browser: https://salsa.debian.org/debian-cafe-team/python-baul
 Vcs-Git: https://salsa.debian.org/debian-cafe-team/python-baul.git

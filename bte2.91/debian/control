@@ -20,7 +20,6 @@ Build-Depends: debhelper-compat (= 12),
                libsystemd-dev (>= 220) [linux-any],
                libxml2-utils,
                meson (>= 0.50.0)
-Rules-Requires-Root: no
 Build-Depends-Indep: libatk1.0-doc <!nodoc>,
                      libglib2.0-doc <!nodoc>,
                      libctk-3-doc <!nodoc>
