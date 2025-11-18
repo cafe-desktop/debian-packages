@@ -28,6 +28,3 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/cafe-window-manager \
 		--disable-static \
 		--enable-startup-notification=yes
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..

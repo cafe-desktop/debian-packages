@@ -36,6 +36,3 @@ remove-cruft::
 install-wrapper::
 	mkdir -p debian/tmp/usr/bin/
 	sed -e 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/' < debian/bin/cafe-polkit.in > debian/tmp/usr/bin/cafe-polkit
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..

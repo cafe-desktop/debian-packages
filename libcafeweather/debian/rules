@@ -24,6 +24,3 @@ override_dh_auto_configure:
 		--disable-static \
 		--enable-locations-compression \
 		--enable-all-translations-in-one-xml
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..

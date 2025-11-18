@@ -41,6 +41,3 @@ override_dh_auto_configure:
 		--disable-static \
 		--libexecdir=/usr/lib/lector \
 		$(DEB_LECTOR_FLAGS)
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..

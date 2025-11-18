@@ -26,6 +26,3 @@ override_dh_auto_configure:
 		--libexecdir=/usr/lib/cafe-sensors-applet \
 		--disable-silent-rules \
 		--with-nvidia=yes
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..

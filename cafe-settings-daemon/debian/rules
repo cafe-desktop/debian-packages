@@ -35,6 +35,3 @@ override_dh_auto_configure:
 		--enable-pulse
 
 override_dh_makeshlibs:
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..
