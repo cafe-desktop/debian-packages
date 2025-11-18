@@ -1,3 +1,4 @@
-version=3
-https://git.cafe-desktop.org/eoc/ \
-    snapshot/eoc-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
+Version: 5
+Source: https://github.com/cafe-desktop/eoc/tags
+Matching-Pattern: (?:.*?/)?v?(\d[\d.]*)\.tar\.gz
+Update-Script: uupdate

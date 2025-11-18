@@ -1,3 +1,4 @@
-version=4
-https://download.gnome.org/sources/libvnck/([\d\.]+[02468])/ \
-	libvnck@ANY_VERSION@\.tar\.xz
+Version: 5
+Source: https://github.com/cafe-desktop/libvnck/tags
+Matching-Pattern: (?:.*?/)?v?(\d[\d.]*)\.tar\.gz
+Update-Script: uupdate

@@ -1,3 +1,4 @@
-version=4
-https://download.gnome.org/sources/ctk+/(3\.2[02468])/ \
-	ctk(?:\+|%2[Bb])@ANY_VERSION@\.tar\.xz
+Version: 5
+Source: https://github.com/cafe-desktop/ctk/tags
+Matching-Pattern: (?:.*?/)?v?(\d[\d.]*)\.tar\.gz
+Update-Script: uupdate

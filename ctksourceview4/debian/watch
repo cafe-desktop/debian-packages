@@ -1,4 +1,4 @@
-version=4
-opts="searchmode=plain, uversionmangle=s/\.(alpha|beta|rc)/~$1/, downloadurlmangle=s|cache.json||" \
-https://download.gnome.org/sources/ctksourceview/cache.json \
-	4.[02468]/ctksourceview-([\d.]+)@ARCHIVE_EXT@
+Version: 5
+Source: https://github.com/cafe-desktop/ctksourceview/tags
+Matching-Pattern: (?:.*?/)?v?(\d[\d.]*)\.tar\.gz
+Update-Script: uupdate

@@ -1,3 +1,4 @@
-version=4
-http://0pointer.de/lennart/projects/@PACKAGE@/ \
-	@PACKAGE@@ANY_VERSION@\.tar\.xz
+Version: 5
+Source: https://github.com/cafe-desktop/libkanberra/tags
+Matching-Pattern: (?:.*?/)?v?(\d[\d.]*)\.tar\.gz
+Update-Script: uupdate
