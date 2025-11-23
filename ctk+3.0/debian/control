@@ -164,6 +164,8 @@ Depends: gir1.2-ctk-3.0 (= ${binary:Version}),
          ${shlibs:Depends},
          libctk-3-common,
          libctk-3-0 (= ${binary:Version})
+Provides: gir1.2-cdk-3.0-dev (= ${binary:Version}),
+          gir1.2-cdkx11-3.0-dev (= ${binary:Version}),
 Suggests: libctk-3-doc
 Description: development files for the CTK library
  CTK is a multi-platform toolkit for creating graphical user
