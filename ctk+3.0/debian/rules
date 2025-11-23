@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-DISABLE_UPDATE_UPLOADERS = 1
-include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 include /usr/share/dpkg/default.mk
 include /usr/share/dpkg/pkg-info.mk
 
@@ -77,7 +75,6 @@ debian/%: debian/%.in
 		-e "s#@DOC_PKG@#$(DOC_PKG)#g" \
 		-e "s#@BIN_PKG@#$(BIN_PKG)#g" \
 		-e "s#@EXAMPLES_PKG@#$(EXAMPLES_PKG)#g" \
-		-e "s#@GNOME_TEAM@#$(UPLOADERS)#g" \
 		-e "s#@CTK_BINARY_VERSION@#$(CTK_BINARY_VERSION)#g" \
 		-e "s#@LIBDIR@#$(LIBDIR)#g" \
 		-e 's#@CONFDIR@#$(CONFDIR)#g' \
@@ -131,9 +128,7 @@ configure_flags_udeb = \
 %:
 	dh $@ --buildsystem=autoconf
 
-override_dh_clean: debian/control
-	# gross kludge to force control generation with the %.in target
-	touch debian/control.in
+override_dh_clean:
 	rm -f $(call dh_subst_files,$(all_binaries))
 	rm -f testsuite/reftests/*.ui.known_fail
 	rm -rf debian/build debian/install
