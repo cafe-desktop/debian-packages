@@ -67,7 +67,7 @@ Depends: advaita-icon-theme,
          ${misc:Depends},
          ${shlibs:Depends},
          libctk-3-common (>= ${source:Version})
-Provides: ctk3-binver-3.0.0
+Provides: ${ctk:BinVer}
 Recommends: libctk-3-bin,
             librsvg2-common
 Suggests: gvfs,
@@ -86,7 +86,7 @@ Section: debian-installer
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
-Provides: ctk3-binver-3.0.0
+Provides: ${ctk:BinVer}
 Description: CTK graphical user interface library - minimal runtime
  This is a udeb, or a microdeb, for the debian-installer.
  .
