@@ -20,7 +20,7 @@ LIBDIR := usr/lib/$(DEB_HOST_MULTIARCH)
 # earliest version that this release has backwards binary compatibility for
 CTK_BINARY_VERSION := 3.0.0
 
-# Gtk binary version virtual Provide
+# Ctk binary version virtual Provide
 CTK_BINVER_DEP := ctk$(APIVER)-binver-$(CTK_BINARY_VERSION)
 
 # relative base directory for configuration
@@ -220,6 +220,15 @@ endif
 override_dh_install:
 	dh_install -p$(UDEB_PKG) --sourcedir=debian/install/udeb
 	dh_install --remaining-packages --sourcedir=debian/install/deb
+
+# debhelper >= 13.4 makes all of /usr/libexec executable, which is not
+# quite right for installed-tests
+override_dh_fixperms:
+	dh_fixperms -Xusr/libexec/installed-tests
+ifneq ($(filter $(EXAMPLES_PKG),$(built_binaries)),)
+	chmod --changes u=rw,og=r debian/$(EXAMPLES_PKG)/usr/libexec/installed-tests/*/*/*.so
+	chmod --recursive --changes a+rX,u+w,og-w debian/$(EXAMPLES_PKG)/usr/libexec/installed-tests
+endif
 
 override_dh_missing:
 ifneq ($(filter %-udeb,$(built_binaries)),)
