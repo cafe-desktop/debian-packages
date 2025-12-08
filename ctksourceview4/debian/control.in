@@ -82,8 +82,7 @@ Section: doc
 Build-Profiles: <!nodoc>
 Architecture: all
 Depends: ${misc:Depends}
-Suggests: devhelp,
-          libglib2.0-doc,
+Suggests: libglib2.0-doc,
           libctk-3-doc,
           libgdk-pixbuf2.0-doc,
           libpango1.0-doc

@@ -191,7 +191,6 @@ Depends: ${misc:Depends}
 Recommends: libatk1.0-doc,
             libglib2.0-doc,
             libpango1.0-doc
-Suggests: devhelp
 Description: documentation for the CTK graphical user interface library
  CTK is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, CTK is suitable
@@ -294,7 +293,6 @@ Architecture: all
 Multi-Arch: foreign
 Section: doc
 Depends: ${misc:Depends}
-Suggests: devhelp
 Description: documentation files of the Cail library
  Cail implements ATK interfaces for CTK widgets which are dynamically
  loadable at runtime by a CTK application. Once loaded, those parts of
