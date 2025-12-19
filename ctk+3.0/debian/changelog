@@ -1,3 +1,31 @@
+ctk+3.0 (3.25.7-1) unstable; urgency=medium
+
+  * control:
+    - 'pkgconf' instead transitional 'pkg-config'
+    - Remove redundant Uploaders field
+    - Remove obsolete 'Rules-Requires-Root: no'
+    - libctk-3-dev: Add Provides for included GIR XML files
+    - Add ${gir:Depends}, ${gir:Provides} substvars
+    - Explicitly build-depend on GIR XML from Gdk-Pixbuf and Pango
+    - Explicitly depend on necessary GIR XML modules
+    - Remove B-D libgirepository1.0-dev
+    - 'libfontconfig-dev' instead 'libfontconfig1-dev'
+  * watch: upgrade to version 5
+  * Substitute CTK_BINVER_DEP as a substvar rather than using sed
+  * Stop generating d/control from a template
+  * copyright: Link to GNU website instead of listing FSF's old postal address
+  * rules:
+    - Normalize permissions in installed-tests
+    - override_dh_auto_install: remove .gitignore files in examples
+  * lintian:
+    - Update lintian overrides
+    - Add libctk-3-dev.lintian-overrides
+  * Remove Suggests devhelp for doc packages
+  * Fix build warnings
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 19 Dec 2025 09:50:45 +0100
+
 ctk+3.0 (3.25.6-1) unstable; urgency=medium
 
   * Rename Adwaita -> Advaita
