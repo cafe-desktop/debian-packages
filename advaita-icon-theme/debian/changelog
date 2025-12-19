@@ -1,3 +1,17 @@
+advaita-icon-theme (3.25.1-1) unstable; urgency=medium
+
+  * control:
+    - Remove B-D dh-sequence-gnome
+    - 'pkgconf' instead transitional 'pkg-config'
+    - Remove redundant Uploaders field
+    - Remove obsolete 'Rules-Requires-Root: no'
+  * remove control.in
+  * rules: Remove folder if it is empty
+  * watch: upgrade to version 5
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 19 Dec 2025 11:09:39 +0100
+
 advaita-icon-theme (3.25.0-1) unstable; urgency=medium
 
   * Initial release
