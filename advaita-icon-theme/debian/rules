@@ -5,6 +5,3 @@
 
 execute_after_dh_auto_clean:
 	./debian/copyright.pl > debian/copyright
-
-execute_after_dh_auto_install:
-	find debian/advaita-icon-theme -type d -empty -delete
