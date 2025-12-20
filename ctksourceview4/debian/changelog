@@ -1,3 +1,16 @@
+ctksourceview4 (4.11.0-2) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+  * watch: upgrade to version 5
+  * remove Suggests devhelp for doc packages
+  * Stop using debian/control.in and dh-sequence-gnome
+  * Fix Lintian warning for doc-base file
+  * Update gir handling
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 20 Dec 2025 20:09:48 +0100
+
 ctksourceview4 (4.11.0-1) unstable; urgency=medium
 
   * remove glade support
