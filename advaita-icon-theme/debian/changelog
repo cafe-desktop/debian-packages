@@ -1,3 +1,9 @@
+advaita-icon-theme (3.25.1-2) unstable; urgency=medium
+
+  * Revert "advaita-icon-theme: rules: Remove folder if it is empty"
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 21 Dec 2025 01:09:09 +0100
+
 advaita-icon-theme (3.25.1-1) unstable; urgency=medium
 
   * control:
