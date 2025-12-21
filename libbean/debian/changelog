@@ -1,3 +1,21 @@
+libbean (2.1.0-1) unstable; urgency=medium
+
+  * control:
+    - 'pkgconf' instead transitional 'pkg-config'
+    - Remove redundant Uploaders field
+    - Update Homepage
+  * remove glade support
+  * update dependencies to work with pygobject >= 3.52
+  * rename gir1.2-beanctk-1.0 -> gir1.2-beanctk-2.0
+  * rename libbean-ctk-1.0 -> libbean-ctk-2.0
+  * watch: upgrade to version 5
+  * Stop using debian/control.in
+  * Update gir packaging
+  * Fix symbols-file-contains-current-version-with-debian-revision lintian warning
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 21 Dec 2025 13:09:36 +0100
+
 libbean (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
