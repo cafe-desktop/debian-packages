@@ -33,3 +33,6 @@ override_dh_missing:
 
 override_dh_auto_test:
 	HOME=$(CURDIR) xvfb-run -a dh_auto_test
+
+override_dh_gnome_clean:
+	dh_gnome_clean --no-control
