@@ -1,3 +1,0 @@
-# eoc ships plugins in /usr/lib/eoc/plugins/*.so, this erroneously triggers debhelper's
-# makeshlibs script
-eoc: postinst-has-useless-call-to-ldconfig
