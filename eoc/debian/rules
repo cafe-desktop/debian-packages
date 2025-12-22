@@ -1,16 +1,9 @@
 #!/usr/bin/make -f
 
-DHFLAGS=--parallel
-
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-DPKG_EXPORT_BUILDFLAGS = 1
-include /usr/share/dpkg/buildflags.mk
 
 %:
-	dh $@ $(DHFLAGS) --with gir --without autoreconf
-
-override _dh_missing:
-	dh_missing --fail-missing
+	dh $@ --without autoreconf
 
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/eoc/plugins/*.la
