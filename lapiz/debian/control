@@ -130,6 +130,7 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
+Provides: ${gir:Provides},
 Replaces: gir1.2-lapiz-1.0,
 Description: GObject introspection data for Lapiz
  Lapiz is a text editor which supports most standard editor features,
