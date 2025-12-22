@@ -3,14 +3,14 @@ Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
+               dh-sequence-gir,
                dpkg-dev (>= 1.16.1.1),
-               gobject-introspection,
+               gir1.2-ctk-3.0-dev,
+               gir1.2-ctksource-4-dev,
                gtk-doc-tools,
-               gettext,
                gla11y <!nocheck>,
                iso-codes,
                libenchant-2-dev,
-               libgirepository1.0-dev,
                libglib2.0-dev,
                libctk-3-dev,
                libctksourceview-4-dev,
@@ -81,8 +81,9 @@ Package: lapiz-dev
 Architecture: any
 Section: libdevel
 Depends: lapiz (= ${binary:Version}),
-         gir1.2-lapiz-2.0 (= ${binary:Version}),
+         ${gir:Depends},
          ${misc:Depends},
+Provides: ${gir:Provides},
 Breaks: cafe-text-editor (<< 1.5.0),
 Description: official text editor of the CAFE desktop environment (development files)
  Lapiz is a text editor which supports most standard editor features,
@@ -129,7 +130,6 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
 Replaces: gir1.2-lapiz-1.0,
 Description: GObject introspection data for Lapiz
  Lapiz is a text editor which supports most standard editor features,
