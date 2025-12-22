@@ -2,16 +2,17 @@ Source: cafe-desktop
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Build-Depends: autoconf-archive,
-               debhelper-compat (= 13),
-               dpkg-dev (>= 1.16.1.1),
-               gobject-introspection,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-gir,
+               dpkg-dev (>= 1.22.5),
+               autoconf-archive,
+               gir1.2-gobject-2.0-dev,
+               gir1.2-ctk-3.0-dev,
                gtk-doc-tools,
                intltool,
                iso-codes,
                libdconf-dev (>= 0.13.4),
                libgdk-pixbuf-2.0-dev (>= 2.36.5),
-               libgirepository1.0-dev,
                libglib2.0-dev (>= 2.67.3),
                libglib2.0-doc,
                libctk-3-dev (>= 3.22.0),
@@ -72,7 +73,6 @@ Package: libcafe-desktop-2-17
 Section: libs
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends},
 Depends: iso-codes,
          ${misc:Depends},
          ${shlibs:Depends},
@@ -98,9 +98,9 @@ Depends: libdconf-dev,
          libctk-3-dev,
          libcafe-desktop-2-17 (= ${binary:Version}),
          libstartup-notification0-dev,
-         gir1.2-cafedesktop-2.0 (= ${binary:Version}),
+         ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
+Provides: ${gir:Provides},
 Breaks: libcafedesktop-dev,
         gir1.2-cafe-desktop (<< 1.18.0-2~),
 Replaces: libcafedesktop-dev,
@@ -139,7 +139,6 @@ Multi-Arch: same
 Depends: libcafe-desktop-2-17 (= ${binary:Version}),
          ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
 Breaks: gir1.2-cafe-desktop (<< 1.18.0-2~),
 Replaces: gir1.2-cafe-desktop (<< 1.18.0-2~),
 Description: GObject introspection data for the libcafe-desktop library
