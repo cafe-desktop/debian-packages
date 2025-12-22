@@ -89,6 +89,7 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
+Provides: ${gir:Provides},
 Replaces: gir1.2-eoc-1.0,
 Description: GObject introspection data for the eoc library
  eoc or the Eye of CAFE is a simple graphics viewer for the CAFE
