@@ -1,3 +1,17 @@
+cafe-desktop (2.0.0-2) unstable; urgency=medium
+
+  * control:
+    - add B-D cafe-common
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - Drop transitional pkg 'gir1.2-cafe-desktop' (and drop lintian override for this).
+    - Update gir handling
+  * rules: remove obsolete get-orig-source
+  * watch: upgrade to version 5
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 22 Dec 2025 01:29:21 +0100
+
 cafe-desktop (2.0.0-1) unstable; urgency=medium
 
   * GLib 2.67.3 required
