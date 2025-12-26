@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs -Wl,--as-needed
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs
 
 # needed with the Ubuntu toolchain to avoid issues
 export DEB_LDFLAGS_MAINT_STRIP := -Wl,-Bsymbolic-functions
@@ -20,19 +20,15 @@ override_dh_makeshlibs:
 		-X/usr/lib/$(DEB_HOST_MULTIARCH)/libbean-2.0/ -- -c4
 	dh_makeshlibs --remaining-packages
 
-override_dh_install:
+execute_before_dh_install:
 	# remove compiled python and libtool .la files
 	find debian/tmp \( \
 		-name '*.la' -o -name '*.pyc' -o -name '*.pyo' \
 		\) -print -delete
 	rm -rf debian/tmp/usr/lib/*/bean-demo/plugins/*/__pycache__
-	dh_install
-
-override_dh_missing:
-	dh_missing --fail-missing
 
 override_dh_auto_test:
-	HOME=$(CURDIR) xvfb-run -a dh_auto_test
+	xvfb-run -a dh_auto_test
 
 override_dh_gnome_clean:
 	dh_gnome_clean --no-control
