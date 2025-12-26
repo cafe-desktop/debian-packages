@@ -5,7 +5,7 @@ Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: advaita-icon-theme <!nocheck>,
                at-spi2-core <!nocheck>,
                dbus <!nocheck>,
-               debhelper-compat (= 12),
+               debhelper-compat (= 13),
                dh-sequence-gir,
                fonts-cantarell <!nocheck>,
                fonts-dejavu-core <!nocheck>,
