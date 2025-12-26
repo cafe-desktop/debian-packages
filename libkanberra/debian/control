@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper (>= 11),
                gnome-pkg-tools,
-               libltdl-dev | libltdl7-dev (>= 2.2.6),
+               libltdl-dev,
                libasound2-dev [linux-any],
                libvorbis-dev,
                libctk-3-dev (>= 3.0.0),
