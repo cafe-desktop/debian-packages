@@ -3,10 +3,10 @@ Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 12),
+               dh-sequence-gir,
+               dh-sequence-gnome,
                docbook-xml,
                gettext (>= 0.19.4),
-               gnome-pkg-tools (>= 0.10),
-               gobject-introspection (>= 0.10),
                gtk-doc-tools (>= 1.9),
                libgirepository1.0-dev (>= 0.10),
                libglib2.0-dev (>= 2.34),
