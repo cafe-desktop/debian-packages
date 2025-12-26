@@ -3,7 +3,7 @@ Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: adwaita-icon-theme <!nocheck>,
-               debhelper-compat (= 12),
+               debhelper-compat (= 13),
                dh-sequence-gir,
                dh-sequence-gnome,
                gnome-common,
