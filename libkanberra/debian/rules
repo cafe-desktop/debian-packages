@@ -38,14 +38,6 @@ override_dh_makeshlibs:
 		--exclude=usr/lib/$(DEB_HOST_MULTIARCH)/ctk-3.0/modules \
 		--exclude=usr/lib/$(DEB_HOST_MULTIARCH)/libkanberra-1.0 -- -c4
 
-override_dh_strip:
-	dh_strip -plibkanberra0 --dbgsym-migration='libkanberra0-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-pulse --dbgsym-migration='libkanberra-pulse-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-gstreamer --dbgsym-migration='libkanberra-gstreamer-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-ctk3-0 --dbgsym-migration='libkanberra-ctk3-0-dbg (<< 0.30-3~)'
-	dh_strip -plibkanberra-ctk3-module --dbgsym-migration='libkanberra-ctk3-module-dbg (<< 0.30-3~)'
-	dh_strip --remaining-packages
-
 override_dh_install:
 	cp -a src/kanberra-ctk-module.desktop \
 	      debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/gnome-settings-daemon-3.0/ctk-modules/kanberra-ctk3-module.desktop
