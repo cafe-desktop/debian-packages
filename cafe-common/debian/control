@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: autoconf,
                automake,
-               debhelper-compat (= 12),
+               debhelper-compat (= 13),
                gettext,
                intltool,
                libtool,
