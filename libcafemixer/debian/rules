@@ -11,9 +11,6 @@ include /usr/share/dpkg/buildflags.mk
 %:
 	dh $@ $(DHFLAGS) --without autoreconf
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/*/*.la
