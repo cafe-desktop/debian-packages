@@ -9,9 +9,6 @@ include /usr/share/dpkg/buildflags.mk
 %:
 	dh $@ $(DHFLAGS) --with gir --without autoreconf
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_install:
 	rm -f debian/tmp/usr/lib/*/*.la
 	dh_install
