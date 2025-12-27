@@ -17,9 +17,6 @@ endif
 %:
 	dh $@ $(DHFLAGS) --without autoreconf
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_install:
 	rm -rf debian/tmp/usr/lib/*/cafe-settings-daemon/*.la
 	dh_install
