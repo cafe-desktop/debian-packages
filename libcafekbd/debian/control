@@ -30,9 +30,6 @@ Depends: iso-codes,
          ${misc:Depends},
          ${shlibs:Depends},
 Provides: libcafekbd,
-Replaces: libcafekbd,
-Breaks: libcafekbd,
-Conflicts: libcafekbd,
 Description: CAFE library to manage keyboard configuration
  libcafekbd offers an API to manage the keyboard in CAFE applications.
  .
@@ -66,8 +63,6 @@ Depends: libglib2.0-dev,
          ${gir:Depends},
          ${misc:Depends},
 Provides: ${gir:Provides}
-Breaks: gir1.2-cafekbd (<< 1.18.2-2~)
-Replaces: gir1.2-cafekbd (<< 1.18.2-2~)
 Description: CAFE library to manage keyboard configuration (development files)
  libcafekbd offers an API to manage the keyboard in CAFE applications.
  .
