@@ -2,7 +2,7 @@ Source: libkanberra
 Section: libs
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper-compat (= 13),
                gnome-pkg-tools,
                libltdl-dev,
                libasound2-dev [linux-any],
