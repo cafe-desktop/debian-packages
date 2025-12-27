@@ -1,3 +1,21 @@
+libcafekbd (2.0.0-2) unstable; urgency=medium
+
+  * rename package gir1.2-cafekbd-1.0 -> gir1.2-cafekbd-2.0
+  * control:
+    - gir1.2-cafekbd-2.0 replaces gir1.2-cafekbd-1.0
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - Update gir handling
+    - add gir Provides to gir1.2-cafekbd-2.0
+    - Remove obsolete Breaks, Conflicts, Replaces
+  * rules: remove obsolete get-orig-source
+  * watch: upgrade to version 5
+  * Drop transitional pkg 'gir1.2-matekbd' and drop lintian override for it
+  * Simplify debian/rules
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 27 Dec 2025 16:19:17 +0100
+
 libcafekbd (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
