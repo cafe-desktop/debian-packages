@@ -91,12 +91,3 @@ Description: GObject introspection data for libcafekbd and libcafekbdui
  .
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
-
-Package: gir1.2-cafekbd
-Section: oldlibs
-Architecture: any
-Depends: ${misc:Depends},
-         gir1.2-cafekbd-2.0 (= ${binary:Version}),
-Description: GObject introspection data for libcafekbd (transitional package)
- This package is a transitional package to gir1.2-cafekbd-2.0. The package
- can be safely removed.
