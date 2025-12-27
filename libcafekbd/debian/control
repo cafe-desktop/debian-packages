@@ -82,6 +82,7 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
+Provides: ${gir:Provides},
 Replaces: gir1.2-cafekbd-1.0,
 Description: GObject introspection data for libcafekbd and libcafekbdui
  libcafekbd offers an API to manage the keyboard in CAFE applications.
