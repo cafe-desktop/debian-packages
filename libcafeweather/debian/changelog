@@ -1,3 +1,16 @@
+libcafeweather (2.0.1-2) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules:
+    - remove obsolete get-orig-source
+    - remove dh_missing --fail-missing , it works by default in DH 13
+  * watch: upgrade to version 5
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 28 Dec 2025 14:12:38 +0100
+
 libcafeweather (2.0.1-1) unstable; urgency=medium
 
   * rename package libcafeweather1 -> libcafeweather2
