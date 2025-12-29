@@ -1,2 +1,0 @@
-# discussed with upstream and considered as wanted / unproblematic
-libcroma-private2: shlib-calls-exit usr/lib/x86_64-linux-gnu/libcroma-private.so.2.0.0
