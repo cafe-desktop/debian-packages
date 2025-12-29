@@ -1,3 +1,19 @@
+croma (2.0.0-1) unstable; urgency=medium
+
+  * control:
+    - GLib 2.67.3 required
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules:
+    - remove obsolete get-orig-source
+    - remove dh_missing --fail-missing , it works by default in DH 13
+  * watch: upgrade to version 5
+  * remove unused lintian override
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 29 Dec 2025 15:32:46 +0100
+
 croma (1.25.1-1) unstable; urgency=medium
 
   * New upstream release
