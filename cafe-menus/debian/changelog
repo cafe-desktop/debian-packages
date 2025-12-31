@@ -1,3 +1,20 @@
+cafe-menus (2.1.0-1) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - Update gir handling
+    - add B-D gir1.2-giounix-2.0-dev
+  * rules:
+    - remove obsolete get-orig-source
+    - Simplify debian/rules
+  * watch: upgrade to version 5
+  * remove transitional gir1.2-cafe-menu
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 31 Dec 2025 19:24:52 +0100
+
 cafe-menus (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
