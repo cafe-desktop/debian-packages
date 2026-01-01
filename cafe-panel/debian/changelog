@@ -1,3 +1,20 @@
+cafe-panel (2.0.1-2) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - update gir handling
+    - remove unused shlibs:Depends
+  * rules:
+    - remove obsolete get-orig-source
+    - remove dh_missing --fail-missing , it works by default in DH 13
+  * watch: upgrade to version 5
+  * remove transitional gir1.2-cafe-panel
+  * Update dh-sequence-gir Build-Depends
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 01 Jan 2026 20:08:36 +0100
+
 cafe-panel (2.0.1-1) unstable; urgency=medium
 
   * New upstream release
