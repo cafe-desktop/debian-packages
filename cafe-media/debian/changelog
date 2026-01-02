@@ -1,3 +1,17 @@
+cafe-media (2.0.0-1) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules:
+    - remove obsolete get-orig-source
+    - remove dh_missing --fail-missing , it works by default in DH 13
+  * watch: upgrade to version 5
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 02 Jan 2026 13:03:30 +0100
+
 cafe-media (1.25.0-1) unstable; urgency=medium
 
   * Initial release
