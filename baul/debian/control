@@ -129,7 +129,6 @@ Architecture: any
 Multi-Arch: same
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
 Breaks: gir1.2-baul (<< 1.18.5-2~),
 Replaces: gir1.2-baul (<< 1.18.5-2~),
 Description: GObject introspection data for Baul
