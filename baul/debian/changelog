@@ -1,3 +1,20 @@
+baul (2.1.0-2) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - require debhelper-compat 13
+    - Update gir handling
+    - remove unused shlibs:Depends in gir1.2-baul-2.0
+  * rules:
+    - remove obsolete get-orig-source
+    - remove dh_missing --fail-missing , it works by default in DH 13
+  * watch: upgrade to version 5
+  * baul: remove transitional gir1.2-baul
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 03 Jan 2026 19:15:33 +0100
+
 baul (2.1.0-1) unstable; urgency=medium
 
   * rename package libbaul-extension1 -> libbaul-extension2
