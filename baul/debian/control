@@ -4,6 +4,8 @@ Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
+               gir1.2-gio-2.0-dev,
+               gir1.2-ctk-3.0-dev,
                gobject-introspection,
                gtk-doc-tools,
                intltool,
@@ -11,7 +13,6 @@ Build-Depends: debhelper-compat (= 13),
                libexempi-dev,
                libexif-dev,
                libcail-3-dev,
-               libgirepository1.0-dev,
                libglib2.0-dev (>= 2.67.3),
                libctk-3-dev,
                libcafe-desktop-dev (>= 1.24),
@@ -92,11 +93,11 @@ Package: libbaul-extension-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: gir1.2-baul-2.0 (= ${binary:Version}),
-         libbaul-extension2 (= ${binary:Version}),
+Depends: libbaul-extension2 (= ${binary:Version}),
          libctk-3-dev,
+         ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
+Provides: ${gir:Provides}
 Breaks: gir1.2-baul (<< 1.18.4-1~),
 Replaces: gir1.2-baul (<< 1.18.4-1~),
 Description: libraries for Baul components (development files)
