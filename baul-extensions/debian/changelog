@@ -1,3 +1,18 @@
+baul-extensions (2.0.0-2) unstable; urgency=medium
+
+  * control:
+    - 'pkgconf' instead transitional 'pkg-config'
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules:
+    - remove obsolete get-orig-source
+    - remove dh_missing --fail-missing , it works by default in DH 13
+  * watch: upgrade to version 5
+  * remove lintian overrides
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 05 Jan 2026 18:20:01 +0100
+
 baul-extensions (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
