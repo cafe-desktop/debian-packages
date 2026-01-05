@@ -1,6 +1,0 @@
-# baul extensions in /usr/lib/*/baul/extensions-2.0/ erroneously trigger
-# debhelper's makeshlibs script
-baul-wallpaper: postinst-has-useless-call-to-ldconfig
-
-# checking manually 1.24.0: it is linked against libc. Is this a false-positive?
-baul-wallpaper: library-not-linked-against-libc usr/lib/x86_64-linux-gnu/baul/extensions-2.0/libbaul-wallpaper.so
