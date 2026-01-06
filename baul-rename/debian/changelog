@@ -1,3 +1,14 @@
+baul-rename (2.0.0-2) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules: remove obsolete get-orig-source
+  * watch: upgrade to version 5
+
+ -- Pablo Barciela <scow@riseup.net>  Tue, 06 Jan 2026 21:21:18 +0100
+
 baul-rename (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
