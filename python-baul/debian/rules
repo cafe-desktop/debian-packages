@@ -11,9 +11,6 @@ export PYTHON=python3
 %:
 	dh $@ $(DHFLAGS) --without autoreconf
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/baul-python/*.la
 	rm -rfv debian/tmp/usr/lib/*/baul/extensions-2.0/*.la
