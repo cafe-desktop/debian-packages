@@ -76,7 +76,4 @@ ifneq ($(filter %-udeb,$(binaries)),)
 endif
 	dh_install --remaining-packages --sourcedir=debian/tmp/deb
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_gnome_clean:
