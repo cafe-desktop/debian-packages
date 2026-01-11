@@ -157,5 +157,4 @@ libbte-2.91.so.0 libbte-2.91-0 #MINVER#
  bte_text_blink_mode_get_type@Base 0.51.90
  bte_write_flags_get_type@Base 0
  (optional=template|regex)"_ZN.*@Base" 0
- (optional=template|regex)"_ZS.*@Base" 0
  (optional=template|regex)"_ZT.*@Base" 0
