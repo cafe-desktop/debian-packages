@@ -1,3 +1,23 @@
+bte2.91 (1.0.0-1) unstable; urgency=medium
+
+  * copyright: update source urls
+  * control:
+    - GLib 2.67.3 required
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - require debhelper-compat 13
+    - Add gir:Depends, gir:Provides to -dev package
+    - Build-depend on required GIR XML (gir1.2-*-dev packages)
+    - Replace libgirepository1.0-dev B-D with gobject-introspection
+  * watch: upgrade to version 5
+  * Stop using debian/control.in and dh_gnome_clean
+  * rules: Override dh_gnome to avoid build warnings
+  * update symbols
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 11 Jan 2026 13:03:11 +0100
+
 bte2.91 (0.65.0-1) unstable; urgency=medium
 
   * New upstream release
