@@ -80,7 +80,9 @@ Depends: gir1.2-bte-2.91 (= ${binary:Version}),
          libbte-2.91-0 (= ${binary:Version}),
          libbte-2.91-common,
          zlib1g-dev,
+         ${gir:Depends},
          ${misc:Depends}
+Provides: ${gir:Provides}
 Recommends: libbte-2.91-doc
 Conflicts: libbte-2.90-dev
 Multi-Arch: same
