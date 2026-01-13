@@ -46,3 +46,5 @@ override_dh_install:
 
 override_dh_missing:
 	dh_missing --list-missing
+
+override_dh_gnome:
