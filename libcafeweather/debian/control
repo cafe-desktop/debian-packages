@@ -36,7 +36,6 @@ Package: libcafeweather-common
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
-         ${shlibs:Depends},
 Breaks: libcafeweather (<= 1.0.0-3),
 Description: CafeWeather shared library (common files)
  libcafeweather is a library to access weather information from online
@@ -54,7 +53,6 @@ Depends: libglib2.0-dev (>= 2.56.0),
          libsoup-3.0-dev (>= 3.5.0),
          libxml2-dev,
          ${misc:Depends},
-         ${shlibs:Depends},
 Description: CafeWeather shared library (development files)
  libcafeweather is a library to access weather information from online
  services for numerous locations.
