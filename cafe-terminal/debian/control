@@ -27,6 +27,7 @@ Depends: gsettings-desktop-schemas,
          cafe-desktop-common,
          cafe-terminal-common (= ${source:Version}),
          ${misc:Depends},
+         ${perl:Depends},
          ${shlibs:Depends},
 Provides: x-terminal-emulator,
 Description: CAFE terminal emulator application
