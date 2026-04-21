@@ -2,7 +2,7 @@ Source: lector
 Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
-Build-Depends: debhelper-compat (=12),
+Build-Depends: debhelper-compat (= 13),
                dpkg-dev (>= 1.16.1.1),
                gir1.2-cdk-3.0-dev,
                gir1.2-gdkpixbuf-2.0-dev,
