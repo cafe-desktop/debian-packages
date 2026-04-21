@@ -1,5 +1,5 @@
 usr/bin/
-usr/lib/*/lectord
+usr/libexec/lectord
 usr/lib/*/baul/
 usr/share/applications/lector.desktop
 usr/share/dbus-1/
