@@ -4,40 +4,25 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
-DHFLAGS=--parallel
-DEB_LECTOR_FLAGS=
-ifeq ($(shell dpkg-vendor --is Debian && echo yes),yes)
-ifeq ($(shell lsb_release -cs),wheezy)
-	DEB_LECTOR_FLAGS=--without-keyring
-endif
-endif
-
 %:
-	dh $@ $(DHFLAGS) --with gir --without autoreconf
+	dh $@ --without autoreconf
 
-override_dh_missing:
-	dh_missing --fail-missing
-
-override_dh_install:
+execute_before_dh_install:
 	rm -rfv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/lib/*/baul/extensions-2.0/*.la
 	rm -rfv debian/tmp/usr/lib/*/lector/3/backends/*.la
-	dh_install
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test
 
 override_dh_auto_configure:
 	NOCONFIGURE=1 ./autogen.sh
-	dh_auto_configure $(DHFLAGS) -- \
+	dh_auto_configure -- \
+		--enable-comics \
 		--enable-gtk-doc \
 		--enable-djvu \
 		--enable-dvi \
-		--enable-t1lib \
-		--enable-pixbuf \
-		--enable-comics \
 		--enable-introspection \
-		--disable-silent-rules \
-		--disable-static \
-		--libexecdir=/usr/lib/lector \
-		$(DEB_LECTOR_FLAGS)
+		--enable-pixbuf \
+		--enable-t1lib \
+		--disable-static
