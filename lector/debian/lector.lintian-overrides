@@ -1,4 +1,0 @@
-# lector ships a baul extension and those extensions are known to erroneously
-# trigger debhelper's makeshlibs script
-lector: postinst-has-useless-call-to-ldconfig
-lector: postrm-has-useless-call-to-ldconfig
