@@ -4,12 +4,16 @@ Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (=12),
                dpkg-dev (>= 1.16.1.1),
+               gir1.2-cdk-3.0-dev,
+               gir1.2-gdkpixbuf-2.0-dev,
+               gir1.2-gio-2.0-dev,
+               gir1.2-gobject-2.0-dev,
+               gir1.2-ctk-3.0-dev,
                gobject-introspection,
                intltool,
                libbaul-extension-dev (>= 1.18),
                libdjvulibre-dev,
                libcail-3-dev,
-               libgirepository1.0-dev,
                libglib2.0-dev,
                libctk-3-dev,
                libgxps-dev (>= 0.2.0),
@@ -89,9 +93,9 @@ Package: liblectorview-dev
 Section: libdevel
 Architecture: any
 Depends: liblectorview3 (= ${binary:Version}),
-         gir1.2-lectorview-1.5.0 (= ${binary:Version}),
+         ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
+Provides: ${gir:Provides},
 Breaks: liblector-dev (<< 1.9.0),
 Description: CAFE document viewing library (development files)
  Lector is a simple multi-page document viewer.  It can display
@@ -120,9 +124,9 @@ Package: liblectordocument-dev
 Section: libdevel
 Architecture: any
 Depends: liblectordocument3 (= ${binary:Version}),
-         gir1.2-lectordocument-1.5.0 (= ${binary:Version}),
+         ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
+Provides: ${gir:Provides},
 Breaks: liblector-dev (<< 1.9.0),
         gir1.2-lector (<< 1.18.3-2~),
 Replaces: liblector-dev (<< 1.9.0),
@@ -140,7 +144,6 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
 Breaks: gir1.2-lector (<< 1.18.3-2~),
 Replaces: gir1.2-lector (<< 1.18.3-2~),
 Description: GObject introspection data for liblectordocument
@@ -158,7 +161,6 @@ Section: introspection
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
 Breaks: gir1.2-lector (<< 1.18.3-2~),
 Replaces: gir1.2-lector (<< 1.18.3-2~),
 Description: GObject introspection data for liblectorview
