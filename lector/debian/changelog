@@ -1,3 +1,22 @@
+lector (2.0.0-1) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - Drop transitional useless package 'gir1.2-lector'
+    - Update gir handling
+    - Bump to debhelper-compat 13
+  * rules:
+    - remove obsolete get-orig-source
+    - Simplify debian/rules
+  * watch: upgrade to version 5
+  * drop lector.lintian-overrides
+  * lector.install: Adjust to new libexecdir
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 22 Apr 2026 08:55:57 +0200
+
 lector (1.25.0-1) unstable; urgency=medium
 
   * Initial release
