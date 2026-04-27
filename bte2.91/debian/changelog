@@ -1,3 +1,9 @@
+bte2.91 (1.0.0-2) unstable; urgency=medium
+
+  * rules: enable systemd in CONFFLAGS_deb
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 27 Apr 2026 19:14:20 +0200
+
 bte2.91 (1.0.0-1) unstable; urgency=medium
 
   * copyright: update source urls
