@@ -14,7 +14,8 @@ include /usr/share/dpkg/default.mk
 CONFFLAGS_deb = \
 	-Ddocs=true \
 	-Dgir=true \
-	-Dgnutls=true
+	-Dgnutls=true \
+	-D_systemd=true
 
 CONFFLAGS_udeb = \
 	-Ddocs=false \
