@@ -21,7 +21,6 @@ Depends: gtk2-engines,
          librsvg2-common,
          cafe-icon-theme,
          ${misc:Depends},
-Conflicts: cafe-themes-gnome,
 Description: Official themes for the CAFE desktop
  This package contains the official desktop themes of the CAFE desktop
  environment.
