@@ -22,9 +22,6 @@ override_dh_install:
 	cp debian/cafe-black.theme debian/cafe-themes/usr/share/icons/cafe-black/cursor.theme
 	dh_install
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_installchangelogs:
 	dh_installchangelogs NEWS
 
