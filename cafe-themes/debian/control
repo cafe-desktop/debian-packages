@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Pablo Barciela <scow@riseup.net>
 Standards-Version: 4.5.0
-Build-Depends: debhelper-compat (=12),
+Build-Depends: debhelper-compat (= 13),
 Build-Depends-Indep: cafe-common,
                      icon-naming-utils,
                      intltool,
