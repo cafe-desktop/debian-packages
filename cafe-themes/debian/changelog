@@ -1,3 +1,23 @@
+cafe-themes (2.0.1-2) unstable; urgency=medium
+
+  * control:
+    - add Build-Depends-Indep cafe-common
+    - 'pkgconf' instead transitional 'pkg-config'
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - Bump DH compat level to version 13
+    - 'ctk-icon-naming-utils' instead 'icon-naming-utils'
+    - drop 'gtk2-engines-murrine'
+    - remove old conflicts
+  * rules:
+    - remove obsolete get-orig-source
+    - Drop dh_missing override, --fail-missing is default in compat 13
+  * watch: upgrade to version 5
+  * Update override syntax
+
+ -- Pablo Barciela <scow@riseup.net>  Tue, 28 Apr 2026 19:33:10 +0200
+
 cafe-themes (2.0.1-1) unstable; urgency=medium
 
   * New upstream release
