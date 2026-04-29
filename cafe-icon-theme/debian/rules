@@ -5,9 +5,6 @@ DHFLAGS=--parallel
 %:
 	dh $@ $(DHFLAGS) --without autoreconf
 
-override_dh_missing:
-	dh_missing --fail-missing
-
 override_dh_install:
 	rm -rf debian/cafe-icon-theme/usr/share/locale/
 	dh_install
