@@ -5,6 +5,7 @@ Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (=12),
 Build-Depends-Indep: gettext,
                      hicolor-icon-theme,
+                     cafe-common,
                      ctk-icon-naming-utils (>= 0.8.7),
                      intltool (>= 0.40.0),
                      librsvg2-bin,
