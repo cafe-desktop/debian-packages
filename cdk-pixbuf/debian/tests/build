@@ -1,0 +1,38 @@
+#!/bin/sh
+# autopkgtest check: Builds a small application against libgdk-pixbuf2.0, checking
+# if it compiles, links and runs successfully.
+# Author: Rafał Cieślak <rafalcieslak256@ubuntu.com> 
+
+set -eu
+
+WORKDIR=$(mktemp -d)
+trap 'rm -rf "$WORKDIR"' 0 INT QUIT ABRT PIPE TERM
+cd "$WORKDIR"
+
+if [ -n "${DEB_HOST_GNU_TYPE:-}" ]; then
+    CROSS_COMPILE="$DEB_HOST_GNU_TYPE-"
+else
+    CROSS_COMPILE=
+fi
+
+cat <<EOF > build_test.c
+
+#include <gdk-pixbuf/gdk-pixbuf.h>
+int main(){
+	GdkPixbuf *pixbuf = NULL;
+#if !defined(GLIB_VERSION_2_36)
+	g_type_init();
+#endif
+	pixbuf = gdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, 50, 180);
+	if(!pixbuf) return 1;
+	return 0;
+}
+EOF
+
+# Deliberately word-splitting, that's how pkg-config works:
+# shellcheck disable=SC2046
+"${CROSS_COMPILE}gcc" -o build_test build_test.c -Wall -Werror $("${CROSS_COMPILE}pkg-config" --cflags --libs gdk-pixbuf-2.0)
+echo "build: OK"
+[ -x build_test ]
+./build_test
+echo "run: OK"

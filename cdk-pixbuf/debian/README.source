@@ -1,0 +1,8 @@
+Importing a new upstream version
+================================
+
+git remote add gnome https://gitlab.gnome.org/GNOME/gdk-pixbuf.git
+git remote update
+uscan --download
+[edit Files-Excluded in d/copyright if necessary]
+gbp import-orig --upstream-vcs-tag=${VERSION} ../gdk-pixbuf_${VERSION}+dfsg.orig.tar.xz

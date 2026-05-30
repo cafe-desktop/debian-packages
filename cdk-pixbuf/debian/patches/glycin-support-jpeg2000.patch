@@ -1,0 +1,115 @@
+From: =?utf-8?q?Jeremy_B=C3=ADcha?= <jbicha@debian.org>
+Date: Thu, 12 Feb 2026 20:53:33 -0500
+Subject: glycin: support jpeg2000
+
+There are many jpeg2000 variations. It appears like jp2 & j2c work.
+
+As with xbm & xpm, this requires glycin 2.1.
+glycin 2.0 supported an earlier jpeg2000 loader
+but it was disabled by default and it appears that
+distros generally did not enable it.
+
+Forwarded: https://gitlab.gnome.org/GNOME/gdk-pixbuf/-/merge_requests/259
+---
+ gdk-pixbuf/gdk-pixbuf-io.c                           |  3 +++
+ gdk-pixbuf/{io-glycin-dds.c => io-glycin-jpeg2000.c} | 18 +++++++++++++-----
+ gdk-pixbuf/meson.build                               |  1 +
+ 3 files changed, 17 insertions(+), 5 deletions(-)
+ copy gdk-pixbuf/{io-glycin-dds.c => io-glycin-jpeg2000.c} (74%)
+
+diff --git a/gdk-pixbuf/gdk-pixbuf-io.c b/gdk-pixbuf/gdk-pixbuf-io.c
+index 1cde69e..db8df52 100644
+--- a/gdk-pixbuf/gdk-pixbuf-io.c
++++ b/gdk-pixbuf/gdk-pixbuf-io.c
+@@ -669,6 +669,7 @@ gdk_pixbuf_io_init_builtin (void)
+         load_one_builtin_module (heic);
+         load_one_builtin_module (ico);
+         load_one_builtin_module (jpeg);
++        load_one_builtin_module (jpeg2000);
+         load_one_builtin_module (jxl);
+         load_one_builtin_module (openexr);
+         load_one_builtin_module (png);
+@@ -745,6 +746,7 @@ module (glycin_gif);
+ module (glycin_heic);
+ module (glycin_ico);
+ module (glycin_jpeg);
++module (glycin_jpeg2000);
+ module (glycin_jxl);
+ module (glycin_openexr);
+ module (glycin_png);
+@@ -809,6 +811,7 @@ gdk_pixbuf_load_module_unlocked (GdkPixbufModule *image_module,
+         try_module (heic,    glycin_heic);
+         try_module (ico,     glycin_ico);
+         try_module (jpeg,    glycin_jpeg);
++        try_module (jpeg2000, glycin_jpeg2000);
+         try_module (jxl,     glycin_jxl);
+         try_module (openexr, glycin_openexr);
+         try_module (png,     glycin_png);
+diff --git a/gdk-pixbuf/io-glycin-dds.c b/gdk-pixbuf/io-glycin-jpeg2000.c
+similarity index 74%
+copy from gdk-pixbuf/io-glycin-dds.c
+copy to gdk-pixbuf/io-glycin-jpeg2000.c
+index a8593d1..ba0a2c7 100644
+--- a/gdk-pixbuf/io-glycin-dds.c
++++ b/gdk-pixbuf/io-glycin-jpeg2000.c
+@@ -3,6 +3,9 @@
+  * Copyright (C) 2024 Red Hat, Inc.
+  *
+  * Authors: Matthias Clasen <mclasenredhat.com>
++ * Authors: Jeremy Bícha <jbicha@debian.org>
++ * Authors: 2007 Bastien Nocera <hadess@hadess.net>
++ * Inspired by work by Ben Karel <web+moz@eschew.org>
+  *
+  * This library is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU Lesser General Public
+@@ -26,7 +29,7 @@
+ #ifndef INCLUDE_glycin
+ #define MODULE_ENTRY(function) G_MODULE_EXPORT void function
+ #else
+-#define MODULE_ENTRY(function) void _gdk_pixbuf__glycin_dds_ ## function
++#define MODULE_ENTRY(function) void _gdk_pixbuf__glycin_jpeg2000_ ## function
+ #endif
+ 
+ MODULE_ENTRY (fill_vtable) (GdkPixbufModule *module)
+@@ -37,20 +40,25 @@ MODULE_ENTRY (fill_vtable) (GdkPixbufModule *module)
+ MODULE_ENTRY (fill_info) (GdkPixbufFormat *info)
+ {
+   static const GdkPixbufModulePattern signature[] = {
++    { "    jP", "!!!!  ", 100 },		/* file begins with 'jP' at offset 4 */
++    { "\xff\x4f\xff\x51\x00", NULL, 100 },	/* file starts with FF 4F FF 51 00 */
+     { NULL, NULL, 0 }
+   };
+   static const gchar *mime_types[] = {
+-    "image/x-dds",
++    "image/jp2",
++    "image/x-jp2-codestream",
+     NULL
+   };
+   static const gchar *extensions[] = {
+-    "dds",
++    "jp2",
++    "j2c",
++    "j2k",
+     NULL
+   };
+ 
+-  info->name = "dds";
++  info->name = "jpeg2000";
+   info->signature = (GdkPixbufModulePattern *) signature;
+-  info->description = "DDS";
++  info->description = "JPEG 2000";
+   info->mime_types = (gchar **) mime_types;
+   info->extensions = (gchar **) extensions;
+   info->flags = GDK_PIXBUF_FORMAT_THREADSAFE;
+diff --git a/gdk-pixbuf/meson.build b/gdk-pixbuf/meson.build
+index f334320..c4652e7 100644
+--- a/gdk-pixbuf/meson.build
++++ b/gdk-pixbuf/meson.build
+@@ -224,6 +224,7 @@ if enabled_loaders.contains('glycin')
+     'heic',
+     'ico',
+     'jpeg',
++    'jpeg2000',
+     'jxl',
+     'openexr',
+     'png',

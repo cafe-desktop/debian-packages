@@ -1,0 +1,4 @@
+version=4
+opts="searchmode=plain,repacksuffix=+dfsg,repack,compression=xz,dversionmangle=s/[~+]dfsg[0-9]*//g,downloadurlmangle=s|cache.json||" \
+https://download.gnome.org/sources/@PACKAGE@/cache.json \
+	[\d.]+[02468]/@PACKAGE@-([\d.]+)@ARCHIVE_EXT@

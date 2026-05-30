@@ -1,0 +1,1435 @@
+gdk-pixbuf (2.44.5+dfsg-4) unstable; urgency=medium
+
+  * Add patch to support JPEG2000 (Closes: #815612)
+  * Bump minimum glycin to 2.0.8 for this to work
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Sat, 14 Feb 2026 10:24:34 -0500
+
+gdk-pixbuf (2.44.5+dfsg-3) unstable; urgency=medium
+
+  * Re-enable glycin for loong64
+  * Release to unstable
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Mon, 09 Feb 2026 07:00:40 -0500
+
+gdk-pixbuf (2.44.5+dfsg-2) experimental; urgency=medium
+
+  [ Alessandro Astone ]
+  * d/control, d/rules: Enable glycin on i386
+
+  [ Carlos Henrique Lima Melara ]
+  * d/rules: remove useless if clause in dh_auto_test override
+
+  [ Jeremy Bícha ]
+  * Disable glycin for loong64 because it isn't fully bootstrapped yet.
+    glycin is now enabled on all other Debian Release Architectures, but not
+    enabled on any Debian ports.
+  * Bump Standards Version to 4.7.3
+
+  [ Simon McVittie ]
+  * Opt into Salsa CI
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Thu, 05 Feb 2026 13:50:28 -0500
+
+gdk-pixbuf (2.44.5+dfsg-1) experimental; urgency=medium
+
+  * New upstream release
+  * d/rules: Re-enable build test gating
+  * d/p: Rebase patches
+  * d/patches: Fix tests with older gdk-pixbuf installed in the rootfs
+  * d/patches: Use the native xpm and xbm loaders instead of glycin
+
+ -- Alessandro Astone <alessandro.astone@canonical.com>  Thu, 29 Jan 2026 10:56:51 +0100
+
+gdk-pixbuf (2.44.4+dfsg-3) experimental; urgency=medium
+
+  * Enable the legacy non-glycin XPM & XBM loaders for glycin architectures
+    (Closes: #1120607)
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 12 Nov 2025 22:37:30 -0500
+
+gdk-pixbuf (2.44.4+dfsg-2) experimental; urgency=medium
+
+  * Switch to glycin for release architectures and loong64 except i386
+    (Closes: #1116981, #1071271) (LP: #2122289)
+  * Depend on glycin-thumbnailers on those architectures
+  * libgdk-pixbuf2.0-bin no longer contains a thumbnailer on those
+    architectures, but still contains gdk-pixbuf-pixdata and
+    gdk-pixbuf-csource, so stop recommending it on those architectures
+  * Use dh-exec to manage architecture-specific install rules
+  * Follow Fedora's example and disable auto features
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 12 Nov 2025 07:06:13 -0500
+
+gdk-pixbuf (2.44.4+dfsg-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove bitmap patch applied in new release
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Tue, 21 Oct 2025 13:28:37 -0400
+
+gdk-pixbuf (2.44.3+dfsg-3) unstable; urgency=medium
+
+  * Cherry-pick proposed patch to fix bitmap loading, as seen in
+    the window buttons feature for the Xfce panel
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 01 Oct 2025 14:37:38 -0400
+
+gdk-pixbuf (2.44.3+dfsg-2) unstable; urgency=medium
+
+  * Release to unstable
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 01 Oct 2025 06:45:40 -0400
+
+gdk-pixbuf (2.44.3+dfsg-1) experimental; urgency=medium
+
+  * New upstream release
+  * Update configure options
+    - Don't switch to glycin yet
+    - Explicitly disable native Android loader
+    - Disable tiff for udeb
+    - Disable thumbnailer for udeb
+    - Keep jpeg & png as "built-in" loaders since that was the previous default
+  * Remove 3 patches applied in new release
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Tue, 30 Sep 2025 13:45:03 -0400
+
+gdk-pixbuf (2.42.12+dfsg-5) unstable; urgency=medium
+
+  * Team upload
+
+  [ Sebastien Bacher ]
+  * Fix dh_fixperms override
+
+  [ Simon McVittie ]
+  * Fix dh_fixperms override more: don't make subdirectories non-executable
+  * Build-depend on gobject-introspection instead of libgirepository1.0-dev
+  * Build-depend on required gir1.2-*-dev packages
+  * Edit previous changelog entry to mention #1109262
+  * d/copyright: Don't quote the FSF's former postal address
+  * Standards-Version: 4.7.2 (no changes required)
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 15 Aug 2025 10:57:12 +0100
+
+gdk-pixbuf (2.42.12+dfsg-4) unstable; urgency=high
+
+  * Team upload
+  * Add patch from upstream fixing an out of bounds read for crafted
+    JPEGs. (CVE-2025-7345, Closes: #1109262)
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 12 Jul 2025 16:56:46 +0100
+
+gdk-pixbuf (2.42.12+dfsg-3) unstable; urgency=high
+
+  * Team upload
+  * d/p/lzw-Fix-reporting-of-bytes-written-in-decoder.patch:
+    Add patch from upstream to fix LZW error reporting.
+    Setting the reported output size to the full buffer length rather than
+    the actual number of written bytes can cause uninitialized memory
+    contents to be disclosed. (CVE-2025-6199; Closes: #1107994)
+  * Set high urgency for security fix
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 20 Jun 2025 09:52:41 +0100
+
+gdk-pixbuf (2.42.12+dfsg-2) unstable; urgency=medium
+
+  [ Simon McVittie ]
+  * d/control: Remove some redundant dependencies
+  * Standards-Version: 4.7.0 (no changes required)
+  * libgdk-pixbuf2.0-doc: Register the reference manuals with doc-base
+
+  [ Jeremy Bícha ]
+  * Drop obsolete Pre-Depends
+  * Run wrap-and-sort
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 22 Jan 2025 08:21:30 -0500
+
+gdk-pixbuf (2.42.12+dfsg-1) unstable; urgency=high
+
+  * Team upload
+  * New upstream release
+    - Reject malformed .ani files, including one category that can cause
+      memory corruption (CVE-2022-48622)
+  * d/rules: Keep .ani, .bmp, .icns, .ico, .pnm, .qtif, .tga, .xbm, .xpm
+    loaders enabled for now. They are weakly maintained, and no longer
+    enabled by default upstream to reduce security exposure, but disabling
+    them would be a feature regression, which we shouldn't do in the same
+    upload as a security fix.
+  * d/rules: Disable miscellaneous loaders for the udeb, which as far as
+    we know only needs PNG support
+  * d/copyright: Pre-generated HTML documentation no longer needs excluding
+  * Set high urgency for security fix
+
+ -- Simon McVittie <smcv@debian.org>  Thu, 16 May 2024 15:25:37 +0100
+
+gdk-pixbuf (2.42.10+dfsg-3) unstable; urgency=medium
+
+  * Team upload
+  * d/control, d/rules: Reinstate dh-sequence-gnome, but disable
+    control.in.
+    Ubuntu uses this sequence to pull in the Ubuntu-specific
+    dh_translations.
+  * d/control: Add ${gir:Depends} to -dev package
+  * d/control: Use ${gir:Provides} instead of hard-coding it.
+    gobject-introspection (>= 1.78.1-5~) generates this for us.
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 14 Nov 2023 10:02:24 +0000
+
+gdk-pixbuf (2.42.10+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Amin Bandali ]
+  * Change packaging branch to debian/latest
+
+  [ Simon McVittie ]
+  * d/clean: Clean up debian/tmp-udeb/, obj-udeb/ (Closes: #1045013)
+  * d/rules: Fix escaped newline.
+    No functional change, because the options after the incorrect newline
+    were explicitly setting default behaviour anyway.
+  * d/.gitignore: Add
+  * d/control: Stop generating from a template.
+    We don't use any of the other dh-sequence-gnome features (there are no
+    libtool archives, and we don't use the gnome:Foo family of substvars)
+    so drop the build-dependency on dh-sequence-gnome.
+  * d/control: Add Provides on gir1.2-*-dev package names.
+    Adding versioned Provides on gir1.2-*-dev corresponding to each GIR XML
+    file is a small step towards being able to exclude GObject-Introspection
+    with a build-profile when cross-compiling.
+    (Helps: #1030223)
+  * Remove version constraints unnecessary since bullseye (oldstable)
+  * Update standards version to 4.6.2, no changes needed.
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 01 Nov 2023 23:29:20 +0000
+
+gdk-pixbuf (2.42.10+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+    - Increase memory limit for JPEGs to 1 GiB
+  * Update standards version to 4.6.1 (no changes needed)
+  * d/upstream/metadata: Update Gitlab URLs
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 18 Nov 2022 19:13:50 +0000
+
+gdk-pixbuf (2.42.9+dfsg-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/rules, d/control.in: Build-depend on python3-docutils for man pages.
+    We no longer need docbook DTDs or stylesheets. We still need xsltproc,
+    but only if we're building the udeb.
+  * d/watch: Update options
+  * d/changelog: Remove trailing whitespace
+  * d/copyright: Stop excluding gi-docgen, no longer in upstream tarballs
+  * d/copyright: Exclude prebuilt documentation when importing tarball
+  * debian/patches/debian_queryloader_dir.patch:
+    Format patch metadata for gbp pq
+  * d/p/tests-Tolerate-either-CORRUPT_IMAGE-or-INSUFFICIENT_MEMOR.patch:
+    Add patch to work around test failures with very large JPEG.
+    Be less demanding about the exact error behaviour, but instead just
+    require there to be an error.
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 16 Aug 2022 11:20:11 +0100
+
+gdk-pixbuf (2.42.8+dfsg-2) unstable; urgency=medium
+
+  * debian/patches/debian_queryloader_dir.patch:
+    - fix the directory referenced for gdk-pixbuf-query-loaders
+      in the .pc since that file is moved by the packaging
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 27 Jul 2022 15:23:37 +0200
+
+gdk-pixbuf (2.42.8+dfsg-1) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * New upstream release
+  * debian/control.in: Loosen dependency on libgdk-pixbuf2.0-common.
+    This fixes an issue seen repeatedly in Ubuntu when the amd64 (+all)
+    build finishes and is published before one of the other arches starts
+    to build.
+  * Build-Depend on gi-docgen
+  * Build-Depend on dh-sequence-gir & dh-sequence-gnome
+  * debian/rules: Update configure flags
+  * debian/rules: Drop unneeded -Wl,--as-needed
+  * debian/copyright: Use shorter CC0-1.0 text
+  * debian/rules: Handle over-aggressive dh_fixperms for installed-tests
+
+  [ Simon McVittie ]
+  * Use debhelper compat level 13
+    - We can now use debhelper substitutions for DEB_HOST_MULTIARCH in
+      d/libgdk-pixbuf-2.0-0.install, rather than using dh-exec.
+    - We can now pass `meson test` options to dh_auto_test, which no longer
+      uses `ninja test` directly.
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 28 Mar 2022 15:44:22 -0400
+
+gdk-pixbuf (2.42.6+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable
+
+ -- Simon McVittie <smcv@debian.org>  Sun, 15 Aug 2021 14:39:53 +0100
+
+gdk-pixbuf (2.42.6+dfsg-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Drop patches that were applied upstream
+  * d/copyright: Exclude pregenerated documentation and fonts from
+    .orig.tar.xz
+  * d/copyright: Use standalone license paragraphs
+  * d/copyright: Update
+  * d/README.source: Describe how to update to a new upstream.
+    This is not quite the same as other GNOME packages because we have to
+    repack the tarball.
+  * Build documentation with gi-docgen
+    - d/p/gi-docgen/Disable-web-fonts-for-now.patch:
+      Disable use of remote or bundled fonts
+    - d/p/gi-docgen/templates-Remove-html5shiv.patch:
+      Disable use of remote html5shiv
+    - d/rules: Use bundled gi-docgen even if it's installed system-wide.
+      Until it's declared stable, the upstream recommendation is to vendor
+      gi-docgen, which means Policy §4.13 allows an embedded code copy.
+  * Build the PNG and JPEG loaders into the library.
+    This matches upstream's recommendation: building these loaders in is
+    one less thing that can go wrong.
+    For the udeb, we previously installed the production library and the
+    PNG loader; now we build a separate library that can only load PNGs.
+    This means the udeb doesn't actually need loadable modules at all.
+    Create an empty loaders.cache file, just to prevent warnings.
+  * d/control: Add -dev dependencies on libjpeg-dev, libtiff-dev.
+    The pkg-config metadata now depends on these.
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 02 Jun 2021 21:29:21 +0100
+
+gdk-pixbuf (2.42.2+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release, without the Xlib API
+    - Fix infinite loop on invalid LZW codes in the GIF loader
+      (Closes: #977166, CVE-2020-29385)
+  * d/patches: Update to upstream 2.42.2-6-g89a4cedc
+    - Make enum GType registration thread-safe
+    - Fix memory leaks in test code
+    - Update Romanian translation
+  * d/rules: Update Meson parameter names
+  * Update versioned build-dependencies
+  * d/patches: Change how the test for GNOME#753605 is avoided.
+    Instead of deleting the code, which will cause merge conflicts on new
+    upstream versions, just skip the test if the non-free file is missing.
+  * Stop deleting .la files.
+    This package no longer uses libtool, so there are none.
+  * d/rules: Don't chmod a file that is no longer shipped
+  * Don't try to remove non-determinism from test data.
+    Some of the images included with the tests are deliberately malformed.
+  * d/patches: Add proposed patches to run all the tests, and make
+    them pass
+  * d/copyright: Remove information about contrib/, which was removed.
+    The former contrib directory from this source package has moved to
+    the gdk-pixbuf-xlib source package.
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 12 Dec 2020 22:57:45 +0000
+
+gdk-pixbuf (2.40.0+dfsg-10) unstable; urgency=medium
+
+  * Team upload
+  * Release to unstable, without the Xlib API which is now provided by
+    src:gdk-pixbuf-xlib (Closes: #974870)
+
+ -- Simon McVittie <smcv@debian.org>  Sun, 06 Dec 2020 13:21:23 +0000
+
+gdk-pixbuf (2.40.0+dfsg-9) experimental; urgency=medium
+
+  * Team upload
+  * Branch for experimental again
+  * Drop gdk-pixbuf-xlib binary packages.
+    These will be taken over by a new src:gdk-pixbuf-xlib binary package
+    when it gets through NEW.
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 28 Nov 2020 15:27:13 +0000
+
+gdk-pixbuf (2.40.0+dfsg-8) unstable; urgency=medium
+
+  * Team upload
+  * Generate shlibs dependencies without a transitional alternative.
+    The libgdk-pixbuf-2.0-0 and libgdk-pixbuf-xlib-2.0-0 packages are now
+    available in testing, so we don't need an alternative dependency on
+    libgdk-pixbuf2.0-0 for a smooth transition.
+    This avoids an apparently-circular dependency between
+    libgdk-pixbuf-xlib-2.0-0 and the transitional libgdk-pixbuf2.0-0.
+    (Closes: #975904)
+  * Standards-Version: 4.5.1 (no changes required)
+  * Don't install tests/test-images/fail/file3.jp2 as executable.
+    It isn't an executable or script.
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 28 Nov 2020 13:32:25 +0000
+
+gdk-pixbuf (2.40.0+dfsg-7) unstable; urgency=medium
+
+  * Team upload
+  * Release to unstable
+
+ -- Simon McVittie <smcv@debian.org>  Sun, 22 Nov 2020 15:45:56 +0000
+
+gdk-pixbuf (2.40.0+dfsg-6) experimental; urgency=medium
+
+  * Team upload
+  * Branch for experimental
+  * Split main library away from Xlib integration library (see #974870).
+    The Xlib integration library has been removed upstream in 2.41.x,
+    and moved to a separate, deprecated source repository.
+    To facilitate a transition to separate source packages, split the binary
+    packages built by this source package, in the same style as the split
+    that was done in Pango 1.32.5-2:
+    - libgdk-pixbuf2.0-0:
+      + libgdk_pixbuf-2.0.so.0 -> libgdk-pixbuf-2.0-0
+      + libgdk_pixbuf_xlib-2.0.so.0 -> libgdk-pixbuf-xlib-2.0-0
+    - libgdk-pixbuf2.0-dev:
+      + gdk-pixbuf-2.0.pc, <gdk-pixbuf/gdk-pixbuf.h>
+        -> libgdk-pixbuf-2.0-dev
+      + deprecated <gdk-pixbuf/gdk-pixdata.h> -> libgdk-pixbuf-2.0-dev
+      + gdk-pixbuf-xlib-2.0.pc, <gdk-pixbuf-xlib/gdk-pixbuf-xlib.h>
+        -> libgdk-pixbuf-xlib-2.0-dev
+    with transitional packages to help with the upgrade path.
+    The -bin, -common and -doc packages remain as they were.
+  * Packages that only require gdk-pixbuf-2.0.pc and
+    <gdk-pixbuf/gdk-pixbuf.h> should now build-depend on
+    libgdk-pixbuf-2.0-dev | libgdk-pixbuf2.0-dev.
+  * Packages that require gdk-pixbuf-xlib-2.0.pc and
+    <gdk-pixbuf-xlib/gdk-pixbuf-xlib.h> should now build-depend on
+    libgdk-pixbuf-xlib-2.0-dev | libgdk-pixbuf2.0-dev.
+  * The above change incidentally also drops the libX11 dependency
+    from the main library (Closes: #824502)
+  * d/rules: Trim trailing whitespace
+  * d/control.in: Use secure URI in Homepage field
+  * d/upstream/metadata: Add
+  * d/rules, d/p/tests-Mark-pixbuf-randomly-modified-as-flaky.patch:
+    Don't run pixbuf-randomly-modified test at build time.
+    This is basically a crude fuzzer. It isn't really suitable for
+    build-time acceptance testing, since it frequently produces images for
+    which gdk-pixbuf will try to allocate more memory than is available,
+    but if it does, it isn't straightforward to capture the failing image
+    from an autobuilder that only records build logs. (Closes: #942124)
+  * Mark pixbuf-randomly-modified test as flaky when run as autopkgtest too
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 17 Nov 2020 11:13:22 +0000
+
+gdk-pixbuf (2.40.0+dfsg-5) unstable; urgency=medium
+
+  * rules: Don't mangle PNGs in gdk-pixbuf-tests (for Ubuntu)
+
+ -- Iain Lane <laney@debian.org>  Mon, 01 Jun 2020 17:05:16 +0100
+
+gdk-pixbuf (2.40.0+dfsg-4) unstable; urgency=medium
+
+  * Do not rebuild the documentation when it's not necessary
+  * debian/control.in: Bump Standards-Version to 4.5.0
+  * Ship the installed tests and run them in the dep8 tests
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 08 Apr 2020 14:34:38 +0200
+
+gdk-pixbuf (2.40.0+dfsg-3) unstable; urgency=medium
+
+  * debian/rules: Make the tests non-fatal on kfreebsd-amd64
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 08 Mar 2020 18:35:39 +0100
+
+gdk-pixbuf (2.40.0+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * d/tests/build: Mark as superficial
+  * d/tests/build: Make autopkgtest cross-test-friendly.
+    Use an appropriate cross-compiler and cross-pkg-config when using
+    proposed autopkgtest cross-testing support.
+    Thanks to Steve Langasek. (Closes: #946374)
+  * d/tests/build: Fail on references to unset variables
+  * d/tests/build: Fix shellcheck warnings
+  * Bump Standards-Version to 4.4.1
+
+ -- Simon McVittie <smcv@debian.org>  Thu, 26 Dec 2019 16:33:27 +0000
+
+gdk-pixbuf (2.40.0+dfsg-1) unstable; urgency=medium
+
+  * New upstream release
+
+  [ Simon McVittie ]
+  * Re-import upstream source code with non-free test data excluded
+  * d/gbp.conf: Disable automatic merging of upstream VCS tags.
+    This doesn't work well with +dfsg versions.
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 10 Oct 2019 17:38:01 +0200
+
+gdk-pixbuf (2.39.2-3) experimental; urgency=medium
+
+  * debian/rules:
+    - use dh_missing --fail-missing
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 21:40:38 +0200
+
+gdk-pixbuf (2.39.2-2) experimental; urgency=medium
+
+  * Really remove debian/compat from the upload...
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 20:09:49 +0200
+
+gdk-pixbuf (2.39.2-1) experimental; urgency=medium
+
+  * New upstream release
+    - Render GIF frames on demand
+  * debian/control.in, debian/compat:
+    - update to debhelper12
+    - update the Standards-version to 4.4.0.1
+  * debian/libgdk-pixbuf2.0-0.symbols:
+    - new version update
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 16:05:13 +0200
+
+gdk-pixbuf (2.38.1+dfsg-1) unstable; urgency=medium
+
+  * New upstream release
+    - Add variables in the pkg-config files for binary utilities
+    - Fix error handling in PNG loader
+    - Fix introspection generation
+    - Fix OOM in JPEG2000 loader
+    - Fix thumbnailing of animated GIFs
+    - Improve reproducibility of the build
+    - Multiple improvements to the GIF loader
+    - Speed up saving PNG files
+  * Drop upstream patches.
+     - Use-basename-instead-of-filename.patch,
+       build-Include-gdk-pixdata.c-when-building-GdkPixbuf-2.0.g.patch:
+       Included in this release
+
+ -- Iain Lane <laney@debian.org>  Mon, 04 Mar 2019 14:31:35 +0000
+
+gdk-pixbuf (2.38.0+dfsg-7) unstable; urgency=medium
+
+  * debian/rules: Stop including gnome-get-source.mk, use uscan instead
+  * debian/libgdk-pixbuf2.0-0.symbols: Set Build-Depends-Package
+  * Add -Wl,-O1 -Wl,-z,defs -Wl,--as-needed to our LDFLAGS
+  * Enable all hardening flags
+  * Bump Standards-Version to 4.3.0
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 23 Dec 2018 22:44:55 -0500
+
+gdk-pixbuf (2.38.0+dfsg-6) unstable; urgency=medium
+
+  * Team upload
+  * gir1.2-gdkpixbuf-2.0 Breaks: libgtk3-perl (<< 0.034-2~), to avoid
+    #908323 being reported as an autopkgtest regression in gtk+3.0
+  * d/watch: Use dversionmangle to remove +dfsg suffix (thanks, Lintian)
+  * d/copyright: Correct syntax for matching
+    contrib/gdk-pixbuf-xlib/gdk-pixbuf-xlibrgb.?. Machine-readable
+    copyright file format supports * and ? wildcards, but not [ch].
+  * d/copyright: Remove stanzas for files that are no longer included
+  * Enable bindnow linker hardening
+  * gir1.2-gdkpixbuf-2.0 Provides gir1.2-gdkpixdata-2.0, to reflect its
+    contents
+    - Remove lintian overrides that are no longer necessary
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 19 Sep 2018 11:57:58 +0100
+
+gdk-pixbuf (2.38.0+dfsg-5) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * debian/rules: Use meson test --print-errorlogs
+    dh_auto_test normally does that for us
+
+  [ Iain Lane ]
+  * Add new patch to include gdk-pixdata.c when building the GdkPixbuf gir.
+    This fixes broken introspection metadata that at least would have broken
+    libgtk3-perl. (Closes: #908673)
+
+ -- Iain Lane <laney@debian.org>  Thu, 13 Sep 2018 12:50:53 +0100
+
+gdk-pixbuf (2.38.0+dfsg-4) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * Update debian/gbp.conf
+  * debian/libgdk-pixbuf2.0-0.install: Use ${DEB_HOST_MULTIARCH} less.
+    Thanks lintian.
+
+  [ John Paul Adrian Glaubitz ]
+  * debian/rules: Have dh_auto_test override honor nocheck (Closes: #908373)
+
+  [ Chris Lamb ]
+  * Add Use-basename-instead-of-filename.patch:
+    - Proposed patch for reproducible builds and multi-arch co-installability
+      (Closes: #908309)
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 09 Sep 2018 08:12:01 -0400
+
+gdk-pixbuf (2.38.0+dfsg-3) unstable; urgency=medium
+
+  [ Sven Joachim ]
+  * Fix FTBFS on any-i386 (Closes: #908298)
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sat, 08 Sep 2018 10:54:08 +0200
+
+gdk-pixbuf (2.38.0+dfsg-2) unstable; urgency=medium
+
+  * Allow 5× as much time for the tests, to hopefully allow gdk-pixbuf to pass
+    tests on all of our slower arches.
+
+ -- Iain Lane <laney@debian.org>  Fri, 07 Sep 2018 17:43:33 +0100
+
+gdk-pixbuf (2.38.0+dfsg-1) unstable; urgency=medium
+
+  * New upstream release (LP: #1791301)
+    - Add test case for buffer overflow in pixdata loader
+    - Avoid a deprecation warning with recent libjasper
+    - Deprecate GDK_INTERP_HYPER
+    - Drop Autotools build and move to Meson
+    - Drop the MMX assembly optimizations for pixops
+    - Ensure that GdkPixbuf's storage is safely handled
+    - Expose the dimensions of the original image from GdkPixbufLoader
+    - Fix documentation building with X11 disabled
+    - Fix introspection annotations
+    - Fix OOB error when dithering
+    - Generate separate introspection data for GdkPixdata API
+    - Improve compatibility for the post-install script
+    - Improve thumbnailer implementation
+    - Make X11 a dependency if the `x11` build option is enabled
+    - Plug a memory leak when using GBytes
+    - Properly install test data
+  * debian/copyright: Exclude tests/bug753605-atsize.jpg, which is non-free.
+    This was added for a testcase, but we can't distribute it. The testcase
+    itself is disabled in debian/patches/Remove-test-for-GNOME-753605.patch
+    already.
+  * Remove-test-for-GNOME-753605.patch:
+    + Remove "wasn't included in the tarball" It now is in the tarball, but we
+    + Don't try to install bug753605-atsize.jpg
+    are repacking to exclude it.
+  * Build with meson.
+  * Don't build the installed tests for this upload. It'd require a trip
+    through binNEW
+  * docs: Drop AUTHORS, rename README to README.md
+  * libgdk-pixbuf2.0-0.symbols: Drop two private symbols. These are in a
+    private header and weren't meant to be exported. codesearch.d.n shows no
+    external users.
+  * Bump Standards-Version to 4.2.1 (no changes required)
+  * Add Lintian overrides for warnings about GdkPixdata introspection data.
+    It's intentional that this is in gir1.2-gdkpixbuf-2.0
+
+ -- Iain Lane <laney@debian.org>  Fri, 07 Sep 2018 14:45:00 +0100
+
+gdk-pixbuf (2.36.12-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Hugh McMaster ]
+  * Move gdk-pixbuf-csource and gdk-pixbuf-pixdata into
+    libgdk-pixbuf2.0-bin (Closes: #876183, #882785).
+  * Update the package description for libgdk-pixbuf2.0-bin.
+  * Mark libgdk-pixbuf2.0-dev Multi-Arch: same (Closes: #689125).
+
+  [ Simon McVittie ]
+  * Update versioned Breaks/Replaces
+  * Remove /usr/bin/gdk-pixbuf-query-loaders symlink from -dev package.
+    It has architecture-dependent output and breaks Multi-Arch: same
+    co-installability. Debian packages do not seem to rely on this tool
+    being in PATH.
+  * d/copyright: Update
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 21 Aug 2018 15:15:42 +0100
+
+gdk-pixbuf (2.36.12-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+    - Drop all patches, applied upstream
+  * d/copyright: Mention gtk-doc.make and m4/gtk-doc.m4
+  * d/p/Remove-test-for-GNOME-753605.patch:
+    Patch out test for GNOME#753605. It relies on non-free test data
+    (that is malformed in the right way to exhibit the bug), which was
+    not included in the upstream 2.36.12 tarball.
+    (Note to future maintainers: when packaging versions
+    2.37+ please check that the non-free file is not included.)
+  * Set Rules-Requires-Root to no
+  * Standards-Version: 4.1.5 (no changes required)
+  * Use debhelper 11 compat level
+  * d/copyright: Correct syntax
+  * Upgrade udeb from deprecated priority extra to optional
+  * Remove ineffective lintian override for the udeb
+  * d/libgdk-pixbuf2.0-0.lintian-overrides: Document non-SONAME-based
+    package name
+
+ -- Simon McVittie <smcv@debian.org>  Thu, 26 Jul 2018 10:44:54 +0100
+
+gdk-pixbuf (2.36.11-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Emilio Pozuelo Monfort ]
+  * Switch triggers to noawait.
+
+  [ Simon McVittie ]
+  * Update Vcs-* for move from Alioth svn to Salsa git
+  * debian/gbp.conf: Add
+  * Add patches from upstream to fix crash bugs:
+    - CVE-2017-6312: out-of-bounds read in ico (Closes: #856444)
+    - CVE-2017-6313: integer underflow in icns (Closes: #856445)
+    - CVE-2017-6314: infinite loop in tiff (Closes: #856448)
+    Thanks to Salvatore Bonaccorso for highlighting the relevant commits.
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 16 Mar 2018 10:57:57 +0000
+
+gdk-pixbuf (2.36.11-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/copyright: The non-free images have been replaced
+    (thanks Olly Betts!) so drop the Files-Excluded line
+  * Drop git_fix-tiff-build.patch: Applied in new release
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 02 Oct 2017 12:36:35 -0400
+
+gdk-pixbuf (2.36.10-2) unstable; urgency=medium
+
+  * Add git_fix-tiff-build.patch:
+    - Backport patch to fix tiff loader build (LP: #1718526)
+
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 20 Sep 2017 19:04:33 -0400
+
+gdk-pixbuf (2.36.10-1) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * New upstream release 2.36.9.
+  * Drop obsolete 0001-skip-perturb-for-cve-2015-4491-original-test.patch
+  * debian/libgdk-pixbuf2.0-0.symbols: Add new symbol
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release 2.36.10.
+    - CVE-2017-2862: fix code execution vulnerability in jpeg loader.
+      Closes: #874552.
+  * Switch to copyright format 1.0.
+  * copyright: exclude non-free test ref images.
+  * rules: drop obsolete dh_strip --dbgsym-migration switch.
+  * postinst: make loaders.cache reproducible. Thanks Chris Lamb for the
+    patch. Closes: #875704.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 19 Sep 2017 23:39:30 +0200
+
+gdk-pixbuf (2.36.5-4) unstable; urgency=medium
+
+  * Release to unstable.
+  * Bump Standards-Version to 4.1.0
+
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 30 Aug 2017 21:34:04 -0400
+
+gdk-pixbuf (2.36.5-3) experimental; urgency=medium
+
+  [ Jeremy Bicha ]
+  * Add new libgdk-pixbuf2.0-bin package to install thumbnailer
+    binary and metadata needed by gnome-desktop 3.23 (LP: #1665602)
+  * Have libgdk-pibxuf2.0-0 recommend libgdk-pixbuf2.0-bin
+  * debian/rules: Change dh_install's --list-missing to --fail-missing to
+    catch this issue sooner next time
+
+  [ Iain Lane ]
+  * debian/rules: Don't use -X.la - it's error prone as it does substring
+    matching instead of globbing. Instead use `find ... -delete' to remove
+    *.la files explicitly.
+  * debian/control.*: Update Vcs-* for branch.
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 14 Mar 2017 16:05:47 +0000
+
+gdk-pixbuf (2.36.5-2) unstable; urgency=medium
+
+  * Unbranch - that was short lived. Upload the stable release to unstable.
+
+ -- Iain Lane <laney@debian.org>  Thu, 16 Feb 2017 18:02:30 +0000
+
+gdk-pixbuf (2.36.5-1) experimental; urgency=medium
+
+  * Branch to experimental - update Vcs-*
+  * New upstream release 2.36.5
+    + Fix mimetypes for thumbnailer
+    + Handle fseek failure
+    + Fix signed/unsigned handling
+    + Fix an overflow check
+    + Handle extreme scaling better
+  * Bump libglib2.0 BD to 2.48.0, per configure.ac
+  * Try replacing d/p/01-disable-oom-test.patch with
+    d/p/0001-skip-perturb-for-cve-2015-4491-original-test.patch: This should
+    ideally allow the test to be run without OOMing, which is better than not
+    running it at all. (The proper fix is still to be investigated.)
+
+ -- Iain Lane <laney@debian.org>  Tue, 14 Feb 2017 11:36:07 +0000
+
+gdk-pixbuf (2.36.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 17 Jan 2017 00:45:42 +0100
+
+gdk-pixbuf (2.36.3-1) unstable; urgency=medium
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+
+ -- Iain Lane <laney@debian.org>  Mon, 09 Jan 2017 14:23:04 +0000
+
+gdk-pixbuf (2.36.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 22 Dec 2016 02:20:02 +0100
+
+gdk-pixbuf (2.36.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 17 Dec 2016 02:28:56 +0100
+
+gdk-pixbuf (2.36.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 19 Sep 2016 19:10:55 +0200
+
+gdk-pixbuf (2.35.5-1) unstable; urgency=medium
+
+  * New upstream development release.
+  * Drop 02-tests-Make-sure-to-NULL-terminate-the-arguments-pass.patch, merged
+    upstream.
+  * Bump debhelper compat level to 10.
+  * Use dh_install --list-missing to show uninstalled files and exclude
+    libtool .la files.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 13 Sep 2016 16:17:03 +0200
+
+gdk-pixbuf (2.35.4-4) unstable; urgency=medium
+
+  * Move gtk-doc-tools and libglib2.0-doc from Build-Depends-Indep to
+    Build-Depends.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 08 Sep 2016 19:17:54 +0200
+
+gdk-pixbuf (2.35.4-3) unstable; urgency=medium
+
+  * Make sure to NULL terminate the arguments passed to g_test_get_filename().
+    Otherwise the /pixbuf/composite2 test will segfault. (Closes: #837030)
+  * Make test-suite failures fatal again.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 08 Sep 2016 18:59:21 +0200
+
+gdk-pixbuf (2.35.4-2) unstable; urgency=medium
+
+  * Make test-suite failures non-fatal for now to not block ongoing
+    transitions.
+  * Build gtk-doc documentation via --enable-gtk-doc.
+  * Bump Standards-Version to 3.9.8.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 08 Sep 2016 16:49:06 +0200
+
+gdk-pixbuf (2.35.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update symbols file with new additions. A few private symbols were
+    dropped.
+  * Use dh-exec for substituting multiarch paths in libgdk-pixbuf2.0-0.install
+    and libgdk-pixbuf2.0-dev.links.
+  * Convert from cdbs to dh.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 07 Sep 2016 18:00:22 +0200
+
+gdk-pixbuf (2.34.0-1) unstable; urgency=medium
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/patches/01-disable-oom-test.patch:
+    + Disable a test on kfreebsd that fails because it runs out of
+      memory on those buildds. Closes: #818233.
+
+  [ Michael Biebl ]
+  * New upstream release.
+  * Drop libgdk-pixbuf2.0-0-dbg package now that we have automatic dbgsym
+    packages.
+  * Ensure proper upgrade from libgdk-pixbuf2.0-0-dbg to new dbgsym packages
+    by using dh_strip --dbgsym-migration. Bump Build-Depends on debhelper
+    accordingly.
+  * Tighten dependency on libpng-dev. We need to ensure that
+    libgdk-pixbuf2.0-dev pulls in the correct version of libpng-dev as it
+    encodes the libpng API version it was built against in gdk-pixbuf2.0.pc.
+    (Closes: #819779)
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 16 Apr 2016 15:39:05 +0200
+
+gdk-pixbuf (2.33.2-1) experimental; urgency=medium
+
+  [ Andreas Henriksson ]
+  * Add share-mime-info dependency (Closes: #790423)
+  * Bump Standards-Version to 3.9.7
+
+  [ Tobias Frost ]
+  * Move gtk-doc-tools to Build-Depends-Indep (Closes: #808332)
+
+  [ Andreas Henriksson ]
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Mon, 14 Mar 2016 22:49:34 +0100
+
+gdk-pixbuf (2.32.3-1.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Change libpng12-dev runtime-dependency to libpng-dev, to ease libpng
+    transition.
+    - Change also build-dependency to libpng-dev (Closes: #642265)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 27 Jan 2016 18:24:08 +0100
+
+gdk-pixbuf (2.32.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 15 Dec 2015 17:53:41 +0100
+
+gdk-pixbuf (2.32.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update watch file to track stable releases only.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 11 Nov 2015 02:01:07 +0100
+
+gdk-pixbuf (2.32.1-1) unstable; urgency=medium
+
+  * New upstream release 2.32.1
+  * Drop patch which is applied upstream
+
+ -- Iain Lane <laney@debian.org>  Mon, 05 Oct 2015 17:51:16 +0100
+
+gdk-pixbuf (2.32.0-1) unstable; urgency=medium
+
+  * New upstream release 2.32.0
+  * debian/patches/0001-Skip-tests-when-we-can-t-run-them-due-to-lack-of-mem.patch:
+    Cherry-pick patch from upstream. If we can't run some of the new large
+    tests due to a lack of memory then skip them. (Closes: #799239)
+  * debian/patches/skip-large-file-tests-instead-of-ooming: Drop - this was a
+    previous version of the above patch, which has now been sent upstream.
+
+ -- Iain Lane <laney@debian.org>  Tue, 22 Sep 2015 16:15:30 +0100
+
+gdk-pixbuf (2.31.7-3) experimental; urgency=medium
+
+  * debian/patches/skip-large-file-tests-instead-of-ooming: This didn't catch
+    all cases. Run some tests in a subprocess so that we can skip them if they
+    abort due to malloc failing.
+
+ -- Iain Lane <laney@debian.org>  Fri, 18 Sep 2015 22:08:41 +0100
+
+gdk-pixbuf (2.31.7-2) experimental; urgency=medium
+
+  * Run the tests with VERBOSE=1
+  * debian/patches/skip-large-file-tests-instead-of-ooming: Add a new patch to
+    skip tests which operate on large files that don't fit in memory on some
+    constrained systems. Not forwarded yet - this upload is to test it on our
+    buildds.
+
+ -- Iain Lane <laney@debian.org>  Thu, 17 Sep 2015 14:38:08 +0100
+
+gdk-pixbuf (2.31.7-1) unstable; urgency=medium
+
+  [ Michael Biebl ]
+  * New upstream release.
+    - Fixes CVE-2015-4491 (crash with malicious BMP files)
+  * Disable jasper support. It's an abandoned code base with frequent security
+    issues and JPEG2000 is an exotic fringe format unused in practice.
+    Closes: #796270
+
+  [ Iain Lane ]
+  * New upstream release 2.31.7
+    - Fix several integer overflows (Closes: #753569)
+    - Fix build failure with --disable-modules
+    - Port animations to GTask
+
+ -- Iain Lane <laney@debian.org>  Tue, 15 Sep 2015 16:24:31 +0100
+
+gdk-pixbuf (2.31.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Remove obsolete Breaks/Replaces from pre-wheezy.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 22 Jul 2015 01:19:13 +0200
+
+gdk-pixbuf (2.31.4-2) unstable; urgency=medium
+
+  * Install typelib files into multiarch paths.
+  * Mark gir package as Multi-Arch: same.
+  * Point Vcs-* to the unstable branch.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 27 May 2015 01:31:18 +0200
+
+gdk-pixbuf (2.31.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 20 May 2015 00:07:11 +0200
+
+gdk-pixbuf (2.31.3-1) experimental; urgency=medium
+
+  * New upstream release 2.31.3
+    - Revert an annotation change that broke bindings
+    - Clean up configure
+    - Fix Visual Studio build
+    - Define MAP_ANONYMOUS when needed
+    - Include gi18n-lib.h where needed
+  * Drop debian/patches: the revert is upstream in this release.
+  * premature-end.* are disted properly now - drop our local copy and manual
+    installation.
+
+ -- Iain Lane <laney@debian.org>  Wed, 11 Mar 2015 12:38:43 +0000
+
+gdk-pixbuf (2.31.2-2) experimental; urgency=medium
+
+  * revert-0001-lib-Annotate-var-arg-gdk_pixbuf_save.patch: Revert upstream
+    commit which breaks API which applications actually use.
+
+ -- Iain Lane <laney@debian.org>  Wed, 25 Feb 2015 19:51:11 +0000
+
+gdk-pixbuf (2.31.2-1) experimental; urgency=medium
+
+  * debian/watch: Update to find unstable versions too.
+  * New upstream release 2.31.2
+    + API changes:
+      - Deprecate GdkPixdata
+      - Add gdk_pixbuf_get_options() helper to list set options
+      - Annotations fixes for various functions
+      - Remove incorrect info about area-prepared signal
+    + Image format support changes
+      - Flag multi-page TIFF files
+      - Fix memory usage for GIF animations, add note about minimum frame
+        length (LP: #139067)
+      - Return an error for truncated PNG files
+      - Add density (DPI) support for JPEG, PNG and TIFF
+      - Fix reading CMYK JPEG files generated by Photoshop
+      - Allow saving 1-bit mono TIFF files as used in faxes
+      - Simplify loader names
+      - Fix loading GIF files when the first write is short
+      - Add progressive loading to ICNS files
+      - Add support for 256x256 ICO files
+      - Fix reading MS AMCap2 BMP files
+    + Other:
+      - Honour requested depth in Xlib
+      - Special-case compositing/copying with no scaling
+      - Add relocation support to OSX and Linux
+  * Upstream forgot to dist premature-end.* - bring them in temporarily to get
+    a fully passing testsuite.
+  * Add new symbol to symbols file.
+
+ -- Iain Lane <laney@debian.org>  Tue, 24 Feb 2015 18:10:15 +0000
+
+gdk-pixbuf (2.31.1-2) unstable; urgency=medium
+
+  * debian/rules: Fix the permissions of "loaders.cache" file in the udeb to
+    please lintian
+  * debian/control.in: Bump Standards-Version to 3.9.6 (no further changes)
+  * Add debian/libgdk-pixbuf2.0-0-udeb.lintian-overrides: Add an override for
+    package-contains-mime-cache-file as we intend to ship mime.cache
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 07 Oct 2014 22:28:49 +0200
+
+gdk-pixbuf (2.31.1-1) experimental; urgency=medium
+
+  * Fix broken Vcs-Browser url.
+  * New upstream development release.
+  * Add new symbols to debian/libgdk-pixbuf2.0-0.symbols
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sat, 06 Sep 2014 10:06:47 -0700
+
+gdk-pixbuf (2.30.8-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add Depends on shared-mime-info to libgdk-pixbuf2.0-dev. The
+    gdk-pixbuf-csource utility requires it for image file format detection.
+    Closes: #758813
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 02 Sep 2014 00:45:43 +0200
+
+gdk-pixbuf (2.30.7-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 23 Apr 2014 15:46:48 +0200
+
+gdk-pixbuf (2.30.6-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 09 Mar 2014 14:15:14 +0100
+
+gdk-pixbuf (2.30.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control.in:
+    + Build depend on gtk-doc-tools 1.20.
+    + Drop unnecessary b-d on autotools-dev.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 20 Feb 2014 20:37:53 +0100
+
+gdk-pixbuf (2.30.4-1) unstable; urgency=low
+
+  [ Michael Biebl ]
+  * Use the official field for udebs: Package-Type.
+
+  [ Jackson Doak ]
+  * New upstream release (2.30.1).
+  * debian/control:
+    - Bump required glib version
+    - Switch to libtiff over libtiff5. Closes: #681099, #736005.
+    - Use canonical VCS fields
+  * Update symbols
+  * Create basic manpage for gdk-pixbuf-pixdata
+  * debian/rules: Add upstream changelog location
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release (2.30.4).
+  * debian/control.in:
+    + Bump glib requirement.
+    + Bump shared-mime-info b-d, needed to properly detect tga files and
+      use the right loader for them. This affects a couple of tests.
+    + Standards-Version is 3.9.5, no changes needed.
+  * debian/rules:
+    + Let debhelper install NEWS as the upstream changelog, otherwise we
+      end up with NEWS installed twice: as NEWS.gz and changelog.gz.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 16 Feb 2014 20:21:48 +0100
+
+gdk-pixbuf (2.28.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 08 Jun 2013 18:32:31 +0200
+
+gdk-pixbuf (2.28.1-2) unstable; urgency=low
+
+  * debian/rules,
+    debian/control:
+    + Run dh-autoreconf to avoid an rpath issue on hurd.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 02 Jun 2013 15:41:38 +0200
+
+gdk-pixbuf (2.28.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Track stable releases again.
+  * Drop explicit Build-Depends on gir1.2-glib-2.0.
+  * Bump Standards-Version to 3.9.4.
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 09 May 2013 02:01:16 +0200
+
+gdk-pixbuf (2.28.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 26 Mar 2013 13:09:02 +0100
+
+gdk-pixbuf (2.27.3-1) experimental; urgency=low
+
+  * New upstream release.
+    + d/p/0001-animation-Allow-prepare_func-call-in-stop_load.patch:
+      - Removed, included upstream.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 19 Mar 2013 00:23:11 +0100
+
+gdk-pixbuf (2.27.2-2) experimental; urgency=low
+
+  * d/p/0001-animation-Allow-prepare_func-call-in-stop_load.patch:
+    + Backport patch from upstream GIT, fixes a crash with animations.
+      Closes: #702780, #702517.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 14 Mar 2013 22:19:36 +0100
+
+gdk-pixbuf (2.27.2-1) experimental; urgency=low
+
+  [ Martin Pitt ]
+  * Add debian/tests: Simple compile/link/run autopkgtest. Thanks Rafał
+    Cieślak! (LP: #1073528)
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 02 Mar 2013 18:26:49 +0100
+
+gdk-pixbuf (2.27.1-1) experimental; urgency=low
+
+  * New upstream release.
+    + debian/control.in:
+      - Update build dependencies.
+    + debian/libgdk-pixbuf2.0-0.symbols:
+      - Updated for the new symbols.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 23 Feb 2013 19:58:45 +0100
+
+gdk-pixbuf (2.26.4-2) experimental; urgency=low
+
+  * Team upload
+  * Add a -dbg package
+  * Go to debhelper compat level 9, for compressed symbol files
+
+ -- Simon McVittie <smcv@debian.org>  Wed, 24 Oct 2012 19:37:52 +0100
+
+gdk-pixbuf (2.26.4-1) experimental; urgency=low
+
+  * Team upload
+  * New upstream bugfix release
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 23 Oct 2012 16:41:38 +0100
+
+gdk-pixbuf (2.26.1-1) unstable; urgency=low
+
+  * New upstream bug fix release:
+    - Fix srcdir != builddir build.
+    - Avoid an integer overflow in the xbm loader. (LP: #681150)
+    - Translation updates.
+  * debian/control.in: Prefer building against libpng-dev over libpng12-dev,
+    to be prepared for the libpng 1.5 transition. (Closes: #662344)
+  * debian/control.in: Bump Standards-Version to 3.9.3 (no changes necessary).
+
+ -- Martin Pitt <mpitt@debian.org>  Mon, 16 Apr 2012 07:21:41 +0200
+
+gdk-pixbuf (2.26.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 30 Mar 2012 09:01:26 +0200
+
+gdk-pixbuf (2.26.0-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 21 Mar 2012 01:48:57 +0100
+
+gdk-pixbuf (2.25.2-1) experimental; urgency=low
+
+  * New upstream development release.
+  * debian/libgdk-pixbuf2.0-0.symbols: Add new symbols.
+  * debian/libgdk-pixbuf2.0-dev.install: Install gdk-pixbuf-pixdata tool.
+  * debian/control.in: Bump Build-Depends on libglib2.0-dev to (>= 2.31.0).
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 04 Mar 2012 07:45:41 +0100
+
+gdk-pixbuf (2.24.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Explicitly enable X11 support.
+  * Use upper case form of term GDK in package description. (Closes: #622217)
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 06 Feb 2012 04:39:50 +0100
+
+gdk-pixbuf (2.24.0-2) unstable; urgency=low
+
+  [ Michael Biebl ]
+  * debian/watch:
+    - Switch to .xz tarballs.
+
+  [ Josselin Mouette ]
+  * Split locales in a separate package for multiarch:
+    libgdk-pixbuf2.0-common. Make it m-a: foreign.
+
+  [ Michael Biebl ]
+  * Change section of gir1.2-gdkpixbuf-2.0 to introspection.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 14 Dec 2011 22:12:21 +0100
+
+gdk-pixbuf (2.24.0-1) unstable; urgency=low
+
+  * New upstream bug fix release.
+
+ -- Martin Pitt <mpitt@debian.org>  Fri, 02 Sep 2011 12:05:31 +0200
+
+gdk-pixbuf (2.23.5-3) unstable; urgency=low
+
+  * debian/rules:
+    - Trap errors in for loop using 'set -e'.
+  * debian/libgdk-pixbuf2.0-0.postinst.in:
+    - Don't hide error messages from gdk-pixbuf-query-loaders.
+    - Handle more gracefully the case where the non-multiarch loaders
+      directory is empty or doesn't exist.
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 28 Jul 2011 18:18:06 +0200
+
+gdk-pixbuf (2.23.5-2) unstable; urgency=low
+
+  [ Steve Langasek ]
+  * Multiarch support. (Closes: #632354)
+
+  [ Michael Biebl ]
+  * debian/libgdk-pixbuf2.0-dev.install:
+    - Don't ship libtool .la file as this breaks multiarch.
+  * debian/control.in:
+    - Change Build-Depends on libjpeg62-dev to libjpeg-dev in preparation of
+      the libjpeg8 transition. (Closes: #633940)
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 16 Jul 2011 01:25:32 +0200
+
+gdk-pixbuf (2.23.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch: Switch to .bz2 tarballs.
+  * Refresh debian/patches/041_ia32-libs.patch.
+  * Bump Standards-Version to 3.9.2. No further changes.
+  * Bump debhelper compatiblility level to 8.
+    - Update Build-Depends on debhelper.
+    - Strip debian/tmp/ from .install files.
+
+ -- Michael Biebl <biebl@debian.org>  Sat, 02 Jul 2011 00:45:36 +0200
+
+gdk-pixbuf (2.23.3-3.1) unstable; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Fix improper check of gif_main_loop() resulting in DoS conditions
+    on specially crafted GIF images (CVE-2011-2485; Closes: #631524)
+
+ -- Nico Golde <nion@debian.org>  Tue, 28 Jun 2011 21:59:16 +0200
+
+gdk-pixbuf (2.23.3-3) unstable; urgency=low
+
+  * Move the mime.cache generation from gtk+ udebs to this one, since
+    this file is actually needed for gdk_pixbuf.
+  * Add related build-dependencies on shared-mime-info and xsltproc.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 18:04:19 +0200
+
+gdk-pixbuf (2.23.3-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 15:27:42 +0200
+
+gdk-pixbuf (2.23.3-1) experimental; urgency=low
+
+  [ Laurent Bigonville ]
+  * New Upstream release
+    - Bump libglib2.0-dev build-dependency
+  * Make libgdk-pixbuf2.0-dev Breaks/Replaces libgtk2.0-bin (<< 2.21.3)
+    (Closes: #612580)
+  * debian/control.in, debian/rules: Rely on cdbs to call dh_girepository
+
+  [ Josselin Mouette ]
+  * Make the -dev package depend on the gir package.
+  * Add missing Replaces on gir1.2-gtk-2.0. Closes: #620572.
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 05 Apr 2011 11:21:38 +0200
+
+gdk-pixbuf (2.23.0-2) experimental; urgency=low
+
+  * Re-add .la files, too much other packages are still referencing it.
+    (Closes: #607000, LP: #665768)
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 04 Jan 2011 20:54:56 +0100
+
+gdk-pixbuf (2.23.0-1) experimental; urgency=low
+
+  * New upstream development release.
+    - debian/libgdk-pixbuf2.0-0.symbols:
+      + Updated.
+  * debian/rules:
+    - Blindly bump the shlibs version. We've got a symbols file anyway and
+      updating the version is error prone.
+    - Run the test suite during the build.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 24 Dec 2010 20:10:44 +0000
+
+gdk-pixbuf (2.22.1-4) experimental; urgency=low
+
+  * Update to the new gir policy:
+    - Rename gir1.0-gdkpixbuf-2.0 to gir1.2-gdkpixbuf-2.0.
+    - Bump the gobject-introspection build dependency.
+    - Build depend on gir1.2 packages.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 11 Dec 2010 19:24:49 +0100
+
+gdk-pixbuf (2.22.1-3) experimental; urgency=low
+
+  * debian/control.in:
+    - Add Replaces: gir-repository-dev for
+      libgdk-pixbuf2.0-dev package (Closes: #605734)
+    - Use Breaks instead of Conflicts when required
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 05 Dec 2010 19:04:56 +0100
+
+gdk-pixbuf (2.22.1-2) experimental; urgency=low
+
+  * debian/watch: Fix URL pattern
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 23 Nov 2010 20:36:29 +0100
+
+gdk-pixbuf (2.22.1-1) experimental; urgency=low
+
+  [ Emilio Pozuelo Monfort ]
+  * Add a gir package, based on the Ubuntu changes.
+
+  [ Laurent Bigonville ]
+  * New upstream stable release.
+    - Bump build-dependencies
+  * debian/control.in:
+    - Bump Standards-Version to 3.9.1 (no further changes)
+    - Use Debian GNOME Maintainers team as Maintainer
+    - Add Vcs-Svn and Vcs-Browser fields
+    - Add dependency against libpng12-dev on libgdk-pixbuf2.0-dev package
+      (as required by the .pc file)
+  * debian/rules: Pass --enable-introspection to configure
+  * debian/libgdk-pixbuf2.0-dev.install: Install .gir file
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 22 Nov 2010 19:14:29 +0100
+
+gdk-pixbuf (2.22.0-1) experimental; urgency=low
+
+  * New upstream stable release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 21 Sep 2010 20:49:40 +0200
+
+gdk-pixbuf (2.21.7-1) experimental; urgency=low
+
+  * New upstream development release:
+    + debian/patches/041_ia32-libs.patch:
+      - Refreshed.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 10 Sep 2010 15:41:43 +0200
+
+gdk-pixbuf (2.21.6-2) experimental; urgency=low
+
+  * debian/control.in:
+    + Add Breaks for libwmf0.2-7 (<< 0.2.8.4-7) and librsvg2-2 (<< 2.26.3-2)
+      because of the new location for the pixbuf loaders.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 23 Jul 2010 07:49:08 +0200
+
+gdk-pixbuf (2.21.6-1) experimental; urgency=low
+
+  [ Robert Ancell ]
+  * Initial release
+
+  [ Sebastian Dröge ]
+  * debian/control.in:
+    + Fix GTK+2.0 replaces/conflicts versions to << 2.21.3.
+    + Rename packages to include the 2.0 API version.
+  * debian/rules,
+    debian/libgdk-pixbuf2.0-0.symbols:
+    + Add symbols file and pass correct parameters to dh_makeshlibs.
+  * debian/copyright:
+    + Update with all copyright holders.
+  * debian/control.in,
+    debian/rules,
+    debian/libgdk-pixbuf2.0-0-udeb.install:
+    + Add udeb package.
+  * debian/rules:
+    + Enable libjasper JPEG2000 loader.
+  * debian/rules:
+    + Generate loader files for the udeb.
+  * debian/libgdk-pixbuf2.0-0.triggers,
+    debian/libgdk-pixbuf2.0-0.postinst,
+    debian/libgdk-pixbuf2.0-0.postrm:
+    + Use triggers for the pixbuf loaders.
+  * debian/libgdk-pixbuf2.0-0.install,
+    debian/libgdk-pixbuf2.0-dev.links:
+    + Put gdk-pixbuf-query-loaders into a versioned directory
+      and put a link to it for /usr/bin into the -dev package.
+    + Move manpage into the -dev package too.
+  * debian/control.in,
+    + Add libx11-dev and libglib2.0-dev to the -dev package dependencies.
+    + Build depend on libx11-dev.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 22 Jul 2010 17:20:30 +0200

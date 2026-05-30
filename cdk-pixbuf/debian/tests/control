@@ -1,0 +1,10 @@
+Tests: build
+Restrictions: superficial
+Depends: build-essential, libgdk-pixbuf-2.0-dev, pkg-config
+
+Tests: installed-tests
+Depends: gdk-pixbuf-tests, gnome-desktop-testing
+
+Tests: installed-tests-flaky
+Depends: gdk-pixbuf-tests, gnome-desktop-testing
+Restrictions: flaky

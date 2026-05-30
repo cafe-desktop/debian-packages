@@ -1,0 +1,142 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs
+
+include /usr/share/dpkg/architecture.mk
+
+built_binaries := $(shell dh_listpackages)
+
+ifneq (,$(filter libgdk-pixbuf2.0-doc,$(built_binaries)))
+  BUILD_DOCS:=-Ddocumentation=true
+else
+  BUILD_DOCS:=-Ddocumentation=false
+endif
+
+ifeq (,$(filter nodoc,$(DEB_BUILD_OPTIONS)))
+  BUILD_DOCS += -Dman=true
+else
+  BUILD_DOCS += -Dman=false
+endif
+
+ifneq (,$(filter $(DEB_HOST_ARCH), amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x))
+  # glycin doesn't handle xbm & xpm yet #1071271
+  GLYCIN = -Dglycin=enabled -Dbuiltin_loaders=glycin,xbm,xpm
+else
+  GLYCIN = -Dglycin=disabled -Dbuiltin_loaders=png,jpeg -Dthumbnailer=enabled \
+		-Dgif=enabled -Djpeg=enabled -Dpng=enabled -Dtiff=enabled \
+		-Dothers=enabled -Dthumbnailer=enabled
+endif
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		$(BUILD_DOCS) \
+		$(GLYCIN) \
+		-Dauto_features=disabled \
+		-Dinstalled_tests=true \
+		-Dintrospection=enabled \
+		$(NULL)
+ifneq ($(filter %-udeb,$(built_binaries)),)
+	dh_auto_configure \
+		--builddirectory=obj-udeb \
+		-- \
+		-Dauto_features=disabled \
+		-Ddocumentation=false \
+		-Dinstalled_tests=false \
+		-Dintrospection=disabled \
+		-Dman=false \
+		-Dbuiltin_loaders=png \
+		-Dpng=enabled \
+		$(NULL)
+endif
+
+override_dh_auto_build:
+	dh_auto_build
+ifneq ($(filter %-udeb,$(built_binaries)),)
+	dh_auto_build --builddirectory=obj-udeb
+endif
+
+override_dh_auto_install:
+	dh_auto_install
+ifneq ($(filter %-udeb,$(built_binaries)),)
+	dh_auto_install --builddirectory=obj-udeb --destdir=debian/tmp-udeb
+endif
+
+# temporary directory for the minimal MIME cache generation
+mimedir := debian/build-mime
+mimexml := /usr/share/mime/packages/freedesktop.org.xml
+
+infiles := \
+	libgdk-pixbuf-2.0-0.triggers \
+	libgdk-pixbuf-2.0-0.postinst \
+	libgdk-pixbuf-2.0-0.postrm
+
+override_dh_auto_test:
+	dh_auto_test -- --timeout-multiplier 5 --no-suite=flaky
+
+override_dh_install:
+	# process .in files
+	set -e; for file in $(infiles); do \
+		sed -e"s/#MULTIARCH#/$(DEB_HOST_MULTIARCH)/g" \
+			debian/$${file}.in > debian/$$file; \
+	done
+ifneq ($(filter %-udeb,$(built_binaries)),)
+	# generate a minimal MIME cache for the udeb
+	mkdir -p $(mimedir)/packages
+	[ -f $(mimexml) ]
+	xsltproc -nonet debian/keep-png-only.xsl $(mimexml) \
+		> $(mimedir)/packages/png.freedesktop.org.xml
+	update-mime-database $(mimedir)
+	install -m 0644 -D $(mimedir)/mime.cache debian/libgdk-pixbuf-2.0-0-udeb/usr/share/mime/mime.cache
+	# an empty loaders cache, everything we need for d-i is built-in
+	mkdir -p debian/libgdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0/2.10.0
+	touch debian/libgdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0/2.10.0/loaders.cache
+	chmod 0644 debian/libgdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0/2.10.0/loaders.cache
+	rm -f debian/tmp-udeb/usr/lib/*/libgtk_pixbuf-2.0.so
+	rm -fr debian/tmp-udeb/usr/lib/*/pkgconfig
+	dh_install -plibgdk-pixbuf-2.0-0-udeb --sourcedir=debian/tmp-udeb
+endif
+	dh_install --remaining-packages
+
+override_dh_makeshlibs-arch:
+	dh_makeshlibs -plibgdk-pixbuf-2.0-0 --add-udeb=libgdk-pixbuf-2.0-0-udeb -X "/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0" -V -- -c4
+	dh_makeshlibs --remaining-packages -V -- -c4
+
+override_dh_missing:
+ifneq ($(filter %-udeb,$(built_binaries)),)
+	dh_missing --sourcedir=debian/tmp-udeb
+endif
+	dh_missing
+
+override_dh_clean:
+	dh_clean
+	set -e; for file in $(infiles); do \
+		rm -f debian/$$file; \
+	done
+	rm -rf $(mimedir)
+
+override_dh_gnome_clean:
+	dh_gnome_clean --no-control
+
+override_dh_builddeb:
+	# on Ubuntu PNGs are optimised using 'optipng', but the (installed)
+	# testsuite relies on them being unmangled
+	NO_PNG_PKG_MANGLE=1 dh_builddeb -pgdk-pixbuf-tests
+	dh_builddeb --remaining-packages
+
+override_dh_strip_nondeterminism:
+	dh_strip_nondeterminism -Xinstalled-tests
+
+# debhelper >= 13.4 makes all of /usr/libexec executable, which is not
+# quite right for installed-tests
+override_dh_fixperms:
+	dh_fixperms -Xusr/libexec/installed-tests
+ifneq ($(filter %-tests,$(built_binaries)),)
+	chmod --changes --recursive a+rX,u+w,og-w debian/*-tests/usr/libexec/installed-tests
+	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/gdk-pixbuf/*.gif
+	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/gdk-pixbuf/*.jpg
+	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/gdk-pixbuf/*.png
+endif

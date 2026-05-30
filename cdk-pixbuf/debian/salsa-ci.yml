@@ -1,0 +1,6 @@
+include:
+  - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/recipes/debian.yml
+
+variables:
+  # the udeb intentionally has this, but udebs can't have overrides
+  SALSA_CI_LINTIAN_SUPPRESS_TAGS: 'package-contains-mime-cache-file'

@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -eu
+
+namespace=gdk-pixbuf/
+
+# Deliberately word-splitting:
+# shellcheck disable=SC2046
+set -- $(
+    gnome-desktop-testing-runner -l "$namespace" |
+    cut -f1 -d' ' |
+    grep -v '^gdk-pixbuf/pixbuf-randomly-modified\.test$'
+)
+
+if [ -z "$*" ]; then
+    echo "Error: no installed-tests found matching $namespace" >&2
+    exit 1
+fi
+
+exec gnome-desktop-testing-runner \
+--report-directory="$AUTOPKGTEST_ARTIFACTS" \
+--tap \
+-- \
+"$@"

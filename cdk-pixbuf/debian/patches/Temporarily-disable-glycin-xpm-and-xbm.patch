@@ -1,0 +1,37 @@
+From: Alessandro Astone <alessandro.astone@canonical.com>
+Date: Tue, 3 Feb 2026 15:20:42 +0100
+Subject: Temporarily disable glycin xpm and xbm
+
+These require glycin 2.1; keep using the native loaders until we can ship
+glycin 2.1.
+---
+ gdk-pixbuf/gdk-pixbuf-io.c | 2 --
+ gdk-pixbuf/meson.build     | 2 --
+ 2 files changed, 4 deletions(-)
+
+diff --git a/gdk-pixbuf/gdk-pixbuf-io.c b/gdk-pixbuf/gdk-pixbuf-io.c
+index 5a79864..1cde69e 100644
+--- a/gdk-pixbuf/gdk-pixbuf-io.c
++++ b/gdk-pixbuf/gdk-pixbuf-io.c
+@@ -819,8 +819,6 @@ gdk_pixbuf_load_module_unlocked (GdkPixbufModule *image_module,
+         try_module (tga,     glycin_tga);
+         try_module (tiff,    glycin_tiff);
+         try_module (webp,    glycin_webp);
+-        try_module (xbm,     glycin_xbm);
+-        try_module (xpm,     glycin_xpm);
+ #endif
+ #ifdef INCLUDE_android
+ 	try_module (jpeg,android_jpeg);
+diff --git a/gdk-pixbuf/meson.build b/gdk-pixbuf/meson.build
+index 1b36838..f334320 100644
+--- a/gdk-pixbuf/meson.build
++++ b/gdk-pixbuf/meson.build
+@@ -234,8 +234,6 @@ if enabled_loaders.contains('glycin')
+     'tga',
+     'tiff',
+     'webp',
+-    'xbm',
+-    'xpm',
+   ]
+   glycin_base_loader_sources = [ 'io-glycin-utils.c' ]
+ 

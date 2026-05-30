@@ -1,0 +1,25 @@
+From: Sebastien Bacher <seb128@ubuntu.com>
+Date: Wed, 27 Jul 2022 15:23:37 +0200
+Subject: use the right gdk-pixbuf-query-loaders directory
+
+Since the .install moves the binary to another location the .pc file
+needs to be updated
+
+Forwarded: not-needed
+---
+ gdk-pixbuf/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gdk-pixbuf/meson.build b/gdk-pixbuf/meson.build
+index 8e3f171..eb1117c 100644
+--- a/gdk-pixbuf/meson.build
++++ b/gdk-pixbuf/meson.build
+@@ -445,7 +445,7 @@ pkgconfig.generate(
+     'gdk_pixbuf_cache_file=${gdk_pixbuf_binarydir}/loaders.cache',
+     'gdk_pixbuf_csource=${bindir}/gdk-pixbuf-csource',
+     'gdk_pixbuf_pixdata=${bindir}/gdk-pixbuf-pixdata',
+-    'gdk_pixbuf_query_loaders=${bindir}/gdk-pixbuf-query-loaders',
++    'gdk_pixbuf_query_loaders=${libdir}/@0@/gdk-pixbuf-query-loaders'.format(gdk_pixbuf_api_name),
+   ],
+   requires: 'gobject-2.0',
+   subdirs: gdk_pixbuf_api_name,
