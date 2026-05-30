@@ -36,8 +36,8 @@ Depends: glycin-thumbnailers (>= 2.0.8) [amd64 arm64 armhf i386 loong64 ppc64el 
          ${shlibs:Depends}
 Recommends: libcdk-pixbuf2.0-bin [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x]
 Multi-Arch: same
-Description: GDK Pixbuf library
- The GDK Pixbuf library provides:
+Description: CDK Pixbuf library
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
@@ -46,21 +46,21 @@ Package: libcdk-pixbuf2.0-bin
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: foreign
-Description: GDK Pixbuf library (thumbnailer)
- The GDK Pixbuf library provides:
+Description: CDK Pixbuf library (thumbnailer)
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
  .
- This package contains the GDK pixdata compression utility, the thumbnailer
+ This package contains the CDK pixdata compression utility, the thumbnailer
  and a utility for converting images into C code.
 
 Package: libcdk-pixbuf2.0-common
 Architecture: all
 Depends: ${misc:Depends}
 Multi-Arch: foreign
-Description: GDK Pixbuf library - data files
- This package contains the common files and translations for the GDK
+Description: CDK Pixbuf library - data files
+ This package contains the common files and translations for the CDK
  Pixbuf library.
 
 Package: libcdk-pixbuf-2.0-dev
@@ -80,13 +80,13 @@ Depends: gir1.2-cdkpixbuf-2.0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Provides: ${gir:Provides}
-Description: GDK Pixbuf library (development files)
- The GDK Pixbuf library provides:
+Description: CDK Pixbuf library (development files)
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
  .
- This package contains the header files which are needed for using GDK Pixbuf.
+ This package contains the header files which are needed for using CDK Pixbuf.
 
 Package: libcdk-pixbuf2.0-doc
 Section: doc
@@ -94,13 +94,13 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Build-Profiles: <!nodoc>
-Description: GDK Pixbuf library (documentation)
- The GDK Pixbuf library provides:
+Description: CDK Pixbuf library (documentation)
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
  .
- This package contains the HTML documentation for the GDK Pixbuf library
+ This package contains the HTML documentation for the CDK Pixbuf library
  in /usr/share/doc/libgtk2.0-doc/ .
 
 Package: libcdk-pixbuf2.0-0-udeb
@@ -111,10 +111,10 @@ Architecture: any
 Depends: libcdk-pixbuf-2.0-0-udeb (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: GDK Pixbuf library - minimal runtime
+Description: CDK Pixbuf library - minimal runtime
  This is a udeb, or a microdeb, for the debian-installer.
  .
- The GDK Pixbuf library provides:
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
@@ -127,10 +127,10 @@ Package-Type: udeb
 Section: debian-installer
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: GDK Pixbuf library - minimal runtime
+Description: CDK Pixbuf library - minimal runtime
  This is a udeb, or a microdeb, for the debian-installer.
  .
- The GDK Pixbuf library provides:
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
@@ -144,8 +144,8 @@ Architecture: any
 Multi-Arch: same
 Depends: ${gir:Depends}, ${misc:Depends}
 Provides: ${gir:Provides}
-Description: GDK Pixbuf library - GObject-Introspection
- The GDK Pixbuf library provides:
+Description: CDK Pixbuf library - GObject-Introspection
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
@@ -158,10 +158,10 @@ Architecture: any
 Depends: libcdk-pixbuf-2.0-0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: installed tests for the GDK Pixbuf library
- The GDK Pixbuf library provides:
+Description: installed tests for the CDK Pixbuf library
+ The CDK Pixbuf library provides:
   - Image loading and saving facilities.
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
  .
- This package contains the installed tests for the GDK Pixbuf library.
+ This package contains the installed tests for the CDK Pixbuf library.

@@ -1,7 +1,7 @@
 Document: cdk-pixbuf
 Title: GdkPixbuf-2.0 Reference Manual
 Author: GTK Development Team
-Abstract: The GDK Pixbuf library provides image loading and saving facilities,
+Abstract: The CDK Pixbuf library provides image loading and saving facilities,
  fast scaling and compositing of pixel buffers, and simple animation loading.
 Section: Programming/C
 

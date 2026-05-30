@@ -23,7 +23,7 @@ int main(){
 #if !defined(GLIB_VERSION_2_36)
 	g_type_init();
 #endif
-	pixbuf = cdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, 50, 180);
+	pixbuf = cdk_pixbuf_new (CDK_COLORSPACE_RGB, TRUE, 8, 50, 180);
 	if(!pixbuf) return 1;
 	return 0;
 }

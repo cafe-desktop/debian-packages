@@ -578,7 +578,7 @@ cdk-pixbuf (2.38.0+dfsg-1) unstable; urgency=medium
   * New upstream release (LP: #1791301)
     - Add test case for buffer overflow in pixdata loader
     - Avoid a deprecation warning with recent libjasper
-    - Deprecate GDK_INTERP_HYPER
+    - Deprecate CDK_INTERP_HYPER
     - Drop Autotools build and move to Meson
     - Drop the MMX assembly optimizations for pixops
     - Ensure that GdkPixbuf's storage is safely handled
@@ -1214,7 +1214,7 @@ cdk-pixbuf (2.24.1-1) unstable; urgency=low
 
   * New upstream release.
   * Explicitly enable X11 support.
-  * Use upper case form of term GDK in package description. (Closes: #622217)
+  * Use upper case form of term CDK in package description. (Closes: #622217)
 
  -- Michael Biebl <biebl@debian.org>  Mon, 06 Feb 2012 04:39:50 +0100
 

@@ -100,7 +100,7 @@ index a8593d1..ba0a2c7 100644
 +  info->description = "JPEG 2000";
    info->mime_types = (gchar **) mime_types;
    info->extensions = (gchar **) extensions;
-   info->flags = GDK_PIXBUF_FORMAT_THREADSAFE;
+   info->flags = CDK_PIXBUF_FORMAT_THREADSAFE;
 diff --git a/cdk-pixbuf/meson.build b/cdk-pixbuf/meson.build
 index f334320..c4652e7 100644
 --- a/cdk-pixbuf/meson.build
