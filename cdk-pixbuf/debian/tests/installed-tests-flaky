@@ -5,5 +5,5 @@ set -eu
 exec gnome-desktop-testing-runner \
 --report-directory="$AUTOPKGTEST_ARTIFACTS" \
 --tap \
-gdk-pixbuf/pixbuf-randomly-modified.test \
+cdk-pixbuf/pixbuf-randomly-modified.test \
 ${NULL+}

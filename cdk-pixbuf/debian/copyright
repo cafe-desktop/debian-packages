@@ -1,10 +1,10 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: gdk-pixbuf
-Source: https://download.gnome.org/sources/gdk-pixbuf/
+Upstream-Name: cdk-pixbuf
+Source: https://download.gnome.org/sources/cdk-pixbuf/
 Files-Excluded:
  tests/bug753605-atsize.jpg
 Comment:
- See <https://gitlab.gnome.org/GNOME/gdk-pixbuf/issues/84>.
+ See <https://gitlab.gnome.org/GNOME/cdk-pixbuf/issues/84>.
 
 Files: *
 Copyright:
@@ -52,7 +52,7 @@ License: LGPL-2+ and LGPL-2.1+ and CC0-1.0
 
 Files:
     tests/*
-    gdk-pixbuf/test-gdk-pixbuf.c
+    cdk-pixbuf/test-cdk-pixbuf.c
     thumbnailer/*
 Copyright:
     Copyright (C) 2013-2016 Red Hat, Inc

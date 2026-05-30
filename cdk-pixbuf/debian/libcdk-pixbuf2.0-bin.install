@@ -1,5 +1,5 @@
 #!/usr/bin/dh-exec
-usr/bin/gdk-pixbuf-csource
-usr/bin/gdk-pixbuf-pixdata
-usr/bin/gdk-pixbuf-thumbnailer	[!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x]
+usr/bin/cdk-pixbuf-csource
+usr/bin/cdk-pixbuf-pixdata
+usr/bin/cdk-pixbuf-thumbnailer	[!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x]
 usr/share/thumbnailers		[!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x]

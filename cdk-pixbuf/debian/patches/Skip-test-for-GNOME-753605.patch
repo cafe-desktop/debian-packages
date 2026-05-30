@@ -37,6 +37,6 @@ index b578e38..b7cd83a 100644
 +      return;
 +    }
 +
-   ref = gdk_pixbuf_new_from_file (g_test_get_filename (G_TEST_DIST, "bug753605-atsize.jpg", NULL), &error);
+   ref = cdk_pixbuf_new_from_file (g_test_get_filename (G_TEST_DIST, "bug753605-atsize.jpg", NULL), &error);
    g_assert_no_error (error);
    g_object_unref (ref);

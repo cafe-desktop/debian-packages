@@ -1,18 +1,18 @@
-gdk-pixbuf (2.44.5+dfsg-4) unstable; urgency=medium
+cdk-pixbuf (2.44.5+dfsg-4) unstable; urgency=medium
 
   * Add patch to support JPEG2000 (Closes: #815612)
   * Bump minimum glycin to 2.0.8 for this to work
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Sat, 14 Feb 2026 10:24:34 -0500
 
-gdk-pixbuf (2.44.5+dfsg-3) unstable; urgency=medium
+cdk-pixbuf (2.44.5+dfsg-3) unstable; urgency=medium
 
   * Re-enable glycin for loong64
   * Release to unstable
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Mon, 09 Feb 2026 07:00:40 -0500
 
-gdk-pixbuf (2.44.5+dfsg-2) experimental; urgency=medium
+cdk-pixbuf (2.44.5+dfsg-2) experimental; urgency=medium
 
   [ Alessandro Astone ]
   * d/control, d/rules: Enable glycin on i386
@@ -31,57 +31,57 @@ gdk-pixbuf (2.44.5+dfsg-2) experimental; urgency=medium
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Thu, 05 Feb 2026 13:50:28 -0500
 
-gdk-pixbuf (2.44.5+dfsg-1) experimental; urgency=medium
+cdk-pixbuf (2.44.5+dfsg-1) experimental; urgency=medium
 
   * New upstream release
   * d/rules: Re-enable build test gating
   * d/p: Rebase patches
-  * d/patches: Fix tests with older gdk-pixbuf installed in the rootfs
+  * d/patches: Fix tests with older cdk-pixbuf installed in the rootfs
   * d/patches: Use the native xpm and xbm loaders instead of glycin
 
  -- Alessandro Astone <alessandro.astone@canonical.com>  Thu, 29 Jan 2026 10:56:51 +0100
 
-gdk-pixbuf (2.44.4+dfsg-3) experimental; urgency=medium
+cdk-pixbuf (2.44.4+dfsg-3) experimental; urgency=medium
 
   * Enable the legacy non-glycin XPM & XBM loaders for glycin architectures
     (Closes: #1120607)
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 12 Nov 2025 22:37:30 -0500
 
-gdk-pixbuf (2.44.4+dfsg-2) experimental; urgency=medium
+cdk-pixbuf (2.44.4+dfsg-2) experimental; urgency=medium
 
   * Switch to glycin for release architectures and loong64 except i386
     (Closes: #1116981, #1071271) (LP: #2122289)
   * Depend on glycin-thumbnailers on those architectures
-  * libgdk-pixbuf2.0-bin no longer contains a thumbnailer on those
-    architectures, but still contains gdk-pixbuf-pixdata and
-    gdk-pixbuf-csource, so stop recommending it on those architectures
+  * libcdk-pixbuf2.0-bin no longer contains a thumbnailer on those
+    architectures, but still contains cdk-pixbuf-pixdata and
+    cdk-pixbuf-csource, so stop recommending it on those architectures
   * Use dh-exec to manage architecture-specific install rules
   * Follow Fedora's example and disable auto features
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 12 Nov 2025 07:06:13 -0500
 
-gdk-pixbuf (2.44.4+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.44.4+dfsg-1) unstable; urgency=medium
 
   * New upstream release
   * Remove bitmap patch applied in new release
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Tue, 21 Oct 2025 13:28:37 -0400
 
-gdk-pixbuf (2.44.3+dfsg-3) unstable; urgency=medium
+cdk-pixbuf (2.44.3+dfsg-3) unstable; urgency=medium
 
   * Cherry-pick proposed patch to fix bitmap loading, as seen in
     the window buttons feature for the Xfce panel
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 01 Oct 2025 14:37:38 -0400
 
-gdk-pixbuf (2.44.3+dfsg-2) unstable; urgency=medium
+cdk-pixbuf (2.44.3+dfsg-2) unstable; urgency=medium
 
   * Release to unstable
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 01 Oct 2025 06:45:40 -0400
 
-gdk-pixbuf (2.44.3+dfsg-1) experimental; urgency=medium
+cdk-pixbuf (2.44.3+dfsg-1) experimental; urgency=medium
 
   * New upstream release
   * Update configure options
@@ -94,7 +94,7 @@ gdk-pixbuf (2.44.3+dfsg-1) experimental; urgency=medium
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Tue, 30 Sep 2025 13:45:03 -0400
 
-gdk-pixbuf (2.42.12+dfsg-5) unstable; urgency=medium
+cdk-pixbuf (2.42.12+dfsg-5) unstable; urgency=medium
 
   * Team upload
 
@@ -111,7 +111,7 @@ gdk-pixbuf (2.42.12+dfsg-5) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Fri, 15 Aug 2025 10:57:12 +0100
 
-gdk-pixbuf (2.42.12+dfsg-4) unstable; urgency=high
+cdk-pixbuf (2.42.12+dfsg-4) unstable; urgency=high
 
   * Team upload
   * Add patch from upstream fixing an out of bounds read for crafted
@@ -119,7 +119,7 @@ gdk-pixbuf (2.42.12+dfsg-4) unstable; urgency=high
 
  -- Simon McVittie <smcv@debian.org>  Sat, 12 Jul 2025 16:56:46 +0100
 
-gdk-pixbuf (2.42.12+dfsg-3) unstable; urgency=high
+cdk-pixbuf (2.42.12+dfsg-3) unstable; urgency=high
 
   * Team upload
   * d/p/lzw-Fix-reporting-of-bytes-written-in-decoder.patch:
@@ -131,12 +131,12 @@ gdk-pixbuf (2.42.12+dfsg-3) unstable; urgency=high
 
  -- Simon McVittie <smcv@debian.org>  Fri, 20 Jun 2025 09:52:41 +0100
 
-gdk-pixbuf (2.42.12+dfsg-2) unstable; urgency=medium
+cdk-pixbuf (2.42.12+dfsg-2) unstable; urgency=medium
 
   [ Simon McVittie ]
   * d/control: Remove some redundant dependencies
   * Standards-Version: 4.7.0 (no changes required)
-  * libgdk-pixbuf2.0-doc: Register the reference manuals with doc-base
+  * libcdk-pixbuf2.0-doc: Register the reference manuals with doc-base
 
   [ Jeremy Bícha ]
   * Drop obsolete Pre-Depends
@@ -144,7 +144,7 @@ gdk-pixbuf (2.42.12+dfsg-2) unstable; urgency=medium
 
  -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 22 Jan 2025 08:21:30 -0500
 
-gdk-pixbuf (2.42.12+dfsg-1) unstable; urgency=high
+cdk-pixbuf (2.42.12+dfsg-1) unstable; urgency=high
 
   * Team upload
   * New upstream release
@@ -162,7 +162,7 @@ gdk-pixbuf (2.42.12+dfsg-1) unstable; urgency=high
 
  -- Simon McVittie <smcv@debian.org>  Thu, 16 May 2024 15:25:37 +0100
 
-gdk-pixbuf (2.42.10+dfsg-3) unstable; urgency=medium
+cdk-pixbuf (2.42.10+dfsg-3) unstable; urgency=medium
 
   * Team upload
   * d/control, d/rules: Reinstate dh-sequence-gnome, but disable
@@ -175,7 +175,7 @@ gdk-pixbuf (2.42.10+dfsg-3) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Tue, 14 Nov 2023 10:02:24 +0000
 
-gdk-pixbuf (2.42.10+dfsg-2) unstable; urgency=medium
+cdk-pixbuf (2.42.10+dfsg-2) unstable; urgency=medium
 
   * Team upload
 
@@ -202,7 +202,7 @@ gdk-pixbuf (2.42.10+dfsg-2) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Wed, 01 Nov 2023 23:29:20 +0000
 
-gdk-pixbuf (2.42.10+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.42.10+dfsg-1) unstable; urgency=medium
 
   * Team upload
   * New upstream release
@@ -212,7 +212,7 @@ gdk-pixbuf (2.42.10+dfsg-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Fri, 18 Nov 2022 19:13:50 +0000
 
-gdk-pixbuf (2.42.9+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.42.9+dfsg-1) unstable; urgency=medium
 
   * New upstream release
   * d/rules, d/control.in: Build-depend on python3-docutils for man pages.
@@ -231,19 +231,19 @@ gdk-pixbuf (2.42.9+dfsg-1) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Tue, 16 Aug 2022 11:20:11 +0100
 
-gdk-pixbuf (2.42.8+dfsg-2) unstable; urgency=medium
+cdk-pixbuf (2.42.8+dfsg-2) unstable; urgency=medium
 
   * debian/patches/debian_queryloader_dir.patch:
-    - fix the directory referenced for gdk-pixbuf-query-loaders
+    - fix the directory referenced for cdk-pixbuf-query-loaders
       in the .pc since that file is moved by the packaging
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 27 Jul 2022 15:23:37 +0200
 
-gdk-pixbuf (2.42.8+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.42.8+dfsg-1) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * New upstream release
-  * debian/control.in: Loosen dependency on libgdk-pixbuf2.0-common.
+  * debian/control.in: Loosen dependency on libcdk-pixbuf2.0-common.
     This fixes an issue seen repeatedly in Ubuntu when the amd64 (+all)
     build finishes and is published before one of the other arches starts
     to build.
@@ -257,20 +257,20 @@ gdk-pixbuf (2.42.8+dfsg-1) unstable; urgency=medium
   [ Simon McVittie ]
   * Use debhelper compat level 13
     - We can now use debhelper substitutions for DEB_HOST_MULTIARCH in
-      d/libgdk-pixbuf-2.0-0.install, rather than using dh-exec.
+      d/libcdk-pixbuf-2.0-0.install, rather than using dh-exec.
     - We can now pass `meson test` options to dh_auto_test, which no longer
       uses `ninja test` directly.
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 28 Mar 2022 15:44:22 -0400
 
-gdk-pixbuf (2.42.6+dfsg-2) unstable; urgency=medium
+cdk-pixbuf (2.42.6+dfsg-2) unstable; urgency=medium
 
   * Team upload
   * Upload to unstable
 
  -- Simon McVittie <smcv@debian.org>  Sun, 15 Aug 2021 14:39:53 +0100
 
-gdk-pixbuf (2.42.6+dfsg-1) experimental; urgency=medium
+cdk-pixbuf (2.42.6+dfsg-1) experimental; urgency=medium
 
   * Team upload
   * New upstream release
@@ -302,7 +302,7 @@ gdk-pixbuf (2.42.6+dfsg-1) experimental; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Wed, 02 Jun 2021 21:29:21 +0100
 
-gdk-pixbuf (2.42.2+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.42.2+dfsg-1) unstable; urgency=medium
 
   * Team upload
   * New upstream release, without the Xlib API
@@ -326,37 +326,37 @@ gdk-pixbuf (2.42.2+dfsg-1) unstable; urgency=medium
     them pass
   * d/copyright: Remove information about contrib/, which was removed.
     The former contrib directory from this source package has moved to
-    the gdk-pixbuf-xlib source package.
+    the cdk-pixbuf-xlib source package.
 
  -- Simon McVittie <smcv@debian.org>  Sat, 12 Dec 2020 22:57:45 +0000
 
-gdk-pixbuf (2.40.0+dfsg-10) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-10) unstable; urgency=medium
 
   * Team upload
   * Release to unstable, without the Xlib API which is now provided by
-    src:gdk-pixbuf-xlib (Closes: #974870)
+    src:cdk-pixbuf-xlib (Closes: #974870)
 
  -- Simon McVittie <smcv@debian.org>  Sun, 06 Dec 2020 13:21:23 +0000
 
-gdk-pixbuf (2.40.0+dfsg-9) experimental; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-9) experimental; urgency=medium
 
   * Team upload
   * Branch for experimental again
-  * Drop gdk-pixbuf-xlib binary packages.
-    These will be taken over by a new src:gdk-pixbuf-xlib binary package
+  * Drop cdk-pixbuf-xlib binary packages.
+    These will be taken over by a new src:cdk-pixbuf-xlib binary package
     when it gets through NEW.
 
  -- Simon McVittie <smcv@debian.org>  Sat, 28 Nov 2020 15:27:13 +0000
 
-gdk-pixbuf (2.40.0+dfsg-8) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-8) unstable; urgency=medium
 
   * Team upload
   * Generate shlibs dependencies without a transitional alternative.
-    The libgdk-pixbuf-2.0-0 and libgdk-pixbuf-xlib-2.0-0 packages are now
+    The libcdk-pixbuf-2.0-0 and libcdk-pixbuf-xlib-2.0-0 packages are now
     available in testing, so we don't need an alternative dependency on
-    libgdk-pixbuf2.0-0 for a smooth transition.
+    libcdk-pixbuf2.0-0 for a smooth transition.
     This avoids an apparently-circular dependency between
-    libgdk-pixbuf-xlib-2.0-0 and the transitional libgdk-pixbuf2.0-0.
+    libcdk-pixbuf-xlib-2.0-0 and the transitional libcdk-pixbuf2.0-0.
     (Closes: #975904)
   * Standards-Version: 4.5.1 (no changes required)
   * Don't install tests/test-images/fail/file3.jp2 as executable.
@@ -364,14 +364,14 @@ gdk-pixbuf (2.40.0+dfsg-8) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Sat, 28 Nov 2020 13:32:25 +0000
 
-gdk-pixbuf (2.40.0+dfsg-7) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-7) unstable; urgency=medium
 
   * Team upload
   * Release to unstable
 
  -- Simon McVittie <smcv@debian.org>  Sun, 22 Nov 2020 15:45:56 +0000
 
-gdk-pixbuf (2.40.0+dfsg-6) experimental; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-6) experimental; urgency=medium
 
   * Team upload
   * Branch for experimental
@@ -381,23 +381,23 @@ gdk-pixbuf (2.40.0+dfsg-6) experimental; urgency=medium
     To facilitate a transition to separate source packages, split the binary
     packages built by this source package, in the same style as the split
     that was done in Pango 1.32.5-2:
-    - libgdk-pixbuf2.0-0:
-      + libgdk_pixbuf-2.0.so.0 -> libgdk-pixbuf-2.0-0
-      + libgdk_pixbuf_xlib-2.0.so.0 -> libgdk-pixbuf-xlib-2.0-0
-    - libgdk-pixbuf2.0-dev:
-      + gdk-pixbuf-2.0.pc, <gdk-pixbuf/gdk-pixbuf.h>
-        -> libgdk-pixbuf-2.0-dev
-      + deprecated <gdk-pixbuf/gdk-pixdata.h> -> libgdk-pixbuf-2.0-dev
-      + gdk-pixbuf-xlib-2.0.pc, <gdk-pixbuf-xlib/gdk-pixbuf-xlib.h>
-        -> libgdk-pixbuf-xlib-2.0-dev
+    - libcdk-pixbuf2.0-0:
+      + libcdk_pixbuf-2.0.so.0 -> libcdk-pixbuf-2.0-0
+      + libcdk_pixbuf_xlib-2.0.so.0 -> libcdk-pixbuf-xlib-2.0-0
+    - libcdk-pixbuf2.0-dev:
+      + cdk-pixbuf-2.0.pc, <cdk-pixbuf/cdk-pixbuf.h>
+        -> libcdk-pixbuf-2.0-dev
+      + deprecated <cdk-pixbuf/cdk-pixdata.h> -> libcdk-pixbuf-2.0-dev
+      + cdk-pixbuf-xlib-2.0.pc, <cdk-pixbuf-xlib/cdk-pixbuf-xlib.h>
+        -> libcdk-pixbuf-xlib-2.0-dev
     with transitional packages to help with the upgrade path.
     The -bin, -common and -doc packages remain as they were.
-  * Packages that only require gdk-pixbuf-2.0.pc and
-    <gdk-pixbuf/gdk-pixbuf.h> should now build-depend on
-    libgdk-pixbuf-2.0-dev | libgdk-pixbuf2.0-dev.
-  * Packages that require gdk-pixbuf-xlib-2.0.pc and
-    <gdk-pixbuf-xlib/gdk-pixbuf-xlib.h> should now build-depend on
-    libgdk-pixbuf-xlib-2.0-dev | libgdk-pixbuf2.0-dev.
+  * Packages that only require cdk-pixbuf-2.0.pc and
+    <cdk-pixbuf/cdk-pixbuf.h> should now build-depend on
+    libcdk-pixbuf-2.0-dev | libcdk-pixbuf2.0-dev.
+  * Packages that require cdk-pixbuf-xlib-2.0.pc and
+    <cdk-pixbuf-xlib/cdk-pixbuf-xlib.h> should now build-depend on
+    libcdk-pixbuf-xlib-2.0-dev | libcdk-pixbuf2.0-dev.
   * The above change incidentally also drops the libX11 dependency
     from the main library (Closes: #824502)
   * d/rules: Trim trailing whitespace
@@ -407,20 +407,20 @@ gdk-pixbuf (2.40.0+dfsg-6) experimental; urgency=medium
     Don't run pixbuf-randomly-modified test at build time.
     This is basically a crude fuzzer. It isn't really suitable for
     build-time acceptance testing, since it frequently produces images for
-    which gdk-pixbuf will try to allocate more memory than is available,
+    which cdk-pixbuf will try to allocate more memory than is available,
     but if it does, it isn't straightforward to capture the failing image
     from an autobuilder that only records build logs. (Closes: #942124)
   * Mark pixbuf-randomly-modified test as flaky when run as autopkgtest too
 
  -- Simon McVittie <smcv@debian.org>  Tue, 17 Nov 2020 11:13:22 +0000
 
-gdk-pixbuf (2.40.0+dfsg-5) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-5) unstable; urgency=medium
 
-  * rules: Don't mangle PNGs in gdk-pixbuf-tests (for Ubuntu)
+  * rules: Don't mangle PNGs in cdk-pixbuf-tests (for Ubuntu)
 
  -- Iain Lane <laney@debian.org>  Mon, 01 Jun 2020 17:05:16 +0100
 
-gdk-pixbuf (2.40.0+dfsg-4) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-4) unstable; urgency=medium
 
   * Do not rebuild the documentation when it's not necessary
   * debian/control.in: Bump Standards-Version to 4.5.0
@@ -428,13 +428,13 @@ gdk-pixbuf (2.40.0+dfsg-4) unstable; urgency=medium
 
  -- Laurent Bigonville <bigon@debian.org>  Wed, 08 Apr 2020 14:34:38 +0200
 
-gdk-pixbuf (2.40.0+dfsg-3) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-3) unstable; urgency=medium
 
   * debian/rules: Make the tests non-fatal on kfreebsd-amd64
 
  -- Laurent Bigonville <bigon@debian.org>  Sun, 08 Mar 2020 18:35:39 +0100
 
-gdk-pixbuf (2.40.0+dfsg-2) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-2) unstable; urgency=medium
 
   * Team upload
   * d/tests/build: Mark as superficial
@@ -448,7 +448,7 @@ gdk-pixbuf (2.40.0+dfsg-2) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Thu, 26 Dec 2019 16:33:27 +0000
 
-gdk-pixbuf (2.40.0+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.40.0+dfsg-1) unstable; urgency=medium
 
   * New upstream release
 
@@ -459,32 +459,32 @@ gdk-pixbuf (2.40.0+dfsg-1) unstable; urgency=medium
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Thu, 10 Oct 2019 17:38:01 +0200
 
-gdk-pixbuf (2.39.2-3) experimental; urgency=medium
+cdk-pixbuf (2.39.2-3) experimental; urgency=medium
 
   * debian/rules:
     - use dh_missing --fail-missing
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 21:40:38 +0200
 
-gdk-pixbuf (2.39.2-2) experimental; urgency=medium
+cdk-pixbuf (2.39.2-2) experimental; urgency=medium
 
   * Really remove debian/compat from the upload...
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 20:09:49 +0200
 
-gdk-pixbuf (2.39.2-1) experimental; urgency=medium
+cdk-pixbuf (2.39.2-1) experimental; urgency=medium
 
   * New upstream release
     - Render GIF frames on demand
   * debian/control.in, debian/compat:
     - update to debhelper12
     - update the Standards-version to 4.4.0.1
-  * debian/libgdk-pixbuf2.0-0.symbols:
+  * debian/libcdk-pixbuf2.0-0.symbols:
     - new version update
 
  -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 14 Aug 2019 16:05:13 +0200
 
-gdk-pixbuf (2.38.1+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.38.1+dfsg-1) unstable; urgency=medium
 
   * New upstream release
     - Add variables in the pkg-config files for binary utilities
@@ -497,56 +497,56 @@ gdk-pixbuf (2.38.1+dfsg-1) unstable; urgency=medium
     - Speed up saving PNG files
   * Drop upstream patches.
      - Use-basename-instead-of-filename.patch,
-       build-Include-gdk-pixdata.c-when-building-GdkPixbuf-2.0.g.patch:
+       build-Include-cdk-pixdata.c-when-building-GdkPixbuf-2.0.g.patch:
        Included in this release
 
  -- Iain Lane <laney@debian.org>  Mon, 04 Mar 2019 14:31:35 +0000
 
-gdk-pixbuf (2.38.0+dfsg-7) unstable; urgency=medium
+cdk-pixbuf (2.38.0+dfsg-7) unstable; urgency=medium
 
   * debian/rules: Stop including gnome-get-source.mk, use uscan instead
-  * debian/libgdk-pixbuf2.0-0.symbols: Set Build-Depends-Package
+  * debian/libcdk-pixbuf2.0-0.symbols: Set Build-Depends-Package
   * Add -Wl,-O1 -Wl,-z,defs -Wl,--as-needed to our LDFLAGS
   * Enable all hardening flags
   * Bump Standards-Version to 4.3.0
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 23 Dec 2018 22:44:55 -0500
 
-gdk-pixbuf (2.38.0+dfsg-6) unstable; urgency=medium
+cdk-pixbuf (2.38.0+dfsg-6) unstable; urgency=medium
 
   * Team upload
-  * gir1.2-gdkpixbuf-2.0 Breaks: libgtk3-perl (<< 0.034-2~), to avoid
+  * gir1.2-cdkpixbuf-2.0 Breaks: libgtk3-perl (<< 0.034-2~), to avoid
     #908323 being reported as an autopkgtest regression in gtk+3.0
   * d/watch: Use dversionmangle to remove +dfsg suffix (thanks, Lintian)
   * d/copyright: Correct syntax for matching
-    contrib/gdk-pixbuf-xlib/gdk-pixbuf-xlibrgb.?. Machine-readable
+    contrib/cdk-pixbuf-xlib/cdk-pixbuf-xlibrgb.?. Machine-readable
     copyright file format supports * and ? wildcards, but not [ch].
   * d/copyright: Remove stanzas for files that are no longer included
   * Enable bindnow linker hardening
-  * gir1.2-gdkpixbuf-2.0 Provides gir1.2-gdkpixdata-2.0, to reflect its
+  * gir1.2-cdkpixbuf-2.0 Provides gir1.2-cdkpixdata-2.0, to reflect its
     contents
     - Remove lintian overrides that are no longer necessary
 
  -- Simon McVittie <smcv@debian.org>  Wed, 19 Sep 2018 11:57:58 +0100
 
-gdk-pixbuf (2.38.0+dfsg-5) unstable; urgency=medium
+cdk-pixbuf (2.38.0+dfsg-5) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * debian/rules: Use meson test --print-errorlogs
     dh_auto_test normally does that for us
 
   [ Iain Lane ]
-  * Add new patch to include gdk-pixdata.c when building the GdkPixbuf gir.
+  * Add new patch to include cdk-pixdata.c when building the GdkPixbuf gir.
     This fixes broken introspection metadata that at least would have broken
     libgtk3-perl. (Closes: #908673)
 
  -- Iain Lane <laney@debian.org>  Thu, 13 Sep 2018 12:50:53 +0100
 
-gdk-pixbuf (2.38.0+dfsg-4) unstable; urgency=medium
+cdk-pixbuf (2.38.0+dfsg-4) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * Update debian/gbp.conf
-  * debian/libgdk-pixbuf2.0-0.install: Use ${DEB_HOST_MULTIARCH} less.
+  * debian/libcdk-pixbuf2.0-0.install: Use ${DEB_HOST_MULTIARCH} less.
     Thanks lintian.
 
   [ John Paul Adrian Glaubitz ]
@@ -559,21 +559,21 @@ gdk-pixbuf (2.38.0+dfsg-4) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Sun, 09 Sep 2018 08:12:01 -0400
 
-gdk-pixbuf (2.38.0+dfsg-3) unstable; urgency=medium
+cdk-pixbuf (2.38.0+dfsg-3) unstable; urgency=medium
 
   [ Sven Joachim ]
   * Fix FTBFS on any-i386 (Closes: #908298)
 
  -- Andreas Henriksson <andreas@fatal.se>  Sat, 08 Sep 2018 10:54:08 +0200
 
-gdk-pixbuf (2.38.0+dfsg-2) unstable; urgency=medium
+cdk-pixbuf (2.38.0+dfsg-2) unstable; urgency=medium
 
-  * Allow 5× as much time for the tests, to hopefully allow gdk-pixbuf to pass
+  * Allow 5× as much time for the tests, to hopefully allow cdk-pixbuf to pass
     tests on all of our slower arches.
 
  -- Iain Lane <laney@debian.org>  Fri, 07 Sep 2018 17:43:33 +0100
 
-gdk-pixbuf (2.38.0+dfsg-1) unstable; urgency=medium
+cdk-pixbuf (2.38.0+dfsg-1) unstable; urgency=medium
 
   * New upstream release (LP: #1791301)
     - Add test case for buffer overflow in pixdata loader
@@ -604,28 +604,28 @@ gdk-pixbuf (2.38.0+dfsg-1) unstable; urgency=medium
   * Don't build the installed tests for this upload. It'd require a trip
     through binNEW
   * docs: Drop AUTHORS, rename README to README.md
-  * libgdk-pixbuf2.0-0.symbols: Drop two private symbols. These are in a
+  * libcdk-pixbuf2.0-0.symbols: Drop two private symbols. These are in a
     private header and weren't meant to be exported. codesearch.d.n shows no
     external users.
   * Bump Standards-Version to 4.2.1 (no changes required)
   * Add Lintian overrides for warnings about GdkPixdata introspection data.
-    It's intentional that this is in gir1.2-gdkpixbuf-2.0
+    It's intentional that this is in gir1.2-cdkpixbuf-2.0
 
  -- Iain Lane <laney@debian.org>  Fri, 07 Sep 2018 14:45:00 +0100
 
-gdk-pixbuf (2.36.12-2) unstable; urgency=medium
+cdk-pixbuf (2.36.12-2) unstable; urgency=medium
 
   * Team upload
 
   [ Hugh McMaster ]
-  * Move gdk-pixbuf-csource and gdk-pixbuf-pixdata into
-    libgdk-pixbuf2.0-bin (Closes: #876183, #882785).
-  * Update the package description for libgdk-pixbuf2.0-bin.
-  * Mark libgdk-pixbuf2.0-dev Multi-Arch: same (Closes: #689125).
+  * Move cdk-pixbuf-csource and cdk-pixbuf-pixdata into
+    libcdk-pixbuf2.0-bin (Closes: #876183, #882785).
+  * Update the package description for libcdk-pixbuf2.0-bin.
+  * Mark libcdk-pixbuf2.0-dev Multi-Arch: same (Closes: #689125).
 
   [ Simon McVittie ]
   * Update versioned Breaks/Replaces
-  * Remove /usr/bin/gdk-pixbuf-query-loaders symlink from -dev package.
+  * Remove /usr/bin/cdk-pixbuf-query-loaders symlink from -dev package.
     It has architecture-dependent output and breaks Multi-Arch: same
     co-installability. Debian packages do not seem to rely on this tool
     being in PATH.
@@ -633,7 +633,7 @@ gdk-pixbuf (2.36.12-2) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Tue, 21 Aug 2018 15:15:42 +0100
 
-gdk-pixbuf (2.36.12-1) unstable; urgency=medium
+cdk-pixbuf (2.36.12-1) unstable; urgency=medium
 
   * Team upload
   * New upstream release
@@ -651,12 +651,12 @@ gdk-pixbuf (2.36.12-1) unstable; urgency=medium
   * d/copyright: Correct syntax
   * Upgrade udeb from deprecated priority extra to optional
   * Remove ineffective lintian override for the udeb
-  * d/libgdk-pixbuf2.0-0.lintian-overrides: Document non-SONAME-based
+  * d/libcdk-pixbuf2.0-0.lintian-overrides: Document non-SONAME-based
     package name
 
  -- Simon McVittie <smcv@debian.org>  Thu, 26 Jul 2018 10:44:54 +0100
 
-gdk-pixbuf (2.36.11-2) unstable; urgency=medium
+cdk-pixbuf (2.36.11-2) unstable; urgency=medium
 
   * Team upload
 
@@ -674,7 +674,7 @@ gdk-pixbuf (2.36.11-2) unstable; urgency=medium
 
  -- Simon McVittie <smcv@debian.org>  Fri, 16 Mar 2018 10:57:57 +0000
 
-gdk-pixbuf (2.36.11-1) unstable; urgency=medium
+cdk-pixbuf (2.36.11-1) unstable; urgency=medium
 
   * New upstream release
   * debian/copyright: The non-free images have been replaced
@@ -683,19 +683,19 @@ gdk-pixbuf (2.36.11-1) unstable; urgency=medium
 
  -- Jeremy Bicha <jbicha@debian.org>  Mon, 02 Oct 2017 12:36:35 -0400
 
-gdk-pixbuf (2.36.10-2) unstable; urgency=medium
+cdk-pixbuf (2.36.10-2) unstable; urgency=medium
 
   * Add git_fix-tiff-build.patch:
     - Backport patch to fix tiff loader build (LP: #1718526)
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 20 Sep 2017 19:04:33 -0400
 
-gdk-pixbuf (2.36.10-1) unstable; urgency=medium
+cdk-pixbuf (2.36.10-1) unstable; urgency=medium
 
   [ Jeremy Bicha ]
   * New upstream release 2.36.9.
   * Drop obsolete 0001-skip-perturb-for-cve-2015-4491-original-test.patch
-  * debian/libgdk-pixbuf2.0-0.symbols: Add new symbol
+  * debian/libcdk-pixbuf2.0-0.symbols: Add new symbol
 
   [ Emilio Pozuelo Monfort ]
   * New upstream release 2.36.10.
@@ -709,19 +709,19 @@ gdk-pixbuf (2.36.10-1) unstable; urgency=medium
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 19 Sep 2017 23:39:30 +0200
 
-gdk-pixbuf (2.36.5-4) unstable; urgency=medium
+cdk-pixbuf (2.36.5-4) unstable; urgency=medium
 
   * Release to unstable.
   * Bump Standards-Version to 4.1.0
 
  -- Jeremy Bicha <jbicha@debian.org>  Wed, 30 Aug 2017 21:34:04 -0400
 
-gdk-pixbuf (2.36.5-3) experimental; urgency=medium
+cdk-pixbuf (2.36.5-3) experimental; urgency=medium
 
   [ Jeremy Bicha ]
-  * Add new libgdk-pixbuf2.0-bin package to install thumbnailer
+  * Add new libcdk-pixbuf2.0-bin package to install thumbnailer
     binary and metadata needed by gnome-desktop 3.23 (LP: #1665602)
-  * Have libgdk-pibxuf2.0-0 recommend libgdk-pixbuf2.0-bin
+  * Have libcdk-pibxuf2.0-0 recommend libcdk-pixbuf2.0-bin
   * debian/rules: Change dh_install's --list-missing to --fail-missing to
     catch this issue sooner next time
 
@@ -733,13 +733,13 @@ gdk-pixbuf (2.36.5-3) experimental; urgency=medium
 
  -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 14 Mar 2017 16:05:47 +0000
 
-gdk-pixbuf (2.36.5-2) unstable; urgency=medium
+cdk-pixbuf (2.36.5-2) unstable; urgency=medium
 
   * Unbranch - that was short lived. Upload the stable release to unstable.
 
  -- Iain Lane <laney@debian.org>  Thu, 16 Feb 2017 18:02:30 +0000
 
-gdk-pixbuf (2.36.5-1) experimental; urgency=medium
+cdk-pixbuf (2.36.5-1) experimental; urgency=medium
 
   * Branch to experimental - update Vcs-*
   * New upstream release 2.36.5
@@ -756,38 +756,38 @@ gdk-pixbuf (2.36.5-1) experimental; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Tue, 14 Feb 2017 11:36:07 +0000
 
-gdk-pixbuf (2.36.4-1) unstable; urgency=medium
+cdk-pixbuf (2.36.4-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 17 Jan 2017 00:45:42 +0100
 
-gdk-pixbuf (2.36.3-1) unstable; urgency=medium
+cdk-pixbuf (2.36.3-1) unstable; urgency=medium
 
   [ Emilio Pozuelo Monfort ]
   * New upstream release.
 
  -- Iain Lane <laney@debian.org>  Mon, 09 Jan 2017 14:23:04 +0000
 
-gdk-pixbuf (2.36.2-1) unstable; urgency=medium
+cdk-pixbuf (2.36.2-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 22 Dec 2016 02:20:02 +0100
 
-gdk-pixbuf (2.36.1-1) unstable; urgency=medium
+cdk-pixbuf (2.36.1-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 17 Dec 2016 02:28:56 +0100
 
-gdk-pixbuf (2.36.0-1) unstable; urgency=medium
+cdk-pixbuf (2.36.0-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Mon, 19 Sep 2016 19:10:55 +0200
 
-gdk-pixbuf (2.35.5-1) unstable; urgency=medium
+cdk-pixbuf (2.35.5-1) unstable; urgency=medium
 
   * New upstream development release.
   * Drop 02-tests-Make-sure-to-NULL-terminate-the-arguments-pass.patch, merged
@@ -798,14 +798,14 @@ gdk-pixbuf (2.35.5-1) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Tue, 13 Sep 2016 16:17:03 +0200
 
-gdk-pixbuf (2.35.4-4) unstable; urgency=medium
+cdk-pixbuf (2.35.4-4) unstable; urgency=medium
 
   * Move gtk-doc-tools and libglib2.0-doc from Build-Depends-Indep to
     Build-Depends.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 08 Sep 2016 19:17:54 +0200
 
-gdk-pixbuf (2.35.4-3) unstable; urgency=medium
+cdk-pixbuf (2.35.4-3) unstable; urgency=medium
 
   * Make sure to NULL terminate the arguments passed to g_test_get_filename().
     Otherwise the /pixbuf/composite2 test will segfault. (Closes: #837030)
@@ -813,7 +813,7 @@ gdk-pixbuf (2.35.4-3) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Thu, 08 Sep 2016 18:59:21 +0200
 
-gdk-pixbuf (2.35.4-2) unstable; urgency=medium
+cdk-pixbuf (2.35.4-2) unstable; urgency=medium
 
   * Make test-suite failures non-fatal for now to not block ongoing
     transitions.
@@ -822,18 +822,18 @@ gdk-pixbuf (2.35.4-2) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Thu, 08 Sep 2016 16:49:06 +0200
 
-gdk-pixbuf (2.35.4-1) unstable; urgency=medium
+cdk-pixbuf (2.35.4-1) unstable; urgency=medium
 
   * New upstream release.
   * Update symbols file with new additions. A few private symbols were
     dropped.
-  * Use dh-exec for substituting multiarch paths in libgdk-pixbuf2.0-0.install
-    and libgdk-pixbuf2.0-dev.links.
+  * Use dh-exec for substituting multiarch paths in libcdk-pixbuf2.0-0.install
+    and libcdk-pixbuf2.0-dev.links.
   * Convert from cdbs to dh.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 07 Sep 2016 18:00:22 +0200
 
-gdk-pixbuf (2.34.0-1) unstable; urgency=medium
+cdk-pixbuf (2.34.0-1) unstable; urgency=medium
 
   [ Emilio Pozuelo Monfort ]
   * debian/patches/01-disable-oom-test.patch:
@@ -842,20 +842,20 @@ gdk-pixbuf (2.34.0-1) unstable; urgency=medium
 
   [ Michael Biebl ]
   * New upstream release.
-  * Drop libgdk-pixbuf2.0-0-dbg package now that we have automatic dbgsym
+  * Drop libcdk-pixbuf2.0-0-dbg package now that we have automatic dbgsym
     packages.
-  * Ensure proper upgrade from libgdk-pixbuf2.0-0-dbg to new dbgsym packages
+  * Ensure proper upgrade from libcdk-pixbuf2.0-0-dbg to new dbgsym packages
     by using dh_strip --dbgsym-migration. Bump Build-Depends on debhelper
     accordingly.
   * Tighten dependency on libpng-dev. We need to ensure that
-    libgdk-pixbuf2.0-dev pulls in the correct version of libpng-dev as it
-    encodes the libpng API version it was built against in gdk-pixbuf2.0.pc.
+    libcdk-pixbuf2.0-dev pulls in the correct version of libpng-dev as it
+    encodes the libpng API version it was built against in cdk-pixbuf2.0.pc.
     (Closes: #819779)
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Sat, 16 Apr 2016 15:39:05 +0200
 
-gdk-pixbuf (2.33.2-1) experimental; urgency=medium
+cdk-pixbuf (2.33.2-1) experimental; urgency=medium
 
   [ Andreas Henriksson ]
   * Add share-mime-info dependency (Closes: #790423)
@@ -869,7 +869,7 @@ gdk-pixbuf (2.33.2-1) experimental; urgency=medium
 
  -- Andreas Henriksson <andreas@fatal.se>  Mon, 14 Mar 2016 22:49:34 +0100
 
-gdk-pixbuf (2.32.3-1.2) unstable; urgency=medium
+cdk-pixbuf (2.32.3-1.2) unstable; urgency=medium
 
   * Non-maintainer upload.
   * Change libpng12-dev runtime-dependency to libpng-dev, to ease libpng
@@ -878,27 +878,27 @@ gdk-pixbuf (2.32.3-1.2) unstable; urgency=medium
 
  -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 27 Jan 2016 18:24:08 +0100
 
-gdk-pixbuf (2.32.3-1) unstable; urgency=medium
+cdk-pixbuf (2.32.3-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Tue, 15 Dec 2015 17:53:41 +0100
 
-gdk-pixbuf (2.32.2-1) unstable; urgency=medium
+cdk-pixbuf (2.32.2-1) unstable; urgency=medium
 
   * New upstream release.
   * Update watch file to track stable releases only.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 11 Nov 2015 02:01:07 +0100
 
-gdk-pixbuf (2.32.1-1) unstable; urgency=medium
+cdk-pixbuf (2.32.1-1) unstable; urgency=medium
 
   * New upstream release 2.32.1
   * Drop patch which is applied upstream
 
  -- Iain Lane <laney@debian.org>  Mon, 05 Oct 2015 17:51:16 +0100
 
-gdk-pixbuf (2.32.0-1) unstable; urgency=medium
+cdk-pixbuf (2.32.0-1) unstable; urgency=medium
 
   * New upstream release 2.32.0
   * debian/patches/0001-Skip-tests-when-we-can-t-run-them-due-to-lack-of-mem.patch:
@@ -909,7 +909,7 @@ gdk-pixbuf (2.32.0-1) unstable; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Tue, 22 Sep 2015 16:15:30 +0100
 
-gdk-pixbuf (2.31.7-3) experimental; urgency=medium
+cdk-pixbuf (2.31.7-3) experimental; urgency=medium
 
   * debian/patches/skip-large-file-tests-instead-of-ooming: This didn't catch
     all cases. Run some tests in a subprocess so that we can skip them if they
@@ -917,7 +917,7 @@ gdk-pixbuf (2.31.7-3) experimental; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Fri, 18 Sep 2015 22:08:41 +0100
 
-gdk-pixbuf (2.31.7-2) experimental; urgency=medium
+cdk-pixbuf (2.31.7-2) experimental; urgency=medium
 
   * Run the tests with VERBOSE=1
   * debian/patches/skip-large-file-tests-instead-of-ooming: Add a new patch to
@@ -927,7 +927,7 @@ gdk-pixbuf (2.31.7-2) experimental; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Thu, 17 Sep 2015 14:38:08 +0100
 
-gdk-pixbuf (2.31.7-1) unstable; urgency=medium
+cdk-pixbuf (2.31.7-1) unstable; urgency=medium
 
   [ Michael Biebl ]
   * New upstream release.
@@ -944,14 +944,14 @@ gdk-pixbuf (2.31.7-1) unstable; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Tue, 15 Sep 2015 16:24:31 +0100
 
-gdk-pixbuf (2.31.5-1) unstable; urgency=medium
+cdk-pixbuf (2.31.5-1) unstable; urgency=medium
 
   * New upstream release.
   * Remove obsolete Breaks/Replaces from pre-wheezy.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 22 Jul 2015 01:19:13 +0200
 
-gdk-pixbuf (2.31.4-2) unstable; urgency=medium
+cdk-pixbuf (2.31.4-2) unstable; urgency=medium
 
   * Install typelib files into multiarch paths.
   * Mark gir package as Multi-Arch: same.
@@ -959,14 +959,14 @@ gdk-pixbuf (2.31.4-2) unstable; urgency=medium
 
  -- Michael Biebl <biebl@debian.org>  Wed, 27 May 2015 01:31:18 +0200
 
-gdk-pixbuf (2.31.4-1) unstable; urgency=medium
+cdk-pixbuf (2.31.4-1) unstable; urgency=medium
 
   * New upstream release.
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 20 May 2015 00:07:11 +0200
 
-gdk-pixbuf (2.31.3-1) experimental; urgency=medium
+cdk-pixbuf (2.31.3-1) experimental; urgency=medium
 
   * New upstream release 2.31.3
     - Revert an annotation change that broke bindings
@@ -980,20 +980,20 @@ gdk-pixbuf (2.31.3-1) experimental; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Wed, 11 Mar 2015 12:38:43 +0000
 
-gdk-pixbuf (2.31.2-2) experimental; urgency=medium
+cdk-pixbuf (2.31.2-2) experimental; urgency=medium
 
-  * revert-0001-lib-Annotate-var-arg-gdk_pixbuf_save.patch: Revert upstream
+  * revert-0001-lib-Annotate-var-arg-cdk_pixbuf_save.patch: Revert upstream
     commit which breaks API which applications actually use.
 
  -- Iain Lane <laney@debian.org>  Wed, 25 Feb 2015 19:51:11 +0000
 
-gdk-pixbuf (2.31.2-1) experimental; urgency=medium
+cdk-pixbuf (2.31.2-1) experimental; urgency=medium
 
   * debian/watch: Update to find unstable versions too.
   * New upstream release 2.31.2
     + API changes:
       - Deprecate GdkPixdata
-      - Add gdk_pixbuf_get_options() helper to list set options
+      - Add cdk_pixbuf_get_options() helper to list set options
       - Annotations fixes for various functions
       - Remove incorrect info about area-prepared signal
     + Image format support changes
@@ -1019,46 +1019,46 @@ gdk-pixbuf (2.31.2-1) experimental; urgency=medium
 
  -- Iain Lane <laney@debian.org>  Tue, 24 Feb 2015 18:10:15 +0000
 
-gdk-pixbuf (2.31.1-2) unstable; urgency=medium
+cdk-pixbuf (2.31.1-2) unstable; urgency=medium
 
   * debian/rules: Fix the permissions of "loaders.cache" file in the udeb to
     please lintian
   * debian/control.in: Bump Standards-Version to 3.9.6 (no further changes)
-  * Add debian/libgdk-pixbuf2.0-0-udeb.lintian-overrides: Add an override for
+  * Add debian/libcdk-pixbuf2.0-0-udeb.lintian-overrides: Add an override for
     package-contains-mime-cache-file as we intend to ship mime.cache
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 07 Oct 2014 22:28:49 +0200
 
-gdk-pixbuf (2.31.1-1) experimental; urgency=medium
+cdk-pixbuf (2.31.1-1) experimental; urgency=medium
 
   * Fix broken Vcs-Browser url.
   * New upstream development release.
-  * Add new symbols to debian/libgdk-pixbuf2.0-0.symbols
+  * Add new symbols to debian/libcdk-pixbuf2.0-0.symbols
 
  -- Andreas Henriksson <andreas@fatal.se>  Sat, 06 Sep 2014 10:06:47 -0700
 
-gdk-pixbuf (2.30.8-1) unstable; urgency=medium
+cdk-pixbuf (2.30.8-1) unstable; urgency=medium
 
   * New upstream release.
-  * Add Depends on shared-mime-info to libgdk-pixbuf2.0-dev. The
-    gdk-pixbuf-csource utility requires it for image file format detection.
+  * Add Depends on shared-mime-info to libcdk-pixbuf2.0-dev. The
+    cdk-pixbuf-csource utility requires it for image file format detection.
     Closes: #758813
 
  -- Michael Biebl <biebl@debian.org>  Tue, 02 Sep 2014 00:45:43 +0200
 
-gdk-pixbuf (2.30.7-1) unstable; urgency=medium
+cdk-pixbuf (2.30.7-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 23 Apr 2014 15:46:48 +0200
 
-gdk-pixbuf (2.30.6-1) unstable; urgency=medium
+cdk-pixbuf (2.30.6-1) unstable; urgency=medium
 
   * New upstream release.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 09 Mar 2014 14:15:14 +0100
 
-gdk-pixbuf (2.30.5-1) unstable; urgency=medium
+cdk-pixbuf (2.30.5-1) unstable; urgency=medium
 
   * New upstream release.
   * debian/control.in:
@@ -1067,7 +1067,7 @@ gdk-pixbuf (2.30.5-1) unstable; urgency=medium
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 20 Feb 2014 20:37:53 +0100
 
-gdk-pixbuf (2.30.4-1) unstable; urgency=low
+cdk-pixbuf (2.30.4-1) unstable; urgency=low
 
   [ Michael Biebl ]
   * Use the official field for udebs: Package-Type.
@@ -1079,7 +1079,7 @@ gdk-pixbuf (2.30.4-1) unstable; urgency=low
     - Switch to libtiff over libtiff5. Closes: #681099, #736005.
     - Use canonical VCS fields
   * Update symbols
-  * Create basic manpage for gdk-pixbuf-pixdata
+  * Create basic manpage for cdk-pixbuf-pixdata
   * debian/rules: Add upstream changelog location
 
   [ Emilio Pozuelo Monfort ]
@@ -1095,13 +1095,13 @@ gdk-pixbuf (2.30.4-1) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 16 Feb 2014 20:21:48 +0100
 
-gdk-pixbuf (2.28.2-1) unstable; urgency=low
+cdk-pixbuf (2.28.2-1) unstable; urgency=low
 
   * New upstream release.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 08 Jun 2013 18:32:31 +0200
 
-gdk-pixbuf (2.28.1-2) unstable; urgency=low
+cdk-pixbuf (2.28.1-2) unstable; urgency=low
 
   * debian/rules,
     debian/control:
@@ -1109,7 +1109,7 @@ gdk-pixbuf (2.28.1-2) unstable; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 02 Jun 2013 15:41:38 +0200
 
-gdk-pixbuf (2.28.1-1) unstable; urgency=low
+cdk-pixbuf (2.28.1-1) unstable; urgency=low
 
   * New upstream release.
   * Track stable releases again.
@@ -1119,13 +1119,13 @@ gdk-pixbuf (2.28.1-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Thu, 09 May 2013 02:01:16 +0200
 
-gdk-pixbuf (2.28.0-1) experimental; urgency=low
+cdk-pixbuf (2.28.0-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 26 Mar 2013 13:09:02 +0100
 
-gdk-pixbuf (2.27.3-1) experimental; urgency=low
+cdk-pixbuf (2.27.3-1) experimental; urgency=low
 
   * New upstream release.
     + d/p/0001-animation-Allow-prepare_func-call-in-stop_load.patch:
@@ -1133,7 +1133,7 @@ gdk-pixbuf (2.27.3-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 19 Mar 2013 00:23:11 +0100
 
-gdk-pixbuf (2.27.2-2) experimental; urgency=low
+cdk-pixbuf (2.27.2-2) experimental; urgency=low
 
   * d/p/0001-animation-Allow-prepare_func-call-in-stop_load.patch:
     + Backport patch from upstream GIT, fixes a crash with animations.
@@ -1141,7 +1141,7 @@ gdk-pixbuf (2.27.2-2) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Thu, 14 Mar 2013 22:19:36 +0100
 
-gdk-pixbuf (2.27.2-1) experimental; urgency=low
+cdk-pixbuf (2.27.2-1) experimental; urgency=low
 
   [ Martin Pitt ]
   * Add debian/tests: Simple compile/link/run autopkgtest. Thanks Rafał
@@ -1152,17 +1152,17 @@ gdk-pixbuf (2.27.2-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 02 Mar 2013 18:26:49 +0100
 
-gdk-pixbuf (2.27.1-1) experimental; urgency=low
+cdk-pixbuf (2.27.1-1) experimental; urgency=low
 
   * New upstream release.
     + debian/control.in:
       - Update build dependencies.
-    + debian/libgdk-pixbuf2.0-0.symbols:
+    + debian/libcdk-pixbuf2.0-0.symbols:
       - Updated for the new symbols.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 23 Feb 2013 19:58:45 +0100
 
-gdk-pixbuf (2.26.4-2) experimental; urgency=low
+cdk-pixbuf (2.26.4-2) experimental; urgency=low
 
   * Team upload
   * Add a -dbg package
@@ -1170,14 +1170,14 @@ gdk-pixbuf (2.26.4-2) experimental; urgency=low
 
  -- Simon McVittie <smcv@debian.org>  Wed, 24 Oct 2012 19:37:52 +0100
 
-gdk-pixbuf (2.26.4-1) experimental; urgency=low
+cdk-pixbuf (2.26.4-1) experimental; urgency=low
 
   * Team upload
   * New upstream bugfix release
 
  -- Simon McVittie <smcv@debian.org>  Tue, 23 Oct 2012 16:41:38 +0100
 
-gdk-pixbuf (2.26.1-1) unstable; urgency=low
+cdk-pixbuf (2.26.1-1) unstable; urgency=low
 
   * New upstream bug fix release:
     - Fix srcdir != builddir build.
@@ -1189,28 +1189,28 @@ gdk-pixbuf (2.26.1-1) unstable; urgency=low
 
  -- Martin Pitt <mpitt@debian.org>  Mon, 16 Apr 2012 07:21:41 +0200
 
-gdk-pixbuf (2.26.0-2) unstable; urgency=low
+cdk-pixbuf (2.26.0-2) unstable; urgency=low
 
   * Upload to unstable.
 
  -- Michael Biebl <biebl@debian.org>  Fri, 30 Mar 2012 09:01:26 +0200
 
-gdk-pixbuf (2.26.0-1) experimental; urgency=low
+cdk-pixbuf (2.26.0-1) experimental; urgency=low
 
   * New upstream release.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 21 Mar 2012 01:48:57 +0100
 
-gdk-pixbuf (2.25.2-1) experimental; urgency=low
+cdk-pixbuf (2.25.2-1) experimental; urgency=low
 
   * New upstream development release.
-  * debian/libgdk-pixbuf2.0-0.symbols: Add new symbols.
-  * debian/libgdk-pixbuf2.0-dev.install: Install gdk-pixbuf-pixdata tool.
+  * debian/libcdk-pixbuf2.0-0.symbols: Add new symbols.
+  * debian/libcdk-pixbuf2.0-dev.install: Install cdk-pixbuf-pixdata tool.
   * debian/control.in: Bump Build-Depends on libglib2.0-dev to (>= 2.31.0).
 
  -- Michael Biebl <biebl@debian.org>  Sun, 04 Mar 2012 07:45:41 +0100
 
-gdk-pixbuf (2.24.1-1) unstable; urgency=low
+cdk-pixbuf (2.24.1-1) unstable; urgency=low
 
   * New upstream release.
   * Explicitly enable X11 support.
@@ -1218,7 +1218,7 @@ gdk-pixbuf (2.24.1-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Mon, 06 Feb 2012 04:39:50 +0100
 
-gdk-pixbuf (2.24.0-2) unstable; urgency=low
+cdk-pixbuf (2.24.0-2) unstable; urgency=low
 
   [ Michael Biebl ]
   * debian/watch:
@@ -1226,37 +1226,37 @@ gdk-pixbuf (2.24.0-2) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Split locales in a separate package for multiarch:
-    libgdk-pixbuf2.0-common. Make it m-a: foreign.
+    libcdk-pixbuf2.0-common. Make it m-a: foreign.
 
   [ Michael Biebl ]
-  * Change section of gir1.2-gdkpixbuf-2.0 to introspection.
+  * Change section of gir1.2-cdkpixbuf-2.0 to introspection.
 
  -- Michael Biebl <biebl@debian.org>  Wed, 14 Dec 2011 22:12:21 +0100
 
-gdk-pixbuf (2.24.0-1) unstable; urgency=low
+cdk-pixbuf (2.24.0-1) unstable; urgency=low
 
   * New upstream bug fix release.
 
  -- Martin Pitt <mpitt@debian.org>  Fri, 02 Sep 2011 12:05:31 +0200
 
-gdk-pixbuf (2.23.5-3) unstable; urgency=low
+cdk-pixbuf (2.23.5-3) unstable; urgency=low
 
   * debian/rules:
     - Trap errors in for loop using 'set -e'.
-  * debian/libgdk-pixbuf2.0-0.postinst.in:
-    - Don't hide error messages from gdk-pixbuf-query-loaders.
+  * debian/libcdk-pixbuf2.0-0.postinst.in:
+    - Don't hide error messages from cdk-pixbuf-query-loaders.
     - Handle more gracefully the case where the non-multiarch loaders
       directory is empty or doesn't exist.
 
  -- Michael Biebl <biebl@debian.org>  Thu, 28 Jul 2011 18:18:06 +0200
 
-gdk-pixbuf (2.23.5-2) unstable; urgency=low
+cdk-pixbuf (2.23.5-2) unstable; urgency=low
 
   [ Steve Langasek ]
   * Multiarch support. (Closes: #632354)
 
   [ Michael Biebl ]
-  * debian/libgdk-pixbuf2.0-dev.install:
+  * debian/libcdk-pixbuf2.0-dev.install:
     - Don't ship libtool .la file as this breaks multiarch.
   * debian/control.in:
     - Change Build-Depends on libjpeg62-dev to libjpeg-dev in preparation of
@@ -1264,7 +1264,7 @@ gdk-pixbuf (2.23.5-2) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Sat, 16 Jul 2011 01:25:32 +0200
 
-gdk-pixbuf (2.23.5-1) unstable; urgency=low
+cdk-pixbuf (2.23.5-1) unstable; urgency=low
 
   * New upstream release.
   * debian/watch: Switch to .bz2 tarballs.
@@ -1276,7 +1276,7 @@ gdk-pixbuf (2.23.5-1) unstable; urgency=low
 
  -- Michael Biebl <biebl@debian.org>  Sat, 02 Jul 2011 00:45:36 +0200
 
-gdk-pixbuf (2.23.3-3.1) unstable; urgency=high
+cdk-pixbuf (2.23.3-3.1) unstable; urgency=high
 
   * Non-maintainer upload by the Security Team.
   * Fix improper check of gif_main_loop() resulting in DoS conditions
@@ -1284,26 +1284,26 @@ gdk-pixbuf (2.23.3-3.1) unstable; urgency=high
 
  -- Nico Golde <nion@debian.org>  Tue, 28 Jun 2011 21:59:16 +0200
 
-gdk-pixbuf (2.23.3-3) unstable; urgency=low
+cdk-pixbuf (2.23.3-3) unstable; urgency=low
 
   * Move the mime.cache generation from gtk+ udebs to this one, since
-    this file is actually needed for gdk_pixbuf.
+    this file is actually needed for cdk_pixbuf.
   * Add related build-dependencies on shared-mime-info and xsltproc.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 18:04:19 +0200
 
-gdk-pixbuf (2.23.3-2) unstable; urgency=low
+cdk-pixbuf (2.23.3-2) unstable; urgency=low
 
   * Upload to unstable.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 10 Apr 2011 15:27:42 +0200
 
-gdk-pixbuf (2.23.3-1) experimental; urgency=low
+cdk-pixbuf (2.23.3-1) experimental; urgency=low
 
   [ Laurent Bigonville ]
   * New Upstream release
     - Bump libglib2.0-dev build-dependency
-  * Make libgdk-pixbuf2.0-dev Breaks/Replaces libgtk2.0-bin (<< 2.21.3)
+  * Make libcdk-pixbuf2.0-dev Breaks/Replaces libgtk2.0-bin (<< 2.21.3)
     (Closes: #612580)
   * debian/control.in, debian/rules: Rely on cdbs to call dh_girepository
 
@@ -1313,17 +1313,17 @@ gdk-pixbuf (2.23.3-1) experimental; urgency=low
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 05 Apr 2011 11:21:38 +0200
 
-gdk-pixbuf (2.23.0-2) experimental; urgency=low
+cdk-pixbuf (2.23.0-2) experimental; urgency=low
 
   * Re-add .la files, too much other packages are still referencing it.
     (Closes: #607000, LP: #665768)
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 04 Jan 2011 20:54:56 +0100
 
-gdk-pixbuf (2.23.0-1) experimental; urgency=low
+cdk-pixbuf (2.23.0-1) experimental; urgency=low
 
   * New upstream development release.
-    - debian/libgdk-pixbuf2.0-0.symbols:
+    - debian/libcdk-pixbuf2.0-0.symbols:
       + Updated.
   * debian/rules:
     - Blindly bump the shlibs version. We've got a symbols file anyway and
@@ -1332,31 +1332,31 @@ gdk-pixbuf (2.23.0-1) experimental; urgency=low
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 24 Dec 2010 20:10:44 +0000
 
-gdk-pixbuf (2.22.1-4) experimental; urgency=low
+cdk-pixbuf (2.22.1-4) experimental; urgency=low
 
   * Update to the new gir policy:
-    - Rename gir1.0-gdkpixbuf-2.0 to gir1.2-gdkpixbuf-2.0.
+    - Rename gir1.0-cdkpixbuf-2.0 to gir1.2-cdkpixbuf-2.0.
     - Bump the gobject-introspection build dependency.
     - Build depend on gir1.2 packages.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 11 Dec 2010 19:24:49 +0100
 
-gdk-pixbuf (2.22.1-3) experimental; urgency=low
+cdk-pixbuf (2.22.1-3) experimental; urgency=low
 
   * debian/control.in:
     - Add Replaces: gir-repository-dev for
-      libgdk-pixbuf2.0-dev package (Closes: #605734)
+      libcdk-pixbuf2.0-dev package (Closes: #605734)
     - Use Breaks instead of Conflicts when required
 
  -- Laurent Bigonville <bigon@debian.org>  Sun, 05 Dec 2010 19:04:56 +0100
 
-gdk-pixbuf (2.22.1-2) experimental; urgency=low
+cdk-pixbuf (2.22.1-2) experimental; urgency=low
 
   * debian/watch: Fix URL pattern
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 23 Nov 2010 20:36:29 +0100
 
-gdk-pixbuf (2.22.1-1) experimental; urgency=low
+cdk-pixbuf (2.22.1-1) experimental; urgency=low
 
   [ Emilio Pozuelo Monfort ]
   * Add a gir package, based on the Ubuntu changes.
@@ -1368,20 +1368,20 @@ gdk-pixbuf (2.22.1-1) experimental; urgency=low
     - Bump Standards-Version to 3.9.1 (no further changes)
     - Use Debian GNOME Maintainers team as Maintainer
     - Add Vcs-Svn and Vcs-Browser fields
-    - Add dependency against libpng12-dev on libgdk-pixbuf2.0-dev package
+    - Add dependency against libpng12-dev on libcdk-pixbuf2.0-dev package
       (as required by the .pc file)
   * debian/rules: Pass --enable-introspection to configure
-  * debian/libgdk-pixbuf2.0-dev.install: Install .gir file
+  * debian/libcdk-pixbuf2.0-dev.install: Install .gir file
 
  -- Laurent Bigonville <bigon@debian.org>  Mon, 22 Nov 2010 19:14:29 +0100
 
-gdk-pixbuf (2.22.0-1) experimental; urgency=low
+cdk-pixbuf (2.22.0-1) experimental; urgency=low
 
   * New upstream stable release.
 
  -- Sebastian Dröge <slomo@debian.org>  Tue, 21 Sep 2010 20:49:40 +0200
 
-gdk-pixbuf (2.21.7-1) experimental; urgency=low
+cdk-pixbuf (2.21.7-1) experimental; urgency=low
 
   * New upstream development release:
     + debian/patches/041_ia32-libs.patch:
@@ -1389,7 +1389,7 @@ gdk-pixbuf (2.21.7-1) experimental; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Fri, 10 Sep 2010 15:41:43 +0200
 
-gdk-pixbuf (2.21.6-2) experimental; urgency=low
+cdk-pixbuf (2.21.6-2) experimental; urgency=low
 
   * debian/control.in:
     + Add Breaks for libwmf0.2-7 (<< 0.2.8.4-7) and librsvg2-2 (<< 2.26.3-2)
@@ -1397,7 +1397,7 @@ gdk-pixbuf (2.21.6-2) experimental; urgency=low
 
  -- Sebastian Dröge <slomo@debian.org>  Fri, 23 Jul 2010 07:49:08 +0200
 
-gdk-pixbuf (2.21.6-1) experimental; urgency=low
+cdk-pixbuf (2.21.6-1) experimental; urgency=low
 
   [ Robert Ancell ]
   * Initial release
@@ -1407,25 +1407,25 @@ gdk-pixbuf (2.21.6-1) experimental; urgency=low
     + Fix GTK+2.0 replaces/conflicts versions to << 2.21.3.
     + Rename packages to include the 2.0 API version.
   * debian/rules,
-    debian/libgdk-pixbuf2.0-0.symbols:
+    debian/libcdk-pixbuf2.0-0.symbols:
     + Add symbols file and pass correct parameters to dh_makeshlibs.
   * debian/copyright:
     + Update with all copyright holders.
   * debian/control.in,
     debian/rules,
-    debian/libgdk-pixbuf2.0-0-udeb.install:
+    debian/libcdk-pixbuf2.0-0-udeb.install:
     + Add udeb package.
   * debian/rules:
     + Enable libjasper JPEG2000 loader.
   * debian/rules:
     + Generate loader files for the udeb.
-  * debian/libgdk-pixbuf2.0-0.triggers,
-    debian/libgdk-pixbuf2.0-0.postinst,
-    debian/libgdk-pixbuf2.0-0.postrm:
+  * debian/libcdk-pixbuf2.0-0.triggers,
+    debian/libcdk-pixbuf2.0-0.postinst,
+    debian/libcdk-pixbuf2.0-0.postrm:
     + Use triggers for the pixbuf loaders.
-  * debian/libgdk-pixbuf2.0-0.install,
-    debian/libgdk-pixbuf2.0-dev.links:
-    + Put gdk-pixbuf-query-loaders into a versioned directory
+  * debian/libcdk-pixbuf2.0-0.install,
+    debian/libcdk-pixbuf2.0-dev.links:
+    + Put cdk-pixbuf-query-loaders into a versioned directory
       and put a link to it for /usr/bin into the -dev package.
     + Move manpage into the -dev package too.
   * debian/control.in,

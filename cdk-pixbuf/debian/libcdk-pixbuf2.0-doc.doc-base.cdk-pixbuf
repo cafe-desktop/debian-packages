@@ -1,4 +1,4 @@
-Document: gdk-pixbuf
+Document: cdk-pixbuf
 Title: GdkPixbuf-2.0 Reference Manual
 Author: GTK Development Team
 Abstract: The GDK Pixbuf library provides image loading and saving facilities,
@@ -6,5 +6,5 @@ Abstract: The GDK Pixbuf library provides image loading and saving facilities,
 Section: Programming/C
 
 Format: HTML
-Index: /usr/share/doc/libgdk-pixbuf2.0-doc/html/gdk-pixbuf/index.html
-Files: /usr/share/doc/libgdk-pixbuf2.0-doc/html/gdk-pixbuf/*.html
+Index: /usr/share/doc/libcdk-pixbuf2.0-doc/html/cdk-pixbuf/index.html
+Files: /usr/share/doc/libcdk-pixbuf2.0-doc/html/cdk-pixbuf/*.html

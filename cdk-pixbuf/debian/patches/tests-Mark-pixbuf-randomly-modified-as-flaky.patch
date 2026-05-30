@@ -4,11 +4,11 @@ Subject: tests: Mark pixbuf-randomly-modified as flaky
 
 This is basically a crude fuzzer. It isn't really suitable for
 build-time acceptance testing, since it frequently produces images for
-which gdk-pixbuf will try to allocate more memory than is available,
+which cdk-pixbuf will try to allocate more memory than is available,
 but if it does, it isn't straightforward to capture the failing image
 from an autobuilder that only records build logs.
 
-Bug: https://gitlab.gnome.org/GNOME/gdk-pixbuf/-/issues/146
+Bug: https://gitlab.gnome.org/GNOME/cdk-pixbuf/-/issues/146
 Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=942124
 Signed-off-by: Simon McVittie <smcv@debian.org>
 ---

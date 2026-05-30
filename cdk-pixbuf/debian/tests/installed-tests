@@ -2,14 +2,14 @@
 
 set -eu
 
-namespace=gdk-pixbuf/
+namespace=cdk-pixbuf/
 
 # Deliberately word-splitting:
 # shellcheck disable=SC2046
 set -- $(
     gnome-desktop-testing-runner -l "$namespace" |
     cut -f1 -d' ' |
-    grep -v '^gdk-pixbuf/pixbuf-randomly-modified\.test$'
+    grep -v '^cdk-pixbuf/pixbuf-randomly-modified\.test$'
 )
 
 if [ -z "$*" ]; then

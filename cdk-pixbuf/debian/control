@@ -1,4 +1,4 @@
-Source: gdk-pixbuf
+Source: cdk-pixbuf
 Section: libs
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>,
@@ -24,17 +24,17 @@ Build-Depends: debhelper-compat (= 13),
                xsltproc <!noudeb>
 Standards-Version: 4.7.3
 Homepage: https://www.gtk.org/
-Vcs-Git: https://salsa.debian.org/gnome-team/gdk-pixbuf.git
-Vcs-Browser: https://salsa.debian.org/gnome-team/gdk-pixbuf
+Vcs-Git: https://salsa.debian.org/gnome-team/cdk-pixbuf.git
+Vcs-Browser: https://salsa.debian.org/gnome-team/cdk-pixbuf
 
-Package: libgdk-pixbuf-2.0-0
+Package: libcdk-pixbuf-2.0-0
 Architecture: any
 Depends: glycin-thumbnailers (>= 2.0.8) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x],
-         libgdk-pixbuf2.0-common (>= ${source:Version}),
+         libcdk-pixbuf2.0-common (>= ${source:Version}),
          shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: libgdk-pixbuf2.0-bin [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x]
+Recommends: libcdk-pixbuf2.0-bin [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x]
 Multi-Arch: same
 Description: GDK Pixbuf library
  The GDK Pixbuf library provides:
@@ -42,7 +42,7 @@ Description: GDK Pixbuf library
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
 
-Package: libgdk-pixbuf2.0-bin
+Package: libcdk-pixbuf2.0-bin
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Multi-Arch: foreign
@@ -55,7 +55,7 @@ Description: GDK Pixbuf library (thumbnailer)
  This package contains the GDK pixdata compression utility, the thumbnailer
  and a utility for converting images into C code.
 
-Package: libgdk-pixbuf2.0-common
+Package: libcdk-pixbuf2.0-common
 Architecture: all
 Depends: ${misc:Depends}
 Multi-Arch: foreign
@@ -63,13 +63,13 @@ Description: GDK Pixbuf library - data files
  This package contains the common files and translations for the GDK
  Pixbuf library.
 
-Package: libgdk-pixbuf-2.0-dev
+Package: libcdk-pixbuf-2.0-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: gir1.2-gdkpixbuf-2.0 (= ${binary:Version}),
-         libgdk-pixbuf-2.0-0 (= ${binary:Version}),
-         libgdk-pixbuf2.0-bin (= ${binary:Version}),
+Depends: gir1.2-cdkpixbuf-2.0 (= ${binary:Version}),
+         libcdk-pixbuf-2.0-0 (= ${binary:Version}),
+         libcdk-pixbuf2.0-bin (= ${binary:Version}),
          libglib2.0-dev,
          libglycin-2-dev (>= 2.0.8) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x],
          libjpeg-dev [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x],
@@ -88,7 +88,7 @@ Description: GDK Pixbuf library (development files)
  .
  This package contains the header files which are needed for using GDK Pixbuf.
 
-Package: libgdk-pixbuf2.0-doc
+Package: libcdk-pixbuf2.0-doc
 Section: doc
 Architecture: all
 Multi-Arch: foreign
@@ -103,12 +103,12 @@ Description: GDK Pixbuf library (documentation)
  This package contains the HTML documentation for the GDK Pixbuf library
  in /usr/share/doc/libgtk2.0-doc/ .
 
-Package: libgdk-pixbuf2.0-0-udeb
+Package: libcdk-pixbuf2.0-0-udeb
 Build-Profiles: <!noudeb>
 Package-Type: udeb
 Section: debian-installer
 Architecture: any
-Depends: libgdk-pixbuf-2.0-0-udeb (= ${binary:Version}),
+Depends: libcdk-pixbuf-2.0-0-udeb (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Description: GDK Pixbuf library - minimal runtime
@@ -119,9 +119,9 @@ Description: GDK Pixbuf library - minimal runtime
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
  .
- This transitional package depends on libgdk-pixbuf-2.0-0-udeb.
+ This transitional package depends on libcdk-pixbuf-2.0-0-udeb.
 
-Package: libgdk-pixbuf-2.0-0-udeb
+Package: libcdk-pixbuf-2.0-0-udeb
 Build-Profiles: <!noudeb>
 Package-Type: udeb
 Section: debian-installer
@@ -138,7 +138,7 @@ Description: GDK Pixbuf library - minimal runtime
  This package contains the minimal runtime library needed by
  the Debian installer.
 
-Package: gir1.2-gdkpixbuf-2.0
+Package: gir1.2-cdkpixbuf-2.0
 Section: introspection
 Architecture: any
 Multi-Arch: same
@@ -153,9 +153,9 @@ Description: GDK Pixbuf library - GObject-Introspection
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
-Package: gdk-pixbuf-tests
+Package: cdk-pixbuf-tests
 Architecture: any
-Depends: libgdk-pixbuf-2.0-0 (= ${binary:Version}),
+Depends: libcdk-pixbuf-2.0-0 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Description: installed tests for the GDK Pixbuf library

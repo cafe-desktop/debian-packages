@@ -7,7 +7,7 @@ include /usr/share/dpkg/architecture.mk
 
 built_binaries := $(shell dh_listpackages)
 
-ifneq (,$(filter libgdk-pixbuf2.0-doc,$(built_binaries)))
+ifneq (,$(filter libcdk-pixbuf2.0-doc,$(built_binaries)))
   BUILD_DOCS:=-Ddocumentation=true
 else
   BUILD_DOCS:=-Ddocumentation=false
@@ -70,9 +70,9 @@ mimedir := debian/build-mime
 mimexml := /usr/share/mime/packages/freedesktop.org.xml
 
 infiles := \
-	libgdk-pixbuf-2.0-0.triggers \
-	libgdk-pixbuf-2.0-0.postinst \
-	libgdk-pixbuf-2.0-0.postrm
+	libcdk-pixbuf-2.0-0.triggers \
+	libcdk-pixbuf-2.0-0.postinst \
+	libcdk-pixbuf-2.0-0.postrm
 
 override_dh_auto_test:
 	dh_auto_test -- --timeout-multiplier 5 --no-suite=flaky
@@ -90,19 +90,19 @@ ifneq ($(filter %-udeb,$(built_binaries)),)
 	xsltproc -nonet debian/keep-png-only.xsl $(mimexml) \
 		> $(mimedir)/packages/png.freedesktop.org.xml
 	update-mime-database $(mimedir)
-	install -m 0644 -D $(mimedir)/mime.cache debian/libgdk-pixbuf-2.0-0-udeb/usr/share/mime/mime.cache
+	install -m 0644 -D $(mimedir)/mime.cache debian/libcdk-pixbuf-2.0-0-udeb/usr/share/mime/mime.cache
 	# an empty loaders cache, everything we need for d-i is built-in
-	mkdir -p debian/libgdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0/2.10.0
-	touch debian/libgdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0/2.10.0/loaders.cache
-	chmod 0644 debian/libgdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0/2.10.0/loaders.cache
+	mkdir -p debian/libcdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0
+	touch debian/libcdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache
+	chmod 0644 debian/libcdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache
 	rm -f debian/tmp-udeb/usr/lib/*/libgtk_pixbuf-2.0.so
 	rm -fr debian/tmp-udeb/usr/lib/*/pkgconfig
-	dh_install -plibgdk-pixbuf-2.0-0-udeb --sourcedir=debian/tmp-udeb
+	dh_install -plibcdk-pixbuf-2.0-0-udeb --sourcedir=debian/tmp-udeb
 endif
 	dh_install --remaining-packages
 
 override_dh_makeshlibs-arch:
-	dh_makeshlibs -plibgdk-pixbuf-2.0-0 --add-udeb=libgdk-pixbuf-2.0-0-udeb -X "/usr/lib/$(DEB_HOST_MULTIARCH)/gdk-pixbuf-2.0" -V -- -c4
+	dh_makeshlibs -plibcdk-pixbuf-2.0-0 --add-udeb=libcdk-pixbuf-2.0-0-udeb -X "/usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0" -V -- -c4
 	dh_makeshlibs --remaining-packages -V -- -c4
 
 override_dh_missing:
@@ -124,7 +124,7 @@ override_dh_gnome_clean:
 override_dh_builddeb:
 	# on Ubuntu PNGs are optimised using 'optipng', but the (installed)
 	# testsuite relies on them being unmangled
-	NO_PNG_PKG_MANGLE=1 dh_builddeb -pgdk-pixbuf-tests
+	NO_PNG_PKG_MANGLE=1 dh_builddeb -pcdk-pixbuf-tests
 	dh_builddeb --remaining-packages
 
 override_dh_strip_nondeterminism:
@@ -136,7 +136,7 @@ override_dh_fixperms:
 	dh_fixperms -Xusr/libexec/installed-tests
 ifneq ($(filter %-tests,$(built_binaries)),)
 	chmod --changes --recursive a+rX,u+w,og-w debian/*-tests/usr/libexec/installed-tests
-	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/gdk-pixbuf/*.gif
-	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/gdk-pixbuf/*.jpg
-	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/gdk-pixbuf/*.png
+	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/cdk-pixbuf/*.gif
+	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/cdk-pixbuf/*.jpg
+	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/cdk-pixbuf/*.png
 endif

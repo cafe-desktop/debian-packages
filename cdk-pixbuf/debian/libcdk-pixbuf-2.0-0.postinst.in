@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-LOADERS_DIR=/usr/lib/#MULTIARCH#/gdk-pixbuf-2.0/2.10.0/loaders
-LOADERS_DIR_OLD=/usr/lib/gdk-pixbuf-2.0/2.10.0/loaders
+LOADERS_DIR=/usr/lib/#MULTIARCH#/cdk-pixbuf-2.0/2.10.0/loaders
+LOADERS_DIR_OLD=/usr/lib/cdk-pixbuf-2.0/2.10.0/loaders
 
 if [ "$1" = triggered ]; then
     for trigger in $2; do
@@ -13,9 +13,9 @@ if [ "$1" = triggered ]; then
           $LOADERS_DIR|$LOADERS_DIR_OLD)
             # This is triggered everytime an application installs a
             # GdkPixbuf loader
-            /usr/lib/#MULTIARCH#/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders \
+            /usr/lib/#MULTIARCH#/cdk-pixbuf-2.0/cdk-pixbuf-query-loaders \
                 $(find $LOADERS_DIR $LOADERS_DIR_OLD -name *.so 2> /dev/null | LC_ALL=C sort) \
-            > /usr/lib/#MULTIARCH#/gdk-pixbuf-2.0/2.10.0/loaders.cache || true
+            > /usr/lib/#MULTIARCH#/cdk-pixbuf-2.0/2.10.0/loaders.cache || true
             ;;
         esac
     done
@@ -27,7 +27,7 @@ fi
 
 # Also handle the initial installation
 if [ -d $LOADERS_DIR ] || [ -d $LOADERS_DIR_OLD ]; then
-    /usr/lib/#MULTIARCH#/gdk-pixbuf-2.0/gdk-pixbuf-query-loaders \
+    /usr/lib/#MULTIARCH#/cdk-pixbuf-2.0/cdk-pixbuf-query-loaders \
         $(find $LOADERS_DIR $LOADERS_DIR_OLD -name *.so 2> /dev/null | LC_ALL=C sort) \
-    > /usr/lib/#MULTIARCH#/gdk-pixbuf-2.0/2.10.0/loaders.cache || true
+    > /usr/lib/#MULTIARCH#/cdk-pixbuf-2.0/2.10.0/loaders.cache || true
 fi

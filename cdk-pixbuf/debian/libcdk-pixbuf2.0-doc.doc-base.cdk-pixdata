@@ -1,4 +1,4 @@
-Document: gdk-pixdata
+Document: cdk-pixdata
 Title: GdkPixdata-2.0 Reference Manual
 Author: GTK Development Team
 Abstract: GdkPixdata is a deprecated pixel buffer format used to embed
@@ -8,5 +8,5 @@ Abstract: GdkPixdata is a deprecated pixel buffer format used to embed
 Section: Programming/C
 
 Format: HTML
-Index: /usr/share/doc/libgdk-pixbuf2.0-doc/html/gdk-pixdata/index.html
-Files: /usr/share/doc/libgdk-pixbuf2.0-doc/html/gdk-pixdata/*.html
+Index: /usr/share/doc/libcdk-pixbuf2.0-doc/html/cdk-pixdata/index.html
+Files: /usr/share/doc/libcdk-pixbuf2.0-doc/html/cdk-pixdata/*.html

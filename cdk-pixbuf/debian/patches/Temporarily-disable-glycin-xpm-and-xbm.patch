@@ -5,15 +5,15 @@ Subject: Temporarily disable glycin xpm and xbm
 These require glycin 2.1; keep using the native loaders until we can ship
 glycin 2.1.
 ---
- gdk-pixbuf/gdk-pixbuf-io.c | 2 --
- gdk-pixbuf/meson.build     | 2 --
+ cdk-pixbuf/cdk-pixbuf-io.c | 2 --
+ cdk-pixbuf/meson.build     | 2 --
  2 files changed, 4 deletions(-)
 
-diff --git a/gdk-pixbuf/gdk-pixbuf-io.c b/gdk-pixbuf/gdk-pixbuf-io.c
+diff --git a/cdk-pixbuf/cdk-pixbuf-io.c b/cdk-pixbuf/cdk-pixbuf-io.c
 index 5a79864..1cde69e 100644
---- a/gdk-pixbuf/gdk-pixbuf-io.c
-+++ b/gdk-pixbuf/gdk-pixbuf-io.c
-@@ -819,8 +819,6 @@ gdk_pixbuf_load_module_unlocked (GdkPixbufModule *image_module,
+--- a/cdk-pixbuf/cdk-pixbuf-io.c
++++ b/cdk-pixbuf/cdk-pixbuf-io.c
+@@ -819,8 +819,6 @@ cdk_pixbuf_load_module_unlocked (GdkPixbufModule *image_module,
          try_module (tga,     glycin_tga);
          try_module (tiff,    glycin_tiff);
          try_module (webp,    glycin_webp);
@@ -22,10 +22,10 @@ index 5a79864..1cde69e 100644
  #endif
  #ifdef INCLUDE_android
  	try_module (jpeg,android_jpeg);
-diff --git a/gdk-pixbuf/meson.build b/gdk-pixbuf/meson.build
+diff --git a/cdk-pixbuf/meson.build b/cdk-pixbuf/meson.build
 index 1b36838..f334320 100644
---- a/gdk-pixbuf/meson.build
-+++ b/gdk-pixbuf/meson.build
+--- a/cdk-pixbuf/meson.build
++++ b/cdk-pixbuf/meson.build
 @@ -234,8 +234,6 @@ if enabled_loaders.contains('glycin')
      'tga',
      'tiff',
