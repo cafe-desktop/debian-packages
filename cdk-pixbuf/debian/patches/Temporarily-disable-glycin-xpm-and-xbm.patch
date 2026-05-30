@@ -13,7 +13,7 @@ diff --git a/cdk-pixbuf/cdk-pixbuf-io.c b/cdk-pixbuf/cdk-pixbuf-io.c
 index 5a79864..1cde69e 100644
 --- a/cdk-pixbuf/cdk-pixbuf-io.c
 +++ b/cdk-pixbuf/cdk-pixbuf-io.c
-@@ -819,8 +819,6 @@ cdk_pixbuf_load_module_unlocked (GdkPixbufModule *image_module,
+@@ -819,8 +819,6 @@ cdk_pixbuf_load_module_unlocked (CdkPixbufModule *image_module,
          try_module (tga,     glycin_tga);
          try_module (tiff,    glycin_tiff);
          try_module (webp,    glycin_webp);

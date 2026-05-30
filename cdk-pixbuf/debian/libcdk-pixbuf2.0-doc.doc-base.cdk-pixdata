@@ -1,7 +1,7 @@
 Document: cdk-pixdata
-Title: GdkPixdata-2.0 Reference Manual
+Title: CdkPixdata-2.0 Reference Manual
 Author: GTK Development Team
-Abstract: GdkPixdata is a deprecated pixel buffer format used to embed
+Abstract: CdkPixdata is a deprecated pixel buffer format used to embed
  uncompressed images into libraries and executables.
  New code should use GResource to embed images in their compressed form
  instead.

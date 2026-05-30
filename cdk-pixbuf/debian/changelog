@@ -497,7 +497,7 @@ cdk-pixbuf (2.38.1+dfsg-1) unstable; urgency=medium
     - Speed up saving PNG files
   * Drop upstream patches.
      - Use-basename-instead-of-filename.patch,
-       build-Include-cdk-pixdata.c-when-building-GdkPixbuf-2.0.g.patch:
+       build-Include-cdk-pixdata.c-when-building-CdkPixbuf-2.0.g.patch:
        Included in this release
 
  -- Iain Lane <laney@debian.org>  Mon, 04 Mar 2019 14:31:35 +0000
@@ -536,7 +536,7 @@ cdk-pixbuf (2.38.0+dfsg-5) unstable; urgency=medium
     dh_auto_test normally does that for us
 
   [ Iain Lane ]
-  * Add new patch to include cdk-pixdata.c when building the GdkPixbuf gir.
+  * Add new patch to include cdk-pixdata.c when building the CdkPixbuf gir.
     This fixes broken introspection metadata that at least would have broken
     libgtk3-perl. (Closes: #908673)
 
@@ -581,12 +581,12 @@ cdk-pixbuf (2.38.0+dfsg-1) unstable; urgency=medium
     - Deprecate CDK_INTERP_HYPER
     - Drop Autotools build and move to Meson
     - Drop the MMX assembly optimizations for pixops
-    - Ensure that GdkPixbuf's storage is safely handled
-    - Expose the dimensions of the original image from GdkPixbufLoader
+    - Ensure that CdkPixbuf's storage is safely handled
+    - Expose the dimensions of the original image from CdkPixbufLoader
     - Fix documentation building with X11 disabled
     - Fix introspection annotations
     - Fix OOB error when dithering
-    - Generate separate introspection data for GdkPixdata API
+    - Generate separate introspection data for CdkPixdata API
     - Improve compatibility for the post-install script
     - Improve thumbnailer implementation
     - Make X11 a dependency if the `x11` build option is enabled
@@ -608,7 +608,7 @@ cdk-pixbuf (2.38.0+dfsg-1) unstable; urgency=medium
     private header and weren't meant to be exported. codesearch.d.n shows no
     external users.
   * Bump Standards-Version to 4.2.1 (no changes required)
-  * Add Lintian overrides for warnings about GdkPixdata introspection data.
+  * Add Lintian overrides for warnings about CdkPixdata introspection data.
     It's intentional that this is in gir1.2-cdkpixbuf-2.0
 
  -- Iain Lane <laney@debian.org>  Fri, 07 Sep 2018 14:45:00 +0100
@@ -992,7 +992,7 @@ cdk-pixbuf (2.31.2-1) experimental; urgency=medium
   * debian/watch: Update to find unstable versions too.
   * New upstream release 2.31.2
     + API changes:
-      - Deprecate GdkPixdata
+      - Deprecate CdkPixdata
       - Add cdk_pixbuf_get_options() helper to list set options
       - Annotations fixes for various functions
       - Remove incorrect info about area-prepared signal

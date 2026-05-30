@@ -1,5 +1,5 @@
 usr/include/cdk-pixbuf-2.0/cdk-pixbuf
 usr/lib/*/libcdk_pixbuf-2.0.so
 usr/lib/*/pkgconfig/cdk-pixbuf-2.0.pc
-usr/share/gir-1.0/GdkPixbuf-2.0.gir
-usr/share/gir-1.0/GdkPixdata-2.0.gir
+usr/share/gir-1.0/CdkPixbuf-2.0.gir
+usr/share/gir-1.0/CdkPixdata-2.0.gir

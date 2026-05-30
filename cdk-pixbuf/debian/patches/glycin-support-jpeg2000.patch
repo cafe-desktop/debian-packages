@@ -37,7 +37,7 @@ index 1cde69e..db8df52 100644
  module (glycin_jxl);
  module (glycin_openexr);
  module (glycin_png);
-@@ -809,6 +811,7 @@ cdk_pixbuf_load_module_unlocked (GdkPixbufModule *image_module,
+@@ -809,6 +811,7 @@ cdk_pixbuf_load_module_unlocked (CdkPixbufModule *image_module,
          try_module (heic,    glycin_heic);
          try_module (ico,     glycin_ico);
          try_module (jpeg,    glycin_jpeg);
@@ -70,11 +70,11 @@ index a8593d1..ba0a2c7 100644
 +#define MODULE_ENTRY(function) void _cdk_pixbuf__glycin_jpeg2000_ ## function
  #endif
  
- MODULE_ENTRY (fill_vtable) (GdkPixbufModule *module)
-@@ -37,20 +40,25 @@ MODULE_ENTRY (fill_vtable) (GdkPixbufModule *module)
- MODULE_ENTRY (fill_info) (GdkPixbufFormat *info)
+ MODULE_ENTRY (fill_vtable) (CdkPixbufModule *module)
+@@ -37,20 +40,25 @@ MODULE_ENTRY (fill_vtable) (CdkPixbufModule *module)
+ MODULE_ENTRY (fill_info) (CdkPixbufFormat *info)
  {
-   static const GdkPixbufModulePattern signature[] = {
+   static const CdkPixbufModulePattern signature[] = {
 +    { "    jP", "!!!!  ", 100 },		/* file begins with 'jP' at offset 4 */
 +    { "\xff\x4f\xff\x51\x00", NULL, 100 },	/* file starts with FF 4F FF 51 00 */
      { NULL, NULL, 0 }
@@ -95,7 +95,7 @@ index a8593d1..ba0a2c7 100644
  
 -  info->name = "dds";
 +  info->name = "jpeg2000";
-   info->signature = (GdkPixbufModulePattern *) signature;
+   info->signature = (CdkPixbufModulePattern *) signature;
 -  info->description = "DDS";
 +  info->description = "JPEG 2000";
    info->mime_types = (gchar **) mime_types;
