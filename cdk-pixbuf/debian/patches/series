@@ -1,7 +1,0 @@
-Skip-test-for-GNOME-753605.patch
-tests-Mark-pixbuf-randomly-modified-as-flaky.patch
-debian_queryloader_dir.patch
-build-Enable-all-builtin-loaders.patch
-tests-Do-not-accidentally-query-loaders-from-the-host.patch
-Temporarily-disable-glycin-xpm-and-xbm.patch
-glycin-support-jpeg2000.patch
