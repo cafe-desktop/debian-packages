@@ -8,16 +8,14 @@ Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>,
 Build-Depends: debhelper-compat (= 13),
                dh-sequence-gir,
                dh-sequence-gnome,
-               dh-exec,
                gi-docgen,
                gir1.2-gio-2.0-dev,
                gir1.2-gmodule-2.0-dev,
                gobject-introspection (>= 1.80),
                libglib2.0-dev,
-               libglycin-2-dev (>= 2.0.8) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x],
-               libjpeg-dev [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x],
-               libpng-dev (<< 1.7) [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x],
-               libtiff-dev [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x],
+               libjpeg-dev,
+               libpng-dev (<< 1.7),
+               libtiff-dev,
                meson,
                python3-docutils <!nodoc>,
                shared-mime-info,
@@ -29,12 +27,11 @@ Vcs-Browser: https://salsa.debian.org/gnome-team/cdk-pixbuf
 
 Package: libcdk-pixbuf-2.0-0
 Architecture: any
-Depends: glycin-thumbnailers (>= 2.0.8) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x],
-         libcdk-pixbuf2.0-common (>= ${source:Version}),
+Depends: libcdk-pixbuf2.0-common (>= ${source:Version}),
          shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: libcdk-pixbuf2.0-bin [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x]
+Recommends: libcdk-pixbuf2.0-bin
 Multi-Arch: same
 Description: CDK Pixbuf library
  The CDK Pixbuf library provides:
@@ -71,10 +68,9 @@ Depends: gir1.2-cdkpixbuf-2.0 (= ${binary:Version}),
          libcdk-pixbuf-2.0-0 (= ${binary:Version}),
          libcdk-pixbuf2.0-bin (= ${binary:Version}),
          libglib2.0-dev,
-         libglycin-2-dev (>= 2.0.8) [amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x],
-         libjpeg-dev [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x],
-         libpng-dev (<< 1.7) [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x],
-         libtiff-dev [!amd64 !arm64 !armhf !i386 !loong64 !ppc64el !riscv64 !s390x],
+         libjpeg-dev,
+         libpng-dev (<< 1.7),
+         libtiff-dev,
          shared-mime-info,
          ${gir:Depends},
          ${misc:Depends},

@@ -19,25 +19,19 @@ else
   BUILD_DOCS += -Dman=false
 endif
 
-ifneq (,$(filter $(DEB_HOST_ARCH), amd64 arm64 armhf i386 loong64 ppc64el riscv64 s390x))
-  # glycin doesn't handle xbm & xpm yet #1071271
-  GLYCIN = -Dglycin=enabled -Dbuiltin_loaders=glycin,xbm,xpm
-else
-  GLYCIN = -Dglycin=disabled -Dbuiltin_loaders=png,jpeg -Dthumbnailer=enabled \
-		-Dgif=enabled -Djpeg=enabled -Dpng=enabled -Dtiff=enabled \
-		-Dothers=enabled -Dthumbnailer=enabled
-endif
-
 %:
 	dh $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		$(BUILD_DOCS) \
-		$(GLYCIN) \
 		-Dauto_features=disabled \
+		-Dbuiltin_loaders=png,jpeg \
+		-Dglycin=disabled \
 		-Dinstalled_tests=true \
 		-Dintrospection=enabled \
+		-Dothers=enabled \
+		-Dthumbnailer=enabled \
 		$(NULL)
 ifneq ($(filter %-udeb,$(built_binaries)),)
 	dh_auto_configure \
