@@ -134,3 +134,5 @@ ifneq ($(filter %-tests,$(built_binaries)),)
 	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/cdk-pixbuf/*.jpg
 	chmod --changes u=rw,og=r debian/*-tests/usr/libexec/installed-tests/cdk-pixbuf/*.png
 endif
+
+override_dh_gnome:

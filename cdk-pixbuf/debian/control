@@ -75,7 +75,6 @@ Depends: gir1.2-cdkpixbuf-2.0 (= ${binary:Version}),
          shared-mime-info,
          ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends}
 Provides: ${gir:Provides}
 Description: CDK Pixbuf library (development files)
  The CDK Pixbuf library provides:
