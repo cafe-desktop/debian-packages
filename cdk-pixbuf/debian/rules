@@ -89,7 +89,7 @@ ifneq ($(filter %-udeb,$(built_binaries)),)
 	mkdir -p debian/libcdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0
 	touch debian/libcdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache
 	chmod 0644 debian/libcdk-pixbuf-2.0-0-udeb/usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache
-	rm -f debian/tmp-udeb/usr/lib/*/libgtk_pixbuf-2.0.so
+	rm -f debian/tmp-udeb/usr/lib/*/libcdk_pixbuf-2.0.so
 	rm -fr debian/tmp-udeb/usr/lib/*/pkgconfig
 	dh_install -plibcdk-pixbuf-2.0-0-udeb --sourcedir=debian/tmp-udeb
 endif
