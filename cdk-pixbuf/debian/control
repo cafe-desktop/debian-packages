@@ -93,7 +93,7 @@ Description: CDK Pixbuf library (documentation)
   - Simple animation loading (ie. animated GIFs)
  .
  This package contains the HTML documentation for the CDK Pixbuf library
- in /usr/share/doc/libgtk2.0-doc/ .
+ in /usr/share/doc/libcdk-pixbuf2.0-doc/ .
 
 Package: libcdk-pixbuf-2.0-0-udeb
 Build-Profiles: <!noudeb>
