@@ -1,6 +1,6 @@
 Document: cdk-pixbuf
 Title: CdkPixbuf-2.0 Reference Manual
-Author: GTK Development Team
+Author: CTK Development Team
 Abstract: The CDK Pixbuf library provides image loading and saving facilities,
  fast scaling and compositing of pixel buffers, and simple animation loading.
 Section: Programming/C

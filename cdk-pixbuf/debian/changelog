@@ -1404,7 +1404,7 @@ cdk-pixbuf (2.21.6-1) experimental; urgency=low
 
   [ Sebastian Dröge ]
   * debian/control.in:
-    + Fix GTK+2.0 replaces/conflicts versions to << 2.21.3.
+    + Fix CTK+2.0 replaces/conflicts versions to << 2.21.3.
     + Rename packages to include the 2.0 API version.
   * debian/rules,
     debian/libcdk-pixbuf2.0-0.symbols:
