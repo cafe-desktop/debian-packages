@@ -100,24 +100,6 @@ Description: CDK Pixbuf library (documentation)
  This package contains the HTML documentation for the CDK Pixbuf library
  in /usr/share/doc/libgtk2.0-doc/ .
 
-Package: libcdk-pixbuf2.0-0-udeb
-Build-Profiles: <!noudeb>
-Package-Type: udeb
-Section: debian-installer
-Architecture: any
-Depends: libcdk-pixbuf-2.0-0-udeb (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Description: CDK Pixbuf library - minimal runtime
- This is a udeb, or a microdeb, for the debian-installer.
- .
- The CDK Pixbuf library provides:
-  - Image loading and saving facilities.
-  - Fast scaling and compositing of pixbufs.
-  - Simple animation loading (ie. animated GIFs)
- .
- This transitional package depends on libcdk-pixbuf-2.0-0-udeb.
-
 Package: libcdk-pixbuf-2.0-0-udeb
 Build-Profiles: <!noudeb>
 Package-Type: udeb
