@@ -1,5 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: cdk-pixbuf
+Upstream-Contact: Pablo Barciela <scow@riseup.net>
 Source: https://github.com/cafe-desktop/cdk-pixbuf
 Files-Excluded:
  tests/bug753605-atsize.jpg
