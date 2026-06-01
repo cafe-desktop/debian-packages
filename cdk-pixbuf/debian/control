@@ -1,10 +1,6 @@
 Source: cdk-pixbuf
 Section: libs
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>,
-           Iain Lane <laney@debian.org>,
-           Jeremy Bicha <jbicha@ubuntu.com>,
-           Laurent Bigonville <bigon@debian.org>
+Maintainer: Pablo Barciela <scow@riseup.net>
 Build-Depends: debhelper-compat (= 13),
                dh-sequence-gir,
                dh-sequence-gnome,
