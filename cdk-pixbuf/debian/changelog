@@ -1,3 +1,10 @@
+cdk-pixbuf (2.45.1-1) unstable; urgency=medium
+
+  * rules: remove builtin_loaders
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 06 Jun 2026 00:10:14 +0200
+
 cdk-pixbuf (2.45.0-1) unstable; urgency=medium
 
   * initial release forked from gdk-pixbuf 2.44.5+dfsg-4
