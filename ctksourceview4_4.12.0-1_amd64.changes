@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Sun, 21 Jun 2026 00:50:03 +0200
+Source: ctksourceview4
+Binary: gir1.2-ctksource-4 libctksourceview-4-0 libctksourceview-4-0-dbgsym libctksourceview-4-common libctksourceview-4-dev libctksourceview-4-doc libctksourceview-4-tests libctksourceview-4-tests-dbgsym
+Architecture: amd64 all
+Version: 4.12.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-ctksource-4 - gir files for the CTK+ syntax highlighting widget
+ libctksourceview-4-0 - shared libraries for the CTK+ syntax highlighting widget
+ libctksourceview-4-common - common files for the CTK+ syntax highlighting widget
+ libctksourceview-4-dev - development files for the CTK+ syntax highlighting widget
+ libctksourceview-4-doc - documentation for the CTK+ syntax highlighting widget
+ libctksourceview-4-tests - installed tests for the CTK+ syntax highlighting widget
+Changes:
+ ctksourceview4 (4.12.0-1) unstable; urgency=medium
+ .
+   * control: libcdk-pixbuf2.0-doc instead libgdk-pixbuf2.0-doc
+   * New upstream release
+Checksums-Sha1:
+ b148dcc930c1fd07159342da61e10a9c43a273d4 18388 ctksourceview4_4.12.0-1_amd64.buildinfo
+ f9283ab3e117b46b96b0599099a8045386022208 18792 gir1.2-ctksource-4_4.12.0-1_amd64.deb
+ d44b40f2650cfbdd4675b023c05141bd38e6771d 33524 libctksourceview-4-0-dbgsym_4.12.0-1_amd64.deb
+ 981dff8aa9b3f2acb69f97b1fd58ce3255f6564c 191844 libctksourceview-4-0_4.12.0-1_amd64.deb
+ 94270cdfbf9e38560babcc13df0243c323b3121e 337272 libctksourceview-4-common_4.12.0-1_all.deb
+ b015df1b0f47d6e5a8e1713cdafe7876fa579e90 87812 libctksourceview-4-dev_4.12.0-1_amd64.deb
+ f437a1f185c7506dc3bbd0e155e93594fa0cf5c4 121972 libctksourceview-4-doc_4.12.0-1_all.deb
+ e47d2a36dad4732d78c0a2d9bbb07d3fb99126b8 214456 libctksourceview-4-tests-dbgsym_4.12.0-1_amd64.deb
+ 9d9338d63702dc4a0a7a98d8c6b580243382997b 905888 libctksourceview-4-tests_4.12.0-1_amd64.deb
+Checksums-Sha256:
+ 9d8e775c141f30843da46296f8e9519459ad11456fa41e5e3fb76d1e27dfb487 18388 ctksourceview4_4.12.0-1_amd64.buildinfo
+ 957095421ec2fc5384534ab5828b8174224fa555235929d3db78078b53d526aa 18792 gir1.2-ctksource-4_4.12.0-1_amd64.deb
+ 40983d0197a635749a324c6834340a0d44fb70bd70f4fae744d0d5cd6a6b8b38 33524 libctksourceview-4-0-dbgsym_4.12.0-1_amd64.deb
+ 011b12ba577e8e74b04f0b41b4dcb7fd29b41709052685f486a8ada75c552ce0 191844 libctksourceview-4-0_4.12.0-1_amd64.deb
+ 137e6ba0918e1460eff7bd14421d63a9a8e6bf0cebcbdf094a6aef03c88eae55 337272 libctksourceview-4-common_4.12.0-1_all.deb
+ cd85212fac27412dafadc49adf20b508e75288aee17dbd32ed2f4584b2c50fe8 87812 libctksourceview-4-dev_4.12.0-1_amd64.deb
+ fd19af33355edb39d960c5901166040df36237454d2ba11dadb4b7563565b1df 121972 libctksourceview-4-doc_4.12.0-1_all.deb
+ dd7b4fced161877ce60ffbbd5960fb9854e402fc32c6d9efc1ade27b515d8d42 214456 libctksourceview-4-tests-dbgsym_4.12.0-1_amd64.deb
+ 21b87139349e96f0c894920edc243bc587b8ba7399e8b65670ca86e380d47757 905888 libctksourceview-4-tests_4.12.0-1_amd64.deb
+Files:
+ e6044b14c144278d6ab847a9e2d150aa 18388 libs optional ctksourceview4_4.12.0-1_amd64.buildinfo
+ 250d40e77b757cc394cecdfdae4c5e04 18792 introspection optional gir1.2-ctksource-4_4.12.0-1_amd64.deb
+ a39c98ac4d0110c8a557ede4bddd72c0 33524 debug optional libctksourceview-4-0-dbgsym_4.12.0-1_amd64.deb
+ 83f1c3a121c3a65e4c0f79796fa1c180 191844 libs optional libctksourceview-4-0_4.12.0-1_amd64.deb
+ 227ef264585a59514d623f016b3d90dd 337272 libs optional libctksourceview-4-common_4.12.0-1_all.deb
+ 11173cbab8df05bf25035dc5728a3e83 87812 libdevel optional libctksourceview-4-dev_4.12.0-1_amd64.deb
+ 712018fc203fee54d8cebb8fedaa5109 121972 doc optional libctksourceview-4-doc_4.12.0-1_all.deb
+ 9d0f8154d8cd8a20de5603aa182f44ae 214456 debug optional libctksourceview-4-tests-dbgsym_4.12.0-1_amd64.deb
+ d8b8a03800b770396ac8329c9c326a91 905888 libs optional libctksourceview-4-tests_4.12.0-1_amd64.deb

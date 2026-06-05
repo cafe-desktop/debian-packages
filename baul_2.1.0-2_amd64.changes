@@ -1,0 +1,62 @@
+Format: 1.8
+Date: Sat, 03 Jan 2026 19:15:33 +0100
+Source: baul
+Binary: baul baul-common baul-dbgsym gir1.2-baul-2.0 libbaul-extension-dev libbaul-extension-doc libbaul-extension2 libbaul-extension2-dbgsym
+Architecture: all amd64
+Version: 2.1.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ baul       - file manager for the CAFE desktop
+ baul-common - file manager for the CAFE desktop (common files)
+ gir1.2-baul-2.0 - GObject introspection data for Baul
+ libbaul-extension-dev - libraries for Baul components (development files)
+ libbaul-extension-doc - libraries for Baul components (API documentation files)
+ libbaul-extension2 - libraries for Baul components
+Changes:
+ baul (2.1.0-2) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - require debhelper-compat 13
+     - Update gir handling
+     - remove unused shlibs:Depends in gir1.2-baul-2.0
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it works by default in DH 13
+   * watch: upgrade to version 5
+   * baul: remove transitional gir1.2-baul
+Checksums-Sha1:
+ b446a5a72f23033a35adc2d39e65cd01241b066f 2318372 baul-common_2.1.0-2_all.deb
+ 855b19938f4af047486dab909c4068c7a9c49239 3773928 baul-dbgsym_2.1.0-2_amd64.deb
+ b4fe2e46938d5de6c9317f6b5612b8507088434c 17698 baul_2.1.0-2_amd64.buildinfo
+ 265485fcc004c958fbf1135e56bd03623ab7e282 817480 baul_2.1.0-2_amd64.deb
+ 27bf3d6ef2b281d1b92f70bb14b390b46e56d197 10432 gir1.2-baul-2.0_2.1.0-2_amd64.deb
+ f1f8b343dac07f9d0f16ba8a72da5fec7ea49dbb 22184 libbaul-extension-dev_2.1.0-2_amd64.deb
+ cbd584c70f6868fb03da1dae7f0e2fd422810982 27676 libbaul-extension-doc_2.1.0-2_all.deb
+ d18bde118d77ce63be38db7fc97d29df5dccd056 40848 libbaul-extension2-dbgsym_2.1.0-2_amd64.deb
+ 12c3acd7888f25cd86536be918a87853c200ebf2 18588 libbaul-extension2_2.1.0-2_amd64.deb
+Checksums-Sha256:
+ 4fd5e807e343e7d991805e77a37ecc6a85dfa88b688a3a2aa1e22cb22d21578b 2318372 baul-common_2.1.0-2_all.deb
+ fb7e51da40758841c1ea49b395a8c4e37976c5fe717c69ace906c9dfa316f5ab 3773928 baul-dbgsym_2.1.0-2_amd64.deb
+ ac6f9273e0047d395e32b8c443c3d3b4192bc11e39f5c210c39621183009270a 17698 baul_2.1.0-2_amd64.buildinfo
+ edbb8643d055d16f144bedc51fb91ef45f589383de3d19770895606444e3bcc9 817480 baul_2.1.0-2_amd64.deb
+ f345ab76f7000755e35baeb114852a4420b202dc33e973402b9a49be97f38b04 10432 gir1.2-baul-2.0_2.1.0-2_amd64.deb
+ 9a13c9ff65becdb8c494b5b76570825d1ca58dba26cb177513a17858f54beb52 22184 libbaul-extension-dev_2.1.0-2_amd64.deb
+ 974edb7fe8ca86ddc3843a64a558fce9a188df6ce5d6cac0d0adaee462c13a5f 27676 libbaul-extension-doc_2.1.0-2_all.deb
+ 24528dc0db9370b62b92d546ae9663e2fa3ed97f311ee863190f977ed077c735 40848 libbaul-extension2-dbgsym_2.1.0-2_amd64.deb
+ 8d0682cc455efc27e224d3fa1566a9958cb3254ba8a06fa2d0e1d2d62e43f0a2 18588 libbaul-extension2_2.1.0-2_amd64.deb
+Files:
+ 7bbebc6a1c8c87b152f6797d73466a9f 2318372 utils optional baul-common_2.1.0-2_all.deb
+ 9a86374c83357841f887444176520a76 3773928 debug optional baul-dbgsym_2.1.0-2_amd64.deb
+ efaf99107241ea653debd228b5a4a04e 17698 utils optional baul_2.1.0-2_amd64.buildinfo
+ 1eb7fdd0cef56213e21c4d8dd77211d7 817480 utils optional baul_2.1.0-2_amd64.deb
+ 18321f59f4c0387fd3795f8ebed92dc6 10432 introspection optional gir1.2-baul-2.0_2.1.0-2_amd64.deb
+ 1e0a0ffb05fd122f496a23c368076518 22184 libdevel optional libbaul-extension-dev_2.1.0-2_amd64.deb
+ 2cfef801042cfe6dcc083317ec60d237 27676 doc optional libbaul-extension-doc_2.1.0-2_all.deb
+ 5c4b9cb7912a59f8248ceb6a5af8956f 40848 debug optional libbaul-extension2-dbgsym_2.1.0-2_amd64.deb
+ 8bc44bcadba16b93f198ed38a54001da 18588 libs optional libbaul-extension2_2.1.0-2_amd64.deb

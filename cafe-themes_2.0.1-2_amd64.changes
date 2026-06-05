@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Tue, 28 Apr 2026 19:33:10 +0200
+Source: cafe-themes
+Binary: cafe-themes
+Architecture: all
+Version: 2.0.1-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-themes - Official themes for the CAFE desktop
+Changes:
+ cafe-themes (2.0.1-2) unstable; urgency=medium
+ .
+   * control:
+     - add Build-Depends-Indep cafe-common
+     - 'pkgconf' instead transitional 'pkg-config'
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Bump DH compat level to version 13
+     - 'ctk-icon-naming-utils' instead 'icon-naming-utils'
+     - drop 'gtk2-engines-murrine'
+     - remove old conflicts
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * Update override syntax
+Checksums-Sha1:
+ b6f476b2af4176f25ba02adbbe8d90de9fcc7cc4 5593780 cafe-themes_2.0.1-2_all.deb
+ 2dc8b55fcecae66efaccfdb681efa8d96672b40b 12793 cafe-themes_2.0.1-2_amd64.buildinfo
+Checksums-Sha256:
+ 93c39962d62c830f28184d0e9d0aa1aeb824cdefa9103d44dfcd973a8883d553 5593780 cafe-themes_2.0.1-2_all.deb
+ f949d8cd3e2dec02e27345a6748bf69fe10bd5e454ce0fbb55ec6ad7e9b52f78 12793 cafe-themes_2.0.1-2_amd64.buildinfo
+Files:
+ cce76cf26a04ff45bed99e9d4d79ca25 5593780 x11 optional cafe-themes_2.0.1-2_all.deb
+ a7527018a8c8c1e69ff1e0df90009bfc 12793 x11 optional cafe-themes_2.0.1-2_amd64.buildinfo

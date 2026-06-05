@@ -1,0 +1,76 @@
+Format: 1.8
+Date: Mon, 05 Jan 2026 18:20:01 +0100
+Source: baul-extensions
+Binary: baul-extensions-common baul-image-converter baul-image-converter-dbgsym baul-open-terminal baul-open-terminal-dbgsym baul-sendto baul-sendto-dbgsym baul-share baul-share-dbgsym baul-wallpaper baul-wallpaper-dbgsym baul-xattr-tags baul-xattr-tags-dbgsym
+Architecture: all amd64
+Version: 2.0.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ baul-extensions-common - Baul extensions (common files)
+ baul-image-converter - Baul extension to mass resize or rotate images
+ baul-open-terminal - Baul plugin for opening terminals in arbitrary local paths
+ baul-sendto - integrates email clients and Pidgin into the Baul file manager
+ baul-share - Allows one to quickly share a folder from the Baul file manager
+ baul-wallpaper - Allows one to quickly set a wallpaper from folders
+ baul-xattr-tags - Allows one to view extended attributes
+Changes:
+ baul-extensions (2.0.0-2) unstable; urgency=medium
+ .
+   * control:
+     - 'pkgconf' instead transitional 'pkg-config'
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it works by default in DH 13
+   * watch: upgrade to version 5
+   * remove lintian overrides
+Checksums-Sha1:
+ ffa485158ebced6a711c75904c05f0c25da68139 136796 baul-extensions-common_2.0.0-2_all.deb
+ 51ffbeabbfab1febc1ece2449db01ec08f257850 19698 baul-extensions_2.0.0-2_amd64.buildinfo
+ 3469a65d9378ebb9b6f2c22a9ab7cbdca63aacad 27628 baul-image-converter-dbgsym_2.0.0-2_amd64.deb
+ 09a3ee95988e214a15e45c1490df3f0b96318805 15940 baul-image-converter_2.0.0-2_amd64.deb
+ da373b4b6ae9f3e126ba32955c8fac11a2431329 24140 baul-open-terminal-dbgsym_2.0.0-2_amd64.deb
+ 2c03d69dc60d7bfa62dc385dfd9bc7f71879fd99 12612 baul-open-terminal_2.0.0-2_amd64.deb
+ ada6ccf768c5d95c14e71e06f1a188838df0720b 86644 baul-sendto-dbgsym_2.0.0-2_amd64.deb
+ 9d5eef2d8ecfee250b6fbbcde26d1acbb9870ea0 36932 baul-sendto_2.0.0-2_amd64.deb
+ e508fad66be032a11c17cee219cbfe272cffca1c 41584 baul-share-dbgsym_2.0.0-2_amd64.deb
+ 267876c952c24385beea1a8ef3c99ce44b2e35b1 20032 baul-share_2.0.0-2_amd64.deb
+ 2e096d913caaea803bd11a0b1bff339f88eb4dbc 11416 baul-wallpaper-dbgsym_2.0.0-2_amd64.deb
+ 159af8603d88b9ba547300173f6cd82edfe37765 8868 baul-wallpaper_2.0.0-2_amd64.deb
+ c6452fbdbb4eb2754e0639cedd68dacdbff9c067 11020 baul-xattr-tags-dbgsym_2.0.0-2_amd64.deb
+ e250ecf0051edcda5eea9cd2f51b037933cbfd89 8632 baul-xattr-tags_2.0.0-2_amd64.deb
+Checksums-Sha256:
+ 9850bd62af1d6045200da57491ecc799a9ad4e5cdd90e42e9c7115ec96ab9ab5 136796 baul-extensions-common_2.0.0-2_all.deb
+ b583a2c192c0d02230afdaf2056854e3234e05fca4a1ccc21bbad9c4f1f14b34 19698 baul-extensions_2.0.0-2_amd64.buildinfo
+ cc82a50b5dc8761f7d509d466d7a8a4e4194c730c551062487958f3c77981ac5 27628 baul-image-converter-dbgsym_2.0.0-2_amd64.deb
+ 5b17433a3ca68ac73a996b6ab736c29ddc17b01faf0068b0a4a72d40d9fa9848 15940 baul-image-converter_2.0.0-2_amd64.deb
+ 2b25348067b8cafcee5621a9bd1b31301420b42ef02e5e0db01a888bdac17fd6 24140 baul-open-terminal-dbgsym_2.0.0-2_amd64.deb
+ 8780bb2d9ee1744366945a003e03216efbfd31c3b39c3b6cfa07dbb1ddba559e 12612 baul-open-terminal_2.0.0-2_amd64.deb
+ 222c4bb8e9ae70e7b956fb03873fc67e777afbe1c4802e5cf0277bc34c028d7c 86644 baul-sendto-dbgsym_2.0.0-2_amd64.deb
+ cb4a606795b336ef0959443531a78bfb99e63dc58bd0387c338ffb3daf046910 36932 baul-sendto_2.0.0-2_amd64.deb
+ 624f29fb57fbca0e61bc5296d7ead33bc1073ce869965da274144345036d14d7 41584 baul-share-dbgsym_2.0.0-2_amd64.deb
+ a9394efe5045abb6b49c88718af6df77763e15ef20acb0a6eeb9acfde06f64ca 20032 baul-share_2.0.0-2_amd64.deb
+ 46adf6be3a1a612ae254d6f1009ea66e1b1c39494c2564ff15273d3c8238abb4 11416 baul-wallpaper-dbgsym_2.0.0-2_amd64.deb
+ 8ef3d4fc23365ec40b787617bb0d62d683af4dd95ce22f67316bde355ba05d55 8868 baul-wallpaper_2.0.0-2_amd64.deb
+ 6fab944b0991926a4952f476e8f8e3719492fa7246eaf320f3b2475cad5b3e1b 11020 baul-xattr-tags-dbgsym_2.0.0-2_amd64.deb
+ fdfa5318ef478b7c07e7578c075f60e742f816785beb616363d8975a3290c9e6 8632 baul-xattr-tags_2.0.0-2_amd64.deb
+Files:
+ 5c700a48295fda1bbf3efa87f3e29dda 136796 x11 optional baul-extensions-common_2.0.0-2_all.deb
+ 92f44a000b64b5cd758b9565e117cb1c 19698 x11 optional baul-extensions_2.0.0-2_amd64.buildinfo
+ 902449b39ccd6ec9fac5c35211bbaf8f 27628 debug optional baul-image-converter-dbgsym_2.0.0-2_amd64.deb
+ 4e7016658500728be8a2bad9928a712e 15940 x11 optional baul-image-converter_2.0.0-2_amd64.deb
+ 5974bc62c52d1b89942317808616889b 24140 debug optional baul-open-terminal-dbgsym_2.0.0-2_amd64.deb
+ 6f1ad2d5258ffa60cd6e6f1c472af3c6 12612 x11 optional baul-open-terminal_2.0.0-2_amd64.deb
+ 48bcd434137baa2f59643fcdbcaf9bbc 86644 debug optional baul-sendto-dbgsym_2.0.0-2_amd64.deb
+ 6b192267f56adc9e034c82800b061c0a 36932 x11 optional baul-sendto_2.0.0-2_amd64.deb
+ fff54207a674fc5d2fdbdcbe31dd13f0 41584 debug optional baul-share-dbgsym_2.0.0-2_amd64.deb
+ 3f375c3beb495323c1e4524ce234dd2d 20032 x11 optional baul-share_2.0.0-2_amd64.deb
+ e36d048da4bd550a16f900b27b5b5a6f 11416 debug optional baul-wallpaper-dbgsym_2.0.0-2_amd64.deb
+ dcfe9f37ae73504b1d2ba533f8297c71 8868 x11 optional baul-wallpaper_2.0.0-2_amd64.deb
+ e995c0da056465622042c26b2bdd281c 11020 debug optional baul-xattr-tags-dbgsym_2.0.0-2_amd64.deb
+ e2846a4ed04e3edf98fd6ca2458a20f3 8632 x11 optional baul-xattr-tags_2.0.0-2_amd64.deb
