@@ -185,6 +185,14 @@ override_dh_auto_build:
 	@echo "------ Content of loaders.cache (filtering PNG) ------"
 	@cat /usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache || echo "FILE NOT FOUND OR EMPTY!"
 	@echo "====== END DEBUG ======"
+	@echo "====== FIXING CDK-Pixbuf Loaders Cache for BUILTIN PNG ======"
+	@if ! grep -q '"png"' /usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache; then \
+	echo "PNG not in cache (it's builtin). Injecting <builtin> entry..."; \
+	printf '"" 4 "cdk-pixbuf" "PNG" "LGPL"\n"image/png" ""\n"png" ""\n"\\x89PNG" "" 100\n\n' >> /usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache; \
+	else \
+	echo "PNG loader already in cache. All good."; \
+	fi
+	@echo "====== END FIX ======"
 	( cd ctk/theme/Advaita; ./parse-sass.sh )
 	( cd ctk/theme/HighContrast; ./parse-sass.sh )
 	dh_auto_build --builddirectory=debian/build/deb
