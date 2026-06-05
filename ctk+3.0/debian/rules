@@ -181,7 +181,7 @@ endif
 
 override_dh_auto_build:
 	@echo "====== DEBUG: Checking CDK-Pixbuf Loaders Cache ======"
-	@ls -l `pkg-config --variable=gdk_pixbuf_binarydir gdk-pixbuf-2.0`/loaders
+	@ls -l `pkg-config --variable=cdk_pixbuf_binarydir cdk-pixbuf-2.0`/loaders
 	@echo "------ Content of loaders.cache (filtering PNG) ------"
 	@cat /usr/lib/$(DEB_HOST_MULTIARCH)/cdk-pixbuf-2.0/2.10.0/loaders.cache 2>/dev/null | grep -A 5 "png" || echo "FILE NOT FOUND OR EMPTY!"
 	@echo "====== END DEBUG ======"
