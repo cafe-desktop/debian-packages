@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Wed, 28 Jan 2026 11:17:04 +0100
+Source: cafe-terminal
+Binary: cafe-terminal cafe-terminal-common cafe-terminal-dbgsym
+Architecture: all amd64
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-terminal - CAFE terminal emulator application
+ cafe-terminal-common - CAFE terminal emulator application (common files)
+Changes:
+ cafe-terminal (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - add B-D libnotify-dev
+     - add perl:Depends
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it works by default in DH 13
+   * watch: upgrade to version 5
+   * copyright: Link to GNU website instead of listing FSF's old postal address
+Checksums-Sha1:
+ 9e674f3b12e9d01bfaff42672d0089f730473c03 1114880 cafe-terminal-common_2.0.0-1_all.deb
+ 8b82d62bc44b60c6b12a6d92ba58ea7c165ead1c 396604 cafe-terminal-dbgsym_2.0.0-1_amd64.deb
+ f23aa520e5a2e9c343f4253a1fda6ceacaabad0f 16220 cafe-terminal_2.0.0-1_amd64.buildinfo
+ 43fdd74d1be1be3058f8b0d27f7416e861141525 136540 cafe-terminal_2.0.0-1_amd64.deb
+Checksums-Sha256:
+ cb048f83c49279058eebd4057f008d6665e1422f8452793cdf9eab464c6ff509 1114880 cafe-terminal-common_2.0.0-1_all.deb
+ 5a59768326eb037ed35f5f76de567da83e3c5d098a26173dfa8af6f96ffa4629 396604 cafe-terminal-dbgsym_2.0.0-1_amd64.deb
+ 830c33bab46ea6686cd89fb66ffc5d6b96f58e02400224fd043b35774af1f7c1 16220 cafe-terminal_2.0.0-1_amd64.buildinfo
+ 4fbf89d4bd057e76487a55de2b8379b967b36164b3ffa6414ce655047d8ec851 136540 cafe-terminal_2.0.0-1_amd64.deb
+Files:
+ 77667537423e40382764531c75c673c6 1114880 x11 optional cafe-terminal-common_2.0.0-1_all.deb
+ 781182b4c783decb993c15ce0f9c5747 396604 debug optional cafe-terminal-dbgsym_2.0.0-1_amd64.deb
+ b5460f08d7bc0765a67dd17a942a2938 16220 x11 optional cafe-terminal_2.0.0-1_amd64.buildinfo
+ bfa95803201fb1749342cd24a82cbaf4 136540 x11 optional cafe-terminal_2.0.0-1_amd64.deb

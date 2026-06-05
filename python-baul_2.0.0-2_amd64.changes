@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Tue, 06 Jan 2026 13:54:16 +0100
+Source: python-baul
+Binary: python-baul-common python3-baul python3-baul-dbgsym
+Architecture: all amd64
+Version: 2.0.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ python-baul-common - Python binding for Baul components (common files)
+ python3-baul - Python3 binding for Baul components
+Changes:
+ python-baul (2.0.0-2) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - remove B-D libgirepository1.0-dev
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it works by default in DH 13
+   * watch: upgrade to version 5
+Checksums-Sha1:
+ 8765aab4943bfb3981254c3ca26862e8d3baff09 29320 python-baul-common_2.0.0-2_all.deb
+ f2f46e2947632fc3243afc78edbd3e132da6bed1 15478 python-baul_2.0.0-2_amd64.buildinfo
+ b599133eeb50484b1d6f6ecb665a5c243f2e1015 36268 python3-baul-dbgsym_2.0.0-2_amd64.deb
+ abe94b75dede2d1ddd8f4843edb8c2417ef688c7 12536 python3-baul_2.0.0-2_amd64.deb
+Checksums-Sha256:
+ 988ed9095061de0b616b2c4d63b043429160298f2fa1432260742047857a2ff6 29320 python-baul-common_2.0.0-2_all.deb
+ c9a576a0f9a59f9891debc6428b19307d19a195630b256d2fad1c2740c99ebf1 15478 python-baul_2.0.0-2_amd64.buildinfo
+ 6b0bbb8041b2d6ee3d7e6a059368a3e20935bb4248d58532a8eac0bfa442e80c 36268 python3-baul-dbgsym_2.0.0-2_amd64.deb
+ cc3084268c01b7713f9be7fce89d876e33e3ebdb7a22db3948b4c267682b7549 12536 python3-baul_2.0.0-2_amd64.deb
+Files:
+ 725e8712d43fd749b54a2b9be7e2aec9 29320 python optional python-baul-common_2.0.0-2_all.deb
+ 558c79e58345c79fc376e60599d85c2f 15478 python optional python-baul_2.0.0-2_amd64.buildinfo
+ a369f293670f2af5cd999818a8a947f1 36268 debug optional python3-baul-dbgsym_2.0.0-2_amd64.deb
+ d7e9d152fa8d6145208739ae4cc8e035 12536 python optional python3-baul_2.0.0-2_amd64.deb

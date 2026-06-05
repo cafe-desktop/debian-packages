@@ -1,0 +1,59 @@
+Format: 1.8
+Date: Sun, 21 Dec 2025 13:09:36 +0100
+Source: libbean
+Binary: gir1.2-bean-2.0 libbean-2.0-0 libbean-2.0-0-dbgsym libbean-common libbean-dev libbean-doc libbean-doc-dbgsym
+Architecture: amd64 all
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-bean-2.0 - Application plugin library (introspection files)
+ libbean-2.0-0 - Application plugin library
+ libbean-common - Application plugin library (common files)
+ libbean-dev - Application plugin library (development files)
+ libbean-doc - Application plugin library (documentation)
+Changes:
+ libbean (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - 'pkgconf' instead transitional 'pkg-config'
+     - Remove redundant Uploaders field
+     - Update Homepage
+   * remove glade support
+   * update dependencies to work with pygobject >= 3.52
+   * rename gir1.2-beanctk-1.0 -> gir1.2-beanctk-2.0
+   * rename libbean-ctk-1.0 -> libbean-ctk-2.0
+   * watch: upgrade to version 5
+   * Stop using debian/control.in
+   * Update gir packaging
+   * Fix symbols-file-contains-current-version-with-debian-revision lintian warning
+   * New upstream release
+Checksums-Sha1:
+ 4d843297ea1620ffb345d17f292214bc3f19a846 6384 gir1.2-bean-2.0_2.1.0-1_amd64.deb
+ c76a6cecb1840503b969c13b97605afc2f96f811 11844 libbean-2.0-0-dbgsym_2.1.0-1_amd64.deb
+ 69aaec5a993a6b73e937fb0521da2a2312bbaf19 52160 libbean-2.0-0_2.1.0-1_amd64.deb
+ 63abd50eca670003dac52fe678c14b1a217e67c5 39892 libbean-common_2.1.0-1_all.deb
+ 2b85281e06255c4709b86ebbc89288fc6e924119 25244 libbean-dev_2.1.0-1_amd64.deb
+ c6cb0e2202a9bf7e6adfb9f95a94d8f0e48cc800 4884 libbean-doc-dbgsym_2.1.0-1_amd64.deb
+ c51ee20287d087b529cc7063fbf1cbc28c7a7171 66720 libbean-doc_2.1.0-1_amd64.deb
+ 4118f7b45e724abb0eb81c4ec491eac66cd1ed42 17732 libbean_2.1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 9704ed746674bec4c0da8a5f722ba64e3cbdef2f5b13bf38511b8c620f90ec8d 6384 gir1.2-bean-2.0_2.1.0-1_amd64.deb
+ 4f102ded866015db251a463fc685b0dd2ae696a1d68de82595508e635f2fb60f 11844 libbean-2.0-0-dbgsym_2.1.0-1_amd64.deb
+ 5de7d1d0a545151f3b8c44a57a8d255c7ee41927e260515c916d96a54ab525ed 52160 libbean-2.0-0_2.1.0-1_amd64.deb
+ fc85470b357bbf9561adfd7fc7e5f035cbd4801fc41b87fdced38ee5664d475c 39892 libbean-common_2.1.0-1_all.deb
+ 4d353f71590d245f7184a113bf885ebb720bf98a6133a156f3c1c3010edeb214 25244 libbean-dev_2.1.0-1_amd64.deb
+ 6273035e6e2bf7ddee3e87f21af4f15f53cdaace029bd0490291ad18c8931a26 4884 libbean-doc-dbgsym_2.1.0-1_amd64.deb
+ f869b35bf41318b7251b0f598ed6fcebe5c2f7ac28a92418704872255171b240 66720 libbean-doc_2.1.0-1_amd64.deb
+ 8d64671ec407f9ffd500f375c3271a95d6d83f84076bcfa9b496f5662b42204b 17732 libbean_2.1.0-1_amd64.buildinfo
+Files:
+ 540f8fdfe9af978ea6d6fdb930cbddc6 6384 introspection optional gir1.2-bean-2.0_2.1.0-1_amd64.deb
+ 99265911ec5a71e3b051597cf0b910c7 11844 debug optional libbean-2.0-0-dbgsym_2.1.0-1_amd64.deb
+ d1acd02d9cc30514e0fdb9848bd47f23 52160 libs optional libbean-2.0-0_2.1.0-1_amd64.deb
+ 6235e8584002a84f74756951e1fa0516 39892 libs optional libbean-common_2.1.0-1_all.deb
+ 497b92f402c14f0362d8510ce6e20af0 25244 libdevel optional libbean-dev_2.1.0-1_amd64.deb
+ 5d5e31f4c3f489d69ee5a693adb70b82 4884 debug optional libbean-doc-dbgsym_2.1.0-1_amd64.deb
+ 4e1741a66b1b45bdae275f243c4f59e7 66720 doc optional libbean-doc_2.1.0-1_amd64.deb
+ 13453d073860945139b8ab6012add9c8 17732 libs optional libbean_2.1.0-1_amd64.buildinfo

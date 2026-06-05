@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Mon, 22 Dec 2025 18:37:08 +0100
+Source: lapiz
+Binary: gir1.2-lapiz-2.0 lapiz lapiz-common lapiz-dbgsym lapiz-dev lapiz-doc
+Architecture: amd64 all
+Version: 2.2.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-lapiz-2.0 - GObject introspection data for Lapiz
+ lapiz      - official text editor of the CAFE desktop environment
+ lapiz-common - official text editor of the CAFE desktop environment (common file
+ lapiz-dev  - official text editor of the CAFE desktop environment (development
+ lapiz-doc  - official text editor of the CAFE desktop environment (documentati
+Changes:
+ lapiz (2.2.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Update gir handling
+     - add gir Provides to gir1.2-lapiz-2.0
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ 7841ef80d5a661e2dc8a8e1eecbdb2654da55800 20704 gir1.2-lapiz-2.0_2.2.0-1_amd64.deb
+ d056aa085a1bde33e545ac670c06ed8f10fce925 1947172 lapiz-common_2.2.0-1_all.deb
+ 79c1a78c04c99dd35d8c261ac6bb89c2153048f4 1040500 lapiz-dbgsym_2.2.0-1_amd64.deb
+ 2b16ee2188256fdd44a080d3bd154019f1792b6c 48040 lapiz-dev_2.2.0-1_amd64.deb
+ 08ef994846908755227b9b24ebb9ac8d6ef8c467 50772 lapiz-doc_2.2.0-1_all.deb
+ 5c0ed2f6f6a9bda2d56342b7d6f79f55876691ba 17518 lapiz_2.2.0-1_amd64.buildinfo
+ 866a5cd7d424abfd99df07e7e6c7efb988ac1ef4 404020 lapiz_2.2.0-1_amd64.deb
+Checksums-Sha256:
+ 6b99af5da8b0cd34c6e568ad7e369a6a71c3203931e0c4a3409578aa7b6d0936 20704 gir1.2-lapiz-2.0_2.2.0-1_amd64.deb
+ 7bfbc02b5b4fd60fcd09336f20080758e8f2bb28f1163e11313b96e5c7b74e50 1947172 lapiz-common_2.2.0-1_all.deb
+ 1ad7e993d1cbfda638b8ae08b9c1f333ff1684c48d269c41872f69115afb5a95 1040500 lapiz-dbgsym_2.2.0-1_amd64.deb
+ 4d9f9496405804235d5695b51681ed6b47490dadfd4b9fe076dfc4621867576d 48040 lapiz-dev_2.2.0-1_amd64.deb
+ 2edd3076c7accd7bb6ab418814b4593a6a0f3a48a7e0e11a3dac51c4548464d0 50772 lapiz-doc_2.2.0-1_all.deb
+ 5d212827c98efa5b2db5266b47628954f8ad3a6e1a86d77fe024baeafdb82bee 17518 lapiz_2.2.0-1_amd64.buildinfo
+ 7bd12465c51c5839940f4da6f63b57ede4b6441917edd290ae347d5427a2143f 404020 lapiz_2.2.0-1_amd64.deb
+Files:
+ 0882d31baccf3e3ff715126c9ee8b117 20704 introspection optional gir1.2-lapiz-2.0_2.2.0-1_amd64.deb
+ 21c36d674f4704399f1ddf3e623975da 1947172 x11 optional lapiz-common_2.2.0-1_all.deb
+ 34b009f0e3211363072b9ea9f05b450e 1040500 debug optional lapiz-dbgsym_2.2.0-1_amd64.deb
+ 1d558f29ab18188a135ae26d5c10fdb8 48040 libdevel optional lapiz-dev_2.2.0-1_amd64.deb
+ b2c9eaca24c2ee7d805ff57caa651b06 50772 doc optional lapiz-doc_2.2.0-1_all.deb
+ b9f7d8952b0f15200fe4158ba87475f3 17518 x11 optional lapiz_2.2.0-1_amd64.buildinfo
+ c9562cfce6c84eafb290f7c8aca89ebd 404020 x11 optional lapiz_2.2.0-1_amd64.deb

@@ -1,0 +1,59 @@
+Format: 1.8
+Date: Mon, 22 Dec 2025 01:29:21 +0100
+Source: cafe-desktop
+Binary: cafe-desktop cafe-desktop-common cafe-desktop-dbgsym gir1.2-cafedesktop-2.0 libcafe-desktop-2-17 libcafe-desktop-2-17-dbgsym libcafe-desktop-dev libcafe-desktop-doc
+Architecture: all amd64
+Version: 2.0.0-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-desktop - Library with common API for various CAFE modules
+ cafe-desktop-common - Library with common API for various CAFE modules (common files)
+ gir1.2-cafedesktop-2.0 - GObject introspection data for the libcafe-desktop library
+ libcafe-desktop-2-17 - Library with common API for various CAFE modules (library)
+ libcafe-desktop-dev - Library with common API for various CAFE modules (development fil
+ libcafe-desktop-doc - Library with common API for various CAFE modules (documentation f
+Changes:
+ cafe-desktop (2.0.0-2) unstable; urgency=medium
+ .
+   * control:
+     - add B-D cafe-common
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Drop transitional pkg 'gir1.2-cafe-desktop' (and drop lintian override for this).
+     - Update gir handling
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+Checksums-Sha1:
+ d58ec63adfcfdd573361bf5e9082a8f38a6e6c36 492268 cafe-desktop-common_2.0.0-2_all.deb
+ ecd117e4514a8fcc92b93b0c7562128b14e57a35 17108 cafe-desktop-dbgsym_2.0.0-2_amd64.deb
+ a1bd568f4c9804b7c79e8eba7f024dc012273431 17575 cafe-desktop_2.0.0-2_amd64.buildinfo
+ 1efcff6144b69c39e6872c59673e3dc5d57225e8 25228 cafe-desktop_2.0.0-2_amd64.deb
+ ddd69f90d31b71a67f3ef4cc32cbc8aa7081c746 14516 gir1.2-cafedesktop-2.0_2.0.0-2_amd64.deb
+ a2e9fd330936d7204a6dc0fac77ff4ff00ea78a2 362340 libcafe-desktop-2-17-dbgsym_2.0.0-2_amd64.deb
+ 555dafddbda586c290d4233055bfca1f3bd98b86 103548 libcafe-desktop-2-17_2.0.0-2_amd64.deb
+ b5f77b62de8cf25535f964780889a585be17e75d 34100 libcafe-desktop-dev_2.0.0-2_amd64.deb
+ 0dd14d0703ae598a6458fe414a930eb26e54bf1e 30604 libcafe-desktop-doc_2.0.0-2_all.deb
+Checksums-Sha256:
+ 0f149b877daf6b3595a35acca175dcefe3013d92163c7cc6f98ef31ef4d2191a 492268 cafe-desktop-common_2.0.0-2_all.deb
+ 9dcf7cf87beaf1264a09de3c7622f4ee898851d400cde16a21fc970e40fa6b91 17108 cafe-desktop-dbgsym_2.0.0-2_amd64.deb
+ bdd459a48d02f46700ea5484a37fd7dc8ca1452c8bc6dbbd5220119938c44aa8 17575 cafe-desktop_2.0.0-2_amd64.buildinfo
+ 21920291a302f3a5fbf0d659509004243b71ea6857104328206da7f0534e7220 25228 cafe-desktop_2.0.0-2_amd64.deb
+ 4402af31ec747213b55de3b1e78e8cef8afbcfdcc3154ec8c1251db283399874 14516 gir1.2-cafedesktop-2.0_2.0.0-2_amd64.deb
+ ea8414356af4b752da50f8256797e84d76bdc20f3ae72e44354a1e0137dfe903 362340 libcafe-desktop-2-17-dbgsym_2.0.0-2_amd64.deb
+ 835c9d0e45d4033cba586e750ef4f4b64d56081d5e64d712db25663c81d79873 103548 libcafe-desktop-2-17_2.0.0-2_amd64.deb
+ f4888e905e1dc71767f5eaa87451002a150aeb8bd6fa9322255b9fd668f73026 34100 libcafe-desktop-dev_2.0.0-2_amd64.deb
+ 3e970cbd116854ce90e2dad5ca71851bf4820b146770df87aa041317e78a18e8 30604 libcafe-desktop-doc_2.0.0-2_all.deb
+Files:
+ 880f71171db6e1a1de8f416e524b9adc 492268 x11 optional cafe-desktop-common_2.0.0-2_all.deb
+ 2d1ea47c6652326e4007c5c55270a3df 17108 debug optional cafe-desktop-dbgsym_2.0.0-2_amd64.deb
+ 4583d4a32b59ca33e85cc223d5abe694 17575 x11 optional cafe-desktop_2.0.0-2_amd64.buildinfo
+ c7512f670eb6990de443d40cba991171 25228 x11 optional cafe-desktop_2.0.0-2_amd64.deb
+ efda94ae132381035f16c9f23ba0ab20 14516 introspection optional gir1.2-cafedesktop-2.0_2.0.0-2_amd64.deb
+ 8f323162acda4bad83fe9c1ab95cd882 362340 debug optional libcafe-desktop-2-17-dbgsym_2.0.0-2_amd64.deb
+ 6ef5ff926c05f2fe960077d837dfecc8 103548 libs optional libcafe-desktop-2-17_2.0.0-2_amd64.deb
+ eea05e3a0dc158ac7a54249e8291ad10 34100 libdevel optional libcafe-desktop-dev_2.0.0-2_amd64.deb
+ 882a2ca51cd7dd6e0f8340aea00d9d4b 30604 doc optional libcafe-desktop-doc_2.0.0-2_all.deb

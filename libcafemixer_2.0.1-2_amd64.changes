@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Fri, 26 Dec 2025 14:08:23 +0100
+Source: libcafemixer
+Binary: libcafemixer-common libcafemixer-dev libcafemixer-doc libcafemixer2 libcafemixer2-dbgsym
+Architecture: all amd64
+Version: 2.0.1-2
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ libcafemixer-common - Mixer library for CAFE Desktop (common files)
+ libcafemixer-dev - Mixer library for CAFE Desktop (development files)
+ libcafemixer-doc - Mixer library for CAFE Desktop (documentation files)
+ libcafemixer2 - Mixer library for CAFE Desktop
+Changes:
+ libcafemixer (2.0.1-2) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+Checksums-Sha1:
+ 7520257f75eee818b1c766933a76a8d7e0fc8fd2 57512 libcafemixer-common_2.0.1-2_all.deb
+ 0e2dc8e22023e6751500a573671fcc1b9fb0994d 14024 libcafemixer-dev_2.0.1-2_amd64.deb
+ c6a1c6e4ec5a3d38b3f55164eb84424a9ec883f4 32472 libcafemixer-doc_2.0.1-2_all.deb
+ 8cb1055746df25eb0af2c7b940636224c2255632 291864 libcafemixer2-dbgsym_2.0.1-2_amd64.deb
+ 7b01a0ce1a833f8e787e2f01114a78a56ffd0336 82020 libcafemixer2_2.0.1-2_amd64.deb
+ 0664c3b54efc30dac0568293a8d42c383a3e9943 9300 libcafemixer_2.0.1-2_amd64.buildinfo
+Checksums-Sha256:
+ 27a5c4a8c048fba08db3b4551114a600754f9950e8355f615c9800db8c0c750b 57512 libcafemixer-common_2.0.1-2_all.deb
+ a5601db2311b82f28ac1ddc5db030a991b7eaf6095957ace57e94afd16107a8c 14024 libcafemixer-dev_2.0.1-2_amd64.deb
+ 6b0795fa87d71400bd61159976d1055e24e2ae0a80e2230691a83470382d23f2 32472 libcafemixer-doc_2.0.1-2_all.deb
+ d410e88656e46d88ad5a5eeffd1862ba278d433ef2e2b5893ced7c98b5a7b740 291864 libcafemixer2-dbgsym_2.0.1-2_amd64.deb
+ a790bc31c7f790cdc2e5458c5e01564190e28a759baa5966d6467b2ae7fade39 82020 libcafemixer2_2.0.1-2_amd64.deb
+ dd9991ae60c342005e85c60b066d0577bdff1a27c9d91f7d4a15da1ca6db5f1f 9300 libcafemixer_2.0.1-2_amd64.buildinfo
+Files:
+ 1e5feb0bcaff46a9c83d5e7d3e0e9028 57512 libs optional libcafemixer-common_2.0.1-2_all.deb
+ 801a0f1e7fcb6f31716b0adfab205604 14024 libdevel optional libcafemixer-dev_2.0.1-2_amd64.deb
+ e8291cbc7788517de0b3233348bec2f4 32472 doc optional libcafemixer-doc_2.0.1-2_all.deb
+ ddd1ccf4eed9a01a8436cdde300a225b 291864 debug optional libcafemixer2-dbgsym_2.0.1-2_amd64.deb
+ 4eef66a939b1d8345227c48fdd51dbdd 82020 libs optional libcafemixer2_2.0.1-2_amd64.deb
+ 168bd856ce7560f3545ba581d1f82c80 9300 libs optional libcafemixer_2.0.1-2_amd64.buildinfo
