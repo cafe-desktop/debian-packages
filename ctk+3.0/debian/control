@@ -32,7 +32,6 @@ Build-Depends: advaita-icon-theme <!nocheck>,
                libglib2.0-dev (>= 2.66.8),
                libharfbuzz-dev (>= 0.9),
                libpango1.0-dev (>= 1.41.0),
-               librsvg2-common <!nocheck>,
                libwayland-dev (>= 1.14.91) [linux-any],
                libx11-dev,
                libxcomposite-dev,
@@ -73,8 +72,7 @@ Depends: advaita-icon-theme,
          ${shlibs:Depends},
          libctk-3-common (>= ${source:Version})
 Provides: ${ctk:BinVer}
-Recommends: libctk-3-bin,
-            librsvg2-common
+Recommends: libctk-3-bin
 Suggests: gvfs,
 Description: CTK graphical user interface library
  CTK is a multi-platform toolkit for creating graphical user
