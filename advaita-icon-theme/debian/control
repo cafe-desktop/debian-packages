@@ -6,8 +6,6 @@ Build-Depends: debhelper-compat (= 13),
 Build-Depends-Indep: gettext,
                      pkgconf,
                      libctk-3-bin (>= 3.24.13),
-                     librsvg2-bin,
-                     librsvg2-common:native,
 Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/gnome-team/advaita-icon-theme
 Vcs-Git: https://salsa.debian.org/gnome-team/advaita-icon-theme.git
@@ -18,7 +16,6 @@ Multi-Arch: foreign
 Depends: ${misc:Depends},
          hicolor-icon-theme,
          ctk-update-icon-cache,
-Recommends: librsvg2-common
 Breaks: gnome-themes-standard-data (<< 3.18.0-2~)
 Replaces: gnome-themes-standard-data (<< 3.18.0-2~)
 Provides: gnome-icon-theme-symbolic
