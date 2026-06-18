@@ -20,7 +20,7 @@ Build-Depends: debhelper-compat (= 13),
                xvfb <!nocheck>
 Build-Depends-Indep: libglib2.0-doc <!nodoc>,
                      libctk-3-doc <!nodoc>,
-                     libgdk-pixbuf2.0-doc <!nodoc>,
+                     libcdk-pixbuf2.0-doc <!nodoc>,
                      libpango1.0-doc <!nodoc>
 Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/gnome-team/ctksourceview4
@@ -84,7 +84,7 @@ Architecture: all
 Depends: ${misc:Depends}
 Suggests: libglib2.0-doc,
           libctk-3-doc,
-          libgdk-pixbuf2.0-doc,
+          libcdk-pixbuf2.0-doc,
           libpango1.0-doc
 Description: documentation for the CTK+ syntax highlighting widget
  CtkSourceView is a text widget that extends the standard CTK+ 3.x text widget
