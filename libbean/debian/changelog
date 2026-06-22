@@ -1,3 +1,16 @@
+libbean (2.2.0-1) unstable; urgency=medium
+
+  * control:
+    - Bump debhelper-compat to 13
+    - Drop unneeded build-Depends on gnome-common
+  * rules:
+    - clean up unneeded lines
+    - Drop dh_install override
+    - Override dh_gnome to avoid build warnings
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Mon, 22 Jun 2026 17:09:27 +0200
+
 libbean (2.1.0-1) unstable; urgency=medium
 
   * control:
