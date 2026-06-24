@@ -1,3 +1,11 @@
+cafe-common (2.2.0-1) unstable; urgency=medium
+
+  * control: Bump DH compat level to version 13
+  * rules: Drop dh_missing override, --fail-missing is default in compat 13
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 24 Jun 2026 13:11:37 +0200
+
 cafe-common (2.1.0-1) unstable; urgency=medium
 
   * control:
