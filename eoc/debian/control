@@ -37,7 +37,6 @@ Package: eoc
 Architecture: any
 Depends: eoc-common (= ${source:Version}),
          gir1.2-eoc-2.0,
-         librsvg2-common (>= 2.36.2),
          cafe-desktop-common,
          shared-mime-info,
          libgl1-mesa-glx | libgl1,
