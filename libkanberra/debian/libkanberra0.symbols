@@ -1,3 +1,12 @@
+libkanberra-alsa.so libkanberra0 #MINVER#
+ alsa_driver_cache@Base 1.0-2
+ alsa_driver_cancel@Base 1.0-2
+ alsa_driver_change_device@Base 1.0-2
+ alsa_driver_change_props@Base 1.0-2
+ alsa_driver_destroy@Base 1.0-2
+ alsa_driver_open@Base 1.0-2
+ alsa_driver_play@Base 1.0-2
+ driver_playing@Base 1.0-2
 libkanberra.so.0 libkanberra0 #MINVER#
 * Build-Depends-Package: libkanberra-dev
  KANBERRA_0@KANBERRA_0 0.3
