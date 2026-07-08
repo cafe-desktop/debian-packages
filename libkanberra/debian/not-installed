@@ -1,0 +1,6 @@
+usr/share/doc/libkanberra/README
+
+usr/lib/*/libkanberra-*/libkanberra-multi.so
+usr/lib/*/libkanberra-*/libkanberra-null.so
+
+usr/lib/*/gnome-settings-daemon-3.0/ctk-modules/kanberra-ctk-module.desktop
