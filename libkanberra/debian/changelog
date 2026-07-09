@@ -1,3 +1,17 @@
+libkanberra (2.0.0-1) unstable; urgency=medium
+
+  * control:
+    - set debhelper-compat to 13
+    - remove unused shlibs:Depends
+  * rules:
+    - Drop unnecessary dh_strip override
+    - Override dh_gnome to avoid build warnings
+  * update libkanberra0 symbols
+  * add not-installed file
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 08 Jul 2026 17:48:49 +0200
+
 libkanberra (1.0-2) unstable; urgency=medium
 
   * control:
