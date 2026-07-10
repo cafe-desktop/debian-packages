@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Sun, 12 Jul 2026 22:21:00 +0200
+Source: cafe-settings-daemon
+Binary: cafe-settings-daemon cafe-settings-daemon-common cafe-settings-daemon-dbgsym cafe-settings-daemon-dev
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-settings-daemon - daemon handling the CAFE session settings
+ cafe-settings-daemon-common - daemon handling the CAFE session settings (common files)
+ cafe-settings-daemon-dev - daemon handling the CAFE session settings (development files)
+Changes:
+ cafe-settings-daemon (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ c3ad57000eac9a0461064b0d97a2af7cc4aa4b69 393864 cafe-settings-daemon-common_2.1.0-1_all.deb
+ f71cdc8053a5486249372a9329af6208a37e61ee 594864 cafe-settings-daemon-dbgsym_2.1.0-1_amd64.deb
+ 05623b4bfc8f3bc7b70f705a9bd98040d77f427d 7412 cafe-settings-daemon-dev_2.1.0-1_amd64.deb
+ 09f23a2fdd7287874da6de129c0427d8222dc155 18712 cafe-settings-daemon_2.1.0-1_amd64.buildinfo
+ 6ce0fde299fc45d1549e9d6cb347dd9415df9181 186332 cafe-settings-daemon_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ fadc09b2cb1a2f26f800a3bc208ed9df3c06cd86b67c1c0897a0dacfc379a420 393864 cafe-settings-daemon-common_2.1.0-1_all.deb
+ 0ce9ce07ac4e1003a81f6b6e19844d774bdde02c77db873e3358439c85b0e1ea 594864 cafe-settings-daemon-dbgsym_2.1.0-1_amd64.deb
+ f662b2f643a5ea0fc6ac45244844bc2b0a46b19707027a40ff184590bfa56ac6 7412 cafe-settings-daemon-dev_2.1.0-1_amd64.deb
+ 49ffbe1d09c2512c192a7eb22e15263d133ed693b7ee9f4ab2e08f06aa5642e4 18712 cafe-settings-daemon_2.1.0-1_amd64.buildinfo
+ 42b6ba64c64919e33414e2dc8ad4161ed0b2cbe372e57416bb4f4eafa39f4b30 186332 cafe-settings-daemon_2.1.0-1_amd64.deb
+Files:
+ 7b697084399d3b99fd1e9469a7d7ebee 393864 x11 optional cafe-settings-daemon-common_2.1.0-1_all.deb
+ bf1f8d84c7efc6cbe45dca0d22b0346e 594864 debug optional cafe-settings-daemon-dbgsym_2.1.0-1_amd64.deb
+ 264ac4bbeef39cdbeb78ddc0e429b09b 7412 devel optional cafe-settings-daemon-dev_2.1.0-1_amd64.deb
+ 44d16f6a23163873fe2415f4bf2e7bdd 18712 x11 optional cafe-settings-daemon_2.1.0-1_amd64.buildinfo
+ cfc5cddfbb106952f98913caafdc7188 186332 x11 optional cafe-settings-daemon_2.1.0-1_amd64.deb

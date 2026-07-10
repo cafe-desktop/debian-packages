@@ -1,0 +1,51 @@
+Format: 1.8
+Date: Sun, 26 Jul 2026 12:21:34 +0200
+Source: cafe-panel
+Binary: cafe-panel cafe-panel-common cafe-panel-dbgsym gir1.2-cafepanelapplet-4.0 libcafe-panel-applet-4-1 libcafe-panel-applet-4-1-dbgsym libcafe-panel-applet-dev libcafe-panel-applet-doc
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-panel - launcher and docking facility for CAFE
+ cafe-panel-common - launcher and docking facility for CAFE (common files)
+ gir1.2-cafepanelapplet-4.0 - GObject introspection data for CAFE panel
+ libcafe-panel-applet-4-1 - library for CAFE Panel applets
+ libcafe-panel-applet-dev - library for CAFE Panel applets (development files)
+ libcafe-panel-applet-doc - library for CAFE Panel applets (documentation files)
+Changes:
+ cafe-panel (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ 3ef38fce785fe8b2a1d03bc3c4a68ee98b7338e1 1425852 cafe-panel-common_2.1.0-1_all.deb
+ 769a0c6764d1dc984fc01320ba3d018633a9f4e0 1302340 cafe-panel-dbgsym_2.1.0-1_amd64.deb
+ 90e58e9366c8be93e7552ce0543ee0a71f6cc3b0 20185 cafe-panel_2.1.0-1_amd64.buildinfo
+ e92b49305495b76e7019f7c84665fe48dc0c794a 553732 cafe-panel_2.1.0-1_amd64.deb
+ a7e94d8fe89dc326718efccdfd9c10ba61216020 9084 gir1.2-cafepanelapplet-4.0_2.1.0-1_amd64.deb
+ b5dff48ba5e273d4eeed660b7561f8f752732e21 78796 libcafe-panel-applet-4-1-dbgsym_2.1.0-1_amd64.deb
+ 1502635bce6c4407f09a26f09c860e524ca2d749 26744 libcafe-panel-applet-4-1_2.1.0-1_amd64.deb
+ 27ca7efbd31e32a4a59577282404ded83680b271 13400 libcafe-panel-applet-dev_2.1.0-1_amd64.deb
+ 4e9e1285162c602dda0a999b7f32876329c6d5b7 20964 libcafe-panel-applet-doc_2.1.0-1_all.deb
+Checksums-Sha256:
+ 0ef9f8ff9a86b76d2820ec054751a3f5399cdd4bbd5ec68c0a98f6d4b99c8990 1425852 cafe-panel-common_2.1.0-1_all.deb
+ 031bd464cbe4e285f58c606f0aa34cb59ab502d9352bf910c078ce20052fd5ce 1302340 cafe-panel-dbgsym_2.1.0-1_amd64.deb
+ 9856fa2087529b0e374265cdaff5947adf58b1c6cac80b296e17fd09fbc2f339 20185 cafe-panel_2.1.0-1_amd64.buildinfo
+ ae02f02cc062da1961874fafde2814bd18f96b1482c29d049d18d5c946ac58d1 553732 cafe-panel_2.1.0-1_amd64.deb
+ b3dab876770095c44d703d104e469ec306654c9c7a7a41119bce5de082690975 9084 gir1.2-cafepanelapplet-4.0_2.1.0-1_amd64.deb
+ 94c896f333de731cd8a3c782f92b2a3afecf45cbbe9ea7388b207c30d16e98e9 78796 libcafe-panel-applet-4-1-dbgsym_2.1.0-1_amd64.deb
+ 08dc4faecef7b56de1b85eec2828d05e2ffa02092df903ebdeb3daf2ecff7697 26744 libcafe-panel-applet-4-1_2.1.0-1_amd64.deb
+ e2b7c4cfd160ad3bc9c6c92889a223c5099f9c894e142cb133504518badbe816 13400 libcafe-panel-applet-dev_2.1.0-1_amd64.deb
+ 3b0201920d912d504c4de184c20b3745f192f4b2e5ade8feaea186272fac26d2 20964 libcafe-panel-applet-doc_2.1.0-1_all.deb
+Files:
+ a186cc93ec3294246dd00e8db0e0bfa3 1425852 x11 optional cafe-panel-common_2.1.0-1_all.deb
+ 6d75796b1d8ea5ff2ba7c40ca7a5a796 1302340 debug optional cafe-panel-dbgsym_2.1.0-1_amd64.deb
+ 76b74312c06f5cdb85bf1dfc461173dd 20185 x11 optional cafe-panel_2.1.0-1_amd64.buildinfo
+ 22843c9eccadbc49c40752c82d61f588 553732 x11 optional cafe-panel_2.1.0-1_amd64.deb
+ d759f3a90d7b05ad6245b05a100a403c 9084 introspection optional gir1.2-cafepanelapplet-4.0_2.1.0-1_amd64.deb
+ 8d9868319e9b4b2b02d5d0b861ff11d6 78796 debug optional libcafe-panel-applet-4-1-dbgsym_2.1.0-1_amd64.deb
+ ad05f7b96522859abb6024f1700533da 26744 libs optional libcafe-panel-applet-4-1_2.1.0-1_amd64.deb
+ a696e1c0da6d64a6daf8ba26ae818fb3 13400 libdevel optional libcafe-panel-applet-dev_2.1.0-1_amd64.deb
+ 128311cac0b3d779cd4860e784adfc4f 20964 doc optional libcafe-panel-applet-doc_2.1.0-1_all.deb

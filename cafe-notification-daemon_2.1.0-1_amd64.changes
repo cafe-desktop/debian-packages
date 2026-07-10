@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Fri, 28 Aug 2026 11:30:36 +0200
+Source: cafe-notification-daemon
+Binary: cafe-notification-daemon cafe-notification-daemon-common cafe-notification-daemon-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-notification-daemon - daemon to display passive popup notifications
+ cafe-notification-daemon-common - daemon to display passive popup notifications (common files)
+Changes:
+ cafe-notification-daemon (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+   * rules: Drop dh_missing override, --fail-missing is default in compat 13
+   * New upstream release
+Checksums-Sha1:
+ 7bea509b09b7a5bd3b73d901fb1d7568317b795e 55664 cafe-notification-daemon-common_2.1.0-1_all.deb
+ 6cd4f0d32244dadde7acec0360642366e64ef253 166012 cafe-notification-daemon-dbgsym_2.1.0-1_amd64.deb
+ 6147906bf2141abe62617973c922730d4a46cd25 16596 cafe-notification-daemon_2.1.0-1_amd64.buildinfo
+ 93b3088e35082b5300e6ef6b79bac0216412fd8a 55204 cafe-notification-daemon_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ f7559f8d601583c8b3f98646b9090ba45705762f4d02392e56c852ab29bac36b 55664 cafe-notification-daemon-common_2.1.0-1_all.deb
+ 248ae1bb896c19243892574439cd2b68d3cb15c5998dea9e5e769e2235212679 166012 cafe-notification-daemon-dbgsym_2.1.0-1_amd64.deb
+ 311fda18313199bce7017314efad03585606fbadf3fda369a636e2f1573dc825 16596 cafe-notification-daemon_2.1.0-1_amd64.buildinfo
+ 0971c3f326f11666bedbf3e6eeca17edceb639825800b39b0cc0dd0762cb54f2 55204 cafe-notification-daemon_2.1.0-1_amd64.deb
+Files:
+ e9bce7cef4ab08e2bbb6658c92cfccd2 55664 x11 optional cafe-notification-daemon-common_2.1.0-1_all.deb
+ b60c28a43100f907bf63b939866ab626 166012 debug optional cafe-notification-daemon-dbgsym_2.1.0-1_amd64.deb
+ bd8e264103d41665e13eb0987d9c1f37 16596 x11 optional cafe-notification-daemon_2.1.0-1_amd64.buildinfo
+ d0a46ad27aab4cedeafbfbcc1f536bfa 55204 x11 optional cafe-notification-daemon_2.1.0-1_amd64.deb

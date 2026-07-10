@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 17 Jun 2026 10:47:15 +0200
+Source: advaita-icon-theme
+Binary: advaita-icon-theme
+Architecture: all
+Version: 3.26.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ advaita-icon-theme - default icon theme of GNOME
+Changes:
+ advaita-icon-theme (3.26.0-1) unstable; urgency=medium
+ .
+   * remove librsvg2 deps
+   * New upstream release
+Checksums-Sha1:
+ bfc6c1101153c2ad0d94537f536113bf5a907aa2 10783816 advaita-icon-theme_3.26.0-1_all.deb
+ 456932dc000ba7e5be241e58233ed8073e11c7ad 8548 advaita-icon-theme_3.26.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 97ae19732406403e784c1de3f185c5fd5df641be625c5144c7237d7fde3b6940 10783816 advaita-icon-theme_3.26.0-1_all.deb
+ b5ef8e9bebe8f85af75c0e802c07ccb049a38972d0f7d7476f4f3feaf35e2661 8548 advaita-icon-theme_3.26.0-1_amd64.buildinfo
+Files:
+ 8c1134291a981ea0553112c6b6953851 10783816 gnome optional advaita-icon-theme_3.26.0-1_all.deb
+ 3d0d623301e4190fe70a66131d6bc32b 8548 gnome optional advaita-icon-theme_3.26.0-1_amd64.buildinfo

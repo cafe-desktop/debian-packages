@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sun, 23 Aug 2026 12:38:41 +0200
+Source: cafe-backgrounds
+Binary: cafe-backgrounds
+Architecture: all
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-backgrounds - Set of backgrounds packaged with the CAFE Desktop Environment
+Changes:
+ cafe-backgrounds (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ afb666f3e7b9d79bc0c666c21b526cece9013243 43055644 cafe-backgrounds_2.0.0-1_all.deb
+ 18c97d0ac834983522e86b08de56a9712308805a 7365 cafe-backgrounds_2.0.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 3b0b18aad370cfa2c5807022ec89f347ec2e396776a135079247e06d0a269721 43055644 cafe-backgrounds_2.0.0-1_all.deb
+ df7fec4ae22947cf2cf590c6db626ec573525379cdc884a46d79e46076773195 7365 cafe-backgrounds_2.0.0-1_amd64.buildinfo
+Files:
+ c6877a116f11f55024a12cd872d56a37 43055644 x11 optional cafe-backgrounds_2.0.0-1_all.deb
+ e30a81f30009bc9d25a1b1b0d20228f6 7365 x11 optional cafe-backgrounds_2.0.0-1_amd64.buildinfo
