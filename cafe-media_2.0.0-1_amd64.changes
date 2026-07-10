@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Fri, 02 Jan 2026 13:03:30 +0100
+Source: cafe-media
+Binary: cafe-media cafe-media-common cafe-media-dbgsym
+Architecture: all amd64
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-media - CAFE media utilities
+ cafe-media-common - CAFE media utilities (common files)
+Changes:
+ cafe-media (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - remove dh_missing --fail-missing , it works by default in DH 13
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ 763db0d393ea6f2cd29fc09d062397e635b9405c 169744 cafe-media-common_2.0.0-1_all.deb
+ 1e0aa0b4a01fd080de57b43321914fce48249c40 221240 cafe-media-dbgsym_2.0.0-1_amd64.deb
+ 259bf2bbbac0e40e7bde8770dc0a5a16bf435f10 16221 cafe-media_2.0.0-1_amd64.buildinfo
+ ba7dd8f79627372519e998b24aa633d5f564215d 67448 cafe-media_2.0.0-1_amd64.deb
+Checksums-Sha256:
+ 8d82d7e67121efb371ca23805c198199865b6e0e74f5a9e3a0e623726875f63b 169744 cafe-media-common_2.0.0-1_all.deb
+ 0bc48d3e4c81947681d0472ca38ba12f848dfb79815139ed8331869c814ae404 221240 cafe-media-dbgsym_2.0.0-1_amd64.deb
+ ee53cb574c720e9a30654ddbb7f245b6f7bc44a0a55c58f36deb4a77a2544a18 16221 cafe-media_2.0.0-1_amd64.buildinfo
+ a551c99f4332d7638bb6c0d5c1caf8ced5c59b5f3bbd52aef2e4c03c3bd683b8 67448 cafe-media_2.0.0-1_amd64.deb
+Files:
+ 5ef7904efb647e5c1cc36e5f81896819 169744 x11 optional cafe-media-common_2.0.0-1_all.deb
+ 051820c301770f463bcea00451c3bba3 221240 debug optional cafe-media-dbgsym_2.0.0-1_amd64.deb
+ 4e16f7091b104af264be427015fbd463 16221 x11 optional cafe-media_2.0.0-1_amd64.buildinfo
+ 2d9e047b99ce62ff596bae84c73cf7d9 67448 x11 optional cafe-media_2.0.0-1_amd64.deb

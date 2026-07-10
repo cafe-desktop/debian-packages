@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Wed, 29 Apr 2026 20:07:17 +0200
+Source: cafe-icon-theme
+Binary: cafe-icon-theme
+Architecture: all
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@debian.debian>
+Description:
+ cafe-icon-theme - CAFE Desktop icon theme
+Changes:
+ cafe-icon-theme (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - update maintainer
+     - update uploaders
+     - 'pkgconf' instead transitional 'pkg-config'
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - add BD cafe-common
+     - Bump DH compat level to version 13
+   * copyright:
+     - update source urls
+     - update upstream contact
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ dc382d8589c3028fba7a95c1b9494b45f7a32fa6 12595336 cafe-icon-theme_2.0.0-1_all.deb
+ dae29807b34591cc0251ec368d334128b1b4c197 8631 cafe-icon-theme_2.0.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 9fd79cc839a048ccf928f008cf7bad5b9d7913b3c7245f5a10a208828ec3c2c9 12595336 cafe-icon-theme_2.0.0-1_all.deb
+ 88ed32c4b736a578f5a7d06370f890f3260898d95ebef1ea27ded3c53943c92b 8631 cafe-icon-theme_2.0.0-1_amd64.buildinfo
+Files:
+ 43f2defec0530bb6fe71e593f90b52e2 12595336 x11 optional cafe-icon-theme_2.0.0-1_all.deb
+ 53cacf47d235c60ef839a0f465041efc 8631 x11 optional cafe-icon-theme_2.0.0-1_amd64.buildinfo
