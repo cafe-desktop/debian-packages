@@ -1,0 +1,39 @@
+Format: 1.8
+Date: Sat, 26 Sep 2026 10:42:12 +0200
+Source: cafe-screensaver
+Binary: cafe-screensaver cafe-screensaver-common cafe-screensaver-dbgsym
+Architecture: all amd64
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-screensaver - CAFE screen saver and locker
+ cafe-screensaver-common - CAFE screen saver and locker (common files)
+Changes:
+ cafe-screensaver (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+Checksums-Sha1:
+ a1a2f662e8fe456aa45a67ca33a0c90530c993fc 4570148 cafe-screensaver-common_2.0.0-1_all.deb
+ 2fb11708f89fbd6ec9409c2bad3cf1b700a8769e 372412 cafe-screensaver-dbgsym_2.0.0-1_amd64.deb
+ 1c54cbd1a3ea4109d4cf5685a7cdc0723811358f 17273 cafe-screensaver_2.0.0-1_amd64.buildinfo
+ 1f85a527b1935a3f14063af1fb6f77ce05e9189c 131200 cafe-screensaver_2.0.0-1_amd64.deb
+Checksums-Sha256:
+ d315e0992387dc40771c21e95ca089e49d47e96fdc790e3b7ee2897e315489f3 4570148 cafe-screensaver-common_2.0.0-1_all.deb
+ c6457d2ac2c1726f235d347f972cf50e0732265d10a146d305eaf625e6280fab 372412 cafe-screensaver-dbgsym_2.0.0-1_amd64.deb
+ 7b8b125c1a3bf7b0fa23293f2c9a027ace5d8ac5b53733243764df81e7d444ee 17273 cafe-screensaver_2.0.0-1_amd64.buildinfo
+ 58dccbb3e2e13422f149b6e510f274023a1719ced4397853d6a480222b67a89d 131200 cafe-screensaver_2.0.0-1_amd64.deb
+Files:
+ 4978a7c2074cc506c3706aef083c6350 4570148 x11 optional cafe-screensaver-common_2.0.0-1_all.deb
+ 778cbc8d7679381ea2fca28fc49d2fc3 372412 debug optional cafe-screensaver-dbgsym_2.0.0-1_amd64.deb
+ e7352959e96a56a2da58328e3fe4d067 17273 x11 optional cafe-screensaver_2.0.0-1_amd64.buildinfo
+ a4cebcb374b59bc3248f0eda27a511b1 131200 x11 optional cafe-screensaver_2.0.0-1_amd64.deb

@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Sun, 12 Jul 2026 12:19:34 +0200
+Source: libvnck3
+Binary: gir1.2-vnck-3.0 libvnck-3-0 libvnck-3-0-dbgsym libvnck-3-common libvnck-3-dev libvnck-3-dev-dbgsym
+Architecture: amd64 all
+Version: 3.42.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-vnck-3.0 - GObject introspection data for the VNCK library
+ libvnck-3-0 - Window Navigator Construction Kit - runtime files
+ libvnck-3-common - Window Navigator Construction Kit - common files
+ libvnck-3-dev - Window Navigator Construction Kit - development files
+Changes:
+ libvnck3 (3.42.0-1) unstable; urgency=medium
+ .
+   * rules: Override dh_gnome to avoid build warnings
+   * control: gir1.2-cdkpixbuf-2.0-dev instead gir1.2-gdkpixbuf-2.0-dev
+   * New upstream release
+Checksums-Sha1:
+ 16889daddd72cf996f19a6bcfaeec55ce0fcc1a6 11436 gir1.2-vnck-3.0_3.42.0-1_amd64.deb
+ b5c6013c2ef3bb740bbe214d5a6382412de3a31f 16048 libvnck-3-0-dbgsym_3.42.0-1_amd64.deb
+ b4762da738972119d14b68b1ada655e3a152b6bb 85604 libvnck-3-0_3.42.0-1_amd64.deb
+ f9e117ad6c4ac63ca6626d382859595f8b5f1485 206192 libvnck-3-common_3.42.0-1_all.deb
+ 7608cd75e02d893bb5463c025b977a072397f954 5360 libvnck-3-dev-dbgsym_3.42.0-1_amd64.deb
+ 175e8e5e106b36ce91fc973a2094d802bc7b8d93 94952 libvnck-3-dev_3.42.0-1_amd64.deb
+ fe180efbc5fcf49957ffacf256c8604e4ba26b0c 16655 libvnck3_3.42.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 4a553f3eb387bb1473fc97bb27c72fe1df227b39f853090075aa4085b0b9097a 11436 gir1.2-vnck-3.0_3.42.0-1_amd64.deb
+ 993778f15b0d4bd495d5c0069ed5b7e01cde0de24f562043a9d744c85442d65f 16048 libvnck-3-0-dbgsym_3.42.0-1_amd64.deb
+ 348fe9d27cf0bcd2a04ecdfbbef778a88d096261aeec40dd0cb99e8d3fc5d199 85604 libvnck-3-0_3.42.0-1_amd64.deb
+ e54967dcc135c8e19d9bf9930b3ad99869b942ba5b1499dc16cf3d934855ff1b 206192 libvnck-3-common_3.42.0-1_all.deb
+ c2cfeb080afcec2b7d31395f5e47157ae8b371b0fbe4c2c354500894b238ace8 5360 libvnck-3-dev-dbgsym_3.42.0-1_amd64.deb
+ 0a71de889c451d65a173a46b6e0fe1c107e2957f15974bcf31b025477ed38b44 94952 libvnck-3-dev_3.42.0-1_amd64.deb
+ 033ea97b05667543fabb0ea4f2949e461c6c630a790a189e47bb842a0a5946ff 16655 libvnck3_3.42.0-1_amd64.buildinfo
+Files:
+ c6039d3db788da1fe7d6bed8f0d13e06 11436 introspection optional gir1.2-vnck-3.0_3.42.0-1_amd64.deb
+ 5a295ccc3423aab67961b44dba851564 16048 debug optional libvnck-3-0-dbgsym_3.42.0-1_amd64.deb
+ 1ca3fad56a327c7b6cb2d10715ef4601 85604 libs optional libvnck-3-0_3.42.0-1_amd64.deb
+ 85e13e2d1c413e0ece1c9955c36e5380 206192 libs optional libvnck-3-common_3.42.0-1_all.deb
+ c8c501a7a6c991f710c83732d0d6f890 5360 debug optional libvnck-3-dev-dbgsym_3.42.0-1_amd64.deb
+ 6abb2a2bffdfda4629be6bb101b5ad32 94952 libdevel optional libvnck-3-dev_3.42.0-1_amd64.deb
+ 59adde6674cd4a9ad272fb215a5bf071 16655 libs optional libvnck3_3.42.0-1_amd64.buildinfo

@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sun, 26 Jul 2026 13:22:03 +0200
+Source: cafe-media
+Binary: cafe-media cafe-media-common cafe-media-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-media - CAFE media utilities
+ cafe-media-common - CAFE media utilities (common files)
+Changes:
+ cafe-media (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ 0cf5a2416d7b8643290bee804e65dd0835057f29 169716 cafe-media-common_2.1.0-1_all.deb
+ cbdb88407bba062361d321bdf05a034bf8f9c27c 221132 cafe-media-dbgsym_2.1.0-1_amd64.deb
+ eb8001c92a9bc3fb59e634c1a55b1fe37fe662e1 16412 cafe-media_2.1.0-1_amd64.buildinfo
+ 980af3e2a5ac4d5178dec8b816620435246b049a 67164 cafe-media_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ 7736c4511243a38ecf1f00f4bb0803e318924d2d1891df1fab79a3f5df789d29 169716 cafe-media-common_2.1.0-1_all.deb
+ 8f5af9deb36aa82c75e3d9a2049d642b1f15218a710710d240d0f2663e937a94 221132 cafe-media-dbgsym_2.1.0-1_amd64.deb
+ aa0d67fff44a54a4849afe2044e6a6f966b01f2ed563ac36b1061f0d60196783 16412 cafe-media_2.1.0-1_amd64.buildinfo
+ 7a3d5253481d7d06f92e73a8de1ea8ad73bf7e220a3fd255e600588a0c12a136 67164 cafe-media_2.1.0-1_amd64.deb
+Files:
+ 67f2845d2fbc3076e2802a390249ee26 169716 x11 optional cafe-media-common_2.1.0-1_all.deb
+ dbfb416ec00b2a706e3bbba6615c6931 221132 debug optional cafe-media-dbgsym_2.1.0-1_amd64.deb
+ 9c20825a038913d1a373d63506268df7 16412 x11 optional cafe-media_2.1.0-1_amd64.buildinfo
+ 905b8ab1a42cff86b209d5bb27f3fb75 67164 x11 optional cafe-media_2.1.0-1_amd64.deb

@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Sat, 15 Aug 2026 23:09:38 +0200
+Source: cafe-themes
+Binary: cafe-themes
+Architecture: all
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-themes - Official themes for the CAFE desktop
+Changes:
+ cafe-themes (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ 204abab9cc1cfb04a5aa4e2269f298488949b7f9 5593216 cafe-themes_2.1.0-1_all.deb
+ a8a1c2b6599e1caa2787957bdab400b2e53cd7de 12289 cafe-themes_2.1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 8b792f642a20a0393f1b48d2363ae21476f461e23772e32b2778105969e23ac0 5593216 cafe-themes_2.1.0-1_all.deb
+ 43ed2a56766065372c7f3e36d0b927d54156eea7911960dafc65b84d12684e95 12289 cafe-themes_2.1.0-1_amd64.buildinfo
+Files:
+ 15d6646b0a459a07408ee6b9092d66ca 5593216 x11 optional cafe-themes_2.1.0-1_all.deb
+ 9254a6c919c0d39c4c3ffbc73dd9d5ce 12289 x11 optional cafe-themes_2.1.0-1_amd64.buildinfo

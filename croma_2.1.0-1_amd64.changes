@@ -1,0 +1,47 @@
+Format: 1.8
+Date: Sun, 19 Jul 2026 10:28:31 +0200
+Source: croma
+Binary: croma croma-common croma-dbgsym libcroma-dev libcroma-private2 libcroma-private2-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ croma      - lightweight CTK+ window manager for CAFE
+ croma-common - lightweight CTK+ window manager for CAFE (common files)
+ libcroma-dev - library for Croma window manager (development files)
+ libcroma-private2 - library for Croma window manager
+Changes:
+ croma (2.1.0-1) unstable; urgency=medium
+ .
+   * control: remove unused shlibs:Depends
+   * symbols:
+     - rename meta_gdk_pixbuf_get_from_pixmap -> meta_cdk_pixbuf_get_from_pixmap
+     - rename wnck_draw_workspace -> vnck_draw_workspace
+   * New upstream release
+Checksums-Sha1:
+ 4ce5ef4bee75af459515e3cfa92bcd3cf52d408a 746476 croma-common_2.1.0-1_all.deb
+ 49fc4e524066cc1dd494b6b15da2425d4360f1c8 76488 croma-dbgsym_2.1.0-1_amd64.deb
+ 9c0ddaccaf759eabbcc0c6e8b957bc91098dd9f9 18896 croma_2.1.0-1_amd64.buildinfo
+ b364da8809a7ff95d42faee2fa080b0464278dea 30956 croma_2.1.0-1_amd64.deb
+ 9cc679bf3cba767252aec81d0804bdea164b2f8a 20856 libcroma-dev_2.1.0-1_amd64.deb
+ 9778009249d3c309750a8a3bc9e226d90258839f 810896 libcroma-private2-dbgsym_2.1.0-1_amd64.deb
+ 819381769721cc24402de03b57be02b1f8f1ab11 267392 libcroma-private2_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ ab3f3a9bc6352d60afa0f7ab0082c519f9c0099a72bef830d4402528df877c0d 746476 croma-common_2.1.0-1_all.deb
+ 9839aea2b3f711be842acc1d75c4967f54f887fa90c44daa7791532f269b096f 76488 croma-dbgsym_2.1.0-1_amd64.deb
+ ec989a7eb7884a203251472f36fd2339af79207f825bc70b44e64bdc83c9f578 18896 croma_2.1.0-1_amd64.buildinfo
+ 90da117654237d431da987e91569536fa95c62883b74924705635a70db82df7d 30956 croma_2.1.0-1_amd64.deb
+ dab14988f7909f576bc113e8683e07dcf6dedb404a51cb8bcdaf75f1d52ff658 20856 libcroma-dev_2.1.0-1_amd64.deb
+ b5bd418767cb8991148f32ba9ecbef18a0e96da6dbeb4f0947c10014b5e80425 810896 libcroma-private2-dbgsym_2.1.0-1_amd64.deb
+ f7f20b69343b0b7ffd772cc33bdb91a8e019b510d52e61001f6574304e3090c0 267392 libcroma-private2_2.1.0-1_amd64.deb
+Files:
+ 18c9d3b1c6f17c891f688622b340a173 746476 x11 optional croma-common_2.1.0-1_all.deb
+ b81cdfc1a803f358f2e1c0818b40e780 76488 debug optional croma-dbgsym_2.1.0-1_amd64.deb
+ 75b6d53ad1c415eb8cdafababd9a5b21 18896 x11 optional croma_2.1.0-1_amd64.buildinfo
+ d517f7d527df165538a7658cc73ae4ae 30956 x11 optional croma_2.1.0-1_amd64.deb
+ 321ac14d5bc27c089e8b68075ffe09ab 20856 libdevel optional libcroma-dev_2.1.0-1_amd64.deb
+ ffc313b516b69f10d4afb7d37f295005 810896 debug optional libcroma-private2-dbgsym_2.1.0-1_amd64.deb
+ ed9b8c50f08bc415021fed25f00c2dc2 267392 libs optional libcroma-private2_2.1.0-1_amd64.deb
