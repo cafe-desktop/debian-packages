@@ -1,0 +1,54 @@
+Format: 1.8
+Date: Mon, 22 Jun 2026 17:09:27 +0200
+Source: libbean
+Binary: gir1.2-bean-2.0 libbean-2.0-0 libbean-2.0-0-dbgsym libbean-common libbean-dev libbean-doc libbean-doc-dbgsym
+Architecture: amd64 all
+Version: 2.2.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-bean-2.0 - Application plugin library (introspection files)
+ libbean-2.0-0 - Application plugin library
+ libbean-common - Application plugin library (common files)
+ libbean-dev - Application plugin library (development files)
+ libbean-doc - Application plugin library (documentation)
+Changes:
+ libbean (2.2.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Bump debhelper-compat to 13
+     - Drop unneeded build-Depends on gnome-common
+   * rules:
+     - clean up unneeded lines
+     - Drop dh_install override
+     - Override dh_gnome to avoid build warnings
+   * New upstream release
+Checksums-Sha1:
+ 05d50aa15df1767ada5289927c0c8f634fc733e2 6488 gir1.2-bean-2.0_2.2.0-1_amd64.deb
+ 49abc2746c0ab5134510adde298cec0b3ad9f035 11756 libbean-2.0-0-dbgsym_2.2.0-1_amd64.deb
+ 550730c7f077008b94ada6a6e53bb56ce69daa95 52384 libbean-2.0-0_2.2.0-1_amd64.deb
+ 23a48cc733bdf4bcb53d94721e7f4faba8e173a3 40016 libbean-common_2.2.0-1_all.deb
+ 770062f45689564b21b173065445e422a5b347b3 25400 libbean-dev_2.2.0-1_amd64.deb
+ ceb8e3de217afe7a13afeee4f07d27aea299c3b6 4820 libbean-doc-dbgsym_2.2.0-1_amd64.deb
+ 14875514737891d96f355dabf096177a3fd1945b 66808 libbean-doc_2.2.0-1_amd64.deb
+ 4990288221817ad2ac94da1c40ac7d90a28fdb21 18103 libbean_2.2.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 605d420222224820875e613c1cc2492516ad1d3aa3cbe494fa8a9f2a4ea1aa71 6488 gir1.2-bean-2.0_2.2.0-1_amd64.deb
+ 2521e1662a915c4590a4242a116e9c024c2957db9b15ebf280b2bcc8b2047328 11756 libbean-2.0-0-dbgsym_2.2.0-1_amd64.deb
+ ba534d09c4697adb18ced64014a5d0dddfbf4ed9e91b5fad11eace5e8d31f704 52384 libbean-2.0-0_2.2.0-1_amd64.deb
+ b2958b5d54453d036df79f0b0f978a3bf29c7104b7d152dee7204135a0bfe696 40016 libbean-common_2.2.0-1_all.deb
+ 6e4b05859d1778cbfa59e5aafaafc9614880c34560b2d9a86d22a33845dcade2 25400 libbean-dev_2.2.0-1_amd64.deb
+ 391bbcbeee2646faf979626333d9a3796e7225d38cc540ff3561fb76c8fd84ca 4820 libbean-doc-dbgsym_2.2.0-1_amd64.deb
+ 7f932f78d76d5968778e77f98ee796331e147c120ee981a2bbe74b602dbd0eb4 66808 libbean-doc_2.2.0-1_amd64.deb
+ a5c2696d845e0d33cd846584295cc68b347c9f52413565e5f84539d3ea3b49de 18103 libbean_2.2.0-1_amd64.buildinfo
+Files:
+ 17454a709972b86d3e525133f8540e34 6488 introspection optional gir1.2-bean-2.0_2.2.0-1_amd64.deb
+ e5a5db5f6eda922137334f55e888ea7e 11756 debug optional libbean-2.0-0-dbgsym_2.2.0-1_amd64.deb
+ 568f5b5c32afdb091dd1d56d7884161b 52384 libs optional libbean-2.0-0_2.2.0-1_amd64.deb
+ 53078310162d42535178f1460267d618 40016 libs optional libbean-common_2.2.0-1_all.deb
+ bd640838fa8668a947b6bf59da615b19 25400 libdevel optional libbean-dev_2.2.0-1_amd64.deb
+ 4c2001d22c55f5d99b4467bf90a74831 4820 debug optional libbean-doc-dbgsym_2.2.0-1_amd64.deb
+ 4d85260ac9ae53b6331475fdba0c47d1 66808 doc optional libbean-doc_2.2.0-1_amd64.deb
+ c5cff6175e02dc876ef27a490f77cfda 18103 libs optional libbean_2.2.0-1_amd64.buildinfo

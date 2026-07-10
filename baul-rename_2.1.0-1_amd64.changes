@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 11 Aug 2026 14:14:06 +0200
+Source: baul-rename
+Binary: baul-rename
+Architecture: all
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ baul-rename - Batch renaming extension for Baul
+Changes:
+ baul-rename (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ e43defb7a1dbb3de1b0b8c119670e873860f0ac2 27332 baul-rename_2.1.0-1_all.deb
+ 211892de4d179c15aaf596f19f1af33dd4a664fb 5649 baul-rename_2.1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 3eae1582144df9fc57b858d3a135c8cad87291a6d6228ceee3225ba8f78ef61e 27332 baul-rename_2.1.0-1_all.deb
+ d5dd34f9b13a65682e016f543896513e0fc13391d1f83245222e30d9532d8499 5649 baul-rename_2.1.0-1_amd64.buildinfo
+Files:
+ b3af48e8929545a27ed02c98624f82fc 27332 utils optional baul-rename_2.1.0-1_all.deb
+ 827ecd495685cc8ea3ee184ab5f99312 5649 utils optional baul-rename_2.1.0-1_amd64.buildinfo

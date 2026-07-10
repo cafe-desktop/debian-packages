@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Wed, 29 Jul 2026 11:07:48 +0200
+Source: baul
+Binary: baul baul-common baul-dbgsym gir1.2-baul-2.0 libbaul-extension-dev libbaul-extension-doc libbaul-extension2 libbaul-extension2-dbgsym
+Architecture: all amd64
+Version: 2.2.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ baul       - file manager for the CAFE desktop
+ baul-common - file manager for the CAFE desktop (common files)
+ gir1.2-baul-2.0 - GObject introspection data for Baul
+ libbaul-extension-dev - libraries for Baul components (development files)
+ libbaul-extension-doc - libraries for Baul components (API documentation files)
+ libbaul-extension2 - libraries for Baul components
+Changes:
+ baul (2.2.0-1) unstable; urgency=medium
+ .
+   * copyright: rename gdk -> cdk
+   * New upstream release
+Checksums-Sha1:
+ 77cbade62c76d32bcaedb0a33077737e62ddc5fa 2318812 baul-common_2.2.0-1_all.deb
+ ad7febfd6f8775e2cf6ce747e31f3b98a1d54785 3773920 baul-dbgsym_2.2.0-1_amd64.deb
+ a9666614d55cab1eff597ab6c00af28b0eb93a13 18473 baul_2.2.0-1_amd64.buildinfo
+ 2e6de5e63ee53e784a429c08783ef6925adea822 818224 baul_2.2.0-1_amd64.deb
+ cd9456c6e6359fb03ba0a17f059a975b5eef8656 10492 gir1.2-baul-2.0_2.2.0-1_amd64.deb
+ 9d49a79b182231fef597a7877e1a6d211a50a53c 22256 libbaul-extension-dev_2.2.0-1_amd64.deb
+ 708b3a0ca88c11c392adca663db8e0fba5c4c746 27756 libbaul-extension-doc_2.2.0-1_all.deb
+ 99833997e764f81ced1a47cda993e2114d849043 40832 libbaul-extension2-dbgsym_2.2.0-1_amd64.deb
+ c47d51a1080ed8a57318a34e03c36bb0ff2f9e5e 18640 libbaul-extension2_2.2.0-1_amd64.deb
+Checksums-Sha256:
+ 17335546360d3474272a2d073615f3b1bfd55ae7044fda9852be090d7b219bae 2318812 baul-common_2.2.0-1_all.deb
+ ca1d855932aef1e3a5e5f3ba8c3351d278235c259abf09ac9b1dc0a560c0f81f 3773920 baul-dbgsym_2.2.0-1_amd64.deb
+ e077e19fae91931403670e57328fa1ce8181926cc690bf4533e26e65b56deb31 18473 baul_2.2.0-1_amd64.buildinfo
+ dfb84a9b1946901d7fde949ab163bac969b1138e048e39efd6025ab12f0011db 818224 baul_2.2.0-1_amd64.deb
+ 5ff7d49073660492b0bc6031d187f7810d95944ba1c31e7ec76ffb5033aa71f8 10492 gir1.2-baul-2.0_2.2.0-1_amd64.deb
+ 80910cf2c0fb5bcde658ec599b01679ff01075337d879bc7636c44bc04b19c04 22256 libbaul-extension-dev_2.2.0-1_amd64.deb
+ 769f09e0874dd13f4e90442ba98e95a9964623d597d0bf5473a28ecf286e538b 27756 libbaul-extension-doc_2.2.0-1_all.deb
+ 4d1188d1c0e886f8ea45b3166d6fae061300e49ee531fe3288cb77627639c5a9 40832 libbaul-extension2-dbgsym_2.2.0-1_amd64.deb
+ 40daa107e5f8ba8446c74007547da081dbc1b34bf5b1220f95f9105146bbe09a 18640 libbaul-extension2_2.2.0-1_amd64.deb
+Files:
+ 6371ccbf0a080344fb24fbef1672b584 2318812 utils optional baul-common_2.2.0-1_all.deb
+ 03426614fae5b9b4f5628ca03a00aee2 3773920 debug optional baul-dbgsym_2.2.0-1_amd64.deb
+ 8521e619f80494e48ac34b7995f5500f 18473 utils optional baul_2.2.0-1_amd64.buildinfo
+ 74ab5b0e1d27e025685c341835615dba 818224 utils optional baul_2.2.0-1_amd64.deb
+ 08e70bf4b0ff110cbc6fdf0be46d0906 10492 introspection optional gir1.2-baul-2.0_2.2.0-1_amd64.deb
+ 8b99293b1400d74a4b11ae00cd9b9e42 22256 libdevel optional libbaul-extension-dev_2.2.0-1_amd64.deb
+ ec46194a30faac5e6ccc31fd65d80707 27756 doc optional libbaul-extension-doc_2.2.0-1_all.deb
+ 9b76eee0dff74721d8f3851218762629 40832 debug optional libbaul-extension2-dbgsym_2.2.0-1_amd64.deb
+ 5681bb0c7298775cabdd9da04dff16c8 18640 libs optional libbaul-extension2_2.2.0-1_amd64.deb
