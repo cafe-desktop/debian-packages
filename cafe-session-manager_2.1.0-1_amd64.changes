@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Sun, 27 Sep 2026 17:52:31 +0200
+Source: cafe-session-manager
+Binary: cafe-session-manager cafe-session-manager-dbgsym debian-cafe-default-settings
+Architecture: amd64 all
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-session-manager - Session manager of the CAFE desktop environment
+ debian-cafe-default-settings - Default settings for CAFE on Debian
+Changes:
+ cafe-session-manager (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ 35d5d4258dc8492d841b0000c8144109c01f7df2 443056 cafe-session-manager-dbgsym_2.1.0-1_amd64.deb
+ d5963463a5c5924aadd4b65f98985b03a0f9ef9b 15929 cafe-session-manager_2.1.0-1_amd64.buildinfo
+ 4c76a62793b6ba9f8c39f22a6d887a4af97b3819 337296 cafe-session-manager_2.1.0-1_amd64.deb
+ 4aa14778e824aef46a8d2635b7525ce28f6223dc 7244 debian-cafe-default-settings_2.1.0-1_all.deb
+Checksums-Sha256:
+ d25ded63ef5550a815bf0bb66a0e7b90606b8f3f1eba3deca232256afb4577a8 443056 cafe-session-manager-dbgsym_2.1.0-1_amd64.deb
+ 8875386a04b06c9569e0cf3124ba2c49d60a265f66dfe30b9cbf1993ff3fa074 15929 cafe-session-manager_2.1.0-1_amd64.buildinfo
+ 7e3a4f35e5cf4e9913247b52d0e45a164f009996921faafcd50192cdc8ab22d3 337296 cafe-session-manager_2.1.0-1_amd64.deb
+ 948ad045305be0e046c626184f369b51d3bdef5ba1835749602e7201f1830295 7244 debian-cafe-default-settings_2.1.0-1_all.deb
+Files:
+ f8ad307d4aa929a632d659986e870cd4 443056 debug optional cafe-session-manager-dbgsym_2.1.0-1_amd64.deb
+ 1cc546964c8a59b8ac1ea3f7c617fdb5 15929 x11 optional cafe-session-manager_2.1.0-1_amd64.buildinfo
+ a0c16b389b914e340d60eca04406a464 337296 x11 optional cafe-session-manager_2.1.0-1_amd64.deb
+ 2ff9188e5796763c1416a80c9846e450 7244 x11 optional debian-cafe-default-settings_2.1.0-1_all.deb

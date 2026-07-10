@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sat, 22 Aug 2026 18:19:32 +0200
+Source: cafe-icon-theme
+Binary: cafe-icon-theme
+Architecture: all
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-icon-theme - CAFE Desktop icon theme
+Changes:
+ cafe-icon-theme (2.1.0-1) unstable; urgency=medium
+ .
+   * control: remove librsvg2-bin and librsvg2-common
+   * New upstream release
+Checksums-Sha1:
+ 9e6af9751b541bcfb76e3e22e4df8668e7c207ca 12595672 cafe-icon-theme_2.1.0-1_all.deb
+ 3088896ebf69314e5ce554a5b6133170bee39883 7418 cafe-icon-theme_2.1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ d9aa6d541ca224044916c33b9da1534ed32221a217af83926b545a91a019eb36 12595672 cafe-icon-theme_2.1.0-1_all.deb
+ 5d95a98b00c31d40b6b9d81a4ac6c88b047e9a5177eabcb890b599362d8eff4c 7418 cafe-icon-theme_2.1.0-1_amd64.buildinfo
+Files:
+ b52501f4fbbc01e7065bdcf46e62c993 12595672 x11 optional cafe-icon-theme_2.1.0-1_all.deb
+ 762f1e19ef32ca18424021b707636b05 7418 x11 optional cafe-icon-theme_2.1.0-1_amd64.buildinfo
