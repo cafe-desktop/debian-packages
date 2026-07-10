@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Sun, 12 Jul 2026 19:35:15 +0200
+Source: libcafekbd
+Binary: gir1.2-cafekbd-2.0 libcafekbd-common libcafekbd-dev libcafekbd4 libcafekbd4-dbgsym
+Architecture: amd64 all
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gir1.2-cafekbd-2.0 - GObject introspection data for libcafekbd and libcafekbdui
+ libcafekbd-common - CAFE library to manage keyboard configuration (common files)
+ libcafekbd-dev - CAFE library to manage keyboard configuration (development files)
+ libcafekbd4 - CAFE library to manage keyboard configuration
+Changes:
+ libcafekbd (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ 07e64f53080732eccb08c0ed497e6cee9d25cdb5 6244 gir1.2-cafekbd-2.0_2.1.0-1_amd64.deb
+ 26a8154ad3ac81a689686f96ce6fa76e7fbf0405 86280 libcafekbd-common_2.1.0-1_all.deb
+ fdc7116080c71f97bdccc090cee073cba693bacd 11600 libcafekbd-dev_2.1.0-1_amd64.deb
+ 6357485c872bca20c31b1c808fad20bffa45e3af 9020 libcafekbd4-dbgsym_2.1.0-1_amd64.deb
+ aaa1d3e95e6a4f78133d4835cc31dfea72531d6f 39212 libcafekbd4_2.1.0-1_amd64.deb
+ ddf871e1de5149ca17bc1aec766e21f67d82f3af 17308 libcafekbd_2.1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 84a324b1b593548e627b558680490d0df1ec62f7a3343e5bd5b489a4b122edfa 6244 gir1.2-cafekbd-2.0_2.1.0-1_amd64.deb
+ 2ce2de7b802d21477f848adc97fbb6b3d286dc9fa9920d58c56035166da64f3f 86280 libcafekbd-common_2.1.0-1_all.deb
+ 1db6397f0493c3d22dcc991b73cc67b3506664f1706ed57bd0ff11a141fa23b5 11600 libcafekbd-dev_2.1.0-1_amd64.deb
+ 26ffbb47539227b196fb913d2a49d02a50bb46e635e5843f43dbc940417be3f3 9020 libcafekbd4-dbgsym_2.1.0-1_amd64.deb
+ b4d7b41b9fde4f6b67d1a8c16dec1bc10547ae73068a221a458e1b501f227e6a 39212 libcafekbd4_2.1.0-1_amd64.deb
+ fff549c1cb25d5139ca81dc0397936c3a847f0b819ee921260a6e3893d4a9f5d 17308 libcafekbd_2.1.0-1_amd64.buildinfo
+Files:
+ 0a12af0a16bb346807106ba3e2cd06fd 6244 introspection optional gir1.2-cafekbd-2.0_2.1.0-1_amd64.deb
+ 8da32d15fac365198b7cfe82eb8d77f5 86280 libs optional libcafekbd-common_2.1.0-1_all.deb
+ 5d3a718b87835b10b32ee9c624eeb006 11600 libdevel optional libcafekbd-dev_2.1.0-1_amd64.deb
+ 6596407c2f9615f997777486f98a7dcd 9020 debug optional libcafekbd4-dbgsym_2.1.0-1_amd64.deb
+ ed908d1a2ced084f01438648f2cad2f1 39212 libs optional libcafekbd4_2.1.0-1_amd64.deb
+ 797ef1b719e64ba5d1bf6c05da6b5a0d 17308 libs optional libcafekbd_2.1.0-1_amd64.buildinfo

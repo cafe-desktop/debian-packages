@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 30 Jul 2026 17:18:27 +0200
+Source: python-baul
+Binary: python-baul-common python3-baul python3-baul-dbgsym
+Architecture: all amd64
+Version: 2.1.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ python-baul-common - Python binding for Baul components (common files)
+ python3-baul - Python3 binding for Baul components
+Changes:
+ python-baul (2.1.1-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ e4c7d92d2d8e417a34e27441eb76497978664a33 29548 python-baul-common_2.1.1-1_all.deb
+ 286c245420fa94741d2848ab07fa431ab1db0acf 15920 python-baul_2.1.1-1_amd64.buildinfo
+ fce4f481b8379c7407eba1489c3488ba1c6c6e03 37236 python3-baul-dbgsym_2.1.1-1_amd64.deb
+ 5037be2c6c4ad2b7372032d679060e9af8d5d243 12908 python3-baul_2.1.1-1_amd64.deb
+Checksums-Sha256:
+ 877a148334b15bb63062e5327af3a9c09f5b0b238cc3447077513174f15be773 29548 python-baul-common_2.1.1-1_all.deb
+ b77c0e78237ef2a4a901641c39dd873b6b22d41c68558412e5abaed2faecafe0 15920 python-baul_2.1.1-1_amd64.buildinfo
+ e87bc3c84193b4968f3642ffc28f5469291d61202253fbf0639164a698f99e3b 37236 python3-baul-dbgsym_2.1.1-1_amd64.deb
+ 255eb1bd844f7c78fbd65880618dcb41f47a8e5151e6b870de796e769e76b3a5 12908 python3-baul_2.1.1-1_amd64.deb
+Files:
+ 091f73fb27590b9fd9fdddb10e1ef86a 29548 python optional python-baul-common_2.1.1-1_all.deb
+ 2c957c0ab55e4c80c8c648a66f7dea95 15920 python optional python-baul_2.1.1-1_amd64.buildinfo
+ 201d181099fc4ba8d2b082e07b44f7b5 37236 debug optional python3-baul-dbgsym_2.1.1-1_amd64.deb
+ e879adda1103ae92df5fbac2ba50d44b 12908 python optional python3-baul_2.1.1-1_amd64.deb

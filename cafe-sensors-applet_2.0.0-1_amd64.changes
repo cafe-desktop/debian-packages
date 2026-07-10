@@ -1,0 +1,60 @@
+Format: 1.8
+Date: Sun, 27 Sep 2026 12:14:38 +0200
+Source: cafe-sensors-applet
+Binary: cafe-sensors-applet cafe-sensors-applet-common cafe-sensors-applet-dbgsym cafe-sensors-applet-nvidia cafe-sensors-applet-nvidia-dbgsym libcafe-sensors-applet-plugin-dev libcafe-sensors-applet-plugin0 libcafe-sensors-applet-plugin0-dbgsym
+Architecture: all amd64
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-sensors-applet - Display readings from hardware sensors in your CAFE panel
+ cafe-sensors-applet-common - Display readings from hardware sensors in your CAFE panel (common
+ cafe-sensors-applet-nvidia - Display readings from hardware sensors in your CAFE panel (NVIDIA
+ libcafe-sensors-applet-plugin-dev - Library for plugins for the cafe-sensors-applet package (developm
+ libcafe-sensors-applet-plugin0 - Library for plugins for the cafe-sensors-applet package
+Changes:
+ cafe-sensors-applet (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - remove shlibs:Depends in libcafe-sensors-applet-plugin-dev
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * drop cafe-sensors-applet.lintian-overrides
+   * New upstream release
+Checksums-Sha1:
+ 7c6b794b770c302a989670ac2a46ac8c2f180e47 170656 cafe-sensors-applet-common_2.0.0-1_all.deb
+ e9ffb2f00c86ac895e3696db255a24de91286c2b 132812 cafe-sensors-applet-dbgsym_2.0.0-1_amd64.deb
+ ddf4cc77e695c1e6b0760aab0c7bd42973f2acbd 5904 cafe-sensors-applet-nvidia-dbgsym_2.0.0-1_amd64.deb
+ 6f14a46738d055dbe1a54cdaeb714f24cc8f46ce 7012 cafe-sensors-applet-nvidia_2.0.0-1_amd64.deb
+ 48ecafb5454fb9a3020a034af12cf5b0f69b7abc 17988 cafe-sensors-applet_2.0.0-1_amd64.buildinfo
+ 42a4b0426a1ceca6edd2bcada1005864b156232a 51052 cafe-sensors-applet_2.0.0-1_amd64.deb
+ 186090b471633f93a476d17d3dacdc07666fb055 5344 libcafe-sensors-applet-plugin-dev_2.0.0-1_amd64.deb
+ a9eb97890d34b86202e7a5fb4c08a829f0f573bf 6544 libcafe-sensors-applet-plugin0-dbgsym_2.0.0-1_amd64.deb
+ 44fd847246a6d06404ca4ea03c7426c74a04d960 6976 libcafe-sensors-applet-plugin0_2.0.0-1_amd64.deb
+Checksums-Sha256:
+ 7e8e5c51bb6cf9d5270a53c1c36bfd96e5cb02ff4b1e936bc749496fc27d0b73 170656 cafe-sensors-applet-common_2.0.0-1_all.deb
+ 813cfe17eacd9e04d826e27e493188f73e5ff97daf8d6d4d4cfa1bd4492c82a7 132812 cafe-sensors-applet-dbgsym_2.0.0-1_amd64.deb
+ 7bca8d505dd93a956e014f44a8a516664380ba97448403cc8eeee60c27c5476c 5904 cafe-sensors-applet-nvidia-dbgsym_2.0.0-1_amd64.deb
+ e07f4e7571a74d1002ef2339aae4628a4f89272e0c1598dc892635c499c07fd0 7012 cafe-sensors-applet-nvidia_2.0.0-1_amd64.deb
+ 4715f9b68654bab2e26559cbd042b42d28c7d1936dee63d5250dc5fb8713ebf6 17988 cafe-sensors-applet_2.0.0-1_amd64.buildinfo
+ 4dc3b96f57116b36ad79518b84a95a311d9f86a7c4e47decd736e93a459cc978 51052 cafe-sensors-applet_2.0.0-1_amd64.deb
+ 1a33e2d5a0818dd9683e02f038e135265c8de75931b3e02a8ad51bb018db1052 5344 libcafe-sensors-applet-plugin-dev_2.0.0-1_amd64.deb
+ 5e9f2f59db1788f93d2342675908931bc6d3af93b6f9076e16bb924cd8dd0021 6544 libcafe-sensors-applet-plugin0-dbgsym_2.0.0-1_amd64.deb
+ e82b6f15bea337eaa5a828bbb37de8cc0f223e34c710c263ec274c43f220a38b 6976 libcafe-sensors-applet-plugin0_2.0.0-1_amd64.deb
+Files:
+ d3286cdaf2a9713543b268b6b69f4e49 170656 x11 optional cafe-sensors-applet-common_2.0.0-1_all.deb
+ 59bca90361d6ea02462fb2e1425cae45 132812 debug optional cafe-sensors-applet-dbgsym_2.0.0-1_amd64.deb
+ 7cf06757e47e3261437344b453123da3 5904 debug optional cafe-sensors-applet-nvidia-dbgsym_2.0.0-1_amd64.deb
+ aabe12e7164458a84d5af575df8fcd81 7012 x11 optional cafe-sensors-applet-nvidia_2.0.0-1_amd64.deb
+ 6b460beb0505d775308cf0c580ab02c0 17988 x11 optional cafe-sensors-applet_2.0.0-1_amd64.buildinfo
+ 79616f3511218ea0b9d35aa49bf029fb 51052 x11 optional cafe-sensors-applet_2.0.0-1_amd64.deb
+ 887d6591829c3ba964cd3e77791874a1 5344 libdevel optional libcafe-sensors-applet-plugin-dev_2.0.0-1_amd64.deb
+ 5ce738fd52516545334d3886d7c13ae1 6544 debug optional libcafe-sensors-applet-plugin0-dbgsym_2.0.0-1_amd64.deb
+ d46cf976945351be5019532da6e0b630 6976 libs optional libcafe-sensors-applet-plugin0_2.0.0-1_amd64.deb

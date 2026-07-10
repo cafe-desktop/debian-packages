@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Thu, 01 Oct 2026 23:53:44 +0200
+Source: cafe-utils
+Binary: cafe-utils cafe-utils-common cafe-utils-dbgsym libcafedict-dev libcafedict6 libcafedict6-dbgsym
+Architecture: all amd64
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-utils - CAFE desktop utilities
+ cafe-utils-common - CAFE desktop utilities (common files)
+ libcafedict-dev - CAFE desktop utilities (cafedict development files)
+ libcafedict6 - CAFE desktop utilities (cafedict library)
+Changes:
+ cafe-utils (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+     - Bump DH compat level to version 13
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ 67629cb5e92bb9180e875317cfd3ae8588b17478 6471176 cafe-utils-common_2.0.0-1_all.deb
+ 1fe0caac18d2f9f7df8b89997bdb917f9771c79c 620076 cafe-utils-dbgsym_2.0.0-1_amd64.deb
+ 93521617dc59bdacbcccbff802d9eb30c14bc60e 17300 cafe-utils_2.0.0-1_amd64.buildinfo
+ 0309d23de5f08f2db83481b3ba0a3ec20b32e8b7 216400 cafe-utils_2.0.0-1_amd64.deb
+ 7b6cb4e65fb06155c54bf235226a55f648c664df 12132 libcafedict-dev_2.0.0-1_amd64.deb
+ 8ac7660ab66c4ae10a8c97d7266954e5d8539472 141876 libcafedict6-dbgsym_2.0.0-1_amd64.deb
+ f2ac1de3c787d084f34c9dcc752cae11cc99c715 47616 libcafedict6_2.0.0-1_amd64.deb
+Checksums-Sha256:
+ 8f2b2598e7fa131caec6280076a69f3c6e12563e88aa2af061b73e443e88d3a8 6471176 cafe-utils-common_2.0.0-1_all.deb
+ b4b2c01f759e71b50e917fbfd59f5e48ccc8133d9c7bf0c6a8a47cddfc7eac4d 620076 cafe-utils-dbgsym_2.0.0-1_amd64.deb
+ a1ada2a59df951bb78ee641bd467004d2e7dac36a53545db594def461a1f9498 17300 cafe-utils_2.0.0-1_amd64.buildinfo
+ 667252c8549ae7368b7606323725e1bec716686473c332b823854e1be7636031 216400 cafe-utils_2.0.0-1_amd64.deb
+ 8a914fcc5954e334987d4f5425e17775966848d014592cf4a3a7e5ccf76e064e 12132 libcafedict-dev_2.0.0-1_amd64.deb
+ 10965e446556380276e4ead6cd910ec9ac27c5038fcd2150f3a40bac76c9f2d1 141876 libcafedict6-dbgsym_2.0.0-1_amd64.deb
+ 4471c7bf5f1371d2d8e6c11ffb341b4444eb933ef59670832a3e1b3136ad4086 47616 libcafedict6_2.0.0-1_amd64.deb
+Files:
+ e51b07834845ea268ccabebe9d4ed849 6471176 x11 optional cafe-utils-common_2.0.0-1_all.deb
+ 7fef630c1235d8d2be394792ffa53216 620076 debug optional cafe-utils-dbgsym_2.0.0-1_amd64.deb
+ cdbc0dd3bdd8e14be39d2cff75cdefc8 17300 x11 optional cafe-utils_2.0.0-1_amd64.buildinfo
+ b00aec9cd48b7b68458e087e9ca6ac57 216400 x11 optional cafe-utils_2.0.0-1_amd64.deb
+ 5277e2863f9f9386ed31e4279707a7fd 12132 libdevel optional libcafedict-dev_2.0.0-1_amd64.deb
+ d1b31fda97a6f3a1fa236d07a3940fdc 141876 debug optional libcafedict6-dbgsym_2.0.0-1_amd64.deb
+ 5707dcc84a2f0c8249b772c32018d862 47616 libs optional libcafedict6_2.0.0-1_amd64.deb

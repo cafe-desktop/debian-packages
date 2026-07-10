@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Sun, 16 Aug 2026 14:41:18 +0200
+Source: cafe-calc
+Binary: cafe-calc cafe-calc-common cafe-calc-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-calc  - CAFE desktop calculator
+ cafe-calc-common - CAFE desktop calculator (common files)
+Changes:
+ cafe-calc (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ 1e1aa28db6edce268007df5eab3362d51581af43 536984 cafe-calc-common_2.1.0-1_all.deb
+ 081bdc31d580541989987eeaf8989dc69993df6d 465240 cafe-calc-dbgsym_2.1.0-1_amd64.deb
+ 7ff25ff9e5ab756d9b7af5bf94ab1c916be5ac91 15693 cafe-calc_2.1.0-1_amd64.buildinfo
+ 443b76dc7b09863c503575b8bd0e02e17f6982a1 139508 cafe-calc_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ 1b3aaf89066cb20d67623a7b85fdca551c877af68b6283d089b35f119066a516 536984 cafe-calc-common_2.1.0-1_all.deb
+ a8f6c1b48a746cc686b6635069a25511b2d9ce53078007acbe61a7b3c629b4ba 465240 cafe-calc-dbgsym_2.1.0-1_amd64.deb
+ dc25a9b2519761f1a5627072ba8d549fa0388a63a3d6c90da1e49e229bc24534 15693 cafe-calc_2.1.0-1_amd64.buildinfo
+ e7651334a8ad2a2e8f0ce5bbf40d1aa60605aa589977f76866bb3baab2674d68 139508 cafe-calc_2.1.0-1_amd64.deb
+Files:
+ eef02c76dcdfb49be8b17b020329be76 536984 math optional cafe-calc-common_2.1.0-1_all.deb
+ 1be153243af9a462d3d6d55cdbe5291f 465240 debug optional cafe-calc-dbgsym_2.1.0-1_amd64.deb
+ a57130949e8e11945b0a30fc8b110d8a 15693 math optional cafe-calc_2.1.0-1_amd64.buildinfo
+ a98c41ec5942ea947602c653edd63838 139508 math optional cafe-calc_2.1.0-1_amd64.deb

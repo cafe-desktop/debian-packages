@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Wed, 24 Jun 2026 13:11:37 +0200
+Source: cafe-common
+Binary: cafe-common
+Architecture: all
+Version: 2.2.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-common - common scripts and macros to develop with CAFE
+Changes:
+ cafe-common (2.2.0-1) unstable; urgency=medium
+ .
+   * control: Bump DH compat level to version 13
+   * rules: Drop dh_missing override, --fail-missing is default in compat 13
+   * New upstream release
+Checksums-Sha1:
+ c8d97365c66d67210591edfdb3d94b15d416960d 15872 cafe-common_2.2.0-1_all.deb
+ f201fc3d5931e225892b7ef0f8cac0fa54df78a5 5803 cafe-common_2.2.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 628da359f12d6ca23efd0fa2344c5b6d0fbb5cdf7f6684163895ab226f81d312 15872 cafe-common_2.2.0-1_all.deb
+ 6c82081908fb4a6f6289d8884b3c248cbd2352a5479211946943e25854dc9df1 5803 cafe-common_2.2.0-1_amd64.buildinfo
+Files:
+ 3c915e0f7193c88b0be238095c6efcac 15872 devel optional cafe-common_2.2.0-1_all.deb
+ 30f804202c66a787e3aa0b7e93b5e040 5803 devel optional cafe-common_2.2.0-1_amd64.buildinfo
