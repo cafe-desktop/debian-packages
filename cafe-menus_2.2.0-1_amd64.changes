@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Sat, 25 Jul 2026 10:48:16 +0200
+Source: cafe-menus
+Binary: cafe-menus gir1.2-cafemenu-2.0 libcafe-menu-dev libcafe-menu2 libcafe-menu2-dbgsym
+Architecture: all amd64
+Version: 2.2.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-menus - implementation of the freedesktop menu specification for CAFE
+ gir1.2-cafemenu-2.0 - GObject introspection data for the CAFE menu specification
+ libcafe-menu-dev - implementation of the freedesktop menu specs for CAFE (developmen
+ libcafe-menu2 - implementation of the freedesktop menu specification for CAFE (li
+Changes:
+ cafe-menus (2.2.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ ada896fb8af1afb0a31db940192f63d9d80564f8 78704 cafe-menus_2.2.0-1_all.deb
+ 855f60e91c0f2101c8cd464de73e1e4e3af44085 9249 cafe-menus_2.2.0-1_amd64.buildinfo
+ c4e9282771b8191d0c0634968242694b8c55d981 9160 gir1.2-cafemenu-2.0_2.2.0-1_amd64.deb
+ 674a893e525641c7544a46b7cb17df4f95cc0f3b 12844 libcafe-menu-dev_2.2.0-1_amd64.deb
+ 4231b6d679ccdf4b5b187666cb3b135edb4d3e2f 8092 libcafe-menu2-dbgsym_2.2.0-1_amd64.deb
+ 4bdebf6945d570f0581f6c74ba3d5a4e281c273a 40368 libcafe-menu2_2.2.0-1_amd64.deb
+Checksums-Sha256:
+ 32e2a80da16bcee78c0af91564257fd9d3e7d817e0372cb24d3b288a8987823a 78704 cafe-menus_2.2.0-1_all.deb
+ 70b90a16dd22944900af2d6d57cca61096624651c2043f4c720cfc842a45c62c 9249 cafe-menus_2.2.0-1_amd64.buildinfo
+ c0e294432dc824d5653d855a6615c9319ea6fc28e38a00339b0bc4877ff3680f 9160 gir1.2-cafemenu-2.0_2.2.0-1_amd64.deb
+ 69390994cee880d4ae1f22369f64cea0393d75de1751751621eda48574d3ef80 12844 libcafe-menu-dev_2.2.0-1_amd64.deb
+ 9bce9180924dd82329c830bcd3edfe2e7cfc97b443c864b1fd99d886aabdd196 8092 libcafe-menu2-dbgsym_2.2.0-1_amd64.deb
+ b862d37057d53c5e4907178f50b0106733c44698d207f93a728a094eecdf8c30 40368 libcafe-menu2_2.2.0-1_amd64.deb
+Files:
+ 9174639e30db35b4dbf5906a3f3ac593 78704 libs optional cafe-menus_2.2.0-1_all.deb
+ d5a91680bf3af3da7d6a003b4120fcf6 9249 libs optional cafe-menus_2.2.0-1_amd64.buildinfo
+ a17f2682388241d9a7bb691ee7972cb1 9160 introspection optional gir1.2-cafemenu-2.0_2.2.0-1_amd64.deb
+ 553b6b1ff8683f6e4b7d6bf15adcae82 12844 libdevel optional libcafe-menu-dev_2.2.0-1_amd64.deb
+ cb497f527110bd767efe82f3b34a2b2e 8092 debug optional libcafe-menu2-dbgsym_2.2.0-1_amd64.deb
+ 0eb0823e23eb6f2bccc7b8bc7208fb5e 40368 libs optional libcafe-menu2_2.2.0-1_amd64.deb

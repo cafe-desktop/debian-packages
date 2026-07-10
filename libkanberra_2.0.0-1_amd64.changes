@@ -1,0 +1,87 @@
+Format: 1.8
+Date: Wed, 08 Jul 2026 17:48:49 +0200
+Source: libkanberra
+Binary: gnome-session-kanberra gnome-session-kanberra-dbgsym libkanberra-ctk-common-dev libkanberra-ctk3-0 libkanberra-ctk3-0-dbgsym libkanberra-ctk3-dev libkanberra-ctk3-module libkanberra-ctk3-module-dbgsym libkanberra-dev libkanberra-doc libkanberra-gstreamer libkanberra-gstreamer-dbgsym libkanberra-pulse libkanberra-pulse-dbgsym libkanberra0 libkanberra0-dbgsym
+Architecture: amd64 all
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ gnome-session-kanberra - GNOME session log in and log out sound events
+ libkanberra-ctk-common-dev - simple interface for playing event sounds (CTK+ shared developmen
+ libkanberra-ctk3-0 - CTK+ 3.0 helper for playing widget event sounds with libkanberra
+ libkanberra-ctk3-dev - simple interface for playing event sounds (CTK+ 3 development fil
+ libkanberra-ctk3-module - translates CTK3 widgets signals to event sounds
+ libkanberra-dev - simple interface for playing event sounds (development files)
+ libkanberra-doc - simple abstract interface for playing event sounds - doc
+ libkanberra-gstreamer - GStreamer backend for libkanberra
+ libkanberra-pulse - PulseAudio backend for libkanberra
+ libkanberra0 - simple abstract interface for playing event sounds
+Changes:
+ libkanberra (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - set debhelper-compat to 13
+     - remove unused shlibs:Depends
+   * rules:
+     - Drop unnecessary dh_strip override
+     - Override dh_gnome to avoid build warnings
+   * update libkanberra0 symbols
+   * add not-installed file
+   * New upstream release
+Checksums-Sha1:
+ 339bc5b8af93ace973969964bd3d7fa8f612a19f 2668 gnome-session-kanberra-dbgsym_2.0.0-1_amd64.deb
+ 37099dc87d9c334fc1443d6e79eae540a16c5f7c 6940 gnome-session-kanberra_2.0.0-1_amd64.deb
+ f1de39f6a22f7192b3aa2c66d3333d390790ff57 2956 libkanberra-ctk-common-dev_2.0.0-1_all.deb
+ 049f55c7d284aaca2f322d717a779d12b3db7b8a 2824 libkanberra-ctk3-0-dbgsym_2.0.0-1_amd64.deb
+ 6b365381be42d7b37222962b574676b26c3ecb19 7992 libkanberra-ctk3-0_2.0.0-1_amd64.deb
+ 207fc8443999976efca58bfb6047d235257b4758 2540 libkanberra-ctk3-dev_2.0.0-1_amd64.deb
+ b6115d4de2aa4b59d9fd49abd82125eaedaf7a42 3248 libkanberra-ctk3-module-dbgsym_2.0.0-1_amd64.deb
+ 23e48b18514202f1f89fea84d35451ea04f324b3 9856 libkanberra-ctk3-module_2.0.0-1_amd64.deb
+ 19b717d9055425f54689ae193c36e7a1f00d11ef 6620 libkanberra-dev_2.0.0-1_amd64.deb
+ 9a140c72ae9c83925feece2e3258ac1c45212e39 20012 libkanberra-doc_2.0.0-1_all.deb
+ 5f4e212c254e8b5c4957e9cfb02de06eb09b8855 2988 libkanberra-gstreamer-dbgsym_2.0.0-1_amd64.deb
+ f72fdc6e49dc4857312997357a2a3d382d93161a 8244 libkanberra-gstreamer_2.0.0-1_amd64.deb
+ eab2625eefe3e5a1adb5f339b330b0852c99f804 3204 libkanberra-pulse-dbgsym_2.0.0-1_amd64.deb
+ 1d650804b8b5e4ce39537c44c1e458141a03cade 11572 libkanberra-pulse_2.0.0-1_amd64.deb
+ c54051c5efe177dd57fe7510df478facccea66f6 5700 libkanberra0-dbgsym_2.0.0-1_amd64.deb
+ 9e49d4d6c118fc9c8882f7ce5d7be9637a14be87 31704 libkanberra0_2.0.0-1_amd64.deb
+ 2d567f0b5cca3fcd957089ee8fbdc613c55b121a 19811 libkanberra_2.0.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 069b0891c5207d3e5c3924ce2bd5f4f7f7ddbf123bb6642cbb8be8948c252cc7 2668 gnome-session-kanberra-dbgsym_2.0.0-1_amd64.deb
+ 03a77d44a4b47b544b54e28333872755ec17798775e386f41404e44794ca2f11 6940 gnome-session-kanberra_2.0.0-1_amd64.deb
+ b3efbdfe09788a2849bdd7542a1ede9d4a9984f7df085a880ced6dbb11ce93ca 2956 libkanberra-ctk-common-dev_2.0.0-1_all.deb
+ 406a2ad093402b0a9194ce56b91a918354b986f352c951318b952dd76215c792 2824 libkanberra-ctk3-0-dbgsym_2.0.0-1_amd64.deb
+ 54c4681d9fff80d11aba01931c6a78863c6c856224fbfd87151cc00ab09d96cf 7992 libkanberra-ctk3-0_2.0.0-1_amd64.deb
+ fff8d973f2555e661bd1323ff99eea373322a04cdb0c0096faf5eb4cd37d6265 2540 libkanberra-ctk3-dev_2.0.0-1_amd64.deb
+ 78d8896779e191df0704e63955c5a56d4ed91eb065ab4de653d290f80e21c228 3248 libkanberra-ctk3-module-dbgsym_2.0.0-1_amd64.deb
+ b3c6579a20d11d064a7cdcaf12d78226bf6a64848c34b4728b3764d334985727 9856 libkanberra-ctk3-module_2.0.0-1_amd64.deb
+ 74ee31d133a4fa4b75d3c91309c72d7a65a2f84d8cecebec09f82033148d528f 6620 libkanberra-dev_2.0.0-1_amd64.deb
+ 03640fc894ec5adb13e1a0b265407ffc95eadbff945e455be1ef8abd617d7bf1 20012 libkanberra-doc_2.0.0-1_all.deb
+ 65e3b04b9175466f90b0f5666b16ae288a716a7c6379574654e1b22eb861dd8c 2988 libkanberra-gstreamer-dbgsym_2.0.0-1_amd64.deb
+ 4f0090fc5c76f219c04f38e72b759a3e81cef2f31d07b9990189ebafc1e623a9 8244 libkanberra-gstreamer_2.0.0-1_amd64.deb
+ 285c85e4301d05c94c143cbb74bd4e50e878fc2650caba2a21bbf9c5ac0131d2 3204 libkanberra-pulse-dbgsym_2.0.0-1_amd64.deb
+ 41459a69701d791d2137f4a5740e85ef07977c45da437fbc5bdc2e932617518d 11572 libkanberra-pulse_2.0.0-1_amd64.deb
+ 625f8ad44debc49839beef1157aabfff4fcc3e3f1e2646c5390af29bdbce70a8 5700 libkanberra0-dbgsym_2.0.0-1_amd64.deb
+ 4e79b8940ae12c9c5b0f3c405598ad473ddd1bf236ea062346dab61e1516e332 31704 libkanberra0_2.0.0-1_amd64.deb
+ 24dc902936b1dd0691450c03c2fd1d54d0fe033f2259d4ac144580daa03ff298 19811 libkanberra_2.0.0-1_amd64.buildinfo
+Files:
+ 1a3135a3bae805a8f01ce83a18fdb6c7 2668 debug optional gnome-session-kanberra-dbgsym_2.0.0-1_amd64.deb
+ 3095507b376971e2fbfb6d9af300d769 6940 gnome optional gnome-session-kanberra_2.0.0-1_amd64.deb
+ 5fb04327092292270d5cc775f1ced0da 2956 libdevel optional libkanberra-ctk-common-dev_2.0.0-1_all.deb
+ 93808d78776e850b27f5fcfb718e842b 2824 debug optional libkanberra-ctk3-0-dbgsym_2.0.0-1_amd64.deb
+ 94de5d7c4dde8a1b9eef8a2561c5798a 7992 libs optional libkanberra-ctk3-0_2.0.0-1_amd64.deb
+ 1fcd4b519fc6256bca462bb9e49bf585 2540 libdevel optional libkanberra-ctk3-dev_2.0.0-1_amd64.deb
+ 41aa837d5c10cb17f6878151f29ee249 3248 debug optional libkanberra-ctk3-module-dbgsym_2.0.0-1_amd64.deb
+ c0b3eb4857265cc446737ced1b856b29 9856 libs optional libkanberra-ctk3-module_2.0.0-1_amd64.deb
+ 855a5c4a5c53eb80f8ae2447df416eec 6620 libdevel optional libkanberra-dev_2.0.0-1_amd64.deb
+ bba8b3dddc8e04df89ff3c04cd577bc8 20012 doc optional libkanberra-doc_2.0.0-1_all.deb
+ 1c44509251312abf13fa0cd526be0507 2988 debug optional libkanberra-gstreamer-dbgsym_2.0.0-1_amd64.deb
+ 319696926e07927b5f2124782eb592c4 8244 libs optional libkanberra-gstreamer_2.0.0-1_amd64.deb
+ 04cc86423eed917d9926743fc8040258 3204 debug optional libkanberra-pulse-dbgsym_2.0.0-1_amd64.deb
+ 830156b1c2fbc1bdb5384f914e953b2e 11572 libs optional libkanberra-pulse_2.0.0-1_amd64.deb
+ cf9fb58d4f98cf49ac92c17e02626be0 5700 debug optional libkanberra0-dbgsym_2.0.0-1_amd64.deb
+ 3c422f5fe1a53ea753fdba4d7ea42622 31704 libs optional libkanberra0_2.0.0-1_amd64.deb
+ 4708b549130c2e85225706aba4d481c2 19811 libs optional libkanberra_2.0.0-1_amd64.buildinfo
