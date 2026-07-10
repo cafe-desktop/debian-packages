@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Mon, 17 Aug 2026 15:28:58 +0200
+Source: ctk-icon-naming-utils
+Binary: ctk-icon-naming-utils
+Architecture: all
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ ctk-icon-naming-utils - script for maintaining backwards compatibility of Tango Project
+Changes:
+ ctk-icon-naming-utils (2.0.0-1) unstable; urgency=medium
+ .
+   * control:
+     - update maintainer
+     - Update Homepage
+   * watch: upgrade to version 5
+   * New upstream release
+Checksums-Sha1:
+ 2fabf09fa8b8955684d6f00a1d428338164a2d30 9484 ctk-icon-naming-utils_2.0.0-1_all.deb
+ c08de9b42981ec543d2f9a1c286edf58048bb2d0 6535 ctk-icon-naming-utils_2.0.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 0cd07510642564c9913d5acec517a7f6beed74cc51ca458910e9f4fac7b4f131 9484 ctk-icon-naming-utils_2.0.0-1_all.deb
+ 5ff9eb8ce3fee462a575f0a67069ff36705a1c0320bd282422e703849bcdcb5b 6535 ctk-icon-naming-utils_2.0.0-1_amd64.buildinfo
+Files:
+ a67e2696f0a87b1d55c7a6e19c11549a 9484 x11 optional ctk-icon-naming-utils_2.0.0-1_all.deb
+ 73698465845c6c79b5ae0e16a261cc28 6535 x11 optional ctk-icon-naming-utils_2.0.0-1_amd64.buildinfo

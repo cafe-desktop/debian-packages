@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 13 Aug 2026 12:31:34 +0200
+Source: cafe-terminal
+Binary: cafe-terminal cafe-terminal-common cafe-terminal-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-terminal - CAFE terminal emulator application
+ cafe-terminal-common - CAFE terminal emulator application (common files)
+Changes:
+ cafe-terminal (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ e7e87f241e787549b06c842454c1f3143dac1c75 1116868 cafe-terminal-common_2.1.0-1_all.deb
+ f2d40d1c724eb69f48131d596616893c14b7645f 397560 cafe-terminal-dbgsym_2.1.0-1_amd64.deb
+ 7e145d5e3a6458e5271dd9889a9292f61f4fa9eb 16526 cafe-terminal_2.1.0-1_amd64.buildinfo
+ ad47496a43028f7a58f11de4d691096b7c16c767 136692 cafe-terminal_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ 37b429e25fd58136d6aee852aa30fbdd7866f0fcc0efa40e632856bda9ef5f2b 1116868 cafe-terminal-common_2.1.0-1_all.deb
+ b576eb86fcb07c875b28e6eac65df0cce7042614d445bacf51993450652a0c16 397560 cafe-terminal-dbgsym_2.1.0-1_amd64.deb
+ 48ce93d06f9f8f45dcec214c47b58943d9febf24ae961caea3b438100675be38 16526 cafe-terminal_2.1.0-1_amd64.buildinfo
+ b4670dbd1172d2b7597f7d6a40d7099f3b078e7191ea402bee868c7ecd7d957d 136692 cafe-terminal_2.1.0-1_amd64.deb
+Files:
+ 330672a08632f47c135ed3f9ebb1e41f 1116868 x11 optional cafe-terminal-common_2.1.0-1_all.deb
+ 3e5d9e36d3f6283012fa6ba37ac33c5e 397560 debug optional cafe-terminal-dbgsym_2.1.0-1_amd64.deb
+ d70b0d82de1116b86d63cd7042e6b4c0 16526 x11 optional cafe-terminal_2.1.0-1_amd64.buildinfo
+ fb1019ae6261b9bd30ed535c0889ea62 136692 x11 optional cafe-terminal_2.1.0-1_amd64.deb

@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Thu, 10 Sep 2026 11:26:00 +0200
+Source: cafe-polkit
+Binary: cafe-polkit cafe-polkit-bin cafe-polkit-common cafe-polkit-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-polkit - CAFE authentication agent for PolicyKit-1
+ cafe-polkit-bin - CAFE authentication agent for PolicyKit-1 (executable wrapper scr
+ cafe-polkit-common - CAFE authentication agent for PolicyKit-1 (common files)
+Changes:
+ cafe-polkit (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - 'pkgconf' instead transitional 'pkg-config'
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules: remove obsolete get-orig-source
+   * watch: upgrade to version 5
+   * avoid cdbs
+   * move polkit-agent executable and man page
+   * New upstream release
+Checksums-Sha1:
+ ea41441a1845c1834c3363566c5925636ddf8ec9 4640 cafe-polkit-bin_2.1.0-1_all.deb
+ e69442cc831fec96e1bb421082d1e682c74e9eaa 40164 cafe-polkit-common_2.1.0-1_all.deb
+ 398453f2b24246f6373fd56e30d1a579c8d541a2 5292 cafe-polkit-dbgsym_2.1.0-1_amd64.deb
+ c30605b39ad412dd79408cdda548a681212334fc 16933 cafe-polkit_2.1.0-1_amd64.buildinfo
+ 04de8056243d8d96c075bc63df30617cd9fd361d 19040 cafe-polkit_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ 522d3c0b4095c2f7f4c56e314e5662cbcf442e222241045fd507488e4e8ebba8 4640 cafe-polkit-bin_2.1.0-1_all.deb
+ c92daaa608dc9abd137ee8c419a2df12bae985bfad0ed82ffb2b5628ea4c6e52 40164 cafe-polkit-common_2.1.0-1_all.deb
+ abe2868c20b6cd0f4eaa1abf844a8211728feea0bd437a060cd344907739e5a5 5292 cafe-polkit-dbgsym_2.1.0-1_amd64.deb
+ b7677782c44fdcdf712bb8c48805fa9952110cc7c4cbb607a55c4ea3c5be4f42 16933 cafe-polkit_2.1.0-1_amd64.buildinfo
+ 4f9f27560665ac8e40e030bc663f83ca8b8c33826a2599e9855f013ca2077250 19040 cafe-polkit_2.1.0-1_amd64.deb
+Files:
+ 65b4f7432bf02ab4a66e2f314966bc72 4640 x11 optional cafe-polkit-bin_2.1.0-1_all.deb
+ 7992cd3891bb8c0503b13b04f3836066 40164 x11 optional cafe-polkit-common_2.1.0-1_all.deb
+ af6f658f34e6ab49fb25f15e87f84bb4 5292 debug optional cafe-polkit-dbgsym_2.1.0-1_amd64.deb
+ 70eb56915f28391f94e94d4b53551ebf 16933 x11 optional cafe-polkit_2.1.0-1_amd64.buildinfo
+ 56f3a5ac8e321d462f3d6d1adf86eff9 19040 x11 optional cafe-polkit_2.1.0-1_amd64.deb

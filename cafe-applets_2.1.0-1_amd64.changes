@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 14 Aug 2026 10:35:06 +0200
+Source: cafe-applets
+Binary: cafe-applets cafe-applets-common cafe-applets-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-applets - Various applets for the CAFE panel
+ cafe-applets-common - Various applets for the CAFE panel (common files)
+Changes:
+ cafe-applets (2.1.0-1) unstable; urgency=medium
+ .
+   * New upstream release
+Checksums-Sha1:
+ cfb8c2051bbace9fc9c631c7abdf8868190bcf23 7292600 cafe-applets-common_2.1.0-1_all.deb
+ ad54d086e8eedefcde47341e17c0b3553ab76a83 487656 cafe-applets-dbgsym_2.1.0-1_amd64.deb
+ f53d8f11ccab49fe9d885eac7f31dbb5c3ebfdd6 18806 cafe-applets_2.1.0-1_amd64.buildinfo
+ 441b871de955b0a3b1065a1d0c39c710155a9813 171908 cafe-applets_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ 01a69a400f260d6da35ac4f58d3d1a6e6a088041f8459c827631d7d731f2dd87 7292600 cafe-applets-common_2.1.0-1_all.deb
+ 6deee7d08812d18a489ea31c0bc9645b58d48550b38e27e9f763801dc2f6846d 487656 cafe-applets-dbgsym_2.1.0-1_amd64.deb
+ f34bc7ea0047d61451779c5a782d2e9d64d15a266c471b670afabcda48cc55c0 18806 cafe-applets_2.1.0-1_amd64.buildinfo
+ f323a8c648b9d382ef4da24b318892e00864af4cd13414f66c624c964a48c21f 171908 cafe-applets_2.1.0-1_amd64.deb
+Files:
+ d598388cb94e138d8d672bafb5056b50 7292600 x11 optional cafe-applets-common_2.1.0-1_all.deb
+ 5683f1b3254880e96cc9975472fc6d55 487656 debug optional cafe-applets-dbgsym_2.1.0-1_amd64.deb
+ 51ffeda8fdecaa8ca3560e9dacb78731 18806 x11 optional cafe-applets_2.1.0-1_amd64.buildinfo
+ 122c2db3422a3d197eb0500f1e508e84 171908 x11 optional cafe-applets_2.1.0-1_amd64.deb

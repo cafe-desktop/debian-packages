@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Thu, 25 Jun 2026 17:50:39 +0200
+Source: cafe-desktop
+Binary: cafe-desktop cafe-desktop-common cafe-desktop-dbgsym gir1.2-cafedesktop-2.0 libcafe-desktop-2-17 libcafe-desktop-2-17-dbgsym libcafe-desktop-dev libcafe-desktop-doc
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-desktop - Library with common API for various CAFE modules
+ cafe-desktop-common - Library with common API for various CAFE modules (common files)
+ gir1.2-cafedesktop-2.0 - GObject introspection data for the libcafe-desktop library
+ libcafe-desktop-2-17 - Library with common API for various CAFE modules (library)
+ libcafe-desktop-dev - Library with common API for various CAFE modules (development fil
+ libcafe-desktop-doc - Library with common API for various CAFE modules (documentation f
+Changes:
+ cafe-desktop (2.1.0-1) unstable; urgency=medium
+ .
+   * rules:
+     - remove dh_missing --fail-missing default with DH 13
+     - Simplify debian/rules
+   * control: libcdk-pixbuf-2.0-dev instead libgdk-pixbuf-2.0-dev
+   * New upstream release
+Checksums-Sha1:
+ d5abf39229e94905826e56a390b96c020335ace6 492532 cafe-desktop-common_2.1.0-1_all.deb
+ a57fa8d8b4dc5120f56f7ceb30d051587198782a 3584 cafe-desktop-dbgsym_2.1.0-1_amd64.deb
+ 10ae3c105b16dc6fb92f4ab29e6ab22a2b3c54fb 18385 cafe-desktop_2.1.0-1_amd64.buildinfo
+ 606b6812b8be356f417b256934b31b84cb9cd6c5 25352 cafe-desktop_2.1.0-1_amd64.deb
+ a9a2c21a18696b731cca3f346487cb2ef4a195dd 14760 gir1.2-cafedesktop-2.0_2.1.0-1_amd64.deb
+ 595b63488335aef6e83f2339d693b8f17b30c849 17164 libcafe-desktop-2-17-dbgsym_2.1.0-1_amd64.deb
+ 5dd28410d8682ad9cb1490ab69d7320a8b450d1d 97432 libcafe-desktop-2-17_2.1.0-1_amd64.deb
+ 45c13a5d7c475d70c36ec121ea8f023791cc8ab8 34332 libcafe-desktop-dev_2.1.0-1_amd64.deb
+ 4db85ca69d7531c7939b541300776811cab77e7b 30816 libcafe-desktop-doc_2.1.0-1_all.deb
+Checksums-Sha256:
+ 7eb3b43deee4e3b223413fe37b789906354defe35e132ef79e428913307a945f 492532 cafe-desktop-common_2.1.0-1_all.deb
+ 911da67c274a9b09db6c177d945116a4319da2651460da9c894bc9efdb0c580d 3584 cafe-desktop-dbgsym_2.1.0-1_amd64.deb
+ 38b8da4775c42f3dd5ad0c388002b9020684def63b77580a1d7b8e1b7c3a825d 18385 cafe-desktop_2.1.0-1_amd64.buildinfo
+ c1c16fec278aca9491f818e0056dada52a4f49e7942246de907fa7569596f26a 25352 cafe-desktop_2.1.0-1_amd64.deb
+ 46c552d720ed1c666342732b4a792d99416ebebe001263538a3eca12423eeffa 14760 gir1.2-cafedesktop-2.0_2.1.0-1_amd64.deb
+ 03dde681a7fcfed37d0b082cf1c310bbbacc5d3a1a02f6ae0c5e470adaff6d72 17164 libcafe-desktop-2-17-dbgsym_2.1.0-1_amd64.deb
+ 80e5f6acd142e2e57742481a85e3b2fb34aa3d94cbea0365352c2ac77fdda625 97432 libcafe-desktop-2-17_2.1.0-1_amd64.deb
+ 431bee0120bf31f3679e4ca40d7f05c89d01f4c59f98ff6be90ce27d01f82000 34332 libcafe-desktop-dev_2.1.0-1_amd64.deb
+ f81d06aa0163869a91fda4350380bc82e6da26f0316981cd6b75551acd51ecb0 30816 libcafe-desktop-doc_2.1.0-1_all.deb
+Files:
+ 4b63c14a6a8e5af2702dbe9344507d99 492532 x11 optional cafe-desktop-common_2.1.0-1_all.deb
+ 20dcb4c97b6daa83a512e2e744fa2d1e 3584 debug optional cafe-desktop-dbgsym_2.1.0-1_amd64.deb
+ 55e26ba1d1da85a78ad018f773d9b203 18385 x11 optional cafe-desktop_2.1.0-1_amd64.buildinfo
+ 78316ee1b424f8eb1187620f0a92ccf1 25352 x11 optional cafe-desktop_2.1.0-1_amd64.deb
+ 9d5e3906db19b342b49c20920e600b0c 14760 introspection optional gir1.2-cafedesktop-2.0_2.1.0-1_amd64.deb
+ a185d29a1b1cd5dc2375a57030bdeefa 17164 debug optional libcafe-desktop-2-17-dbgsym_2.1.0-1_amd64.deb
+ a487bf5f151e155b395f780c4fc8808a 97432 libs optional libcafe-desktop-2-17_2.1.0-1_amd64.deb
+ 553685631a49e9a1c37d3ed94ad5ae4d 34332 libdevel optional libcafe-desktop-dev_2.1.0-1_amd64.deb
+ 92ed9fb963b5057279129a42451e8002 30816 doc optional libcafe-desktop-doc_2.1.0-1_all.deb

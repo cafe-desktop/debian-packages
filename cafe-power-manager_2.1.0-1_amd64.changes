@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Fri, 25 Sep 2026 17:43:26 +0200
+Source: cafe-power-manager
+Binary: cafe-power-manager cafe-power-manager-common cafe-power-manager-dbgsym
+Architecture: all amd64
+Version: 2.1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-power-manager - power management tool for the CAFE desktop
+ cafe-power-manager-common - power management tool for the CAFE desktop (common files)
+Changes:
+ cafe-power-manager (2.1.0-1) unstable; urgency=medium
+ .
+   * control:
+     - 'pkgconf' instead transitional 'pkg-config'
+     - Remove redundant Uploaders field
+     - Update Homepage
+     - remove obsolete 'Rules-Requires-Root: no'
+   * rules:
+     - remove obsolete get-orig-source
+     - Drop dh_missing override, --fail-missing is default in compat 13
+   * watch: upgrade to version 5
+   * drop cafe-power-manager-common.lintian-overrides
+Checksums-Sha1:
+ a46ea77e45509bb3cd79550ce343e1f1d46ef581 5618536 cafe-power-manager-common_2.1.0-1_all.deb
+ a8fb79ad9877a016440ee3c3f2100c32fbe06d34 369060 cafe-power-manager-dbgsym_2.1.0-1_amd64.deb
+ 01a59e390f624d37c9afddee0d4706defafaf377 17020 cafe-power-manager_2.1.0-1_amd64.buildinfo
+ 3e09a54011fcce5cdc47523004c5eafcedde5ecf 124772 cafe-power-manager_2.1.0-1_amd64.deb
+Checksums-Sha256:
+ e5040181e7aa4cfd700398c33050116ee652d59e7d15da7f668771d36e8903eb 5618536 cafe-power-manager-common_2.1.0-1_all.deb
+ 9e32271411080438d7f2acc60dc747b7bd3971c856d84c403c5027044bdc255d 369060 cafe-power-manager-dbgsym_2.1.0-1_amd64.deb
+ f5b7f084a6140d14ab658ce9ace2a99b2a86d82704698549f131311f768763d9 17020 cafe-power-manager_2.1.0-1_amd64.buildinfo
+ 567e324ddab025f4a2bf418b9fbf3b11b0993642c20b3e0cbd268b8e46228979 124772 cafe-power-manager_2.1.0-1_amd64.deb
+Files:
+ 1e18b833a53198566e8a254bddfdba93 5618536 x11 optional cafe-power-manager-common_2.1.0-1_all.deb
+ 622b47534d65f9c5e379c343753f116a 369060 debug optional cafe-power-manager-dbgsym_2.1.0-1_amd64.deb
+ a1281463454de54f50c397cf76d7afb9 17020 x11 optional cafe-power-manager_2.1.0-1_amd64.buildinfo
+ 252a95d9f3c55e15c72dd2262df4ae65 124772 x11 optional cafe-power-manager_2.1.0-1_amd64.deb
