@@ -1,3 +1,11 @@
+libvnck3 (3.42.0-1) unstable; urgency=medium
+
+  * rules: Override dh_gnome to avoid build warnings
+  * control: gir1.2-cdkpixbuf-2.0-dev instead gir1.2-gdkpixbuf-2.0-dev
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 12 Jul 2026 12:19:34 +0200
+
 libvnck3 (3.41.0-2) unstable; urgency=medium
 
   * control:
