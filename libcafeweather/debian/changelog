@@ -1,3 +1,10 @@
+libcafeweather (2.1.0-1) unstable; urgency=medium
+
+  * control: remove unused shlibs:Depends
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 17 Jul 2026 00:12:53 +0200
+
 libcafeweather (2.0.1-2) unstable; urgency=medium
 
   * control:
