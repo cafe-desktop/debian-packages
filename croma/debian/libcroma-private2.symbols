@@ -718,4 +718,4 @@ libcroma-private.so.2 libcroma-private2 #MINVER#
  preference_update_handler@Base 1.22.2
  shadow_offsets_x@Base 1.22.2
  shadow_offsets_y@Base 1.22.2
- wnck_draw_workspace@Base 1.22.2
+ vnck_draw_workspace@Base 1.22.2
