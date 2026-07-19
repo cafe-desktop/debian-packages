@@ -1,3 +1,13 @@
+croma (2.1.0-1) unstable; urgency=medium
+
+  * control: remove unused shlibs:Depends
+  * symbols: 
+    - rename meta_gdk_pixbuf_get_from_pixmap -> meta_cdk_pixbuf_get_from_pixmap
+    - rename wnck_draw_workspace -> vnck_draw_workspace
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 19 Jul 2026 10:28:31 +0200
+
 croma (2.0.0-1) unstable; urgency=medium
 
   * control:
