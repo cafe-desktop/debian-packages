@@ -1,3 +1,10 @@
+cafe-control-center (2.1.0-1) unstable; urgency=medium
+
+  * remove obsolete libcafe-slab0.lintian-overrides
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 25 Jul 2026 12:34:41 +0200
+
 cafe-control-center (2.0.0-1) unstable; urgency=medium
 
   * control:
