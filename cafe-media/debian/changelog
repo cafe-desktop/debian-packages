@@ -1,3 +1,9 @@
+cafe-media (2.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 26 Jul 2026 13:22:03 +0200
+
 cafe-media (2.0.0-1) unstable; urgency=medium
 
   * control:
