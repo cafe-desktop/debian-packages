@@ -1,3 +1,10 @@
+baul (2.2.0-1) unstable; urgency=medium
+
+  * copyright: rename gdk -> cdk
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 29 Jul 2026 11:07:48 +0200
+
 baul (2.1.0-2) unstable; urgency=medium
 
   * control:
