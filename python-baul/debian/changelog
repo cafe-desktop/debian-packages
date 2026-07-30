@@ -1,3 +1,9 @@
+python-baul (2.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 30 Jul 2026 11:13:36 +0200
+
 python-baul (2.0.0-2) unstable; urgency=medium
 
   * control:
