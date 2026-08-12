@@ -1,3 +1,10 @@
+bte2.91 (2.0.0-1) unstable; urgency=medium
+
+  * symbols: ignore c++ stl symbols exported since gcc 16
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Wed, 12 Aug 2026 13:42:51 +0200
+
 bte2.91 (1.0.0-2) unstable; urgency=medium
 
   * rules: enable systemd in CONFFLAGS_deb
