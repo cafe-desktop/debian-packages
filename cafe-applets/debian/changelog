@@ -1,3 +1,9 @@
+cafe-applets (2.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 14 Aug 2026 10:35:06 +0200
+
 cafe-applets (2.0.0-1) unstable; urgency=medium
 
   * control:
