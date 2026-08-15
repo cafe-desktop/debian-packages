@@ -1,3 +1,9 @@
+cafe-themes (2.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 15 Aug 2026 23:09:38 +0200
+
 cafe-themes (2.0.1-2) unstable; urgency=medium
 
   * control:
