@@ -1,3 +1,17 @@
+cafe-calc (2.1.0-1) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules:
+    - remove obsolete get-orig-source
+    - Drop dh_missing override, --fail-missing is default in compat 13
+  * watch: upgrade to version 5
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 16 Aug 2026 14:41:18 +0200
+
 cafe-calc (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
