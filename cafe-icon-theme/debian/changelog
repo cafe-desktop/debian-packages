@@ -1,3 +1,10 @@
+cafe-icon-theme (2.1.0-1) unstable; urgency=medium
+
+  * control: remove librsvg2-bin and librsvg2-common
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 22 Aug 2026 18:19:32 +0200
+
 cafe-icon-theme (2.0.0-1) unstable; urgency=medium
 
   * control:
@@ -18,7 +25,7 @@ cafe-icon-theme (2.0.0-1) unstable; urgency=medium
   * watch: upgrade to version 5
   * New upstream release
 
- -- Pablo Barciela <scow@debian.debian>  Wed, 29 Apr 2026 20:07:17 +0200
+ -- Pablo Barciela <scow@riseup.net>  Wed, 29 Apr 2026 20:07:17 +0200
 
 cafe-icon-theme (1.25.0-1) unstable; urgency=medium
 
