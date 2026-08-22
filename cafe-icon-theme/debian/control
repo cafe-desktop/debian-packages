@@ -8,7 +8,6 @@ Build-Depends-Indep: gettext,
                      cafe-common,
                      ctk-icon-naming-utils (>= 0.8.7),
                      intltool (>= 0.40.0),
-                     librsvg2-bin,
                      pkgconf,
 Standards-Version: 4.5.0
 Homepage: https://github.com/cafe-desktop/cafe-icon-theme
@@ -19,7 +18,6 @@ Package: cafe-icon-theme
 Architecture: all
 Depends: hicolor-icon-theme,
          ctk-update-icon-cache,
-         librsvg2-common,
          ${misc:Depends},
 Description: CAFE Desktop icon theme
  This package contains the default icon theme used by the CAFE desktop.
