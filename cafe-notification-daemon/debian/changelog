@@ -1,3 +1,16 @@
+cafe-notification-daemon (2.1.0-1) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules: remove obsolete get-orig-source
+  * watch: upgrade to version 5
+  * rules: Drop dh_missing override, --fail-missing is default in compat 13
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 28 Aug 2026 11:30:36 +0200
+
 cafe-notification-daemon (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
