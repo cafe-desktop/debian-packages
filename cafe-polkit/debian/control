@@ -20,7 +20,8 @@ Package: cafe-polkit-bin
 Architecture: all
 Depends: cafe-polkit (>= ${source:Version}),
          ${misc:Depends},
-Breaks: cafe-polkit (<< 1.12.0-3~),
+Breaks: cafe-polkit (<< 2.1.0-1~),
+Replaces: cafe-polkit (<< 2.1.0-1~),
 Description: CAFE authentication agent for PolicyKit-1 (executable wrapper script)
  The cafe-polkit package provides a D-Bus session bus service that is used to
  bring up authentication dialogs used for obtaining privileges.
@@ -34,9 +35,8 @@ Description: CAFE authentication agent for PolicyKit-1 (executable wrapper scrip
 
 Package: cafe-polkit
 Architecture: any
-Multi-Arch: same
 Depends: accountsservice,
-         cafe-polkit-common (= ${binary:Version}),
+         cafe-polkit-common (>= ${source:Version}),
          polkitd,
          ${misc:Depends},
          ${shlibs:Depends},
@@ -48,10 +48,8 @@ Description: CAFE authentication agent for PolicyKit-1
  This package contains the CAFE policy kit authentication agent.
 
 Package: cafe-polkit-common
-Architecture: any
-Multi-Arch: foreign
+Architecture: all
 Depends: ${misc:Depends},
-         ${shlibs:Depends},
 Breaks: cafe-polkit (<< 1.8.0),
 Description: CAFE authentication agent for PolicyKit-1 (common files)
  The cafe-polkit package provides a D-Bus session bus service that is used to

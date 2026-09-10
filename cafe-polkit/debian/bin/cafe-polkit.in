@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/lib/@DEB_HOST_MULTIARCH@/polkit-cafe/polkit-cafe-authentication-agent-1 &
