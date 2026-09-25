@@ -1,3 +1,18 @@
+cafe-power-manager (2.1.0-1) unstable; urgency=medium
+
+  * control:
+    - 'pkgconf' instead transitional 'pkg-config'
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+  * rules:
+    - remove obsolete get-orig-source
+    - Drop dh_missing override, --fail-missing is default in compat 13
+  * watch: upgrade to version 5
+  * drop cafe-power-manager-common.lintian-overrides
+
+ -- Pablo Barciela <scow@riseup.net>  Fri, 25 Sep 2026 17:43:26 +0200
+
 cafe-power-manager (2.0.0-1) unstable; urgency=medium
 
   * New upstream release
