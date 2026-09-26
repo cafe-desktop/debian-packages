@@ -98,7 +98,6 @@ Section: libdevel
 Depends: libglib2.0-dev,
          libcafe-sensors-applet-plugin0 (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends},
 Breaks: libcafesensorsappletplugin-dev,
 Replaces: libcafesensorsappletplugin-dev,
 Description: Library for plugins for the cafe-sensors-applet package (development files)
