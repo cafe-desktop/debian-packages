@@ -1,3 +1,19 @@
+cafe-sensors-applet (2.0.0-1) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - remove shlibs:Depends in libcafe-sensors-applet-plugin-dev
+  * rules:
+    - remove obsolete get-orig-source
+    - Drop dh_missing override, --fail-missing is default in compat 13
+  * watch: upgrade to version 5
+  * drop cafe-sensors-applet.lintian-overrides
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 27 Sep 2026 12:14:38 +0200
+
 cafe-sensors-applet (1.25.0-1) unstable; urgency=medium
 
   * Initial release
