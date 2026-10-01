@@ -1,3 +1,18 @@
+cafe-utils (2.0.0-1) unstable; urgency=medium
+
+  * control:
+    - Remove redundant Uploaders field
+    - Update Homepage
+    - remove obsolete 'Rules-Requires-Root: no'
+    - Bump DH compat level to version 13
+  * rules:
+    - remove obsolete get-orig-source
+    - Drop dh_missing override, --fail-missing is default in compat 13
+  * watch: upgrade to version 5
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Thu, 01 Oct 2026 23:53:44 +0200
+
 cafe-utils (1.25.0-1) unstable; urgency=medium
 
   * Initial release
