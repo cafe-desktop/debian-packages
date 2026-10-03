@@ -1,3 +1,11 @@
+grapa (2.2.0-1) unstable; urgency=medium
+
+  * rules: Drop dh_missing override, --fail-missing is default in compat 13
+  * control: add BD libnotify-dev
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sat, 03 Oct 2026 19:01:49 +0200
+
 grapa (2.1.0-2) unstable; urgency=medium
 
   * control:
