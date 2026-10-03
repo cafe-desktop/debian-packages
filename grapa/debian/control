@@ -11,6 +11,7 @@ Build-Depends: debhelper-compat (= 13),
                libctk-3-dev,
                libjson-glib-dev,
                libmagic-dev,
+               libnotify-dev,
                cafe-common (>= 1.24.0-1~),
                yelp-tools,
 Standards-Version: 4.5.0
