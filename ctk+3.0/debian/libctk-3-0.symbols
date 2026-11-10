@@ -4857,6 +4857,7 @@ libctk-3.so.0 libctk-3-0 #MINVER#
  ctk_tree_view_set_tooltip_column@Base 3.0.0
  ctk_tree_view_set_tooltip_row@Base 3.0.0
  ctk_tree_view_set_vadjustment@Base 3.3.16
+ ctk_tree_view_stop_interactive_search@Base 3.27.0
  ctk_tree_view_unset_rows_drag_dest@Base 3.0.0
  ctk_tree_view_unset_rows_drag_source@Base 3.0.0
  ctk_true@Base 3.0.0
@@ -5232,6 +5233,7 @@ libctk-3.so.0 libctk-3-0 #MINVER#
  ctk_window_get_icon@Base 3.0.0
  ctk_window_get_icon_list@Base 3.0.0
  ctk_window_get_icon_name@Base 3.0.0
+ ctk_window_get_interactive_search_open@Base 3.27.0
  ctk_window_get_mnemonic_modifier@Base 3.0.0
  ctk_window_get_mnemonics_visible@Base 3.0.0
  ctk_window_get_modal@Base 3.0.0
@@ -5306,6 +5308,7 @@ libctk-3.so.0 libctk-3-0 #MINVER#
  ctk_window_set_icon_list@Base 3.0.0
  ctk_window_set_icon_name@Base 3.0.0
  ctk_window_set_interactive_debugging@Base 3.13.7
+ ctk_window_set_interactive_search_open@Base 3.27.0
  ctk_window_set_keep_above@Base 3.0.0
  ctk_window_set_keep_below@Base 3.0.0
  ctk_window_set_mnemonic_modifier@Base 3.0.0
