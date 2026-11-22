@@ -1,3 +1,10 @@
+ctk+3.0 (3.27.0-1) unstable; urgency=medium
+
+  * add new symbols
+  * New upstream release
+
+ -- Pablo Barciela <scow@riseup.net>  Sun, 22 Nov 2026 11:46:52 +0100
+
 ctk+3.0 (3.26.0-1) unstable; urgency=medium
 
   * control:
